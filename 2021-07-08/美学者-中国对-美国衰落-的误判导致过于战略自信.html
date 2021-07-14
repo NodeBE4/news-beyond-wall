@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>美学者：中国对“美国衰落”的误判导致过于战略自信 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+美学者：中国对“美国衰落”的误判导致过于战略自信
+——
+" />
+    <meta property="og:description" content="
+美学者：中国对“美国衰落”的误判导致过于战略自信
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="美学者：中国对“美国衰落”的误判导致过于战略自信" />
+    <meta property="twitter:title" content="美学者：中国对“美国衰落”的误判导致过于战略自信" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.rfa.org%2Fmandarin%2Fyataibaodao%2Fjunshiwaijiao%2Fbx-07082021111216.html&t=%E7%BE%8E%E5%AD%A6%E8%80%85%EF%BC%9A%E4%B8%AD%E5%9B%BD%E5%AF%B9%E2%80%9C%E7%BE%8E%E5%9B%BD%E8%A1%B0%E8%90%BD%E2%80%9D%E7%9A%84%E8%AF%AF%E5%88%A4%E5%AF%BC%E8%87%B4%E8%BF%87%E4%BA%8E%E6%88%98%E7%95%A5%E8%87%AA%E4%BF%A1" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.rfa.org%2Fmandarin%2Fyataibaodao%2Fjunshiwaijiao%2Fbx-07082021111216.html&t=%E7%BE%8E%E5%AD%A6%E8%80%85%EF%BC%9A%E4%B8%AD%E5%9B%BD%E5%AF%B9%E2%80%9C%E7%BE%8E%E5%9B%BD%E8%A1%B0%E8%90%BD%E2%80%9D%E7%9A%84%E8%AF%AF%E5%88%A4%E5%AF%BC%E8%87%B4%E8%BF%87%E4%BA%8E%E6%88%98%E7%95%A5%E8%87%AA%E4%BF%A1&d=2021-07-08&e=
+美学者：中国对“美国衰落”的误判导致过于战略自信
+——
+
+
+  
+  日前，华盛顿智库战略与国际研究中心发布报告，指出中共高估了自己的实力，通过官方叙事营造“东升西降”的错觉，从而做出战略误判，实行诸如“战狼外交”的策略。有学者认为，在习近平一人专政的现实中，中国难以修正激进路线，将会导致更严重的战略失误。
+  美学者： “美国衰落”正成为中共单一叙事 
+  战略与国际研究中心（CSIS）发布的题为《北京对美国衰落的叙述如何导致战略过度自信》报告的作者是中国研究项目主任白明（Jude Blanchette），和战略与国际研究中心高级副主席兼国际安全项目主任琼斯（Seth G. Jones）。他们认为，自2008年金融危机以来，北京评估美国国力及国际影响力正在持续恶化，西方世界衰落正在成为不可动摇的中共官方叙事，导致中国在制定战略时过度自信，趋于对抗和主动出击的“战狼外交”就是一个最..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.rfa.org%2Fmandarin%2Fyataibaodao%2Fjunshiwaijiao%2Fbx-07082021111216.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.rfa.org/mandarin/yataibaodao/junshiwaijiao/bx-07082021111216.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.rfa.org/mandarin/yataibaodao/junshiwaijiao/bx-07082021111216.html&text=美学者：中国对“美国衰落”的误判导致过于战略自信&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.rfa.org/mandarin/yataibaodao/junshiwaijiao/bx-07082021111216.html&title=美学者：中国对“美国衰落”的误判导致过于战略自信" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.rfa.org/mandarin/yataibaodao/junshiwaijiao/bx-07082021111216.html&title=美学者：中国对“美国衰落”的误判导致过于战略自信" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=美学者：中国对“美国衰落”的误判导致过于战略自信&body=
+美学者：中国对“美国衰落”的误判导致过于战略自信
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.rfa.org/mandarin/yataibaodao/junshiwaijiao/bx-07082021111216.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.rfa.org/mandarin/yataibaodao/junshiwaijiao/bx-07082021111216.html&title=美学者：中国对“美国衰落”的误判导致过于战略自信&caption=
+美学者：中国对“美国衰落”的误判导致过于战略自信
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=美学者：中国对“美国衰落”的误判导致过于战略自信&url=https://www.rfa.org/mandarin/yataibaodao/junshiwaijiao/bx-07082021111216.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>美学者：中国对“美国衰落”的误判导致过于战略自信</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-07-08
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#自由亚洲电台 ">
+          自由亚洲电台
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.rfa.org/mandarin/yataibaodao/junshiwaijiao/bx-07082021111216.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="自由亚洲电台的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#自由亚洲电台 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.rfa.org%2Fmandarin%2Fyataibaodao%2Fjunshiwaijiao%2Fbx-07082021111216.html&t=%E7%BE%8E%E5%AD%A6%E8%80%85%EF%BC%9A%E4%B8%AD%E5%9B%BD%E5%AF%B9%E2%80%9C%E7%BE%8E%E5%9B%BD%E8%A1%B0%E8%90%BD%E2%80%9D%E7%9A%84%E8%AF%AF%E5%88%A4%E5%AF%BC%E8%87%B4%E8%BF%87%E4%BA%8E%E6%88%98%E7%95%A5%E8%87%AA%E4%BF%A1&d=2021-07-08&e=
+美学者：中国对“美国衰落”的误判导致过于战略自信
+——
+
+
+  
+  日前，华盛顿智库战略与国际研究中心发布报告，指出中共高估了自己的实力，通过官方叙事营造“东升西降”的错觉，从而做出战略误判，实行诸如“战狼外交”的策略。有学者认为，在习近平一人专政的现实中，中国难以修正激进路线，将会导致更严重的战略失误。
+  美学者： “美国衰落”正成为中共单一叙事 
+  战略与国际研究中心（CSIS）发布的题为《北京对美国衰落的叙述如何导致战略过度自信》报告的作者是中国研究项目主任白明（Jude Blanchette），和战略与国际研究中心高级副主席兼国际安全项目主任琼斯（Seth G. Jones）。他们认为，自2008年金融危机以来，北京评估美国国力及国际影响力正在持续恶化，西方世界衰落正在成为不可动摇的中共官方叙事，导致中国在制定战略时过度自信，趋于对抗和主动出击的“战狼外交”就是一个最..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.rfa.org%2Fmandarin%2Fyataibaodao%2Fjunshiwaijiao%2Fbx-07082021111216.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1625775067000-->
+<p><a href="https://www.rfa.org/mandarin/yataibaodao/junshiwaijiao/bx-07082021111216.html">美学者：中国对“美国衰落”的误判导致过于战略自信</a>
+——</p>
+
+<div>
+  <p></p>
+  <p>日前，华盛顿智库战略与国际研究中心发布报告，指出中共高估了自己的实力，通过官方叙事营造“东升西降”的错觉，从而做出战略误判，实行诸如“战狼外交”的策略。有学者认为，在习近平一人专政的现实中，中国难以修正激进路线，将会导致更严重的战略失误。</p>
+  <p><strong>美学者： <span>“美国衰落”正成为中共单一叙事</span> </strong></p>
+  <p><span>战略与国际研究中心（</span>CSIS<span>）发布的题为《北京对美国衰落的叙述如何导致战略过度自信》</span>报告的作者是中国研究项目主任白明（Jude Blanchette<span>），和战略与国际研究中心高级副主席兼国际安全项目主任琼斯（</span>Seth G. Jones<span>）。</span>他们认为，自2008<span>年金融危机以来，北京评估美国国力及国际影响力正在持续恶化，西方世界衰落正在成为不可动摇的中共官方叙事，导致中国在制定战略时过度自信，趋于对抗和主动</span>出击的“战狼外交”就是一个最好的证明。</p>
+  <p>该报告显示，自2008<span>年起，歌颂社会主义制度优越性及唱衰美国金融实力和民主治理能力的中文文章激增。尤其是在过去一年里，中共智囊团大肆宣扬美国国民深陷疫情泥沼、驴象恶斗、社会动荡来佐证“美国的民主及政治体系已经停止运作”，“随着美国实力减弱，它所提倡的价值观也将减弱”，“东方在崛起，西方在衰落”。</span></p>
+  <p><span>      <figure class="image-richtext image-inline captioned" style="width:621px;">
+<img alt="《北京对美国衰落的叙述如何导致战略过度自信》报告作者之一、美国智库“战略与国际研究中心”中国研究项目主任白明（Jude Blanchette）（视频截图）" height="350" src="https://www.rfa.org/mandarin/yataibaodao/junshiwaijiao/bx-07082021111216.html/bx0708.jpg/@@images/371a0869-ee2c-4dd5-adcc-5f3bbe611ade.png" title="bx0708.jpg" width="621" />        <figcaption class="image-caption">
+《北京对美国衰落的叙述如何导致战略过度自信》报告作者之一、美国智库“战略与国际研究中心”中国研究项目主任白明（Jude Blanchette）（视频截图）
+        </figcaption>
+<small></small>        <div id="zoomattribute">
+<a data-caption="《北京对美国衰落的叙述如何导致战略过度自信》报告作者之一、美国智库“战略与国际研究中心”中国研究项目主任白明（Jude Blanchette）（视频截图）" data-fancybox="" href="https://www.rfa.org/mandarin/yataibaodao/junshiwaijiao/bx-07082021111216.html/bx0708.jpg" id="single_image" title="《北京对美国衰落的叙述如何导致战略过度自信》报告作者之一、美国智库“战略与国际研究中心”中国研究项目主任白明（Jude Blanchette）（视频截图）"><img src="/++plone++rfa-resources/img/icon-zoom.png" /></a>
+        </div>
+      </figure>
+</span></p>
+  <p>该报告列举了一些典型的文章。2021<span>年</span>1<span>月</span>13<span>日，中国官媒《人民日报》刊登中共中央党校国际战略研究所教授李云龙的文章《“美式民主”神话的终结》，该文声称美国示威者冲击国会山是美国政治制度的重大挫败。</span>5<span>月</span>21<span>日，中国社科院政治学研究所所长张树华为《环球时报》撰文《西方政治劣质化进一步贻害世界》，将冷战后全球政治生态严重恶化的根源归结于西方政治系统性衰败。</span></p>
+  <p>“中国的实力确实这些年有了很显著的增长，和西方的力量对比发生了变化，天平本来是西方民主国家这边的分量重得多，现在天平有点朝着（中国）那边偏了，但是还没有达到中国实力已经完全胜过西方民主国家，离那一步还有很大距离，”《北京之春》杂志荣誉主编胡平告诉本台。“除了硬实力之外，还有软实力，而中国的软实力在国际上显然是吃不开的，受到抵制的。”</p>
+  <p>    <figure class="image-richtext image-inline captioned" style="width:622px;">
+<img alt="中国外交官的“战狼式”姿态（自由亚洲电台制图）" height="350" src="https://www.rfa.org/mandarin/yataibaodao/junshiwaijiao/bx-07082021111216.html/bx0708a.jpg/@@images/29ef1c42-9816-4162-a586-0a7c0fd711eb.jpeg" title="bx0708a.jpg" width="622" />      <figcaption class="image-caption">
+中国外交官的“战狼式”姿态（自由亚洲电台制图）
+      </figcaption>
+<small></small>      <div id="zoomattribute">
+<a data-caption="中国外交官的“战狼式”姿态（自由亚洲电台制图）" data-fancybox="" href="https://www.rfa.org/mandarin/yataibaodao/junshiwaijiao/bx-07082021111216.html/bx0708a.jpg" id="single_image" title="中国外交官的“战狼式”姿态（自由亚洲电台制图）"><img src="/++plone++rfa-resources/img/icon-zoom.png" /></a>
+      </div>
+    </figure>
+</p>
+  <p><strong>“犯我中华，虽远必诛”   中国战略为何持续激进？</strong></p>
+  <p>近几年，赵立坚等中国外交部新闻发言人充分彰显了“战狼式”的外交姿态，完全抛弃了邓小平时期倡导的“韬光养晦”外交实践。有舆论认为，“战狼外交”的兴起源于西方民主国家对中国迅速崛起的压制，中国不得不被动保持防御状态。但纽约城市大学政治学教授夏明认为，外因固然有，寻求政权巩固的内因更起决定作用。</p>
+  <p>夏明说：“中国政府的核心利益是要保证执政党的地位，所以一切决策都是围绕着中国共产党，都是这个内因决定的。中国共产党意识到，民主化带来的一切人权改善、自由化提升的要求与中国共产党政权的核心利益是发生冲突的。中国把美国的西方体制认为是最大的威胁，所以会采取围、堵、抹黑，制造敌视。”</p>
+  <p>自2017<span>年起，中共总书记习近平多次在各种正式场合中强调“当今世界处于百年未有之大变局”，机遇和挑战并存，中国比以往任何时候都更接近实现中华民族伟大复兴的中国梦。</span></p>
+  <p>但现实是，美国的经济和军事仍在国际上保持遥遥领先。报告说，美国在国防上继续超越中国，2020<span>年美国军费支出为</span>7380<span>亿美元，是其竞争对手中俄两国总和的三倍。同时，</span>2019<span>年，美国的研发投入占</span>GDP<span>的</span>3.1%<span>，而中国研发占比为</span>2.2%<span>，美国国民的疫苗接种速率也保持优势，几乎没有任何迹象显示美国正在衰落。</span></p>
+  <p><br /></p>
+  <ul>
+    <li><strong><a href="https://www.rfa.org/mandarin/duomeiti/sanquanheyi/sqhy-04272021140433.html">东升西降? 王毅的“可乐说”与习近平的“平视外交”</a></strong></li>
+    <li><strong><a href="https://www.rfa.org/mandarin/pinglun/chenpokong/js-05132021095525.html">评论：“东升西降”是个伪命题</a></strong></li>
+    <li><strong><a href="https://www.rfa.org/mandarin/yataibaodao/huanjing/cc-04162020105536.html">中国外交战狼层出不穷 要取悦习近平？</a></strong></li>
+    <li><strong><a href="https://www.rfa.org/mandarin/yataibaodao/junshiwaijiao/jt-03192021100939.html">外交官全面“战狼化” 中共外交大失败</a></strong></li>
+  </ul>
+  <p><br /></p>
+  <p><strong>政治学者：习近平一人专政 中国的激进路线难以修正</strong><span><strong> </strong></span></p>
+  <p>胡平分析说，在国际社会普遍反感中国“战狼外交”的现实背景下，如果中国保持激进和过度自信的态势，西方民主国家会继续牵制中国的发展。他预测，西方民主制度和价值观可能会和中国内部倡导改革的力量相结合，从而促进中国变革。</p>
+  <p>“但从消极的方面来讲，也有可能使中共当前的这派人进一步朝着极端的方向走，本来他们就把西方的反感和遏制说成西方社会对中国的打压，因此中国就更应该采取强硬的态度，以此作为号召，达到团结和煽动民族主义的目的来强化自己的统治。”</p>
+  <p>然而，夏明却对来自党内的变革持怀疑态度。他认为，中国政治体系内缺乏完善的制度保障，也缺乏派系互相监督、校正，中国会继续朝着过度自信的激进方向前进：“中国的危险在于，如果领导发疯，是没有办法制止的，因为它的体制没办法限制专制权力。如果领导人发疯，整个国家进入疯狂状态，最后的解决方案很难是体制内的。习近平已经修改宪法、废除任期制，把中国的集体领导整个废除，推出个人崇拜。此外，习近平对各派系的削弱，强化个人专权，用自己的派系代替其他所有他不信任的人。”</p>
+  <p>白明日前在为《外交事务》撰写的最新文章中也写道，习近平要在2022<span>年召开的第二十届党代会上寻求连任，巩固他在中国政治体系中日益单一的地位，这将进一步阻止中国必要的政策选择和路线修正。</span></p>
+  <p>“鉴于这些现实，中国的自信、甚至是过度自信，可能会导致一种更加大胆、更加对抗的国际姿态，”报告指出。“一个高估自己实力而低估美国实力的中国是一个令人担忧的组合，因为这很可能导致中国在许多具有重要地缘政治意义的地区作出战略误判，比如台湾。”</p>
+  <p><br />记者：一冰   责编：申铧   网编：洪伟</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#自由亚洲电台 的其它文章</h4>
+    
+      <li>
+        <time>2021-07-08</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-08/%E5%9F%BA%E8%BE%9B%E6%A0%BC-%E7%BE%8E%E4%B8%AD%E9%9C%80%E8%A6%81-%E5%B0%BC%E5%85%8B%E6%9D%BE%E6%A8%A1%E5%BC%8F-%E7%8E%8B%E5%B2%90%E5%B1%B1-%E8%B4%A3%E4%BB%BB%E5%85%A8%E5%9C%A8%E7%BE%8E%E6%96%B9">
+          基辛格: 美中需要“尼克松模式”      王岐山: 责任全在美方
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-08</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-08/%E4%B8%AD%E4%BC%81%E5%87%BA%E6%B5%B7%E6%88%96%E9%9C%80%E8%AF%81%E7%9B%91%E4%BC%9A%E6%89%B9%E5%87%86-%E6%95%B0%E5%8D%81%E4%B8%AD%E4%BC%81%E8%A2%AB%E8%B8%A2%E5%87%BA%E4%B8%BB%E8%A6%81%E6%8C%87%E6%95%B0">
+          中企出海或需证监会批准   数十中企被踢出主要指数
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-08</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-08/%E9%A6%99%E6%B8%AF-47%E4%BA%BA%E6%A1%88-%E8%A2%AB%E5%BB%B6%E5%AE%A1-%E6%8B%9C%E7%99%BB%E5%BB%B6%E9%95%BF%E5%AF%B9%E6%B8%AF%E5%9B%BD%E5%AE%B6%E7%B4%A7%E6%80%A5%E7%8A%B6%E6%80%81%E4%BB%A4">
+          香港“47人案”被延审     拜登延长对港国家紧急状态令
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-08</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-08/%E6%AC%A7%E6%B4%B2%E8%AE%AE%E4%BC%9A%E8%B0%B4%E8%B4%A3%E9%A6%99%E6%B8%AF%E6%8B%98%E6%8D%95-%E8%8B%B9%E6%9E%9C%E6%97%A5%E6%8A%A5-%E9%AB%98%E5%B1%82-%E6%95%A6%E4%BF%83%E5%88%B6%E8%A3%81%E4%B8%AD%E6%B8%AF%E5%AE%98%E5%91%98">
+          欧洲议会谴责香港拘捕《苹果日报》高层   敦促制裁中港官员
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-08/%E7%99%BD%E5%AE%AB%E5%8F%91%E8%A8%80%E4%BA%BA-%E5%90%AB%E6%9C%89%E4%B8%AD%E5%8D%8E%E6%B0%91%E5%9B%BD%E6%97%97%E5%B8%9C%E7%9A%84%E6%8E%A8%E6%96%87%E6%98%AF-%E6%97%A0%E5%BF%83%E4%B9%8B%E5%A4%B1-%E7%BE%8E%E4%BB%8D%E8%87%B4%E5%8A%9B%E4%BA%8E-%E4%B8%80%E4%B8%AA%E4%B8%AD%E5%9B%BD-%E6%94%BF%E7%AD%96">
+            前一篇：白宫发言人：含有中华民国旗帜的推文是“无心之失”，美仍致力于“一个中国”政策
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-08/%E4%B8%80%E7%BA%BF%E9%87%87%E8%AE%BF-%E7%91%9E%E4%B8%BD%E5%B0%81%E5%9F%8E%E9%87%8D%E5%88%9B%E5%95%86%E4%B8%9A-%E6%B0%91%E7%94%9F%E5%A0%AA%E5%BF%A7">
+            后一篇：【一线采访】瑞丽封城重创商业 民生堪忧
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-07-08/%E7%99%BD%E5%AE%AB%E5%8F%91%E8%A8%80%E4%BA%BA-%E5%90%AB%E6%9C%89%E4%B8%AD%E5%8D%8E%E6%B0%91%E5%9B%BD%E6%97%97%E5%B8%9C%E7%9A%84%E6%8E%A8%E6%96%87%E6%98%AF-%E6%97%A0%E5%BF%83%E4%B9%8B%E5%A4%B1-%E7%BE%8E%E4%BB%8D%E8%87%B4%E5%8A%9B%E4%BA%8E-%E4%B8%80%E4%B8%AA%E4%B8%AD%E5%9B%BD-%E6%94%BF%E7%AD%96'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-07-08/%E4%B8%80%E7%BA%BF%E9%87%87%E8%AE%BF-%E7%91%9E%E4%B8%BD%E5%B0%81%E5%9F%8E%E9%87%8D%E5%88%9B%E5%95%86%E4%B8%9A-%E6%B0%91%E7%94%9F%E5%A0%AA%E5%BF%A7'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-07-08/%E4%B8%AD%E4%BC%81%E5%87%BA%E6%B5%B7%E6%88%96%E9%9C%80%E8%AF%81%E7%9B%91%E4%BC%9A%E6%89%B9%E5%87%86-%E6%95%B0%E5%8D%81%E4%B8%AD%E4%BC%81%E8%A2%AB%E8%B8%A2%E5%87%BA%E4%B8%BB%E8%A6%81%E6%8C%87%E6%95%B0'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-07-08/%E9%A6%99%E6%B8%AF-47%E4%BA%BA%E6%A1%88-%E8%A2%AB%E5%BB%B6%E5%AE%A1-%E6%8B%9C%E7%99%BB%E5%BB%B6%E9%95%BF%E5%AF%B9%E6%B8%AF%E5%9B%BD%E5%AE%B6%E7%B4%A7%E6%80%A5%E7%8A%B6%E6%80%81%E4%BB%A4'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-07-08/%E7%99%BD%E5%AE%AB%E5%8F%91%E8%A8%80%E4%BA%BA-%E5%90%AB%E6%9C%89%E4%B8%AD%E5%8D%8E%E6%B0%91%E5%9B%BD%E6%97%97%E5%B8%9C%E7%9A%84%E6%8E%A8%E6%96%87%E6%98%AF-%E6%97%A0%E5%BF%83%E4%B9%8B%E5%A4%B1-%E7%BE%8E%E4%BB%8D%E8%87%B4%E5%8A%9B%E4%BA%8E-%E4%B8%80%E4%B8%AA%E4%B8%AD%E5%9B%BD-%E6%94%BF%E7%AD%96">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-07-08/%E4%B8%80%E7%BA%BF%E9%87%87%E8%AE%BF-%E7%91%9E%E4%B8%BD%E5%B0%81%E5%9F%8E%E9%87%8D%E5%88%9B%E5%95%86%E4%B8%9A-%E6%B0%91%E7%94%9F%E5%A0%AA%E5%BF%A7">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<自由亚洲电台>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-07-08/%E4%B8%AD%E4%BC%81%E5%87%BA%E6%B5%B7%E6%88%96%E9%9C%80%E8%AF%81%E7%9B%91%E4%BC%9A%E6%89%B9%E5%87%86-%E6%95%B0%E5%8D%81%E4%B8%AD%E4%BC%81%E8%A2%AB%E8%B8%A2%E5%87%BA%E4%B8%BB%E8%A6%81%E6%8C%87%E6%95%B0">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<自由亚洲电台>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-07-08/%E9%A6%99%E6%B8%AF-47%E4%BA%BA%E6%A1%88-%E8%A2%AB%E5%BB%B6%E5%AE%A1-%E6%8B%9C%E7%99%BB%E5%BB%B6%E9%95%BF%E5%AF%B9%E6%B8%AF%E5%9B%BD%E5%AE%B6%E7%B4%A7%E6%80%A5%E7%8A%B6%E6%80%81%E4%BB%A4">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

@@ -1,0 +1,2123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>[Science] 人生选择：事业成就还是幸福快乐？ – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+[Science] 人生选择：事业成就还是幸福快乐？
+——
+" />
+    <meta property="og:description" content="
+[Science] 人生选择：事业成就还是幸福快乐？
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="[Science] 人生选择：事业成就还是幸福快乐？" />
+    <meta property="twitter:title" content="[Science] 人生选择：事业成就还是幸福快乐？" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-55807438&t=%5BScience%5D+%E4%BA%BA%E7%94%9F%E9%80%89%E6%8B%A9%EF%BC%9A%E4%BA%8B%E4%B8%9A%E6%88%90%E5%B0%B1%E8%BF%98%E6%98%AF%E5%B9%B8%E7%A6%8F%E5%BF%AB%E4%B9%90%EF%BC%9F" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-55807438&t=%5BScience%5D+%E4%BA%BA%E7%94%9F%E9%80%89%E6%8B%A9%EF%BC%9A%E4%BA%8B%E4%B8%9A%E6%88%90%E5%B0%B1%E8%BF%98%E6%98%AF%E5%B9%B8%E7%A6%8F%E5%BF%AB%E4%B9%90%EF%BC%9F&d=2021-01-27&e=
+[Science] 人生选择：事业成就还是幸福快乐？
+——
+
+
+  
+    人生选择：事业成就还是幸福快乐？
+  
+  
+    
+      
+        奈特·卢瑟福
+        （Nat Rutherford）
+      
+    
+  
+  
+    2021年1月27日
+  
+  
+    
+      
+        
+          
+            图像来源，Getty Images
+          
+        
+        
+          
+图像加注文字，            街头涂鸦：“生命太过短暂，不要浪费在追求幸福上”。
+          
+        
+      
+    
+  
+  
+    想从生活中得到什么？近来你应该有机会、也有理由问自己这个问题。也许你想花更多时间与家人在一起，或者想找一份更..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-55807438" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=http://www.bbc.com/zhongwen/simp/science-55807438" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=http://www.bbc.com/zhongwen/simp/science-55807438&text=[Science] 人生选择：事业成就还是幸福快乐？&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=http://www.bbc.com/zhongwen/simp/science-55807438&title=[Science] 人生选择：事业成就还是幸福快乐？" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://www.bbc.com/zhongwen/simp/science-55807438&title=[Science] 人生选择：事业成就还是幸福快乐？" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=[Science] 人生选择：事业成就还是幸福快乐？&body=
+[Science] 人生选择：事业成就还是幸福快乐？
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=http://www.bbc.com/zhongwen/simp/science-55807438" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=http://www.bbc.com/zhongwen/simp/science-55807438&title=[Science] 人生选择：事业成就还是幸福快乐？&caption=
+[Science] 人生选择：事业成就还是幸福快乐？
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=[Science] 人生选择：事业成就还是幸福快乐？&url=http://www.bbc.com/zhongwen/simp/science-55807438" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>[Science] 人生选择：事业成就还是幸福快乐？</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-27
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#BBC ">
+          BBC
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="http://www.bbc.com/zhongwen/simp/science-55807438"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="BBC的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#BBC 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-55807438&t=%5BScience%5D+%E4%BA%BA%E7%94%9F%E9%80%89%E6%8B%A9%EF%BC%9A%E4%BA%8B%E4%B8%9A%E6%88%90%E5%B0%B1%E8%BF%98%E6%98%AF%E5%B9%B8%E7%A6%8F%E5%BF%AB%E4%B9%90%EF%BC%9F&d=2021-01-27&e=
+[Science] 人生选择：事业成就还是幸福快乐？
+——
+
+
+  
+    人生选择：事业成就还是幸福快乐？
+  
+  
+    
+      
+        奈特·卢瑟福
+        （Nat Rutherford）
+      
+    
+  
+  
+    2021年1月27日
+  
+  
+    
+      
+        
+          
+            图像来源，Getty Images
+          
+        
+        
+          
+图像加注文字，            街头涂鸦：“生命太过短暂，不要浪费在追求幸福上”。
+          
+        
+      
+    
+  
+  
+    想从生活中得到什么？近来你应该有机会、也有理由问自己这个问题。也许你想花更多时间与家人在一起，或者想找一份更..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-55807438" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1611728230000-->
+<p><a href="http://www.bbc.com/zhongwen/simp/science-55807438">[Science] 人生选择：事业成就还是幸福快乐？</a>
+——</p>
+
+<div>
+  <div dir="ltr" class="css-e19l8g-GridComponent e57qer20">
+    <h1 id="content" tabindex="-1" class="css-1wfn6k3-Headline e1yj3cbb0">人生选择：事业成就还是幸福快乐？</h1>
+  </div>
+  <div dir="ltr" class="e1j2237y2 css-vf19ca-GridComponent e57qer20">
+    <div class="css-s561j-Container e1c9i7u10">
+      <ul role="list" class="css-pu07qy-Person e1c9i7u12">
+        <li role="listitem" class="css-dvly96-Name e1c9i7u13">奈特·卢瑟福</li>
+        <li role="listitem" class="css-1942rtw-Title e1c9i7u14">（Nat Rutherford）</li>
+      </ul>
+    </div>
+  </div>
+  <div dir="ltr" class="e1j2237y1 css-vf19ca-GridComponent e57qer20">
+    <time datetime="2021-01-27" class="css-pb6w51-StyledTimestamp e4zesg50">2021年1月27日</time>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-oijotl-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/115AE/production/_116668017_7580934f-ba1e-470a-9c1d-c0d7ab0dd09b.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/115AE/production/_116668017_7580934f-ba1e-470a-9c1d-c0d7ab0dd09b.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/115AE/production/_116668017_7580934f-ba1e-470a-9c1d-c0d7ab0dd09b.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/115AE/production/_116668017_7580934f-ba1e-470a-9c1d-c0d7ab0dd09b.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/115AE/production/_116668017_7580934f-ba1e-470a-9c1d-c0d7ab0dd09b.jpg 800w" alt="“生命太过短暂，不要浪费在追求幸福上”。" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/115AE/production/_116668017_7580934f-ba1e-470a-9c1d-c0d7ab0dd09b.jpg" width="1024" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />            <p role="text" class="css-19db9gm-Copyright etq3yw90"><span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像来源，</span><span lang="en-GB">Getty Images</span></p>
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>街头涂鸦：“生命太过短暂，不要浪费在追求幸福上”。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70"><strong>想从生活中得到什么？近来你应该有机会、也有理由问自己这个问题。也许你想花更多时间与家人在一起，或者想找一份更有成就感和安全感的工作，或者想改善健康状况。不过，人为何有这些需求呢？</strong></p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">答案可能归结为一件事：幸福。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">在我们的文化中，对幸福的执着几乎是宗教性的。这是唯一不需要辩解的行动理由：快乐是有益的，无需原因。可是，人生能建立在这种循环推理的基础上吗？</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">这个问题很重要。可惜，对于人们想从生活中获得什么这方面的研究数据非常少。在2016年的一项调查中，当美国人被问及，希望“获得伟大的成就还是获得快乐”时，81%的人选择“快乐”，只有13%的人选择伟大的成就。可以理解的是，6%的人被这个选择吓到了，表示不确定。尽管幸福快乐是普世目标，但人们很难知道如何定义或者如何实现它。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <div class="css-1fobf8d e1gggypo0">
+      <ul dir="ltr" role="list" class="css-4c9jmx-BulletedList e1drcs2w0">
+        <li role="listitem" class="css-chb3zw-BulletedListItem e1drcs2w1"><a href="https://www.bbc.com/zhongwen/simp/science-55153328" class="css-h9s9st-InlineLink e1cs6q200">“以貌取人”的世界毁了你的生活？</a></li>
+        <li role="listitem" class="css-chb3zw-BulletedListItem e1drcs2w1"><a href="https://www.bbc.com/ukchina/simp/54872629" class="css-h9s9st-InlineLink e1cs6q200">社交隔离、离群索居如何改变你的思维、行为和社交能力</a></li>
+        <li role="listitem" class="css-chb3zw-BulletedListItem e1drcs2w1"><a href="https://www.bbc.com/ukchina/simp/vert-fut-43218759" class="css-h9s9st-InlineLink e1cs6q200">对孤独的五大误解</a></li>
+      </ul>
+    </div>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <h2 id="幸福与快乐" tabindex="-1" class="css-10tk4x-SubHeading e14hemmw1">幸福与快乐</h2>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">生活中越来越多的因素被用来衡量幸福感，比如说人际关系、工作、家庭、身体、饮食等等…… 这些都能让你快乐吗？如果不能，是不是做错了什么？</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">在现代世界，幸福是我们所拥有的最接近“至善”的东西，是所有其他商品的源头。在这样的逻辑下，不快乐成了“至恶”，是要避免的最大邪恶。有证据表明，对幸福的追求越过分，产生抑郁的风险就越大。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">历史学家里奇·罗伯逊（Ritchie Robertson）在其新书《启蒙运动：对幸福的追求》（The Enlightenment: The Pursuit of Happiness）中指出，启蒙运动不应被理解为理性本身价值有所增加，而应被理解为通过理性追求幸福。决定社会通往现代的力量是关于幸福的，而我们今天仍在努力解决幸福的局限性。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">人们很容易认为，幸福一直被视为至善，但人类的价值和情感并不是永久固定的。一些曾经是至高无上的价值，如荣誉或虔诚等，不再重要了，而像“绝望”（与冷漠最接近）这样的情绪已经完全消失了。人们用来描述价值观和情感的语言，甚至情感本身都是不稳定的。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">现代社会关于幸福概念主要是实用主义的，而不具有哲学意义，集中在人们所谓的获得幸福的技巧上。人们关心的不是幸福本身，而是如何获得幸福。人们倾向于从医学角度把快乐看作悲伤或抑郁的对立面，这意味着，快乐是来自大脑中的化学反应。快乐意味着少一些悲伤的化学反应，多一些让快乐的反应。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">杰出的美德伦理学家玛莎·努斯鲍姆（Martha Nussbaum）说，现代社会将幸福视为“一种满足或愉悦感，一种将幸福视为最高层次商品的观点。根据该定义，这种观点赋予人的心理状态以最高价值”。自助书籍和“积极心理学”承诺开启这种心理状态或快乐的心情。但哲学家们往往对这种幸福观持怀疑态度，因为人类的情绪是短暂的，产生情绪的原因也不确定。不过，他们问了一个相关但更广泛涉及的问题：什么是美好的生活？</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <div class="css-1fobf8d e1gggypo0">
+      <ul dir="ltr" role="list" class="css-4c9jmx-BulletedList e1drcs2w0">
+        <li role="listitem" class="css-chb3zw-BulletedListItem e1drcs2w1"><a href="https://www.bbc.com/ukchina/simp/52362359" class="css-h9s9st-InlineLink e1cs6q200">从太空返回地球 宇航员感受到的陌生和熟悉 </a></li>
+      </ul>
+    </div>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-oijotl-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/163CE/production/_116668019_c4fe494a-8c21-4987-843f-4390cbe063d3.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/163CE/production/_116668019_c4fe494a-8c21-4987-843f-4390cbe063d3.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/163CE/production/_116668019_c4fe494a-8c21-4987-843f-4390cbe063d3.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/163CE/production/_116668019_c4fe494a-8c21-4987-843f-4390cbe063d3.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/163CE/production/_116668019_c4fe494a-8c21-4987-843f-4390cbe063d3.jpg 800w" alt="有爱的生活与幸福有关，但也会给我们带来巨大痛苦。" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/163CE/production/_116668019_c4fe494a-8c21-4987-843f-4390cbe063d3.jpg" width="1024" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>有爱的生活与幸福有关，但也会给我们带来巨大痛苦。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <h2 id="人生选择" tabindex="-1" class="css-10tk4x-SubHeading e14hemmw1">人生选择</h2>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">一个答案是，一辈子做自己喜欢的事，这能给自己带来快乐。在某些方面，体验快乐的生活才是美好的生活。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">但最大化快乐并不是唯一选择。每个人的生命，即使是最幸运的人，也充满痛苦。痛苦的失去，痛苦的失望，受伤或疾病带来的身体上的痛苦，以及忍受无聊、孤独或悲伤带来的精神上的痛苦。痛苦是人活着必然的结果。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">对于古希腊哲学家伊壁鸠鲁（公元前341-270年）来说，美好的生活是将痛苦降到最低点。持续的无痛苦给予我们心灵的平静。这个概念与现代社会对幸福的理解有共同点。“与自己和平相处”区别了幸福之人与不幸福之人，没有人会想象充满痛苦的生活也会是美好生活。但将痛苦最小化真的是幸福的本质吗？</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">如果生活得好会增加我们经历的痛苦呢？研究表明，有爱的依恋与幸福有关，但我们从经验中得知，爱也是痛苦的原因。如果生活有必要痛苦，甚至有需要呢？对于父母、孩子、伴侣或朋友的痛苦死亡，我们可以通过停止关心这些人、或从生活中完全切除他们来避免。但是，如果生活没有爱的依附，那么在许多重要的方面将有所不足，即使它可能使我们从失去所爱之人的痛苦中解脱。生活中所有美好的事情都少不了痛苦，人们很少注意到这一点。写小说、跑马拉松、生孩子，都是为了追求最终的、欢乐的结果而引起的痛苦。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">伊壁鸠鲁可能会说，不可避免的痛苦实际上让共济失调更有吸引力。接受不可避免的事情，同时尽量减少危害，是唯一的生存之道。你也可以将最小化疼痛作为行动指南。如果写小说的过程带来的痛苦多于完成小说带来的快乐，那就别写了。但是，如果现在的一点痛苦可以防止以后更大的痛苦，例如为了避免癌症而戒烟的痛苦，那么这种痛苦是合理的。享乐主义的幸福就是成为一个优秀的会计师，以最有效的方式将痛苦最小化。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">但会计对幸福的看法过于简单，无法反映现实。弗里德里希·尼采（Friedrich Nietzsche）在《道德谱系》(The Genealogy of Morals）一书中指出，我们并不仅仅把忍受痛苦作为获得更大快乐的手段，因为“人类……并不否认痛苦本身；人类渴望它，甚至寻找它，只要展示痛苦的意义，受苦的目的”。尼采认为，痛苦不是通过快乐来减轻，而是通过意义来减轻。他怀疑我们能否找到足够的意义，让痛苦变得有意义，但他指出，伊壁鸠鲁对美好生活的看法有缺陷。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">这样说来，有意义的痛苦生活，可能比毫无意义的快乐生活更有价值。好像弄清什么是幸福不那么困难，我们现在也需要弄清什么是有意义的生活。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">先不管这个棘手的问题，现代观点认为，幸福给人类带来最大益处，所有产品都从中涌动，这种观点是不对的。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <h2 id="理论概念" tabindex="-1" class="css-10tk4x-SubHeading e14hemmw1">理论概念</h2>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">美国哲学家罗伯特·诺齐克（Robert Nozick）提出思想实验来证明这一点。诺齐克让我们想象一个“可以带来任何体验的机器”。机器会让你体验到实现每一个愿望的幸福。可以成为伟大的诗人，成为有史以来最伟大的发明家，乘坐自己设计的飞船遨游宇宙，或者成为当地餐馆受人喜爱的厨师。但现实中的你会失去意识。因为机器让你相信，模拟是真实的，你做出的选择是最终的命运。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">你会进入这个机器吗？诺齐克说，你不会因为想做某件事就成为某个人，而不仅仅是获得愉快的体验。这种假设可能看起来很轻率，但如果愿意为了真正的生命意义而牺牲无限的快乐，那么幸福就不是至善。但如果诺齐克是对的，那么81%选择快乐而非伟大成就的美国人就是错误的，研究表明，大多数人会选择不进入机器。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">诺齐克的经验机器旨在反驳功利主义，“幸福是可取的，而且是唯一可取的生活目的”。1826年，写下这句话的哲学家约翰·斯图亚特·密尔（John Stuart Mill）陷入了深深的不悦。在他的自传中，密尔描述了目前公认的抑动性快感缺乏：“我处于神经迟钝的状态，就像每个人偶尔都会有的那样；不容易享受兴奋；一种在其他时候是快乐的情绪，变得平淡或冷漠。”</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">密尔无法从生活中获得乐趣。这对大多数人来说都是坏事，但对密尔来说，它意味着更令人担忧的事情。他从出生起就被教导，生命的最终目的是最大化人类的快乐，最小化人类的痛苦。密尔的父亲是古典功利主义哲学家杰里米·边沁（Jeremy Bentham）的追随者，并按照边沁的观点抚养他的儿子。边沁比伊壁鸠鲁走得更远，他把幸福作为个人生活的终极诉求和道德的终极诉求。对边沁来说，所有的道德、政治和个人问题都可以通过一个简单的原则来解决——“为多数人带来最大的幸福”。但是，如果这是生活的唯一原则，那么密尔又如何为自己的存在辩护呢？</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">通过沮丧的情绪，密尔意识到边沁的功利主义观点，即把快乐提升到至上的善，是一种“猪猡哲学”，只适合猪。不满、不快乐和痛苦是人类处境的一部分。因此，根据密尔的说法，“做一个不满意的人，好过做一只满意的猪”。他仍然相信幸福是极其重要的，但逐渐发现，以幸福为目标很少会带来幸福。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">密尔认为，人应该以追求其他商品为目标，而幸福可能是一种幸福的副产品。但这也表明，美好的生活也可能是不快乐。密尔所认识到的，正是亚里士多德在两千年前提出的观点——相对于过上美好的生活，或者达到亚里士多德所谓的“终极幸福”（eudaimonia），短暂的快乐是次要的。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">“终极幸福”很难转化为当代的概念。哲学家朱莉娅·安纳斯（Julia Annas）等一些学者直接将其翻译为“幸福”，另一些学者更倾向于“人类繁荣”。无论翻译成什么，它都与我们现代对幸福的理解对比鲜明。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">亚里士多德认为繁荣是复杂的概念，因为它包含了个人满足、道德美德、卓越、好运和政治参与。与伊壁鸠鲁对痛苦的观念或边沁对快乐的“猪猡”观不同，亚里士多德对繁荣的看法就像繁荣本身一样混乱。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">像我们现代的幸福观念一样，幸福是生活的最终目的。但与幸福不同的是，幸福是通过习惯和行动实现的，而不是通过精神状态。幸福不是你经历或获得的东西，而是你做的事情。</p>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-oijotl-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/2F36/production/_116668021_68c094bf-ed04-40cd-9cfa-0e5a9c849a6c.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/2F36/production/_116668021_68c094bf-ed04-40cd-9cfa-0e5a9c849a6c.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/2F36/production/_116668021_68c094bf-ed04-40cd-9cfa-0e5a9c849a6c.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/2F36/production/_116668021_68c094bf-ed04-40cd-9cfa-0e5a9c849a6c.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/2F36/production/_116668021_68c094bf-ed04-40cd-9cfa-0e5a9c849a6c.jpg 800w" alt="幸福可能不是一种精神状态，而是我们从做事和习惯中获得的东西。" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/2F36/production/_116668021_68c094bf-ed04-40cd-9cfa-0e5a9c849a6c.jpg" width="976" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>幸福可能不是一种精神状态，而是我们从做事和习惯中获得的东西。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <h2 id="幸福与人生" tabindex="-1" class="css-10tk4x-SubHeading e14hemmw1">幸福与人生</h2>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">亚里士多德在他的《尼各马可伦理学》（Nicomachean Ethics）中写道：“不是一只燕子或一个晴天造就了春天，也不是一天或短时间内就能使一个人幸福和幸福。”换句话说，幸福是一生的事业，因为它是你必须每天通过行动来培养的东西。和功利主义者一样，亚里士多德认为幸福和美德密不可分。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">在亚里士多德看来，美德是一种在两个极端之间达到中庸或中间地位的特性。例如，在懦弱和蛮勇这两个极端之间有勇敢，在守财奴和挥金如土这两个极端之间有慷慨。在两个极端之间保持平衡是一种美德。但当功利主义者将道德归结为幸福时，亚里士多德认为美德是幸福的必要条件，但不是充分条件。我们不能无德地幸福，但有德也不是通往幸福的捷径。道德行为本身就是幸福的一部分。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">亚里士多德认为，什么让一个人快乐，什么让一个人成为好人，这两个问题并不是分开的。亚纳斯认为，道德的善与美好生活之间的关系决定了古代哲学的方向。这仍然是我们今天的问题。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">在亚里士多德看来，我们之所以幸福，是因为运用了人类特有的思考和推理能力。但思考和推理既是社会活动，也是个人活动：“人不是孤立的个体，隐士不能实践人类的优点”。如果繁荣需要别人，那么幸福也需要别人。幸福与其说是一种情绪状态，不如说是我们与他人建立的良好关系。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">但即便如此，也不能保证繁荣。亚里士多德认为，幸福是命运的人质。任何个人都无法控制的事件，包括战争、单相思、贫穷和全球流行病，往往会使人类繁荣（以及随之而来的幸福）不可及。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">这种道德运气的观念并不会破坏人们对幸福的追求，即使这种追求让人们感到沮丧。幸福不是一种可以永久获得的精神状态，而是一种在不完美的环境中磨练出来的实践。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">认识到这一点并不能保证美好的生活，但它将驱散永恒满足的虚幻希望。由于误解了幸福，现代观念增加了可能的失望情绪。任何有价值的生活都不应该达到享乐主义或功利主义幸福观所设定的标准，因此现代社会的追随者注定会因人类生活的缺陷而感到幻灭。要同亚里士多德一样，拥抱这些缺陷，并在缺陷面前茁壮成长。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70"><em class="css-mzjj9u ewc4zcb0">*</em><em class="css-mzjj9u ewc4zcb0">奈特·卢瑟福是伦敦大学皇家霍洛威学院政治理论教学研究员。</em></p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70"><i class="css-mzjj9u ewc4zcb0"><b>请访问 </b></i><a href="https://www.bbc.com/future" class="css-h9s9st-InlineLink e1cs6q200">BBC Future</a><i class="css-mzjj9u ewc4zcb0"><b> 阅读 </b></i><a href="https://www.bbc.com/future/article/20210105-why-our-pursuit-of-happiness-may-be-flawed" class="css-h9s9st-InlineLink e1cs6q200">英文原文</a><em class="css-mzjj9u ewc4zcb0"><strong>。</strong></em></p>
+  </div>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#BBC 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-27</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-27/Chinese-%E6%96%B0%E5%86%A0%E7%96%AB%E6%83%85%E4%B8%8B%E4%B8%AD%E5%9B%BD-%E6%98%A5%E8%BF%90-%E6%8B%89%E5%BC%80%E5%B8%B7%E5%B9%95-%E5%88%B0%E5%BA%95-%E5%B0%B1%E5%9C%B0%E8%BF%87%E5%B9%B4-%E8%BF%98%E6%98%AF%E5%9B%9E%E5%AE%B6%E5%9B%A2%E5%9C%86">
+          [Chinese] 新冠疫情下中国“春运”拉开帷幕 到底“就地过年”还是回家团圆？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-27</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-27/Vert-%E7%BA%B3%E7%B2%B9%E5%A4%A7%E5%B1%A0%E6%9D%80%E5%B9%B8%E5%AD%98%E8%80%85%E6%95%85%E4%BA%8B-%E7%9C%8B%E9%80%8F%E9%82%AA%E6%81%B6-%E7%97%9B%E8%8B%A6%E5%92%8C%E4%BA%BA%E6%80%A7">
+          [Vert] 纳粹大屠杀幸存者故事：看透邪恶、痛苦和人性
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-26</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-26/World-%E4%BB%8ETikTok-%E5%AD%9F%E6%99%9A%E8%88%9F%E6%A1%88%E5%88%B0%E4%B8%AD%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%91%98%E7%89%8C%E8%AE%A1%E5%88%92-%E6%8B%9C%E7%99%BB%E9%9D%A2%E5%89%8D%E8%BF%99%E4%BA%9B%E6%82%AC%E8%80%8C%E6%9C%AA%E5%86%B3%E7%9A%84%E6%B6%89%E5%8D%8E%E6%A1%88">
+          [World] 从TikTok，孟晚舟案到中国公司摘牌计划，拜登面前这些悬而未决的涉华案
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-26</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-26/Science-%E6%81%90%E9%BE%99%E7%9B%B8%E4%BA%92%E4%BA%A4%E6%B5%81%E7%9A%84%E4%B8%80%E7%A7%8D%E6%96%B9%E5%BC%8F-%E6%B3%84%E6%AE%96%E8%85%94%E5%8F%91%E4%BA%AE">
+          [Science] 恐龙相互交流的一种方式：泄殖腔发亮
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-26/World-%E4%BB%8ETikTok-%E5%AD%9F%E6%99%9A%E8%88%9F%E6%A1%88%E5%88%B0%E4%B8%AD%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%91%98%E7%89%8C%E8%AE%A1%E5%88%92-%E6%8B%9C%E7%99%BB%E9%9D%A2%E5%89%8D%E8%BF%99%E4%BA%9B%E6%82%AC%E8%80%8C%E6%9C%AA%E5%86%B3%E7%9A%84%E6%B6%89%E5%8D%8E%E6%A1%88">
+            前一篇：[World] 从TikTok，孟晚舟案到中国公司摘牌计划，拜登面前这些悬而未决的涉华案
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-27/Vert-%E7%BA%B3%E7%B2%B9%E5%A4%A7%E5%B1%A0%E6%9D%80%E5%B9%B8%E5%AD%98%E8%80%85%E6%95%85%E4%BA%8B-%E7%9C%8B%E9%80%8F%E9%82%AA%E6%81%B6-%E7%97%9B%E8%8B%A6%E5%92%8C%E4%BA%BA%E6%80%A7">
+            后一篇：[Vert] 纳粹大屠杀幸存者故事：看透邪恶、痛苦和人性
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-26/World-%E4%BB%8ETikTok-%E5%AD%9F%E6%99%9A%E8%88%9F%E6%A1%88%E5%88%B0%E4%B8%AD%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%91%98%E7%89%8C%E8%AE%A1%E5%88%92-%E6%8B%9C%E7%99%BB%E9%9D%A2%E5%89%8D%E8%BF%99%E4%BA%9B%E6%82%AC%E8%80%8C%E6%9C%AA%E5%86%B3%E7%9A%84%E6%B6%89%E5%8D%8E%E6%A1%88'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-27/Vert-%E7%BA%B3%E7%B2%B9%E5%A4%A7%E5%B1%A0%E6%9D%80%E5%B9%B8%E5%AD%98%E8%80%85%E6%95%85%E4%BA%8B-%E7%9C%8B%E9%80%8F%E9%82%AA%E6%81%B6-%E7%97%9B%E8%8B%A6%E5%92%8C%E4%BA%BA%E6%80%A7'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-27/Vert-%E7%BA%B3%E7%B2%B9%E5%A4%A7%E5%B1%A0%E6%9D%80%E5%B9%B8%E5%AD%98%E8%80%85%E6%95%85%E4%BA%8B-%E7%9C%8B%E9%80%8F%E9%82%AA%E6%81%B6-%E7%97%9B%E8%8B%A6%E5%92%8C%E4%BA%BA%E6%80%A7'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-26/World-%E4%BB%8ETikTok-%E5%AD%9F%E6%99%9A%E8%88%9F%E6%A1%88%E5%88%B0%E4%B8%AD%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%91%98%E7%89%8C%E8%AE%A1%E5%88%92-%E6%8B%9C%E7%99%BB%E9%9D%A2%E5%89%8D%E8%BF%99%E4%BA%9B%E6%82%AC%E8%80%8C%E6%9C%AA%E5%86%B3%E7%9A%84%E6%B6%89%E5%8D%8E%E6%A1%88'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-26/World-%E4%BB%8ETikTok-%E5%AD%9F%E6%99%9A%E8%88%9F%E6%A1%88%E5%88%B0%E4%B8%AD%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%91%98%E7%89%8C%E8%AE%A1%E5%88%92-%E6%8B%9C%E7%99%BB%E9%9D%A2%E5%89%8D%E8%BF%99%E4%BA%9B%E6%82%AC%E8%80%8C%E6%9C%AA%E5%86%B3%E7%9A%84%E6%B6%89%E5%8D%8E%E6%A1%88">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-27/Vert-%E7%BA%B3%E7%B2%B9%E5%A4%A7%E5%B1%A0%E6%9D%80%E5%B9%B8%E5%AD%98%E8%80%85%E6%95%85%E4%BA%8B-%E7%9C%8B%E9%80%8F%E9%82%AA%E6%81%B6-%E7%97%9B%E8%8B%A6%E5%92%8C%E4%BA%BA%E6%80%A7">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<BBC>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-27/Vert-%E7%BA%B3%E7%B2%B9%E5%A4%A7%E5%B1%A0%E6%9D%80%E5%B9%B8%E5%AD%98%E8%80%85%E6%95%85%E4%BA%8B-%E7%9C%8B%E9%80%8F%E9%82%AA%E6%81%B6-%E7%97%9B%E8%8B%A6%E5%92%8C%E4%BA%BA%E6%80%A7">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<BBC>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-26/World-%E4%BB%8ETikTok-%E5%AD%9F%E6%99%9A%E8%88%9F%E6%A1%88%E5%88%B0%E4%B8%AD%E5%9B%BD%E5%85%AC%E5%8F%B8%E6%91%98%E7%89%8C%E8%AE%A1%E5%88%92-%E6%8B%9C%E7%99%BB%E9%9D%A2%E5%89%8D%E8%BF%99%E4%BA%9B%E6%82%AC%E8%80%8C%E6%9C%AA%E5%86%B3%E7%9A%84%E6%B6%89%E5%8D%8E%E6%A1%88">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

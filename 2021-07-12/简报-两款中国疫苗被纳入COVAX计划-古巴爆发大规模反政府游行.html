@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>简报：两款中国疫苗被纳入COVAX计划；古巴爆发大规模反政府游行 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+简报：两款中国疫苗被纳入COVAX计划；古巴爆发大规模反政府游行
+——
+" />
+    <meta property="og:description" content="
+简报：两款中国疫苗被纳入COVAX计划；古巴爆发大规模反政府游行
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="简报：两款中国疫苗被纳入COVAX计划；古巴爆发大规模反政府游行" />
+    <meta property="twitter:title" content="简报：两款中国疫苗被纳入COVAX计划；古巴爆发大规模反政府游行" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.nytimes.com%2Fzh-hans%2F2021%2F07%2F12%2Fworld%2Fasia%2Fchinese-vaccines-covax.html&t=%E7%AE%80%E6%8A%A5%EF%BC%9A%E4%B8%A4%E6%AC%BE%E4%B8%AD%E5%9B%BD%E7%96%AB%E8%8B%97%E8%A2%AB%E7%BA%B3%E5%85%A5COVAX%E8%AE%A1%E5%88%92%EF%BC%9B%E5%8F%A4%E5%B7%B4%E7%88%86%E5%8F%91%E5%A4%A7%E8%A7%84%E6%A8%A1%E5%8F%8D%E6%94%BF%E5%BA%9C%E6%B8%B8%E8%A1%8C" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.nytimes.com%2Fzh-hans%2F2021%2F07%2F12%2Fworld%2Fasia%2Fchinese-vaccines-covax.html&t=%E7%AE%80%E6%8A%A5%EF%BC%9A%E4%B8%A4%E6%AC%BE%E4%B8%AD%E5%9B%BD%E7%96%AB%E8%8B%97%E8%A2%AB%E7%BA%B3%E5%85%A5COVAX%E8%AE%A1%E5%88%92%EF%BC%9B%E5%8F%A4%E5%B7%B4%E7%88%86%E5%8F%91%E5%A4%A7%E8%A7%84%E6%A8%A1%E5%8F%8D%E6%94%BF%E5%BA%9C%E6%B8%B8%E8%A1%8C&d=2021-07-12&e=
+简报：两款中国疫苗被纳入COVAX计划；古巴爆发大规模反政府游行
+——
+
+
+  
+    
+Image      
+      
+中国最高领导人习近平承诺向全世界数百万人提供易于储存和运输的中国疫苗。他称其为“全球公共产品”。Credit...Andrea Verdelli/Getty Images
+      
+    
+    
+      
+        中国国药疫苗和科兴疫苗被纳入COVAX计划。全球疫苗免疫联盟宣布，已与这两家中国公司签订了首批新冠疫苗的购买协议，国药和科兴将在三个月内交付1.1亿剂疫苗，并可选择在未来交付更多。COVAX是一项旨在向贫穷国家捐赠疫苗、促进疫苗在全球平等分发的计划。
+      
+      
+        僵持数月后，台湾与BioNTech达成疫苗购买协议。BioNTech将向台湾提供1000万剂新冠疫苗，但这是一项复杂的交易：疫苗将..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.nytimes.com%2Fzh-hans%2F2021%2F07%2F12%2Fworld%2Fasia%2Fchinese-vaccines-covax.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.nytimes.com/zh-hans/2021/07/12/world/asia/chinese-vaccines-covax.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.nytimes.com/zh-hans/2021/07/12/world/asia/chinese-vaccines-covax.html&text=简报：两款中国疫苗被纳入COVAX计划；古巴爆发大规模反政府游行&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.nytimes.com/zh-hans/2021/07/12/world/asia/chinese-vaccines-covax.html&title=简报：两款中国疫苗被纳入COVAX计划；古巴爆发大规模反政府游行" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.nytimes.com/zh-hans/2021/07/12/world/asia/chinese-vaccines-covax.html&title=简报：两款中国疫苗被纳入COVAX计划；古巴爆发大规模反政府游行" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=简报：两款中国疫苗被纳入COVAX计划；古巴爆发大规模反政府游行&body=
+简报：两款中国疫苗被纳入COVAX计划；古巴爆发大规模反政府游行
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.nytimes.com/zh-hans/2021/07/12/world/asia/chinese-vaccines-covax.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.nytimes.com/zh-hans/2021/07/12/world/asia/chinese-vaccines-covax.html&title=简报：两款中国疫苗被纳入COVAX计划；古巴爆发大规模反政府游行&caption=
+简报：两款中国疫苗被纳入COVAX计划；古巴爆发大规模反政府游行
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=简报：两款中国疫苗被纳入COVAX计划；古巴爆发大规模反政府游行&url=https://www.nytimes.com/zh-hans/2021/07/12/world/asia/chinese-vaccines-covax.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>简报：两款中国疫苗被纳入COVAX计划；古巴爆发大规模反政府游行</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-07-12
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#纽约时报 ">
+          纽约时报
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.nytimes.com/zh-hans/2021/07/12/world/asia/chinese-vaccines-covax.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="纽约时报的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#纽约时报 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.nytimes.com%2Fzh-hans%2F2021%2F07%2F12%2Fworld%2Fasia%2Fchinese-vaccines-covax.html&t=%E7%AE%80%E6%8A%A5%EF%BC%9A%E4%B8%A4%E6%AC%BE%E4%B8%AD%E5%9B%BD%E7%96%AB%E8%8B%97%E8%A2%AB%E7%BA%B3%E5%85%A5COVAX%E8%AE%A1%E5%88%92%EF%BC%9B%E5%8F%A4%E5%B7%B4%E7%88%86%E5%8F%91%E5%A4%A7%E8%A7%84%E6%A8%A1%E5%8F%8D%E6%94%BF%E5%BA%9C%E6%B8%B8%E8%A1%8C&d=2021-07-12&e=
+简报：两款中国疫苗被纳入COVAX计划；古巴爆发大规模反政府游行
+——
+
+
+  
+    
+Image      
+      
+中国最高领导人习近平承诺向全世界数百万人提供易于储存和运输的中国疫苗。他称其为“全球公共产品”。Credit...Andrea Verdelli/Getty Images
+      
+    
+    
+      
+        中国国药疫苗和科兴疫苗被纳入COVAX计划。全球疫苗免疫联盟宣布，已与这两家中国公司签订了首批新冠疫苗的购买协议，国药和科兴将在三个月内交付1.1亿剂疫苗，并可选择在未来交付更多。COVAX是一项旨在向贫穷国家捐赠疫苗、促进疫苗在全球平等分发的计划。
+      
+      
+        僵持数月后，台湾与BioNTech达成疫苗购买协议。BioNTech将向台湾提供1000万剂新冠疫苗，但这是一项复杂的交易：疫苗将..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.nytimes.com%2Fzh-hans%2F2021%2F07%2F12%2Fworld%2Fasia%2Fchinese-vaccines-covax.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1626143821000-->
+<p><a href="https://www.nytimes.com/zh-hans/2021/07/12/world/asia/chinese-vaccines-covax.html">简报：两款中国疫苗被纳入COVAX计划；古巴爆发大规模反政府游行</a>
+——</p>
+
+<div>
+  <section name="articleBody" class="meteredContent css-1r7ky0e">
+    <figure class="css-jcw7oy e1g7ppur0" aria-label="media" role="group">
+Image      <picture><source media="(max-width: 599px) and (min-device-pixel-ratio: 3),(max-width: 599px) and (-webkit-min-device-pixel-ratio: 3),(max-width: 599px) and (min-resolution: 3dppx),(max-width: 599px) and (min-resolution: 288dpi)" srcset="https://images.weserv.nl/?url=static01.nyt.com/images/2021/06/21/business/CN-00china-vaccine-4-copy/merlin_189423768_4a4ff7f9-974a-444e-8f00-1a62b3cce88c-mobileMasterAt3x.jpg?quality=75&amp;auto=webp&amp;disable=upscale&amp;width=600" /><source media="(max-width: 599px) and (min-device-pixel-ratio: 2),(max-width: 599px) and (-webkit-min-device-pixel-ratio: 2),(max-width: 599px) and (min-resolution: 2dppx),(max-width: 599px) and (min-resolution: 192dpi)" srcset="https://images.weserv.nl/?url=static01.nyt.com/images/2021/06/21/business/CN-00china-vaccine-4-copy/merlin_189423768_4a4ff7f9-974a-444e-8f00-1a62b3cce88c-mobileMasterAt3x.jpg?quality=75&amp;auto=webp&amp;disable=upscale&amp;width=1200" /><source media="(max-width: 599px) and (min-device-pixel-ratio: 1),(max-width: 599px) and (-webkit-min-device-pixel-ratio: 1),(max-width: 599px) and (min-resolution: 1dppx),(max-width: 599px) and (min-resolution: 96dpi)" srcset="https://images.weserv.nl/?url=static01.nyt.com/images/2021/06/21/business/CN-00china-vaccine-4-copy/merlin_189423768_4a4ff7f9-974a-444e-8f00-1a62b3cce88c-mobileMasterAt3x.jpg?quality=75&amp;auto=webp&amp;disable=upscale&amp;width=1800" /><img /></picture>
+      <figcaption class="css-1l44abu ewdxa0s0">
+中国最高领导人习近平承诺向全世界数百万人提供易于储存和运输的中国疫苗。他称其为“全球公共产品”。Credit...Andrea Verdelli/Getty Images
+      </figcaption>
+    </figure>
+    <ul class="css-1le37cb ez3869y0">
+      <li class="css-o74qhc eoqvrfo0">
+        <p class="css-1qtdsio evys1bk0">中国国药疫苗和科兴疫苗<a class="css-1g7m0tk" href="https://www.nytimes.com/live/2021/07/12/world/covid-coronavirus-updates/chinese-vaccines-are-pledged-to-be-shared-with-countries-in-need-a-vaccine-initiative-says" title="">被纳入COVAX计划</a>。全球疫苗免疫联盟宣布，已与这两家中国公司签订了首批新冠疫苗的购买协议，国药和科兴将在三个月内交付1.1亿剂疫苗，并可选择在未来交付更多。COVAX是一项旨在向贫穷国家捐赠疫苗、促进疫苗在全球平等分发的计划。</p>
+      </li>
+      <li class="css-o74qhc eoqvrfo0">
+        <p class="css-1qtdsio evys1bk0">僵持数月后，<a class="css-1g7m0tk" href="https://www.nytimes.com/2021/07/12/world/asia/taiwan-biontech-vaccine.html" title="">台湾与BioNTech达成疫苗购买协议</a>。BioNTech将向台湾提供1000万剂新冠疫苗，但这是一项复杂的交易：疫苗将由台湾本土巨头台积电、富士康及其创始人郭台铭设立的永龄基金会通过瑞士公司裕利制药向上海复兴进行购买，然后捐赠给台湾政府。复星制药是BioNTech在中国大陆和港澳台生产和分销的合作伙伴。台湾官员表示，此前向BioNTech直接购买疫苗的谈判<a class="css-1g7m0tk" href="https://cn.nytimes.com/asia-pacific/20210617/taiwan-china-biontech-vaccine/" title="">因未指明具体原因的“大陆干预”而搁浅</a>，北京则否认了这一点。</p>
+      </li>
+      <li class="css-o74qhc eoqvrfo0">
+        <p class="css-1qtdsio evys1bk0">泰国将为已接种科兴的医护人员<a class="css-1g7m0tk" href="https://www.nytimes.com/live/2021/07/12/world/covid-coronavirus-updates/thailand-chinese-sinovac-vaccine" title="">提供混合疫苗</a>。该国卫生部长表示，接种了一剂科兴的人应在第二剂转种阿斯利康，完成两剂接种者应“立即”接受加强注射，以“更快提高对病毒的免疫力”。泰国是最新一个质疑科兴疫苗有效性的外国政府，自4月以来，该国有超过600名完成科兴疫苗接种的医护人员被感染，其中一名护士死亡，另一名医护人员病情危重。印尼上周也宣布，将为已接种两剂科兴的医护人员提供莫德纳作为加强剂。</p>
+      </li>
+      <li class="css-o74qhc eoqvrfo0">
+        <p class="css-1qtdsio evys1bk0">美国再对强生新冠疫苗<a class="css-1g7m0tk" href="https://www.nytimes.com/2021/07/12/us/politics/fda-warning-johnson-johnson-vaccine-nerve-syndrome.html" title="">发出安全警告</a>。美国食药管理局检测到，强生疫苗可能会导致一种罕见的神经疾病：格林-巴利綜合征。在美国已接种强生疫苗的近1300万人中，官员们确认了约100宗疑似病例。不过，当局认为，这一概率极低，强生疫苗的整体好处大过风险。</p>
+      </li>
+      <li class="css-o74qhc eoqvrfo0">
+        <p class="css-1qtdsio evys1bk0">部分科学家反驳新冠病毒实验室泄漏说。一篇由21名病毒学家撰写的综述认为，病毒从动物自然溢出的可能性远大于实验室泄漏。该论文还推测病毒源头在远离武汉的地方。目前美情报官员对病毒起源存在分歧。（<a class="css-1g7m0tk" href="https://cn.nytimes.com/science/20210712/coronavirus-origins-lab-leak/" title="">阅读本文中文版</a>）</p>
+      </li>
+    </ul>
+    <aside class="css-ew4tgv" aria-label="companion column"></aside>
+    <figure class="css-jcw7oy e1g7ppur0" aria-label="media" role="group">
+Image      <figcaption class="css-1l44abu ewdxa0s0">
+5月，香港移民享受英国乡村风光。Credit...Mary Turner for The New York Times
+      </figcaption>
+    </figure>
+    <ul class="css-1le37cb ez3869y0">
+      <li class="css-o74qhc eoqvrfo0">
+        <p class="css-1qtdsio evys1bk0">国安法触发香港移民潮：他们离开故土，在英国开启新生活。国安法生效以来，很多香港人放弃原有的生活，移居英国。面对经济压力和融入当地社会等多重挑战，新移民们通过互助组织、网络群组来帮助彼此适应全新的生活。（<a class="css-1g7m0tk" href="https://cn.nytimes.com/china/20210712/hong-kong-migrants-london/" title="">阅读本文中文版</a>）</p>
+      </li>
+      <li class="css-o74qhc eoqvrfo0">
+        <p class="css-1qtdsio evys1bk0">中国舰船压力下，菲律宾渔民的“反抗与适应”。多年来，中国在南海的活动一直影响着菲律宾渔民的生计。随着北京持续在该区域展示实力，渔民捕鱼的空间日益被压缩。中国大型渔船也被指过度捕捞，耗尽鱼类资源。（<a class="css-1g7m0tk" href="https://cn.nytimes.com/asia-pacific/20210712/philippines-south-china-sea-fishermen/" title="">阅读本文中文版</a>）</p>
+      </li>
+      <li class="css-o74qhc eoqvrfo0">
+        <p class="css-1qtdsio evys1bk0">读者来信：斯诺之女：我父亲当年如何报道中国。《红星照耀中国》作者斯诺之女致信时报，对7月2日头版文章《<a class="css-1g7m0tk" href="https://cn.nytimes.com/china/20210702/xi-china-communist-party-anniversary/" title="">习近平“七一“讲话传达了什么信号？</a>》做出了回应。斯诺之女表示，中国纪念斯诺的行为令外界认为他的独立性受到影响。但她表示父亲相信自由、独立和真实报道，一直抵抗外界压力，也绝不会支持中国对记者的打压。（<a class="css-1g7m0tk" href="https://cn.nytimes.com/opinion/20210712/edgar-snow-china/" title="">阅读本文中文版</a>）</p>
+      </li>
+    </ul>
+    <aside class="css-ew4tgv" aria-label="companion column"></aside>
+    <figure class="css-jcw7oy e1g7ppur0" aria-label="media" role="group">
+Image      <figcaption class="css-1l44abu ewdxa0s0">
+古巴街头的示威人群。Credit...Yamil Lage/Agence France-Presse — Getty Images
+      </figcaption>
+    </figure>
+    <ul class="css-1le37cb ez3869y0">
+      <li class="css-o74qhc eoqvrfo0">
+        <p class="css-1qtdsio evys1bk0"><a class="css-1g7m0tk" href="https://www.nytimes.com/2021/07/11/world/americas/cuba-crisis-protests.html" title="">古巴爆发大规模示威活动</a>，抗议经济危机。数十年来规模最大的抗议运动正在席卷古巴，成千上万人在周日走上街头，抗议被大流行加剧的停电、食品和药品短缺。古巴政府将其长期存在的经济问题归咎于美国的贸易禁令；拜登则<a class="css-1g7m0tk" href="https://www.nytimes.com/2021/07/12/world/americas/biden-cuba-protests.html" title="">呼吁古巴政府听取示威者要求</a>，表示“我们与古巴人民站在一起”。</p>
+      </li>
+      <li class="css-o74qhc eoqvrfo0">
+        <p class="css-1qtdsio evys1bk0">海地动荡加剧，<a class="css-1g7m0tk" href="https://www.nytimes.com/live/2021/07/12/world/jovenel-moise-assassinated" title="">总统暗杀疑云仍未解</a>。警方逮捕了一名在海地出生、目前常驻佛罗里达的63岁医生，称其正密谋接任总统，雇佣私人保安公司策划谋杀。当局还逮捕了至少20名哥伦比亚人，称其为“外国雇佣兵”。但公众对官方的说法普遍持怀疑态度。许多人想知道，袭击者是如何绕过海地安全部队进入总统宅邸，在没有其他人死亡的情况下完成暗杀的。</p>
+      </li>
+      <li class="css-o74qhc eoqvrfo0">
+        <p class="css-1qtdsio evys1bk0"><a class="css-1g7m0tk" href="https://www.nytimes.com/2021/07/12/us/politics/child-tax-credit-payments.html" title="">美国计划发放儿童津贴</a>，每孩每月最多300美元。根据这一政策，除了最富裕的家庭外，大多数家庭的每个孩子都有资格每月获得不超过300美元的税收抵免或补贴。专家估计，这笔款项将使儿童贫困减少近一半。这将是美国社会福利政策的一个里程碑，使美国与其他许多富裕国家接轨。</p>
+      </li>
+      <li class="css-o74qhc eoqvrfo0">
+        <p class="css-1qtdsio evys1bk0"><a class="css-1g7m0tk" href="https://www.nytimes.com/2021/07/12/world/asia/afghanistan-us-general-steps-down.html" title="">美军驻阿富汗最高指挥官离任</a>。在喀布尔的美国和北约联军总部举行的低调仪式上，奥斯汀·米勒结束了他近三年的指挥官任期。出席仪式的美国中央司令部司令麦肯齐向在场的人保证，美国人没有抛弃阿富汗人民。这一仪式举办前，塔利班再次发动军事进攻，占领大片地区。</p>
+      </li>
+      <li class="css-o74qhc eoqvrfo0">
+        <p class="css-1qtdsio evys1bk0"><a class="css-1g7m0tk" href="https://www.nytimes.com/2021/07/12/world/asia/nepal-prime-minister-kp-sharma-oli.html" title="">尼泊尔最高法院剥夺总理职务</a>，并恢复两度被解散的议会。目前尚不清楚法院的裁决是否会平息尼泊尔自君主制向民主过渡中的最新政治动荡。反对派领导人对此表示欢迎，称其为尼泊尔宪法的胜利。但总理奥利的支持者认为，总理的人事任免权在议会，法院无权这样做。</p>
+      </li>
+    </ul>
+    <p class="css-pncxxs etfikam0">感谢阅读今天的简报，新读者请<a class="css-1g7m0tk" href="https://www.nytimes.com/newsletters/chinese-briefing" title="">点击此处订阅</a>。点击<a class="css-1g7m0tk" href="https://www.nytimes.com/zh-hans/series/daily-briefing-chinese" title="">这里</a>查看往日更新。欢迎在Twitter(<a class="css-1g7m0tk" href="https://twitter.com/nytchinese" title="" rel="noopener noreferrer" target="_blank">@nytchinese</a>)、<a class="css-1g7m0tk" href="https://www.instagram.com/cn.nytimes/?hl=zh-tw" title="" rel="noopener noreferrer" target="_blank">Instagram</a>和<a class="css-1g7m0tk" href="https://www.facebook.com/nytimeschinese.t/" title="" rel="noopener noreferrer" target="_blank">Facebook</a>上关注我们，了解更多中文资讯。也欢迎访问<a class="css-1g7m0tk" href="https://cn.nytimes.com/" title="">中文网首页</a>阅读更多新闻。如有任何建议和想法，请来信与我们分享：cn.letters@nytimes.com。</p>
+    <aside class="css-ew4tgv" aria-label="companion column"></aside>
+  </section>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#纽约时报 的其它文章</h4>
+    
+      <li>
+        <time>2021-07-12</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-12/%E5%8F%B0%E6%B9%BE%E4%B8%8EBioNTech%E8%BE%BE%E6%88%90%E7%96%AB%E8%8B%97%E8%B4%AD%E4%B9%B0%E5%8D%8F%E8%AE%AE-%E6%89%93%E7%A0%B4%E6%95%B0%E6%9C%88%E5%83%B5%E5%B1%80">
+          台湾与BioNTech达成疫苗购买协议，打破数月僵局
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-12</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-12/%E6%BC%AB%E6%B8%B8%E5%96%9C%E9%A9%AC%E6%8B%89%E9%9B%85-%E4%BD%93%E9%AA%8C%E4%B8%80%E4%B8%AA%E5%8F%98%E5%8C%96%E4%B8%AD%E7%9A%84%E8%A5%BF%E8%97%8F">
+          漫游喜马拉雅，体验一个变化中的西藏
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-12</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-12/%E4%BA%BF%E4%B8%87%E5%AF%8C%E7%BF%81%E5%B8%83%E5%85%B0%E6%A3%AE%E5%9C%86%E6%A2%A6-%E5%A4%AA%E7%A9%BA%E6%97%85%E6%B8%B8%E7%A6%BB%E6%88%91%E4%BB%AC%E8%BF%98%E6%9C%89%E5%A4%9A%E8%BF%9C">
+          亿万富翁布兰森圆梦，太空旅游离我们还有多远？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-12</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-12/%E5%9B%BD%E5%AE%89%E6%B3%95%E5%AE%9E%E6%96%BD%E5%90%8E-%E9%82%A3%E4%BA%9B%E9%80%89%E6%8B%A9%E7%A6%BB%E5%BC%80%E6%95%85%E5%9C%9F%E7%9A%84%E9%A6%99%E6%B8%AF%E4%BA%BA">
+          国安法实施后，那些选择离开故土的香港人
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-12/%E7%BE%8E%E9%A3%9F%E8%97%A5%E5%B1%80%E5%8A%A0%E8%A8%BB%E5%AC%8C%E7%94%9F%E7%96%AB%E8%8B%97%E8%AD%A6%E8%AA%9E-%E7%BD%95%E8%A6%8B%E7%A5%9E%E7%B6%93%E7%97%85%E8%AE%8A%E9%A2%A8%E9%9A%AA%E5%A2%9E">
+            前一篇：美食藥局加註嬌生疫苗警語 罕見神經病變風險增
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-12/AIT%E9%A6%96%E4%BD%8D%E5%A5%B3%E5%A4%84%E9%95%BF%E5%AD%99%E6%99%93%E9%9B%85%E6%98%A8%E6%99%9A%E6%8A%B5%E5%8F%B0">
+            后一篇：AIT首位女处长孙晓雅昨晚抵台
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-07-12/%E7%BE%8E%E9%A3%9F%E8%97%A5%E5%B1%80%E5%8A%A0%E8%A8%BB%E5%AC%8C%E7%94%9F%E7%96%AB%E8%8B%97%E8%AD%A6%E8%AA%9E-%E7%BD%95%E8%A6%8B%E7%A5%9E%E7%B6%93%E7%97%85%E8%AE%8A%E9%A2%A8%E9%9A%AA%E5%A2%9E'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-07-12/AIT%E9%A6%96%E4%BD%8D%E5%A5%B3%E5%A4%84%E9%95%BF%E5%AD%99%E6%99%93%E9%9B%85%E6%98%A8%E6%99%9A%E6%8A%B5%E5%8F%B0'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-07-12/%E6%BC%AB%E6%B8%B8%E5%96%9C%E9%A9%AC%E6%8B%89%E9%9B%85-%E4%BD%93%E9%AA%8C%E4%B8%80%E4%B8%AA%E5%8F%98%E5%8C%96%E4%B8%AD%E7%9A%84%E8%A5%BF%E8%97%8F'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-07-12/%E4%BA%BF%E4%B8%87%E5%AF%8C%E7%BF%81%E5%B8%83%E5%85%B0%E6%A3%AE%E5%9C%86%E6%A2%A6-%E5%A4%AA%E7%A9%BA%E6%97%85%E6%B8%B8%E7%A6%BB%E6%88%91%E4%BB%AC%E8%BF%98%E6%9C%89%E5%A4%9A%E8%BF%9C'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-07-12/%E7%BE%8E%E9%A3%9F%E8%97%A5%E5%B1%80%E5%8A%A0%E8%A8%BB%E5%AC%8C%E7%94%9F%E7%96%AB%E8%8B%97%E8%AD%A6%E8%AA%9E-%E7%BD%95%E8%A6%8B%E7%A5%9E%E7%B6%93%E7%97%85%E8%AE%8A%E9%A2%A8%E9%9A%AA%E5%A2%9E">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-07-12/AIT%E9%A6%96%E4%BD%8D%E5%A5%B3%E5%A4%84%E9%95%BF%E5%AD%99%E6%99%93%E9%9B%85%E6%98%A8%E6%99%9A%E6%8A%B5%E5%8F%B0">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<纽约时报>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-07-12/%E6%BC%AB%E6%B8%B8%E5%96%9C%E9%A9%AC%E6%8B%89%E9%9B%85-%E4%BD%93%E9%AA%8C%E4%B8%80%E4%B8%AA%E5%8F%98%E5%8C%96%E4%B8%AD%E7%9A%84%E8%A5%BF%E8%97%8F">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<纽约时报>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-07-12/%E4%BA%BF%E4%B8%87%E5%AF%8C%E7%BF%81%E5%B8%83%E5%85%B0%E6%A3%AE%E5%9C%86%E6%A2%A6-%E5%A4%AA%E7%A9%BA%E6%97%85%E6%B8%B8%E7%A6%BB%E6%88%91%E4%BB%AC%E8%BF%98%E6%9C%89%E5%A4%9A%E8%BF%9C">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

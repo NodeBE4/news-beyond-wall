@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>中国已经崛起，与它竞争也许是件好事 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+中国已经崛起，与它竞争也许是件好事
+——
+" />
+    <meta property="og:description" content="
+中国已经崛起，与它竞争也许是件好事
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="中国已经崛起，与它竞争也许是件好事" />
+    <meta property="twitter:title" content="中国已经崛起，与它竞争也许是件好事" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fcn.nytimes.com%2Fopinion%2F20210705%2Fchina-us-competition%2F&t=%E4%B8%AD%E5%9B%BD%E5%B7%B2%E7%BB%8F%E5%B4%9B%E8%B5%B7%EF%BC%8C%E4%B8%8E%E5%AE%83%E7%AB%9E%E4%BA%89%E4%B9%9F%E8%AE%B8%E6%98%AF%E4%BB%B6%E5%A5%BD%E4%BA%8B" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fopinion%2F20210705%2Fchina-us-competition%2F&t=%E4%B8%AD%E5%9B%BD%E5%B7%B2%E7%BB%8F%E5%B4%9B%E8%B5%B7%EF%BC%8C%E4%B8%8E%E5%AE%83%E7%AB%9E%E4%BA%89%E4%B9%9F%E8%AE%B8%E6%98%AF%E4%BB%B6%E5%A5%BD%E4%BA%8B&d=2021-07-05&e=
+中国已经崛起，与它竞争也许是件好事
+——
+
+
+  
+FARAH STOCKMAN
+  
+  2021年7月5日
+  
+    
+Lintao Zhang/Getty Images
+    
+  
+  
+    1990年代苏联解体后，美国人的绕场庆祝持续了几十年。我们将其视为资本主义对共产主义、自由对威权、民主对一党统治的胜利。我们以为游戏已经结束，我们已经赢了。我们已经到了“历史的终结”。我们认为中国已经进行了一些自由市场改革，向我们这样的体制过渡只是时间问题。美国人将对华贸易正常化，耐心等待着“中国的戈尔巴乔夫”。如果你还在等待，还是死了这条心吧。
+    7月1日，习近平主席领导下的中国共产党迎来了百岁生日，他从苏联解体中吸取到了截然不同的的教训。在他看来，苏联解体不是因为共产主义注定灭亡，而是因为苏联共产党的官员变得腐败，失去了信念。2013年，他作为党的领导人做出的首批承..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fopinion%2F20210705%2Fchina-us-competition%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://cn.nytimes.com/opinion/20210705/china-us-competition/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://cn.nytimes.com/opinion/20210705/china-us-competition/&text=中国已经崛起，与它竞争也许是件好事&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://cn.nytimes.com/opinion/20210705/china-us-competition/&title=中国已经崛起，与它竞争也许是件好事" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://cn.nytimes.com/opinion/20210705/china-us-competition/&title=中国已经崛起，与它竞争也许是件好事" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=中国已经崛起，与它竞争也许是件好事&body=
+中国已经崛起，与它竞争也许是件好事
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://cn.nytimes.com/opinion/20210705/china-us-competition/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://cn.nytimes.com/opinion/20210705/china-us-competition/&title=中国已经崛起，与它竞争也许是件好事&caption=
+中国已经崛起，与它竞争也许是件好事
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=中国已经崛起，与它竞争也许是件好事&url=https://cn.nytimes.com/opinion/20210705/china-us-competition/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>中国已经崛起，与它竞争也许是件好事</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-07-05
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#纽约时报 ">
+          纽约时报
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://cn.nytimes.com/opinion/20210705/china-us-competition/"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="纽约时报的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#纽约时报 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fopinion%2F20210705%2Fchina-us-competition%2F&t=%E4%B8%AD%E5%9B%BD%E5%B7%B2%E7%BB%8F%E5%B4%9B%E8%B5%B7%EF%BC%8C%E4%B8%8E%E5%AE%83%E7%AB%9E%E4%BA%89%E4%B9%9F%E8%AE%B8%E6%98%AF%E4%BB%B6%E5%A5%BD%E4%BA%8B&d=2021-07-05&e=
+中国已经崛起，与它竞争也许是件好事
+——
+
+
+  
+FARAH STOCKMAN
+  
+  2021年7月5日
+  
+    
+Lintao Zhang/Getty Images
+    
+  
+  
+    1990年代苏联解体后，美国人的绕场庆祝持续了几十年。我们将其视为资本主义对共产主义、自由对威权、民主对一党统治的胜利。我们以为游戏已经结束，我们已经赢了。我们已经到了“历史的终结”。我们认为中国已经进行了一些自由市场改革，向我们这样的体制过渡只是时间问题。美国人将对华贸易正常化，耐心等待着“中国的戈尔巴乔夫”。如果你还在等待，还是死了这条心吧。
+    7月1日，习近平主席领导下的中国共产党迎来了百岁生日，他从苏联解体中吸取到了截然不同的的教训。在他看来，苏联解体不是因为共产主义注定灭亡，而是因为苏联共产党的官员变得腐败，失去了信念。2013年，他作为党的领导人做出的首批承..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fopinion%2F20210705%2Fchina-us-competition%2F" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1625479621000-->
+<p><a href="https://cn.nytimes.com/opinion/20210705/china-us-competition/">中国已经崛起，与它竞争也许是件好事</a>
+——</p>
+
+<div>
+  <address>
+FARAH STOCKMAN
+  </address>
+  <time pudate="2021-07-05 05:45:32" datetime="2021-07-05 05:45:32">2021年7月5日</time>
+  <figure class="article-span-photo">
+<img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/06/30/opinion/30stockman-03/30stockman-03-master1050-v2.jpg" width="1050" height="665" />    <figcaption>
+<cite>Lintao Zhang/Getty Images</cite>
+    </figcaption>
+  </figure>
+  <section class="article-body">
+    <p>1990年代苏联解体后，美国人的绕场庆祝持续了几十年。我们将其视为资本主义对共产主义、自由对威权、民主对一党统治的胜利。我们以为游戏已经结束，我们已经赢了。我们已经到了“历史的终结”。我们认为中国已经进行了一些自由市场改革，向我们这样的体制过渡只是时间问题。美国人将对华贸易正常化，耐心等待着“<a rel="noopener noreferrer" target="_blank" href="https://asiasociety.org/blog/asia/xi-jinping-one-year-later-will-he-be-chinese-gorbachev" title="Link: https://asiasociety.org/blog/asia/xi-jinping-one-year-later-will-he-be-chinese-gorbachev">中国的戈尔巴乔夫</a>”。如果你还在等待，还是死了这条心吧。</p>
+    <p>7月1日，习近平主席领导下的中国共产党迎来了百岁生日，他从苏联解体中吸取到了截然不同的的教训。在他看来，苏联解体不是因为共产主义注定灭亡，而是因为苏联共产党的官员变得腐败，失去了信念。2013年，他作为党的领导人做出的首批承诺之一就是<a href="https://cn.nytimes.com/world/20130215/c15xi/" title="Link: https://www.nytimes.com/2013/02/15/world/asia/vowing-reform-chinas-leader-xi-jinping-airs-other-message-in-private.html?hpw">绝不会让这种情况在中国发生</a>。</p>
+    <p>关于哪种制度更好的大辩论并没有消退。事实上，它正在为下一轮做准备。但是，与其将同中国的竞争视为一场零和博弈，美国可以采取一种竞争方式，激励我们对自己的人民进行投资，而这正是我们一直以来应该做的。</p>
+    <p>习近平领导的共产党自1949年就开始统治中国，比地球上除朝鲜执政党之外任何一个幸存的政党都要长。中国共产党不仅仅比它的苏联扶植者活得更久，其经济也远比苏联更有活力、更繁荣。当共产党接管中国时，全国只有大约<a href="https://www.nytimes.com/2001/02/12/news/chinas-long-but-uneven-march-to-literacy.html" title="Link: https://www.nytimes.com/2001/02/12/news/chinas-long-but-uneven-march-to-literacy.html">20%</a>的人识字。如今，中国成年人的识字率达到<a rel="noopener noreferrer" target="_blank" href="https://data.worldbank.org/indicator/SE.ADT.LITR.ZS?locations=CN" title="Link: https://data.worldbank.org/indicator/SE.ADT.LITR.ZS?locations=CN">97%</a>。人均GDP从1960年的不到90美元增长到今天的超过1万美元。<a rel="noopener noreferrer" target="_blank" href="https://www.bloomberg.com/graphics/2021-china-accelerated-growth/" title="Link: https://www.bloomberg.com/graphics/2021-china-accelerated-growth/">到2028年，中国经济有望超过美国</a>，这一趋势正随着新冠大流行而加快。中国正在加强军事实力，在吉布提开设了第一个海外军事基地。但它的经济实力甚至更为强大。中国已经悄然成为世界上最大的贷款国，<a rel="noopener noreferrer" target="_blank" href="https://hbr.org/2020/02/how-much-money-does-the-world-owe-china" title="Link: https://hbr.org/2020/02/how-much-money-does-the-world-owe-china">超过</a>了世界银行(World Bank)和国际货币基金组织(International Monetary Fund)的总和。</p>
+    <p>“这不再是‘中国崛起’，”沈大伟(David Shambaugh)说，他著有几本关于中国的书，包括新作《中国领导人——从毛泽东到现在》(China’s Leaders: From Mao to Now)。“中国已经崛起了，它就在这儿。”</p>
+    <p>中国成为全球大国令华盛顿感到不安。拜登政府已经明确表示，它将中国视为21世纪最大的地缘政治挑战。几周前，民主党人和共和党人克服对彼此的憎恨，通过了《<a href="https://cn.nytimes.com/usa/20210608/senate-china-semiconductors/" title="Link: https://cn.nytimes.com/usa/20210608/senate-china-semiconductors/">2021年美国创新与竞争法案</a>》(United States Innovation and Competition Act of 2021)，该法案加大了对研究和高等教育的投资。在最近的一次北约峰会上，中国“日益增长的影响力”被视为对北约的挑战。这样的言论引发了人们对一场可怕新冷战的恐惧。</p>
+    <p>这是可以理解的，因为日益加剧的竞争有可能失去控制，并造成不可想象的损害。但如果管理得当，这场竞争实际上可能对美国、对中国和全世界都是一件好事。</p>
+    <p>拜登总统在2012年的话可能是最恰当的，当时<a rel="noopener noreferrer" target="_blank" href="http://edition.cnn.com/TRANSCRIPTS/1202/19/cnnitm.01.html" title="Link: http://edition.cnn.com/TRANSCRIPTS/1202/19/cnnitm.01.html">他告诉习近平</a>：“我们美国欢迎竞争。这是我们DNA的一部分，它推动着我们的国民奋起迎接挑战。”</p>
+    <p>我们资本主义国家至少应该明白一件事，竞争是健康的。垄断往往会导致懒惰、扭曲和赤裸裸的勒索。经济学中是这样，在涉及地缘政治优势时也是如此。超级大国的地位让美国忽视了发展中国家的抱负，同时在阿富汗和伊拉克的灾难性战争中挥霍鲜血和财富。它让美国人相信，资本主义和民主是全人类的命运，这一点如此明显，以至于我们甚至不必再为此辩护。它让我们幻想，我们的国家可以在不投资教育、公民学习或保持民主健康和强大的共同目标感的情况下得以运行。</p>
+    <p>与中国的经济竞争可以提供一条途径，复兴一直以来让美国变得强大的东西。如果中国带来的紧张感可以让美国人在科学研究和教育上花更多的钱，这是一件好事。如果它能让我们<a rel="noopener noreferrer" target="_blank" href="https://www.whitehouse.gov/wp-content/uploads/2021/06/100-day-supply-chain-review-report.pdf" title="Link: https://www.whitehouse.gov/wp-content/uploads/2021/06/100-day-supply-chain-review-report.pdf">确保我们的供应链更有弹性</a>，确保我们的经济不过于依赖任何一种来源，那就更好了。如果它能在美国引发关于如何促进集体繁荣而不仅仅是少数人利益的公开讨论，那么，谢天谢地。</p>
+    <p>如果中国的新冠外交能够推动美国像拜登承诺的那样“成为其他国家的疫苗库”，那将是一种双赢。如果西方国家为了对抗中国1.2万亿美元的“一带一路”计划，以更优惠的利率<a rel="noopener noreferrer" target="_blank" href="https://www.cfr.org/report/chinas-belt-and-road-implications-for-the-united-states/" title="Link: https://www.cfr.org/report/chinas-belt-and-road-implications-for-the-united-states/">向发展中国家提供更多贷款</a>，那么非洲和拉丁美洲国家可能最终能够得到公平的待遇。</p>
+    <p>“如果它能让美国走出低谷，我们至少可以在这个国家实现很多自由主义议程，”乔治·华盛顿大学(George Washington University)研究中国共产党的政治学家布鲁斯·迪克森(Bruce Dickson)告诉我，“从这个意义上说，与中国的竞争可能是一件好事。问题是，它会渗透到种族主义和民族主义言论中，而且在军事层面是非常真实的。”</p>
+    <p>具有讽刺意味的是，随着这种竞争的升温，中国和美国正在努力解决的是类似的问题：巨大的不平等、制造商转投低工资国家、环境破坏、不稳定的中产阶级不可能实现的梦想。我们必须保持沟通的大门敞开，携手应对共同挑战。</p>
+    <p>也许有一天，这种全球竞争将使中国领导人更深刻地反思繁荣和创新的真正来源，并开放他们的制度，进行更自由的思想交流。毕竟，共产党令人难以置信的成功不是来自它的共产主义，而是来自它使自由市场适应中国情况的能力。</p>
+    <p>中国一开始之所以没有获得世界强国的地位，是因为毛泽东的政策，他废除了私有财产，并对受过教育的专业人士发动了一场无休止的战争。这些政策导致了<a rel="noopener noreferrer" target="_blank" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1127087/" title="Link: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1127087/">人类历史上最严重的饥荒之一</a>、无休止的政治清洗以及<a rel="noopener noreferrer" target="_blank" href="https://www.scmp.com/news/china/policies-politics/article/1969051/former-red-guards-remember-time-when-killing-was-normal" title="Link: https://www.scmp.com/news/china/policies-politics/article/1969051/former-red-guards-remember-time-when-killing-was-normal">红卫兵的自相残杀</a>。</p>
+    <p>事实上，中国的成功要归功于后来邓小平发起的改革，他令中国的体制接受了私人所有制、公众反馈和基于结果而非意识形态的决策。如果说美国的体制是在民主党和共和党之间摇摆，那么中国的体制就在那些想加强对人民和经济控制的人和想要放松控制的人之间摇摆。邓小平是主张放松的人，他寻求从世界各地的最佳做法中学习。</p>
+    <p>习近平则是主张收紧的人，他压制异见人士，缩减了改革，恢复了一人统治。他所在的那一派的成员主要从其他国家了解什么是不该做的。他们研究了前苏联加盟共和国的“颜色革命”和“阿拉伯之春”，试图避免类似的命运。当他们发现企业家倾向于支持革命时，就招募中国新兴的资产阶级入党。当他们了解到苏联的经济孤立是一个弱点时，他们就融入了全球经济，成为西方经济不可或缺的一部分。</p>
+    <p>近年来，习近平似乎认为没有更多东西可学了。经过2008年金融危机和唐纳德·特朗普(Donald Trump)的当选，习近平视美国的失败为定局也是可以理解的。“东升西降，”<a href="https://cn.nytimes.com/china/20210304/xi-china-congress/" title="Link: https://cn.nytimes.com/china/20210304/xi-china-congress/">他在3月份宣称</a>。我对此不太确定。尽管美国民主最近很混乱，但我仍然会把赌注押在它身上，而不是独裁统治。如果我们投资自己，美国人就不用害怕竞争。</p>
+  </section>
+  <footer class="author-info">
+    <p>Farah Stockman 2020年加入时报编委会。她曾在时报担任记者四年，负责报道政治、社会运动以及种族议题。她此前供职于《波士顿环球报》，2016年曾获得普利策评论奖。欢迎在Twitter上关注她 <a rel="nofollow" target="_blank" href="https://twitter.com/fstockman">@fstockman</a>。</p>
+    <p>翻译：纽约时报中文网</p>
+    <p><a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/06/30/opinion/china-us-competition.html">点击查看本文英文版。</a></p>
+  </footer>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#纽约时报 的其它文章</h4>
+    
+      <li>
+        <time>2021-07-05</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-05/%E6%BB%B4%E6%BB%B4%E9%81%AD%E6%95%B4%E6%94%B9%E8%83%8C%E5%90%8E-%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E5%8F%91%E5%87%BA%E4%BA%86%E4%BB%80%E4%B9%88%E4%BF%A1%E5%8F%B7">
+          滴滴遭整改背后，中国政府发出了什么信号？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-05</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-05/%E7%AE%80%E6%8A%A5-%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E4%B8%BA%E4%BD%95%E6%95%B4%E6%B2%BB%E6%BB%B4%E6%BB%B4-%E7%BE%8E%E5%9B%BD%E7%A7%91%E6%8A%80%E5%B7%A8%E5%A4%B4%E8%B4%A8%E7%96%91%E6%B8%AF%E5%BA%9C%E6%8E%A8%E8%BF%9B%E4%BF%AE%E6%94%B9%E6%95%B0%E6%8D%AE%E5%AE%89%E5%85%A8%E6%B3%95">
+          简报：中国政府为何整治滴滴；美国科技巨头质疑港府推进修改数据安全法
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-05</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-05/%E6%8A%80%E6%9C%AF%E5%86%B7%E6%88%98%E4%B8%AD-%E4%B8%AD%E5%9B%BD%E5%BE%97%E4%B8%8D%E5%88%B0%E7%9A%84-%E6%9C%80%E5%A4%8D%E6%9D%82%E6%9C%BA%E5%99%A8">
+          技术冷战中，中国得不到的“最复杂机器”
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-05</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-05/%E6%BB%B4%E6%BB%B4%E8%A2%AB%E5%8B%92%E4%BB%A4%E4%B8%8B%E6%9E%B6%E6%95%B4%E6%94%B9-%E4%B8%AD%E5%9B%BD%E4%BA%92%E8%81%94%E7%BD%91%E7%9B%91%E7%AE%A1%E5%8A%9B%E5%BA%A6%E5%8D%87%E7%BA%A7">
+          滴滴被勒令下架整改，中国互联网监管力度升级
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-05/%E4%B8%AD%E5%9C%8B%E5%8F%8D%E6%8C%87%E7%BE%8E%E8%BF%AB%E4%BC%81%E6%A5%AD%E9%96%8B%E5%BE%8C%E9%96%80%E5%8F%96%E6%95%B8%E6%93%9A-%E5%A8%81%E8%84%85%E7%B6%B2%E8%B7%AF%E5%AE%89%E5%85%A8">
+            前一篇：中國反指美迫企業開後門取數據  威脅網路安全
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-05/%E5%8F%B0%E8%B5%84%E5%8C%96%E5%AD%A6%E5%85%AC%E5%8F%B8%E6%B3%B0%E5%9B%BD%E5%B7%A5%E5%8E%82%E7%88%86%E7%82%B8%E8%B5%B7%E7%81%AB-1%E6%AD%BB27%E4%BC%A4-%E6%B3%95%E5%9B%BD%E5%9B%BD%E9%99%85%E5%B9%BF%E6%92%AD%E7%94%B5%E5%8F%B0-RFI">
+            后一篇：台资化学公司泰国工厂爆炸起火 1死27伤 – 法国国际广播电台 - RFI
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-07-05/%E4%B8%AD%E5%9C%8B%E5%8F%8D%E6%8C%87%E7%BE%8E%E8%BF%AB%E4%BC%81%E6%A5%AD%E9%96%8B%E5%BE%8C%E9%96%80%E5%8F%96%E6%95%B8%E6%93%9A-%E5%A8%81%E8%84%85%E7%B6%B2%E8%B7%AF%E5%AE%89%E5%85%A8'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-07-05/%E5%8F%B0%E8%B5%84%E5%8C%96%E5%AD%A6%E5%85%AC%E5%8F%B8%E6%B3%B0%E5%9B%BD%E5%B7%A5%E5%8E%82%E7%88%86%E7%82%B8%E8%B5%B7%E7%81%AB-1%E6%AD%BB27%E4%BC%A4-%E6%B3%95%E5%9B%BD%E5%9B%BD%E9%99%85%E5%B9%BF%E6%92%AD%E7%94%B5%E5%8F%B0-RFI'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-07-05/%E7%AE%80%E6%8A%A5-%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E4%B8%BA%E4%BD%95%E6%95%B4%E6%B2%BB%E6%BB%B4%E6%BB%B4-%E7%BE%8E%E5%9B%BD%E7%A7%91%E6%8A%80%E5%B7%A8%E5%A4%B4%E8%B4%A8%E7%96%91%E6%B8%AF%E5%BA%9C%E6%8E%A8%E8%BF%9B%E4%BF%AE%E6%94%B9%E6%95%B0%E6%8D%AE%E5%AE%89%E5%85%A8%E6%B3%95'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-07-05/%E6%8A%80%E6%9C%AF%E5%86%B7%E6%88%98%E4%B8%AD-%E4%B8%AD%E5%9B%BD%E5%BE%97%E4%B8%8D%E5%88%B0%E7%9A%84-%E6%9C%80%E5%A4%8D%E6%9D%82%E6%9C%BA%E5%99%A8'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-07-05/%E4%B8%AD%E5%9C%8B%E5%8F%8D%E6%8C%87%E7%BE%8E%E8%BF%AB%E4%BC%81%E6%A5%AD%E9%96%8B%E5%BE%8C%E9%96%80%E5%8F%96%E6%95%B8%E6%93%9A-%E5%A8%81%E8%84%85%E7%B6%B2%E8%B7%AF%E5%AE%89%E5%85%A8">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-07-05/%E5%8F%B0%E8%B5%84%E5%8C%96%E5%AD%A6%E5%85%AC%E5%8F%B8%E6%B3%B0%E5%9B%BD%E5%B7%A5%E5%8E%82%E7%88%86%E7%82%B8%E8%B5%B7%E7%81%AB-1%E6%AD%BB27%E4%BC%A4-%E6%B3%95%E5%9B%BD%E5%9B%BD%E9%99%85%E5%B9%BF%E6%92%AD%E7%94%B5%E5%8F%B0-RFI">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<纽约时报>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-07-05/%E7%AE%80%E6%8A%A5-%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E4%B8%BA%E4%BD%95%E6%95%B4%E6%B2%BB%E6%BB%B4%E6%BB%B4-%E7%BE%8E%E5%9B%BD%E7%A7%91%E6%8A%80%E5%B7%A8%E5%A4%B4%E8%B4%A8%E7%96%91%E6%B8%AF%E5%BA%9C%E6%8E%A8%E8%BF%9B%E4%BF%AE%E6%94%B9%E6%95%B0%E6%8D%AE%E5%AE%89%E5%85%A8%E6%B3%95">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<纽约时报>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-07-05/%E6%8A%80%E6%9C%AF%E5%86%B7%E6%88%98%E4%B8%AD-%E4%B8%AD%E5%9B%BD%E5%BE%97%E4%B8%8D%E5%88%B0%E7%9A%84-%E6%9C%80%E5%A4%8D%E6%9D%82%E6%9C%BA%E5%99%A8">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

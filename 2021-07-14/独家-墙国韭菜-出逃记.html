@@ -1,0 +1,1745 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>独家：“墙国韭菜”出逃记 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+独家：“墙国韭菜”出逃记
+——
+" />
+    <meta property="og:description" content="
+独家：“墙国韭菜”出逃记
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="独家：“墙国韭菜”出逃记" />
+    <meta property="twitter:title" content="独家：“墙国韭菜”出逃记" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fyearning-to-be-free-he-escaped-from-china-20210715%2F5965675.html&t=%E7%8B%AC%E5%AE%B6%EF%BC%9A%E2%80%9C%E5%A2%99%E5%9B%BD%E9%9F%AD%E8%8F%9C%E2%80%9D%E5%87%BA%E9%80%83%E8%AE%B0" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fyearning-to-be-free-he-escaped-from-china-20210715%2F5965675.html&t=%E7%8B%AC%E5%AE%B6%EF%BC%9A%E2%80%9C%E5%A2%99%E5%9B%BD%E9%9F%AD%E8%8F%9C%E2%80%9D%E5%87%BA%E9%80%83%E8%AE%B0&d=2021-07-14&e=
+独家：“墙国韭菜”出逃记
+——
+
+
+  
+Wed, 14 Jul 2021 18:24:47 GMT
+  
+  
+中国90后徐峥
+  
+  6月的一天，徐峥和父母去照相馆拍了一张全家福。他告诉他们，他又要去打工了，不知道多久回来。他心里想的是，他们可能这辈子都不会相见了。
+  在深圳蛇口海关出境时，他佯装淡定地一一回答公安边防的提问——他持有乌克兰的商务签证，去考察当地的餐馆市场，计划开一家中餐馆，一个月后回来。警察反复检查他的文件，又把他带到一间小屋里继续盘问。徐峥的心提到了嗓子眼，一旦出现任何纰漏，不仅行程泡汤，最担心的是万一护照被边防人员剪角，他就再也不可能“逃离墙国”了。
+  所幸的是，一个多小时后他被放行了。6月25日这天，坐在从蛇口开往香港的船上，他的心里五味杂陈。一到香港机场，泪水就涌上眼眶，他想到2019年8月数十万示威者曾在这里静坐，抗议警方暴行，要求政府回应他们..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Fyearning-to-be-free-he-escaped-from-china-20210715%2F5965675.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.voachinese.com/a/yearning-to-be-free-he-escaped-from-china-20210715/5965675.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.voachinese.com/a/yearning-to-be-free-he-escaped-from-china-20210715/5965675.html&text=独家：“墙国韭菜”出逃记&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.voachinese.com/a/yearning-to-be-free-he-escaped-from-china-20210715/5965675.html&title=独家：“墙国韭菜”出逃记" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.voachinese.com/a/yearning-to-be-free-he-escaped-from-china-20210715/5965675.html&title=独家：“墙国韭菜”出逃记" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=独家：“墙国韭菜”出逃记&body=
+独家：“墙国韭菜”出逃记
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.voachinese.com/a/yearning-to-be-free-he-escaped-from-china-20210715/5965675.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.voachinese.com/a/yearning-to-be-free-he-escaped-from-china-20210715/5965675.html&title=独家：“墙国韭菜”出逃记&caption=
+独家：“墙国韭菜”出逃记
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=独家：“墙国韭菜”出逃记&url=https://www.voachinese.com/a/yearning-to-be-free-he-escaped-from-china-20210715/5965675.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>独家：“墙国韭菜”出逃记</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-07-14
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#美国之音 ">
+          美国之音
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.voachinese.com/a/yearning-to-be-free-he-escaped-from-china-20210715/5965675.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="美国之音的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#美国之音 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.voachinese.com%2Fa%2Fyearning-to-be-free-he-escaped-from-china-20210715%2F5965675.html&t=%E7%8B%AC%E5%AE%B6%EF%BC%9A%E2%80%9C%E5%A2%99%E5%9B%BD%E9%9F%AD%E8%8F%9C%E2%80%9D%E5%87%BA%E9%80%83%E8%AE%B0&d=2021-07-14&e=
+独家：“墙国韭菜”出逃记
+——
+
+
+  
+Wed, 14 Jul 2021 18:24:47 GMT
+  
+  
+中国90后徐峥
+  
+  6月的一天，徐峥和父母去照相馆拍了一张全家福。他告诉他们，他又要去打工了，不知道多久回来。他心里想的是，他们可能这辈子都不会相见了。
+  在深圳蛇口海关出境时，他佯装淡定地一一回答公安边防的提问——他持有乌克兰的商务签证，去考察当地的餐馆市场，计划开一家中餐馆，一个月后回来。警察反复检查他的文件，又把他带到一间小屋里继续盘问。徐峥的心提到了嗓子眼，一旦出现任何纰漏，不仅行程泡汤，最担心的是万一护照被边防人员剪角，他就再也不可能“逃离墙国”了。
+  所幸的是，一个多小时后他被放行了。6月25日这天，坐在从蛇口开往香港的船上，他的心里五味杂陈。一到香港机场，泪水就涌上眼眶，他想到2019年8月数十万示威者曾在这里静坐，抗议警方暴行，要求政府回应他们..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.voachinese.com%2Fa%2Fyearning-to-be-free-he-escaped-from-china-20210715%2F5965675.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1626287943000-->
+<p><a href="https://www.voachinese.com/a/yearning-to-be-free-he-escaped-from-china-20210715/5965675.html">独家：“墙国韭菜”出逃记</a>
+——</p>
+
+<div>
+  <div>
+<em>Wed, 14 Jul 2021 18:24:47 GMT</em>
+  </div>
+<img src="https://images.weserv.nl?url=gdb.voanews.com/D23C243F-D5FF-4087-A4D0-8875980A2169_cx0_cy49_cw0_r1_s_w900.jpg" width="100%" />  <div>
+<small style="color: #999;">中国90后徐峥</small>
+  </div>
+  <p>6月的一天，徐峥和父母去照相馆拍了一张全家福。他告诉他们，他又要去打工了，不知道多久回来。他心里想的是，他们可能这辈子都不会相见了。</p>
+  <p>在深圳蛇口海关出境时，他佯装淡定地一一回答公安边防的提问——他持有乌克兰的商务签证，去考察当地的餐馆市场，计划开一家中餐馆，一个月后回来。警察反复检查他的文件，又把他带到一间小屋里继续盘问。徐峥的心提到了嗓子眼，一旦出现任何纰漏，不仅行程泡汤，最担心的是万一护照被边防人员剪角，他就再也不可能“逃离墙国”了。</p>
+  <p>所幸的是，一个多小时后他被放行了。6月25日这天，坐在从蛇口开往香港的船上，他的心里五味杂陈。一到香港机场，泪水就涌上眼眶，他想到2019年8月数十万示威者曾在这里静坐，抗议警方暴行，要求政府回应他们的诉求。</p>
+  <p>当飞机终于在夜色中驶离香港时，F他再也忍不住地号啕大哭。</p>
+  <p>“我的眼泪一直掉，我也不知道我将来能去哪里，但是我知道我说话，我再也不会被中国的警察喝茶抓捕这些了，” 徐峥对美国之音说。</p>
+  <p>近日，徐峥在推特上以“希尔@antichinaccp”的化名详细记录了“逃离墙国”的曲折经历，包括如何应对中国海关的严苛盘查，引来大量关注。</p>
+  <p>他选择在7月1日中国共产党庆祝建党百年这天从乌克兰首都基辅接受美国之音的视频访问。</p>
+  <p>“我不打算匿名了，就堂堂正正地视频，说出自己的真实经历，”他说。</p>
+  <p><strong>因为“六四”被退学</strong></p>
+  <p>徐峥自称是一名“墙国韭菜”，23岁，四川雅安人，高中肄业。他说，自己读书晚，20岁才高中毕业，但是2019年高考前几天，他被学校劝退，因为他和学校党委书记围绕89天安门事件吵了一架。</p>
+  <p>“那个时候我们老师给我们洗脑，说当年资产阶级煽动学生暴乱，想推翻共和国之类，我说那不是真的，学生因为反对贪污腐败，想要言论自由才走上街头。然后老师就把我举报了，通知了学校的党委书记。”</p>
+  <p>2014年一个偶然的机会，16岁的徐峥开始 “翻墙”。当时香港人争取民主和普选的“雨伞运动”正如火如荼。学会翻墙后，他说自己看到数不清的中国政府打压人权的悲惨案例，从709维权律师大抓捕，到拘押上百万新疆穆斯林，还有因为被指泄露中国最高领导人隐私被重判14年的牛腾宇……</p>
+  <p>“我知道这些以后内心非常痛苦，但是我又没有办法在中国的公开场合去声援他们，因为那样的话我也会有生命之灾，所以我一直是很煎熬的，” 徐峥说。</p>
+  <p>此间，他也有过两次被“喝茶”的经历：一次是2018年因为用QQ邮箱签署了美国白宫网站上抗议北京新疆政策的公开信，他被警察直接从学校带走；还有一次是2019年成都秋雨教会牧师王怡因“煽颠罪”被判刑后，他在微信上喊出“王怡牧师无罪”后被当地派出所传唤。</p>
+  <p><strong>铭记2019年香港的夏天</strong></p>
+  <p>被退学后两天后，徐峥在深圳罗湖区一家便利店谋得了一份工作。他回忆说，那时深圳遍地都是“三和大神”（深圳市龙华新区三和人力市场周边凭借日结薪水和低廉成本生活的外来务工人员），找个工作不是难事。</p>
+  <p>“我之前做过很多工作，都是所谓的低端人口工作，比如外卖员、快递员、餐厅服务员、收银员这些工作。因为我没有办法读到大学，就没有办法找到看起来比较体面的工作，”他说。</p>
+  <p>徐峥告诉美国之音，选择去深圳打工的另一个原因是当时香港正在爆发“返送中”抗议，他想加入港人，做一次真正的“反贼”。</p>
+  <p>那时大陆居民办理港澳通行证并不困难。在便利店打工期间，徐峥偷偷去过两次香港。他参与了200万人的大游行，听到整整一条街的人都在喊“打倒共产党”；他看到警察用催泪弹击中了一个小孩的头，鲜血直流，母亲在一旁绝望地哭泣；他与香港市民传阅的《苹果日报》，如今这份报纸已经被迫停刊。</p>
+  <p>“我会铭记一辈子，2019年的夏天，”徐峥说。</p>
+  <p><strong>秘密策划出逃路线</strong></p>
+  <p>那时他还没有“逃离墙国”的念头。他还期盼美中贸易战可能会迫使中国开放。可是随着新冠疫情的暴发，中国政府开始实行严格的旅行限制。自去年初，中国暂停办理因私护照的消息四处流传。不断有人在网上发布自己办护照和出境被拒的消息。</p>
+  <p>当年11月，中国国家移民管理局尹成基在一次有关疫情防控的新闻发布会上说，中国会继续“严格控制不必要人员跨境活动”， “从严审批中国公民旅游等非必要事由的出入境证件申请，劝阻和限制内地居民旅游、探亲、访友等非必要、非急需出入境活动。 ”</p>
+  <p>徐峥坐不住了。</p>
+  <p>“我在推特上看到了大量的信息，显示习近平要闭关锁国，结合办护照这么难，我开始紧张了，今年2、3月就开始有了离开的想法，”他说。</p>
+  <p>“我这样的墙国韭菜，想取得发达国家的签证非常困难，只好作罢，但是没有签证绝对无法通过内地的口岸边检，”他说。</p>
+  <p>他开始研究各个国家的入境和隔离政策，结合推友的分享和自己的经济能力，策划出逃路线。经过几个月的秘密筹划，他决定从蛇口出关，坐船到香港，再从那里经伊斯坦布尔飞抵乌克兰首都基辅。</p>
+  <p> “我是躺平族，打工时不会花很多工资，一直存钱，机票以及各种手续用了将近两万元，我存了一年，” 徐峥说。</p>
+  <p>他没有把自己的计划告诉家人和朋友。他觉得中国现在弥漫着一股文革的气氛，担心被人举报。他说，周围的同龄人中至少八成都是和官方站在一起的“粉红”，他其实没什么能说心里话的朋友。</p>
+  <p><strong>警察来了</strong></p>
+  <p>7月1日，北京正在举办盛大的庆祝中国共产党建党100周年的活动，徐峥在这一天来到中国驻基辅大使馆前抗议，也第一次将自己的照片发布在推特上。</p>
+  <p>“这一百年来，中国共产党给中国人带来了无穷无尽的压迫和折磨。我作为一个手无寸铁的韭菜，只能卑微的站在中共国大使馆门口举牌发声，”他写道。</p>
+  <p>几个小时后，中国警察找到了徐峥在四川老家的父母。徐峥说，连日来，警方不断骚扰他们——监控电话、控制行动自由，还到家中抄走了他留在中国的手机、电脑等物品。</p>
+  <p>母亲通过微信和他语音时，父亲在一旁对他破口大骂：“你个狗汉奸，国家有什么不好？你赶紧回来自首，要不就死在国外，我怎么生出你这样的东西！” </p>
+  <p>徐峥告诉美国之音，他的父母都是老实人，也是普普通通的“墙国韭菜”，父亲是国企的下岗职工，母亲是个体户。他们不是党员，也不是既得利益者，拥护共产党仅仅是因为党国的宣传。</p>
+  <p>“可是就算他们心里向着红，中共也不会因为他们亲政府而不去骚扰他们，”他说。</p>
+  <p><strong>乌克兰不是久留之地</strong></p>
+  <p>那次在大使馆门口公开露面后，徐峥收到了很多辱骂他的留言，还有人威胁说，他的照片已经被发到当地“爱国华人群”里，如果他露面就会尝到“过街老鼠人人喊打”的滋味。</p>
+  <p>“我在这里也是很担惊受怕的，因为中国政府和中国大使馆的这里有专门的微信群，和统战部合作，每天都在收集在基辅的这些华人的思想动态，我的行踪可能会被人记录，”他说。</p>
+  <p>就在徐峥离开中国的同一天，据美联社报道，北京以扣押50余万株准备出口到乌克兰的中国疫苗相威胁，迫使该国撤回了一项支持彻查新疆人权状况的声明。 这项由加拿大发起的声明获得了40多个国家的联署。</p>
+  <p>这个消息对徐峥来说宛如晴天霹雳。他觉得乌克兰不是久留之地。他担心中国会进一步施压将他遣返。在基辅，他见到了此前因为<a class="wsw__a" href="https://www.voachinese.com/a/big-brother-wants-you-chinese-teens-living-abroad-harassed-for-online-posts-2021227/5794945.html">在网上发表批评北京的言论被警方追逃的重庆青年王靖渝</a>。5月，王靖渝在赴美途中中转迪拜时曾被当地警方逮捕，险些被遣返中国。</p>
+  <p><strong>一场没有回头路的逃亡</strong></p>
+  <p>7月11日，在基辅度过了焦虑不安的十余天后，徐峥搭上了一架从乌克兰途径荷兰飞往厄瓜多尔的航班，并选择在阿姆斯特丹“跳机”。他说，荷兰反对香港“国安法”，谴责新疆集中营，这样的国家能保护人权。 他希望能在那里申请政治庇护。</p>
+  <p>“我真的不敢再回中国去了。在中国任何批评习近平的都会受到严厉的折磨，” 向机场荷兰警方申诉前，他给美国之音发来最后一条视频。</p>
+  <p>徐峥不知道自己下一步会走向哪里，命运将会如何，他只知道没有回头路了。他会害怕，觉得孤立无援，但是不曾后悔。</p>
+  <p>有时他会望着和父母在照相馆拍的那张照片默默流泪，尽管自己与他们政见不同，但毕竟一起生活了20多年，那份亲情是永远割舍不断的。</p>
+  <p>他还想对“墙国”里每一位和他一样渴望自由的人说，走出来的机会就像1949年登上去台湾的船那样珍贵，希望大家都能活在不会有文字狱的地方。</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#美国之音 的其它文章</h4>
+    
+    
+      <li>
+        <time>2021-07-14</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-14/%E9%A6%99%E6%B8%AF%E5%9B%BD%E5%AE%89%E6%B3%95%E4%B8%8B%E9%A6%96%E5%B1%8A%E4%B9%A6%E5%B1%95-%E6%9C%89%E4%B9%A6%E5%95%86%E8%87%AA%E6%88%91%E5%AE%A1%E6%9F%A5%E4%BB%8D%E5%85%8B%E6%9C%8D%E6%81%90%E6%83%A7%E5%94%AE%E5%8D%96%E7%A4%BE%E8%BF%90%E4%B9%A6%E7%B1%8D">
+          香港国安法下首届书展 有书商自我审查仍克服恐惧售卖社运书籍
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-14</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-14/%E5%BE%AE%E8%BD%AF%E5%86%8D%E9%81%AD%E9%BB%91%E5%AE%A2%E5%A4%A7%E8%A7%84%E6%A8%A1%E6%94%BB%E5%87%BB-%E4%B8%AD%E5%9B%BD%E7%BD%91%E7%BB%9C%E9%97%B4%E8%B0%8D%E8%83%BD%E9%87%8F-%E7%AA%81%E9%A3%9E%E7%8C%9B%E8%BF%9B">
+          微软再遭黑客大规模攻击，中国网络间谍能量“突飞猛进”
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-14</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-14/%E7%BB%BF%E8%89%B2%E5%92%8C%E5%B9%B3%E7%A7%B0%E6%B0%94%E5%80%99%E5%8F%98%E5%8C%96%E5%8D%B1%E5%8F%8A%E4%B8%AD%E5%9B%BD%E4%B8%BB%E8%A6%81%E5%9F%8E%E5%B8%82%E7%BE%A4-%E5%91%BC%E5%90%81%E5%BA%94%E5%AF%B9%E7%B3%BB%E7%BB%9F%E6%80%A7%E9%A3%8E%E9%99%A9%E6%8C%91%E6%88%98">
+          绿色和平称气候变化危及中国主要城市群 呼吁应对系统性风险挑战
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-14/%E5%BE%AE%E8%BD%AF%E5%86%8D%E9%81%AD%E9%BB%91%E5%AE%A2%E5%A4%A7%E8%A7%84%E6%A8%A1%E6%94%BB%E5%87%BB-%E4%B8%AD%E5%9B%BD%E7%BD%91%E7%BB%9C%E9%97%B4%E8%B0%8D%E8%83%BD%E9%87%8F-%E7%AA%81%E9%A3%9E%E7%8C%9B%E8%BF%9B">
+            前一篇：微软再遭黑客大规模攻击，中国网络间谍能量“突飞猛进”
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-14/%E9%A6%99%E6%B8%AF%E5%9B%BD%E5%AE%89%E6%B3%95%E4%B8%8B%E9%A6%96%E5%B1%8A%E4%B9%A6%E5%B1%95-%E6%9C%89%E4%B9%A6%E5%95%86%E8%87%AA%E6%88%91%E5%AE%A1%E6%9F%A5%E4%BB%8D%E5%85%8B%E6%9C%8D%E6%81%90%E6%83%A7%E5%94%AE%E5%8D%96%E7%A4%BE%E8%BF%90%E4%B9%A6%E7%B1%8D">
+            后一篇：香港国安法下首届书展 有书商自我审查仍克服恐惧售卖社运书籍
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-07-14/%E5%BE%AE%E8%BD%AF%E5%86%8D%E9%81%AD%E9%BB%91%E5%AE%A2%E5%A4%A7%E8%A7%84%E6%A8%A1%E6%94%BB%E5%87%BB-%E4%B8%AD%E5%9B%BD%E7%BD%91%E7%BB%9C%E9%97%B4%E8%B0%8D%E8%83%BD%E9%87%8F-%E7%AA%81%E9%A3%9E%E7%8C%9B%E8%BF%9B'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-07-14/%E9%A6%99%E6%B8%AF%E5%9B%BD%E5%AE%89%E6%B3%95%E4%B8%8B%E9%A6%96%E5%B1%8A%E4%B9%A6%E5%B1%95-%E6%9C%89%E4%B9%A6%E5%95%86%E8%87%AA%E6%88%91%E5%AE%A1%E6%9F%A5%E4%BB%8D%E5%85%8B%E6%9C%8D%E6%81%90%E6%83%A7%E5%94%AE%E5%8D%96%E7%A4%BE%E8%BF%90%E4%B9%A6%E7%B1%8D'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-07-14/%E9%A6%99%E6%B8%AF%E5%9B%BD%E5%AE%89%E6%B3%95%E4%B8%8B%E9%A6%96%E5%B1%8A%E4%B9%A6%E5%B1%95-%E6%9C%89%E4%B9%A6%E5%95%86%E8%87%AA%E6%88%91%E5%AE%A1%E6%9F%A5%E4%BB%8D%E5%85%8B%E6%9C%8D%E6%81%90%E6%83%A7%E5%94%AE%E5%8D%96%E7%A4%BE%E8%BF%90%E4%B9%A6%E7%B1%8D'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-07-14/%E5%BE%AE%E8%BD%AF%E5%86%8D%E9%81%AD%E9%BB%91%E5%AE%A2%E5%A4%A7%E8%A7%84%E6%A8%A1%E6%94%BB%E5%87%BB-%E4%B8%AD%E5%9B%BD%E7%BD%91%E7%BB%9C%E9%97%B4%E8%B0%8D%E8%83%BD%E9%87%8F-%E7%AA%81%E9%A3%9E%E7%8C%9B%E8%BF%9B'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-07-14/%E5%BE%AE%E8%BD%AF%E5%86%8D%E9%81%AD%E9%BB%91%E5%AE%A2%E5%A4%A7%E8%A7%84%E6%A8%A1%E6%94%BB%E5%87%BB-%E4%B8%AD%E5%9B%BD%E7%BD%91%E7%BB%9C%E9%97%B4%E8%B0%8D%E8%83%BD%E9%87%8F-%E7%AA%81%E9%A3%9E%E7%8C%9B%E8%BF%9B">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-07-14/%E9%A6%99%E6%B8%AF%E5%9B%BD%E5%AE%89%E6%B3%95%E4%B8%8B%E9%A6%96%E5%B1%8A%E4%B9%A6%E5%B1%95-%E6%9C%89%E4%B9%A6%E5%95%86%E8%87%AA%E6%88%91%E5%AE%A1%E6%9F%A5%E4%BB%8D%E5%85%8B%E6%9C%8D%E6%81%90%E6%83%A7%E5%94%AE%E5%8D%96%E7%A4%BE%E8%BF%90%E4%B9%A6%E7%B1%8D">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<美国之音>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-07-14/%E9%A6%99%E6%B8%AF%E5%9B%BD%E5%AE%89%E6%B3%95%E4%B8%8B%E9%A6%96%E5%B1%8A%E4%B9%A6%E5%B1%95-%E6%9C%89%E4%B9%A6%E5%95%86%E8%87%AA%E6%88%91%E5%AE%A1%E6%9F%A5%E4%BB%8D%E5%85%8B%E6%9C%8D%E6%81%90%E6%83%A7%E5%94%AE%E5%8D%96%E7%A4%BE%E8%BF%90%E4%B9%A6%E7%B1%8D">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<美国之音>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-07-14/%E5%BE%AE%E8%BD%AF%E5%86%8D%E9%81%AD%E9%BB%91%E5%AE%A2%E5%A4%A7%E8%A7%84%E6%A8%A1%E6%94%BB%E5%87%BB-%E4%B8%AD%E5%9B%BD%E7%BD%91%E7%BB%9C%E9%97%B4%E8%B0%8D%E8%83%BD%E9%87%8F-%E7%AA%81%E9%A3%9E%E7%8C%9B%E8%BF%9B">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

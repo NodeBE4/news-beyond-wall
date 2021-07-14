@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>意轩书屋 | 法西斯美学的诱惑——崇高感、归属感、自豪感 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+意轩书屋 | 法西斯美学的诱惑——崇高感、归属感、自豪感
+——
+" />
+    <meta property="og:description" content="
+意轩书屋 | 法西斯美学的诱惑——崇高感、归属感、自豪感
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="意轩书屋 | 法西斯美学的诱惑——崇高感、归属感、自豪感" />
+    <meta property="twitter:title" content="意轩书屋 | 法西斯美学的诱惑——崇高感、归属感、自豪感" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F668099.html&t=%E6%84%8F%E8%BD%A9%E4%B9%A6%E5%B1%8B+%7C+%E6%B3%95%E8%A5%BF%E6%96%AF%E7%BE%8E%E5%AD%A6%E7%9A%84%E8%AF%B1%E6%83%91%E2%80%94%E2%80%94%E5%B4%87%E9%AB%98%E6%84%9F%E3%80%81%E5%BD%92%E5%B1%9E%E6%84%9F%E3%80%81%E8%87%AA%E8%B1%AA%E6%84%9F" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F668099.html&t=%E6%84%8F%E8%BD%A9%E4%B9%A6%E5%B1%8B+%7C+%E6%B3%95%E8%A5%BF%E6%96%AF%E7%BE%8E%E5%AD%A6%E7%9A%84%E8%AF%B1%E6%83%91%E2%80%94%E2%80%94%E5%B4%87%E9%AB%98%E6%84%9F%E3%80%81%E5%BD%92%E5%B1%9E%E6%84%9F%E3%80%81%E8%87%AA%E8%B1%AA%E6%84%9F&d=2021-07-10&e=
+意轩书屋 | 法西斯美学的诱惑——崇高感、归属感、自豪感
+——
+
+
+  
+  
+    “法西斯美学产生于对控制、屈服的行为、非凡努力以及忍受痛苦的着迷，它们赞同两种看似相反的状态，即自大狂和屈服。征服与被征服的关系以典型的盛大庆典的形式表现出来：群众的大量聚集；将人变成物；物的倍增或复制；人群集中在一个具有至高无上权力的、具有无限个人魅力的领袖人物或力量周围。”——苏姗·桑塔格
+  
+  所谓法西斯美学，不是为了美化法西斯，而是一种具有鲜明政治特色的美学风格。人们总是探讨它，是因为法西斯尽管远去，但是它给人类施加的影响一直存在。
+  法西斯美学是上世纪三十年代诞生于法西斯专政下某些文艺作品的美学风格的统称。此概念源自意大利法西斯主义者墨索里尼的一句名言，“所谓法西斯主义，首先是一种美。”
+  
+  戈培尔在1933年说，政治“就是现存的最高级的和最综合的艺术。我们在制订现代德国政..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F668099.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/668099.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/668099.html&text=意轩书屋 | 法西斯美学的诱惑——崇高感、归属感、自豪感&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/668099.html&title=意轩书屋 | 法西斯美学的诱惑——崇高感、归属感、自豪感" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/668099.html&title=意轩书屋 | 法西斯美学的诱惑——崇高感、归属感、自豪感" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=意轩书屋 | 法西斯美学的诱惑——崇高感、归属感、自豪感&body=
+意轩书屋 | 法西斯美学的诱惑——崇高感、归属感、自豪感
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/668099.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/668099.html&title=意轩书屋 | 法西斯美学的诱惑——崇高感、归属感、自豪感&caption=
+意轩书屋 | 法西斯美学的诱惑——崇高感、归属感、自豪感
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=意轩书屋 | 法西斯美学的诱惑——崇高感、归属感、自豪感&url=https://chinadigitaltimes.net/chinese/668099.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>意轩书屋 | 法西斯美学的诱惑——崇高感、归属感、自豪感</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-07-10
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/668099.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F668099.html&t=%E6%84%8F%E8%BD%A9%E4%B9%A6%E5%B1%8B+%7C+%E6%B3%95%E8%A5%BF%E6%96%AF%E7%BE%8E%E5%AD%A6%E7%9A%84%E8%AF%B1%E6%83%91%E2%80%94%E2%80%94%E5%B4%87%E9%AB%98%E6%84%9F%E3%80%81%E5%BD%92%E5%B1%9E%E6%84%9F%E3%80%81%E8%87%AA%E8%B1%AA%E6%84%9F&d=2021-07-10&e=
+意轩书屋 | 法西斯美学的诱惑——崇高感、归属感、自豪感
+——
+
+
+  
+  
+    “法西斯美学产生于对控制、屈服的行为、非凡努力以及忍受痛苦的着迷，它们赞同两种看似相反的状态，即自大狂和屈服。征服与被征服的关系以典型的盛大庆典的形式表现出来：群众的大量聚集；将人变成物；物的倍增或复制；人群集中在一个具有至高无上权力的、具有无限个人魅力的领袖人物或力量周围。”——苏姗·桑塔格
+  
+  所谓法西斯美学，不是为了美化法西斯，而是一种具有鲜明政治特色的美学风格。人们总是探讨它，是因为法西斯尽管远去，但是它给人类施加的影响一直存在。
+  法西斯美学是上世纪三十年代诞生于法西斯专政下某些文艺作品的美学风格的统称。此概念源自意大利法西斯主义者墨索里尼的一句名言，“所谓法西斯主义，首先是一种美。”
+  
+  戈培尔在1933年说，政治“就是现存的最高级的和最综合的艺术。我们在制订现代德国政..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F668099.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1625926343000-->
+<p><a href="https://chinadigitaltimes.net/chinese/668099.html">意轩书屋 | 法西斯美学的诱惑——崇高感、归属感、自豪感</a>
+——</p>
+
+<div>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/07/image-1625925574817.png" alt="file" /></p>
+  <blockquote>
+    <p>“法西斯美学产生于对控制、屈服的行为、非凡努力以及忍受痛苦的着迷，它们赞同两种看似相反的状态，即自大狂和屈服。征服与被征服的关系以典型的盛大庆典的形式表现出来：群众的大量聚集；将人变成物；物的倍增或复制；人群集中在一个具有至高无上权力的、具有无限个人魅力的领袖人物或力量周围。”——苏姗·桑塔格</p>
+  </blockquote>
+  <p>所谓法西斯美学，不是为了美化法西斯，而是一种具有鲜明政治特色的美学风格。人们总是探讨它，是因为法西斯尽管远去，但是它给人类施加的影响一直存在。</p>
+  <p>法西斯美学是上世纪三十年代诞生于法西斯专政下某些文艺作品的美学风格的统称。此概念源自意大利法西斯主义者墨索里尼的一句名言，“所谓法西斯主义，首先是一种美。”</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/07/image-1625925742204.png" alt="file" /></p>
+  <p>戈培尔在1933年说，政治“就是现存的最高级的和最综合的艺术。我们在制订现代德国政策时，感到我们自己就是艺术家……艺术和艺术家的任务在于成形，定形，消除有害的东西，为健康的人创造自由”。</p>
+  <p>纳粹的电影，例如《意志的胜利》和《奥林匹亚》，至今仍被很多人认为是纪录片的巅峰之作。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/07/image-1625925825385.png" alt="file" /></p>
+  <p>《意志的胜利》是瑞芬斯塔尔1934年拍摄的一部纪录片，记录对象是纳粹党1934年的纽伦堡大会。瑞芬斯塔尔在这部影片中树立了一种美学，被后来的导演如弗兰克·卡普拉、以及我国的一些导演等一再模仿。她的镜头语言非常适合表现人类的强健、更适合表现宏大叙事。</p>
+  <p>影片记述了1934年纳粹党的全国党代会，意在宣扬德国的复兴。其中有我们熟悉的纳粹宣传，为了德国的未来而无私奉献，全民要团结在元首周围，建立一个没有阶级差异的社会，要平等更要服从，要和平更要强大。这些宣传都来自希特勒和其他纳粹头目的演讲。里芬斯塔尔把那些毫无美感的冗长发言剪辑掉，只留下简短而煽情的号召。她把更多镜头投向会场外的队伍，扛着铁揪的劳工阵线成员，手捧丰收作物的农民，朝气蓬勃的青年团，步伐整齐的冲锋队、党卫军和国防军。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/07/image-1625925880738.png" alt="file" /></p>
+  <p>据说，由于影片展示的不可抵御的美和力量，电影学院的教授们甚至不敢在课堂上把它放完，他们担心学生们看完影片，会变成真正的纳粹。</p>
+  <blockquote>
+    <p>法西斯美学从对情境的控制，对服从行为和狂热效应的迷恋中得到发挥（并找到正当理由）。这种美学颂扬的是极端利己主义和苦役这两种表面对立的现象。主宰和奴役采取了一种特别虚饰的形式：成群集结的人；人向物的转换；物的增多以及人与物，均围绕一个无所不能的，有催眠术的领导人或领导力量集结。法西斯的艺术夸耀屈服，歌颂愚昧无知，美化死亡。——《迷人的法西斯》</p>
+  </blockquote>
+  <p>法西斯并非只在电影绘画摄影展示光荣伟大，从雕塑到建筑，乃至服装的设计，都无不在展示完美和力量。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/07/image-1625925974604.png" alt="file" /></p>
+  <p>希特勒认为，“军装一定要帅，这样年轻人才愿意来参军。”因此纳粹德国创造了世界上迄今为止最帅气的军服——这些精致的勋章、皮革、近乎完美的剪裁，也进一步成为了证明日耳曼种族优秀的道具。 在癫狂的法西斯主义下，军装从一件衣服变成了地位与力量的象征——如同那些被送进集中营的犹太人身上的六芒星一样，在封闭的人性实验室中，衣服成为标识人类属性与地位的标志。</p>
+  <p>法西斯美学是集体主义和威权主义的产物，人们在其中获得的审美愉悦更多来自对暴力的屈服，对机械服从的赞美。当我们认识到这种大而齐，浓墨重彩是人造的、扭曲的，就不难跳出这个审美层次，而去找寻自然的、真实的审美体验。</p>
+  <p>最具有讽刺意味的是，希特勒本人其实并不喜欢这些重口味的东西，只是政治的需要罢了——也就是人民多狂热，就给他们看多狂热的东西而已。</p>
+  <p>而希特勒的早期画作，则完全是写实主义和自然主义的倾向，用现在的话来说，整个一枚小清新。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/07/image-1625926081444.png" alt="file" /></p>
+  <p>记录纳粹党代会的《意志的胜利》是法西斯美学的经典之作。我国一些导演拍出推崇秦始皇等以强权、集权“统一天下”的影片也带有法西斯审美趣味。以及他们导演的一些大型晚会等也是运用了类似的拍摄手法。这些导演可谓法西斯美学在大陆的继承者。如影评人说的他们好像有瑞芬斯丹的隔代遗传，一些影片在拍摄手法和美学意图上，几乎是《意志的胜利》的翻版;也是极力铺排大场面、大气势，大群体。那种整齐划一、威风凛凛的帝国大军，那铜墙铁壁、不动如山的武士方阵，象征着不可挑战、无法逾越的帝王权力。任何挑战，任何异议，任何不同，都会被万箭穿心，像蚂蚁一样被碾得粉碎。</p>
+  <p>这种群体主义美学，在某些开幕式中也十分常见：千百人组成一个方阵，千百人构成一个画面，千百人变成一道景观，其步调一致到可与电脑控制比美的地步。　这种高度一致、整齐划一的画面展示的是：群体才是最美丽的，群体是至高无上的，只有在群体之中，你才有价值;没有群体，就没有你。</p>
+  <p>他所传递的是“在这个灿烂、美丽、威严的群体面前，个人是多么的渺小，只有成为这个雄伟群体的一分子才可能有骄傲之感。”</p>
+  <p>这样的美学风格是极具号召力和煽动效应，至今仍然被世界上的一些国家和地区所采用，它令人们激情高涨，热泪盈眶。我们介绍、分析法西斯美学，并不是为了学习和运用它，而是警惕它，因为在这种群体主义的壮美面前，人们极易放弃独立的思考，而加入乌合之众的洪流。</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2021-07-10</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-10/404%E6%A1%A3%E6%A1%88%E9%A6%86-CDT%E6%92%AD%E5%AE%A2%E7%AC%AC12%E6%9C%9F-%E6%88%91%E4%BB%AC%E9%83%BD%E6%98%AF-%E6%9C%AA%E5%91%BD%E5%90%8D%E5%85%AC%E4%BC%97%E5%8F%B7">
+          【404档案馆】CDT播客第12期：我们都是”未命名公众号“
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-10</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-10/404%E6%96%87%E5%BA%93-%E5%8D%97%E4%BA%AC%E5%A4%A7%E5%AD%A6%E5%89%AF%E6%95%99%E6%8E%88%E6%80%92%E6%89%B9%E5%AD%A6%E6%A0%A1-%E5%8A%9E%E4%B8%AA%E7%8B%97%E5%B1%81%E7%9A%84%E6%9C%80%E5%A5%BD%E6%9C%AC%E7%A7%91%E6%95%99%E8%82%B2">
+          【404文库】南京大学副教授怒批学校：办个狗屁的最好本科教育
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-10</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-10/%E6%B5%B7%E8%BE%B9%E7%9A%84%E8%A5%BF%E5%A1%9E%E7%BD%97-%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%A0%E7%9A%84%E6%9C%8B%E5%8F%8B%E5%9C%88-%E6%AD%A3%E5%8F%98%E5%BE%97%E8%B6%8A%E5%8F%91%E5%8D%83%E7%AF%87%E4%B8%80%E5%BE%8B">
+          海边的西塞罗 | 为什么你的朋友圈，正变得越发千篇一律
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-10</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-10/%E4%B8%89%E8%81%94%E7%94%9F%E6%B4%BB%E5%91%A8%E5%88%8A-%E5%BD%93-%E4%BD%9B%E7%B3%BB-%E7%88%B6%E6%AF%8D%E9%81%87%E4%B8%8A%E6%89%80%E8%B0%93-%E5%9D%91%E6%A0%A1">
+          三联生活周刊 | 当“佛系”父母遇上所谓“坑校”
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-10/%E7%B7%AC%E7%94%B8%E8%A9%90%E9%A8%99%E7%8A%AF%E7%88%AD%E7%9B%B8%E8%BF%94%E5%9C%8B-%E9%9B%B2%E5%8D%97%E9%98%B2%E6%8E%A7%E5%90%83%E7%B7%8A%E7%A5%AD%E5%87%BA%E6%AF%8F%E6%97%A5%E9%99%90%E9%A1%8D">
+            前一篇：緬甸詐騙犯爭相返國 雲南防控吃緊祭出每日限額
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-10/%E6%B3%95%E5%AA%92-%E4%B8%AD%E5%9B%BD%E6%97%B1%E7%81%BE%E6%88%96%E5%B0%86%E5%BD%B1%E5%93%8D%E5%85%A8%E7%90%83%E7%BB%8F%E6%B5%8E-%E6%B3%95%E5%9B%BD%E6%8A%A5%E7%BA%B8%E6%91%98%E8%A6%81">
+            后一篇：法媒：中国旱灾或将影响全球经济 - 法国报纸摘要
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-07-10/%E7%B7%AC%E7%94%B8%E8%A9%90%E9%A8%99%E7%8A%AF%E7%88%AD%E7%9B%B8%E8%BF%94%E5%9C%8B-%E9%9B%B2%E5%8D%97%E9%98%B2%E6%8E%A7%E5%90%83%E7%B7%8A%E7%A5%AD%E5%87%BA%E6%AF%8F%E6%97%A5%E9%99%90%E9%A1%8D'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-07-10/%E6%B3%95%E5%AA%92-%E4%B8%AD%E5%9B%BD%E6%97%B1%E7%81%BE%E6%88%96%E5%B0%86%E5%BD%B1%E5%93%8D%E5%85%A8%E7%90%83%E7%BB%8F%E6%B5%8E-%E6%B3%95%E5%9B%BD%E6%8A%A5%E7%BA%B8%E6%91%98%E8%A6%81'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-07-10/404%E6%96%87%E5%BA%93-%E5%8D%97%E4%BA%AC%E5%A4%A7%E5%AD%A6%E5%89%AF%E6%95%99%E6%8E%88%E6%80%92%E6%89%B9%E5%AD%A6%E6%A0%A1-%E5%8A%9E%E4%B8%AA%E7%8B%97%E5%B1%81%E7%9A%84%E6%9C%80%E5%A5%BD%E6%9C%AC%E7%A7%91%E6%95%99%E8%82%B2'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-07-10/%E6%B5%B7%E8%BE%B9%E7%9A%84%E8%A5%BF%E5%A1%9E%E7%BD%97-%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%A0%E7%9A%84%E6%9C%8B%E5%8F%8B%E5%9C%88-%E6%AD%A3%E5%8F%98%E5%BE%97%E8%B6%8A%E5%8F%91%E5%8D%83%E7%AF%87%E4%B8%80%E5%BE%8B'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-07-10/%E7%B7%AC%E7%94%B8%E8%A9%90%E9%A8%99%E7%8A%AF%E7%88%AD%E7%9B%B8%E8%BF%94%E5%9C%8B-%E9%9B%B2%E5%8D%97%E9%98%B2%E6%8E%A7%E5%90%83%E7%B7%8A%E7%A5%AD%E5%87%BA%E6%AF%8F%E6%97%A5%E9%99%90%E9%A1%8D">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-07-10/%E6%B3%95%E5%AA%92-%E4%B8%AD%E5%9B%BD%E6%97%B1%E7%81%BE%E6%88%96%E5%B0%86%E5%BD%B1%E5%93%8D%E5%85%A8%E7%90%83%E7%BB%8F%E6%B5%8E-%E6%B3%95%E5%9B%BD%E6%8A%A5%E7%BA%B8%E6%91%98%E8%A6%81">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-07-10/404%E6%96%87%E5%BA%93-%E5%8D%97%E4%BA%AC%E5%A4%A7%E5%AD%A6%E5%89%AF%E6%95%99%E6%8E%88%E6%80%92%E6%89%B9%E5%AD%A6%E6%A0%A1-%E5%8A%9E%E4%B8%AA%E7%8B%97%E5%B1%81%E7%9A%84%E6%9C%80%E5%A5%BD%E6%9C%AC%E7%A7%91%E6%95%99%E8%82%B2">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-07-10/%E6%B5%B7%E8%BE%B9%E7%9A%84%E8%A5%BF%E5%A1%9E%E7%BD%97-%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%A0%E7%9A%84%E6%9C%8B%E5%8F%8B%E5%9C%88-%E6%AD%A3%E5%8F%98%E5%BE%97%E8%B6%8A%E5%8F%91%E5%8D%83%E7%AF%87%E4%B8%80%E5%BE%8B">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

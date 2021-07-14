@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>新冠病毒“实验室泄漏说”背后真正的丑闻 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+新冠病毒“实验室泄漏说”背后真正的丑闻
+——
+" />
+    <meta property="og:description" content="
+新冠病毒“实验室泄漏说”背后真正的丑闻
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="新冠病毒“实验室泄漏说”背后真正的丑闻" />
+    <meta property="twitter:title" content="新冠病毒“实验室泄漏说”背后真正的丑闻" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fcn.nytimes.com%2Fopinion%2F20210602%2Fmedia-lab-leak-theory%2F&t=%E6%96%B0%E5%86%A0%E7%97%85%E6%AF%92%E2%80%9C%E5%AE%9E%E9%AA%8C%E5%AE%A4%E6%B3%84%E6%BC%8F%E8%AF%B4%E2%80%9D%E8%83%8C%E5%90%8E%E7%9C%9F%E6%AD%A3%E7%9A%84%E4%B8%91%E9%97%BB" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fopinion%2F20210602%2Fmedia-lab-leak-theory%2F&t=%E6%96%B0%E5%86%A0%E7%97%85%E6%AF%92%E2%80%9C%E5%AE%9E%E9%AA%8C%E5%AE%A4%E6%B3%84%E6%BC%8F%E8%AF%B4%E2%80%9D%E8%83%8C%E5%90%8E%E7%9C%9F%E6%AD%A3%E7%9A%84%E4%B8%91%E9%97%BB&d=2021-07-06&e=
+新冠病毒“实验室泄漏说”背后真正的丑闻
+——
+
+
+  
+BRET STEPHENS
+  
+  2021年6月2日
+  
+    
+Ng Han Guan/Associated Press
+    
+  
+  
+    如果新冠疫情最终被证实是由中国武汉一家实验室的泄漏引起的，这将成为历史上最大的科学丑闻之一：危险的研究，可能涉及道德上存疑的技术使病毒更加危险，在保障不足的设施中进行，被一个更关心宣传而不是人命的政权残暴地掩盖，给整个世界造成了灾难。
+    但是这个尚未证实的可能丑闻掩盖了一个依然有待消化的真正丑闻。
+    我指的是太多媒体守门人（既有社交网络也有主流媒体）长期拒绝认真对待实验室泄漏理论。其原因——严重的党派之争和轻信的报道——以及它所施用的方法——审查和中伤——提醒我们，有时科学最具破坏性的敌人可能是那些声称以科学的名义说话的人。
+    让我们回到去年2月，参..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fopinion%2F20210602%2Fmedia-lab-leak-theory%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://cn.nytimes.com/opinion/20210602/media-lab-leak-theory/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://cn.nytimes.com/opinion/20210602/media-lab-leak-theory/&text=新冠病毒“实验室泄漏说”背后真正的丑闻&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://cn.nytimes.com/opinion/20210602/media-lab-leak-theory/&title=新冠病毒“实验室泄漏说”背后真正的丑闻" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://cn.nytimes.com/opinion/20210602/media-lab-leak-theory/&title=新冠病毒“实验室泄漏说”背后真正的丑闻" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=新冠病毒“实验室泄漏说”背后真正的丑闻&body=
+新冠病毒“实验室泄漏说”背后真正的丑闻
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://cn.nytimes.com/opinion/20210602/media-lab-leak-theory/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://cn.nytimes.com/opinion/20210602/media-lab-leak-theory/&title=新冠病毒“实验室泄漏说”背后真正的丑闻&caption=
+新冠病毒“实验室泄漏说”背后真正的丑闻
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=新冠病毒“实验室泄漏说”背后真正的丑闻&url=https://cn.nytimes.com/opinion/20210602/media-lab-leak-theory/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>新冠病毒“实验室泄漏说”背后真正的丑闻</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-07-06
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#纽约时报 ">
+          纽约时报
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://cn.nytimes.com/opinion/20210602/media-lab-leak-theory/"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="纽约时报的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#纽约时报 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fopinion%2F20210602%2Fmedia-lab-leak-theory%2F&t=%E6%96%B0%E5%86%A0%E7%97%85%E6%AF%92%E2%80%9C%E5%AE%9E%E9%AA%8C%E5%AE%A4%E6%B3%84%E6%BC%8F%E8%AF%B4%E2%80%9D%E8%83%8C%E5%90%8E%E7%9C%9F%E6%AD%A3%E7%9A%84%E4%B8%91%E9%97%BB&d=2021-07-06&e=
+新冠病毒“实验室泄漏说”背后真正的丑闻
+——
+
+
+  
+BRET STEPHENS
+  
+  2021年6月2日
+  
+    
+Ng Han Guan/Associated Press
+    
+  
+  
+    如果新冠疫情最终被证实是由中国武汉一家实验室的泄漏引起的，这将成为历史上最大的科学丑闻之一：危险的研究，可能涉及道德上存疑的技术使病毒更加危险，在保障不足的设施中进行，被一个更关心宣传而不是人命的政权残暴地掩盖，给整个世界造成了灾难。
+    但是这个尚未证实的可能丑闻掩盖了一个依然有待消化的真正丑闻。
+    我指的是太多媒体守门人（既有社交网络也有主流媒体）长期拒绝认真对待实验室泄漏理论。其原因——严重的党派之争和轻信的报道——以及它所施用的方法——审查和中伤——提醒我们，有时科学最具破坏性的敌人可能是那些声称以科学的名义说话的人。
+    让我们回到去年2月，参..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fopinion%2F20210602%2Fmedia-lab-leak-theory%2F" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1625549821000-->
+<p><a href="https://cn.nytimes.com/opinion/20210602/media-lab-leak-theory/">新冠病毒“实验室泄漏说”背后真正的丑闻</a>
+——</p>
+
+<div>
+  <address>
+BRET STEPHENS
+  </address>
+  <time pudate="2021-07-06 01:19:24" datetime="2021-07-06 01:19:24">2021年6月2日</time>
+  <figure class="article-span-photo">
+<img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/05/31/opinion/31stephensWeb/31stephensWeb-master1050-v2.jpg" width="1050" height="700" />    <figcaption>
+<cite>Ng Han Guan/Associated Press</cite>
+    </figcaption>
+  </figure>
+  <section class="article-body">
+    <p>如果新冠疫情最终被证实是由中国武汉一家实验室的泄漏引起的，这将成为历史上最大的科学丑闻之一：危险的研究，可能涉及道德上存疑的技术使病毒更加危险，在保障不足的设施中<a rel="noopener noreferrer" target="_blank" href="https://www.washingtonpost.com/opinions/2020/04/14/state-department-cables-warned-safety-issues-wuhan-lab-studying-bat-coronaviruses/">进行</a>，被一个更关心宣传而不是人命的政权<a href="https://www.nytimes.com/2020/12/28/world/asia/china-Zhang-Zhan-covid-convicted.html">残暴地掩盖</a>，给整个世界造成了<a href="https://www.nytimes.com/interactive/2021/world/covid-cases.html">灾难</a>。</p>
+    <p>但是这个尚未证实的可能丑闻掩盖了一个依然有待消化的真正丑闻。</p>
+    <p>我指的是太多媒体守门人（既有社交网络也有主流媒体）长期拒绝认真对待实验室泄漏理论。其原因——严重的党派之争和轻信的报道——以及它所施用的方法——审查和中伤——提醒我们，有时科学最具破坏性的敌人可能是那些声称以科学的名义说话的人。</p>
+    <p>让我们回到去年2月，参议员汤姆·科顿(Tom Cotton)等人开始指出<a rel="noopener noreferrer" target="_blank" href="https://youtu.be/ytGIkcCh7T8">一组令人不安的事实</a>：一场大流行起源于一个中国城市，就在这个城市里，一个实验室正在对蝙蝠病毒进行尖端实验，这是一个奇怪的巧合；一些最初的新冠病毒感染者并没有接触据信是疫情发源地的食品市场，这样的报告令人不安；中国政府撒谎，妨碍了自己的危机应对 ，这是事实。不管你怎么看这位阿肯色州共和党人，这些都是合理的观察结果，值得进行公正的调查。</p>
+    <p>自由主义精英圈的普遍反应是什么？《华盛顿邮报》(Washington Post)的一名记者称其为“被专家反复质疑”的“<a rel="noopener noreferrer" target="_blank" href="https://www.washingtonpost.com/politics/2020/02/16/tom-cotton-coronavirus-conspiracy/">边缘理论</a>”。大西洋理事会(Atlantic Council)<a rel="noopener noreferrer" target="_blank" href="https://twitter.com/AtlanticCouncil/status/1234237103300579328?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1234237103300579328%7Ctwgr%5E%7Ctwcon%5Es1_&amp;ref_url=https%3A%2F%2Fwww.vox.com%2F2020%2F3%2F4%2F21156607%2Fhow-did-the-coronavirus-get-started-china-wuhan-lab">指责科顿</a>“推动新冠病毒可能在武汉的一个实验室制造的不实说法”，煽动一场“信息流行病”。Vox的一名作者说，这是一个 "危险的阴谋论"，是 “<a rel="noopener noreferrer" target="_blank" href="https://www.vox.com/2020/3/4/21156607/how-did-the-coronavirus-get-started-china-wuhan-lab">以经常胡说八道（以及抨击中国）</a>”而闻名的保守派提出的。</p>
+    <p>这样的例子还有很多。但媒体叙事的总体形态是清晰的。一方是世界卫生组织(World Health Organization)等机构的专家：博学、廉洁、权威、高贵。另一方则是一群右翼粗人，他们在推动一个带有排外色彩的可笑幻想，目的是转移人们对特朗普政府处理危机不当的注意力。</p>
+    <p>然而，这种叙事当中的漏洞比唐纳德·特朗普(Donald Trump)的嘴巴还大。</p>
+    <p>认为病毒可能是从武汉研究所逃逸的，是不是很令人震惊？如果你听了演化生物学家<a rel="noopener noreferrer" target="_blank" href="https://www.youtube.com/watch?v=zQLF4DUSXGs">布雷特·温斯坦(Bret Weinstein)对“实验室泄漏假说”耐心、清晰、极具科学性的解释</a>，你就不会这么认为了——这是他近一年前在绝对非主流的乔·罗根(Joe Rogan)播客上发表的。</p>
+    <p>2020年2月，《柳叶刀》(The Lancet)上发表了一封由27名科学家签名的<a rel="noopener noreferrer" target="_blank" href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)30418-9/fulltext">信</a>，强烈坚持新冠病毒的“自然来源”，科学记者接受它的权威性是否明智？如果那些记者们探究了这封信的主要作者与武汉实验室之间的关系，就不会这样了。这种关系是科学作家尼古拉斯·韦德(Nicholas Wade)在《原子科学家公报》(Bulletin of the Atomic Scientists)上发表的一篇里程碑式的<a rel="noopener noreferrer" target="_blank" href="https://thebulletin.org/2021/05/the-origin-of-covid-did-people-or-nature-open-pandoras-box-at-wuhan/">文章</a>中指出的，这一事实<a rel="noopener noreferrer" target="_blank" href="https://usrtk.org/biohazards-blog/ecohealth-alliance-orchestrated-key-scientists-statement-on-natural-origin-of-sars-cov-2/">几个月来已经为公众所知</a>。</p>
+    <p>Facebook今年2月在其平台上禁止了实验室泄漏理论，而一直充当中国政权宣传喉舌的世界卫生组织是否应该成为Facebook上关于新冠病毒“虚假信息”的权威？如果像Facebook这样的公司的目标是让世界更紧密地联系在一起，而不是在模仿中国政府的非自由主义方法的同时为其虚假信息洗白，那就不应该是这样。</p>
+    <p>值得赞扬的是，Facebook上周改变了立场。新闻机构正在悄悄地纠正（<a rel="noopener noreferrer" target="_blank" href="https://techstartups.com/2021/05/24/vox-caught-stealth-editing-old-article-march-2020-debunking-lab-origin-covid-19/">或偷偷编辑</a>）去年的轻视性报道，有时会使用武汉实验室工作人员在2019年秋季<a rel="noopener noreferrer" target="_blank" href="https://www.wsj.com/articles/intelligence-on-sick-staff-at-wuhan-lab-fuels-debate-on-covid-19-origin-11621796228">感染类似新冠病毒病</a>的新信息作为遮羞布。公共卫生界正在重新审视它的新冠病毒起源故事。</p>
+    <p>但即使是现在，人们也能清楚地感觉到，有一群独立的头脑在努力工作。如果“实验室泄漏”理论最终得到了应有的尊重关注，那主要是因为乔·拜登授权进行调查，而安东尼·福奇(Anthony Fauci)承认对自然起源的说法存在怀疑。换句话说，正确的总统和正确的公共卫生专家为一定的调查路线提供了支持。</p>
+    <p>然而，实验室泄漏理论无论是否被证明为正确，却从来是可信的。即使汤姆·科顿相信它。即使科学“共识”怀疑它。即使那些很少需要借口的偏执狂们也会从中得出偏执的结论。</p>
+    <p>好的新闻报道就像好的科学一样，应该遵循证据，而不是故事。它应该像重视卓越的权威一样重视聪明的牛虻。它绝不应该把诚实的分歧视为道德异端。</p>
+    <p>如果有人想知道，为什么那么多人对公共卫生官员和科学记者的声明如此敌视，应该从这个故事中得出适当的结论。在向公众宣讲错误信息的危害时，最好不要自己去兜售它。</p>
+  </section>
+  <footer class="author-info">
+    <p>Bret L. Stephens自2017年4月起担任《纽约时报》观点与评论版面的专栏作家。他于2013年在《华尔街日报》工作时获普利策评论奖，此前还曾担任《耶路撒冷邮报》主编。欢迎在<a rel="nofollow" target="_blank" href="https://www.facebook.com/Bret-Stephens-1897344563844527">Facebook</a>上关注他。</p>
+    <p>翻译：晋其角</p>
+    <p><a rel="nofollow" target="_blank" href="https://cn.nytimes.com/opinion/20210330/biden-china/">点击查看本文英文版。</a></p>
+  </footer>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#纽约时报 的其它文章</h4>
+    
+      <li>
+        <time>2021-07-06</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-06/%E6%AD%A6%E6%B1%89%E7%97%85%E6%AF%92%E6%89%80%E7%9F%B3%E6%AD%A3%E4%B8%BD%E9%A9%B3%E6%96%A5%E5%AE%9E%E9%AA%8C%E5%AE%A4%E6%B3%84%E6%BC%8F%E8%AF%B4">
+          武汉病毒所石正丽驳斥实验室泄漏说
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-06</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-06/%E6%96%B0%E5%86%A0%E7%97%85%E6%AF%92%E6%9D%A5%E8%87%AA%E4%BA%8E%E5%AE%9E%E9%AA%8C%E5%AE%A4%E5%90%97">
+          新冠病毒来自于实验室吗？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-06</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-06/%E4%B8%AD%E5%9B%BD%E5%90%A6%E8%AE%A4%E5%8F%B0%E5%B1%B1%E6%A0%B8%E7%94%B5%E7%AB%99%E8%BE%90%E5%B0%84%E6%B3%84%E6%BC%8F-%E6%89%BF%E8%AE%A4%E7%87%83%E6%96%99%E6%A3%92%E5%8F%97%E6%8D%9F">
+          中国否认台山核电站辐射泄漏，承认燃料棒受损
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-06</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-06/%E4%B8%8D%E6%98%8E%E8%82%BA%E7%82%8E-%E7%A6%81%E8%A8%80%E5%8C%BB%E7%94%9F-%E8%A2%AB%E6%8E%A9%E7%9B%96%E7%9A%84%E8%8B%8F%E8%81%94%E5%AE%9E%E9%AA%8C%E5%AE%A4%E7%82%AD%E7%96%BD%E6%B3%84%E6%BC%8F%E5%BE%80%E4%BA%8B">
+          不明肺炎、禁言医生：被掩盖的苏联实验室炭疽泄漏往事
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-06/%E4%B8%AD%E5%9B%BD%E5%90%A6%E8%AE%A4%E5%8F%B0%E5%B1%B1%E6%A0%B8%E7%94%B5%E7%AB%99%E8%BE%90%E5%B0%84%E6%B3%84%E6%BC%8F-%E6%89%BF%E8%AE%A4%E7%87%83%E6%96%99%E6%A3%92%E5%8F%97%E6%8D%9F">
+            前一篇：中国否认台山核电站辐射泄漏，承认燃料棒受损
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-06/%E6%96%B0%E5%86%A0%E7%97%85%E6%AF%92%E6%9D%A5%E8%87%AA%E4%BA%8E%E5%AE%9E%E9%AA%8C%E5%AE%A4%E5%90%97">
+            后一篇：新冠病毒来自于实验室吗？
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-07-06/%E4%B8%AD%E5%9B%BD%E5%90%A6%E8%AE%A4%E5%8F%B0%E5%B1%B1%E6%A0%B8%E7%94%B5%E7%AB%99%E8%BE%90%E5%B0%84%E6%B3%84%E6%BC%8F-%E6%89%BF%E8%AE%A4%E7%87%83%E6%96%99%E6%A3%92%E5%8F%97%E6%8D%9F'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-07-06/%E6%96%B0%E5%86%A0%E7%97%85%E6%AF%92%E6%9D%A5%E8%87%AA%E4%BA%8E%E5%AE%9E%E9%AA%8C%E5%AE%A4%E5%90%97'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-07-06/%E6%96%B0%E5%86%A0%E7%97%85%E6%AF%92%E6%9D%A5%E8%87%AA%E4%BA%8E%E5%AE%9E%E9%AA%8C%E5%AE%A4%E5%90%97'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-07-06/%E4%B8%AD%E5%9B%BD%E5%90%A6%E8%AE%A4%E5%8F%B0%E5%B1%B1%E6%A0%B8%E7%94%B5%E7%AB%99%E8%BE%90%E5%B0%84%E6%B3%84%E6%BC%8F-%E6%89%BF%E8%AE%A4%E7%87%83%E6%96%99%E6%A3%92%E5%8F%97%E6%8D%9F'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-07-06/%E4%B8%AD%E5%9B%BD%E5%90%A6%E8%AE%A4%E5%8F%B0%E5%B1%B1%E6%A0%B8%E7%94%B5%E7%AB%99%E8%BE%90%E5%B0%84%E6%B3%84%E6%BC%8F-%E6%89%BF%E8%AE%A4%E7%87%83%E6%96%99%E6%A3%92%E5%8F%97%E6%8D%9F">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-07-06/%E6%96%B0%E5%86%A0%E7%97%85%E6%AF%92%E6%9D%A5%E8%87%AA%E4%BA%8E%E5%AE%9E%E9%AA%8C%E5%AE%A4%E5%90%97">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<纽约时报>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-07-06/%E6%96%B0%E5%86%A0%E7%97%85%E6%AF%92%E6%9D%A5%E8%87%AA%E4%BA%8E%E5%AE%9E%E9%AA%8C%E5%AE%A4%E5%90%97">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<纽约时报>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-07-06/%E4%B8%AD%E5%9B%BD%E5%90%A6%E8%AE%A4%E5%8F%B0%E5%B1%B1%E6%A0%B8%E7%94%B5%E7%AB%99%E8%BE%90%E5%B0%84%E6%B3%84%E6%BC%8F-%E6%89%BF%E8%AE%A4%E7%87%83%E6%96%99%E6%A3%92%E5%8F%97%E6%8D%9F">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

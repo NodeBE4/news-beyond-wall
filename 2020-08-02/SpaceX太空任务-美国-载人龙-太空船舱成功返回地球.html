@@ -1,0 +1,2054 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>SpaceX太空任务：美国“载人龙”太空船舱成功返回地球 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+SpaceX太空任务：美国“载人龙”太空船舱成功返回地球
+——
+" />
+    <meta property="og:description" content="
+SpaceX太空任务：美国“载人龙”太空船舱成功返回地球
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="SpaceX太空任务：美国“载人龙”太空船舱成功返回地球" />
+    <meta property="twitter:title" content="SpaceX太空任务：美国“载人龙”太空船舱成功返回地球" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-53633655&t=SpaceX%E5%A4%AA%E7%A9%BA%E4%BB%BB%E5%8A%A1%EF%BC%9A%E7%BE%8E%E5%9B%BD%E2%80%9C%E8%BD%BD%E4%BA%BA%E9%BE%99%E2%80%9D%E5%A4%AA%E7%A9%BA%E8%88%B9%E8%88%B1%E6%88%90%E5%8A%9F%E8%BF%94%E5%9B%9E%E5%9C%B0%E7%90%83" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-53633655&t=SpaceX%E5%A4%AA%E7%A9%BA%E4%BB%BB%E5%8A%A1%EF%BC%9A%E7%BE%8E%E5%9B%BD%E2%80%9C%E8%BD%BD%E4%BA%BA%E9%BE%99%E2%80%9D%E5%A4%AA%E7%A9%BA%E8%88%B9%E8%88%B1%E6%88%90%E5%8A%9F%E8%BF%94%E5%9B%9E%E5%9C%B0%E7%90%83&d=2020-08-02&e=
+SpaceX太空任务：美国“载人龙”太空船舱成功返回地球
+——
+
+
+  
+    SpaceX太空任务：美国“载人龙”太空船舱成功返回地球
+  
+  
+    2020年8月3日
+  
+  
+  
+    随着两名美国太空人以“海面溅落”形式回到地球，人类第一次由商业机构载人升空前往国际空间站（International Space Station）的任务成功完成。
+  
+  
+    由私人机构SpaceX提供的“载人龙船舱”（Dragon Capsule）运送太空人道格·赫利（Doug Hurley）和鲍勃·班肯（Bob Behnken）在美国佛罗里达州彭萨科拉（Pensacola）南面的墨西哥湾海面降落。
+  
+  
+    一艘回收船前往该海域接收了返回地球的“载人龙”，并帮助太空人离开太空舱。
+  
+  
+    此次海面降落标志着阿波罗号指挥舱最后一次太空任务之后，45..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-53633655" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=http://www.bbc.com/zhongwen/simp/science-53633655" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=http://www.bbc.com/zhongwen/simp/science-53633655&text=SpaceX太空任务：美国“载人龙”太空船舱成功返回地球&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=http://www.bbc.com/zhongwen/simp/science-53633655&title=SpaceX太空任务：美国“载人龙”太空船舱成功返回地球" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://www.bbc.com/zhongwen/simp/science-53633655&title=SpaceX太空任务：美国“载人龙”太空船舱成功返回地球" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=SpaceX太空任务：美国“载人龙”太空船舱成功返回地球&body=
+SpaceX太空任务：美国“载人龙”太空船舱成功返回地球
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=http://www.bbc.com/zhongwen/simp/science-53633655" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=http://www.bbc.com/zhongwen/simp/science-53633655&title=SpaceX太空任务：美国“载人龙”太空船舱成功返回地球&caption=
+SpaceX太空任务：美国“载人龙”太空船舱成功返回地球
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=SpaceX太空任务：美国“载人龙”太空船舱成功返回地球&url=http://www.bbc.com/zhongwen/simp/science-53633655" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>SpaceX太空任务：美国“载人龙”太空船舱成功返回地球</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2020-08-02
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#BBC ">
+          BBC
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="http://www.bbc.com/zhongwen/simp/science-53633655"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="BBC的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#BBC 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-53633655&t=SpaceX%E5%A4%AA%E7%A9%BA%E4%BB%BB%E5%8A%A1%EF%BC%9A%E7%BE%8E%E5%9B%BD%E2%80%9C%E8%BD%BD%E4%BA%BA%E9%BE%99%E2%80%9D%E5%A4%AA%E7%A9%BA%E8%88%B9%E8%88%B1%E6%88%90%E5%8A%9F%E8%BF%94%E5%9B%9E%E5%9C%B0%E7%90%83&d=2020-08-02&e=
+SpaceX太空任务：美国“载人龙”太空船舱成功返回地球
+——
+
+
+  
+    SpaceX太空任务：美国“载人龙”太空船舱成功返回地球
+  
+  
+    2020年8月3日
+  
+  
+  
+    随着两名美国太空人以“海面溅落”形式回到地球，人类第一次由商业机构载人升空前往国际空间站（International Space Station）的任务成功完成。
+  
+  
+    由私人机构SpaceX提供的“载人龙船舱”（Dragon Capsule）运送太空人道格·赫利（Doug Hurley）和鲍勃·班肯（Bob Behnken）在美国佛罗里达州彭萨科拉（Pensacola）南面的墨西哥湾海面降落。
+  
+  
+    一艘回收船前往该海域接收了返回地球的“载人龙”，并帮助太空人离开太空舱。
+  
+  
+    此次海面降落标志着阿波罗号指挥舱最后一次太空任务之后，45..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-53633655" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1596430210000-->
+<p><a href="http://www.bbc.com/zhongwen/simp/science-53633655">SpaceX太空任务：美国“载人龙”太空船舱成功返回地球</a>
+——</p>
+
+<div>
+  <div dir="ltr" class="css-7yf5z7-GridComponent e57qer20">
+    <h1 id="content" tabindex="-1" class="css-1wfn6k3-Headline e1yj3cbb0">SpaceX太空任务：美国“载人龙”太空船舱成功返回地球</h1>
+  </div>
+  <div dir="ltr" class="e1j2237y1 css-1btxek-GridComponent e57qer20">
+    <time datetime="2020-08-03" class="css-pb6w51-StyledTimestamp e4zesg50">2020年8月3日</time>
+  </div>
+  <div dir="ltr" class="e46rrwz0 css-4n9pm5-GridComponent e57qer20"></div>
+  <div dir="ltr" class="css-hl9dz2-GridComponent e57qer20">
+    <p class="css-1af541v-Paragraph e1c0huex0"><strong>随着两名美国太空人以“海面溅落”形式回到地球，人类第一次由商业机构载人升空前往国际空间站（International Space Station）的任务成功完成。</strong></p>
+  </div>
+  <div dir="ltr" class="css-hl9dz2-GridComponent e57qer20">
+    <p class="css-1af541v-Paragraph e1c0huex0">由私人机构SpaceX提供的“载人龙船舱”（Dragon Capsule）运送太空人道格·赫利（Doug Hurley）和鲍勃·班肯（Bob Behnken）在美国佛罗里达州彭萨科拉（Pensacola）南面的墨西哥湾海面降落。</p>
+  </div>
+  <div dir="ltr" class="css-hl9dz2-GridComponent e57qer20">
+    <p class="css-1af541v-Paragraph e1c0huex0">一艘回收船前往该海域接收了返回地球的“载人龙”，并帮助太空人离开太空舱。</p>
+  </div>
+  <div dir="ltr" class="css-hl9dz2-GridComponent e57qer20">
+    <p class="css-1af541v-Paragraph e1c0huex0">此次海面降落标志着阿波罗号指挥舱最后一次太空任务之后，45年来首次有载人太空舱在美国领海降落。</p>
+  </div>
+  <section aria-label="广告 2" aria-hidden="true" role="region" data-e2e="advertisement" class="e1j2237y0 css-1bxjjj1 e1e90g5r0">
+    <div id="dotcom-mpu" class="dotcom-ad"></div>
+  </section>
+  <div dir="ltr" class="css-hl9dz2-GridComponent e57qer20">
+    <p class="css-1af541v-Paragraph e1c0huex0">赫利和班肯的船舱于北美东部夏令时约14时48分（格林尼治标准时间18时48分）抵达海面。</p>
+  </div>
+  <div dir="ltr" class="css-hl9dz2-GridComponent e57qer20">
+    <div data-e2e="twitter-embed-https://twitter.com/SciGuySpace/status/1290103926893682689" class="css-bokpm5 e1lxseq90">
+      <div class="lazyload-wrapper">
+        <div class="lazyload-placeholder"></div>
+      </div>
+    </div>
+  </div>
+  <div dir="ltr" class="css-hl9dz2-GridComponent e57qer20">
+    <div class="css-1fobf8d e1gggypo0">
+      <ul dir="ltr" role="list" class="css-4c9jmx-BulletedList e1drcs2w0">
+        <li role="listitem" class="css-chb3zw-BulletedListItem e1drcs2w1"><a href="https://www.bbc.com/zhongwen/simp/science-52847121" class="css-h9s9st-InlineLink e1cs6q200">SpaceX：商业机构首次成功完成载人航天任务</a></li>
+      </ul>
+    </div>
+  </div>
+  <div dir="ltr" class="css-hl9dz2-GridComponent e57qer20">
+    <div class="css-1fobf8d e1gggypo0">
+      <ul dir="ltr" role="list" class="css-4c9jmx-BulletedList e1drcs2w0">
+        <li role="listitem" class="css-chb3zw-BulletedListItem e1drcs2w1"><a href="https://www.bbc.com/zhongwen/simp/science-52794587" class="css-h9s9st-InlineLink e1cs6q200">NASA与SpaceX的新任务：拆解这个标志航天走向商业化的太空旅行</a></li>
+      </ul>
+    </div>
+  </div>
+  <div dir="ltr" class="css-hl9dz2-GridComponent e57qer20">
+    <div class="css-1fobf8d e1gggypo0">
+      <ul dir="ltr" role="list" class="css-4c9jmx-BulletedList e1drcs2w0">
+        <li role="listitem" class="css-chb3zw-BulletedListItem e1drcs2w1"><a href="https://www.bbc.com/zhongwen/simp/science-52848732" class="css-h9s9st-InlineLink e1cs6q200">宇航员太空服半个多世纪今昔对比</a></li>
+      </ul>
+    </div>
+  </div>
+  <div dir="ltr" class="css-hl9dz2-GridComponent e57qer20">
+    <p class="css-1af541v-Paragraph e1c0huex0">“这实在是我们的荣幸，”赫利在抵达地球的一刻这样说道。</p>
+  </div>
+  <div dir="ltr" class="css-hl9dz2-GridComponent e57qer20">
+    <p class="css-1af541v-Paragraph e1c0huex0">SpaceX的任务指挥团队则回应说：“代表SpaceX和太空总署（NASA）团队欢迎你们回到地球，感谢你们使用SpaceX飞行。”</p>
+  </div>
+  <div dir="ltr" class="css-hl9dz2-GridComponent e57qer20">
+    <p class="css-1af541v-Paragraph e1c0huex0">两个月前出席了太空舱升空的美国总统特朗普，对此次成功返回大加赞赏。</p>
+  </div>
+  <div dir="ltr" class="css-hl9dz2-GridComponent e57qer20">
+    <p class="css-1af541v-Paragraph e1c0huex0">“感谢所有人！”他在推特（Twitter）上写道，“太空总署太空人在两个月非常成功的任务之后回到地球，非常好。”</p>
+  </div>
+  <div dir="ltr" class="css-hl9dz2-GridComponent e57qer20">
+    <div data-e2e="twitter-embed-https://twitter.com/realDonaldTrump/status/1289999271664787463?s=20" class="css-bokpm5 e1lxseq90">
+      <div class="lazyload-wrapper">
+        <div class="lazyload-placeholder"></div>
+      </div>
+    </div>
+  </div>
+  <div dir="ltr" class="css-hxtc46-GridComponent e57qer20">
+    <figure>
+<img alt="Presentational white space" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/17B75/production/_105914179_blank_white_space-nc.png" referrerpolicy="no-referrer" /><br />      <figcaption></figcaption>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-hl9dz2-GridComponent e57qer20">
+    <h2 id="为政府省下数十亿美元的任务" tabindex="-1" class="css-10tk4x-SubHeading e14hemmw1">为政府省下数十亿美元的任务</h2>
+  </div>
+  <div dir="ltr" class="css-hl9dz2-GridComponent e57qer20">
+    <p class="css-1af541v-Paragraph e1c0huex0"><em class="css-mzjj9u ewc4zcb0"><strong>BBC科学事务记者乔纳森·阿莫斯（Jonathan Amos）分析</strong></em></p>
+  </div>
+  <div dir="ltr" class="css-hxtc46-GridComponent e57qer20">
+    <figure>
+<img alt="班肯（左）和赫利（右）在5月底升空，前往国际空间站。" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/1DE9/production/_113775670_iss063e022056.jpg" referrerpolicy="no-referrer" /><br />      <figcaption></figcaption>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-hl9dz2-GridComponent e57qer20">
+    <p class="css-1af541v-Paragraph e1c0huex0">此次载人太空任务的圆满完成，为美国太空总署开启了一个新的时代。</p>
+  </div>
+  <div dir="ltr" class="css-hl9dz2-GridComponent e57qer20">
+    <p class="css-1af541v-Paragraph e1c0huex0">未来，太空总署的近地载人航天任务的运输部分将会通过从SpaceX等私人企业购买服务的形式完成。</p>
+  </div>
+  <div dir="ltr" class="css-hl9dz2-GridComponent e57qer20">
+    <p class="css-1af541v-Paragraph e1c0huex0">作为政府机构的太空总署表示，以合约形式将运输服务外包给私人提供商，将会为政府节省数以十亿美元计的费用。节省下来的钱可以转而用于运送太空人登月，而登月以及其后的登火星项目，都是美国“月亮女神计划”（Artemis programme）的一部分。</p>
+  </div>
+  <div dir="ltr" class="css-hl9dz2-GridComponent e57qer20">
+    <p class="css-1af541v-Paragraph e1c0huex0">载人龙船舱是在5月底出发前往太空站，当时运载它的“猎鹰9号”（Falcon 9）火箭也是由SpaceX提供。</p>
+  </div>
+  <div dir="ltr" class="css-hl9dz2-GridComponent e57qer20">
+    <p class="css-1af541v-Paragraph e1c0huex0">赫利和班肯的任务是为该公司的太空人“运载服务”作一次从头到尾的展示。这家由科技创业家伊隆·马斯克（Elon Musk）拥有的公司，从现在起将会向太空总署出售这种服务。</p>
+  </div>
+  <div dir="ltr" class="css-hl9dz2-GridComponent e57qer20">
+    <p class="css-1af541v-Paragraph e1c0huex0">波音公司也在为太空站开发一种“运送服务”，但是在其“星际航线”（Starliner）船舱遭遇软件上的问题之后，不得不推迟它的问世。</p>
+  </div>
+  <div dir="ltr" class="css-hxtc46-GridComponent e57qer20">
+    <figure>
+<img alt="Presentational white space" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/17B75/production/_105914179_blank_white_space-nc.png" referrerpolicy="no-referrer" /><br />      <figcaption></figcaption>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-hl9dz2-GridComponent e57qer20">
+    <p class="css-1af541v-Paragraph e1c0huex0">当四个主减速伞打开，太空舱在墨西哥湾上空缓缓飘落的画面出现时，就意味着太空舱已经成功度过了高速穿越大气层的阶段。</p>
+  </div>
+  <div dir="ltr" class="css-hl9dz2-GridComponent e57qer20">
+    <p class="css-1af541v-Paragraph e1c0huex0">减速伞之后将船舱的速度从大约时速350英里（560公里），降到海面溅落时的大约15英里（7米/秒）。</p>
+  </div>
+  <div dir="ltr" class="css-hl9dz2-GridComponent e57qer20">
+    <p class="css-1af541v-Paragraph e1c0huex0">之后太空舱是通过绳索牵扯被拉出水面，并拉到回收船上。打开舱门之前，技术人员还对太空舱周围表面进行了“残留蒸汽”的检测。</p>
+  </div>
+  <div dir="ltr" class="css-hl9dz2-GridComponent e57qer20">
+    <p class="css-1af541v-Paragraph e1c0huex0">两名太空人经过医疗人员的检查之后，才乘坐直升机回到陆地。</p>
+  </div>
+  <div dir="ltr" class="css-hl9dz2-GridComponent e57qer20">
+    <div class="css-1fobf8d e1gggypo0">
+      <ul dir="ltr" role="list" class="css-4c9jmx-BulletedList e1drcs2w0">
+        <li role="listitem" class="css-chb3zw-BulletedListItem e1drcs2w1"><a href="https://www.bbc.com/zhongwen/simp/science-52873920" class="css-h9s9st-InlineLink e1cs6q200">SpaceX载人龙飞船上两宇航员进入国际空间站</a></li>
+      </ul>
+    </div>
+  </div>
+  <div dir="ltr" class="css-hl9dz2-GridComponent e57qer20">
+    <div class="css-1fobf8d e1gggypo0">
+      <ul dir="ltr" role="list" class="css-4c9jmx-BulletedList e1drcs2w0">
+        <li role="listitem" class="css-chb3zw-BulletedListItem e1drcs2w1"><a href="https://www.bbc.com/zhongwen/simp/science-52816577" class="css-h9s9st-InlineLink e1cs6q200">SpaceX：商业机构首次载人航天任务的10大关注点</a></li>
+      </ul>
+    </div>
+  </div>
+  <div dir="ltr" class="ek1plzs2 css-ycsr8f-GridComponent e57qer20">
+    <figure>
+<img alt="载人龙" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/4F49/production/_112479202_space_x_dragon_capsule_inf640-2x_chinese-nc.png" referrerpolicy="no-referrer" /><br />      <figcaption></figcaption>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-hl9dz2-GridComponent e57qer20">
+    <p class="css-1af541v-Paragraph e1c0huex0">他们飞行的“载人龙”太空舱将会进行修复，明年再度投入使用。</p>
+  </div>
+  <div dir="ltr" class="css-hl9dz2-GridComponent e57qer20">
+    <p class="css-1af541v-Paragraph e1c0huex0">太空总署署长吉姆·布里登斯廷（Jim Bridenstine）表扬了参与此次任务的每一个人，并且谈及了他主管的这个机构在运营哲学上的转变。</p>
+  </div>
+  <div dir="ltr" class="css-hl9dz2-GridComponent e57qer20">
+    <p class="css-1af541v-Paragraph e1c0huex0">“我们不想用和过去一样的方式去购买、拥有和运营这些硬件设备，”他说。</p>
+  </div>
+  <div dir="ltr" class="css-hl9dz2-GridComponent e57qer20">
+    <p class="css-1af541v-Paragraph e1c0huex0">“我们想要成为近地轨道航天这个充满活力的商业市场众多客户当中的一个。不过，我们也想要有很多在成本、革新以及安全性上彼此竞争的供应商，并且切实营造经济发展和性能方面的一个良性循环。”</p>
+  </div>
+  <div dir="ltr" class="css-hl9dz2-GridComponent e57qer20">
+    <p class="css-1af541v-Paragraph e1c0huex0">SpaceX的总裁格温·夏特维尔（Gwynne Shotwell）表示：“今天是伟大的一天。我们应该为我们在这里成就的事情而庆祝，我们将鲍勃和道格带了回来，但是我们也应该将此看作是一个跳板，为‘月亮女神计划’完成更高难度的事。然后，当然，还要去火星。”</p>
+  </div>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#BBC 的其它文章</h4>
+    
+      <li>
+        <time>2020-12-29</time>
+        <a href="https://nodebe4.github.io/waimei/2020-12-29/World-%E4%B8%AD%E7%BE%8E%E5%85%B3%E7%B3%BB-%E6%8B%9C%E7%99%BB%E7%9A%84%E5%AF%B9%E5%8D%8E%E6%94%BF%E7%AD%96%E5%B0%86%E5%A6%82%E4%BD%95%E7%AA%81%E5%87%BA%E7%AB%9E%E4%BA%89-%E9%81%BF%E5%85%8D%E5%86%B2%E7%AA%81-%E4%BA%94%E5%A4%A7%E8%AE%AE%E9%A2%98%E5%89%96%E6%9E%90">
+          [World] 中美关系：拜登的对华政策将如何突出竞争、避免冲突？五大议题剖析
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2020-11-24</time>
+        <a href="https://nodebe4.github.io/waimei/2020-11-24/%E5%89%8D%E6%89%80%E6%9C%AA%E6%9C%89%E7%9A%842020%E5%B9%B4-%E7%89%9B%E6%B4%A5%E5%AD%97%E5%85%B8%E5%B9%B4%E5%BA%A6%E7%83%AD%E8%AF%8D%E4%B8%8D%E6%AD%A2%E4%B8%80%E4%B8%AA">
+          “前所未有的2020年”：牛津字典年度热词不止一个
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2020-07-22</time>
+        <a href="https://nodebe4.github.io/waimei/2020-07-22/%E7%BD%97%E5%86%A0%E8%81%AA%E5%9C%A8%E8%8B%B1%E5%9B%BD%E7%94%B3%E8%AF%B7%E6%94%BF%E6%B2%BB%E9%81%BF%E9%9A%BE-%E4%BB%96%E6%80%8E%E6%A0%B7%E8%AF%84%E4%BB%B7%E5%8C%97%E4%BA%AC%E5%AF%B9%E6%B8%AF%E6%94%BF%E7%AD%96">
+          罗冠聪在英国申请政治避难 他怎样评价北京对港政策？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2020-06-24</time>
+        <a href="https://nodebe4.github.io/waimei/2020-06-24/%E6%9C%9D%E9%B2%9C%E6%88%98%E4%BA%8970%E5%91%A8%E5%B9%B4-%E9%B2%9C%E4%B8%BA%E4%BA%BA%E7%9F%A5%E7%9A%84%E5%85%AB%E4%B8%AA%E5%8E%86%E5%8F%B2%E7%BB%86%E8%8A%82%E5%92%8C%E7%8E%B0%E5%AE%9E%E6%84%8F%E4%B9%89">
+          朝鲜战争70周年：鲜为人知的八个历史细节和现实意义
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2020-07-22/%E7%BD%97%E5%86%A0%E8%81%AA%E5%9C%A8%E8%8B%B1%E5%9B%BD%E7%94%B3%E8%AF%B7%E6%94%BF%E6%B2%BB%E9%81%BF%E9%9A%BE-%E4%BB%96%E6%80%8E%E6%A0%B7%E8%AF%84%E4%BB%B7%E5%8C%97%E4%BA%AC%E5%AF%B9%E6%B8%AF%E6%94%BF%E7%AD%96">
+            前一篇：罗冠聪在英国申请政治避难 他怎样评价北京对港政策？
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2020-11-24/%E5%89%8D%E6%89%80%E6%9C%AA%E6%9C%89%E7%9A%842020%E5%B9%B4-%E7%89%9B%E6%B4%A5%E5%AD%97%E5%85%B8%E5%B9%B4%E5%BA%A6%E7%83%AD%E8%AF%8D%E4%B8%8D%E6%AD%A2%E4%B8%80%E4%B8%AA">
+            后一篇：“前所未有的2020年”：牛津字典年度热词不止一个
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2020-07-22/%E7%BD%97%E5%86%A0%E8%81%AA%E5%9C%A8%E8%8B%B1%E5%9B%BD%E7%94%B3%E8%AF%B7%E6%94%BF%E6%B2%BB%E9%81%BF%E9%9A%BE-%E4%BB%96%E6%80%8E%E6%A0%B7%E8%AF%84%E4%BB%B7%E5%8C%97%E4%BA%AC%E5%AF%B9%E6%B8%AF%E6%94%BF%E7%AD%96'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2020-11-24/%E5%89%8D%E6%89%80%E6%9C%AA%E6%9C%89%E7%9A%842020%E5%B9%B4-%E7%89%9B%E6%B4%A5%E5%AD%97%E5%85%B8%E5%B9%B4%E5%BA%A6%E7%83%AD%E8%AF%8D%E4%B8%8D%E6%AD%A2%E4%B8%80%E4%B8%AA'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2020-11-24/%E5%89%8D%E6%89%80%E6%9C%AA%E6%9C%89%E7%9A%842020%E5%B9%B4-%E7%89%9B%E6%B4%A5%E5%AD%97%E5%85%B8%E5%B9%B4%E5%BA%A6%E7%83%AD%E8%AF%8D%E4%B8%8D%E6%AD%A2%E4%B8%80%E4%B8%AA'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2020-07-22/%E7%BD%97%E5%86%A0%E8%81%AA%E5%9C%A8%E8%8B%B1%E5%9B%BD%E7%94%B3%E8%AF%B7%E6%94%BF%E6%B2%BB%E9%81%BF%E9%9A%BE-%E4%BB%96%E6%80%8E%E6%A0%B7%E8%AF%84%E4%BB%B7%E5%8C%97%E4%BA%AC%E5%AF%B9%E6%B8%AF%E6%94%BF%E7%AD%96'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2020-07-22/%E7%BD%97%E5%86%A0%E8%81%AA%E5%9C%A8%E8%8B%B1%E5%9B%BD%E7%94%B3%E8%AF%B7%E6%94%BF%E6%B2%BB%E9%81%BF%E9%9A%BE-%E4%BB%96%E6%80%8E%E6%A0%B7%E8%AF%84%E4%BB%B7%E5%8C%97%E4%BA%AC%E5%AF%B9%E6%B8%AF%E6%94%BF%E7%AD%96">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2020-11-24/%E5%89%8D%E6%89%80%E6%9C%AA%E6%9C%89%E7%9A%842020%E5%B9%B4-%E7%89%9B%E6%B4%A5%E5%AD%97%E5%85%B8%E5%B9%B4%E5%BA%A6%E7%83%AD%E8%AF%8D%E4%B8%8D%E6%AD%A2%E4%B8%80%E4%B8%AA">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<BBC>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2020-11-24/%E5%89%8D%E6%89%80%E6%9C%AA%E6%9C%89%E7%9A%842020%E5%B9%B4-%E7%89%9B%E6%B4%A5%E5%AD%97%E5%85%B8%E5%B9%B4%E5%BA%A6%E7%83%AD%E8%AF%8D%E4%B8%8D%E6%AD%A2%E4%B8%80%E4%B8%AA">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<BBC>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2020-07-22/%E7%BD%97%E5%86%A0%E8%81%AA%E5%9C%A8%E8%8B%B1%E5%9B%BD%E7%94%B3%E8%AF%B7%E6%94%BF%E6%B2%BB%E9%81%BF%E9%9A%BE-%E4%BB%96%E6%80%8E%E6%A0%B7%E8%AF%84%E4%BB%B7%E5%8C%97%E4%BA%AC%E5%AF%B9%E6%B8%AF%E6%94%BF%E7%AD%96">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

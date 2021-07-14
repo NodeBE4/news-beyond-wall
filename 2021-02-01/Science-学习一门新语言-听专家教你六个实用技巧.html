@@ -1,0 +1,2121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>[Science] 学习一门新语言  听专家教你六个实用技巧 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+[Science] 学习一门新语言  听专家教你六个实用技巧
+——
+" />
+    <meta property="og:description" content="
+[Science] 学习一门新语言  听专家教你六个实用技巧
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="[Science] 学习一门新语言  听专家教你六个实用技巧" />
+    <meta property="twitter:title" content="[Science] 学习一门新语言  听专家教你六个实用技巧" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-55845262&t=%5BScience%5D+%E5%AD%A6%E4%B9%A0%E4%B8%80%E9%97%A8%E6%96%B0%E8%AF%AD%E8%A8%80++%E5%90%AC%E4%B8%93%E5%AE%B6%E6%95%99%E4%BD%A0%E5%85%AD%E4%B8%AA%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-55845262&t=%5BScience%5D+%E5%AD%A6%E4%B9%A0%E4%B8%80%E9%97%A8%E6%96%B0%E8%AF%AD%E8%A8%80++%E5%90%AC%E4%B8%93%E5%AE%B6%E6%95%99%E4%BD%A0%E5%85%AD%E4%B8%AA%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7&d=2021-02-01&e=
+[Science] 学习一门新语言  听专家教你六个实用技巧
+——
+
+
+  
+    语言学习技巧：专家教你如何掌握一门新语言
+  
+  
+    2021年2月1日
+  
+  
+    
+      
+        
+          
+
+          
+        
+        
+          
+图像加注文字，            学习语言任何时候都可以。
+          
+        
+      
+    
+  
+  
+    你是否一直期待能学习一种新语言或是温故知新、重新捡起已经掌握的那门外语？
+  
+  
+    新冠期间许多人相对来讲时间更多了，希望能学习一门新语言。
+  
+  
+    BBC Word of Mouth （《口口相传》）节目主持人迈克尔·罗森（Michael Rosen）采访了一位能讲15种语言的亚历克斯·罗林斯..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-55845262" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=http://www.bbc.com/zhongwen/simp/science-55845262" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=http://www.bbc.com/zhongwen/simp/science-55845262&text=[Science] 学习一门新语言  听专家教你六个实用技巧&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=http://www.bbc.com/zhongwen/simp/science-55845262&title=[Science] 学习一门新语言  听专家教你六个实用技巧" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://www.bbc.com/zhongwen/simp/science-55845262&title=[Science] 学习一门新语言  听专家教你六个实用技巧" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=[Science] 学习一门新语言  听专家教你六个实用技巧&body=
+[Science] 学习一门新语言  听专家教你六个实用技巧
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=http://www.bbc.com/zhongwen/simp/science-55845262" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=http://www.bbc.com/zhongwen/simp/science-55845262&title=[Science] 学习一门新语言  听专家教你六个实用技巧&caption=
+[Science] 学习一门新语言  听专家教你六个实用技巧
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=[Science] 学习一门新语言  听专家教你六个实用技巧&url=http://www.bbc.com/zhongwen/simp/science-55845262" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>[Science] 学习一门新语言  听专家教你六个实用技巧</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-02-01
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#BBC ">
+          BBC
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="http://www.bbc.com/zhongwen/simp/science-55845262"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="BBC的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#BBC 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-55845262&t=%5BScience%5D+%E5%AD%A6%E4%B9%A0%E4%B8%80%E9%97%A8%E6%96%B0%E8%AF%AD%E8%A8%80++%E5%90%AC%E4%B8%93%E5%AE%B6%E6%95%99%E4%BD%A0%E5%85%AD%E4%B8%AA%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7&d=2021-02-01&e=
+[Science] 学习一门新语言  听专家教你六个实用技巧
+——
+
+
+  
+    语言学习技巧：专家教你如何掌握一门新语言
+  
+  
+    2021年2月1日
+  
+  
+    
+      
+        
+          
+
+          
+        
+        
+          
+图像加注文字，            学习语言任何时候都可以。
+          
+        
+      
+    
+  
+  
+    你是否一直期待能学习一种新语言或是温故知新、重新捡起已经掌握的那门外语？
+  
+  
+    新冠期间许多人相对来讲时间更多了，希望能学习一门新语言。
+  
+  
+    BBC Word of Mouth （《口口相传》）节目主持人迈克尔·罗森（Michael Rosen）采访了一位能讲15种语言的亚历克斯·罗林斯..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-55845262" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1612205540000-->
+<p><a href="http://www.bbc.com/zhongwen/simp/science-55845262">[Science] 学习一门新语言  听专家教你六个实用技巧</a>
+——</p>
+
+<div>
+  <div dir="ltr" class="css-e19l8g-GridComponent e57qer20">
+    <h1 id="content" tabindex="-1" class="css-1wfn6k3-Headline e1yj3cbb0">语言学习技巧：专家教你如何掌握一门新语言</h1>
+  </div>
+  <div dir="ltr" class="e1j2237y1 css-vf19ca-GridComponent e57qer20">
+    <time datetime="2021-02-01" class="css-pb6w51-StyledTimestamp e4zesg50">2021年2月1日</time>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-oijotl-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/1483/production/_116715250_9c0f53a9-c59c-4a96-9579-f119bfae301f.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/1483/production/_116715250_9c0f53a9-c59c-4a96-9579-f119bfae301f.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/1483/production/_116715250_9c0f53a9-c59c-4a96-9579-f119bfae301f.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/1483/production/_116715250_9c0f53a9-c59c-4a96-9579-f119bfae301f.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/1483/production/_116715250_9c0f53a9-c59c-4a96-9579-f119bfae301f.jpg 800w" alt="language" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/1483/production/_116715250_9c0f53a9-c59c-4a96-9579-f119bfae301f.jpg" width="976" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>学习语言任何时候都可以。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70"><strong>你是否一直期待能学习一种新语言或是温故知新、重新捡起已经掌握的那门外语？</strong></p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">新冠期间许多人相对来讲时间更多了，希望能学习一门新语言。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">BBC Word of Mouth （《口口相传》）节目主持人迈克尔·罗森（Michael Rosen）采访了一位能讲15种语言的亚历克斯·罗林斯（Alex Rawlings），看看他是如何掌握多国语言的。或许也能为你的语言学习提供一些实用窍门。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <div class="css-1fobf8d e1gggypo0">
+      <ul dir="ltr" role="list" class="css-4c9jmx-BulletedList e1drcs2w0">
+        <li role="listitem" class="css-chb3zw-BulletedListItem e1drcs2w1"><a href="https://www.bbc.com/zhongwen/simp/science-43963469" class="css-h9s9st-InlineLink e1cs6q200">学外语要趁早 最佳年龄段到底有没有</a></li>
+        <li role="listitem" class="css-chb3zw-BulletedListItem e1drcs2w1"><a href="https://www.bbc.com/ukchina/simp/vert-cap-48136932" class="css-h9s9st-InlineLink e1cs6q200">每天一小时就能学新语言 不需苦练一辈子</a></li>
+        <li role="listitem" class="css-chb3zw-BulletedListItem e1drcs2w1"><a href="https://www.bbc.com/zhongwen/simp/world-52969616" class="css-h9s9st-InlineLink e1cs6q200">帮助提高和扩大你英语词汇量的几大技巧与对策</a></li>
+        <li role="listitem" class="css-chb3zw-BulletedListItem e1drcs2w1"><a href="https://www.bbc.com/ukchina/simp/vert-cap-45299195" class="css-h9s9st-InlineLink e1cs6q200">在美国 只懂英语会不会成为一种缺陷</a></li>
+      </ul>
+    </div>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <h2 id="一切记什么时候开始学都不晚" tabindex="-1" class="css-10tk4x-SubHeading e14hemmw1">一，切记--什么时候开始学都不晚</h2>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">一提起学语言，人们首先会想到年龄，认为最好从小开始。如果到了一定年龄就失去了流利掌握一门外语的能力，错过了一个“关键窗口”等等。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">最近的一项研究表明这一所谓关键窗口时期大约是在17岁左右。但是，该调查只是研究了参与者熟练掌握另一种语言语法的能力。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">我们当中又有多少人可以说自己完全掌握了母语的语法呢？也就是说，年龄并非是取决于你能否学好一门外语的障碍，当然你可能会犯某些语法错误。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">即使你外语说得不完美，母语人士也不会计较，反而比你大声、很慢地对人家讲英语要好。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <h2 id="二学习语言本身也是学习一种技能" tabindex="-1" class="css-10tk4x-SubHeading e14hemmw1">二，学习语言本身也是学习一种技能</h2>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-oijotl-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/62A3/production/_116715252_8ca5ecca-0810-438e-93b2-b6ca8b164fa5.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/62A3/production/_116715252_8ca5ecca-0810-438e-93b2-b6ca8b164fa5.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/62A3/production/_116715252_8ca5ecca-0810-438e-93b2-b6ca8b164fa5.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/62A3/production/_116715252_8ca5ecca-0810-438e-93b2-b6ca8b164fa5.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/62A3/production/_116715252_8ca5ecca-0810-438e-93b2-b6ca8b164fa5.jpg 800w" alt="app" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/62A3/production/_116715252_8ca5ecca-0810-438e-93b2-b6ca8b164fa5.jpg" width="976" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>有人喜欢跟软件学习语言。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">虽然亚历克斯会15种语言，但他告诉BBC这并不是因为他有什么天生与人不同之处。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">他表示，当听到别人说他有语言“天赋”或是“天才”时会令他很不自在。他说，他从不这样想，自己也并不是一开始就掌握如此多语言的，也要用许多年来学习，而且也很吃力。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">因此，即使精通多国语言的大师们也仍在努力。亚历克斯说，学习一门语言非常不容易，它会让你意识到你不懂的有太多。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">有些人确实比他人学习语言更容易些，但这不是因为只有某些人才具备这些能力，而是因为好奇心和努力的结果。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">不仅如此，亚历克斯解释说，对全球数百万人来说，懂多种语言也是他们生存所必须的。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">比如，在非洲和南美洲一些地区，你必须要掌握多种语言。如果你生活在南非的约翰内斯堡，你需要掌握5种语言才能生存，因为人人都会讲多种语言。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <h2 id="三找到适合自己的起步方式" tabindex="-1" class="css-10tk4x-SubHeading e14hemmw1">三，找到适合自己的起步方式</h2>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-oijotl-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/FEE3/production/_116715256_7dddc9b0-8b08-411e-aee9-8c6a5a6c3cbd.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/FEE3/production/_116715256_7dddc9b0-8b08-411e-aee9-8c6a5a6c3cbd.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/FEE3/production/_116715256_7dddc9b0-8b08-411e-aee9-8c6a5a6c3cbd.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/FEE3/production/_116715256_7dddc9b0-8b08-411e-aee9-8c6a5a6c3cbd.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/FEE3/production/_116715256_7dddc9b0-8b08-411e-aee9-8c6a5a6c3cbd.jpg 800w" alt="clocks" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/FEE3/production/_116715256_7dddc9b0-8b08-411e-aee9-8c6a5a6c3cbd.jpg" width="976" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>学语言是需要花时间的。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">亚历克斯喜欢学习生词的过程，他觉得从一开始看到一个生字到最后成为自己所掌握的一个词汇这一过程非常令人兴奋。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">他学习的方法是，先从一些简单问候语和基本词汇开始，然后习惯这种语言，多听，熟悉它的声音和韵律等。之后，再跟着书或课程学习。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">亚历克斯的窍门是给自己做一个大脑词汇地图，比如，如果他想去商店，就先在纸上写出所有自己能想到的在商店环境中能用到的短语，然后再上网去查怎么说，而且背诵下来。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">这样，去商店要用的词就解决了。然后再根据语言环境需要重复同一方法。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">也有些人觉得语言应用软件APP更好用。新冠禁足使网上免费语言学习APP多邻国（Duolingo）的新用户激增132%。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">使用语言APP的好处还在于，学得好坏只有你自己知道，免得在课堂同学面前尴尬。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <h2 id="四想办法营造语言环境" tabindex="-1" class="css-10tk4x-SubHeading e14hemmw1">四，想办法营造语言环境</h2>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">学外语有许多方式，不一定非要在学校环境，只要找到适合你的就行。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">亚历克斯表示，对他来说学习一门语言最成功的方法是根本就没意识到你在学习，比如，其中之一的方式就是通过看你所学语言的影片和书籍。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">语言学家说，电影和电视可以为人提供许多视觉线索，对学语言很有帮助。此外，某些短语所伴随的语气声调、面目表情和肢体语言都有助于表达其含义。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">同时，跟教科书完美例句相比，电影和电视还可以为语言学习者提供准确真实的发音、不同口音、方言以及母语人士在讲话时的细微差别等。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">亚历克斯认为，那种只是为了应付通过考试的学习方法让人缺乏主动性。他希望语言学习更多是为了探索世界以及一个国家的文化，这样才更有动力。</p>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-oijotl-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/10AFF/production/_116715386_c1ff5dec-1712-4715-8e7d-de322cb8e3cc.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/10AFF/production/_116715386_c1ff5dec-1712-4715-8e7d-de322cb8e3cc.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/10AFF/production/_116715386_c1ff5dec-1712-4715-8e7d-de322cb8e3cc.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/10AFF/production/_116715386_c1ff5dec-1712-4715-8e7d-de322cb8e3cc.jpg 624w, https://ichef.bbci.co.uk/news/640/cpsprodpb/10AFF/production/_116715386_c1ff5dec-1712-4715-8e7d-de322cb8e3cc.jpg 640w" alt="汉字" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/10AFF/production/_116715386_c1ff5dec-1712-4715-8e7d-de322cb8e3cc.jpg" width="640" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>关键要勤学多练</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <h2 id="五勤学多练是关键" tabindex="-1" class="css-10tk4x-SubHeading e14hemmw1">五，勤学多练是关键</h2>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">取决于你的母语是什么，学习另一种语言有难有易。如果相似之处越多学起来也就相对容易些。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">以英语为例，英语母语者学习法语、西班牙语、挪威语以及南非语是最容易的，他们只需学习大约600小时左右就能达到基本流利。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">但如果他们学日语、韩语以及阿拉伯语就要难得多。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">最有效的方法是勤学多练，每天一点点（一个小时），这样要可能比长时间但间断学习效果可能要更好。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <h2 id="六掌握越多语言或方言越好" tabindex="-1" class="css-10tk4x-SubHeading e14hemmw1">六，掌握越多语言或方言越好</h2>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">研究显示，双语人士比只讲一种语言的人在学习一门新语言时更快。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">而且，就连中风患者中，那些能讲两种语言以上的人比只讲单一语言的人更有可能恢复认知功能。甚至还有研究显示，双语者还可以延缓失智症（俗称痴呆症）。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">不仅如此，语言学研究还发现，就连会讲同一语言中的两种方言的人也有着与双语者相同的认知特征。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">还有一项研究表明，那些能讲多种语言和两种方言的儿童在记忆、注意力以及认知灵活性方面的能力都高于只讲单一语言的儿童。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">在挪威，学习用两种挪威方言写作的儿童在标准测试中的得分要比全国平均水平高许多。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">因此，无论你是为了假日旅游想练习一下语言，还是想不用字幕看懂外国影片或是阅读外文书籍；抑或是想跟新朋友、新同事聊天；或者干脆就是想活动刺激一下大脑，那就赶紧行动吧，不要再找借口了。</p>
+  </div>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#BBC 的其它文章</h4>
+    
+      <li>
+        <time>2021-02-02</time>
+        <a href="https://nodebe4.github.io/waimei/2021-02-02/Science-%E9%A6%99%E6%B8%AF%E5%BC%BA%E5%88%B6%E5%B0%81%E5%8C%BA%E6%A3%80%E6%B5%8B%E5%A4%A7%E9%83%A8%E5%88%86%E7%A1%AE%E8%AF%8A%E4%B8%AA%E6%A1%88%E4%B8%8D%E5%A4%9A-%E6%9E%97%E9%83%91%E5%BC%BA%E8%B0%83%E9%9D%9E%E5%8A%B3%E6%B0%91%E4%BC%A4%E8%B4%A2">
+          [Science] 香港强制封区检测大部分确诊个案不多，林郑强调非劳民伤财
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-02-01</time>
+        <a href="https://nodebe4.github.io/waimei/2021-02-01/Business-%E8%8B%B1%E5%9B%BD%E7%94%B3%E8%AF%B7%E5%8A%A0%E5%85%A5CPTPP-%E6%B2%A1%E6%9C%89%E7%BE%8E%E5%9B%BD%E7%9A%84%E8%87%AA%E8%B4%B8%E5%8C%BA%E6%9C%89%E4%BB%80%E4%B9%88%E5%90%B8%E5%BC%95%E5%8A%9B">
+          [Business] 英国申请加入CPTPP 没有美国的自贸区有什么吸引力
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-31</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-31/Uk-%E8%8B%B1%E5%9B%BDBNO%E7%AD%BE%E8%AF%81-%E4%BB%80%E4%B9%88%E4%BA%BA%E6%9C%89%E8%B5%84%E6%A0%BC%E7%94%B3%E8%AF%B7-%E5%A6%82%E4%BD%95%E4%BF%9D%E9%9A%9C%E7%94%B3%E8%AF%B7%E4%BA%BA%E4%B8%8D%E8%A2%AB%E8%AF%86%E5%88%AB">
+          [Uk] 英国BNO签证：什么人有资格申请？如何保障申请人不被识别？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-31</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-31/World-%E7%A4%BE%E4%BA%A4%E7%BD%91%E7%BB%9C%E4%B9%8B%E7%88%B6-%E6%B5%B7%E6%81%A9%E6%96%AF-%E6%95%9E%E5%BC%80%E5%AE%B6%E9%97%A8%E7%BB%93%E4%BA%A4%E5%A4%A9%E4%B8%8B%E5%AE%A2%E7%9A%84%E4%BC%A0%E5%A5%87%E4%BA%BA%E7%94%9F">
+          [World] “社交网络之父” 海恩斯：敞开家门结交天下客的传奇人生
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-31/Uk-%E8%8B%B1%E5%9B%BDBNO%E7%AD%BE%E8%AF%81-%E4%BB%80%E4%B9%88%E4%BA%BA%E6%9C%89%E8%B5%84%E6%A0%BC%E7%94%B3%E8%AF%B7-%E5%A6%82%E4%BD%95%E4%BF%9D%E9%9A%9C%E7%94%B3%E8%AF%B7%E4%BA%BA%E4%B8%8D%E8%A2%AB%E8%AF%86%E5%88%AB">
+            前一篇：[Uk] 英国BNO签证：什么人有资格申请？如何保障申请人不被识别？
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-02-01/Business-%E8%8B%B1%E5%9B%BD%E7%94%B3%E8%AF%B7%E5%8A%A0%E5%85%A5CPTPP-%E6%B2%A1%E6%9C%89%E7%BE%8E%E5%9B%BD%E7%9A%84%E8%87%AA%E8%B4%B8%E5%8C%BA%E6%9C%89%E4%BB%80%E4%B9%88%E5%90%B8%E5%BC%95%E5%8A%9B">
+            后一篇：[Business] 英国申请加入CPTPP 没有美国的自贸区有什么吸引力
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-31/Uk-%E8%8B%B1%E5%9B%BDBNO%E7%AD%BE%E8%AF%81-%E4%BB%80%E4%B9%88%E4%BA%BA%E6%9C%89%E8%B5%84%E6%A0%BC%E7%94%B3%E8%AF%B7-%E5%A6%82%E4%BD%95%E4%BF%9D%E9%9A%9C%E7%94%B3%E8%AF%B7%E4%BA%BA%E4%B8%8D%E8%A2%AB%E8%AF%86%E5%88%AB'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-02-01/Business-%E8%8B%B1%E5%9B%BD%E7%94%B3%E8%AF%B7%E5%8A%A0%E5%85%A5CPTPP-%E6%B2%A1%E6%9C%89%E7%BE%8E%E5%9B%BD%E7%9A%84%E8%87%AA%E8%B4%B8%E5%8C%BA%E6%9C%89%E4%BB%80%E4%B9%88%E5%90%B8%E5%BC%95%E5%8A%9B'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-02-01/Business-%E8%8B%B1%E5%9B%BD%E7%94%B3%E8%AF%B7%E5%8A%A0%E5%85%A5CPTPP-%E6%B2%A1%E6%9C%89%E7%BE%8E%E5%9B%BD%E7%9A%84%E8%87%AA%E8%B4%B8%E5%8C%BA%E6%9C%89%E4%BB%80%E4%B9%88%E5%90%B8%E5%BC%95%E5%8A%9B'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-31/Uk-%E8%8B%B1%E5%9B%BDBNO%E7%AD%BE%E8%AF%81-%E4%BB%80%E4%B9%88%E4%BA%BA%E6%9C%89%E8%B5%84%E6%A0%BC%E7%94%B3%E8%AF%B7-%E5%A6%82%E4%BD%95%E4%BF%9D%E9%9A%9C%E7%94%B3%E8%AF%B7%E4%BA%BA%E4%B8%8D%E8%A2%AB%E8%AF%86%E5%88%AB'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-31/Uk-%E8%8B%B1%E5%9B%BDBNO%E7%AD%BE%E8%AF%81-%E4%BB%80%E4%B9%88%E4%BA%BA%E6%9C%89%E8%B5%84%E6%A0%BC%E7%94%B3%E8%AF%B7-%E5%A6%82%E4%BD%95%E4%BF%9D%E9%9A%9C%E7%94%B3%E8%AF%B7%E4%BA%BA%E4%B8%8D%E8%A2%AB%E8%AF%86%E5%88%AB">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-02-01/Business-%E8%8B%B1%E5%9B%BD%E7%94%B3%E8%AF%B7%E5%8A%A0%E5%85%A5CPTPP-%E6%B2%A1%E6%9C%89%E7%BE%8E%E5%9B%BD%E7%9A%84%E8%87%AA%E8%B4%B8%E5%8C%BA%E6%9C%89%E4%BB%80%E4%B9%88%E5%90%B8%E5%BC%95%E5%8A%9B">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<BBC>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-02-01/Business-%E8%8B%B1%E5%9B%BD%E7%94%B3%E8%AF%B7%E5%8A%A0%E5%85%A5CPTPP-%E6%B2%A1%E6%9C%89%E7%BE%8E%E5%9B%BD%E7%9A%84%E8%87%AA%E8%B4%B8%E5%8C%BA%E6%9C%89%E4%BB%80%E4%B9%88%E5%90%B8%E5%BC%95%E5%8A%9B">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<BBC>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-31/Uk-%E8%8B%B1%E5%9B%BDBNO%E7%AD%BE%E8%AF%81-%E4%BB%80%E4%B9%88%E4%BA%BA%E6%9C%89%E8%B5%84%E6%A0%BC%E7%94%B3%E8%AF%B7-%E5%A6%82%E4%BD%95%E4%BF%9D%E9%9A%9C%E7%94%B3%E8%AF%B7%E4%BA%BA%E4%B8%8D%E8%A2%AB%E8%AF%86%E5%88%AB">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

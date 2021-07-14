@@ -1,0 +1,1619 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>厌食症——一种可能威胁生命的疫病 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+厌食症——一种可能威胁生命的疫病
+——
+" />
+    <meta property="og:description" content="
+厌食症——一种可能威胁生命的疫病
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="厌食症——一种可能威胁生命的疫病" />
+    <meta property="twitter:title" content="厌食症——一种可能威胁生命的疫病" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E5%258E%258C%25E9%25A3%259F%25E7%2597%2587%25E2%2580%2594%25E2%2580%2594%25E4%25B8%2580%25E7%25A7%258D%25E5%258F%25AF%25E8%2583%25BD%25E5%25A8%2581%25E8%2583%2581%25E7%2594%259F%25E5%2591%25BD%25E7%259A%2584%25E7%2596%25AB%25E7%2597%2585%2Fa-58219524&t=%E5%8E%8C%E9%A3%9F%E7%97%87%E2%80%94%E2%80%94%E4%B8%80%E7%A7%8D%E5%8F%AF%E8%83%BD%E5%A8%81%E8%83%81%E7%94%9F%E5%91%BD%E7%9A%84%E7%96%AB%E7%97%85" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E5%258E%258C%25E9%25A3%259F%25E7%2597%2587%25E2%2580%2594%25E2%2580%2594%25E4%25B8%2580%25E7%25A7%258D%25E5%258F%25AF%25E8%2583%25BD%25E5%25A8%2581%25E8%2583%2581%25E7%2594%259F%25E5%2591%25BD%25E7%259A%2584%25E7%2596%25AB%25E7%2597%2585%2Fa-58219524&t=%E5%8E%8C%E9%A3%9F%E7%97%87%E2%80%94%E2%80%94%E4%B8%80%E7%A7%8D%E5%8F%AF%E8%83%BD%E5%A8%81%E8%83%81%E7%94%9F%E5%91%BD%E7%9A%84%E7%96%AB%E7%97%85&d=2021-07-11&e=
+厌食症——一种可能威胁生命的疫病
+——
+
+
+  
+Gudrun Heise2021-07-11T07:38:31.823Z
+  
+  
+
+  
+  （德国之声中文网）尤利娅已患有厌食症20多年了。她身高1.6米，体重40公斤。对她而言，40公斤已经很多了。她介绍：“在最严重的时候，我的体重只有30公斤。她最初其实只想减掉一点体重。她当时的体重是56公斤，处于绝对正常范围，但她却不满意。尤利娅在一个除夕夜做出减重的决定，相当于新年新计划。 “开始效果不错，从当年的1月到5月，我瘦了6公斤。周围的大多数人都觉得我更好看了，但同时认为减到50公斤就足够了。但那时的我已经无法停止减肥了，”现年41岁的尤利娅回忆道。
+  尤利娅的困扰正是胡贝尔（Thomas Huber）每天都要处理的问题。他在巴特恩豪森（Bad Oeynhausen）开设了考尔索医院（Klinik am Korso）——一..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E5%258E%258C%25E9%25A3%259F%25E7%2597%2587%25E2%2580%2594%25E2%2580%2594%25E4%25B8%2580%25E7%25A7%258D%25E5%258F%25AF%25E8%2583%25BD%25E5%25A8%2581%25E8%2583%2581%25E7%2594%259F%25E5%2591%25BD%25E7%259A%2584%25E7%2596%25AB%25E7%2597%2585%2Fa-58219524" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.dw.com/zh/%E5%8E%8C%E9%A3%9F%E7%97%87%E2%80%94%E2%80%94%E4%B8%80%E7%A7%8D%E5%8F%AF%E8%83%BD%E5%A8%81%E8%83%81%E7%94%9F%E5%91%BD%E7%9A%84%E7%96%AB%E7%97%85/a-58219524" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.dw.com/zh/%E5%8E%8C%E9%A3%9F%E7%97%87%E2%80%94%E2%80%94%E4%B8%80%E7%A7%8D%E5%8F%AF%E8%83%BD%E5%A8%81%E8%83%81%E7%94%9F%E5%91%BD%E7%9A%84%E7%96%AB%E7%97%85/a-58219524&text=厌食症——一种可能威胁生命的疫病&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.dw.com/zh/%E5%8E%8C%E9%A3%9F%E7%97%87%E2%80%94%E2%80%94%E4%B8%80%E7%A7%8D%E5%8F%AF%E8%83%BD%E5%A8%81%E8%83%81%E7%94%9F%E5%91%BD%E7%9A%84%E7%96%AB%E7%97%85/a-58219524&title=厌食症——一种可能威胁生命的疫病" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.dw.com/zh/%E5%8E%8C%E9%A3%9F%E7%97%87%E2%80%94%E2%80%94%E4%B8%80%E7%A7%8D%E5%8F%AF%E8%83%BD%E5%A8%81%E8%83%81%E7%94%9F%E5%91%BD%E7%9A%84%E7%96%AB%E7%97%85/a-58219524&title=厌食症——一种可能威胁生命的疫病" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=厌食症——一种可能威胁生命的疫病&body=
+厌食症——一种可能威胁生命的疫病
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.dw.com/zh/%E5%8E%8C%E9%A3%9F%E7%97%87%E2%80%94%E2%80%94%E4%B8%80%E7%A7%8D%E5%8F%AF%E8%83%BD%E5%A8%81%E8%83%81%E7%94%9F%E5%91%BD%E7%9A%84%E7%96%AB%E7%97%85/a-58219524" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.dw.com/zh/%E5%8E%8C%E9%A3%9F%E7%97%87%E2%80%94%E2%80%94%E4%B8%80%E7%A7%8D%E5%8F%AF%E8%83%BD%E5%A8%81%E8%83%81%E7%94%9F%E5%91%BD%E7%9A%84%E7%96%AB%E7%97%85/a-58219524&title=厌食症——一种可能威胁生命的疫病&caption=
+厌食症——一种可能威胁生命的疫病
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=厌食症——一种可能威胁生命的疫病&url=https://www.dw.com/zh/%E5%8E%8C%E9%A3%9F%E7%97%87%E2%80%94%E2%80%94%E4%B8%80%E7%A7%8D%E5%8F%AF%E8%83%BD%E5%A8%81%E8%83%81%E7%94%9F%E5%91%BD%E7%9A%84%E7%96%AB%E7%97%85/a-58219524" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>厌食症——一种可能威胁生命的疫病</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-07-11
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#德国之声 ">
+          德国之声
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.dw.com/zh/%E5%8E%8C%E9%A3%9F%E7%97%87%E2%80%94%E2%80%94%E4%B8%80%E7%A7%8D%E5%8F%AF%E8%83%BD%E5%A8%81%E8%83%81%E7%94%9F%E5%91%BD%E7%9A%84%E7%96%AB%E7%97%85/a-58219524"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="德国之声的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#德国之声 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E5%258E%258C%25E9%25A3%259F%25E7%2597%2587%25E2%2580%2594%25E2%2580%2594%25E4%25B8%2580%25E7%25A7%258D%25E5%258F%25AF%25E8%2583%25BD%25E5%25A8%2581%25E8%2583%2581%25E7%2594%259F%25E5%2591%25BD%25E7%259A%2584%25E7%2596%25AB%25E7%2597%2585%2Fa-58219524&t=%E5%8E%8C%E9%A3%9F%E7%97%87%E2%80%94%E2%80%94%E4%B8%80%E7%A7%8D%E5%8F%AF%E8%83%BD%E5%A8%81%E8%83%81%E7%94%9F%E5%91%BD%E7%9A%84%E7%96%AB%E7%97%85&d=2021-07-11&e=
+厌食症——一种可能威胁生命的疫病
+——
+
+
+  
+Gudrun Heise2021-07-11T07:38:31.823Z
+  
+  
+
+  
+  （德国之声中文网）尤利娅已患有厌食症20多年了。她身高1.6米，体重40公斤。对她而言，40公斤已经很多了。她介绍：“在最严重的时候，我的体重只有30公斤。她最初其实只想减掉一点体重。她当时的体重是56公斤，处于绝对正常范围，但她却不满意。尤利娅在一个除夕夜做出减重的决定，相当于新年新计划。 “开始效果不错，从当年的1月到5月，我瘦了6公斤。周围的大多数人都觉得我更好看了，但同时认为减到50公斤就足够了。但那时的我已经无法停止减肥了，”现年41岁的尤利娅回忆道。
+  尤利娅的困扰正是胡贝尔（Thomas Huber）每天都要处理的问题。他在巴特恩豪森（Bad Oeynhausen）开设了考尔索医院（Klinik am Korso）——一..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E5%258E%258C%25E9%25A3%259F%25E7%2597%2587%25E2%2580%2594%25E2%2580%2594%25E4%25B8%2580%25E7%25A7%258D%25E5%258F%25AF%25E8%2583%25BD%25E5%25A8%2581%25E8%2583%2581%25E7%2594%259F%25E5%2591%25BD%25E7%259A%2584%25E7%2596%25AB%25E7%2597%2585%2Fa-58219524" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1626032825000-->
+<p><a href="https://www.dw.com/zh/%E5%8E%8C%E9%A3%9F%E7%97%87%E2%80%94%E2%80%94%E4%B8%80%E7%A7%8D%E5%8F%AF%E8%83%BD%E5%A8%81%E8%83%81%E7%94%9F%E5%91%BD%E7%9A%84%E7%96%AB%E7%97%85/a-58219524">厌食症——一种可能威胁生命的疫病</a>
+——</p>
+
+<div>
+  <div>
+<em>Gudrun Heise<br />2021-07-11T07:38:31.823Z</em>
+  </div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/18360444_303.jpg" width="100%" />  <div>
+<small style="color: #999;"></small>
+  </div>
+  <p>（德国之声中文网）尤利娅已患有厌食症20多年了。她身高1.6米，体重40公斤。对她而言，40公斤已经很多了。她介绍：“在最严重的时候，我的体重只有30公斤。她最初其实只想减掉一点体重。她当时的体重是56公斤，处于绝对正常范围，但她却不满意。尤利娅在一个除夕夜做出减重的决定，相当于新年新计划。 “开始效果不错，从当年的1月到5月，我瘦了6公斤。周围的大多数人都觉得我更好看了，但同时认为减到50公斤就足够了。但那时的我已经无法停止减肥了，”现年41岁的尤利娅回忆道。</p>
+  <p>尤利娅的困扰正是胡贝尔（Thomas Huber）每天都要处理的问题。他在巴特恩豪森（Bad Oeynhausen）开设了考尔索医院（Klinik am Korso）——一家专门治疗饮食失调的机构。“厌食症患者往往已深陷其中，他们不再有任何动力去改变什么。这也正是危险之处。这些年轻人在厌食症中越陷越深，当人的体重低于一定程度时，这种疾病就会危及生命”，胡贝解释说：“大约10%的厌食症患者死于这种疾病。”</p>
+  <p>约有1.1%的女性以及0.3%的男性患有厌食症。其中大多数人的年龄在14至16岁之间。过去人们认为，许多女孩因为想模仿模特或演员而得上厌食症，但今天我们知道，缺乏自尊心、被虐待或欺凌等都可能引发厌食症。一旦陷入厌食症的漩涡，便很难脱身，而且会越陷越深。 </p>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/42533815_404.jpg" width="100%" />  <div>
+<small style="color: #999;">许多女孩希望拥有模特般的身材</small>
+  </div>
+  <p> </p>
+  <p><strong>症状：饿死也不吃 </strong></p>
+  <p> </p>
+  <p>经过最初几个月的节食，尤利娅减重的速度越来越快。到了夏天，她的体重只有40公斤。她只吃生的蔬菜和水果，以及早晚各半个面包。偶尔会例外吃一杯婴儿辅食。当时的她21岁，一心只想着减重。体重计上每少一公斤都令其兴奋，每一次她都为自己感到骄傲，这给她带来一种幸福的感觉。 </p>
+  <p>然而，她的身体忽然开始对这种激进的饮食方式进行反击。有一天外出散步时，她的一条腿突然麻木。她的母亲带她去看了神经科医生。那是她第一次听说“厌食症”这种疾病。尤利娅补充道：“我后来又去营养师那里接受饮食失调治疗。他为我量身定制了饮食计划。本以为会对我有帮助，但实际上一点用都没有。”她的体重继续势不可挡地下降。 </p>
+  <p> </p>
+  <p><strong>原因：缺乏自信心</strong></p>
+  <p> </p>
+  <p>尤利娅确信她的厌食症不是来源于任何童年阴影。毕竟她一直都受到家人的呵护，但她在学校却非常自卑，总觉得自己远不如他人。她无法控制这一点，但她可以控制自己的饮食。只有她能决定自己是否需要进食。最初，她并没有意识到这种做法对自己身体的影响。 </p>
+  <p>胡贝尔介绍：“我们的身体为了生存会抓住一切储存能量的机会。但厌食症患者终将不仅失去身体的脂肪。身体会求助于任何可以提供能量的东西。”他补充说，所以重要的器官组织也会被分解，“例如，心肌受损将会导致心力衰竭，或者当肾脏周围的保护性脂肪囊被分解时，就会造成肾脏衰竭，无法制造充足的血液和免疫细胞，人就更容易被感染。”</p>
+  <p>尤利娅的身体也在对能量供应不足作出反应。她的腿麻只是身体敲响的第一次警钟。“后来我的月经停了，而且我长出了所谓的胎毛，患上了骨质疏松症，我的头发变得非常稀疏，有一次，当我和父母度假去海里游泳时，我的眼前突然发黑。那时我真正开始害怕了，”尤利娅描述了当时的情况。她之后第一次去心身科就诊。 </p>
+<img src="" width="100%" />  <div>
+<small style="color: #999;">厌食症会导致心肌受损</small>
+  </div>
+  <p> </p>
+  <p><strong>后果：孤僻且抑郁</strong></p>
+  <p>尤利娅越来越孤僻，并患上抑郁和恐惧症，开始反复住院。第一次住院持续了七个星期，随后是门诊治疗。2004年春天，她又在医院里度过了三个月，当年11月又住了七个星期的院，2006年住了三个月，2008年住了两个月，2010年又进了医院。 </p>
+  <p>医院的治疗方式通常包括每天称重和监督进餐。她不能自己选择想吃的东西。她得到的是一个现成的盘子，不再需要、也不可能自己做决定。“饮食失调的人有很多限制卡路里的招数”，尤利娅解释说：“他们可能不会抹黄油，或者刮掉谷物面包上的谷物。吃面包只吃表皮，不吃里面白色的部分。” </p>
+  <p>厌食症主导了她的生活。她整个人都在“省电”模式下运行，尽可能地减少能量消耗。她疏远了朋友，患上了恐慌和抑郁症。她因此无精打采，没有动力做任何事情，包括和他人见面。 </p>
+  <p>胡贝尔解释说，抑郁症往往伴随着社交恐惧症。“社交恐惧症患者可能害怕他人的评判。具体来言意味着：他们不敢接近陌生人。举例来说，有人作为一名团体的新成员可能就不敢跟其他成员接触，或者有人也许害怕在全班同学面前发言。” </p>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/51622108_303.jpg" width="100%" />  <div>
+<small style="color: #999;">厌食症让尤利娅越来越孤僻，并患上抑郁和恐惧症</small>
+  </div>
+  <p>尤利娅回忆说，那是一段极其困难的时期。经过多次住院治疗，她现在的体重是42公斤。她有两个小孩，体重都正常。然而，时隔20年，尤利娅仍未能摆脱她的厌食症。她预计：“饮食失调可能将伴随我一生”。</p>
+  <p><strong>“低脂夸克奶酪和梨”</strong></p>
+  <p> </p>
+  <p>一些厌食症患者得以成功摆脱这种疾病，重新养成正常的饮食习惯。31岁的曼努埃尔（Manuel）已经克服了他的饮食失调问题。</p>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/57951113_303.jpg" width="100%" />  <div>
+<small style="color: #999;">曼努埃尔在他的播客中谈到了他的厌食症</small>
+  </div>
+  <p> </p>
+  <p>作为一名男性，他是厌食症患者中的少数人群。然而，直到八年前，他还一直都被厌食症所困扰。现在，他试图帮助他人。自2020年10月以来，他一直在自己的播客中定期谈论他的相关经历。博客节目的名字叫“低脂夸克奶酪和梨”。他说，在他厌食症最严重的时期，这两种食物几乎是他饮食的全部。 </p>
+  <p>这一时期持续了三年半，从他19岁那年开始。曼努埃尔也有控制某种东西的需求。他认为在吃的方面，至少自己可以决定是否吃和吃什么。“我觉得当时我并不真正知道自己想要什么。我也有一种省钱的强迫症。省钱也意味着少买东西”，曼努埃尔如是说。对他而言，这也意味着他吃得越来越少，甚至成瘾。 </p>
+  <p>他越陷越深，开始计算卡路里。他坦言，厌食症主导了他的整个生活。最终，身高1.8米的他的体重只有57公斤。“我当时知道这不正常，但却并不在乎。现在当我说起这些事情时，感觉好像是在谈论别人，或者在看一部电影。”</p>
+  <p> </p>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/57951105_303.jpg" width="100%" />  <div>
+<small style="color: #999;">曼努埃尔是一位自己创作歌曲的音乐家</small>
+  </div>
+  <p> </p>
+  <p><strong>好友相助</strong></p>
+  <p> </p>
+  <p>后来好友的一番话点醒了曼努埃尔。音乐家曼努埃尔在一个乐队里弹奏吉他，也会自己作曲。他的好朋友也是乐队的一员。曼努埃尔回忆：“我朋友当时郑重地告诉我：他再也受不了了，再也看不下去了。那一刻我很清楚：如果我不做任何改变、不寻求帮助，那么我将会失去一切对我有意义的东西：我最好的朋友、乐队和音乐。” </p>
+  <p>曼努埃尔接受了门诊治疗，重点针对饮食失调。他说： “我当时很快就找到了一位治疗师。她经常会给我布置作业：如何再次与食物打交道？ 如何正确评估食品？什么是正常分量？”</p>
+  <p>在治疗的过程中，曼努埃尔意识到，厌食症对他的影响很大。这一疾病会夺走患者对生活的热情和大量的精力，胡贝尔接着指出：“他们的痛苦与日俱增，饮食失调的人最好可以寻求帮助。获得帮助的途径也有很多。例如，我们的主页上有一份调查问卷。受厌食症困扰的人可以填写后寄给我们。我们通常会与患者进行初步的沟通。”</p>
+  <p>曼努埃尔相信，没有接受治疗的话，他自己是不会成功摆脱厌食症的。他说，自己一直在努力回忆患上厌食症之前的情况。</p>
+  <p> </p>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/57951093_303.jpg" width="100%" />  <div>
+<small style="color: #999;">曼努埃尔已经摆脱了他的厌食症</small>
+  </div>
+  <p><strong>通过播客向他人提供帮助</strong></p>
+  <p> </p>
+  <p>曼努埃尔在一个咨询机构的厌食症患者聚会上萌生了制作播客的想法。作为一名曾经的患者，他被最常问到的一个问题是：真的可以摆脱厌食症吗？ </p>
+  <p>恢复到正常体重，曼努埃尔用了大约一年的时间。如今，他的体重为84公斤。在他的播客中，他首先谈到了自己作为一个厌食症患者的经历，与他人分享了积极和消极的经验。最重要的是，他想帮助他们打消有关求助咨询机构的恐惧。 </p>
+  <p>现在他自己的故事已经讲完了。而“低脂夸克奶酪和梨”邀请的嘉宾却越来越多，曼努埃尔介绍：“一个小团体已经形成，成员们通过Facebook相互交流。最难的是，你必须意识到自己患有厌食症，愿意寻求并接受帮助。厌食症是可以摆脱的，但我也没有秘方。”</p>
+  <p> </p>
+  <p> </p>
+  <p>© 2021年 德国之声版权声明：本文所有内容受到著作权法保护，如无德国之声特别授权，不得擅自使用。任何不当行为都将导致追偿，并受到刑事追究。</p>
+  <p> </p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#德国之声 的其它文章</h4>
+    
+      <li>
+        <time>2021-07-11</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-11/%E5%A4%9A%E5%AE%B6%E4%B8%AD%E5%9B%BD%E5%85%AC%E5%8F%B8%E5%86%8D%E8%A2%AB%E7%BE%8E%E5%9B%BD-%E6%8B%89%E9%BB%91-%E4%B8%AD%E6%96%B9%E5%AE%A3%E5%B8%83%E5%8F%8D%E5%88%B6">
+          多家中国公司再被美国“拉黑“  中方宣布反制
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-11</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-11/%E5%A2%99%E5%A4%96%E6%96%87%E6%91%98-%E5%8F%B6%E9%97%AE%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9B%BF%E4%BB%A3%E4%BA%86%E6%9D%8E%E5%B0%8F%E9%BE%99">
+          墙外文摘：叶问为什么替代了李小龙？ 
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-11</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-11/%E5%89%8D%E9%A6%99%E6%B8%AF-%E5%A4%B4%E6%9D%A1%E6%96%B0%E9%97%BB-%E4%B8%BB%E6%8C%81%E4%BA%BA%E6%9B%BE%E5%BF%97%E8%B1%AA%E7%A6%BB%E6%B8%AF%E8%B5%B4%E5%8F%B0">
+          前香港《头条新闻》主持人曾志豪离港赴台
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-11</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-11/%E4%B8%AD%E6%9C%9D%E9%AB%98%E8%B0%83-%E7%A7%80%E6%81%A9%E7%88%B1-%E4%BA%92%E8%B4%BA%E5%8F%8B%E5%A5%BD%E6%9D%A1%E7%BA%A6%E7%AD%BE%E7%BD%B260%E5%91%A8%E5%B9%B4">
+          中朝高调“秀恩爱” 互贺友好条约签署60周年
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-11/%E5%89%8D%E9%A6%99%E6%B8%AF-%E5%A4%B4%E6%9D%A1%E6%96%B0%E9%97%BB-%E4%B8%BB%E6%8C%81%E4%BA%BA%E6%9B%BE%E5%BF%97%E8%B1%AA%E7%A6%BB%E6%B8%AF%E8%B5%B4%E5%8F%B0">
+            前一篇：前香港《头条新闻》主持人曾志豪离港赴台
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-11/%E5%A2%99%E5%A4%96%E6%96%87%E6%91%98-%E5%8F%B6%E9%97%AE%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9B%BF%E4%BB%A3%E4%BA%86%E6%9D%8E%E5%B0%8F%E9%BE%99">
+            后一篇：墙外文摘：叶问为什么替代了李小龙？ 
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-07-11/%E5%89%8D%E9%A6%99%E6%B8%AF-%E5%A4%B4%E6%9D%A1%E6%96%B0%E9%97%BB-%E4%B8%BB%E6%8C%81%E4%BA%BA%E6%9B%BE%E5%BF%97%E8%B1%AA%E7%A6%BB%E6%B8%AF%E8%B5%B4%E5%8F%B0'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-07-11/%E5%A2%99%E5%A4%96%E6%96%87%E6%91%98-%E5%8F%B6%E9%97%AE%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9B%BF%E4%BB%A3%E4%BA%86%E6%9D%8E%E5%B0%8F%E9%BE%99'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-07-11/%E5%A2%99%E5%A4%96%E6%96%87%E6%91%98-%E5%8F%B6%E9%97%AE%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9B%BF%E4%BB%A3%E4%BA%86%E6%9D%8E%E5%B0%8F%E9%BE%99'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-07-11/%E5%89%8D%E9%A6%99%E6%B8%AF-%E5%A4%B4%E6%9D%A1%E6%96%B0%E9%97%BB-%E4%B8%BB%E6%8C%81%E4%BA%BA%E6%9B%BE%E5%BF%97%E8%B1%AA%E7%A6%BB%E6%B8%AF%E8%B5%B4%E5%8F%B0'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-07-11/%E5%89%8D%E9%A6%99%E6%B8%AF-%E5%A4%B4%E6%9D%A1%E6%96%B0%E9%97%BB-%E4%B8%BB%E6%8C%81%E4%BA%BA%E6%9B%BE%E5%BF%97%E8%B1%AA%E7%A6%BB%E6%B8%AF%E8%B5%B4%E5%8F%B0">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-07-11/%E5%A2%99%E5%A4%96%E6%96%87%E6%91%98-%E5%8F%B6%E9%97%AE%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9B%BF%E4%BB%A3%E4%BA%86%E6%9D%8E%E5%B0%8F%E9%BE%99">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<德国之声>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-07-11/%E5%A2%99%E5%A4%96%E6%96%87%E6%91%98-%E5%8F%B6%E9%97%AE%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9B%BF%E4%BB%A3%E4%BA%86%E6%9D%8E%E5%B0%8F%E9%BE%99">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<德国之声>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-07-11/%E5%89%8D%E9%A6%99%E6%B8%AF-%E5%A4%B4%E6%9D%A1%E6%96%B0%E9%97%BB-%E4%B8%BB%E6%8C%81%E4%BA%BA%E6%9B%BE%E5%BF%97%E8%B1%AA%E7%A6%BB%E6%B8%AF%E8%B5%B4%E5%8F%B0">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

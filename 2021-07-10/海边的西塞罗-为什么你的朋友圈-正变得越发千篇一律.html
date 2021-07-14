@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>海边的西塞罗 | 为什么你的朋友圈，正变得越发千篇一律 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+海边的西塞罗 | 为什么你的朋友圈，正变得越发千篇一律
+——
+" />
+    <meta property="og:description" content="
+海边的西塞罗 | 为什么你的朋友圈，正变得越发千篇一律
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="海边的西塞罗 | 为什么你的朋友圈，正变得越发千篇一律" />
+    <meta property="twitter:title" content="海边的西塞罗 | 为什么你的朋友圈，正变得越发千篇一律" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F668096.html&t=%E6%B5%B7%E8%BE%B9%E7%9A%84%E8%A5%BF%E5%A1%9E%E7%BD%97+%7C+%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%A0%E7%9A%84%E6%9C%8B%E5%8F%8B%E5%9C%88%EF%BC%8C%E6%AD%A3%E5%8F%98%E5%BE%97%E8%B6%8A%E5%8F%91%E5%8D%83%E7%AF%87%E4%B8%80%E5%BE%8B" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F668096.html&t=%E6%B5%B7%E8%BE%B9%E7%9A%84%E8%A5%BF%E5%A1%9E%E7%BD%97+%7C+%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%A0%E7%9A%84%E6%9C%8B%E5%8F%8B%E5%9C%88%EF%BC%8C%E6%AD%A3%E5%8F%98%E5%BE%97%E8%B6%8A%E5%8F%91%E5%8D%83%E7%AF%87%E4%B8%80%E5%BE%8B&d=2021-07-10&e=
+海边的西塞罗 | 为什么你的朋友圈，正变得越发千篇一律
+——
+
+
+  
+    越来越多的人，正陷入一种“喧嚣的沉默”当中。
+  
+  我非常喜欢的作家王小波先生，曾经在他的杂文里写过一件趣事。
+  他说法国19世纪有一段时间，两个农村姑娘打照面，都要先说上一句“天主是值得赞美的”。王小波先生说，法国村姑们这样说，并不是因为她们有多么笃信宗教，而是为了体现自己是读过书，有思想的。所以，这话不能拿来衡量天主教在当时法国的普及率——说话的两位姑娘并不是在谈论信仰，而只是在互发“身份确认”。
+  其实王小波先生写的这个现象，还有一层成因他没有点透：法国自18世纪大革命以来，历次的革命、运动、战争已经把法国底层社会斗疲了、也斗怕了，基层社会中其他信息符号都已失效，唯独剩下这句“天主是值得赞美的”，至少在波旁复辟时代是既安全、又能彰显身份、还正确无比的，于是村姑们只能这样打招呼了。
+  这个..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F668096.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/668096.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/668096.html&text=海边的西塞罗 | 为什么你的朋友圈，正变得越发千篇一律&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/668096.html&title=海边的西塞罗 | 为什么你的朋友圈，正变得越发千篇一律" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/668096.html&title=海边的西塞罗 | 为什么你的朋友圈，正变得越发千篇一律" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=海边的西塞罗 | 为什么你的朋友圈，正变得越发千篇一律&body=
+海边的西塞罗 | 为什么你的朋友圈，正变得越发千篇一律
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/668096.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/668096.html&title=海边的西塞罗 | 为什么你的朋友圈，正变得越发千篇一律&caption=
+海边的西塞罗 | 为什么你的朋友圈，正变得越发千篇一律
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=海边的西塞罗 | 为什么你的朋友圈，正变得越发千篇一律&url=https://chinadigitaltimes.net/chinese/668096.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>海边的西塞罗 | 为什么你的朋友圈，正变得越发千篇一律</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-07-10
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/668096.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F668096.html&t=%E6%B5%B7%E8%BE%B9%E7%9A%84%E8%A5%BF%E5%A1%9E%E7%BD%97+%7C+%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%A0%E7%9A%84%E6%9C%8B%E5%8F%8B%E5%9C%88%EF%BC%8C%E6%AD%A3%E5%8F%98%E5%BE%97%E8%B6%8A%E5%8F%91%E5%8D%83%E7%AF%87%E4%B8%80%E5%BE%8B&d=2021-07-10&e=
+海边的西塞罗 | 为什么你的朋友圈，正变得越发千篇一律
+——
+
+
+  
+    越来越多的人，正陷入一种“喧嚣的沉默”当中。
+  
+  我非常喜欢的作家王小波先生，曾经在他的杂文里写过一件趣事。
+  他说法国19世纪有一段时间，两个农村姑娘打照面，都要先说上一句“天主是值得赞美的”。王小波先生说，法国村姑们这样说，并不是因为她们有多么笃信宗教，而是为了体现自己是读过书，有思想的。所以，这话不能拿来衡量天主教在当时法国的普及率——说话的两位姑娘并不是在谈论信仰，而只是在互发“身份确认”。
+  其实王小波先生写的这个现象，还有一层成因他没有点透：法国自18世纪大革命以来，历次的革命、运动、战争已经把法国底层社会斗疲了、也斗怕了，基层社会中其他信息符号都已失效，唯独剩下这句“天主是值得赞美的”，至少在波旁复辟时代是既安全、又能彰显身份、还正确无比的，于是村姑们只能这样打招呼了。
+  这个..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F668096.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1625925285000-->
+<p><a href="https://chinadigitaltimes.net/chinese/668096.html">海边的西塞罗 | 为什么你的朋友圈，正变得越发千篇一律</a>
+——</p>
+
+<div>
+  <blockquote>
+    <p>越来越多的人，正陷入一种“喧嚣的沉默”当中。</p>
+  </blockquote>
+  <p>我非常喜欢的作家王小波先生，曾经在他的杂文里写过一件趣事。</p>
+  <p>他说法国19世纪有一段时间，两个农村姑娘打照面，都要先说上一句“天主是值得赞美的”。王小波先生说，法国村姑们这样说，并不是因为她们有多么笃信宗教，而是为了体现自己是读过书，有思想的。所以，这话不能拿来衡量天主教在当时法国的普及率——说话的两位姑娘并不是在谈论信仰，而只是在互发“身份确认”。</p>
+  <p>其实王小波先生写的这个现象，还有一层成因他没有点透：法国自18世纪大革命以来，历次的革命、运动、战争已经把法国底层社会斗疲了、也斗怕了，基层社会中其他信息符号都已失效，唯独剩下这句“天主是值得赞美的”，至少在波旁复辟时代是既安全、又能彰显身份、还正确无比的，于是村姑们只能这样打招呼了。</p>
+  <p>这个故事能引发我们的很多思考：我们通常认为，交流是为了传递信息和思想。但事实上，人类演化出复杂语言系统的主要目的，可能压根不是为了传递信息。</p>
+  <p>我曾看过一本人类学的书，说太平洋上有某个小岛，在这个原始社会中，不相识的岛民们一旦见面，就会拼命的聊天，交换的却都是一些对彼此并无意义的信息。</p>
+  <p>人类学家用了好长时间，才弄明白了他们这样做的意义所在：</p>
+  <p>原来岛上长时间存在着人相食的传统，却同时有着不吃熟人的规矩，于是谋生人彼此见面，第一时间就必须拼命地交流，能传达多少信息其实并不重要，重要的是让彼此之间尽快熟络起来，这样才能互相建立“安全声明”，不至于兵戈相向。而为了不再聊天中节外生枝、产生矛盾，他们说的都是一些很没观点、没营养的废话。</p>
+  <p>原来，我们彼此说这么多，只是为了不互相吃掉。</p>
+  <p>这个案例可能会解释人类语言进化史的一个难解之谜——原始社会传递的那些信息，原本只需要一些很简单的单词就好，人类为什么会进化出那么复杂的语言系统呢？可能只是为了互相建立信任，说白了就是套近乎，以便不彼此相食。</p>
+  <p>是的，正如飞禽走兽用皮毛给自己施加一层“保护色”，人类的语言的主要作用不是交流信息，而是为了求生做出的伪装，语言就是人类的“皮毛”，是人类的“保护色”。</p>
+  <p>明了了语言的初衷，我们就能想清楚很多事情。</p>
+  <p>王小波先生的那本杂文集，名叫《沉默的大多数》。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/07/image-1625924501248.png" alt="file" /></p>
+  <p>但请你仔细观察一下当下的生活，会发现如今大多数人似乎并不沉默。相反，在微博、微信朋友圈这种东西出现后，你会发现这些媒介非常热闹，大家都热衷于转发一些观点高度相似的文字。</p>
+  <p>那么王小波先生错了吗？大多数人其实并不沉默？未必。</p>
+  <p>套用上述“保护色”的例子，我们不难发现，舆论场上的大多数人，其实都陷入了一种“喧嚣的沉默”当中。</p>
+  <p>你观察到没有，你身边越来越多的人在转朋友圈，发状态时，已经不是在真的表述自己的主张，而是在仿照法兰西的村姑和太平洋的岛民，在人际关系圈中反复播发某种“安全声明”去。</p>
+  <p>我记得在微信最开始的几年里，情况还不是这样的，很多人发朋友圈很随意，很多观点犀利的好文章，会传的很广。所以当时微信公号的质量普遍是很高的。</p>
+  <p>但当微信的社交属性越来越浓之后，大家顾虑也越来越多：我转发这个文章，朋友圈里的张局长会怎么看？刘书记又是什么观感？亦或者我那思想顽固的三舅的小姨子的二大爷会是什么感觉？这些人如果看此文不舒服，会不会在现实中于我不利？……</p>
+  <p>这一圈想下来，很多好文章你也就不敢转了。只剩下一种文章能大行其道，那就是“保护色类文字”——相同的观点，相似的表达，浅显易懂而略显浮夸的情绪、经常会汇成一首首大合唱。</p>
+  <p>于是像“震惊，中国这项技术领先美国一百年”、“解气，这个美国反华分子终于死了”之类的文章会刷屏，也就不奇怪了。民族主义和国家主义是当下中国最安全、也最能激起广泛赞同的表达，是“保护色”中的战斗机。大多数人需要转发这样信息表明自己的立场，寻求集体认同，这可以理解。</p>
+  <p>我最近看到有些朋友热衷于辟一些“战狼谣”，甚至质问为什么这样的公开造谣能不受惩罚。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/07/image-1625924590854.png" alt="file" /></p>
+  <p>比如这种微博，我看到有朋友在写长文批驳之，论证拉姆斯菲尔德不可能那样说过……真没必要，人家写30个字意淫一下，意外成为流量爆款，名利双收，被无数脑残粉追捧。你写三千字条分缕析的批驳之，却可能被人骂“公知”、“歪屁股”，弄不好还被删稿，你犯的着吗？</p>
+  <p>是的，我觉得真没必要这样追问。那些制造和传播这些谣言的人。他们真的关心这些谣言是否真实吗？并不。</p>
+  <p>这种谣言的制造者只关心谋利，传播者只借以表达立场，只有我们过于较真了。</p>
+  <p>王小波说大多数人是沉默的，而在信息时代，大多数人是喧嚣的，但他们依然是沉默的，我们生活在一种“喧嚣的沉默”当中。</p>
+  <p>大多数人传递的大多数信息，要么无意义，要么是虚伪、虚假的。那些小声说着真诚语言的人，却越来越难以互相听到了。</p>
+  <p>写这篇稿子的原因，是最近经常有朋友私信跟我说：“小西，你这个稿子真好，观点也很犀利，但正因为犀利，所以我不敢转朋友圈，真的很抱歉……”</p>
+  <p>其实这样的朋友，我特别理解你们。微信朋友圈这几年越发明显的一个趋势，它正在变成人们线下真实公域生活的一种延伸。</p>
+  <p>公域舆论的特点（尤其在我们的文化中），就是强调语言的“安全声明”作用，而弱化真正的交流属性。中国人习惯于有什么观点都只关起门在私人领域交流，所以随着朋友圈越来越接近公共领域，它的千篇一律化是迟早要发生的。</p>
+  <p>我相信不久的未来，很多人的朋友圈，都会沦为“天主值得赞美”的废话场，舆论失效是不可逆转的趋势。</p>
+  <p>没人需要为趋势道歉，我们只是篝火旁一起取暖的同伴，当冬日来临、北风喧嚣，我们靠得紧一些就是了，让我们彼此听清。</p>
+  <p>所以，那些觉得我的文字还有一二可得之处、却不好转朋友圈的朋友，不发就不发吧，把这个号介绍给你最好的朋友，作为给他、也给我的礼物，我就多谢了。</p>
+  <p>只要你们还肯关注，我还写的动，我们就一起说说一些真正有意义的真话，这是本号存在的目的。</p>
+  <p>愿我们能一路相随，且行且珍惜吧。</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2021-07-10</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-10/404%E6%96%87%E5%BA%93-%E5%8D%97%E4%BA%AC%E5%A4%A7%E5%AD%A6%E5%89%AF%E6%95%99%E6%8E%88%E6%80%92%E6%89%B9%E5%AD%A6%E6%A0%A1-%E5%8A%9E%E4%B8%AA%E7%8B%97%E5%B1%81%E7%9A%84%E6%9C%80%E5%A5%BD%E6%9C%AC%E7%A7%91%E6%95%99%E8%82%B2">
+          【404文库】南京大学副教授怒批学校：办个狗屁的最好本科教育
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-10</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-10/%E6%84%8F%E8%BD%A9%E4%B9%A6%E5%B1%8B-%E6%B3%95%E8%A5%BF%E6%96%AF%E7%BE%8E%E5%AD%A6%E7%9A%84%E8%AF%B1%E6%83%91-%E5%B4%87%E9%AB%98%E6%84%9F-%E5%BD%92%E5%B1%9E%E6%84%9F-%E8%87%AA%E8%B1%AA%E6%84%9F">
+          意轩书屋 | 法西斯美学的诱惑——崇高感、归属感、自豪感
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-10</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-10/%E4%B8%89%E8%81%94%E7%94%9F%E6%B4%BB%E5%91%A8%E5%88%8A-%E5%BD%93-%E4%BD%9B%E7%B3%BB-%E7%88%B6%E6%AF%8D%E9%81%87%E4%B8%8A%E6%89%80%E8%B0%93-%E5%9D%91%E6%A0%A1">
+          三联生活周刊 | 当“佛系”父母遇上所谓“坑校”
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-10</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-10/%E7%BD%91%E7%BB%9C%E6%B0%91%E8%AE%AE-%E6%88%91%E4%BB%AC%E4%B8%8D%E8%83%BD%E5%83%8F%E8%83%A1%E9%94%A1%E8%BF%9B%E9%82%A3%E6%A0%B7-%E8%A2%AB%E5%A1%94%E5%88%A9%E7%8F%AD%E5%BD%93%E4%BD%9C%E6%9C%8B%E5%8F%8B%E8%BF%98%E6%B2%BE%E6%B2%BE%E8%87%AA%E5%96%9C">
+          【网络民议】我们不能像胡锡进那样，被塔利班当作朋友还沾沾自喜
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-10/%E7%BE%8E%E5%9B%BD%E6%8B%92%E7%BB%9D%E6%B5%B7%E5%9C%B0%E5%86%9B%E4%BA%8B%E6%8F%B4%E5%8A%A9%E8%AF%B7%E6%B1%82">
+            前一篇：美国拒绝海地军事援助请求 
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-10/Sport-%E7%BE%8E%E5%9B%BD%E5%8A%A0%E6%8B%BF%E5%A4%A7%E9%AB%98%E6%B8%A9-%E7%83%AD%E6%AD%BB%E4%BA%BA%E7%9A%84%E5%8C%97%E7%BE%8E%E7%83%AD%E7%9B%96%E5%A4%A9%E6%B0%94%E7%BB%99%E6%88%91%E4%BB%AC%E4%BB%80%E4%B9%88%E8%AD%A6%E8%AE%AF">
+            后一篇：[Sport] 美国加拿大高温：热死人的北美热盖天气给我们什么警讯
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-07-10/%E7%BE%8E%E5%9B%BD%E6%8B%92%E7%BB%9D%E6%B5%B7%E5%9C%B0%E5%86%9B%E4%BA%8B%E6%8F%B4%E5%8A%A9%E8%AF%B7%E6%B1%82'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-07-10/Sport-%E7%BE%8E%E5%9B%BD%E5%8A%A0%E6%8B%BF%E5%A4%A7%E9%AB%98%E6%B8%A9-%E7%83%AD%E6%AD%BB%E4%BA%BA%E7%9A%84%E5%8C%97%E7%BE%8E%E7%83%AD%E7%9B%96%E5%A4%A9%E6%B0%94%E7%BB%99%E6%88%91%E4%BB%AC%E4%BB%80%E4%B9%88%E8%AD%A6%E8%AE%AF'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-07-10/%E6%84%8F%E8%BD%A9%E4%B9%A6%E5%B1%8B-%E6%B3%95%E8%A5%BF%E6%96%AF%E7%BE%8E%E5%AD%A6%E7%9A%84%E8%AF%B1%E6%83%91-%E5%B4%87%E9%AB%98%E6%84%9F-%E5%BD%92%E5%B1%9E%E6%84%9F-%E8%87%AA%E8%B1%AA%E6%84%9F'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-07-10/%E4%B8%89%E8%81%94%E7%94%9F%E6%B4%BB%E5%91%A8%E5%88%8A-%E5%BD%93-%E4%BD%9B%E7%B3%BB-%E7%88%B6%E6%AF%8D%E9%81%87%E4%B8%8A%E6%89%80%E8%B0%93-%E5%9D%91%E6%A0%A1'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-07-10/%E7%BE%8E%E5%9B%BD%E6%8B%92%E7%BB%9D%E6%B5%B7%E5%9C%B0%E5%86%9B%E4%BA%8B%E6%8F%B4%E5%8A%A9%E8%AF%B7%E6%B1%82">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-07-10/Sport-%E7%BE%8E%E5%9B%BD%E5%8A%A0%E6%8B%BF%E5%A4%A7%E9%AB%98%E6%B8%A9-%E7%83%AD%E6%AD%BB%E4%BA%BA%E7%9A%84%E5%8C%97%E7%BE%8E%E7%83%AD%E7%9B%96%E5%A4%A9%E6%B0%94%E7%BB%99%E6%88%91%E4%BB%AC%E4%BB%80%E4%B9%88%E8%AD%A6%E8%AE%AF">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-07-10/%E6%84%8F%E8%BD%A9%E4%B9%A6%E5%B1%8B-%E6%B3%95%E8%A5%BF%E6%96%AF%E7%BE%8E%E5%AD%A6%E7%9A%84%E8%AF%B1%E6%83%91-%E5%B4%87%E9%AB%98%E6%84%9F-%E5%BD%92%E5%B1%9E%E6%84%9F-%E8%87%AA%E8%B1%AA%E6%84%9F">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-07-10/%E4%B8%89%E8%81%94%E7%94%9F%E6%B4%BB%E5%91%A8%E5%88%8A-%E5%BD%93-%E4%BD%9B%E7%B3%BB-%E7%88%B6%E6%AF%8D%E9%81%87%E4%B8%8A%E6%89%80%E8%B0%93-%E5%9D%91%E6%A0%A1">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

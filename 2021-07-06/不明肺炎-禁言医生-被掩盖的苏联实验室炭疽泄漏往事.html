@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>不明肺炎、禁言医生：被掩盖的苏联实验室炭疽泄漏往事 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+不明肺炎、禁言医生：被掩盖的苏联实验室炭疽泄漏往事
+——
+" />
+    <meta property="og:description" content="
+不明肺炎、禁言医生：被掩盖的苏联实验室炭疽泄漏往事
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="不明肺炎、禁言医生：被掩盖的苏联实验室炭疽泄漏往事" />
+    <meta property="twitter:title" content="不明肺炎、禁言医生：被掩盖的苏联实验室炭疽泄漏往事" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fcn.nytimes.com%2Fworld%2F20210621%2Fcoronavirus-lab-anthrax%2F&t=%E4%B8%8D%E6%98%8E%E8%82%BA%E7%82%8E%E3%80%81%E7%A6%81%E8%A8%80%E5%8C%BB%E7%94%9F%EF%BC%9A%E8%A2%AB%E6%8E%A9%E7%9B%96%E7%9A%84%E8%8B%8F%E8%81%94%E5%AE%9E%E9%AA%8C%E5%AE%A4%E7%82%AD%E7%96%BD%E6%B3%84%E6%BC%8F%E5%BE%80%E4%BA%8B" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fworld%2F20210621%2Fcoronavirus-lab-anthrax%2F&t=%E4%B8%8D%E6%98%8E%E8%82%BA%E7%82%8E%E3%80%81%E7%A6%81%E8%A8%80%E5%8C%BB%E7%94%9F%EF%BC%9A%E8%A2%AB%E6%8E%A9%E7%9B%96%E7%9A%84%E8%8B%8F%E8%81%94%E5%AE%9E%E9%AA%8C%E5%AE%A4%E7%82%AD%E7%96%BD%E6%B3%84%E6%BC%8F%E5%BE%80%E4%BA%8B&d=2021-07-06&e=
+不明肺炎、禁言医生：被掩盖的苏联实验室炭疽泄漏往事
+——
+
+
+  
+ANTON TROIANOVSKI
+  
+  2021年6月21日
+  
+    
+俄罗斯叶卡捷琳堡一个大院里的公寓楼（左）。这里曾是一个军事实验室。 Sergey Ponomarev for The New York Times
+    
+  
+  
+    俄罗斯叶卡捷琳堡——不明原因的肺炎患者开始出现在医院；几天之内，数十人死亡。秘密警察没收了医生的病历，并命令他们保持沉默。美国间谍发现了实验室泄漏的线索，但当地当局给出了一个更普通的解释：受污染的肉类。
+    十多年后真相才大白于天下。
+    1979年4月和5月，至少有66人死于从苏联一个军事实验室通过空气传播的炭疽菌。但美国顶尖科学家对苏联的说法表示了信心，即病原体是从动物传染给人类的。直到上世纪90年代，在一项全面的调查之后，其中一名科学家才证实了..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fworld%2F20210621%2Fcoronavirus-lab-anthrax%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://cn.nytimes.com/world/20210621/coronavirus-lab-anthrax/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://cn.nytimes.com/world/20210621/coronavirus-lab-anthrax/&text=不明肺炎、禁言医生：被掩盖的苏联实验室炭疽泄漏往事&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://cn.nytimes.com/world/20210621/coronavirus-lab-anthrax/&title=不明肺炎、禁言医生：被掩盖的苏联实验室炭疽泄漏往事" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://cn.nytimes.com/world/20210621/coronavirus-lab-anthrax/&title=不明肺炎、禁言医生：被掩盖的苏联实验室炭疽泄漏往事" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=不明肺炎、禁言医生：被掩盖的苏联实验室炭疽泄漏往事&body=
+不明肺炎、禁言医生：被掩盖的苏联实验室炭疽泄漏往事
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://cn.nytimes.com/world/20210621/coronavirus-lab-anthrax/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://cn.nytimes.com/world/20210621/coronavirus-lab-anthrax/&title=不明肺炎、禁言医生：被掩盖的苏联实验室炭疽泄漏往事&caption=
+不明肺炎、禁言医生：被掩盖的苏联实验室炭疽泄漏往事
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=不明肺炎、禁言医生：被掩盖的苏联实验室炭疽泄漏往事&url=https://cn.nytimes.com/world/20210621/coronavirus-lab-anthrax/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>不明肺炎、禁言医生：被掩盖的苏联实验室炭疽泄漏往事</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-07-06
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#纽约时报 ">
+          纽约时报
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://cn.nytimes.com/world/20210621/coronavirus-lab-anthrax/"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="纽约时报的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#纽约时报 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fworld%2F20210621%2Fcoronavirus-lab-anthrax%2F&t=%E4%B8%8D%E6%98%8E%E8%82%BA%E7%82%8E%E3%80%81%E7%A6%81%E8%A8%80%E5%8C%BB%E7%94%9F%EF%BC%9A%E8%A2%AB%E6%8E%A9%E7%9B%96%E7%9A%84%E8%8B%8F%E8%81%94%E5%AE%9E%E9%AA%8C%E5%AE%A4%E7%82%AD%E7%96%BD%E6%B3%84%E6%BC%8F%E5%BE%80%E4%BA%8B&d=2021-07-06&e=
+不明肺炎、禁言医生：被掩盖的苏联实验室炭疽泄漏往事
+——
+
+
+  
+ANTON TROIANOVSKI
+  
+  2021年6月21日
+  
+    
+俄罗斯叶卡捷琳堡一个大院里的公寓楼（左）。这里曾是一个军事实验室。 Sergey Ponomarev for The New York Times
+    
+  
+  
+    俄罗斯叶卡捷琳堡——不明原因的肺炎患者开始出现在医院；几天之内，数十人死亡。秘密警察没收了医生的病历，并命令他们保持沉默。美国间谍发现了实验室泄漏的线索，但当地当局给出了一个更普通的解释：受污染的肉类。
+    十多年后真相才大白于天下。
+    1979年4月和5月，至少有66人死于从苏联一个军事实验室通过空气传播的炭疽菌。但美国顶尖科学家对苏联的说法表示了信心，即病原体是从动物传染给人类的。直到上世纪90年代，在一项全面的调查之后，其中一名科学家才证实了..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fworld%2F20210621%2Fcoronavirus-lab-anthrax%2F" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1625549821000-->
+<p><a href="https://cn.nytimes.com/world/20210621/coronavirus-lab-anthrax/">不明肺炎、禁言医生：被掩盖的苏联实验室炭疽泄漏往事</a>
+——</p>
+
+<div>
+  <address>
+ANTON TROIANOVSKI
+  </address>
+  <time pudate="2021-07-06 01:16:28" datetime="2021-07-06 01:16:28">2021年6月21日</time>
+  <figure class="article-span-photo">
+<img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/06/17/world/00russia-lableak01/merlin_189202827_03e648a0-b36a-45c9-bbb5-026f329993e9-master1050.jpg" width="1050" height="701" />    <figcaption>
+俄罗斯叶卡捷琳堡一个大院里的公寓楼（左）。这里曾是一个军事实验室。 <cite>Sergey Ponomarev for The New York Times</cite>
+    </figcaption>
+  </figure>
+  <section class="article-body">
+    <p>俄罗斯叶卡捷琳堡——不明原因的肺炎患者开始出现在医院；几天之内，数十人死亡。秘密警察没收了医生的病历，并命令他们保持沉默。美国间谍发现了实验室泄漏的线索，但当地当局给出了一个更普通的解释：受污染的肉类。</p>
+    <p>十多年后真相才大白于天下。</p>
+    <p>1979年4月和5月，至少有66人死于从苏联一个军事实验室通过空气传播的炭疽菌。但美国顶尖科学家对苏联的说法表示了信心，即病原体是从动物传染给人类的。直到上世纪90年代，在一项<a href="https://www.nytimes.com/1993/03/15/world/us-and-russian-doctors-tie-anthrax-to-soviets.html">全面的调查</a>之后，其中一名科学家才证实了早先的怀疑：这起事故发生在如今的俄罗斯乌拉尔市叶卡捷琳堡，是一起实验室泄漏事故，是有记录以来最致命的这类事故之一。</p>
+    <p>如今，一些遇难者的坟墓看上去已被遗弃，城郊一个公墓后面的金属板上，他们的名字已经磨损，他们就在那里安葬，被埋在装有农业消毒剂的棺材里。但是，在科学家们寻找新冠病毒起源之际，夺去他们生命的事故以及掩盖真相的行为被重新赋予了相关性。</p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/06/17/world/00russia-lableak02/merlin_189202908_263c6241-dfa6-41fc-bac9-f4ec2244c48e-master1050.jpg" /><small style="color: #999;">该地区的一个公园，该公园处于1979年空气传播的炭疽泄漏的下风口。</small></p>
+    <p>它展示了一个威权政府如何能够成功地塑造疫情暴发的叙事，以及如何需要数年时间——也许还需要政权更迭——才能让人了解真相。</p>
+    <p>“每一种流行病都会有疯狂的谣言传播，”1986年，获得诺贝尔奖的美国生物学家<a href="https://www.nytimes.com/2008/02/05/us/05lederberg.html">约书亚·莱德伯格</a>(Joshua Lederberg)前往莫斯科进行实地考察后，<a rel="noopener noreferrer" target="_blank" href="https://profiles.nlm.nih.gov/spotlight/bb/catalog/nlm:nlmuid-101584906X18717-doc">在一份备忘录中写道</a>。“目前苏联的说法很可能是真的。”</p>
+    <p>许多科学家认为，导致Covid-19大流行的病毒在动物中进化，并在某一时刻跳转至人类。但科学家们也呼吁对武汉病毒研究所<a href="https://cn.nytimes.com/health/20210528/wuhan-coronavirus-lab-leak/">发生事故的可能性</a>进行更深入的调查。</p>
+    <p>还有一种普遍的担忧是，中国政府——就像几十年前的苏联政府一样，排除了实验室泄漏的可能性——<a href="https://cn.nytimes.com/science/20210531/china-covid-origin-wuhan/">不向国际调查人员提供</a>能够揭示大流行起源的访问权限和数据。</p>
+    <p>哈佛大学生物学家马修·梅瑟森(Matthew Meselson)本月在马萨诸塞州坎布里奇接受采访时说：“我们都有共同的兴趣，想知道这是否是实验室事故造成的，”他在这里指的是新冠大流行。“也许是一次我们目前的指导原则还没有充分考虑到的意外。”</p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/06/17/world/00russia-lableak03/merlin_189202818_ff9eb1cc-79f7-48e5-928c-73c8de82aac7-master1050.jpg" /><small style="color: #999;">1979年，莱莎·斯米尔诺娃险些死于炭疽中毒。她的约18名同事就没那么幸运了。他们在军事实验室附近一家陶瓷厂工作。</small></p>
+    <p>1980年，生物战专家梅瑟森搬进了一个朋友在中情局的一间空卧室，以研究一份机密情报。该情报显示，苏联炭疽热的暴发<a href="https://www.nytimes.com/1988/04/14/world/russians-explain-79-anthrax-cases.html">可能与附近的一处军事设施有关</a>。六年后，<a rel="noopener noreferrer" target="_blank" href="https://collections.nlm.nih.gov/ext/document/101584906X18875/PDF/101584906X18875.pdf">他写道</a>，苏联对这次传染病自然起源的解释是“可信的”。他说，苏联提供的证据与人类感染肠道炭疽菌的理论是一致的，这种菌源于用作动物饲料的受污染骨粉。</p>
+    <p>之后，在1992年苏联解体后，俄罗斯总统鲍里斯·N·叶利钦(Boris N. Yeltsin)承认，炭疽热暴发的原因是“我们的军事研发”。</p>
+    <p>梅瑟森和他的妻子、医学人类学家<a href="https://www.nytimes.com/2019/12/22/science/jeanne-guillemin-dead.html">珍妮·吉勒明</a>(Jeanne Guillemin)以及其他美国专家来到叶卡捷琳堡进行了艰苦的研究。他们记录了1979年4月2日的一场东北风是如何将从工厂意外释放的少量炭疽孢子散布到下风方向至少30英里的狭窄区域的。</p>
+    <p>“你可以编造一个完全疯狂的故事，并通过你设计的方式让它变得可信，”梅瑟森说，他解释了为什么苏联成功地消除了对实验室泄漏的怀疑。</p>
+    <p>本月采访记得当时情景的居民时，一些人说，在斯维尔德洛夫斯克——叶卡捷琳堡在苏维埃时期的旧称——人们在发现有人患上神秘疾病后马上就有了这一怀疑。</p>
+    <p>当时32岁、在附近一家陶瓷厂上班的莱莎·斯米尔诺娃(Raisa Smirnova)说，她有朋友在那个神秘的园区里，他们会利用自己的特权帮她购买很难弄到的橙子和肉罐头。她还听说那里在进行某种秘密的细菌研究，当地有传闻说，疾病暴发是因为那个实验室。</p>
+    <p>“你的手怎么蓝了？”斯米尔诺娃记得1979年4月的一天去上班时，一个同事这么问她，看起来是<a rel="noopener noreferrer" target="_blank" href="https://rarediseases.org/rare-diseases/anthrax/">血氧水平偏低的症状</a>。</p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/06/17/world/00russia-lableak04/merlin_189202911_2047fedc-d971-4807-b2ec-44c2aefd35cd-master1050.jpg" /><small style="color: #999;">发生炭疽泄漏的军事园区外的游乐场。</small></p>
+    <p>她说她发了高烧，被紧急送往医院，昏迷了一个星期。到了5月，约有18名同事死亡。克格勃特工在她回家前要求她签署一份文件，在未来25年里禁止谈论此事。</p>
+    <p>在斯维尔德洛夫斯克的防疫部门，流行病学家维克多·罗曼年科(Viktor Romanenko)参与了掩盖行动。他说他第一时间就知道，这座城市暴发的疫情不可能像上级卫生当局说的那样，是通过食物传播的肠炭疽。病例的地域和时间分布表明，传染源是空气传播的，并且是一起独立事件。</p>
+    <p>“我们都知道那完全是胡扯，”罗曼年科说，他在苏联解体后成为一名地区卫生部门高级官员。</p>
+    <p>但是在一个共产主义国家里，他别无选择，只能配合演戏。他和同事们花了几个月扣留和检测肉品。克格勃特工来到他的办公室取走医学记录。苏联已经签了禁止化学武器的条约，此事关乎国家利益。</p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/06/17/world/00russia-lableak05/merlin_189202866_ca8305fe-5c03-4e84-b083-4792ae23b7c5-master1050.jpg" /><small style="color: #999;">埋葬遇难者的墓地。如今，一些坟墓似乎已被遗弃，金属铭牌上的名字已被磨平。</small></p>
+    <p>“大家都明白，我们需要尽可能远离生化武器方面的推测，”罗曼年科回忆道。“我们的任务是捍卫国家的荣誉。”</p>
+    <p>连当地的《斯维尔德洛夫斯克晚报》都陷入了恐慌。当时的报社记者亚历山大·帕什科夫(Aleksandr Pashkov)记得，在疫情的消息传开后，报社接到了《纽约时报》记者的电话。主编要求报社员工不再接长途电话，以免记者再次打来时有人说漏嘴。</p>
+    <p>“要升官，你得知道保守秘密，”帕什科夫说。</p>
+    <p>随着苏联的崩塌，保密的能力也消失了。1992年的一部纪录片中，帕什科夫找到了身在乌克兰——如今已经是一个不一样的国家——的一名退休反情报官员，此人当时参与了在斯维尔德洛夫斯克的工作。官员说，从军事实验室截获的电话通话显示，一名技术员忘了更换一个安全过滤器。</p>
+    <p>很快，叶利钦承认此事的罪魁祸首是军方——他自己在1979年身为该地区的共产党高官也参与了掩盖行动。</p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/06/17/world/00russia-lableak06/merlin_189202749_c7fded7e-e004-48af-8d72-10513e0b0087-master1050.jpg" /><small style="color: #999;">叶卡捷琳堡郊区陶瓷厂的鸟瞰图，那里有18名工人死于炭疽中毒。</small></p>
+    <p>“你要知道一个简单的事实，”帕什科夫说。“这一切为什么会被人知道？因为苏联的瓦解。”</p>
+    <p>梅瑟森和吉勒明夫妇在1990年代多次造访叶卡捷琳堡，以记录泄密事件。他们采访了幸存者，标出了受害者的下落并调查了天气记录，这些发现让梅瑟森和其他人发现他们错误地相信了苏联的说法。</p>
+    <p>梅瑟森说，当他在1990年代初期就重新调查疫情联系一位俄罗斯官员时，得到的回应是，“为什么要把丑事外扬？”</p>
+    <p>但他表示，当涉及到地缘政治时，确定流行病的起源变得更加重要。他说，如果当时他和他的同事没有证明疫情暴发的原因，这件事可能仍然会刺激俄罗斯与西方的关系。</p>
+    <p>梅瑟森说，对新冠病毒来源的调查也是如此。他说，只要大流行的来源仍存疑虑，这个问题就会继续加剧与中国的紧张关系，甚至比知道真相还要严重。</p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/06/17/world/00russia-lableak07/merlin_189202971_db94d2ea-e43e-4504-8924-f2b0a91544d9-master1050.jpg" /><small style="color: #999;">直到苏联解体，叶卡捷琳堡的市民才终于知道实验室泄漏的真相。</small></p>
+    <p>“一种人是处于反对情绪而试图论证观点，另一种人能够在多年后回顾并说‘你看，我是对的’，这两种人截然不同，”梅瑟森说。“一种人助长了战争。另一种则成为历史。我们需要解决所有这些问题。我们需要历史，我们不需要所有这些情绪。”</p>
+    <p>与新冠不同，炭疽不会轻易地在人与人之间传播，这就是为什么斯维尔德洛夫斯克实验室泄漏没有引发更大规模的流行。然而，即使是斯维尔德洛夫斯克事件之谜也没有完全解决。目前尚不清楚该工厂的秘密活动是否是非法的生物武器研发——众所周知，苏联已经进行了这项活动——还是疫苗研究。</p>
+    <p>在总统弗拉基米尔·V·普京(Vladimir V. Putin)的领导下，揭露俄罗斯历史缺陷越来越被视为不爱国。随着政府对真相保持沉默，另一种理论开始流行：也许是西方特工故意释放炭疽孢子以破坏共产主义政权。</p>
+    <p>“事实上，真相的概念非常复杂，”叶卡捷琳堡病理学家列夫·格林伯格(Lev Grinberg)说，他秘密保存了证明1979年疫情真相的证据。“那些不想接受真相的人总会想办法不接受。”</p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/06/17/world/00russia-lableak08/merlin_189202848_58af20cf-ec1c-4ed9-9053-b73c739c248b-master1050.jpg" /><small style="color: #999;">一幅壁画上，医生在诊所外照顾儿童，该地区有人因实验室泄漏而丧生。</small></p>
+  </section>
+  <footer class="author-info">
+    <p>Oleg Matsnev对本文有研究贡献。</p>
+    <p>Anton Troianovski是时报莫斯科分社社长。他曾任《华盛顿邮报》莫斯科分社社长，并在柏林和纽约为《华尔街日报》工作了九年。欢迎在Twitter上关注他：<a rel="nofollow" target="_blank" href="https://twitter.com/antontroian">@antontroian</a>。</p>
+    <p>翻译：纽约时报中文网</p>
+    <p><a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/06/20/world/europe/coronavirus-lab-anthrax.html">点击查看本文英文版。</a></p>
+  </footer>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#纽约时报 的其它文章</h4>
+    
+      <li>
+        <time>2021-07-06</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-06/%E6%96%B0%E5%86%A0%E7%97%85%E6%AF%92-%E5%AE%9E%E9%AA%8C%E5%AE%A4%E6%B3%84%E6%BC%8F%E8%AF%B4-%E8%83%8C%E5%90%8E%E7%9C%9F%E6%AD%A3%E7%9A%84%E4%B8%91%E9%97%BB">
+          新冠病毒“实验室泄漏说”背后真正的丑闻
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-06</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-06/%E4%B8%AD%E5%9B%BD%E5%90%A6%E8%AE%A4%E5%8F%B0%E5%B1%B1%E6%A0%B8%E7%94%B5%E7%AB%99%E8%BE%90%E5%B0%84%E6%B3%84%E6%BC%8F-%E6%89%BF%E8%AE%A4%E7%87%83%E6%96%99%E6%A3%92%E5%8F%97%E6%8D%9F">
+          中国否认台山核电站辐射泄漏，承认燃料棒受损
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-06</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-06/%E4%B8%AD%E5%9B%BD%E4%BD%93%E5%88%B6%E5%BB%BA%E7%AB%8B%E5%9C%A8%E8%B0%8E%E8%A8%80%E4%B8%8A-%E5%AE%83%E6%97%A0%E6%B3%95%E5%9F%8B%E8%91%AC%E8%87%AA%E7%94%B1%E4%B8%96%E7%95%8C">
+          中国体制建立在谎言上，它无法埋葬自由世界
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-05</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-05/%E7%BE%8E%E5%9B%BD%E7%A7%91%E6%8A%80%E5%B7%A8%E5%A4%B4%E8%B4%A8%E7%96%91%E6%B8%AF%E5%BA%9C%E6%8E%A8%E8%BF%9B%E4%BF%AE%E6%94%B9%E6%95%B0%E6%8D%AE%E5%AE%89%E5%85%A8%E6%B3%95">
+          美国科技巨头质疑港府推进修改数据安全法
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-06/%E6%97%A5%E8%B4%88%E5%8F%B0%E7%96%AB%E8%8B%97%E9%81%94237%E8%90%AC%E5%8A%91-%E6%97%A5%E5%A4%96%E7%9B%B8-%E5%90%84%E7%A8%AE%E5%BD%A2%E5%BC%8F%E4%BA%92%E5%8A%A9%E8%B1%A1%E5%BE%B5%E5%8F%8B%E5%A5%BD">
+            前一篇：日贈台疫苗達237萬劑 日外相：各種形式互助象徵友好
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-06/%E4%B8%AD%E5%9B%BD%E5%90%A6%E8%AE%A4%E5%8F%B0%E5%B1%B1%E6%A0%B8%E7%94%B5%E7%AB%99%E8%BE%90%E5%B0%84%E6%B3%84%E6%BC%8F-%E6%89%BF%E8%AE%A4%E7%87%83%E6%96%99%E6%A3%92%E5%8F%97%E6%8D%9F">
+            后一篇：中国否认台山核电站辐射泄漏，承认燃料棒受损
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-07-06/%E6%97%A5%E8%B4%88%E5%8F%B0%E7%96%AB%E8%8B%97%E9%81%94237%E8%90%AC%E5%8A%91-%E6%97%A5%E5%A4%96%E7%9B%B8-%E5%90%84%E7%A8%AE%E5%BD%A2%E5%BC%8F%E4%BA%92%E5%8A%A9%E8%B1%A1%E5%BE%B5%E5%8F%8B%E5%A5%BD'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-07-06/%E4%B8%AD%E5%9B%BD%E5%90%A6%E8%AE%A4%E5%8F%B0%E5%B1%B1%E6%A0%B8%E7%94%B5%E7%AB%99%E8%BE%90%E5%B0%84%E6%B3%84%E6%BC%8F-%E6%89%BF%E8%AE%A4%E7%87%83%E6%96%99%E6%A3%92%E5%8F%97%E6%8D%9F'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-07-06/%E4%B8%AD%E5%9B%BD%E5%90%A6%E8%AE%A4%E5%8F%B0%E5%B1%B1%E6%A0%B8%E7%94%B5%E7%AB%99%E8%BE%90%E5%B0%84%E6%B3%84%E6%BC%8F-%E6%89%BF%E8%AE%A4%E7%87%83%E6%96%99%E6%A3%92%E5%8F%97%E6%8D%9F'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-07-06/%E4%B8%AD%E5%9B%BD%E4%BD%93%E5%88%B6%E5%BB%BA%E7%AB%8B%E5%9C%A8%E8%B0%8E%E8%A8%80%E4%B8%8A-%E5%AE%83%E6%97%A0%E6%B3%95%E5%9F%8B%E8%91%AC%E8%87%AA%E7%94%B1%E4%B8%96%E7%95%8C'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-07-06/%E6%97%A5%E8%B4%88%E5%8F%B0%E7%96%AB%E8%8B%97%E9%81%94237%E8%90%AC%E5%8A%91-%E6%97%A5%E5%A4%96%E7%9B%B8-%E5%90%84%E7%A8%AE%E5%BD%A2%E5%BC%8F%E4%BA%92%E5%8A%A9%E8%B1%A1%E5%BE%B5%E5%8F%8B%E5%A5%BD">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-07-06/%E4%B8%AD%E5%9B%BD%E5%90%A6%E8%AE%A4%E5%8F%B0%E5%B1%B1%E6%A0%B8%E7%94%B5%E7%AB%99%E8%BE%90%E5%B0%84%E6%B3%84%E6%BC%8F-%E6%89%BF%E8%AE%A4%E7%87%83%E6%96%99%E6%A3%92%E5%8F%97%E6%8D%9F">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<纽约时报>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-07-06/%E4%B8%AD%E5%9B%BD%E5%90%A6%E8%AE%A4%E5%8F%B0%E5%B1%B1%E6%A0%B8%E7%94%B5%E7%AB%99%E8%BE%90%E5%B0%84%E6%B3%84%E6%BC%8F-%E6%89%BF%E8%AE%A4%E7%87%83%E6%96%99%E6%A3%92%E5%8F%97%E6%8D%9F">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<纽约时报>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-07-06/%E4%B8%AD%E5%9B%BD%E4%BD%93%E5%88%B6%E5%BB%BA%E7%AB%8B%E5%9C%A8%E8%B0%8E%E8%A8%80%E4%B8%8A-%E5%AE%83%E6%97%A0%E6%B3%95%E5%9F%8B%E8%91%AC%E8%87%AA%E7%94%B1%E4%B8%96%E7%95%8C">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

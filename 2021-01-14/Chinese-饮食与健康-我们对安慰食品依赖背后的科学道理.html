@@ -1,0 +1,2147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>[Chinese] 饮食与健康：我们对安慰食品依赖背后的科学道理 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+[Chinese] 饮食与健康：我们对安慰食品依赖背后的科学道理
+——
+" />
+    <meta property="og:description" content="
+[Chinese] 饮食与健康：我们对安慰食品依赖背后的科学道理
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="[Chinese] 饮食与健康：我们对安慰食品依赖背后的科学道理" />
+    <meta property="twitter:title" content="[Chinese] 饮食与健康：我们对安慰食品依赖背后的科学道理" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fchinese-news-55665921&t=%5BChinese%5D+%E9%A5%AE%E9%A3%9F%E4%B8%8E%E5%81%A5%E5%BA%B7%EF%BC%9A%E6%88%91%E4%BB%AC%E5%AF%B9%E5%AE%89%E6%85%B0%E9%A3%9F%E5%93%81%E4%BE%9D%E8%B5%96%E8%83%8C%E5%90%8E%E7%9A%84%E7%A7%91%E5%AD%A6%E9%81%93%E7%90%86" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fchinese-news-55665921&t=%5BChinese%5D+%E9%A5%AE%E9%A3%9F%E4%B8%8E%E5%81%A5%E5%BA%B7%EF%BC%9A%E6%88%91%E4%BB%AC%E5%AF%B9%E5%AE%89%E6%85%B0%E9%A3%9F%E5%93%81%E4%BE%9D%E8%B5%96%E8%83%8C%E5%90%8E%E7%9A%84%E7%A7%91%E5%AD%A6%E9%81%93%E7%90%86&d=2021-01-14&e=
+[Chinese] 饮食与健康：我们对安慰食品依赖背后的科学道理
+——
+
+
+  
+    饮食与健康：我们对安慰食品依赖背后的科学道理
+  
+  
+    2021年1月14日
+  
+  
+    
+      
+        
+          
+            图像来源，MALTE MUELLER / GETTY IMAGES
+          
+        
+      
+    
+  
+  
+    新冠封城期间许多人都表示，没事宅在家里总想吃东西。人与食品的关系错综复杂：吃是必须的，但吃多了又会后悔。
+  
+  
+    有时，我们还经常纠结，什么该吃，什么最好别碰。
+  
+  
+    食物不但给我们提供营养和能量，还能慰籍我们的大脑和情感。我们开心了可以大吃一顿，郁闷忧伤了也希望能从食品中获得一丝安慰。
+  
+  
+    
+      
+     ..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fchinese-news-55665921" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=http://www.bbc.com/zhongwen/simp/chinese-news-55665921" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=http://www.bbc.com/zhongwen/simp/chinese-news-55665921&text=[Chinese] 饮食与健康：我们对安慰食品依赖背后的科学道理&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=http://www.bbc.com/zhongwen/simp/chinese-news-55665921&title=[Chinese] 饮食与健康：我们对安慰食品依赖背后的科学道理" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://www.bbc.com/zhongwen/simp/chinese-news-55665921&title=[Chinese] 饮食与健康：我们对安慰食品依赖背后的科学道理" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=[Chinese] 饮食与健康：我们对安慰食品依赖背后的科学道理&body=
+[Chinese] 饮食与健康：我们对安慰食品依赖背后的科学道理
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=http://www.bbc.com/zhongwen/simp/chinese-news-55665921" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=http://www.bbc.com/zhongwen/simp/chinese-news-55665921&title=[Chinese] 饮食与健康：我们对安慰食品依赖背后的科学道理&caption=
+[Chinese] 饮食与健康：我们对安慰食品依赖背后的科学道理
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=[Chinese] 饮食与健康：我们对安慰食品依赖背后的科学道理&url=http://www.bbc.com/zhongwen/simp/chinese-news-55665921" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>[Chinese] 饮食与健康：我们对安慰食品依赖背后的科学道理</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-14
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#BBC ">
+          BBC
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="http://www.bbc.com/zhongwen/simp/chinese-news-55665921"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="BBC的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#BBC 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fchinese-news-55665921&t=%5BChinese%5D+%E9%A5%AE%E9%A3%9F%E4%B8%8E%E5%81%A5%E5%BA%B7%EF%BC%9A%E6%88%91%E4%BB%AC%E5%AF%B9%E5%AE%89%E6%85%B0%E9%A3%9F%E5%93%81%E4%BE%9D%E8%B5%96%E8%83%8C%E5%90%8E%E7%9A%84%E7%A7%91%E5%AD%A6%E9%81%93%E7%90%86&d=2021-01-14&e=
+[Chinese] 饮食与健康：我们对安慰食品依赖背后的科学道理
+——
+
+
+  
+    饮食与健康：我们对安慰食品依赖背后的科学道理
+  
+  
+    2021年1月14日
+  
+  
+    
+      
+        
+          
+            图像来源，MALTE MUELLER / GETTY IMAGES
+          
+        
+      
+    
+  
+  
+    新冠封城期间许多人都表示，没事宅在家里总想吃东西。人与食品的关系错综复杂：吃是必须的，但吃多了又会后悔。
+  
+  
+    有时，我们还经常纠结，什么该吃，什么最好别碰。
+  
+  
+    食物不但给我们提供营养和能量，还能慰籍我们的大脑和情感。我们开心了可以大吃一顿，郁闷忧伤了也希望能从食品中获得一丝安慰。
+  
+  
+    
+      
+     ..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fchinese-news-55665921" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1610655061000-->
+<p><a href="http://www.bbc.com/zhongwen/simp/chinese-news-55665921">[Chinese] 饮食与健康：我们对安慰食品依赖背后的科学道理</a>
+——</p>
+
+<div>
+  <div dir="ltr" class="css-e19l8g-GridComponent e57qer20">
+    <h1 id="content" tabindex="-1" class="css-1wfn6k3-Headline e1yj3cbb0">饮食与健康：我们对安慰食品依赖背后的科学道理</h1>
+  </div>
+  <div dir="ltr" class="e1j2237y1 css-vf19ca-GridComponent e57qer20">
+    <time datetime="2021-01-14" class="css-pb6w51-StyledTimestamp e4zesg50">2021年1月14日</time>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-oijotl-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/1393F/production/_116519108_58a99c95-1a6c-4e0d-ac5e-1a27556bacd7.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/1393F/production/_116519108_58a99c95-1a6c-4e0d-ac5e-1a27556bacd7.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/1393F/production/_116519108_58a99c95-1a6c-4e0d-ac5e-1a27556bacd7.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/1393F/production/_116519108_58a99c95-1a6c-4e0d-ac5e-1a27556bacd7.jpg 624w, https://ichef.bbci.co.uk/news/640/cpsprodpb/1393F/production/_116519108_58a99c95-1a6c-4e0d-ac5e-1a27556bacd7.jpg 640w" alt="插图" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/1393F/production/_116519108_58a99c95-1a6c-4e0d-ac5e-1a27556bacd7.jpg" width="640" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />            <p role="text" class="css-19db9gm-Copyright etq3yw90"><span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像来源，</span><span lang="en-GB">MALTE MUELLER / GETTY IMAGES</span></p>
+          </div>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70"><strong>新冠封城期间许多人都表示，没事宅在家里总想吃东西。人与食品的关系错综复杂：吃是必须的，但吃多了又会后悔。</strong></p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">有时，我们还经常纠结，什么该吃，什么最好别碰。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">食物不但给我们提供营养和能量，还能慰籍我们的大脑和情感。我们开心了可以大吃一顿，郁闷忧伤了也希望能从食品中获得一丝安慰。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <div class="css-1fobf8d e1gggypo0">
+      <ul dir="ltr" role="list" class="css-4c9jmx-BulletedList e1drcs2w0">
+        <li role="listitem" class="css-chb3zw-BulletedListItem e1drcs2w1"><a href="https://www.bbc.com/zhongwen/simp/science-53642105" class="css-h9s9st-InlineLink e1cs6q200">饮食与健康：饮食如何影响你的精神健康</a></li>
+        <li role="listitem" class="css-chb3zw-BulletedListItem e1drcs2w1"><a href="https://www.bbc.com/zhongwen/simp/science-54798588" class="css-h9s9st-InlineLink e1cs6q200">饮食与营养：有没有对健康有利的超级加工食品？</a></li>
+        <li role="listitem" class="css-chb3zw-BulletedListItem e1drcs2w1"><a href="https://www.bbc.com/zhongwen/simp/science-55091050" class="css-h9s9st-InlineLink e1cs6q200">饮食与健康：揭开食品的几大迷思和误区</a></li>
+        <li role="listitem" class="css-chb3zw-BulletedListItem e1drcs2w1"><a href="https://www.bbc.com/zhongwen/simp/uk-53099118" class="css-h9s9st-InlineLink e1cs6q200">要想拥有强大免疫力就要有健康饮食</a></li>
+        <li role="listitem" class="css-chb3zw-BulletedListItem e1drcs2w1"><a href="https://www.bbc.com/zhongwen/simp/science-50086190" class="css-h9s9st-InlineLink e1cs6q200">健康饮食：不好吃但能减压 不妨品尝这些食品</a></li>
+        <li role="listitem" class="css-chb3zw-BulletedListItem e1drcs2w1"><a href="https://www.bbc.com/zhongwen/simp/science-49719326" class="css-h9s9st-InlineLink e1cs6q200">健康生活：五大饮食习惯帮助保护你的心脏</a></li>
+      </ul>
+    </div>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <h2 id="什么是安慰食品" tabindex="-1" class="css-10tk4x-SubHeading e14hemmw1">什么是安慰食品？</h2>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-oijotl-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/04A7/production/_116519110_78841f10-5d6b-4f8c-b074-6459e90084e5.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/04A7/production/_116519110_78841f10-5d6b-4f8c-b074-6459e90084e5.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/04A7/production/_116519110_78841f10-5d6b-4f8c-b074-6459e90084e5.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/04A7/production/_116519110_78841f10-5d6b-4f8c-b074-6459e90084e5.jpg 624w, https://ichef.bbci.co.uk/news/640/cpsprodpb/04A7/production/_116519110_78841f10-5d6b-4f8c-b074-6459e90084e5.jpg 640w" alt="food" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/04A7/production/_116519110_78841f10-5d6b-4f8c-b074-6459e90084e5.jpg" width="640" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>安慰食品因人而异。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">这可能就是为什么会有comfort food这一说。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">不同文化可能会有不同的解读，中文中，可以把它解释为安慰食品、舒适食品，或者说，舒心又舒胃的食品、“疗伤系”食品等。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">牛剑词典则把安慰食品定义为那些能让你感觉更好、富含糖的甜食；那些当你忧伤担心时想吃的食物；那些你孩提时的食物以及与家相关的食物。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">对每个人来说，他们所喜欢或渴望的安慰食品因人而异。例如，有些人喜欢吃巧克力、蛋糕、冰激凌等，对其他人来说，也可能是一碗热汤面、米饭或炸薯条等。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">人们之所以渴望安慰食品，首先当然是因为好吃。然而，食品慰籍的不仅仅是胃，还有人的情绪和精神，这里面有一定的科学道理。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">林福德（Jenny Linford）是美食作家，她小时候曾在新加坡生活过。她的安慰食品是一碗香喷喷的海南鸡饭。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">这碗鸡饭可以让她想起儿时的记忆，让她想起了有着众多美食的家庭聚会。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <h2 id="糖脂肪碳水化合物与人类进化" tabindex="-1" class="css-10tk4x-SubHeading e14hemmw1">糖、脂肪、碳水化合物与人类进化</h2>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-oijotl-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/52C7/production/_116519112_68a7d5da-1af5-4afc-ba95-861ec951cc2f.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/52C7/production/_116519112_68a7d5da-1af5-4afc-ba95-861ec951cc2f.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/52C7/production/_116519112_68a7d5da-1af5-4afc-ba95-861ec951cc2f.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/52C7/production/_116519112_68a7d5da-1af5-4afc-ba95-861ec951cc2f.jpg 624w, https://ichef.bbci.co.uk/news/640/cpsprodpb/52C7/production/_116519112_68a7d5da-1af5-4afc-ba95-861ec951cc2f.jpg 640w" alt="ice cream" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/52C7/production/_116519112_68a7d5da-1af5-4afc-ba95-861ec951cc2f.jpg" width="640" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>许多人喜欢吃冰激凌，跟儿时幸福感有关。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">虽然人们喜爱的安慰食品千差万别，但那些能带给人们满足和幸福感的食物都具有一个共同特点，即高糖、高脂肪以及富含碳水化合物。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">这又是为什么呢？卢卡斯·奥登霍夫（Lukas Van Oudenhove）是比利时鲁汶大学的精神病学家。他专门研究人脑与肠道之间的关系，他认为这跟人类的进化有关。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">卢卡斯解释说，过去人类食物不足，特别是那些富含脂肪和糖类的食物更是稀少。因此，在人类进化过程中特别渴望能吃到这类食品，因为它能激活人脑的奖励机制。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">此外，卢卡斯领导的研究小组还发现，脂肪能减轻人们的悲伤情绪。这可能部分解释了人们在情绪低落时更容易吃高脂肪食品的原因。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">最近的科学研究还显示，当人感到疲倦时更可能会受到高卡路里、高糖和高脂肪食品的诱惑。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">卢卡斯解释说，他们的试验显示，当通过试管把脂肪输入实验者的胃部和小肠后，直接刺激了这些部位的细胞。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">这些细胞的主要功能是产生不同的荷尔蒙激素来调节我们是否感到饥饿还是饱了，对应和负责这一区域的则是下丘脑（the hypothalamus）部分。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">食物为我们提供能量和养料，正因为如此，当我们进食时大脑会分泌出一些能产生正面情绪的化学物质。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">它是一种进化机制，驱使人们寻找食物和不断进食。而人们喜爱富含碳水化合物和高糖饮食也是同样的道理。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <h2 id="原始大脑在作怪" tabindex="-1" class="css-10tk4x-SubHeading e14hemmw1">原始大脑在作怪？</h2>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-oijotl-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/A0E7/production/_116519114_b9309d88-ca59-4067-be22-59bdb9d5adcc.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/A0E7/production/_116519114_b9309d88-ca59-4067-be22-59bdb9d5adcc.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/A0E7/production/_116519114_b9309d88-ca59-4067-be22-59bdb9d5adcc.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/A0E7/production/_116519114_b9309d88-ca59-4067-be22-59bdb9d5adcc.jpg 624w, https://ichef.bbci.co.uk/news/640/cpsprodpb/A0E7/production/_116519114_b9309d88-ca59-4067-be22-59bdb9d5adcc.jpg 640w" alt="brain" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/A0E7/production/_116519114_b9309d88-ca59-4067-be22-59bdb9d5adcc.jpg" width="640" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>我们的大脑总在试图让我们开心。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">纽约州立大学布法罗分校的加布里埃尔博士也研究了食物与情感之间的联系，她认为人们经常把特定食物与儿时的正面情感和体验联系起来。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">比如，你小时候吃这些食物时感受到的那种快乐情绪。你的大脑会把这一切都储存起来。因此，长大后再吃这种食物时它引发的还有与此相关的一切：你如何受到照顾、宠爱。你是安全和健康的等等。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">于是，当我们吃某种特定食物时大脑就会利用这些正面联想来改善我们的情绪。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">加布里埃尔表示，人们可能根本没有意识到这之间的关联，它经常是潜意识的。也就是说我们的原始大脑在默默地替我们这样做。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <h2 id="安慰食品是否有害" tabindex="-1" class="css-10tk4x-SubHeading e14hemmw1">安慰食品是否有害？</h2>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-oijotl-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/FF0B/production/_116519256_1ccfbbfd-0a47-41cf-ab6b-031b790c4d5c.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/FF0B/production/_116519256_1ccfbbfd-0a47-41cf-ab6b-031b790c4d5c.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/FF0B/production/_116519256_1ccfbbfd-0a47-41cf-ab6b-031b790c4d5c.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/FF0B/production/_116519256_1ccfbbfd-0a47-41cf-ab6b-031b790c4d5c.jpg 624w, https://ichef.bbci.co.uk/news/640/cpsprodpb/FF0B/production/_116519256_1ccfbbfd-0a47-41cf-ab6b-031b790c4d5c.jpg 640w" alt="stomach" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/FF0B/production/_116519256_1ccfbbfd-0a47-41cf-ab6b-031b790c4d5c.jpg" width="640" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>安慰食品吃多了肯定不好，特别是高糖和脂肪食品。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">对此，加布里埃尔表示“绝对的”。这是因为人们倾向于吃安慰食品，即使它无法给他们带来安慰也照吃不误。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">而且，由于安慰食品的糖和脂肪含量偏高，会导致一些相关健康问题：肥胖症、糖尿病等。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">而且，研究显示，并非人人都能从安慰食品中得到安慰。同时，人们还会有一种负疚感，特别是女性：责怪自己为什么会这么馋嘴贪吃？</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">但加布里埃尔指出，重要的是要记住这只不过是我们的大脑在试图照顾我们而已。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">卢卡斯则告诫说，安慰食品的作用是短暂的，严重依赖它不但不能给你带来安慰，还可能导致情绪失调或沮丧，最终无法带给你开心。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <h2 id="有没有更健康的选择" tabindex="-1" class="css-10tk4x-SubHeading e14hemmw1">有没有更健康的选择？</h2>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-oijotl-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/14D2B/production/_116519258_1de281e1-7f89-4880-a31b-a8c12808adef.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/14D2B/production/_116519258_1de281e1-7f89-4880-a31b-a8c12808adef.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/14D2B/production/_116519258_1de281e1-7f89-4880-a31b-a8c12808adef.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/14D2B/production/_116519258_1de281e1-7f89-4880-a31b-a8c12808adef.jpg 624w, https://ichef.bbci.co.uk/news/640/cpsprodpb/14D2B/production/_116519258_1de281e1-7f89-4880-a31b-a8c12808adef.jpg 640w" alt="music" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/14D2B/production/_116519258_1de281e1-7f89-4880-a31b-a8c12808adef.jpg" width="640" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>你也可以听音乐和看书寻找慰籍。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">新冠疫情所带来的封锁措施让人们呆在室内的时间更多了，许多人通过食物寻求安慰。有些人已经对此感到担忧。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">加布里埃尔建议人们可以通过其他方式寻求安慰和满足，例如看看照片和读读书等。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">但如果这些不适用于你，非要吃东西不可，卢卡斯则建议选择一些富含纤维的食品，因为纤维可以为我们大肠中300万细菌提供食品和养料，细菌反过来产生的代谢物不仅可以减轻炎症，而且还可以跟大脑进行各种互动。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">根据卢卡斯研究小组所进行的试验表明，这些代谢物可以有效应对压力以及调节总体情绪。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">这些纤维可以在全谷物食品，例如小麦和燕麦中找到。同时，一些豆类产品，诸如鹰嘴豆、小扁豆和其他豆类以及根茎类蔬菜中也富含这些纤维。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">所以，如果你不得不吃点安慰食品的话，不妨尝试这些更健康的选择。</p>
+  </div>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#BBC 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-15</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-15/Science-%E7%A7%91%E6%99%AE%E5%B8%B8%E8%AF%86-%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB%E4%B8%AD%E8%AE%A9%E7%A7%91%E5%AD%A6%E5%AE%B6%E7%99%BE%E6%80%9D%E6%97%A0%E8%A7%A3%E7%9A%84%E4%BA%94%E4%BB%B6%E4%BA%8B">
+          [Science] 科普常识：日常生活中让科学家百思无解的五件事
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-14</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-14/World-%E7%BD%97%E6%9D%B0%E5%8F%94%E5%8F%94-%E9%BB%83%E7%91%BE%E7%91%9C%E5%88%A0%E9%99%A4%E4%B8%8E-%E5%8F%8D%E5%85%B1-%E7%BD%91%E7%BA%A2%E5%90%88%E4%BD%9C%E8%A7%86%E9%A2%91%E5%BC%95%E5%8F%91%E9%A3%8E%E6%B3%A2">
+          [World] “罗杰叔叔”黃瑾瑜删除与“反共”网红合作视频引发风波
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-14</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-14/Chinese-%E9%A6%99%E6%B8%AF-%E7%8E%B0%E4%BB%A3%E5%8C%96%E9%83%BD%E5%B8%82%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB%E4%B8%AD%E7%9A%84%E8%BF%B7%E4%BF%A1%E9%9D%A2%E9%9D%A2%E8%A7%82">
+          [Chinese] 香港：现代化都市日常生活中的迷信面面观
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-13</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-13/Science-2021%E6%B6%88%E8%B4%B9%E7%94%B5%E5%AD%90%E5%B1%95-%E5%86%85%E5%BB%BA%E6%89%AC%E5%A3%B0%E5%99%A8%E5%92%8C%E9%80%9A%E9%A3%8E%E8%A3%85%E7%BD%AE%E7%9A%84%E6%99%BA%E8%83%BD%E5%8F%A3%E7%BD%A9">
+          [Science] 2021消费电子展：内建扬声器和通风装置的智能口罩
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-14/Chinese-%E9%A6%99%E6%B8%AF-%E7%8E%B0%E4%BB%A3%E5%8C%96%E9%83%BD%E5%B8%82%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB%E4%B8%AD%E7%9A%84%E8%BF%B7%E4%BF%A1%E9%9D%A2%E9%9D%A2%E8%A7%82">
+            前一篇：[Chinese] 香港：现代化都市日常生活中的迷信面面观
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-14/World-%E7%BD%97%E6%9D%B0%E5%8F%94%E5%8F%94-%E9%BB%83%E7%91%BE%E7%91%9C%E5%88%A0%E9%99%A4%E4%B8%8E-%E5%8F%8D%E5%85%B1-%E7%BD%91%E7%BA%A2%E5%90%88%E4%BD%9C%E8%A7%86%E9%A2%91%E5%BC%95%E5%8F%91%E9%A3%8E%E6%B3%A2">
+            后一篇：[World] “罗杰叔叔”黃瑾瑜删除与“反共”网红合作视频引发风波
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-14/Chinese-%E9%A6%99%E6%B8%AF-%E7%8E%B0%E4%BB%A3%E5%8C%96%E9%83%BD%E5%B8%82%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB%E4%B8%AD%E7%9A%84%E8%BF%B7%E4%BF%A1%E9%9D%A2%E9%9D%A2%E8%A7%82'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-14/World-%E7%BD%97%E6%9D%B0%E5%8F%94%E5%8F%94-%E9%BB%83%E7%91%BE%E7%91%9C%E5%88%A0%E9%99%A4%E4%B8%8E-%E5%8F%8D%E5%85%B1-%E7%BD%91%E7%BA%A2%E5%90%88%E4%BD%9C%E8%A7%86%E9%A2%91%E5%BC%95%E5%8F%91%E9%A3%8E%E6%B3%A2'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-14/World-%E7%BD%97%E6%9D%B0%E5%8F%94%E5%8F%94-%E9%BB%83%E7%91%BE%E7%91%9C%E5%88%A0%E9%99%A4%E4%B8%8E-%E5%8F%8D%E5%85%B1-%E7%BD%91%E7%BA%A2%E5%90%88%E4%BD%9C%E8%A7%86%E9%A2%91%E5%BC%95%E5%8F%91%E9%A3%8E%E6%B3%A2'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-14/Chinese-%E9%A6%99%E6%B8%AF-%E7%8E%B0%E4%BB%A3%E5%8C%96%E9%83%BD%E5%B8%82%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB%E4%B8%AD%E7%9A%84%E8%BF%B7%E4%BF%A1%E9%9D%A2%E9%9D%A2%E8%A7%82'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-14/Chinese-%E9%A6%99%E6%B8%AF-%E7%8E%B0%E4%BB%A3%E5%8C%96%E9%83%BD%E5%B8%82%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB%E4%B8%AD%E7%9A%84%E8%BF%B7%E4%BF%A1%E9%9D%A2%E9%9D%A2%E8%A7%82">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-14/World-%E7%BD%97%E6%9D%B0%E5%8F%94%E5%8F%94-%E9%BB%83%E7%91%BE%E7%91%9C%E5%88%A0%E9%99%A4%E4%B8%8E-%E5%8F%8D%E5%85%B1-%E7%BD%91%E7%BA%A2%E5%90%88%E4%BD%9C%E8%A7%86%E9%A2%91%E5%BC%95%E5%8F%91%E9%A3%8E%E6%B3%A2">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<BBC>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-14/World-%E7%BD%97%E6%9D%B0%E5%8F%94%E5%8F%94-%E9%BB%83%E7%91%BE%E7%91%9C%E5%88%A0%E9%99%A4%E4%B8%8E-%E5%8F%8D%E5%85%B1-%E7%BD%91%E7%BA%A2%E5%90%88%E4%BD%9C%E8%A7%86%E9%A2%91%E5%BC%95%E5%8F%91%E9%A3%8E%E6%B3%A2">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<BBC>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-14/Chinese-%E9%A6%99%E6%B8%AF-%E7%8E%B0%E4%BB%A3%E5%8C%96%E9%83%BD%E5%B8%82%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB%E4%B8%AD%E7%9A%84%E8%BF%B7%E4%BF%A1%E9%9D%A2%E9%9D%A2%E8%A7%82">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

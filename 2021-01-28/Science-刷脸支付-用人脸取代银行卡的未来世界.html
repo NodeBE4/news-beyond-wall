@@ -1,0 +1,2134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>[Science] 刷脸支付：用人脸取代银行卡的未来世界 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+[Science] 刷脸支付：用人脸取代银行卡的未来世界
+——
+" />
+    <meta property="og:description" content="
+[Science] 刷脸支付：用人脸取代银行卡的未来世界
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="[Science] 刷脸支付：用人脸取代银行卡的未来世界" />
+    <meta property="twitter:title" content="[Science] 刷脸支付：用人脸取代银行卡的未来世界" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-55833475&t=%5BScience%5D+%E5%88%B7%E8%84%B8%E6%94%AF%E4%BB%98%EF%BC%9A%E7%94%A8%E4%BA%BA%E8%84%B8%E5%8F%96%E4%BB%A3%E9%93%B6%E8%A1%8C%E5%8D%A1%E7%9A%84%E6%9C%AA%E6%9D%A5%E4%B8%96%E7%95%8C" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-55833475&t=%5BScience%5D+%E5%88%B7%E8%84%B8%E6%94%AF%E4%BB%98%EF%BC%9A%E7%94%A8%E4%BA%BA%E8%84%B8%E5%8F%96%E4%BB%A3%E9%93%B6%E8%A1%8C%E5%8D%A1%E7%9A%84%E6%9C%AA%E6%9D%A5%E4%B8%96%E7%95%8C&d=2021-01-28&e=
+[Science] 刷脸支付：用人脸取代银行卡的未来世界
+——
+
+
+  
+    刷脸支付：用人脸取代银行卡的未来世界
+  
+  
+    2021年1月28日
+  
+  
+    
+      
+        
+          
+            图像来源，Sara Stewart
+          
+        
+        
+          
+图像加注文字，            斯图尔特在这家墨西哥餐馆刷脸支付购买三明治
+          
+        
+      
+    
+  
+  
+    萨拉·斯图尔特（Sara Stewart）走进洛杉矶一家墨西哥餐馆，点了一份三明治。
+  
+  
+    要结账的时候，她只需要注视柜台前的一个小屏幕就好了，但在付小费的时候就有点麻烦，她需要用手势表达。
+  
+  
+    整个过程不到5秒钟就完..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-55833475" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=http://www.bbc.com/zhongwen/simp/science-55833475" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=http://www.bbc.com/zhongwen/simp/science-55833475&text=[Science] 刷脸支付：用人脸取代银行卡的未来世界&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=http://www.bbc.com/zhongwen/simp/science-55833475&title=[Science] 刷脸支付：用人脸取代银行卡的未来世界" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://www.bbc.com/zhongwen/simp/science-55833475&title=[Science] 刷脸支付：用人脸取代银行卡的未来世界" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=[Science] 刷脸支付：用人脸取代银行卡的未来世界&body=
+[Science] 刷脸支付：用人脸取代银行卡的未来世界
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=http://www.bbc.com/zhongwen/simp/science-55833475" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=http://www.bbc.com/zhongwen/simp/science-55833475&title=[Science] 刷脸支付：用人脸取代银行卡的未来世界&caption=
+[Science] 刷脸支付：用人脸取代银行卡的未来世界
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=[Science] 刷脸支付：用人脸取代银行卡的未来世界&url=http://www.bbc.com/zhongwen/simp/science-55833475" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>[Science] 刷脸支付：用人脸取代银行卡的未来世界</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-28
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#BBC ">
+          BBC
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="http://www.bbc.com/zhongwen/simp/science-55833475"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="BBC的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#BBC 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-55833475&t=%5BScience%5D+%E5%88%B7%E8%84%B8%E6%94%AF%E4%BB%98%EF%BC%9A%E7%94%A8%E4%BA%BA%E8%84%B8%E5%8F%96%E4%BB%A3%E9%93%B6%E8%A1%8C%E5%8D%A1%E7%9A%84%E6%9C%AA%E6%9D%A5%E4%B8%96%E7%95%8C&d=2021-01-28&e=
+[Science] 刷脸支付：用人脸取代银行卡的未来世界
+——
+
+
+  
+    刷脸支付：用人脸取代银行卡的未来世界
+  
+  
+    2021年1月28日
+  
+  
+    
+      
+        
+          
+            图像来源，Sara Stewart
+          
+        
+        
+          
+图像加注文字，            斯图尔特在这家墨西哥餐馆刷脸支付购买三明治
+          
+        
+      
+    
+  
+  
+    萨拉·斯图尔特（Sara Stewart）走进洛杉矶一家墨西哥餐馆，点了一份三明治。
+  
+  
+    要结账的时候，她只需要注视柜台前的一个小屏幕就好了，但在付小费的时候就有点麻烦，她需要用手势表达。
+  
+  
+    整个过程不到5秒钟就完..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-55833475" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1611859234000-->
+<p><a href="http://www.bbc.com/zhongwen/simp/science-55833475">[Science] 刷脸支付：用人脸取代银行卡的未来世界</a>
+——</p>
+
+<div>
+  <div dir="ltr" class="css-e19l8g-GridComponent e57qer20">
+    <h1 id="content" tabindex="-1" class="css-1wfn6k3-Headline e1yj3cbb0">刷脸支付：用人脸取代银行卡的未来世界</h1>
+  </div>
+  <div dir="ltr" class="e1j2237y1 css-vf19ca-GridComponent e57qer20">
+    <time datetime="2021-01-28" class="css-pb6w51-StyledTimestamp e4zesg50">2021年1月28日</time>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-oijotl-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/13128/production/_116702187_55833475.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/13128/production/_116702187_55833475.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/13128/production/_116702187_55833475.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/13128/production/_116702187_55833475.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/13128/production/_116702187_55833475.jpg 800w" alt="斯图尔特在这家墨西哥餐馆刷脸支付购买三明治（Credit: Sara Stewart）" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/13128/production/_116702187_55833475.jpg" width="976" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />            <p role="text" class="css-19db9gm-Copyright etq3yw90"><span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像来源，</span><span lang="en-GB">Sara Stewart</span></p>
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>斯图尔特在这家墨西哥餐馆刷脸支付购买三明治</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70"><strong>萨拉·斯图尔特（Sara Stewart）走进洛杉矶一家墨西哥餐馆，点了一份三明治。</strong></p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">要结账的时候，她只需要注视柜台前的一个小屏幕就好了，但在付小费的时候就有点麻烦，她需要用手势表达。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">整个过程不到5秒钟就完成了，而且完全不需要使用手机或金融卡付款，也不需要出示任何证件，也不用输入密码。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">欢迎来到“刷脸支付”的未来世界，这听起来可能有点过于科幻，但在中国许多主要城市，刷脸支付已经成为现实。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">人脸识别技术已经来到美国、丹麦和尼日利亚等地方，未来几年之内会有更多地方更多人开始刷脸支付吗？需不需要担心资料安全和隐私问题？</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <div class="css-1fobf8d e1gggypo0">
+      <ul dir="ltr" role="list" class="css-4c9jmx-BulletedList e1drcs2w0">
+        <li role="listitem" class="css-chb3zw-BulletedListItem e1drcs2w1"><a href="https://www.bbc.com/zhongwen/simp/media-41695571" class="css-h9s9st-InlineLink e1cs6q200">中国推出人脸识别技术 是喜？是忧？</a></li>
+        <li role="listitem" class="css-chb3zw-BulletedListItem e1drcs2w1"><a href="https://www.bbc.com/zhongwen/simp/chinese-news-50619641" class="css-h9s9st-InlineLink e1cs6q200">中国手机入网强制实施人脸识别引发用户忧虑</a></li>
+      </ul>
+    </div>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-oijotl-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/15838/production/_116702188_55833475.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/15838/production/_116702188_55833475.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/15838/production/_116702188_55833475.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/15838/production/_116702188_55833475.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/15838/production/_116702188_55833475.jpg 800w" alt="斯图尔特比了一个V字手势，代表她愿意支付15%的小费（Credit: Sara Stewart）" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/15838/production/_116702188_55833475.jpg" width="976" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>斯图尔特比了一个V字手势，代表她愿意支付15%的小费</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">萨拉今年18岁，刚上大学，她表示并不担心这方面的问题。“我觉得科技进步得很快，在使用新技术的时候人们不会想太多。”</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">“我们的手机已经使用人脸辨识，网络上到处都是人脸，我认为这并不会影响个人资料安全或隐私。刷脸支付快速方便安全，不用担心忘了带手机或金融卡。”</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">萨拉使用的是美国一家新创科技公司PopID的人脸辨识支付系统，她首先在该公司网站上注册，上传一张自己的脸部照片存放在云端系统上，然后输入金融卡付款资料就完成了。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">此外，你还可以选择使用PopID的手势功能来支付小费，例如竖起大拇指代表愿意支付10%的小费，比一个V字手势支付15%的小费，沙卡手势（shaka sign）支付20%。</p>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-oijotl-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/17F48/production/_116702189_55833475.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/17F48/production/_116702189_55833475.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/17F48/production/_116702189_55833475.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/17F48/production/_116702189_55833475.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/17F48/production/_116702189_55833475.jpg 800w" alt="比出沙卡手势（如图）代表愿意支付20%的小费（Credit: Getty Images）" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/17F48/production/_116702189_55833475.jpg" width="976" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>比出沙卡手势（如图）代表愿意支付20%的小费</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">PopID总部位于洛杉矶，该公司的人脸辨识支付系统目前已经在70多家独立的餐厅和咖啡店里使用，主要在美国西岸。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">PopID首席执行官米勒（John Miller）表示，“刷脸支付和用手机或其他支付方式没有不同，这只是辨识身份的一种方法，辨识完成后照片立即删除，不会储存也不会分享照片。”</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">他甚至说刷脸支付要比用手机支付更安全，因为手机会通过GPS随时追踪定位，而人脸辨识就不会，他还说存放在PopID云端系统上的脸部照片，只是以脸部独特向量的数学图像来储存，而不是真的照片。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">目前PopID要求使用者在刷脸支付时将口罩往下拉，但该公司表示正在更新系统，未来刷脸支付就不需要移除口罩。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <div class="css-1fobf8d e1gggypo0">
+      <ul dir="ltr" role="list" class="css-4c9jmx-BulletedList e1drcs2w0">
+        <li role="listitem" class="css-chb3zw-BulletedListItem e1drcs2w1"><a href="https://www.bbc.com/zhongwen/simp/chinese-news-50685535" class="css-h9s9st-InlineLink e1cs6q200">人脸识别技术触发中国民众忧虑的背后</a></li>
+        <li role="listitem" class="css-chb3zw-BulletedListItem e1drcs2w1"><a href="https://www.bbc.com/zhongwen/simp/chinese-news-49589980" class="css-h9s9st-InlineLink e1cs6q200">ZAO：中国换脸视频应用是否威胁庞大的刷脸产业</a></li>
+      </ul>
+    </div>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-oijotl-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/CCBB/production/_116711425_4fcbd2ab-4ab8-4f11-90ab-f8f1d1df0e2f.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/CCBB/production/_116711425_4fcbd2ab-4ab8-4f11-90ab-f8f1d1df0e2f.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/CCBB/production/_116711425_4fcbd2ab-4ab8-4f11-90ab-f8f1d1df0e2f.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/CCBB/production/_116711425_4fcbd2ab-4ab8-4f11-90ab-f8f1d1df0e2f.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/CCBB/production/_116711425_4fcbd2ab-4ab8-4f11-90ab-f8f1d1df0e2f.jpg 800w" alt="中国主要城市刷脸支付非常普遍" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/CCBB/production/_116711425_4fcbd2ab-4ab8-4f11-90ab-f8f1d1df0e2f.jpg" width="976" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>中国主要城市刷脸支付非常普遍</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">远在12000公里之外，中国许多城市早就已经开始使用刷脸支付。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">在广州中山大学，刷脸支付是学生宿舍里的自动贩卖机唯一接受的支付方式，学生如果在夜晚想要买点宵夜吃，就只能刷脸支付购买，否则就要饿肚子。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">但是和洛杉矶的萨拉不同，这里有许多学生并不满意刷脸支付的应用。一位不愿具名的学生表示，受不了现在的生活方方面面都充满了人脸辨识技术。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">这位学生说，她宁愿半夜挨饿，也不要刷脸支付买宵夜。“科技就像潮水，你不能逆流而上，但我只要有办法就能免则免。”</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <div class="css-1fobf8d e1gggypo0">
+      <ul dir="ltr" role="list" class="css-4c9jmx-BulletedList e1drcs2w0">
+        <li role="listitem" class="css-chb3zw-BulletedListItem e1drcs2w1"><a href="https://www.bbc.com/zhongwen/simp/chinese-news-50328377" class="css-h9s9st-InlineLink e1cs6q200">人脸识别与隐私：中港台激烈讨论的争议话题</a></li>
+        <li role="listitem" class="css-chb3zw-BulletedListItem e1drcs2w1"><a href="https://www.bbc.com/zhongwen/simp/world-44859007" class="css-h9s9st-InlineLink e1cs6q200">监控升级：人脸识别系统能读出情绪和威胁性</a></li>
+      </ul>
+    </div>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-oijotl-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/F3CB/production/_116711426_50f5c7ea-e7b8-46a1-a500-db0268f7bbe5.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/F3CB/production/_116711426_50f5c7ea-e7b8-46a1-a500-db0268f7bbe5.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/F3CB/production/_116711426_50f5c7ea-e7b8-46a1-a500-db0268f7bbe5.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/F3CB/production/_116711426_50f5c7ea-e7b8-46a1-a500-db0268f7bbe5.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/F3CB/production/_116711426_50f5c7ea-e7b8-46a1-a500-db0268f7bbe5.jpg 800w" alt="人脸辨识技术能够识别人的脸部特征" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/F3CB/production/_116711426_50f5c7ea-e7b8-46a1-a500-db0268f7bbe5.jpg" width="976" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>人脸辨识技术能够识别人的脸部特征</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">如果说科技是一股大潮，那么在中国，人脸辨识和刷脸支付的应用简直就像是一场海啸。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">在中国，阿里巴巴集团发展出来的支付宝，和腾讯的微信支付这两个移动支付平台占据98%的手机支付市场，支付宝和微信支付都在竞争人脸辨识支付系统。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">中国官方媒体报道，到明年将有7.6亿人使用人脸辨识支付系统。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">洛阳科技职业学院的电子商务学院院长王冰表示，新冠病毒疫情加快了人脸辨识支付系统的应用。</p>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-oijotl-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/11ADB/production/_116711427_5223945e-2791-4416-bd8e-b12c86aaaf3d.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/11ADB/production/_116711427_5223945e-2791-4416-bd8e-b12c86aaaf3d.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/11ADB/production/_116711427_5223945e-2791-4416-bd8e-b12c86aaaf3d.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/11ADB/production/_116711427_5223945e-2791-4416-bd8e-b12c86aaaf3d.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/11ADB/production/_116711427_5223945e-2791-4416-bd8e-b12c86aaaf3d.jpg 800w" alt="王冰表示人脸辨识系统很难造假" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/11ADB/production/_116711427_5223945e-2791-4416-bd8e-b12c86aaaf3d.jpg" width="976" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>王冰表示人脸辨识系统很难造假</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">他表示，受到新冠病毒疫情影响，更多人愿意使用人脸辨识支付系统。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">“这个技术非常先进，你不可能骗过摄像头和背后的软件，连同卵双胞胎都能辨识差别。”</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">但人脸辨识支付系统能普及到全世界吗？银行支付系统专家布雷特·金（Brett King）表示肯定，除非是用政府力量阻止。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">他表示，用脸部特征和测量数据来辨识身份，其实比银行账号密码更加安全，因为人脸辨识属于生物辨识技术的一部分，比密码来得更加独特。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">布雷特·金说，许多人已经在手机上使用人脸辨识功能，刷脸支付只是一个延伸而已。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">但是他表示，在美国，人脸辨识系统还是引起许多人的担忧，美国监管机构或许对这一技术态度存疑。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">美国国会一些民主党议员试图重新立法阻止联邦机构使用人脸辨识技术来寻找犯罪嫌疑人，中国人脸辨识技术被用在维吾尔少数民族上也引起关注。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">PopID的米勒也承认，人脸辨识支付技术也许是某些人永远不会接受的东西，这无关科学，而是心理因素。</p>
+  </div>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#BBC 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-29</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-29/Science-%E7%BE%8E%E5%9B%BD%E6%80%BB%E7%BB%9F%E9%83%BD%E4%BD%BF%E7%94%A8%E5%93%AA%E4%BA%9B%E7%A7%91%E6%8A%80%E4%BA%A7%E5%93%81-%E7%AD%94%E6%A1%88%E5%8F%AF%E8%83%BD%E6%AF%94%E4%BD%A0%E6%83%B3%E5%BE%97%E8%BF%98%E5%B0%91">
+          [Science] 美国总统都使用哪些科技产品？答案可能比你想得还少
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-29</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-29/World-%E6%96%B0%E5%86%A0%E6%84%9F%E6%9F%93%E8%80%85%E7%9A%84%E5%97%85%E8%A7%89%E5%80%92%E9%94%99-%E5%BE%97%E4%BA%86%E8%BF%99%E7%97%85%E4%BB%A5%E5%90%8E-%E9%A3%9F%E7%89%A9%E5%8F%AA%E4%BC%9A%E8%AE%A9%E6%88%91%E5%91%95%E5%90%90">
+          [World] 新冠感染者的嗅觉倒错：“得了这病以后，食物只会让我呕吐”
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-28</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-28/Science-%E5%9B%B0%E6%89%B0%E8%BE%BE%E5%B0%94%E6%96%87%E4%B8%80%E7%94%9F%E7%9A%84-%E6%81%BC%E4%BA%BA%E4%B9%8B%E8%B0%9C-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AE%A8%E5%8E%8C">
+          [Science] 困扰达尔文一生的“恼人之谜”为什么讨厌
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-27</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-27/Chinese-%E6%96%B0%E5%86%A0%E7%96%AB%E6%83%85%E4%B8%8B%E4%B8%AD%E5%9B%BD-%E6%98%A5%E8%BF%90-%E6%8B%89%E5%BC%80%E5%B8%B7%E5%B9%95-%E5%88%B0%E5%BA%95-%E5%B0%B1%E5%9C%B0%E8%BF%87%E5%B9%B4-%E8%BF%98%E6%98%AF%E5%9B%9E%E5%AE%B6%E5%9B%A2%E5%9C%86">
+          [Chinese] 新冠疫情下中国“春运”拉开帷幕 到底“就地过年”还是回家团圆？
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-28/Science-%E5%9B%B0%E6%89%B0%E8%BE%BE%E5%B0%94%E6%96%87%E4%B8%80%E7%94%9F%E7%9A%84-%E6%81%BC%E4%BA%BA%E4%B9%8B%E8%B0%9C-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AE%A8%E5%8E%8C">
+            前一篇：[Science] 困扰达尔文一生的“恼人之谜”为什么讨厌
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-29/World-%E6%96%B0%E5%86%A0%E6%84%9F%E6%9F%93%E8%80%85%E7%9A%84%E5%97%85%E8%A7%89%E5%80%92%E9%94%99-%E5%BE%97%E4%BA%86%E8%BF%99%E7%97%85%E4%BB%A5%E5%90%8E-%E9%A3%9F%E7%89%A9%E5%8F%AA%E4%BC%9A%E8%AE%A9%E6%88%91%E5%91%95%E5%90%90">
+            后一篇：[World] 新冠感染者的嗅觉倒错：“得了这病以后，食物只会让我呕吐”
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-28/Science-%E5%9B%B0%E6%89%B0%E8%BE%BE%E5%B0%94%E6%96%87%E4%B8%80%E7%94%9F%E7%9A%84-%E6%81%BC%E4%BA%BA%E4%B9%8B%E8%B0%9C-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AE%A8%E5%8E%8C'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-29/World-%E6%96%B0%E5%86%A0%E6%84%9F%E6%9F%93%E8%80%85%E7%9A%84%E5%97%85%E8%A7%89%E5%80%92%E9%94%99-%E5%BE%97%E4%BA%86%E8%BF%99%E7%97%85%E4%BB%A5%E5%90%8E-%E9%A3%9F%E7%89%A9%E5%8F%AA%E4%BC%9A%E8%AE%A9%E6%88%91%E5%91%95%E5%90%90'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-29/World-%E6%96%B0%E5%86%A0%E6%84%9F%E6%9F%93%E8%80%85%E7%9A%84%E5%97%85%E8%A7%89%E5%80%92%E9%94%99-%E5%BE%97%E4%BA%86%E8%BF%99%E7%97%85%E4%BB%A5%E5%90%8E-%E9%A3%9F%E7%89%A9%E5%8F%AA%E4%BC%9A%E8%AE%A9%E6%88%91%E5%91%95%E5%90%90'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-28/Science-%E5%9B%B0%E6%89%B0%E8%BE%BE%E5%B0%94%E6%96%87%E4%B8%80%E7%94%9F%E7%9A%84-%E6%81%BC%E4%BA%BA%E4%B9%8B%E8%B0%9C-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AE%A8%E5%8E%8C'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-28/Science-%E5%9B%B0%E6%89%B0%E8%BE%BE%E5%B0%94%E6%96%87%E4%B8%80%E7%94%9F%E7%9A%84-%E6%81%BC%E4%BA%BA%E4%B9%8B%E8%B0%9C-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AE%A8%E5%8E%8C">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-29/World-%E6%96%B0%E5%86%A0%E6%84%9F%E6%9F%93%E8%80%85%E7%9A%84%E5%97%85%E8%A7%89%E5%80%92%E9%94%99-%E5%BE%97%E4%BA%86%E8%BF%99%E7%97%85%E4%BB%A5%E5%90%8E-%E9%A3%9F%E7%89%A9%E5%8F%AA%E4%BC%9A%E8%AE%A9%E6%88%91%E5%91%95%E5%90%90">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<BBC>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-29/World-%E6%96%B0%E5%86%A0%E6%84%9F%E6%9F%93%E8%80%85%E7%9A%84%E5%97%85%E8%A7%89%E5%80%92%E9%94%99-%E5%BE%97%E4%BA%86%E8%BF%99%E7%97%85%E4%BB%A5%E5%90%8E-%E9%A3%9F%E7%89%A9%E5%8F%AA%E4%BC%9A%E8%AE%A9%E6%88%91%E5%91%95%E5%90%90">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<BBC>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-28/Science-%E5%9B%B0%E6%89%B0%E8%BE%BE%E5%B0%94%E6%96%87%E4%B8%80%E7%94%9F%E7%9A%84-%E6%81%BC%E4%BA%BA%E4%B9%8B%E8%B0%9C-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AE%A8%E5%8E%8C">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>简报：日本对台海局势发出警告；俄罗斯勒索软件组织REvil从暗网消失 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+简报：日本对台海局势发出警告；俄罗斯勒索软件组织REvil从暗网消失
+——
+" />
+    <meta property="og:description" content="
+简报：日本对台海局势发出警告；俄罗斯勒索软件组织REvil从暗网消失
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="简报：日本对台海局势发出警告；俄罗斯勒索软件组织REvil从暗网消失" />
+    <meta property="twitter:title" content="简报：日本对台海局势发出警告；俄罗斯勒索软件组织REvil从暗网消失" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.nytimes.com%2Fzh-hans%2F2021%2F07%2F13%2Fworld%2Fasia%2Fjapan-taiwan-china-us.html&t=%E7%AE%80%E6%8A%A5%EF%BC%9A%E6%97%A5%E6%9C%AC%E5%AF%B9%E5%8F%B0%E6%B5%B7%E5%B1%80%E5%8A%BF%E5%8F%91%E5%87%BA%E8%AD%A6%E5%91%8A%EF%BC%9B%E4%BF%84%E7%BD%97%E6%96%AF%E5%8B%92%E7%B4%A2%E8%BD%AF%E4%BB%B6%E7%BB%84%E7%BB%87REvil%E4%BB%8E%E6%9A%97%E7%BD%91%E6%B6%88%E5%A4%B1" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.nytimes.com%2Fzh-hans%2F2021%2F07%2F13%2Fworld%2Fasia%2Fjapan-taiwan-china-us.html&t=%E7%AE%80%E6%8A%A5%EF%BC%9A%E6%97%A5%E6%9C%AC%E5%AF%B9%E5%8F%B0%E6%B5%B7%E5%B1%80%E5%8A%BF%E5%8F%91%E5%87%BA%E8%AD%A6%E5%91%8A%EF%BC%9B%E4%BF%84%E7%BD%97%E6%96%AF%E5%8B%92%E7%B4%A2%E8%BD%AF%E4%BB%B6%E7%BB%84%E7%BB%87REvil%E4%BB%8E%E6%9A%97%E7%BD%91%E6%B6%88%E5%A4%B1&d=2021-07-13&e=
+简报：日本对台海局势发出警告；俄罗斯勒索软件组织REvil从暗网消失
+——
+
+
+  
+    
+Image      
+      
+2018年东海军事演习期间，中国航母上的战斗机。Credit...Reuters
+      
+    
+    
+      
+        日本警告台海局势对其安全构成威胁。日本防卫省在年度白皮书中指出，中国军力的迅速扩张将有可能打破华盛顿与北京之间的力量平衡，破坏地区和平。中国对此提出严厉批评，称绝不容许任何国家以任何方式插手台湾问题。白皮书的措辞意味着，尽管仍担心被卷入中美之间，但日本可能正朝着与华盛顿更近的方向谨慎移动。
+      
+      
+        中国6月出口意外强劲，同比激增32.2%。中国最大的港口之一盐田港6月基本处于停运状态，医疗物资出口也趋于平缓，但其出口表现仍然亮眼。分析认为，这可能是价格上涨的反映，中国工厂..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.nytimes.com%2Fzh-hans%2F2021%2F07%2F13%2Fworld%2Fasia%2Fjapan-taiwan-china-us.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.nytimes.com/zh-hans/2021/07/13/world/asia/japan-taiwan-china-us.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.nytimes.com/zh-hans/2021/07/13/world/asia/japan-taiwan-china-us.html&text=简报：日本对台海局势发出警告；俄罗斯勒索软件组织REvil从暗网消失&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.nytimes.com/zh-hans/2021/07/13/world/asia/japan-taiwan-china-us.html&title=简报：日本对台海局势发出警告；俄罗斯勒索软件组织REvil从暗网消失" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.nytimes.com/zh-hans/2021/07/13/world/asia/japan-taiwan-china-us.html&title=简报：日本对台海局势发出警告；俄罗斯勒索软件组织REvil从暗网消失" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=简报：日本对台海局势发出警告；俄罗斯勒索软件组织REvil从暗网消失&body=
+简报：日本对台海局势发出警告；俄罗斯勒索软件组织REvil从暗网消失
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.nytimes.com/zh-hans/2021/07/13/world/asia/japan-taiwan-china-us.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.nytimes.com/zh-hans/2021/07/13/world/asia/japan-taiwan-china-us.html&title=简报：日本对台海局势发出警告；俄罗斯勒索软件组织REvil从暗网消失&caption=
+简报：日本对台海局势发出警告；俄罗斯勒索软件组织REvil从暗网消失
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=简报：日本对台海局势发出警告；俄罗斯勒索软件组织REvil从暗网消失&url=https://www.nytimes.com/zh-hans/2021/07/13/world/asia/japan-taiwan-china-us.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>简报：日本对台海局势发出警告；俄罗斯勒索软件组织REvil从暗网消失</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-07-13
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#纽约时报 ">
+          纽约时报
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.nytimes.com/zh-hans/2021/07/13/world/asia/japan-taiwan-china-us.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="纽约时报的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#纽约时报 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.nytimes.com%2Fzh-hans%2F2021%2F07%2F13%2Fworld%2Fasia%2Fjapan-taiwan-china-us.html&t=%E7%AE%80%E6%8A%A5%EF%BC%9A%E6%97%A5%E6%9C%AC%E5%AF%B9%E5%8F%B0%E6%B5%B7%E5%B1%80%E5%8A%BF%E5%8F%91%E5%87%BA%E8%AD%A6%E5%91%8A%EF%BC%9B%E4%BF%84%E7%BD%97%E6%96%AF%E5%8B%92%E7%B4%A2%E8%BD%AF%E4%BB%B6%E7%BB%84%E7%BB%87REvil%E4%BB%8E%E6%9A%97%E7%BD%91%E6%B6%88%E5%A4%B1&d=2021-07-13&e=
+简报：日本对台海局势发出警告；俄罗斯勒索软件组织REvil从暗网消失
+——
+
+
+  
+    
+Image      
+      
+2018年东海军事演习期间，中国航母上的战斗机。Credit...Reuters
+      
+    
+    
+      
+        日本警告台海局势对其安全构成威胁。日本防卫省在年度白皮书中指出，中国军力的迅速扩张将有可能打破华盛顿与北京之间的力量平衡，破坏地区和平。中国对此提出严厉批评，称绝不容许任何国家以任何方式插手台湾问题。白皮书的措辞意味着，尽管仍担心被卷入中美之间，但日本可能正朝着与华盛顿更近的方向谨慎移动。
+      
+      
+        中国6月出口意外强劲，同比激增32.2%。中国最大的港口之一盐田港6月基本处于停运状态，医疗物资出口也趋于平缓，但其出口表现仍然亮眼。分析认为，这可能是价格上涨的反映，中国工厂..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.nytimes.com%2Fzh-hans%2F2021%2F07%2F13%2Fworld%2Fasia%2Fjapan-taiwan-china-us.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1626230222000-->
+<p><a href="https://www.nytimes.com/zh-hans/2021/07/13/world/asia/japan-taiwan-china-us.html">简报：日本对台海局势发出警告；俄罗斯勒索软件组织REvil从暗网消失</a>
+——</p>
+
+<div>
+  <section name="articleBody" class="meteredContent css-1r7ky0e">
+    <figure class="css-jcw7oy e1g7ppur0" aria-label="media" role="group">
+Image      <picture><source media="(max-width: 599px) and (min-device-pixel-ratio: 3),(max-width: 599px) and (-webkit-min-device-pixel-ratio: 3),(max-width: 599px) and (min-resolution: 3dppx),(max-width: 599px) and (min-resolution: 288dpi)" srcset="https://images.weserv.nl/?url=static01.nyt.com/images/2021/06/15/world/CN-14ambriefing-asia-China-Japan-copy/14ambriefing-asia-China-Japan-mobileMasterAt3x-v5.jpg?quality=75&amp;auto=webp&amp;disable=upscale&amp;width=600" /><source media="(max-width: 599px) and (min-device-pixel-ratio: 2),(max-width: 599px) and (-webkit-min-device-pixel-ratio: 2),(max-width: 599px) and (min-resolution: 2dppx),(max-width: 599px) and (min-resolution: 192dpi)" srcset="https://images.weserv.nl/?url=static01.nyt.com/images/2021/06/15/world/CN-14ambriefing-asia-China-Japan-copy/14ambriefing-asia-China-Japan-mobileMasterAt3x-v5.jpg?quality=75&amp;auto=webp&amp;disable=upscale&amp;width=1200" /><source media="(max-width: 599px) and (min-device-pixel-ratio: 1),(max-width: 599px) and (-webkit-min-device-pixel-ratio: 1),(max-width: 599px) and (min-resolution: 1dppx),(max-width: 599px) and (min-resolution: 96dpi)" srcset="https://images.weserv.nl/?url=static01.nyt.com/images/2021/06/15/world/CN-14ambriefing-asia-China-Japan-copy/14ambriefing-asia-China-Japan-mobileMasterAt3x-v5.jpg?quality=75&amp;auto=webp&amp;disable=upscale&amp;width=1800" /><img /></picture>
+      <figcaption class="css-1l44abu ewdxa0s0">
+2018年东海军事演习期间，中国航母上的战斗机。Credit...Reuters
+      </figcaption>
+    </figure>
+    <ul class="css-1le37cb ez3869y0">
+      <li class="css-o74qhc eoqvrfo0">
+        <p class="css-1qtdsio evys1bk0">日本警告<a class="css-1g7m0tk" href="https://www.nytimes.com/2021/07/13/world/asia/japan-taiwan-china-us.html" title="">台海局势对其安全构成威胁</a>。日本防卫省在年度白皮书中指出，中国军力的迅速扩张将有可能打破华盛顿与北京之间的力量平衡，破坏地区和平。中国对此提出严厉批评，称绝不容许任何国家以任何方式插手台湾问题。白皮书的措辞意味着，尽管仍担心被卷入中美之间，但日本可能正朝着与华盛顿更近的方向谨慎移动。</p>
+      </li>
+      <li class="css-o74qhc eoqvrfo0">
+        <p class="css-1qtdsio evys1bk0"><a class="css-1g7m0tk" href="https://www.nytimes.com/2021/07/13/business/china-exports.html" title="">中国6月出口意外强劲</a>，同比激增32.2%。中国最大的港口之一盐田港6月基本处于停运状态，医疗物资出口也趋于平缓，但其出口表现仍然亮眼。分析认为，这可能是价格上涨的反映，中国工厂正在将自身成本的上升转嫁给外国消费者；此举将保证其自身的收益率，但有可能加剧其它地区的通货膨胀。</p>
+      </li>
+      <li class="css-o74qhc eoqvrfo0">
+        <p class="css-1qtdsio evys1bk0">撞上监管高墙，中国金融科技业何去何从？这个行业之所以蓬勃发展，靠的是提供中国国有银行体系无法提供的服务。当北京筑起监管高墙，行业创新受损、消费者支出和借贷减少，它将走向怎样的未来？（<a class="css-1g7m0tk" href="https://cn.nytimes.com/technology/20210713/china-fintech-ant-group/" title="">阅读本文中文版</a>）</p>
+      </li>
+    </ul>
+    <aside class="css-ew4tgv" aria-label="companion column"></aside>
+    <figure class="css-jcw7oy e1g7ppur0" aria-label="media" role="group">
+Image      <figcaption class="css-1l44abu ewdxa0s0">
+6月，美国总统拜登与俄罗斯总统普京会面。Credit...Doug Mills/The New York Times
+      </figcaption>
+    </figure>
+    <ul class="css-1le37cb ez3869y0">
+      <li class="css-o74qhc eoqvrfo0">
+        <p class="css-1qtdsio evys1bk0">俄罗斯勒索软件组织<a class="css-1g7m0tk" href="https://www.nytimes.com/2021/07/13/us/politics/russia-hacking-ransomware-revil.html" title="">REvil从暗网消失</a>。REvil被认为是导致美国最大的牛肉生产商之一JBS瘫痪的罪魁祸首，还在美国国庆日对全球数千家企业发起攻击。周二凌晨，这个俄罗斯最激进的勒索软件组织在暗网上的网站突然消失了。此前数天，美国总统拜登曾<a class="css-1g7m0tk" href="https://www.nytimes.com/2021/07/09/us/politics/biden-putin-ransomware-russia.html" title="">要求俄罗斯总统普京采取行动</a>，关闭攻击美国目标的勒索软件组织。 目前，关于REvil为何突然消失的具体原因尚不清楚，但专家表示，该组织可能会以不同的名字再次出现。</p>
+      </li>
+      <li class="css-o74qhc eoqvrfo0">
+        <p class="css-1qtdsio evys1bk0">海地计划<a class="css-1g7m0tk" href="https://www.nytimes.com/live/2021/07/13/world/haiti-president-assassinated#as-haiti-plans-a-state-funeral-how-much-can-it-unite-the-nation" title="">为遇害前总统举办国葬</a>。若弗内尔·莫伊兹遇刺一周后，调查仍在进行中，海地的权力斗争也仍然在继续。与此同时，该国政府正在为他准备一场“与国家元首的身份相称的”葬礼。尽管对莫伊兹的领导能力和施政方针存在分歧意见，但许多海地人认为，必须尊重总统的尊严。</p>
+      </li>
+      <li class="css-o74qhc eoqvrfo0">
+        <p class="css-1qtdsio evys1bk0">海地总统遇刺案之谜：一名医生缘何成为最大嫌犯。海地当局将一名63岁的医生兼牧师列为刺杀阴谋的核心人物，称其觊觎总统职位，但他如何启动刺杀计划尚没有答案。有迹象表明，他可能认为接任总统是一种神圣的召唤。（<a class="css-1g7m0tk" href="https://cn.nytimes.com/world/20210713/haiti-jovenel-assasination-sanon/" title="">阅读本文中文版</a>）</p>
+      </li>
+      <li class="css-o74qhc eoqvrfo0">
+        <p class="css-1qtdsio evys1bk0"><a class="css-1g7m0tk" href="https://www.nytimes.com/2021/07/12/world/africa/zuma-protests-violence.html" title="">前总统入狱后南非暴力蔓延</a>，当局动用军队展开镇压。抗议雅各布·祖马入狱的示威活动已演变为抢劫、纵火和枪击。当局称，这场动乱已经导致数人死亡，数千万美元的商业损失，并使疫苗接种计划中断。活动人士指出，这是一场源于贫困和机会匮乏等更深层次问题的起义。</p>
+        <p class="css-1qtdsio evys1bk0"></p>
+      </li>
+    </ul>
+    <aside class="css-ew4tgv" aria-label="companion column"></aside>
+    <figure class="css-jcw7oy e1g7ppur0" aria-label="media" role="group">
+Image      <figcaption class="css-1l44abu ewdxa0s0">
+周二，救援人员在医院的废墟中寻找遗体。Credit...Khalid Mohammed/Associated Press
+      </figcaption>
+    </figure>
+    <ul class="css-1le37cb ez3869y0">
+      <li class="css-o74qhc eoqvrfo0">
+        <p class="css-1qtdsio evys1bk0"><a class="css-1g7m0tk" href="https://www.nytimes.com/2021/07/13/world/middleeast/iraq-hospital-fire.html" title="">伊拉克新冠病房深夜爆发火灾</a>，至少92人死亡。大多遇难者为新冠患者，由于火势过于猛烈，至少有22具尸体的身份无法立即被确认。当局称，一台呼吸机的电气短路导致氧气罐爆炸，许多依靠机器呼吸的病人无法自主移动逃生。这是不到三个月里伊拉克发生的第二起医院火灾事故。 4月下旬，巴格达一家治疗新冠的医院发生类似火灾，导致80余人死亡，该国卫生部长引咎辞职。</p>
+      </li>
+      <li class="css-o74qhc eoqvrfo0">
+        <p class="css-1qtdsio evys1bk0">“妈妈，你什么时候回来？”：印度疫情中的孤儿们。新冠病毒在印度夺走数十万人的生命，也让数千名儿童成为孤儿。政府承诺提供帮助，但这些孤儿的困境仍然刺痛了公众。许多孩子面临着做童工、被贩卖乃至被性剥削的危险。（<a class="css-1g7m0tk" href="https://cn.nytimes.com/world/20210713/india-covid-orphans/" title="">阅读本文中文版</a>）</p>
+      </li>
+      <li class="css-o74qhc eoqvrfo0">
+        <p class="css-1qtdsio evys1bk0"><a class="css-1g7m0tk" href="https://www.nytimes.com/2021/07/13/us/miami-condo-death-toll.html" title="">迈阿密公寓倒塌事故搜救工作接近尾声</a>。当地官员估计，最终的死亡人数可能介于95至99人之间。事故发生至今已有20天，救援人员共找到95人的遗体，其中85人的身份被确认，此外仍有四人下落不明。此次事故是美国历史上最致命的结构性建筑事故之一。</p>
+      </li>
+      <li class="css-o74qhc eoqvrfo0">
+        <p class="css-1qtdsio evys1bk0"><a class="css-1g7m0tk" href="https://www.nytimes.com/2021/07/13/business/economy/consumer-price-index-june-2021.html" title="">美国CPI创下13年来最高涨幅</a>，当局寻求缓解通胀担忧。据劳工部周二公布的数据，美国消费者价格指数在截至6月的过去一年间上涨了5.4%。随着经济重新开放，该国二手车、酒店住宿和餐饮价格飙升。政府坚持认为价格上涨将是暂时的，但如果经济持续过热，本轮通胀将影响个人消费，并拖累整体增长。</p>
+      </li>
+      <li class="css-o74qhc eoqvrfo0">
+        <p class="css-1qtdsio evys1bk0"><a class="css-1g7m0tk" href="https://www.nytimes.com/2021/07/12/nyregion/weisselberg-trump-organization-removed-subsidiaries.html" title="">特朗普集团CFO遭起诉后被免职</a>。知情人士透露，在纽约州检察官起诉特朗普家族企业及其首席财务官艾伦·魏塞尔伯格一周后，该公司开始免去后者在数十家子公司担任的所有领导职务。此举可能是特朗普集团进行更广泛改组的前兆。尚无迹象表明特朗普想与魏塞尔伯格断绝关系，但该公司可能希望将其调至一个更低调的职位。</p>
+      </li>
+    </ul>
+    <aside class="css-ew4tgv" aria-label="companion column"></aside>
+    <figure class="css-jcw7oy e1g7ppur0" aria-label="media" role="group">
+Image      <figcaption class="css-1l44abu ewdxa0s0">
+艾玛·科林凭借在《王冠》中的表演获得剧情类最佳女主角提名。Credit...Des Willie/Netflix
+      </figcaption>
+    </figure>
+    <ul class="css-1le37cb ez3869y0">
+      <li class="css-o74qhc eoqvrfo0">
+        <p class="css-1qtdsio evys1bk0">艾美奖公布提名：《王冠》和《旺达幻视》各获得24项提名，HBO以130项提名领跑各大电视网。颁奖礼将于9月19日举行，这里是<a class="css-1g7m0tk" href="https://www.nytimes.com/2021/07/13/arts/television/emmys-nominees-list-2021.html" title="">各奖项提名名单完整版</a>。</p>
+      </li>
+      <li class="css-o74qhc eoqvrfo0">
+        <p class="css-1qtdsio evys1bk0">漫游喜马拉雅，体验一个变化中的西藏。不管是由于气候变化、对城市生活的向往，还是由于政治镇压或接受教育的需求，西藏及喜马拉雅地区人们的生活方式正在经历巨大变化。旅游业也在其中起到了一定作用。（<a class="css-1g7m0tk" href="https://cn.nytimes.com/travel/20210713/tibetan-culture/" title="">阅读本文中文版</a>）</p>
+      </li>
+    </ul>
+    <p class="css-pncxxs etfikam0">感谢阅读今天的简报，新读者请<a class="css-1g7m0tk" href="https://www.nytimes.com/newsletters/chinese-briefing" title="">点击此处订阅</a>。点击<a class="css-1g7m0tk" href="https://www.nytimes.com/zh-hans/series/daily-briefing-chinese" title="">这里</a>查看往日更新。欢迎在Twitter(<a class="css-1g7m0tk" href="https://twitter.com/nytchinese" title="" rel="noopener noreferrer" target="_blank">@nytchinese</a>)、<a class="css-1g7m0tk" href="https://www.instagram.com/cn.nytimes/?hl=zh-tw" title="" rel="noopener noreferrer" target="_blank">Instagram</a>和<a class="css-1g7m0tk" href="https://www.facebook.com/nytimeschinese.t/" title="" rel="noopener noreferrer" target="_blank">Facebook</a>上关注我们，了解更多中文资讯。也欢迎访问<a class="css-1g7m0tk" href="https://cn.nytimes.com/" title="">中文网首页</a>阅读更多新闻。如有任何建议和想法，请来信与我们分享：cn.letters@nytimes.com。</p>
+    <aside class="css-ew4tgv" aria-label="companion column"></aside>
+  </section>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#纽约时报 的其它文章</h4>
+    
+      <li>
+        <time>2021-07-14</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-14/%E8%BA%BA%E5%B9%B3%E5%AD%A6%E5%A4%A7%E5%B8%88-%E5%85%A8%E6%B0%91-%E6%89%93%E9%B8%A1%E8%A1%80-%E7%9A%84%E7%94%9F%E6%B4%BB%E6%96%B9%E5%BC%8F%E4%B8%8D%E5%A4%AA%E5%A6%A5%E5%BD%93">
+          “躺平学大师”：全民“打鸡血”的生活方式不太妥当
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-13</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-13/%E6%97%A5%E6%9C%AC%E8%AD%A6%E5%91%8A%E5%8F%B0%E6%B5%B7%E5%B1%80%E5%8A%BF-%E7%A7%B0%E5%AF%B9%E6%9C%AC%E5%9B%BD%E5%AE%89%E5%85%A8%E6%9E%84%E6%88%90%E5%A8%81%E8%83%81">
+          日本警告台海局势，称对本国安全构成威胁
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-13</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-13/%E4%B8%AD%E5%9B%BD6%E6%9C%88%E5%87%BA%E5%8F%A3%E5%BC%BA%E5%8A%B2-%E7%9B%90%E7%94%B0%E6%B8%AF%E6%8B%A5%E5%A0%B5%E5%BD%B1%E5%93%8D%E5%B0%8F%E4%BA%8E%E9%A2%84%E6%9C%9F">
+          中国6月出口强劲，盐田港拥堵影响小于预期
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-13</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-13/%E6%AF%8F%E4%B8%AA%E4%BA%BA%E9%83%BD%E6%9C%89%E5%BF%8D%E6%97%A0%E5%8F%AF%E5%BF%8D%E7%9A%84%E6%97%B6%E5%80%99-%E5%8F%A4%E5%B7%B4%E7%88%86%E5%8F%91%E5%A4%A7%E8%A7%84%E6%A8%A1%E6%8A%97%E8%AE%AE">
+          “每个人都有忍无可忍的时候”：古巴爆发大规模抗议
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-13/%E4%B8%AD%E5%9B%BD6%E6%9C%88%E5%87%BA%E5%8F%A3%E5%BC%BA%E5%8A%B2-%E7%9B%90%E7%94%B0%E6%B8%AF%E6%8B%A5%E5%A0%B5%E5%BD%B1%E5%93%8D%E5%B0%8F%E4%BA%8E%E9%A2%84%E6%9C%9F">
+            前一篇：中国6月出口强劲，盐田港拥堵影响小于预期
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-13/%E4%B8%AD%E5%9B%BD%E9%A9%BB%E8%8B%B1%E5%A4%A7%E4%BD%BF%E9%83%91%E6%B3%BD%E5%85%89-%E4%B8%AD%E5%9B%BD%E4%B8%8D%E6%98%AF%E8%8B%B1%E5%9B%BD%E7%9A%84%E5%A8%81%E8%83%81%E6%88%96%E5%AF%B9%E6%89%8B">
+            后一篇：中国驻英大使郑泽光：中国不是英国的威胁或对手
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-07-13/%E4%B8%AD%E5%9B%BD6%E6%9C%88%E5%87%BA%E5%8F%A3%E5%BC%BA%E5%8A%B2-%E7%9B%90%E7%94%B0%E6%B8%AF%E6%8B%A5%E5%A0%B5%E5%BD%B1%E5%93%8D%E5%B0%8F%E4%BA%8E%E9%A2%84%E6%9C%9F'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-07-13/%E4%B8%AD%E5%9B%BD%E9%A9%BB%E8%8B%B1%E5%A4%A7%E4%BD%BF%E9%83%91%E6%B3%BD%E5%85%89-%E4%B8%AD%E5%9B%BD%E4%B8%8D%E6%98%AF%E8%8B%B1%E5%9B%BD%E7%9A%84%E5%A8%81%E8%83%81%E6%88%96%E5%AF%B9%E6%89%8B'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-07-13/%E6%97%A5%E6%9C%AC%E8%AD%A6%E5%91%8A%E5%8F%B0%E6%B5%B7%E5%B1%80%E5%8A%BF-%E7%A7%B0%E5%AF%B9%E6%9C%AC%E5%9B%BD%E5%AE%89%E5%85%A8%E6%9E%84%E6%88%90%E5%A8%81%E8%83%81'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-07-13/%E4%B8%AD%E5%9B%BD6%E6%9C%88%E5%87%BA%E5%8F%A3%E5%BC%BA%E5%8A%B2-%E7%9B%90%E7%94%B0%E6%B8%AF%E6%8B%A5%E5%A0%B5%E5%BD%B1%E5%93%8D%E5%B0%8F%E4%BA%8E%E9%A2%84%E6%9C%9F'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-07-13/%E4%B8%AD%E5%9B%BD6%E6%9C%88%E5%87%BA%E5%8F%A3%E5%BC%BA%E5%8A%B2-%E7%9B%90%E7%94%B0%E6%B8%AF%E6%8B%A5%E5%A0%B5%E5%BD%B1%E5%93%8D%E5%B0%8F%E4%BA%8E%E9%A2%84%E6%9C%9F">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-07-13/%E4%B8%AD%E5%9B%BD%E9%A9%BB%E8%8B%B1%E5%A4%A7%E4%BD%BF%E9%83%91%E6%B3%BD%E5%85%89-%E4%B8%AD%E5%9B%BD%E4%B8%8D%E6%98%AF%E8%8B%B1%E5%9B%BD%E7%9A%84%E5%A8%81%E8%83%81%E6%88%96%E5%AF%B9%E6%89%8B">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<纽约时报>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-07-13/%E6%97%A5%E6%9C%AC%E8%AD%A6%E5%91%8A%E5%8F%B0%E6%B5%B7%E5%B1%80%E5%8A%BF-%E7%A7%B0%E5%AF%B9%E6%9C%AC%E5%9B%BD%E5%AE%89%E5%85%A8%E6%9E%84%E6%88%90%E5%A8%81%E8%83%81">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<纽约时报>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-07-13/%E4%B8%AD%E5%9B%BD6%E6%9C%88%E5%87%BA%E5%8F%A3%E5%BC%BA%E5%8A%B2-%E7%9B%90%E7%94%B0%E6%B8%AF%E6%8B%A5%E5%A0%B5%E5%BD%B1%E5%93%8D%E5%B0%8F%E4%BA%8E%E9%A2%84%E6%9C%9F">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

@@ -1,0 +1,2137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>[Science] 新冠疫苗：牛津/阿斯利康 你可能想了解的三个问题 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+[Science] 新冠疫苗：牛津/阿斯利康 你可能想了解的三个问题
+——
+" />
+    <meta property="og:description" content="
+[Science] 新冠疫苗：牛津/阿斯利康 你可能想了解的三个问题
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="[Science] 新冠疫苗：牛津/阿斯利康 你可能想了解的三个问题" />
+    <meta property="twitter:title" content="[Science] 新冠疫苗：牛津/阿斯利康 你可能想了解的三个问题" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-56416673&t=%5BScience%5D+%E6%96%B0%E5%86%A0%E7%96%AB%E8%8B%97%EF%BC%9A%E7%89%9B%E6%B4%A5%2F%E9%98%BF%E6%96%AF%E5%88%A9%E5%BA%B7+%E4%BD%A0%E5%8F%AF%E8%83%BD%E6%83%B3%E4%BA%86%E8%A7%A3%E7%9A%84%E4%B8%89%E4%B8%AA%E9%97%AE%E9%A2%98" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-56416673&t=%5BScience%5D+%E6%96%B0%E5%86%A0%E7%96%AB%E8%8B%97%EF%BC%9A%E7%89%9B%E6%B4%A5%2F%E9%98%BF%E6%96%AF%E5%88%A9%E5%BA%B7+%E4%BD%A0%E5%8F%AF%E8%83%BD%E6%83%B3%E4%BA%86%E8%A7%A3%E7%9A%84%E4%B8%89%E4%B8%AA%E9%97%AE%E9%A2%98&d=2021-05-17&e=
+[Science] 新冠疫苗：牛津/阿斯利康 你可能想了解的三个问题
+——
+
+
+  
+    新冠疫苗：牛津/阿斯利康 你可能想了解的三个问题
+  
+  
+    2021年3月21日
+    
+      最近更新： 28 分钟前
+    
+  
+  
+    
+      
+        
+          
+            图像来源，Reuters
+          
+        
+      
+    
+  
+  
+    牛津/阿斯利康疫苗（AZD1222）自问世以来一路坎坷，安全性不止一次受到质疑，因疑似副作用严重病例增多，亚洲和欧洲10多个国家曾先后暂停大规模接种，世界卫生组织（WHO）和欧洲药品管理局（WEA）等国际机构调查后又予以放行。
+  
+  
+    对于这款腺病毒载体疫苗，人们了解多少？
+  
+  
+    
+      
+       ..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-56416673" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=http://www.bbc.com/zhongwen/simp/science-56416673" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=http://www.bbc.com/zhongwen/simp/science-56416673&text=[Science] 新冠疫苗：牛津/阿斯利康 你可能想了解的三个问题&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=http://www.bbc.com/zhongwen/simp/science-56416673&title=[Science] 新冠疫苗：牛津/阿斯利康 你可能想了解的三个问题" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://www.bbc.com/zhongwen/simp/science-56416673&title=[Science] 新冠疫苗：牛津/阿斯利康 你可能想了解的三个问题" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=[Science] 新冠疫苗：牛津/阿斯利康 你可能想了解的三个问题&body=
+[Science] 新冠疫苗：牛津/阿斯利康 你可能想了解的三个问题
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=http://www.bbc.com/zhongwen/simp/science-56416673" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=http://www.bbc.com/zhongwen/simp/science-56416673&title=[Science] 新冠疫苗：牛津/阿斯利康 你可能想了解的三个问题&caption=
+[Science] 新冠疫苗：牛津/阿斯利康 你可能想了解的三个问题
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=[Science] 新冠疫苗：牛津/阿斯利康 你可能想了解的三个问题&url=http://www.bbc.com/zhongwen/simp/science-56416673" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>[Science] 新冠疫苗：牛津/阿斯利康 你可能想了解的三个问题</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-05-17
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#BBC ">
+          BBC
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="http://www.bbc.com/zhongwen/simp/science-56416673"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="BBC的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#BBC 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-56416673&t=%5BScience%5D+%E6%96%B0%E5%86%A0%E7%96%AB%E8%8B%97%EF%BC%9A%E7%89%9B%E6%B4%A5%2F%E9%98%BF%E6%96%AF%E5%88%A9%E5%BA%B7+%E4%BD%A0%E5%8F%AF%E8%83%BD%E6%83%B3%E4%BA%86%E8%A7%A3%E7%9A%84%E4%B8%89%E4%B8%AA%E9%97%AE%E9%A2%98&d=2021-05-17&e=
+[Science] 新冠疫苗：牛津/阿斯利康 你可能想了解的三个问题
+——
+
+
+  
+    新冠疫苗：牛津/阿斯利康 你可能想了解的三个问题
+  
+  
+    2021年3月21日
+    
+      最近更新： 28 分钟前
+    
+  
+  
+    
+      
+        
+          
+            图像来源，Reuters
+          
+        
+      
+    
+  
+  
+    牛津/阿斯利康疫苗（AZD1222）自问世以来一路坎坷，安全性不止一次受到质疑，因疑似副作用严重病例增多，亚洲和欧洲10多个国家曾先后暂停大规模接种，世界卫生组织（WHO）和欧洲药品管理局（WEA）等国际机构调查后又予以放行。
+  
+  
+    对于这款腺病毒载体疫苗，人们了解多少？
+  
+  
+    
+      
+       ..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-56416673" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1621250329000-->
+<p><a href="http://www.bbc.com/zhongwen/simp/science-56416673">[Science] 新冠疫苗：牛津/阿斯利康 你可能想了解的三个问题</a>
+——</p>
+
+<div>
+  <div dir="ltr" class="bbc-1151pbn e57qer20">
+    <h1 id="content" tabindex="-1" class="bbc-6yjyco e1yj3cbb0">新冠疫苗：牛津/阿斯利康 你可能想了解的三个问题</h1>
+  </div>
+  <div dir="ltr" class="e1j2237y7 bbc-q4ibpr e57qer20">
+    <time datetime="2021-03-21" class="bbc-529aew e4zesg50">2021年3月21日</time>
+    <div>
+      <time datetime="2021-05-17" class="bbc-529aew e4zesg50">最近更新： 28 分钟前</time>
+    </div>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-1k5hvrj e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/46DC/production/_117604181_1be2b8c3-2834-4220-9dff-2867808010f8.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/46DC/production/_117604181_1be2b8c3-2834-4220-9dff-2867808010f8.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/46DC/production/_117604181_1be2b8c3-2834-4220-9dff-2867808010f8.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/46DC/production/_117604181_1be2b8c3-2834-4220-9dff-2867808010f8.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/46DC/production/_117604181_1be2b8c3-2834-4220-9dff-2867808010f8.jpg 800w" alt="阿斯利康疫苗" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/46DC/production/_117604181_1be2b8c3-2834-4220-9dff-2867808010f8.jpg" width="976" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />            <p role="text" class="bbc-1s1cxbv etq3yw90"><span class="bbc-1gnhmg2 e1yt7oin0">图像来源，</span><span lang="en-GB">Reuters</span></p>
+          </div>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70"><strong>牛津/阿斯利康疫苗（AZD1222）自问世以来一路坎坷，安全性不止一次受到质疑，因疑似副作用严重病例增多，亚洲和欧洲10多个国家曾先后暂停大规模接种，世界卫生组织（WHO）和欧洲药品管理局（WEA）等国际机构调查后又予以放行。</strong></p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">对于这款腺病毒载体疫苗，人们了解多少？</p>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-367mqz e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/12CED/production/_113673077_4c547051-3f19-4b28-a0ad-36fd154ee696.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/12CED/production/_113673077_4c547051-3f19-4b28-a0ad-36fd154ee696.jpg 320w, https://ichef.bbci.co.uk/news/464/cpsprodpb/12CED/production/_113673077_4c547051-3f19-4b28-a0ad-36fd154ee696.jpg 464w" alt="line" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/12CED/production/_113673077_4c547051-3f19-4b28-a0ad-36fd154ee696.jpg" width="464" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <h2 id="有什么特点" tabindex="-1" class="bbc-6w9yzd e14hemmw0">有什么特点？</h2>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">AZD1222属于腺病毒载体疫苗，采用黑猩猩携带的腺病毒。这种病毒能够表达新冠病毒蛋白，但不会在人类体内引起疾病；通过黑猩猩腺病毒载体把新冠病毒的蛋白遗传密码传递给人的细胞，教会人体免疫系统识别和击杀病毒，由此产生免疫力。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">目前全球新冠疫苗在技术上分三类：mRNA（信使核糖核酸）疫苗，如美国的辉瑞/BioNTech和莫德纳；腺病毒疫苗，如英国的牛津/阿斯利康（AZD1222）和俄罗斯的卫星-V；灭活疫苗，如中国的国药和科兴疫苗。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">阿斯利康（Astra/Zeneca）是英国-瑞典合资的生物制药公司，2020年与牛津大学团队合作研发AZD1222。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">主要优点，据美国约翰霍普金斯大学公共卫生学院玛丽亚·诺尔（Maria Deloria Knoll）博士和齐佐巴·沃诺比（Chizoba Wonodi）博士在《柳叶刀》就AZD1222疫苗发表评论指出，这款疫苗常规冰箱温度下（2至8摄氏度）保存和冷藏链运输，更便于推广普及，尤其是在发展中国家。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">但是，相对于最新加入接种行列的单剂疫苗 — 美国杨森和中国康希诺 ，AZD1222仍需注射两针。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">另外，AZD1222疫苗可以按常规两针全剂量接种， 也可以用半剂+1剂的组合，具体操作的技术要求提高，但这个问题可以通过创新的包装等方式解决。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <div class="bbc-1fobf8d e1gggypo0">
+      <ul dir="ltr" role="list" class="bbc-1gidoyr e1drcs2w1">
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0"><a href="https://www.bbc.com/zhongwen/simp/science-56084055" class="bbc-n8oauk e1cs6q200">新冠疫苗：全球各地接种进展现状和动态追踪</a></li>
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0"><a href="https://www.bbc.com/zhongwen/simp/chinese-news-55251508" class="bbc-n8oauk e1cs6q200">新冠疫苗：中国科兴疫苗 你可能想知道的四个问题</a></li>
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0"><a href="https://www.bbc.com/ukchina/simp/55971927" class="bbc-n8oauk e1cs6q200">新冠疫苗：“一针还是两针”等重要问题的科学解答</a></li>
+      </ul>
+    </div>
+  </div>
+  <div dir="ltr" class="ek1plzs1 bbc-9m7iam e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-vx18wi e57qer20">
+        <div dir="ltr" class="bbc-rprdln e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-1qwjewi e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/F0C8/production/_117604616_bf4f86b4-c92e-4d36-be76-5e398b50f456.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/F0C8/production/_117604616_bf4f86b4-c92e-4d36-be76-5e398b50f456.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/F0C8/production/_117604616_bf4f86b4-c92e-4d36-be76-5e398b50f456.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/F0C8/production/_117604616_bf4f86b4-c92e-4d36-be76-5e398b50f456.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/F0C8/production/_117604616_bf4f86b4-c92e-4d36-be76-5e398b50f456.jpg 800w" alt="AZ" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/F0C8/production/_117604616_bf4f86b4-c92e-4d36-be76-5e398b50f456.jpg" width="1280" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <h2 id="安全性和效力如何" tabindex="-1" class="bbc-6w9yzd e14hemmw0">安全性和效力如何？</h2>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">AZD1222问世以来，其安全性不止一次受到质疑，亚洲和欧洲10多个国家先后叫停疫苗普及接种， 但世卫组织（WHO）、欧洲药品管理局（WEA）等官方意见认为目前没有证据说明这款疫苗不安全，疫苗与出现血栓没有直接关联。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">最早对AZD1222疫苗安全性提出疑问的是挪威医疗监管当局 — 接种了这款疫苗的群体中有4人出现血栓，丹麦、意大利和奥地利相继发现少量类似案例。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">2021年3月，法国、德国和意大利因接种疫苗群体血栓病例增加决定暂停AZD1222接种。WHO和WEA随即宣布展开专项调查。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">阿斯利康公司表示，疫苗在各阶段测试中没有发现这一因果关系，在已接种的1700万人中出现血栓病例不到50例。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">随后，阿斯利康（AstraZeneca）在公司官网发布疫苗在美国的三期临床试验结果显示，疫苗安全，预防新冠有效性79%，接种疫苗与血栓风险没有因果关系。美国国家过敏症和传染病研究所（NIAID）对报告使用数据的时效性提出疑问，认为疗效呈现“不完整”。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">其后不久，欧洲药管局又表示阿斯利康疫苗和血栓症状之间存在关联，但点明现阶段不清楚具体触发机制，也无法确定因果关系。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">阿斯利康疫苗在欧洲各地恢复正常接种。</p>
+  </div>
+  <div dir="ltr" class="e46rrwz0 bbc-1bh6w8m e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div data-e2e="media-player" class="bbc-rl27ak e15ilq0t1">
+        <div class="bbc-1b4920d e2pb29i2">
+<img srcset="https://ichef.bbci.co.uk/images/ic/1024x576/p09840j0.jpg 240w, https://ichef.bbci.co.uk/images/ic/1024x576/p09840j0.jpg 320w, https://ichef.bbci.co.uk/images/ic/1024x576/p09840j0.jpg 480w, https://ichef.bbci.co.uk/images/ic/1024x576/p09840j0.jpg 624w, https://ichef.bbci.co.uk/images/ic/1024x576/p09840j0.jpg 800w" alt="" src="https://ichef.bbci.co.uk/images/ic/1024x576/p09840j0.jpg" aria-hidden="true" class="bbc-yfiktt e1enwo3v0" referrerpolicy="no-referrer" />          <div class="bbc-nrvtsn e2pb29i1">
+<strong class="bbc-1k5stce e2pb29i0">你的器材不支持播放多媒体材料</strong>
+          </div>
+        </div>
+      </div>
+      <figcaption dir="ltr" class="bbc-l9ltpr eede9f50">
+<span class="bbc-1gnhmg2 e1yt7oin0">视频加注文字，</span>        <p>一般疫苗从研发到推出市场需时十年，但新冠疫苗却在一年内就面世，到底哪些程序加速了？</p>
+      </figcaption>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">通常在评估药物安全性和副作用时，关键是区分因果关系（causation）和相关性（correlation）。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">《经济学人》杂志一篇封面文章指出，血栓是常见病症，新冠疫苗接种在迅速普及，不少国家优先接种新冠疫苗的是老年人和本身有基础疾病的人。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">截至2021年2月28日，英国已注射牛津/阿斯利康疫苗970万剂，美国和德国合作研发的辉瑞/BioNTech疫苗1150万剂。英国医疗监管当局认为，两种疫苗每1000剂接种出现3-6例副作用症状，基本上都较轻微。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">截至2021年3月，EMA数据显示接种AZD1222群体的血栓发病率并不比正常水平高。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">AZD1222获准大规模接种前已通过欧洲药品管理局（EMA）对其质量、安全性和疗效数据的全面评估，并因此获得WHO全球疫苗安全咨询委员会首肯。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">这个委员会负责就疫苗使用的安全问题向世界卫生组织提供独立指导，接受和评估具有潜在国际影响的疑似安全事件报告。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">医学期刊《柳叶刀》2020年12月发表 AZD1222 第一个完整三期临床试验结果，显示安全性可以接受，两针接种预防症状性COVID-19的平均有效率为70%。</p>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-367mqz e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/12CED/production/_113673077_4c547051-3f19-4b28-a0ad-36fd154ee696.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/12CED/production/_113673077_4c547051-3f19-4b28-a0ad-36fd154ee696.jpg 320w, https://ichef.bbci.co.uk/news/464/cpsprodpb/12CED/production/_113673077_4c547051-3f19-4b28-a0ad-36fd154ee696.jpg 464w" alt="line" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/12CED/production/_113673077_4c547051-3f19-4b28-a0ad-36fd154ee696.jpg" width="464" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <div class="bbc-1fobf8d e1gggypo0">
+      <ul dir="ltr" role="list" class="bbc-1gidoyr e1drcs2w1">
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0"><a href="https://www.bbc.com/zhongwen/simp/world-55235498" class="bbc-n8oauk e1cs6q200">疫苗谣言的打破：改变DNA、植入微芯片等疫苗阴谋论</a></li>
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0"><a href="https://www.bbc.com/zhongwen/simp/science-54998777" class="bbc-n8oauk e1cs6q200">新冠疫苗接种在即，你该了解的四大问题</a></li>
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0"><a href="https://www.bbc.com/ukchina/simp/56278386" class="bbc-n8oauk e1cs6q200">Covax：一文看懂国际社会的“疫苗分享”计划</a></li>
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0"><a href="https://www.bbc.com/zhongwen/simp/science-56318634" class="bbc-n8oauk e1cs6q200">从香港到日本，亚洲多地新冠疫苗接种为何进展缓慢</a></li>
+      </ul>
+    </div>
+  </div>
+  <div dir="ltr" class="ek1plzs1 bbc-9m7iam e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-vx18wi e57qer20">
+        <div dir="ltr" class="bbc-rprdln e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-1uswxb e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/4F82/production/_118545302_vaccines_by_country_chinese_17may-nc.png 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/4F82/production/_118545302_vaccines_by_country_chinese_17may-nc.png 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/4F82/production/_118545302_vaccines_by_country_chinese_17may-nc.png 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/4F82/production/_118545302_vaccines_by_country_chinese_17may-nc.png 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/4F82/production/_118545302_vaccines_by_country_chinese_17may-nc.png 800w" alt="5月17日疫苗普及情況" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/4F82/production/_118545302_vaccines_by_country_chinese_17may-nc.png" width="2668" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <h2 id="疫苗政治和疫苗供应" tabindex="-1" class="bbc-6w9yzd e14hemmw0">疫苗政治和疫苗供应</h2>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">AZD1222“血栓风波”出现后，《卫报》等英国媒体提到了“疫苗政治”的说法，认为法国、德国和意大利等欧盟国家暂停AZD1222大规模接种的决定与国内政治有关。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">也有评论注意到，新冠疫苗从实验室到各国启动大规模接种的过程，正值英国脱欧过渡期和最后冲刺阶段，同时美国2020大选冲击波在世界政坛扩散、欧洲经济饱受新冠疫情打击、各国财政压力巨大、防疫和疫苗接种普及状况令民众不满、一些国家地方选举在即.....，各种政治因素纷呈。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">AZD1222是欧洲研发的疫苗，英国、巴西、南非、美国等国数万人参与了临床试验，欧盟对它寄予了厚望。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">2020年8月，欧盟委员会主席冯德莱恩（Ursula von der Leyen）宣布欧盟预购4亿支AZD1222疫苗；欧盟27国总人口是4.4亿。她还表示，欧盟为研发团队预支了部分费用。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">疫苗的价格各国不同，取决于订购数量和议价合同。但可以肯定的是目前各款新冠疫苗中AZD1222价格最低。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">阿斯利康给国际疫苗分享计划Novax的价格是每剂2-3美元。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">2020年12月，路透社披露欧盟一份11月18日内部传阅文件显示，欧盟同意购买3亿剂辉瑞/BioNTech疫苗，每剂18.90美元。美国首批采购1亿剂辉瑞/BioNTech每剂19.50美元。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">莫德纳疫苗价格约每剂25 - 33美元，科兴介于阿斯利康和莫德纳中间。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">相对于生产成本和价格较高且需要超低温储存的两款mRNA 疫苗，AZD1222的易得性更高。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">经过案例分析调查，欧洲医药监管当局3月19日宣布AZD1222疫苗与接种者出现血栓没有关联，可以继续安全接种。欧洲几个主要国家表示将陆续重启接种。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">与此同时，由于阿斯利康全球供应链出现阻障，英国向印度药厂采购的500万剂AZD1222疫苗3月份交货延误，导致英国出现疫苗短缺问题。</p>
+  </div>
+  <div dir="ltr" class="ek1plzs1 bbc-9m7iam e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-vx18wi e57qer20">
+        <div dir="ltr" class="bbc-rprdln e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-1w2e2bd e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/11405/production/_118016607_more_vaccines_compared_v2_2x_640-nc.png 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/11405/production/_118016607_more_vaccines_compared_v2_2x_640-nc.png 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/11405/production/_118016607_more_vaccines_compared_v2_2x_640-nc.png 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/11405/production/_118016607_more_vaccines_compared_v2_2x_640-nc.png 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/11405/production/_118016607_more_vaccines_compared_v2_2x_640-nc.png 800w" alt="疫苗对比" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/11405/production/_118016607_more_vaccines_compared_v2_2x_640-nc.png" width="1280" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#BBC 的其它文章</h4>
+    
+      <li>
+        <time>2021-05-18</time>
+        <a href="https://nodebe4.github.io/waimei/2021-05-18/Chinese-%E5%8F%B0%E6%B9%BE%E7%96%AB%E6%83%85-%E6%9C%AC%E5%9C%B0%E7%A1%AE%E8%AF%8A%E6%8C%81%E7%BB%AD%E7%A0%B4%E7%99%BE-%E7%96%AB%E8%8B%97%E6%85%8C-%E8%83%BD%E5%90%A6%E5%B0%BD%E5%BF%AB%E5%BE%97%E5%88%B0%E7%BC%93%E8%A7%A3">
+          [Chinese] 台湾疫情：本地确诊持续破百，“疫苗慌”能否尽快得到缓解
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-05-17</time>
+        <a href="https://nodebe4.github.io/waimei/2021-05-17/Chinese-%E6%96%B0%E5%86%A0%E7%96%AB%E8%8B%97-%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%85%B4%E7%96%AB%E8%8B%97-%E4%BD%A0%E5%8F%AF%E8%83%BD%E6%83%B3%E7%9F%A5%E9%81%93%E7%9A%84%E5%9B%9B%E4%B8%AA%E9%97%AE%E9%A2%98">
+          [Chinese] 新冠疫苗：中国科兴疫苗 你可能想知道的四个问题
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-05-17</time>
+        <a href="https://nodebe4.github.io/waimei/2021-05-17/Chinese-%E5%8F%B0%E6%B9%BE%E7%96%AB%E6%83%85-%E6%9C%AC%E5%9C%9F%E7%A1%AE%E8%AF%8A%E6%96%B0%E5%A2%9E333%E4%BE%8B-%E5%86%8D%E5%88%9B%E5%8D%95%E6%97%A5%E6%96%B0%E9%AB%98">
+          [Chinese] 台湾疫情：本土确诊新增333例 再创单日新高
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-05-16</time>
+        <a href="https://nodebe4.github.io/waimei/2021-05-16/Science-%E6%8B%A5%E6%8A%B1%E7%9A%84%E5%AD%A6%E9%97%AE-%E4%BA%B2%E5%AF%86%E6%8E%A5%E8%A7%A6-%E4%B8%BA%E4%BD%95%E9%9A%BE%E4%BB%A5%E5%8F%96%E4%BB%A3">
+          [Science] 拥抱的学问：“亲密接触”为何难以取代
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-05-17/Chinese-%E5%8F%B0%E6%B9%BE%E7%96%AB%E6%83%85-%E6%9C%AC%E5%9C%9F%E7%A1%AE%E8%AF%8A%E6%96%B0%E5%A2%9E333%E4%BE%8B-%E5%86%8D%E5%88%9B%E5%8D%95%E6%97%A5%E6%96%B0%E9%AB%98">
+            前一篇：[Chinese] 台湾疫情：本土确诊新增333例 再创单日新高
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-05-17/Chinese-%E6%96%B0%E5%86%A0%E7%96%AB%E8%8B%97-%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%85%B4%E7%96%AB%E8%8B%97-%E4%BD%A0%E5%8F%AF%E8%83%BD%E6%83%B3%E7%9F%A5%E9%81%93%E7%9A%84%E5%9B%9B%E4%B8%AA%E9%97%AE%E9%A2%98">
+            后一篇：[Chinese] 新冠疫苗：中国科兴疫苗 你可能想知道的四个问题
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-05-17/Chinese-%E5%8F%B0%E6%B9%BE%E7%96%AB%E6%83%85-%E6%9C%AC%E5%9C%9F%E7%A1%AE%E8%AF%8A%E6%96%B0%E5%A2%9E333%E4%BE%8B-%E5%86%8D%E5%88%9B%E5%8D%95%E6%97%A5%E6%96%B0%E9%AB%98'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-05-17/Chinese-%E6%96%B0%E5%86%A0%E7%96%AB%E8%8B%97-%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%85%B4%E7%96%AB%E8%8B%97-%E4%BD%A0%E5%8F%AF%E8%83%BD%E6%83%B3%E7%9F%A5%E9%81%93%E7%9A%84%E5%9B%9B%E4%B8%AA%E9%97%AE%E9%A2%98'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-05-17/Chinese-%E6%96%B0%E5%86%A0%E7%96%AB%E8%8B%97-%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%85%B4%E7%96%AB%E8%8B%97-%E4%BD%A0%E5%8F%AF%E8%83%BD%E6%83%B3%E7%9F%A5%E9%81%93%E7%9A%84%E5%9B%9B%E4%B8%AA%E9%97%AE%E9%A2%98'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-05-17/Chinese-%E5%8F%B0%E6%B9%BE%E7%96%AB%E6%83%85-%E6%9C%AC%E5%9C%9F%E7%A1%AE%E8%AF%8A%E6%96%B0%E5%A2%9E333%E4%BE%8B-%E5%86%8D%E5%88%9B%E5%8D%95%E6%97%A5%E6%96%B0%E9%AB%98'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-05-17/Chinese-%E5%8F%B0%E6%B9%BE%E7%96%AB%E6%83%85-%E6%9C%AC%E5%9C%9F%E7%A1%AE%E8%AF%8A%E6%96%B0%E5%A2%9E333%E4%BE%8B-%E5%86%8D%E5%88%9B%E5%8D%95%E6%97%A5%E6%96%B0%E9%AB%98">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-05-17/Chinese-%E6%96%B0%E5%86%A0%E7%96%AB%E8%8B%97-%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%85%B4%E7%96%AB%E8%8B%97-%E4%BD%A0%E5%8F%AF%E8%83%BD%E6%83%B3%E7%9F%A5%E9%81%93%E7%9A%84%E5%9B%9B%E4%B8%AA%E9%97%AE%E9%A2%98">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<BBC>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-05-17/Chinese-%E6%96%B0%E5%86%A0%E7%96%AB%E8%8B%97-%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%85%B4%E7%96%AB%E8%8B%97-%E4%BD%A0%E5%8F%AF%E8%83%BD%E6%83%B3%E7%9F%A5%E9%81%93%E7%9A%84%E5%9B%9B%E4%B8%AA%E9%97%AE%E9%A2%98">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<BBC>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-05-17/Chinese-%E5%8F%B0%E6%B9%BE%E7%96%AB%E6%83%85-%E6%9C%AC%E5%9C%9F%E7%A1%AE%E8%AF%8A%E6%96%B0%E5%A2%9E333%E4%BE%8B-%E5%86%8D%E5%88%9B%E5%8D%95%E6%97%A5%E6%96%B0%E9%AB%98">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

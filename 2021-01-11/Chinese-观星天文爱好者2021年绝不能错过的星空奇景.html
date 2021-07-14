@@ -1,0 +1,2331 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>[Chinese] 观星天文爱好者2021年绝不能错过的星空奇景 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+[Chinese] 观星天文爱好者2021年绝不能错过的星空奇景
+——
+" />
+    <meta property="og:description" content="
+[Chinese] 观星天文爱好者2021年绝不能错过的星空奇景
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="[Chinese] 观星天文爱好者2021年绝不能错过的星空奇景" />
+    <meta property="twitter:title" content="[Chinese] 观星天文爱好者2021年绝不能错过的星空奇景" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fchinese-news-55583819&t=%5BChinese%5D+%E8%A7%82%E6%98%9F%E5%A4%A9%E6%96%87%E7%88%B1%E5%A5%BD%E8%80%852021%E5%B9%B4%E7%BB%9D%E4%B8%8D%E8%83%BD%E9%94%99%E8%BF%87%E7%9A%84%E6%98%9F%E7%A9%BA%E5%A5%87%E6%99%AF" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fchinese-news-55583819&t=%5BChinese%5D+%E8%A7%82%E6%98%9F%E5%A4%A9%E6%96%87%E7%88%B1%E5%A5%BD%E8%80%852021%E5%B9%B4%E7%BB%9D%E4%B8%8D%E8%83%BD%E9%94%99%E8%BF%87%E7%9A%84%E6%98%9F%E7%A9%BA%E5%A5%87%E6%99%AF&d=2021-01-11&e=
+[Chinese] 观星天文爱好者2021年绝不能错过的星空奇景
+——
+
+
+  
+    观星天文爱好者2021年绝不能错过的星空奇景
+  
+  
+    
+      
+        伊娃·昂蒂维罗斯（Eva Ontiveros）
+        BBC国际台
+      
+    
+  
+  
+    2021年1月12日
+  
+  
+    
+      
+        
+          
+
+          
+        
+        
+          
+图像加注文字，            土耳其的奇尔迪尔湖上空的夜空
+          
+        
+      
+    
+  
+  
+    新的一年，新的观星计划！
+  
+  
+    如果您对夜空和太空探索充满热情，应立即开始计划，因为2021年将有很多令人兴奋而美丽的天文事件，让所有人..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fchinese-news-55583819" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=http://www.bbc.com/zhongwen/simp/chinese-news-55583819" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=http://www.bbc.com/zhongwen/simp/chinese-news-55583819&text=[Chinese] 观星天文爱好者2021年绝不能错过的星空奇景&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=http://www.bbc.com/zhongwen/simp/chinese-news-55583819&title=[Chinese] 观星天文爱好者2021年绝不能错过的星空奇景" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://www.bbc.com/zhongwen/simp/chinese-news-55583819&title=[Chinese] 观星天文爱好者2021年绝不能错过的星空奇景" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=[Chinese] 观星天文爱好者2021年绝不能错过的星空奇景&body=
+[Chinese] 观星天文爱好者2021年绝不能错过的星空奇景
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=http://www.bbc.com/zhongwen/simp/chinese-news-55583819" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=http://www.bbc.com/zhongwen/simp/chinese-news-55583819&title=[Chinese] 观星天文爱好者2021年绝不能错过的星空奇景&caption=
+[Chinese] 观星天文爱好者2021年绝不能错过的星空奇景
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=[Chinese] 观星天文爱好者2021年绝不能错过的星空奇景&url=http://www.bbc.com/zhongwen/simp/chinese-news-55583819" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>[Chinese] 观星天文爱好者2021年绝不能错过的星空奇景</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-11
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#BBC ">
+          BBC
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="http://www.bbc.com/zhongwen/simp/chinese-news-55583819"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="BBC的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#BBC 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fchinese-news-55583819&t=%5BChinese%5D+%E8%A7%82%E6%98%9F%E5%A4%A9%E6%96%87%E7%88%B1%E5%A5%BD%E8%80%852021%E5%B9%B4%E7%BB%9D%E4%B8%8D%E8%83%BD%E9%94%99%E8%BF%87%E7%9A%84%E6%98%9F%E7%A9%BA%E5%A5%87%E6%99%AF&d=2021-01-11&e=
+[Chinese] 观星天文爱好者2021年绝不能错过的星空奇景
+——
+
+
+  
+    观星天文爱好者2021年绝不能错过的星空奇景
+  
+  
+    
+      
+        伊娃·昂蒂维罗斯（Eva Ontiveros）
+        BBC国际台
+      
+    
+  
+  
+    2021年1月12日
+  
+  
+    
+      
+        
+          
+
+          
+        
+        
+          
+图像加注文字，            土耳其的奇尔迪尔湖上空的夜空
+          
+        
+      
+    
+  
+  
+    新的一年，新的观星计划！
+  
+  
+    如果您对夜空和太空探索充满热情，应立即开始计划，因为2021年将有很多令人兴奋而美丽的天文事件，让所有人..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fchinese-news-55583819" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1610414541000-->
+<p><a href="http://www.bbc.com/zhongwen/simp/chinese-news-55583819">[Chinese] 观星天文爱好者2021年绝不能错过的星空奇景</a>
+——</p>
+
+<div>
+  <div dir="ltr" class="css-e19l8g-GridComponent e57qer20">
+    <h1 id="content" tabindex="-1" class="css-1wfn6k3-Headline e1yj3cbb0">观星天文爱好者2021年绝不能错过的星空奇景</h1>
+  </div>
+  <div dir="ltr" class="e1j2237y2 css-vf19ca-GridComponent e57qer20">
+    <div class="css-s561j-Container e1c9i7u10">
+      <ul role="list" class="css-pu07qy-Person e1c9i7u12">
+        <li role="listitem" class="css-dvly96-Name e1c9i7u13">伊娃·昂蒂维罗斯（Eva Ontiveros）</li>
+        <li role="listitem" class="css-1942rtw-Title e1c9i7u14">BBC国际台</li>
+      </ul>
+    </div>
+  </div>
+  <div dir="ltr" class="e1j2237y1 css-vf19ca-GridComponent e57qer20">
+    <time datetime="2021-01-12" class="css-pb6w51-StyledTimestamp e4zesg50">2021年1月12日</time>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-oijotl-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/A133/production/_116376214_3f1d4f0a-c1d0-45e2-9333-f5f5f5ed7f76.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/A133/production/_116376214_3f1d4f0a-c1d0-45e2-9333-f5f5f5ed7f76.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/A133/production/_116376214_3f1d4f0a-c1d0-45e2-9333-f5f5f5ed7f76.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/A133/production/_116376214_3f1d4f0a-c1d0-45e2-9333-f5f5f5ed7f76.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/A133/production/_116376214_3f1d4f0a-c1d0-45e2-9333-f5f5f5ed7f76.jpg 800w" alt="The night sky over the Lake Cildir, where parts of its surface are frozen (Kars, Turkey)." src="https://ichef.bbci.co.uk/news/640/cpsprodpb/A133/production/_116376214_3f1d4f0a-c1d0-45e2-9333-f5f5f5ed7f76.jpg" width="976" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>土耳其的奇尔迪尔湖上空的夜空</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70"><strong>新的一年，新的观星计划！</strong></p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">如果您对夜空和太空探索充满热情，应立即开始计划，因为2021年将有很多令人兴奋而美丽的天文事件，让所有人去欣赏享受。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">您可以期待害羞的行星、附近的星系、月全食、月环食、流星雨、两次火星登陆的任务，甚至是新的太空望远镜的发射，这将使我们以前所未有的方式看到宇宙。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">从多年只有一次的奇景，到百看不厌的现象。准备欣赏吧：</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <h2 id="1-窥探水星" tabindex="-1" class="css-10tk4x-SubHeading e14hemmw1">1. 窥探水星</h2>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-oijotl-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/13D73/production/_116376218_d1ace5b8-1850-4ea7-bb79-157acab7f27b.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/13D73/production/_116376218_d1ace5b8-1850-4ea7-bb79-157acab7f27b.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/13D73/production/_116376218_d1ace5b8-1850-4ea7-bb79-157acab7f27b.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/13D73/production/_116376218_d1ace5b8-1850-4ea7-bb79-157acab7f27b.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/13D73/production/_116376218_d1ace5b8-1850-4ea7-bb79-157acab7f27b.jpg 800w" alt="The planets Jupiter (L), Venus (C) and Mercury (R) are seen in an unusual conjunction." src="https://ichef.bbci.co.uk/news/640/cpsprodpb/13D73/production/_116376218_d1ace5b8-1850-4ea7-bb79-157acab7f27b.jpg" width="976" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>黄色的水星（右）正被木星和金星追逐。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">如果你从未见过太阳系最小的行星水星，1月24日，它将会最接近太阳，那是你最可能看到它的时间。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">如果你视力好的话，在西边的地平线可能看到它，但有一副双筒望远镜会有更大帮助。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">水星围绕太阳公转需要88天，我们大部分时间都看不到它，因为它很会在太阳光下隐藏起来。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">但在一月底，水星将处于一个称为“半相”的周期，只有50％会被太阳照亮。 因此，这是今年最好的机会来欣赏，好好享受！</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <h2 id="2-南半球的深空天体" tabindex="-1" class="css-10tk4x-SubHeading e14hemmw1">2. 南半球的深空天体</h2>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-oijotl-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/6642/production/_116387162_ceb2823b-f3e2-4212-b054-1576011ed005.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/6642/production/_116387162_ceb2823b-f3e2-4212-b054-1576011ed005.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/6642/production/_116387162_ceb2823b-f3e2-4212-b054-1576011ed005.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/6642/production/_116387162_ceb2823b-f3e2-4212-b054-1576011ed005.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/6642/production/_116387162_ceb2823b-f3e2-4212-b054-1576011ed005.jpg 800w" alt="Milky Way with zooming technique from the Atacama desert in northern Chile." src="https://ichef.bbci.co.uk/news/640/cpsprodpb/6642/production/_116387162_ceb2823b-f3e2-4212-b054-1576011ed005.jpg" width="976" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>智利的夜空真的无与伦比。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">在赤道以南观星，对于业余和专业天文学家都是一种珍贵的享受。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">对于初学者来说，银河系的光带在这里是很清晰明亮，有时甚至可以看成是繁星点点的彩虹，形成了一个不间断的拱形，聚集了从不同地平线折射的多色线。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">荷兰美国裔天文学家巴特·博克（Bart Bok）曾说过一则名句：“南半球拥有所有美好的东西。”</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">他和他的天文学家妻子普里西拉·费尔菲尔德（Priscilla Fairfield）对我们星系的结构和演化方面取得了重大发现。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">从地球的这一边，任何人都可以用肉眼观察球状星团（重力将球状星球捆绑在一起）、我们以外的星系、以及星云……</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">也可以看看克鲁斯，又名南十字星，它虽然是88个星群中最小的一个，却是其中最独特的一个。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">在克鲁斯以东，您还可以看到煤袋星云，那儿不断有新的星星诞生。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">紧靠煤袋的是珠宝盒星团：这是一组独特的星群，由约100个红色，蓝色和白色的星星组成，用一副简单的双筒望远镜即可轻松看到。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <h2 id="3-北半球冬季深空" tabindex="-1" class="css-10tk4x-SubHeading e14hemmw1">3. 北半球冬季深空</h2>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-oijotl-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/08DB/production/_116376220_70233377-9cd4-467c-a610-d5f86d244563.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/08DB/production/_116376220_70233377-9cd4-467c-a610-d5f86d244563.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/08DB/production/_116376220_70233377-9cd4-467c-a610-d5f86d244563.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/08DB/production/_116376220_70233377-9cd4-467c-a610-d5f86d244563.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/08DB/production/_116376220_70233377-9cd4-467c-a610-d5f86d244563.jpg 800w" alt="Venus crosses the Pleiades, as observed from Beijing, China, April 2020." src="https://ichef.bbci.co.uk/news/640/cpsprodpb/08DB/production/_116376220_70233377-9cd4-467c-a610-d5f86d244563.jpg" width="976" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>昴宿星团也被称为七姐妹。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">冬季夜晚特别长，这会令天文观星人士有更多时间冒着严寒沉醉夜空之中。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">选择一个漆黑的夜晚，最好是在2月11日，当晚将有一个新月（如果看不到月亮，它的光就不会干扰您的计划），并尝试训练您的眼睛，可以看到一些没有那么明显的地方。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">这是您尝试发现一些深空天体（例如昴宿星团）的方法。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">昴宿星团也被称为“七姐妹”，这美丽的星团非常明亮人们在市区也可以看到它，不过你要知道望向哪个方向，要在日落之后将视线转向南方。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">如果您更有野心，可以尝试寻找距离我们银河系最近的主要星系仙女座星系，那个星系距离我们只有250万光年。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">在没有光污染的地方观察时，您可以在刚日落之后望向西边，用肉眼就看到仙女座星系，在同名星群的附近。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <h2 id="4-猎户座" tabindex="-1" class="css-10tk4x-SubHeading e14hemmw1">4. 猎户座</h2>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-oijotl-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/56FB/production/_116376222_f3fffcfa-23b4-4b9c-b66f-ee9d0f44cbb7.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/56FB/production/_116376222_f3fffcfa-23b4-4b9c-b66f-ee9d0f44cbb7.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/56FB/production/_116376222_f3fffcfa-23b4-4b9c-b66f-ee9d0f44cbb7.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/56FB/production/_116376222_f3fffcfa-23b4-4b9c-b66f-ee9d0f44cbb7.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/56FB/production/_116376222_f3fffcfa-23b4-4b9c-b66f-ee9d0f44cbb7.jpg 800w" alt="Orion at right, rising into the dawn sky in Canada" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/56FB/production/_116376222_f3fffcfa-23b4-4b9c-b66f-ee9d0f44cbb7.jpg" width="976" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>猎户座是经典夜空，被许多文化视为"冬天的带来者"</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">如果您是天文学入门者，或者想学习只识别一个星座，不妨做一件在南北半球都可以做到的小事。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">猎户庭在冬天很容易识别，如果你在北半球，它则在西南面的天空中，如果你在南半球，它则在西北天空中（准确地说，理想的是介于纬度85度和负75度之间）。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">这独特的星群的名称由来，就是因为它的形状像“猎人”，有一个沙漏般的形状，甚至有一条由三颗明亮的星星制成的皮带和一把隐隐约约的剑。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">仔细观察这把匕首，可以发现它的组成部分不是行星，而是猎户星云，里头孕育了不少新星诞生。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">猎户座的肩膀没有令人失望，由红色的参宿四星和蓝色的参宿五星组成。而一只脚则是由蓝白色的超级巨型星球瑞吉尔（Rigel）所形成制成。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">但是请记住，在南半球寻找猎物时，猎人是颠倒了，仿佛在做侧手翻，而不是追逐猎物。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <h2 id="5-登陆火星" tabindex="-1" class="css-10tk4x-SubHeading e14hemmw1">5. 登陆火星</h2>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-oijotl-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/9E13/production/_116376404_ebb62e49-06fa-4d67-b02d-f6d4904419ab.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/9E13/production/_116376404_ebb62e49-06fa-4d67-b02d-f6d4904419ab.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/9E13/production/_116376404_ebb62e49-06fa-4d67-b02d-f6d4904419ab.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/9E13/production/_116376404_ebb62e49-06fa-4d67-b02d-f6d4904419ab.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/9E13/production/_116376404_ebb62e49-06fa-4d67-b02d-f6d4904419ab.jpg 800w" alt="SEPTEMBER 15: The model of the Mars probe Tianwen-1 on display during 2020 China International Industry Fair." src="https://ichef.bbci.co.uk/news/640/cpsprodpb/9E13/production/_116376404_ebb62e49-06fa-4d67-b02d-f6d4904419ab.jpg" width="976" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>中国的"天问一号"任务将于4月在"红色星球"上着陆，此图是一个模型。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">今年，我们有望看到不止一个，而是两个分别的火星任务。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">美国国家航空航天局（NASA）预计将在2月18日，将把毅力号火星探测器连同机智号无人直升机一起降落在这红色星球。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">移动科学实验室配备了一系列摄像头，可以记录复杂的着陆情况，并可以研究火星土壤。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">它将寻找过去及现在是否存在生命的痕迹，并测试一些为未来人类任务进行的新技术。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">今年4月，中国的“天文1号”的着陆器和探测器亦会到火星，任务是寻找底下的水层，为之后把潜在样品带返地球铺路。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">中国国家航天局将成为继美国国家航空航天局之后在火星上执行任务的第二个航天局。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <h2 id="6-流星雨" tabindex="-1" class="css-10tk4x-SubHeading e14hemmw1">6. 流星雨</h2>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-oijotl-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/EC33/production/_116376406_a8ff29ab-744d-4666-aac3-5058336e9916.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/EC33/production/_116376406_a8ff29ab-744d-4666-aac3-5058336e9916.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/EC33/production/_116376406_a8ff29ab-744d-4666-aac3-5058336e9916.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/EC33/production/_116376406_a8ff29ab-744d-4666-aac3-5058336e9916.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/EC33/production/_116376406_a8ff29ab-744d-4666-aac3-5058336e9916.jpg 800w" alt="A blue/green glowing meteor crosses the sky. Dark forest visible in the horizon." src="https://ichef.bbci.co.uk/news/640/cpsprodpb/EC33/production/_116376406_a8ff29ab-744d-4666-aac3-5058336e9916.jpg" width="976" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>看2021年最佳的流星雨就必须等到今年年底。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">皇家天文台格林威治天文学家格雷格·布朗（Grey Brown）说，每年，天空都会为我们提供几次"实在值得一看"的流星雨。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">当地球沿着其轨道运行时，它穿过了太阳系中各种彗星和小行星留下的尘埃云。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">这对我们来说是个好消息，因为当这些碎片撞击到我们的大气中时，它会在夜空中产生一系列明亮的光斑。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">欣赏大自然烟火的最佳方法是等到午夜过后，深夜时分，到最少光污染的地方。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">您看到越大片天空越好，请准备躺在地上等待。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">布朗说，“若有足够的时间，再加上一点运气，在流星最密集的时间，您每隔一两分钟就可以看到一颗流星。更幸运的话，您的眼睛习惯了黑暗后，将可以看到季节性行星成为背景的美景。”</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">布朗说：“5月4日，宝瓶座流星雨将达到高峰，这是著名哈雷彗星生产的两次流星雨之一。”</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">下一场引人注目的流星雨将是英仙座流星雨（8月11日），但是看到2021年最佳的流星雨就必须等到今年年底。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">双子座行星（12月13日）“是由小行星而不是彗星产生的碎片，导致流星多数更具色彩，因为它们在太气层燃烧的物质，类似一般烟花的物料，”布朗说。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">如果您想为2022年做好充分准备，请在日记中写上“象限仪座流星雨”，因为它将在新年开始的几天内达到顶峰。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <h2 id="7-月全食" tabindex="-1" class="css-10tk4x-SubHeading e14hemmw1">7. 月全食</h2>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-oijotl-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/5576/production/_116387812_1e16ff76-f68c-4fcf-8d40-448710afe79d.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/5576/production/_116387812_1e16ff76-f68c-4fcf-8d40-448710afe79d.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/5576/production/_116387812_1e16ff76-f68c-4fcf-8d40-448710afe79d.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/5576/production/_116387812_1e16ff76-f68c-4fcf-8d40-448710afe79d.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/5576/production/_116387812_1e16ff76-f68c-4fcf-8d40-448710afe79d.jpg 800w" alt="The moon is seen during a penumbral lunar eclipse on November 30, 2020 in Beijing, China." src="https://ichef.bbci.co.uk/news/640/cpsprodpb/5576/production/_116387812_1e16ff76-f68c-4fcf-8d40-448710afe79d.jpg" width="976" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>跨越月球的地球阴影</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">5月26日，月球将被地球上的影子所覆盖。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">那些从环太平洋（环绕太平洋的地理区域）观察的人将能够充分看用整个月蚀。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">最好的观赏景点将是夏威夷，因为它将发生在月亮在深夜高空出现的时候，而更南或更北的地区，将只能在月落前看到月食的某些阶段 。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <h2 id="8-环形日食" tabindex="-1" class="css-10tk4x-SubHeading e14hemmw1">8. 环形日食</h2>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-oijotl-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/05BB/production/_116376410_fa16de92-875e-462f-a202-4c820860c3a0.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/05BB/production/_116376410_fa16de92-875e-462f-a202-4c820860c3a0.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/05BB/production/_116376410_fa16de92-875e-462f-a202-4c820860c3a0.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/05BB/production/_116376410_fa16de92-875e-462f-a202-4c820860c3a0.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/05BB/production/_116376410_fa16de92-875e-462f-a202-4c820860c3a0.jpg 800w" alt="Annular solar eclipse seen from Chiayi in southern Taiwan on June 21th, 2020." src="https://ichef.bbci.co.uk/news/640/cpsprodpb/05BB/production/_116376410_fa16de92-875e-462f-a202-4c820860c3a0.jpg" width="976" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>当月亮经过恒星前方时，月环食将会出现，留下了一个火红指环。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">6月10日，月球将在太阳上蒙上阴影，但这不会是普通的日食。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">这一次，月球距离地球仅404,300公里，这意味着月球的阴影，不会足够大到完全覆盖太阳。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">反而，当月亮经过恒星前方时，将会出现月环食，留下了一个火红指环。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">记住，千万不要直视太阳，使用适当的保护措施，例如日食眼镜，您将可以从加拿大，西北格陵兰岛，西伯利亚东北……以及希望在世界任何地方（通过互联网）观察到这种不寻常的现象。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <h2 id="9-行星冲" tabindex="-1" class="css-10tk4x-SubHeading e14hemmw1">9. 行星冲</h2>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-oijotl-ImagePlaceholder e1whu0">
+&lt;img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/B583/production/_116376464_77e83ae8-09ea-468a-af53-fd443e788c4d.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/B583/production/_116376464_77e83ae8-09ea-468a-af53-fd443e788c4d.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/B583/production/_116376464_77e83ae8-09ea-468a-af53-fd443e788c4d.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/B583/production/_116376464_77e83ae8-09ea-468a-af53-fd443e788c4d.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/B583/production/_116376464_77e83ae8-09ea-468a-af53-fd443e788c4d.jpg 800w" alt="Jupiter and Saturn on December 21, 2020, when the two planets reached their "great conjunction" and closest encounter in almost 400 years on Monday." src="https://ichef.bbci.co.uk/news/640/cpsprodpb/B583/production/_116376464_77e83ae8-09ea-468a-af53-fd443e788c4d.jpg" width="976" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer"&gt;
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>想象从阳台上看到木星和土星</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">由于太阳系中，所有行星都是围绕太阳公转，所以有时地球会直接位于太阳和另一颗行星之间：这就是天文学家所说的“行星冲”。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">格林威治皇家天文台的天文学家达拉·帕特尔（Dhara Patel）说：“用肉眼可以看到距离地球最近的行星，但是行星冲提供了最好的观察机会。”</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">帕特尔说：“土星和木星将分别在8月2日和20日出现行星冲。”他们还将“比今年中的任何时候都更接近我们。”</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">如果您有望远镜（双筒望远镜也可），你就有机会，大约凌晨1点向赤道方向视线望去，“可以观察到在两星最光芒的时候，木星大气层条文和土星环同时出现，”帕特尔说。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <h2 id="10-詹姆斯·韦伯太空望远镜JWST发射" tabindex="-1" class="css-10tk4x-SubHeading e14hemmw1">10. 詹姆斯·韦伯太空望远镜（JWST）发射</h2>
+  </div>
+  <div dir="ltr" class="ek1plzs2 css-11z9ndi-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-1m645l4-GridComponent e57qer20">
+        <div dir="ltr" class="css-1ix0g1r-GridComponent e57qer20">
+          <div class="css-cjmohl-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/53DB/production/_116376412_8495a7d1-8daa-44cb-8a7e-d8a294b9db76.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/53DB/production/_116376412_8495a7d1-8daa-44cb-8a7e-d8a294b9db76.jpg 320w, https://ichef.bbci.co.uk/news/412/cpsprodpb/53DB/production/_116376412_8495a7d1-8daa-44cb-8a7e-d8a294b9db76.jpg 412w" alt="A stellar jet in the Carina Nebula is pictured in space by the Hubble telescope in 2009" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/53DB/production/_116376412_8495a7d1-8daa-44cb-8a7e-d8a294b9db76.jpg" width="412" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>哈勃太空望远镜产生了一些令人难忘的图像，现在外界对JWST寄予厚望</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">如果有一场活动能勾起天文学家的关注，那就是詹姆斯韦伯太空望远镜（简称JWST）的发射，它预计将于10月31日发射。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">格林威治皇家天文台天文学家埃德·布卢默（Ed Bloomer）说，JWST经过一个月的旅途终进入轨道，要把它带上太空的过程很复杂，因为该望远镜太大，无法挤上现存的火箭要加以改良，但它将为天文学带来一个红外线的新时代。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">他说，这令人非常兴奋，因为它将使科学家能够“研究非常早期的恒星和星系、行星形成过程、银河系演化等等。”</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">布卢默说，将它视为已经使用了几十年的哈勃太空望远镜的替代品并不是很正确，但是“它代表了下一代的工程技术，并且将是未来多年国际天文学界的主力军。”</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">这位天文学家说，希望JWST将提供备受期待的新图像，能够比现在红外线天文学中所产生已经很好的图像媲美，甚至从那个水平开始继续变得更好。</p>
+  </div>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#BBC 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-13</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-13/Science-NASA%E7%81%AB%E6%98%9F%E6%8E%A2%E6%B5%8B3000%E6%97%A5-%E5%A5%BD%E5%A5%87%E5%8F%B7-%E9%A5%B1%E8%A7%88%E7%BA%A2%E8%89%B2%E6%98%9F%E7%90%83%E5%A5%87%E8%A7%82%E5%BC%82%E6%99%AF">
+          [Science] NASA火星探测3000日：“好奇号”饱览红色星球奇观异景
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-12</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-12/Business-BBC%E5%B1%95%E6%9C%9B2021%E5%B9%B4%E7%A7%91%E6%8A%80%E6%96%B0%E8%B6%8B%E5%8A%BF-%E6%97%A0%E4%BA%BA%E5%95%86%E5%BA%97%E5%92%8C%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6%E8%BD%A6">
+          [Business] BBC展望2021年科技新趋势：无人商店和自动驾驶车
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-11</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-11/World-%E8%8B%B1%E5%9B%BD%E7%8E%8B%E5%82%A8%E6%9F%A5%E5%B0%94%E6%96%AF%E7%9A%84-%E5%9C%B0%E7%90%83%E5%AE%AA%E7%AB%A0-%E5%92%8C%E7%99%BE%E4%BA%BF%E7%BE%8E%E5%85%83%E7%9A%84-%E8%87%AA%E7%84%B6%E8%B5%84%E6%9C%AC-%E6%8A%95%E8%B5%84">
+          [World] 英国王储查尔斯的《地球宪章》和百亿美元的“自然资本”投资
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-11</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-11/Vert-%E9%A6%99%E8%95%89%E6%9E%AF%E8%90%8E%E7%97%85-%E4%B8%80%E5%9C%BA%E5%A0%AA%E6%AF%94%E6%96%B0%E5%86%A0%E7%96%AB%E6%83%85%E7%9A%84%E5%86%9C%E4%B8%9A%E7%81%BE%E9%9A%BE">
+          [Vert] 香蕉枯萎病：一场堪比新冠疫情的农业灾难
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-11/World-%E8%8B%B1%E5%9B%BD%E7%8E%8B%E5%82%A8%E6%9F%A5%E5%B0%94%E6%96%AF%E7%9A%84-%E5%9C%B0%E7%90%83%E5%AE%AA%E7%AB%A0-%E5%92%8C%E7%99%BE%E4%BA%BF%E7%BE%8E%E5%85%83%E7%9A%84-%E8%87%AA%E7%84%B6%E8%B5%84%E6%9C%AC-%E6%8A%95%E8%B5%84">
+            前一篇：[World] 英国王储查尔斯的《地球宪章》和百亿美元的“自然资本”投资
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-12/Business-BBC%E5%B1%95%E6%9C%9B2021%E5%B9%B4%E7%A7%91%E6%8A%80%E6%96%B0%E8%B6%8B%E5%8A%BF-%E6%97%A0%E4%BA%BA%E5%95%86%E5%BA%97%E5%92%8C%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6%E8%BD%A6">
+            后一篇：[Business] BBC展望2021年科技新趋势：无人商店和自动驾驶车
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-11/World-%E8%8B%B1%E5%9B%BD%E7%8E%8B%E5%82%A8%E6%9F%A5%E5%B0%94%E6%96%AF%E7%9A%84-%E5%9C%B0%E7%90%83%E5%AE%AA%E7%AB%A0-%E5%92%8C%E7%99%BE%E4%BA%BF%E7%BE%8E%E5%85%83%E7%9A%84-%E8%87%AA%E7%84%B6%E8%B5%84%E6%9C%AC-%E6%8A%95%E8%B5%84'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-12/Business-BBC%E5%B1%95%E6%9C%9B2021%E5%B9%B4%E7%A7%91%E6%8A%80%E6%96%B0%E8%B6%8B%E5%8A%BF-%E6%97%A0%E4%BA%BA%E5%95%86%E5%BA%97%E5%92%8C%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6%E8%BD%A6'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-12/Business-BBC%E5%B1%95%E6%9C%9B2021%E5%B9%B4%E7%A7%91%E6%8A%80%E6%96%B0%E8%B6%8B%E5%8A%BF-%E6%97%A0%E4%BA%BA%E5%95%86%E5%BA%97%E5%92%8C%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6%E8%BD%A6'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-11/World-%E8%8B%B1%E5%9B%BD%E7%8E%8B%E5%82%A8%E6%9F%A5%E5%B0%94%E6%96%AF%E7%9A%84-%E5%9C%B0%E7%90%83%E5%AE%AA%E7%AB%A0-%E5%92%8C%E7%99%BE%E4%BA%BF%E7%BE%8E%E5%85%83%E7%9A%84-%E8%87%AA%E7%84%B6%E8%B5%84%E6%9C%AC-%E6%8A%95%E8%B5%84'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-11/World-%E8%8B%B1%E5%9B%BD%E7%8E%8B%E5%82%A8%E6%9F%A5%E5%B0%94%E6%96%AF%E7%9A%84-%E5%9C%B0%E7%90%83%E5%AE%AA%E7%AB%A0-%E5%92%8C%E7%99%BE%E4%BA%BF%E7%BE%8E%E5%85%83%E7%9A%84-%E8%87%AA%E7%84%B6%E8%B5%84%E6%9C%AC-%E6%8A%95%E8%B5%84">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-12/Business-BBC%E5%B1%95%E6%9C%9B2021%E5%B9%B4%E7%A7%91%E6%8A%80%E6%96%B0%E8%B6%8B%E5%8A%BF-%E6%97%A0%E4%BA%BA%E5%95%86%E5%BA%97%E5%92%8C%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6%E8%BD%A6">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<BBC>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-12/Business-BBC%E5%B1%95%E6%9C%9B2021%E5%B9%B4%E7%A7%91%E6%8A%80%E6%96%B0%E8%B6%8B%E5%8A%BF-%E6%97%A0%E4%BA%BA%E5%95%86%E5%BA%97%E5%92%8C%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B6%E8%BD%A6">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<BBC>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-11/World-%E8%8B%B1%E5%9B%BD%E7%8E%8B%E5%82%A8%E6%9F%A5%E5%B0%94%E6%96%AF%E7%9A%84-%E5%9C%B0%E7%90%83%E5%AE%AA%E7%AB%A0-%E5%92%8C%E7%99%BE%E4%BA%BF%E7%BE%8E%E5%85%83%E7%9A%84-%E8%87%AA%E7%84%B6%E8%B5%84%E6%9C%AC-%E6%8A%95%E8%B5%84">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>吐槽青年｜林生斌需要走出来，舆论也要走出来 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+吐槽青年｜林生斌需要走出来，舆论也要走出来
+——
+" />
+    <meta property="og:description" content="
+吐槽青年｜林生斌需要走出来，舆论也要走出来
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="吐槽青年｜林生斌需要走出来，舆论也要走出来" />
+    <meta property="twitter:title" content="吐槽青年｜林生斌需要走出来，舆论也要走出来" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F667807.html&t=%E5%90%90%E6%A7%BD%E9%9D%92%E5%B9%B4%EF%BD%9C%E6%9E%97%E7%94%9F%E6%96%8C%E9%9C%80%E8%A6%81%E8%B5%B0%E5%87%BA%E6%9D%A5%EF%BC%8C%E8%88%86%E8%AE%BA%E4%B9%9F%E8%A6%81%E8%B5%B0%E5%87%BA%E6%9D%A5" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F667807.html&t=%E5%90%90%E6%A7%BD%E9%9D%92%E5%B9%B4%EF%BD%9C%E6%9E%97%E7%94%9F%E6%96%8C%E9%9C%80%E8%A6%81%E8%B5%B0%E5%87%BA%E6%9D%A5%EF%BC%8C%E8%88%86%E8%AE%BA%E4%B9%9F%E8%A6%81%E8%B5%B0%E5%87%BA%E6%9D%A5&d=2021-07-03&e=
+吐槽青年｜林生斌需要走出来，舆论也要走出来
+——
+
+
+  “深情人设”是谁设置的？是林生斌刻意扮演一个能赢得舆论同情和支持（从而带货）的人设，还是舆论期待林生斌有一个能满足大众悲情审美和道德想象的人设？这本身就包含着一种公共性与私人性的撕扯。亲戚或余悲，他人亦已歌，看故事的毕竟是看故事的，无论这故事在别人身上是多大的痛。无论如何，舆论应该是鼓励、帮助、乐见一个深陷巨大不幸的人从不幸中走出来，勇敢地活下去。
+  
+  杭州保姆纵火案近日因为悲情受害人林生斌“组建新家庭喜得一女”再度进入公众视野，引起一些争议。有人看到的是林生斌渐渐走出悲剧阴影，最不幸的人终于开始新生，让人有了丝许慰藉，愿其“一生被爱、一生可爱、往后永远平安幸福”“听闻近日喜得爱女，祝她聪明灵秀，美丽无边”。有人则在心理上感觉别扭，觉得他一面在媒体塑造痴情人设，一面重新结婚生子，是不是对舆论的情感欺骗？林生斌亡妻的哥哥..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F667807.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/667807.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/667807.html&text=吐槽青年｜林生斌需要走出来，舆论也要走出来&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/667807.html&title=吐槽青年｜林生斌需要走出来，舆论也要走出来" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/667807.html&title=吐槽青年｜林生斌需要走出来，舆论也要走出来" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=吐槽青年｜林生斌需要走出来，舆论也要走出来&body=
+吐槽青年｜林生斌需要走出来，舆论也要走出来
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/667807.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/667807.html&title=吐槽青年｜林生斌需要走出来，舆论也要走出来&caption=
+吐槽青年｜林生斌需要走出来，舆论也要走出来
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=吐槽青年｜林生斌需要走出来，舆论也要走出来&url=https://chinadigitaltimes.net/chinese/667807.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>吐槽青年｜林生斌需要走出来，舆论也要走出来</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-07-03
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/667807.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F667807.html&t=%E5%90%90%E6%A7%BD%E9%9D%92%E5%B9%B4%EF%BD%9C%E6%9E%97%E7%94%9F%E6%96%8C%E9%9C%80%E8%A6%81%E8%B5%B0%E5%87%BA%E6%9D%A5%EF%BC%8C%E8%88%86%E8%AE%BA%E4%B9%9F%E8%A6%81%E8%B5%B0%E5%87%BA%E6%9D%A5&d=2021-07-03&e=
+吐槽青年｜林生斌需要走出来，舆论也要走出来
+——
+
+
+  “深情人设”是谁设置的？是林生斌刻意扮演一个能赢得舆论同情和支持（从而带货）的人设，还是舆论期待林生斌有一个能满足大众悲情审美和道德想象的人设？这本身就包含着一种公共性与私人性的撕扯。亲戚或余悲，他人亦已歌，看故事的毕竟是看故事的，无论这故事在别人身上是多大的痛。无论如何，舆论应该是鼓励、帮助、乐见一个深陷巨大不幸的人从不幸中走出来，勇敢地活下去。
+  
+  杭州保姆纵火案近日因为悲情受害人林生斌“组建新家庭喜得一女”再度进入公众视野，引起一些争议。有人看到的是林生斌渐渐走出悲剧阴影，最不幸的人终于开始新生，让人有了丝许慰藉，愿其“一生被爱、一生可爱、往后永远平安幸福”“听闻近日喜得爱女，祝她聪明灵秀，美丽无边”。有人则在心理上感觉别扭，觉得他一面在媒体塑造痴情人设，一面重新结婚生子，是不是对舆论的情感欺骗？林生斌亡妻的哥哥..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F667807.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1625297188000-->
+<p><a href="https://chinadigitaltimes.net/chinese/667807.html">吐槽青年｜林生斌需要走出来，舆论也要走出来</a>
+——</p>
+
+<div>
+  <p><strong>“深情人设”是谁设置的？是林生斌刻意扮演一个能赢得舆论同情和支持（从而带货）的人设，还是舆论期待林生斌有一个能满足大众悲情审美和道德想象的人设？这本身就包含着一种公共性与私人性的撕扯。亲戚或余悲，他人亦已歌，看故事的毕竟是看故事的，无论这故事在别人身上是多大的痛。无论如何，舆论应该是鼓励、帮助、乐见一个深陷巨大不幸的人从不幸中走出来，勇敢地活下去。</strong></p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/07/post-667807-60e00fb1519f4." alt="img" /></p>
+  <p>杭州保姆纵火案近日因为悲情受害人林生斌“组建新家庭喜得一女”再度进入公众视野，引起一些争议。有人看到的是林生斌渐渐走出悲剧阴影，最不幸的人终于开始新生，让人有了丝许慰藉，愿其“一生被爱、一生可爱、往后永远平安幸福”“听闻近日喜得爱女，祝她聪明灵秀，美丽无边”。有人则在心理上感觉别扭，觉得他一面在媒体塑造痴情人设，一面重新结婚生子，是不是对舆论的情感欺骗？林生斌亡妻的哥哥在社交媒体透露的矛盾争端，委婉表达出对林生斌的不满，加剧了舆论的情感反噬。</p>
+  <p>怎么看待这种争议和反噬？我的总体观点是，对承受过世上最不幸、突然一无所有、从生不如死的鬼门关走回来的人，有点儿善意。保持热点介入的边界感，在公共性与私人性之间有一个尊重他人的权界。我们这些“看”别人故事的人，不要在自己不可能有同样痛感和对称信息的事情上妄加揣测和判断。人类的悲欢并不相通，判断时更该多点儿谦逊和包容。</p>
+  <p>其一，对于属于别人家务事层面的事儿，我觉得还是少点儿掺合，那里有很多信息不对称和不足为外人道的情感纠葛和恩怨日常，外人做不了家务事的道德判官，千万不要入戏入深，产生一种“你的赔偿款是我们舆论施压帮你谈下来的、所以你得按舆论意愿分配”的僭妄。其二，对于缺乏事实证据、全凭臆想的种种纵火阴谋论，半个字都不要信。在确证的事实和证据呈现之前，把愤怒给憋回去，不要在愤怒的回音室里编一个让自己愤怒×10的故事。其三，林生斌是一个常人，不要在同情中把他圣化，更不要在时间磨去同情后将他魔化，常人只是常人，终究还要过常人的平静生活。林生斌需要走出来，舆论也要“走出来”。</p>
+  <p>社交媒体全面侵入日常的传播语境中，公共性与私人性的界限也越来越模糊，像杭州保姆纵火案这样的事件中，公共性与私人性深度纠缠，形成了当下剪不断的尴尬冲突。这是一个家庭悲剧，也是一个涉及公共安全的社会悲剧，当然有着强烈的公共性。所以一曝出就以轰动性的方式触动舆论神经，细究原因，痛谴无良保姆，愤怒追问物业，施压当地相当部门，以各种方式安抚生不如死的林生斌及二老。这是舆论天然的正义感，这种突然家破人亡的不幸太让人无法释怀，让罪犯得到惩罚，让如果及时救援本可避免如此重大死亡的物业付出代价，让天底下最不幸的人多得到一些赔偿，多感受到人间温暖，公众才能稍稍心安一点。</p>
+  <p>这种“我们为你做主”的舆论父爱主义，对推动事件的进程施加着压力，同舟共济，形成“我们跟你在一起”的动人氛围。但也隐藏着在某个时候必然会爆雷的公私冲突。舆论正义凛然地“接管”了这事儿，便有了一种“我们要管到底”“你要听我们的”“你要按我们的去做”“你不能让我们失望”“我们对终极正义负有责任”的主导欲，公共性与私人性便不可避免地混杂在一起，为反转和翻脸埋下隐患。靠，我们为你痛哭流涕，你却早已有了新欢！</p>
+  <p>公共性与私人性在保姆纵火案中是这样渐生冲突的：很多人觉得，物业赔你林生斌的钱是我们舆论“帮你施压”你才获得的，所以分配必须让舆论看得见，且要由公众判断分配是否正义；有人觉得，你林生斌在公众面前“树立”了痴情的人设，你的“生不如死”得到了公众的同情，就应该在重新开始新的婚姻上“符合”公众期待，维持痴情人设；有人觉得，林生斌一直活跃在社交媒体上，向公众展示着自己的伤疤和对妻儿的想念，可新婚的事却一直“瞒”着舆论，让人无法接受。你一边怀念一边生女，是怎么做到的？——舆论帮了你这么多，同情了你这么久，你却“偷偷结婚生子”，并“独享天价赔偿”，这可能是舆论巨大情绪逆转的关键动因。</p>
+  <p>每当有人向我咨询“一件事要不要诉诸舆论曝光求取正义”时，我都会建议其考虑清楚，有没有做到全面把自己暴露在舆论下的心理准备，不能只考虑舆论对自己有利时才接受舆论，更要考虑当舆论对自己不利时能不能接受围观？“自己实现某种维权目标”后能不能接受舆论的继续围观？能不能接受舆论越过公共边界对你私人事务的围观？林生斌作为悲剧当事人，被卷入举国舆论关注之下，得到舆论极大同情，后来以“悲情形象”呈现和活跃于社交媒体，可能没有意识到舆论“你这事儿我们管定了”可能包含的对其不愿让渡之私人事务的包揽。舆论最不能接受的是：“隐瞒”新婚。可能在林生斌看来，这是他的隐私，这是他自己处理情感和伤痛的方式。</p>
+  <p>“深情人设”是谁设置的？是林生斌刻意扮演一个能赢得舆论同情和支持（从而带货）的人设，还是舆论期待林生斌有一个能满足大众悲情审美和道德想象的人设？这本身就包含着一种公共性与私人性的撕扯。亲戚或余悲，他人亦已歌，看故事的毕竟是看故事的，无论这故事在别人身上是多大的痛。无论如何，舆论应该是鼓励、帮助、乐见一个深陷巨大不幸的人从不幸中走出来，勇敢地活下去。遭遇这种家破人亡的打击，活着比死去更不容易，不要让悲剧延续。</p>
+  <p>公共性不要吞噬私人性。我总觉得，舆论要有“爱”，但不要有逾越公私边界、包揽一切的“父爱主义”。舆论是公器，捍卫正义是公器的责任，不能有那种“我们帮你讨回了公道、你就该把自己全面暴露到舆论下”的恩主意识。舆论有义务保护弱者，捍卫社会正义，在法律框架下帮着受害者讨个公道，事了拂衣去，深藏功与名，在事件的“公共性”方面得到解决后，应抽身退场时该及早退场，把私人的留给私人，时间能解决的留给时间。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/07/post-667807-60e00fb2d4a02." alt="img" /><strong>吐槽青年出品</strong></p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2021-07-03</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-03/CDT%E5%91%A8%E6%8A%A5-%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%9B%9B%E6%9C%9F-%E4%B8%AD%E5%9B%BD%E4%BA%BA%E6%B0%91%E7%BB%9D%E4%B8%8D%E5%85%81%E8%AE%B8%E4%BB%BB%E4%BD%95%E5%A4%96%E6%9D%A5%E5%8A%BF%E5%8A%9B%E6%AC%BA%E8%B4%9F-%E5%8E%8B%E8%BF%AB-%E5%A5%B4%E5%BD%B9%E6%88%91%E4%BB%AC">
+          【CDT周报】第二十四期：“中国人民绝不允许任何外来势力欺负、压迫、奴役我们”
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-03</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-03/CDT%E6%95%8F%E6%84%9F%E8%AF%8D%E5%91%A8%E6%8A%A5-%E7%AC%AC%E4%B8%89%E5%8D%81%E4%B8%80%E6%9C%9F-%E5%85%B1%E4%BA%A7%E5%85%9A-%E5%BB%BA%E5%9B%BD%E7%99%BE%E5%B9%B4-%E9%A2%90%E4%BD%BF%E6%B0%94%E6%8C%87">
+          【CDT敏感词周报】第三十一期：共产党、建国百年、颐使气指
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-02</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-02/%E7%BD%91%E7%BB%9C%E6%B0%91%E8%AE%AE-%E6%88%91%E8%A7%89%E5%BE%97%E4%B8%AD%E5%85%B1%E7%99%BE%E5%B9%B4%E5%BA%86%E5%85%B8%E6%90%9E%E5%BE%97%E6%8C%BA%E6%88%90%E5%8A%9F%E7%9A%84-%E6%88%91%E6%8C%BA%E9%9A%BE%E8%BF%87">
+          【网络民议】“我觉得中共百年庆典搞得挺成功的，我挺难过”
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-02</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-02/Berliner-Bericht-%E4%B8%AD%E5%85%B1%E7%99%BE%E5%B9%B4%E5%85%9A%E5%BA%86-%E7%9F%A5%E5%90%8D%E6%8E%A8%E5%8F%8B%E5%8F%91%E8%B5%B7-%E5%AE%88%E6%8A%A4%E4%B8%AD%E5%85%B1%E9%95%BF%E5%91%BD%E7%99%BE%E5%B2%81%E6%98%AF76%E4%BA%BF%E4%BA%BA%E7%9A%84%E4%B8%AD%E6%8C%87-%E6%B4%BB%E5%8A%A8">
+          Berliner Bericht｜中共百年党庆，知名推友发起“守护中共长命百岁是76亿人的中指”活动
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-03/%E5%A4%A7%E8%B0%B730%E8%BD%B0%E7%AC%91%E5%82%B2MLB-%E8%B7%91%E5%9B%9E%E8%87%B4%E8%83%9C%E5%88%86%E7%8E%87%E5%A4%A9%E4%BD%BF%E9%80%86%E8%BD%AC%E8%83%9C-%E6%B3%95%E5%9B%BD%E5%9B%BD%E9%99%85%E5%B9%BF%E6%92%AD%E7%94%B5%E5%8F%B0-RFI">
+            前一篇：大谷30轰笑傲MLB 跑回致胜分率天使逆转胜 – 法国国际广播电台 - RFI
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-03/CDT%E6%95%8F%E6%84%9F%E8%AF%8D%E5%91%A8%E6%8A%A5-%E7%AC%AC%E4%B8%89%E5%8D%81%E4%B8%80%E6%9C%9F-%E5%85%B1%E4%BA%A7%E5%85%9A-%E5%BB%BA%E5%9B%BD%E7%99%BE%E5%B9%B4-%E9%A2%90%E4%BD%BF%E6%B0%94%E6%8C%87">
+            后一篇：【CDT敏感词周报】第三十一期：共产党、建国百年、颐使气指
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-07-03/%E5%A4%A7%E8%B0%B730%E8%BD%B0%E7%AC%91%E5%82%B2MLB-%E8%B7%91%E5%9B%9E%E8%87%B4%E8%83%9C%E5%88%86%E7%8E%87%E5%A4%A9%E4%BD%BF%E9%80%86%E8%BD%AC%E8%83%9C-%E6%B3%95%E5%9B%BD%E5%9B%BD%E9%99%85%E5%B9%BF%E6%92%AD%E7%94%B5%E5%8F%B0-RFI'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-07-03/CDT%E6%95%8F%E6%84%9F%E8%AF%8D%E5%91%A8%E6%8A%A5-%E7%AC%AC%E4%B8%89%E5%8D%81%E4%B8%80%E6%9C%9F-%E5%85%B1%E4%BA%A7%E5%85%9A-%E5%BB%BA%E5%9B%BD%E7%99%BE%E5%B9%B4-%E9%A2%90%E4%BD%BF%E6%B0%94%E6%8C%87'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-07-03/CDT%E6%95%8F%E6%84%9F%E8%AF%8D%E5%91%A8%E6%8A%A5-%E7%AC%AC%E4%B8%89%E5%8D%81%E4%B8%80%E6%9C%9F-%E5%85%B1%E4%BA%A7%E5%85%9A-%E5%BB%BA%E5%9B%BD%E7%99%BE%E5%B9%B4-%E9%A2%90%E4%BD%BF%E6%B0%94%E6%8C%87'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-07-02/%E7%BD%91%E7%BB%9C%E6%B0%91%E8%AE%AE-%E6%88%91%E8%A7%89%E5%BE%97%E4%B8%AD%E5%85%B1%E7%99%BE%E5%B9%B4%E5%BA%86%E5%85%B8%E6%90%9E%E5%BE%97%E6%8C%BA%E6%88%90%E5%8A%9F%E7%9A%84-%E6%88%91%E6%8C%BA%E9%9A%BE%E8%BF%87'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-07-03/%E5%A4%A7%E8%B0%B730%E8%BD%B0%E7%AC%91%E5%82%B2MLB-%E8%B7%91%E5%9B%9E%E8%87%B4%E8%83%9C%E5%88%86%E7%8E%87%E5%A4%A9%E4%BD%BF%E9%80%86%E8%BD%AC%E8%83%9C-%E6%B3%95%E5%9B%BD%E5%9B%BD%E9%99%85%E5%B9%BF%E6%92%AD%E7%94%B5%E5%8F%B0-RFI">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-07-03/CDT%E6%95%8F%E6%84%9F%E8%AF%8D%E5%91%A8%E6%8A%A5-%E7%AC%AC%E4%B8%89%E5%8D%81%E4%B8%80%E6%9C%9F-%E5%85%B1%E4%BA%A7%E5%85%9A-%E5%BB%BA%E5%9B%BD%E7%99%BE%E5%B9%B4-%E9%A2%90%E4%BD%BF%E6%B0%94%E6%8C%87">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-07-03/CDT%E6%95%8F%E6%84%9F%E8%AF%8D%E5%91%A8%E6%8A%A5-%E7%AC%AC%E4%B8%89%E5%8D%81%E4%B8%80%E6%9C%9F-%E5%85%B1%E4%BA%A7%E5%85%9A-%E5%BB%BA%E5%9B%BD%E7%99%BE%E5%B9%B4-%E9%A2%90%E4%BD%BF%E6%B0%94%E6%8C%87">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-07-02/%E7%BD%91%E7%BB%9C%E6%B0%91%E8%AE%AE-%E6%88%91%E8%A7%89%E5%BE%97%E4%B8%AD%E5%85%B1%E7%99%BE%E5%B9%B4%E5%BA%86%E5%85%B8%E6%90%9E%E5%BE%97%E6%8C%BA%E6%88%90%E5%8A%9F%E7%9A%84-%E6%88%91%E6%8C%BA%E9%9A%BE%E8%BF%87">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

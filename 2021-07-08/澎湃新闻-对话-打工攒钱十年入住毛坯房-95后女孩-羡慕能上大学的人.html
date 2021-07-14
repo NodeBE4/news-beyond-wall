@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>澎湃新闻｜对话“打工攒钱十年入住毛坯房”95后女孩：羡慕能上大学的人 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+澎湃新闻｜对话“打工攒钱十年入住毛坯房”95后女孩：羡慕能上大学的人
+——
+" />
+    <meta property="og:description" content="
+澎湃新闻｜对话“打工攒钱十年入住毛坯房”95后女孩：羡慕能上大学的人
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="澎湃新闻｜对话“打工攒钱十年入住毛坯房”95后女孩：羡慕能上大学的人" />
+    <meta property="twitter:title" content="澎湃新闻｜对话“打工攒钱十年入住毛坯房”95后女孩：羡慕能上大学的人" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F668029.html&t=%E6%BE%8E%E6%B9%83%E6%96%B0%E9%97%BB%EF%BD%9C%E5%AF%B9%E8%AF%9D%E2%80%9C%E6%89%93%E5%B7%A5%E6%94%92%E9%92%B1%E5%8D%81%E5%B9%B4%E5%85%A5%E4%BD%8F%E6%AF%9B%E5%9D%AF%E6%88%BF%E2%80%9D95%E5%90%8E%E5%A5%B3%E5%AD%A9%EF%BC%9A%E7%BE%A1%E6%85%95%E8%83%BD%E4%B8%8A%E5%A4%A7%E5%AD%A6%E7%9A%84%E4%BA%BA" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F668029.html&t=%E6%BE%8E%E6%B9%83%E6%96%B0%E9%97%BB%EF%BD%9C%E5%AF%B9%E8%AF%9D%E2%80%9C%E6%89%93%E5%B7%A5%E6%94%92%E9%92%B1%E5%8D%81%E5%B9%B4%E5%85%A5%E4%BD%8F%E6%AF%9B%E5%9D%AF%E6%88%BF%E2%80%9D95%E5%90%8E%E5%A5%B3%E5%AD%A9%EF%BC%9A%E7%BE%A1%E6%85%95%E8%83%BD%E4%B8%8A%E5%A4%A7%E5%AD%A6%E7%9A%84%E4%BA%BA&d=2021-07-08&e=
+澎湃新闻｜对话“打工攒钱十年入住毛坯房”95后女孩：羡慕能上大学的人
+——
+
+
+  
+    @白鹿视频：【#女孩花10年积蓄买房入住毛坯房#：14岁开始打工梦想有自己的家】7月5日，江苏泰州。95后女孩白小莉（化名）于半个多月前住进120平的毛坯房。据悉，白小莉14岁就进入社会打工，攒了十年钱后终于攒够首付28万，在老家兴化给自己买进了3室2厅2卫的大房子。白小莉说，周围很多人包括自己的父母都不支持买房，但自己认为结婚并不能有安全感，就义无反顾得买了。现在没钱装修加上要还房贷，就住进了毛坯房，因为是自己的房子住的还是挺舒服的。 视频地址
+  
+  
+  
+  
+小莉在毛坯房中的日常生活。
+  
+  今年7月，江苏泰州95后女孩小莉付了28万元首付，终于住进属于自己房子里——是个毛坯房。
+  28万元，是她打工十年的积蓄。
+  在“女孩子不需要这么辛苦”“买房没用，都要嫁人的”的质..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F668029.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/668029.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/668029.html&text=澎湃新闻｜对话“打工攒钱十年入住毛坯房”95后女孩：羡慕能上大学的人&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/668029.html&title=澎湃新闻｜对话“打工攒钱十年入住毛坯房”95后女孩：羡慕能上大学的人" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/668029.html&title=澎湃新闻｜对话“打工攒钱十年入住毛坯房”95后女孩：羡慕能上大学的人" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=澎湃新闻｜对话“打工攒钱十年入住毛坯房”95后女孩：羡慕能上大学的人&body=
+澎湃新闻｜对话“打工攒钱十年入住毛坯房”95后女孩：羡慕能上大学的人
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/668029.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/668029.html&title=澎湃新闻｜对话“打工攒钱十年入住毛坯房”95后女孩：羡慕能上大学的人&caption=
+澎湃新闻｜对话“打工攒钱十年入住毛坯房”95后女孩：羡慕能上大学的人
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=澎湃新闻｜对话“打工攒钱十年入住毛坯房”95后女孩：羡慕能上大学的人&url=https://chinadigitaltimes.net/chinese/668029.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>澎湃新闻｜对话“打工攒钱十年入住毛坯房”95后女孩：羡慕能上大学的人</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-07-08
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/668029.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F668029.html&t=%E6%BE%8E%E6%B9%83%E6%96%B0%E9%97%BB%EF%BD%9C%E5%AF%B9%E8%AF%9D%E2%80%9C%E6%89%93%E5%B7%A5%E6%94%92%E9%92%B1%E5%8D%81%E5%B9%B4%E5%85%A5%E4%BD%8F%E6%AF%9B%E5%9D%AF%E6%88%BF%E2%80%9D95%E5%90%8E%E5%A5%B3%E5%AD%A9%EF%BC%9A%E7%BE%A1%E6%85%95%E8%83%BD%E4%B8%8A%E5%A4%A7%E5%AD%A6%E7%9A%84%E4%BA%BA&d=2021-07-08&e=
+澎湃新闻｜对话“打工攒钱十年入住毛坯房”95后女孩：羡慕能上大学的人
+——
+
+
+  
+    @白鹿视频：【#女孩花10年积蓄买房入住毛坯房#：14岁开始打工梦想有自己的家】7月5日，江苏泰州。95后女孩白小莉（化名）于半个多月前住进120平的毛坯房。据悉，白小莉14岁就进入社会打工，攒了十年钱后终于攒够首付28万，在老家兴化给自己买进了3室2厅2卫的大房子。白小莉说，周围很多人包括自己的父母都不支持买房，但自己认为结婚并不能有安全感，就义无反顾得买了。现在没钱装修加上要还房贷，就住进了毛坯房，因为是自己的房子住的还是挺舒服的。 视频地址
+  
+  
+  
+  
+小莉在毛坯房中的日常生活。
+  
+  今年7月，江苏泰州95后女孩小莉付了28万元首付，终于住进属于自己房子里——是个毛坯房。
+  28万元，是她打工十年的积蓄。
+  在“女孩子不需要这么辛苦”“买房没用，都要嫁人的”的质..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F668029.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1625727742000-->
+<p><a href="https://chinadigitaltimes.net/chinese/668029.html">澎湃新闻｜对话“打工攒钱十年入住毛坯房”95后女孩：羡慕能上大学的人</a>
+——</p>
+
+<div>
+  <blockquote>
+    <p>@白鹿视频：【#女孩花10年积蓄买房入住毛坯房#：14岁开始打工梦想有自己的家】7月5日，江苏泰州。95后女孩白小莉（化名）于半个多月前住进120平的毛坯房。据悉，白小莉14岁就进入社会打工，攒了十年钱后终于攒够首付28万，在老家兴化给自己买进了3室2厅2卫的大房子。白小莉说，周围很多人包括自己的父母都不支持买房，但自己认为结婚并不能有安全感，就义无反顾得买了。现在没钱装修加上要还房贷，就住进了毛坯房，因为是自己的房子住的还是挺舒服的。 <a href="http://t.cn/A6f6rOZp" title="视频地址">视频地址</a></p>
+  </blockquote>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/07/post-668029-60e6db3cabe2d.png" alt="img" /></p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/07/post-668029-60e6db3cc213c.png" alt="img" /></p>
+  <div class="ts">
+小莉在毛坯房中的日常生活。
+  </div>
+  <p>今年7月，江苏泰州95后女孩小莉付了28万元首付，终于住进属于自己房子里——是个毛坯房。</p>
+  <p>28万元，是她打工十年的积蓄。</p>
+  <p>在“女孩子不需要这么辛苦”“买房没用，都要嫁人的”的质疑声中，她近乎偏执地认为，拥有一套属于自己的房子，落魄时也有个容身之处。</p>
+  <p>7月7日，经媒体报道后，小莉买房的故事登上热搜。</p>
+  <p>小莉告诉澎湃新闻，她还在存钱准备装修。虽然住着毛坯房，但她十分幸福，“一点也不嫌弃”。“里面的一把泥土，一个灰尘，每一平米，都是我辛辛苦苦挣来的。”因家庭经济困难她没读完小学，十多岁时便外出打工。做学徒、进厂、开花店、卖螃蟹等各种工作都做过。“<strong>我很羡慕能上大学的人</strong>。”“<strong>希望找到喜欢的人</strong>。”</p>
+  <p>有网友说，这可能就是“<strong>普通人从灰尘中挣扎出来，开出属于自己的花</strong>的过程。”</p>
+  <p>小莉觉得，她只是做了一件普通的事情，之所以这么多人关注，或许是因为引发了共鸣。<strong>很多人都在和她一样努力。</strong></p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/07/post-668029-60e6db3cd3b7a." alt="img" /></p>
+  <p>小莉在毛坯房中的日常生活。</p>
+  <p><strong>对话小莉</strong></p>
+  <p><strong>澎湃新闻：</strong>你打工十年攒钱买房的经历上热搜，你如何看待这种“走红”？</p>
+  <p><strong>小莉：</strong>我一开始还挺惊讶的，觉得这只是普通的事情，我也已经习惯了有房子的感觉。但转念一想，在我生活的地方，身边几乎没有独立买房的女生。</p>
+  <p>我想，我的事情之所以引起这么多人关注，是因为引起了共鸣，很多女孩应该都像我一样，希望能拥有属于自己的房子。</p>
+  <p><strong>澎湃新闻：</strong>买房的钱是怎么存下来的？</p>
+  <p><strong>小莉：</strong>主要是依靠在外打工，存了十年，凑齐了买房的首付。</p>
+  <p>因为家里穷，我没读完小学。当时，我萌生了打工赚钱的想法，父母也没有阻拦。十多岁时，我去了江苏无锡一家厂里做羊毛衫套口（缝合）的学徒，其实就是把一件衣服各个部分拼在一起，每个月有几百块钱。</p>
+  <p>从羊毛衫厂出来后，我又去了一家纺织厂工作。苏州的工资还是挺高的，一个月两三千元，但上班很辛苦，一个月白班，一个月夜班。12个小时上完，再休息12个小时，每天睡觉的时间都不够，哪有时间用钱？钱就是这样存下来的。</p>
+  <p>当时在厂里，工资也不是按月发放，而是每个月给你一点生活费，到年底再给你结账。我无所谓怎么结工资，因为我也不怎么花。</p>
+  <p><strong>澎湃新闻：</strong>身边同龄的亲戚朋友当时在做什么？会有落差吗？</p>
+  <p><strong>小莉：</strong>当时，我身边的亲戚朋友包括我哥都还在读书，感觉他们挺幸福的。我已经习惯这种落差感了。</p>
+  <p>在厂里工作时间长了，感觉自己像个机器人，我不喜欢这份工作，但也是为了赚钱。一个年轻姑娘，你不上班，你能干什么呢？</p>
+  <p><strong>澎湃新闻：</strong>除了在厂里打工，后来做过其他工作吗？</p>
+  <p><strong>小莉：</strong>打工几年之后，我就有了开店的想法，想当老板。我和奶奶说，我想开个服装店或者其他什么小店，做生意。我奶奶很惊讶，她说：“你还想开店？你胆子真大！”我坚持说，我一定要开店。</p>
+  <p>19岁时，我开了一家花店，在苏州的郊区。我包花的样式都很新颖，拿花材也舍得花钱，质量比较好。我也很勤快，喜欢去市场上跑动，去饭店、KTV推销。</p>
+  <p>钱主要是这个时候攒下的，当时开花店利润挺高，遇上情人节能赚2万块，当然也非常忙非常累。其实，开花店还挺浪漫的，但看店也麻烦，你人走不开，也别想出去玩。我开了两年，天天头昏眼花，慢慢也疲倦了。之后又陆续换了工作，卖螃蟹、做微商之类的，慢慢攒钱。</p>
+  <p><strong>澎湃新闻：</strong>买房时遇到过哪些阻力？</p>
+  <p><strong>小莉：</strong>主要是父母家人反对。我和他们说过一次这事儿，他们觉得我神经病，我就说，我不仅要开花店，我还要买个自己的房子。我妈说，你有点钱，还不如给我回家造房子。</p>
+  <p>他们觉得我始终是要嫁人的，找了老公之后都会有房子住的，现在买回去了也没有用。他们给我洗脑，我也给他们洗脑。我就说我凭什么不能买房？我有自己的房子挺好的，现在都已经是21世纪了，不是过去那一套（理论）了。</p>
+  <p>我真正买了房之后，他们反而觉得买得还不错，开始“真香”了。以前他们不欣赏我，现在觉得我挺有思想的。</p>
+  <p><strong>澎湃新闻：</strong>为什么一开始家人会阻止你？</p>
+  <p><strong>小莉：</strong>我生长于泰州某县级市，这里比较重男轻女。我父母都是普通农民，一开始在家里种田，后来就在厂里打工，家里没什么钱。我还有一个哥哥，相差三岁。</p>
+  <p>在我们这里，男孩会受到比较多关心，而家里对于女孩的期待就是，希望你赶快结婚嫁人。女孩嫁过去可以住男方的房子。</p>
+  <p>我记得小时候过年，家人给男孩20元红包，给我的就是5元钱。平时父母给零花钱，给我哥哥2元钱，我的话就是偶尔有5毛钱，不给的话就没有。因为没人管我，我从小就很独立，父母种田或者上班会把我锁家里，我就一个人睡觉，一个人玩耍，一个人做点吃的填饱肚子，我习惯了自己照顾自己。</p>
+  <p><strong>澎湃新闻：</strong>在没有家人支持的情况下，坚持的动力来自哪里？</p>
+  <p><strong>小莉：</strong>可能是因为小时候缺乏关心，缺乏安全感。我看到过一句话说：童年会影响人的一生，有的人用一生去治愈童年，有的人用童年去治愈一生。我也一样。</p>
+  <p>我从小就有赚钱的渴望，小时候没有零花钱，看到别人有零食吃就很羡慕，总想着挣钱给自己买东西，但那个时候还没有想过要买房子。出来打工后，总是希望自己快点成长起来，赚钱养活自己。后来又萌生了开店、买房的想法，这些都是一步一步进行的。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/07/post-668029-60e6db3ce4e7e." alt="img" /></p>
+  <div class="ts">
+19岁时，小莉开了自己的花店。
+  </div>
+  <p><strong>澎湃新闻：</strong>房子给你带来了哪些现实问题？</p>
+  <p><strong>小莉：</strong>经济方面的压力会比较大。买房前考虑过公寓，首付可能10万元不到，但真正了解下来其实不太好转手，产权问题也比较困扰，所以我最后还是决定买住房。</p>
+  <p>现在这套房面积120平米，8500元一平米，其实是超出我预期的，我觉得买个八九十平方的就够了，但我们这里楼盘几乎没有小户型。</p>
+  <p>现在，我每个月需要还3000元左右的贷款，压力很大。但我觉得这种压力又能让我更好地赚钱，更有安全感。手里如果没有钱，我心里会发慌。</p>
+  <p><strong>澎湃新闻：</strong>很多网友好奇，为何你在房子还是毛坯的状态就住了进来？</p>
+  <p><strong>小莉：</strong>因为没钱装修。至少要再<strong>等两年存够钱</strong>，我才能<strong>装修</strong>。</p>
+  <p>但我觉得毛坯房对我日常生活也没什么影响。这比以前的房子已经好多了。以前我们家住的是土房子，我也没有属于自己的房间。</p>
+  <p>比起出去社交，我更愿意待在家里，我不怎么喜欢跟别人接触，除非很好的朋友喊我出去。回家路上顺便买点小菜回来做一顿吃的，感觉很幸福。</p>
+  <p>我还记得，今天是我住进来的第19天，我每天都会记录在这里生活的日常。它是属于我自己的东西，是我自己的一席之地。房子里面的一把泥土，一个灰尘，每一平米，都是我辛辛苦苦挣来的，所以说我不嫌弃它。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/07/post-668029-60e6db3d048f4.png" alt="img" /></p>
+  <div class="ts">
+小莉在自己的毛坯房中铺上了网购的地毯。
+  </div>
+  <p><strong>澎湃新闻：</strong>有房后心理上发生了哪些转变？</p>
+  <p><strong>小莉：</strong>买房给我带来的，应该是一种底气，一条后路。</p>
+  <p>我谈过几次恋爱，但经历比较坎坷，也被劈腿过，对人不信任。随着自己年龄逐渐增长，身边同学朋友基本上都已经结婚，甚至离婚、二婚了。随之而来的，是婚姻中的一些可能存在的现实问题，我会考虑这些因素，无论结婚与否，至少自己有地方住。</p>
+  <p>我想，就算我结婚了，如果我和丈夫吵架，或在婆家受欺负不开心，别人叫我滚，我至少有一个去处，不一定非要回娘家。</p>
+  <p><strong>我并不想通过结婚去提高自己的生活质量</strong>，但是自己买个房子的话，无论什么时候房子都不会离开自己，会陪自己一辈子，住在自己的家里，住在属于自己的世界里，我就非常踏实。</p>
+  <p><strong>澎湃新闻：</strong>对于以后的生活有何期许?</p>
+  <p><strong>小莉：</strong>我现在就想把房贷还清，房子装不装修倒无所谓。<strong>房贷还清的话，人就会更轻松一点</strong>。谈对象这块还是随缘，<strong>希望找到喜欢的人</strong>。以前家里催我结婚，我就会和他们讲道理，后来就没那么催了。</p>
+  <p>小时候因为没得到足够的关心，对家人有点埋怨，但现在已经无所谓了。我是脾气来得快也去得快的人，不怎么记仇。但对于那么早就辍学的事情，我还是有点后悔的。我表达能力有点欠缺，如果读书更多也许会好点。<strong>我很羡慕能上大学的人。</strong></p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2021-07-08</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-08/NGOCN-%E5%BC%A6%E5%AD%90%E5%BE%AE%E5%8D%9A%E8%A2%AB%E6%96%B0%E6%B5%AA%E5%AE%98%E6%96%B9%E7%A6%81%E8%A8%80%E4%B8%80%E5%B9%B4-%E5%B7%B2%E7%AC%AC%E4%BA%8C%E6%AC%A1%E8%A2%AB%E7%A6%81%E8%A8%80">
+          NGOCN｜弦子微博被新浪官方禁言一年，已第二次被禁言
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-08</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-08/%E5%B0%8F%E6%99%96%E6%9C%89%E6%80%9D-%E6%9D%8E%E6%89%BF%E9%B9%8F%E6%8A%8A%E9%AB%98%E6%99%93%E6%9D%BE%E7%9A%84%E7%9A%AE%E7%BB%99%E6%89%92%E4%BA%86">
+          小晖有思｜李承鹏把高晓松的皮给扒了
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-07</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-07/%E7%BD%91%E7%BB%9C%E6%B0%91%E8%AE%AE-%E4%BA%BA%E7%A4%BE%E9%83%A8-%E5%B0%86%E9%80%90%E6%AD%A5%E6%8F%90%E9%AB%98%E9%A2%86%E5%8F%96%E5%9F%BA%E6%9C%AC%E5%85%BB%E8%80%81%E9%87%91%E6%9C%80%E4%BD%8E%E7%BC%B4%E8%B4%B9%E5%B9%B4%E9%99%90-%E7%BD%91%E5%8F%8B-%E6%80%95%E6%98%AF%E6%B4%BB%E4%B8%8D%E5%88%B0%E9%A2%86%E5%85%BB%E8%80%81%E9%87%91%E9%82%A3%E5%A4%A9">
+          【网络民议】人社部：将逐步提高领取基本养老金最低缴费年限  网友：怕是活不到领养老金那天
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-07</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-07/%E5%90%8C%E4%BC%B4EDU-%E8%AF%B7%E8%AE%B0%E5%BD%95%E4%B8%80%E5%88%87">
+          同伴EDU：请记录一切
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-08/%E5%88%86%E6%9E%90-%E7%BE%8E%E5%80%BA%E6%94%B6%E7%9B%8A%E7%8E%87%E4%B8%8B%E9%99%8D%E6%88%96%E5%B0%86%E6%95%B2%E5%93%8D-%E5%86%8D%E9%80%9A%E8%83%80-%E8%82%A1%E7%A5%A8%E4%BA%A4%E6%98%93%E7%9A%84%E4%B8%A7%E9%92%9F">
+            前一篇：分析：美债收益率下降或将敲响“再通胀”股票交易的丧钟
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-08/%E4%B8%89%E7%B4%9A%E8%AD%A6%E6%88%92%E5%BB%B6%E9%95%B7%E5%BE%AE%E8%A7%A3%E5%B0%81-KTV%E9%85%92%E5%90%A7%E6%B8%B8%E6%B3%B3%E6%B1%A0%E7%AD%89%E4%BB%8D%E9%A0%88%E9%97%9C%E9%96%89">
+            后一篇：三級警戒延長微解封 KTV酒吧游泳池等仍須關閉
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-07-08/%E5%88%86%E6%9E%90-%E7%BE%8E%E5%80%BA%E6%94%B6%E7%9B%8A%E7%8E%87%E4%B8%8B%E9%99%8D%E6%88%96%E5%B0%86%E6%95%B2%E5%93%8D-%E5%86%8D%E9%80%9A%E8%83%80-%E8%82%A1%E7%A5%A8%E4%BA%A4%E6%98%93%E7%9A%84%E4%B8%A7%E9%92%9F'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-07-08/%E4%B8%89%E7%B4%9A%E8%AD%A6%E6%88%92%E5%BB%B6%E9%95%B7%E5%BE%AE%E8%A7%A3%E5%B0%81-KTV%E9%85%92%E5%90%A7%E6%B8%B8%E6%B3%B3%E6%B1%A0%E7%AD%89%E4%BB%8D%E9%A0%88%E9%97%9C%E9%96%89'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-07-08/%E5%B0%8F%E6%99%96%E6%9C%89%E6%80%9D-%E6%9D%8E%E6%89%BF%E9%B9%8F%E6%8A%8A%E9%AB%98%E6%99%93%E6%9D%BE%E7%9A%84%E7%9A%AE%E7%BB%99%E6%89%92%E4%BA%86'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-07-07/%E7%BD%91%E7%BB%9C%E6%B0%91%E8%AE%AE-%E4%BA%BA%E7%A4%BE%E9%83%A8-%E5%B0%86%E9%80%90%E6%AD%A5%E6%8F%90%E9%AB%98%E9%A2%86%E5%8F%96%E5%9F%BA%E6%9C%AC%E5%85%BB%E8%80%81%E9%87%91%E6%9C%80%E4%BD%8E%E7%BC%B4%E8%B4%B9%E5%B9%B4%E9%99%90-%E7%BD%91%E5%8F%8B-%E6%80%95%E6%98%AF%E6%B4%BB%E4%B8%8D%E5%88%B0%E9%A2%86%E5%85%BB%E8%80%81%E9%87%91%E9%82%A3%E5%A4%A9'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-07-08/%E5%88%86%E6%9E%90-%E7%BE%8E%E5%80%BA%E6%94%B6%E7%9B%8A%E7%8E%87%E4%B8%8B%E9%99%8D%E6%88%96%E5%B0%86%E6%95%B2%E5%93%8D-%E5%86%8D%E9%80%9A%E8%83%80-%E8%82%A1%E7%A5%A8%E4%BA%A4%E6%98%93%E7%9A%84%E4%B8%A7%E9%92%9F">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-07-08/%E4%B8%89%E7%B4%9A%E8%AD%A6%E6%88%92%E5%BB%B6%E9%95%B7%E5%BE%AE%E8%A7%A3%E5%B0%81-KTV%E9%85%92%E5%90%A7%E6%B8%B8%E6%B3%B3%E6%B1%A0%E7%AD%89%E4%BB%8D%E9%A0%88%E9%97%9C%E9%96%89">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-07-08/%E5%B0%8F%E6%99%96%E6%9C%89%E6%80%9D-%E6%9D%8E%E6%89%BF%E9%B9%8F%E6%8A%8A%E9%AB%98%E6%99%93%E6%9D%BE%E7%9A%84%E7%9A%AE%E7%BB%99%E6%89%92%E4%BA%86">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-07-07/%E7%BD%91%E7%BB%9C%E6%B0%91%E8%AE%AE-%E4%BA%BA%E7%A4%BE%E9%83%A8-%E5%B0%86%E9%80%90%E6%AD%A5%E6%8F%90%E9%AB%98%E9%A2%86%E5%8F%96%E5%9F%BA%E6%9C%AC%E5%85%BB%E8%80%81%E9%87%91%E6%9C%80%E4%BD%8E%E7%BC%B4%E8%B4%B9%E5%B9%B4%E9%99%90-%E7%BD%91%E5%8F%8B-%E6%80%95%E6%98%AF%E6%B4%BB%E4%B8%8D%E5%88%B0%E9%A2%86%E5%85%BB%E8%80%81%E9%87%91%E9%82%A3%E5%A4%A9">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

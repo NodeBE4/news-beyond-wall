@@ -1,0 +1,2230 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>[Chinese] 中国虚假信息驱动下的外籍网红 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+[Chinese] 中国虚假信息驱动下的外籍网红
+——
+" />
+    <meta property="og:description" content="
+[Chinese] 中国虚假信息驱动下的外籍网红
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="[Chinese] 中国虚假信息驱动下的外籍网红" />
+    <meta property="twitter:title" content="[Chinese] 中国虚假信息驱动下的外籍网红" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fchinese-news-57794938&t=%5BChinese%5D+%E4%B8%AD%E5%9B%BD%E8%99%9A%E5%81%87%E4%BF%A1%E6%81%AF%E9%A9%B1%E5%8A%A8%E4%B8%8B%E7%9A%84%E5%A4%96%E7%B1%8D%E7%BD%91%E7%BA%A2" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fchinese-news-57794938&t=%5BChinese%5D+%E4%B8%AD%E5%9B%BD%E8%99%9A%E5%81%87%E4%BF%A1%E6%81%AF%E9%A9%B1%E5%8A%A8%E4%B8%8B%E7%9A%84%E5%A4%96%E7%B1%8D%E7%BD%91%E7%BA%A2&d=2021-07-11&e=
+[Chinese] 中国虚假信息驱动下的外籍网红
+——
+
+
+  
+    中国虚假信息驱动下的外籍网红
+  
+  
+    
+      
+        凯瑞·艾伦（Kerry Allen）和索菲·威廉姆斯（Sophie Williams）
+        BBC新闻
+      
+    
+  
+  
+    1 小时前
+  
+  
+    
+      
+        
+          
+            图像来源，CGTN
+          
+        
+        
+          
+图像加注文字，            李·巴雷特最近在CGTN的新疆视频中被列为特约撰稿人。
+          
+        
+      
+    
+  
+  
+    一些外籍视频博主在诸如新疆等极具争议的话题上谴责他们所称的对中国的负面报道，这在You..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fchinese-news-57794938" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.bbc.com/zhongwen/simp/chinese-news-57794938" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.bbc.com/zhongwen/simp/chinese-news-57794938&text=[Chinese] 中国虚假信息驱动下的外籍网红&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.bbc.com/zhongwen/simp/chinese-news-57794938&title=[Chinese] 中国虚假信息驱动下的外籍网红" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.bbc.com/zhongwen/simp/chinese-news-57794938&title=[Chinese] 中国虚假信息驱动下的外籍网红" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=[Chinese] 中国虚假信息驱动下的外籍网红&body=
+[Chinese] 中国虚假信息驱动下的外籍网红
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.bbc.com/zhongwen/simp/chinese-news-57794938" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.bbc.com/zhongwen/simp/chinese-news-57794938&title=[Chinese] 中国虚假信息驱动下的外籍网红&caption=
+[Chinese] 中国虚假信息驱动下的外籍网红
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=[Chinese] 中国虚假信息驱动下的外籍网红&url=https://www.bbc.com/zhongwen/simp/chinese-news-57794938" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>[Chinese] 中国虚假信息驱动下的外籍网红</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-07-11
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#BBC ">
+          BBC
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.bbc.com/zhongwen/simp/chinese-news-57794938"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="BBC的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#BBC 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fchinese-news-57794938&t=%5BChinese%5D+%E4%B8%AD%E5%9B%BD%E8%99%9A%E5%81%87%E4%BF%A1%E6%81%AF%E9%A9%B1%E5%8A%A8%E4%B8%8B%E7%9A%84%E5%A4%96%E7%B1%8D%E7%BD%91%E7%BA%A2&d=2021-07-11&e=
+[Chinese] 中国虚假信息驱动下的外籍网红
+——
+
+
+  
+    中国虚假信息驱动下的外籍网红
+  
+  
+    
+      
+        凯瑞·艾伦（Kerry Allen）和索菲·威廉姆斯（Sophie Williams）
+        BBC新闻
+      
+    
+  
+  
+    1 小时前
+  
+  
+    
+      
+        
+          
+            图像来源，CGTN
+          
+        
+        
+          
+图像加注文字，            李·巴雷特最近在CGTN的新疆视频中被列为特约撰稿人。
+          
+        
+      
+    
+  
+  
+    一些外籍视频博主在诸如新疆等极具争议的话题上谴责他们所称的对中国的负面报道，这在You..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fchinese-news-57794938" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1625996291000-->
+<p><a href="https://www.bbc.com/zhongwen/simp/chinese-news-57794938">[Chinese] 中国虚假信息驱动下的外籍网红</a>
+——</p>
+
+<div>
+  <div dir="ltr" class="bbc-1151pbn e57qer20">
+    <h1 id="content" tabindex="-1" class="bbc-6yjyco e1yj3cbb0">中国虚假信息驱动下的外籍网红</h1>
+  </div>
+  <div dir="ltr" class="e1j2237y5 bbc-q4ibpr e57qer20">
+    <div class="bbc-1atl7vu e1c9i7u14">
+      <ul role="list" class="bbc-1oyneen e1c9i7u12">
+        <li role="listitem" class="bbc-1a3w4ok e1c9i7u11">凯瑞·艾伦（Kerry Allen）和索菲·威廉姆斯（Sophie Williams）</li>
+        <li role="listitem" class="bbc-1p92jtu e1c9i7u10">BBC新闻</li>
+      </ul>
+    </div>
+  </div>
+  <div dir="ltr" class="e1j2237y6 bbc-q4ibpr e57qer20">
+    <time datetime="2021-07-11" class="bbc-529aew e4zesg50">1 小时前</time>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-1k5hvrj e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/17E84/production/_119342979_cgtn2.png 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/17E84/production/_119342979_cgtn2.png 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/17E84/production/_119342979_cgtn2.png 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/17E84/production/_119342979_cgtn2.png 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/17E84/production/_119342979_cgtn2.png 800w" alt="李·巴雷特最近在CGTN的新疆视频中被列为特约撰稿人。" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/17E84/production/_119342979_cgtn2.png" width="976" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />            <p role="text" class="bbc-1s1cxbv etq3yw90"><span class="bbc-1gnhmg2 e1yt7oin0">图像来源，</span><span lang="en-GB">CGTN</span></p>
+          </div>
+        </div>
+        <div dir="ltr" class="bbc-3edg7g e57qer20">
+          <figcaption dir="ltr" class="bbc-l9ltpr eede9f50">
+<span class="bbc-1gnhmg2 e1yt7oin0">图像加注文字，</span>            <p>李·巴雷特最近在CGTN的新疆视频中被列为特约撰稿人。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70"><strong>一些外籍视频博主在诸如新疆等极具争议的话题上谴责他们所称的对中国的负面报道，这在YouTube等平台上吸引了大量的订阅者。</strong></p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">近年来，“短视频博主”越来越多地把自己标榜为中国爱好者，以传播中共的虚假信息。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">YouTube将中国环球电视网（CGTN）等中国官方媒体标识为政府资助。但是，当涉及到类似叙述的个人时，几乎没有监管。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">一些视频博主被质疑与国有媒体合作，向世界传播有关中国的叙事。但目前尚不清楚是什么激励了他们这样做，也不清楚这种策略的效果有多大。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <h2 id="谁是视频博主-" tabindex="-1" class="bbc-6w9yzd e14hemmw0">谁是视频博主？ </h2>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">最近，外籍视频博主的频道上出现一些一致性的视频，它们都反驳独立媒体对中国新疆维吾尔族人遭遇的调查报道。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">关于新疆地区大规模系统性侵犯人权的指控有据可查。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">这些视频博主包括英国侨民巴里·琼斯（Barrie Jones,）、杰森·莱特福特（Jason Lightfoot）和父子团队李·巴雷特和奥利·巴雷特（Lee and Oli Barrett），他们利用自己的平台评论西方所谓的“谎言”和中国政府的政策。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">他们随后出现在中国国家电视台CGTN的视频中。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <div data-e2e="instagram-embed-https://www.instagram.com/p/CAmV1E0nO4t/?utm_source=ig_embed&amp;ig_rid=86d48231-8dda-4d49-9826-325fbfef5450" class="bbc-ancc9e e1rm9fh20">
+      <div class="lazyload-wrapper ">
+        <div class="lazyload-placeholder"></div>
+      </div>
+    </div>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">这些视频博主此前的个人频道主要讲述在中国的日常生活。但最近，一些视频变得明显带有政治色彩；他们坚定捍卫中国在新冠肺炎、香港和新疆等问题上的言论。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">这些Youtube用户中有许多人拥有数十万订阅者，他们的视频得到民族主义用户的大力推广和评论。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <h2 id="从来没有拿过钱去旅行-" tabindex="-1" class="bbc-6w9yzd e14hemmw0">“从来没有拿过钱去旅行” </h2>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">视频博客在中国很流行，但中国视频平台有严格的条款和条件，限制用户发布什么内容。成千上万的网络版主也会查看内容。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">因此，许多中国视频博主最后会发布在家中拍摄的材料。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">中国1982年的宪法保障言论自由和新闻自由。但中国的视频博主和公民记者经常因为制作被当局视为不利的视频而遭到拘留或逮捕。2020年12月，武汉新冠肺炎疫情期间，公民记者张展因发布多篇微博被判入狱四年。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">但是，像巴雷特父子和杰森•莱特福特这样的外籍视频博主似乎处于相对优越的地位。他们有重要的接触受众的渠道，在某些情况下还受到中国地方官员或官方媒体的帮助。</p>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-gnjn6b e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/0B2E/production/_119326820_barrett-grab-3.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/0B2E/production/_119326820_barrett-grab-3.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/0B2E/production/_119326820_barrett-grab-3.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/0B2E/production/_119326820_barrett-grab-3.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/0B2E/production/_119326820_barrett-grab-3.jpg 800w" alt="李·巴雷特在最近的新疆视频中被列为CGTN网站的特约攥稿人。" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/0B2E/production/_119326820_barrett-grab-3.jpg" width="976" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="bbc-3edg7g e57qer20">
+          <figcaption dir="ltr" class="bbc-l9ltpr eede9f50">
+<span class="bbc-1gnhmg2 e1yt7oin0">图像加注文字，</span>            <p>李·巴雷特在最近的新疆视频中被列为CGTN网站的特约攥稿人。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">巴雷特父子参加了多个政府赞助的活动。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">在他的一段视频中，李·巴雷特评论道，国有的中国国际广播电台（China Radio International）等机构将“支付交通、机票和住宿等费用”，以换取他和他的儿子在官方媒体上对他们的旅行发表评论。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">巴雷特父子在回复BBC的电子邮件中，极力否认他们代表中国政府发布虚假信息，也否认他们为内容付费。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">最近，李·巴雷特在CGTN网站上有关新疆的视频中被列在该网站“全球特约撰稿人”视频平台上，也就是说，他为该电视台做报道，但不是电视台的员工。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">杰森也在特约撰稿人名单上。该电视台称他是批判西方媒体“歪曲报道”的视频博主。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">莱特福特最近在访问海南期间，与许多CGTN记者一起出现在多个视频中。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">CGTN在其中一段视频中表示，莱特福特“感谢CGTN给了他探索海南的经验”，CGTN员工和外籍视频博主“喜欢团队合作，制作直播和视频”。</p>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-gnjn6b e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/49EC/production/_119342981_5f681dfd-b7bf-4382-9036-6b0a0bd09095.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/49EC/production/_119342981_5f681dfd-b7bf-4382-9036-6b0a0bd09095.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/49EC/production/_119342981_5f681dfd-b7bf-4382-9036-6b0a0bd09095.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/49EC/production/_119342981_5f681dfd-b7bf-4382-9036-6b0a0bd09095.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/49EC/production/_119342981_5f681dfd-b7bf-4382-9036-6b0a0bd09095.jpg 800w" alt="杰森·莱特福特（Jason Lightfoot）" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/49EC/production/_119342981_5f681dfd-b7bf-4382-9036-6b0a0bd09095.jpg" width="976" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="bbc-3edg7g e57qer20">
+          <figcaption dir="ltr" class="bbc-l9ltpr eede9f50">
+<span class="bbc-1gnhmg2 e1yt7oin0">图像加注文字，</span>            <p>CGTN把莱特福特说成是，一个批判"西方媒体"扭曲报道的视频博主。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">莱特福特没有回应BBC的采访请求。但他在一段视频中表示“除了我自己，没有任何人资助”，而且“从来没有人支付过旅行费用”。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">虽然YouTube没有给这些亲中国的视频博主贴上中国政府资助或支持的标签，但他们个人频道上的一些视频随后被上传到政府媒体账户，并得到政府媒体账户的支持。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">巴里的一段视频不仅被上传到CGTN的YouTube账户上，中国外交部也在每日政府新闻发布会上使用了这段视频。</p>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-1k5hvrj e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/70FC/production/_119342982_273b7200-0e3d-4dd0-9e22-f72925b3a3ee.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/70FC/production/_119342982_273b7200-0e3d-4dd0-9e22-f72925b3a3ee.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/70FC/production/_119342982_273b7200-0e3d-4dd0-9e22-f72925b3a3ee.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/70FC/production/_119342982_273b7200-0e3d-4dd0-9e22-f72925b3a3ee.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/70FC/production/_119342982_273b7200-0e3d-4dd0-9e22-f72925b3a3ee.jpg 800w" alt="巴里·琼斯批评西方对新疆报道的视频曾在中国外交部的例行记者会上播放。" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/70FC/production/_119342982_273b7200-0e3d-4dd0-9e22-f72925b3a3ee.jpg" width="976" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="bbc-3edg7g e57qer20">
+          <figcaption dir="ltr" class="bbc-l9ltpr eede9f50">
+<span class="bbc-1gnhmg2 e1yt7oin0">图像加注文字，</span>            <p>巴里·琼斯批评西方对新疆报道的视频曾在中国外交部的例行记者会上播放。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">这段视频名为“一些西方媒体如何扭曲关于新疆的事实？”，其中琼斯声称自己曾“为英国一家报纸工作了六年……一家英国发行量最大的日报”。一些官方媒体出版物称琼斯曾是一名英国记者，但BBC没有找到支持这一说法的证据，他的频道充斥着语法和标点错误。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">当被问及他的新闻工作经历时，琼斯告诉BBC，他“在哪里、什么时候”当记者“与你无关”。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">他坚称自己曾为一家报纸工作，但拒绝提供任何进一步信息。他还否认受到“任何形式的报酬、提示或胁迫”。</p>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-ffv2g4 e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/13509/production/_119331197_zhao-lijian-tweet.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/13509/production/_119331197_zhao-lijian-tweet.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/13509/production/_119331197_zhao-lijian-tweet.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/13509/production/_119331197_zhao-lijian-tweet.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/13509/production/_119331197_zhao-lijian-tweet.jpg 800w" alt="中国外交部官员利用巴里·琼斯的视频来阐述其政治观点。" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/13509/production/_119331197_zhao-lijian-tweet.jpg" width="976" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="bbc-3edg7g e57qer20">
+          <figcaption dir="ltr" class="bbc-l9ltpr eede9f50">
+<span class="bbc-1gnhmg2 e1yt7oin0">图像加注文字，</span>            <p>中国外交部官员利用巴里·琼斯的视频来阐述其政治观点。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">目前尚不清楚中国外交部为何在新闻发布会上将他列为可信的声音。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">琼斯也经常宣扬阴谋论，但否认自己的视频变得更加政治化，并称，有关他参与传播虚假信息活动的说法是“可笑的”。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">“中国和中国政府都不曾付钱让我做事。事实是，要是他们提供的话，我会接受！”</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <h2 id="中国对外国报道进行反击-" tabindex="-1" class="bbc-6w9yzd e14hemmw0">中国对外国报道进行“反击” </h2>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">似乎有越来越多的外国人被拉进了中国官方媒体的宣传活动。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">CGTN在其网站上表示，目前它在全球拥有700多名“全球特约撰稿人”，为他们提供“国际知名度”和“奖金”。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">该公司的目标是进一步扩大网红群体，新发起了“媒体挑战者”活动，对参与记者、播客、主持人和网红给予高达1万美元（约7190英镑）的现金奖励。杰森和巴雷特父子出现在这次活动的宣传材料中。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">BBC联系CGTN就本文置评，还没有得到回应。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">多名不愿透露姓名的CGTN消息人士对BBC表示，目前该机构内部注重利用“网红和有影响力人士”来“反击”外国媒体的报道。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">其中包括成立一个新的“网红”部门，BBC被告知，其团队“联系外国人使用他们的视频或合作制作视频”。最近一些部门接到指示，要“派外国人到新疆代表我们”。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">以色列视频博主加尔-奥尔（Raz Gal-Or）张贴了他最近访问该地区的视频。加尔-奥尔声称，他被邀请到新疆居民的家中和农场，并在一段视频中表示，他能够“随机采访新疆当地人”。但陪同他旅行的似乎是CGTN摄制组，该摄制组后来在YouTube频道上分享了他的视频片段。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">这与BBC等媒体在新疆自由报道时所面临的监视、骚扰和阻挠形成鲜明对比。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">加尔-奥尔没有回应BBC的采访请求。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <h2 id="几乎都是关于新疆的内容-" tabindex="-1" class="bbc-6w9yzd e14hemmw0">“几乎都是关于新疆的内容” </h2>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">尽管YouTube在中国被官方屏蔽，但所有这些能够将视频变现的知名视频博主都迅速获得数万次点击量，以及来自高度活跃的民族主义评论者的数百条评论。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">来自“互联网2.0”的澳大利亚网络安全研究员罗伯特·波特（Robert Potter）说，尽管一些视频吸引了真实的观点和支持，但有证据表明，虚假机器人账号在大力推广某些账号。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">他解释：“YouTube做了一些事情来阻止某人反复打开一个视频，并将其播放一千次。”“ 如果这是能够变现的视频，那么这对他们来说就是资金。”</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">在谈到巴雷特父子的YouTube主页时，他表示：“你可以看到许多民族主义者转发（视频），还有一些虚假新闻网站在夸大它们的内容。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">“这是‘机器人欺诈’，也就是（用户）在虚假新闻网站上粘贴视频，然后点击该视频，而不是点击YouTube视频的重播。他们试图欺骗YouTube，把它当作合法观点。”</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">他在巴里的视频中观察到类似活动，“有很多假新闻页面链接到他在新疆的视频。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">“至于对他视频有评论的用户，很多最近都加入了YouTube。同一个人在几乎同一时间创建了明显是欺诈的账户，一次又一次地发表评论。”</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">这些用户的目标是什么类型的内容？</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">“被吹捧的视频有关新疆。几乎都是关于新疆的内容。”波特先生说。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">传统上，这些评论者被称为中国的“5毛”，因为有报道称，他们发表亲政府的信息会得到少量报酬。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">这支“键盘大军”一直以来都很活跃，外籍人士视频上的大量信息让人怀疑，他们绕过中国的防火墙来扩大这些视频博主的影响力，并操纵他们页面上的评论。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">中国“5毛”的运营规模如此之大，理论上这类视频可以有机获得数千次点击量。但中国近年来出现过媒体共同行动的现象。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">在2019年香港抗议期间，Twitter、Facebook和YouTube表示，他们目睹了中国政府在其渠道上共同传播虚假信息的企图。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">谷歌表示，有人试图“掩盖这些账户的来源”，各大平台迅速采取行动将其删除。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">新闻网站Sixth Tone也在5月份指出，中国社交媒体上出现越来越多“点击农场”，以提升当地网红的影响力。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">2020年，中国广告协会禁止企业利用点击场获取商业利益。但夸大宣传的行动是允许的。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <h2 id="BBC的反华偏见-" tabindex="-1" class="bbc-6w9yzd e14hemmw0">“BBC的反华偏见” </h2>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">目前还不清楚是什么驱使了这些外国博主，是他们相信中国官方的信息，还是受到当地名声和财富的诱惑。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">BBC向李·巴雷特和巴里提出这个问题，并询问为何他们的视频变得更加热爱中国，但他们回避这类问题。当被询问向本文置评时，巴雷特父子在Twitter上发文称，这是“反华的BBC”的一篇“热门文章”。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">但是，当国际上对中国对待维吾尔族穆斯林及其他问题的批评越来越多之时，中国政府媒体与这些外籍视频博主合作的动机似乎足够清楚。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">CGTN正寻求像俄罗斯电视台RT一样，通过寻找能帮助向海外兜售政府信息的外籍人士，以及帮助推广政府信息的键盘大军，来反击批评。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">YouTube给这些媒体平台贴上了国家附属的标签。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">YouTube的一位发言人表示，给政府视频贴标签的目的是“帮助观众更好地获得信息，以便对自己的新闻消费做出决定”。该公司表示，所有上传到YouTube上的视频都必须遵守其社区指导方针，并根据具体情况逐一审查被标记的视频。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">YouTube表示，BBC发送给它的视频没有违反其准则。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">然而，许多用户很难发现视频博主与国家附属机构有关联，因为像YouTube这样的平台并没有将这些人标记为与政府有关联。</p>
+  </div>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#BBC 的其它文章</h4>
+    
+      <li>
+        <time>2021-07-11</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-11/Science-%E4%B8%AD%E5%9B%BD%E5%A4%AA%E7%A9%BA%E6%96%87%E5%8C%96-%E8%8B%B1%E5%9B%BD%E5%AD%A6%E8%80%85%E8%A7%A3%E8%AF%BB%E5%AF%93%E6%84%8F%E5%92%8C%E5%BD%B1%E5%93%8D">
+          [Science] 中国太空文化：英国学者解读寓意和影响
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-11</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-11/Uk-%E8%8B%B1%E5%9B%BD%E6%97%B6%E5%B0%9A%E5%90%8D%E4%BA%BA%E8%B0%88-%E6%BC%82%E7%BB%BF-%E7%8E%AF%E4%BF%9D%E6%97%B6%E8%A3%85%E6%88%96%E8%AE%B8%E6%B0%B8%E8%BF%9C%E6%98%AF-%E4%B9%8C%E6%89%98%E9%82%A6">
+          [Uk] 英国时尚名人谈“漂绿”：环保时装或许永远是“乌托邦”
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-10</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-10/Sport-%E7%BE%8E%E5%9B%BD%E5%8A%A0%E6%8B%BF%E5%A4%A7%E9%AB%98%E6%B8%A9-%E7%83%AD%E6%AD%BB%E4%BA%BA%E7%9A%84%E5%8C%97%E7%BE%8E%E7%83%AD%E7%9B%96%E5%A4%A9%E6%B0%94%E7%BB%99%E6%88%91%E4%BB%AC%E4%BB%80%E4%B9%88%E8%AD%A6%E8%AE%AF">
+          [Sport] 美国加拿大高温：热死人的北美热盖天气给我们什么警讯
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-10</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-10/Fooc-%E7%89%B9%E5%8A%A1007%E8%A9%B9%E5%A3%AB%E9%82%A6%E7%9A%84%E6%B3%95%E5%9B%BD%E8%B6%B3%E8%BF%B9">
+          [Fooc] 特务007詹士邦的法国足迹
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-11/%E5%B1%B1%E8%A5%BF%E5%9B%BD%E4%BF%9D%E6%80%BB%E9%98%9F%E9%95%BF%E6%9D%8E%E6%9F%8F%E8%A2%AB%E6%9F%A5-%E6%9B%BE%E6%98%AF%E4%B8%A4%E8%90%BD%E9%A9%AC%E8%80%81%E8%99%8E%E9%83%A8%E4%B8%8B">
+            前一篇：山西国保总队长李柏被查 曾是两落马老虎部下
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-11/%E6%8E%A2%E7%B4%A2%E6%97%B6%E5%88%86-%E4%B8%AD%E7%BE%8E%E9%A9%B1%E9%80%90%E8%88%B0%E5%AF%B9%E6%AF%94-055vs%E4%BC%AF%E5%85%8B3">
+            后一篇：【探索时分】中美驱逐舰对比：055vs伯克3
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-07-11/%E5%B1%B1%E8%A5%BF%E5%9B%BD%E4%BF%9D%E6%80%BB%E9%98%9F%E9%95%BF%E6%9D%8E%E6%9F%8F%E8%A2%AB%E6%9F%A5-%E6%9B%BE%E6%98%AF%E4%B8%A4%E8%90%BD%E9%A9%AC%E8%80%81%E8%99%8E%E9%83%A8%E4%B8%8B'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-07-11/%E6%8E%A2%E7%B4%A2%E6%97%B6%E5%88%86-%E4%B8%AD%E7%BE%8E%E9%A9%B1%E9%80%90%E8%88%B0%E5%AF%B9%E6%AF%94-055vs%E4%BC%AF%E5%85%8B3'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-07-11/Uk-%E8%8B%B1%E5%9B%BD%E6%97%B6%E5%B0%9A%E5%90%8D%E4%BA%BA%E8%B0%88-%E6%BC%82%E7%BB%BF-%E7%8E%AF%E4%BF%9D%E6%97%B6%E8%A3%85%E6%88%96%E8%AE%B8%E6%B0%B8%E8%BF%9C%E6%98%AF-%E4%B9%8C%E6%89%98%E9%82%A6'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-07-10/Sport-%E7%BE%8E%E5%9B%BD%E5%8A%A0%E6%8B%BF%E5%A4%A7%E9%AB%98%E6%B8%A9-%E7%83%AD%E6%AD%BB%E4%BA%BA%E7%9A%84%E5%8C%97%E7%BE%8E%E7%83%AD%E7%9B%96%E5%A4%A9%E6%B0%94%E7%BB%99%E6%88%91%E4%BB%AC%E4%BB%80%E4%B9%88%E8%AD%A6%E8%AE%AF'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-07-11/%E5%B1%B1%E8%A5%BF%E5%9B%BD%E4%BF%9D%E6%80%BB%E9%98%9F%E9%95%BF%E6%9D%8E%E6%9F%8F%E8%A2%AB%E6%9F%A5-%E6%9B%BE%E6%98%AF%E4%B8%A4%E8%90%BD%E9%A9%AC%E8%80%81%E8%99%8E%E9%83%A8%E4%B8%8B">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-07-11/%E6%8E%A2%E7%B4%A2%E6%97%B6%E5%88%86-%E4%B8%AD%E7%BE%8E%E9%A9%B1%E9%80%90%E8%88%B0%E5%AF%B9%E6%AF%94-055vs%E4%BC%AF%E5%85%8B3">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<BBC>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-07-11/Uk-%E8%8B%B1%E5%9B%BD%E6%97%B6%E5%B0%9A%E5%90%8D%E4%BA%BA%E8%B0%88-%E6%BC%82%E7%BB%BF-%E7%8E%AF%E4%BF%9D%E6%97%B6%E8%A3%85%E6%88%96%E8%AE%B8%E6%B0%B8%E8%BF%9C%E6%98%AF-%E4%B9%8C%E6%89%98%E9%82%A6">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<BBC>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-07-10/Sport-%E7%BE%8E%E5%9B%BD%E5%8A%A0%E6%8B%BF%E5%A4%A7%E9%AB%98%E6%B8%A9-%E7%83%AD%E6%AD%BB%E4%BA%BA%E7%9A%84%E5%8C%97%E7%BE%8E%E7%83%AD%E7%9B%96%E5%A4%A9%E6%B0%94%E7%BB%99%E6%88%91%E4%BB%AC%E4%BB%80%E4%B9%88%E8%AD%A6%E8%AE%AF">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

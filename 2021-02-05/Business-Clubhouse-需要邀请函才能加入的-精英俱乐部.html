@@ -1,0 +1,2031 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>[Business] Clubhouse 需要邀请函才能加入的“精英俱乐部”？ – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+[Business] Clubhouse 需要邀请函才能加入的“精英俱乐部”？
+——
+" />
+    <meta property="og:description" content="
+[Business] Clubhouse 需要邀请函才能加入的“精英俱乐部”？
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="[Business] Clubhouse 需要邀请函才能加入的“精英俱乐部”？" />
+    <meta property="twitter:title" content="[Business] Clubhouse 需要邀请函才能加入的“精英俱乐部”？" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fbusiness-55949460&t=%5BBusiness%5D+Clubhouse+%E9%9C%80%E8%A6%81%E9%82%80%E8%AF%B7%E5%87%BD%E6%89%8D%E8%83%BD%E5%8A%A0%E5%85%A5%E7%9A%84%E2%80%9C%E7%B2%BE%E8%8B%B1%E4%BF%B1%E4%B9%90%E9%83%A8%E2%80%9D%EF%BC%9F" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fbusiness-55949460&t=%5BBusiness%5D+Clubhouse+%E9%9C%80%E8%A6%81%E9%82%80%E8%AF%B7%E5%87%BD%E6%89%8D%E8%83%BD%E5%8A%A0%E5%85%A5%E7%9A%84%E2%80%9C%E7%B2%BE%E8%8B%B1%E4%BF%B1%E4%B9%90%E9%83%A8%E2%80%9D%EF%BC%9F&d=2021-02-05&e=
+[Business] Clubhouse 需要邀请函才能加入的“精英俱乐部”？
+——
+
+
+  
+    Clubhouse 需要邀请函才能加入的“精英俱乐部”？
+  
+  
+    32 分钟前
+  
+  
+    
+      
+        
+          
+
+          
+        
+      
+    
+  
+  
+    你的手机上有多少个应用程式App? 突然爆红的Clubhouse 究竟是一款怎样的手机软件，如此受到青睐？
+  
+  
+    进入智能手机时代，我们手机上都已经安装了无数的应用程式App，集昔日多种用品于一身，除了打电话、发短信、还兼顾照相、闹钟、社交、天气预报、查看新闻、购物、付款、导航、订票……..等等功能。
+  
+  
+    “精英俱乐部”？
+  
+  
+    Clubhouse的字面意思，是俱乐部会所，是一个集语音聊..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fbusiness-55949460" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=http://www.bbc.com/zhongwen/simp/business-55949460" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=http://www.bbc.com/zhongwen/simp/business-55949460&text=[Business] Clubhouse 需要邀请函才能加入的“精英俱乐部”？&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=http://www.bbc.com/zhongwen/simp/business-55949460&title=[Business] Clubhouse 需要邀请函才能加入的“精英俱乐部”？" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://www.bbc.com/zhongwen/simp/business-55949460&title=[Business] Clubhouse 需要邀请函才能加入的“精英俱乐部”？" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=[Business] Clubhouse 需要邀请函才能加入的“精英俱乐部”？&body=
+[Business] Clubhouse 需要邀请函才能加入的“精英俱乐部”？
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=http://www.bbc.com/zhongwen/simp/business-55949460" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=http://www.bbc.com/zhongwen/simp/business-55949460&title=[Business] Clubhouse 需要邀请函才能加入的“精英俱乐部”？&caption=
+[Business] Clubhouse 需要邀请函才能加入的“精英俱乐部”？
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=[Business] Clubhouse 需要邀请函才能加入的“精英俱乐部”？&url=http://www.bbc.com/zhongwen/simp/business-55949460" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>[Business] Clubhouse 需要邀请函才能加入的“精英俱乐部”？</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-02-05
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#BBC ">
+          BBC
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="http://www.bbc.com/zhongwen/simp/business-55949460"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="BBC的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#BBC 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fbusiness-55949460&t=%5BBusiness%5D+Clubhouse+%E9%9C%80%E8%A6%81%E9%82%80%E8%AF%B7%E5%87%BD%E6%89%8D%E8%83%BD%E5%8A%A0%E5%85%A5%E7%9A%84%E2%80%9C%E7%B2%BE%E8%8B%B1%E4%BF%B1%E4%B9%90%E9%83%A8%E2%80%9D%EF%BC%9F&d=2021-02-05&e=
+[Business] Clubhouse 需要邀请函才能加入的“精英俱乐部”？
+——
+
+
+  
+    Clubhouse 需要邀请函才能加入的“精英俱乐部”？
+  
+  
+    32 分钟前
+  
+  
+    
+      
+        
+          
+
+          
+        
+      
+    
+  
+  
+    你的手机上有多少个应用程式App? 突然爆红的Clubhouse 究竟是一款怎样的手机软件，如此受到青睐？
+  
+  
+    进入智能手机时代，我们手机上都已经安装了无数的应用程式App，集昔日多种用品于一身，除了打电话、发短信、还兼顾照相、闹钟、社交、天气预报、查看新闻、购物、付款、导航、订票……..等等功能。
+  
+  
+    “精英俱乐部”？
+  
+  
+    Clubhouse的字面意思，是俱乐部会所，是一个集语音聊..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fbusiness-55949460" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1612532334000-->
+<p><a href="http://www.bbc.com/zhongwen/simp/business-55949460">[Business] Clubhouse 需要邀请函才能加入的“精英俱乐部”？</a>
+——</p>
+
+<div>
+  <div dir="ltr" class="css-e19l8g-GridComponent e57qer20">
+    <h1 id="content" tabindex="-1" class="css-1wfn6k3-Headline e1yj3cbb0">Clubhouse 需要邀请函才能加入的“精英俱乐部”？</h1>
+  </div>
+  <div dir="ltr" class="e1j2237y1 css-vf19ca-GridComponent e57qer20">
+    <time datetime="2021-02-05" class="css-pb6w51-StyledTimestamp e4zesg50">32 分钟前</time>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-oijotl-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/6DE5/production/_116833182_67290f45-e4d8-4f03-a643-40d279690740.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/6DE5/production/_116833182_67290f45-e4d8-4f03-a643-40d279690740.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/6DE5/production/_116833182_67290f45-e4d8-4f03-a643-40d279690740.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/6DE5/production/_116833182_67290f45-e4d8-4f03-a643-40d279690740.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/6DE5/production/_116833182_67290f45-e4d8-4f03-a643-40d279690740.jpg 800w" alt="手机社交软件" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/6DE5/production/_116833182_67290f45-e4d8-4f03-a643-40d279690740.jpg" width="976" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70"><strong>你的手机上有多少个应用程式App? 突然爆红的Clubhouse 究竟是一款怎样的手机软件，如此受到青睐？</strong></p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">进入智能手机时代，我们手机上都已经安装了无数的应用程式App，集昔日多种用品于一身，除了打电话、发短信、还兼顾照相、闹钟、社交、天气预报、查看新闻、购物、付款、导航、订票……..等等功能。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <h2 id="精英俱乐部" tabindex="-1" class="css-10tk4x-SubHeading e14hemmw1">“精英俱乐部”？</h2>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">Clubhouse的字面意思，是俱乐部会所，是一个集语音聊天、网上派对、网上座谈会、等等语音互动体验于一身的社交媒体软件。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">这款突然在中国以及西方爆红的手机软件，使用者可以收听各方人士就各种话题展开的谈话、采访、讨论。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">让这款软件受追捧的另一个原因是它并非来者不拒，而是像不对外开放的私密俱乐部一样，需要收到邀请才能加入。也就是说，它更像一个虚拟空间的精英俱乐部。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <div class="css-1fobf8d e1gggypo0">
+      <ul dir="ltr" role="list" class="css-4c9jmx-BulletedList e1drcs2w0">
+        <li role="listitem" class="css-chb3zw-BulletedListItem e1drcs2w1"><a href="https://www.bbc.com/zhongwen/simp/world-54209857" class="css-h9s9st-InlineLink e1cs6q200">美国下令封禁微信和TikTok，微信禁令周日生效</a></li>
+        <li role="listitem" class="css-chb3zw-BulletedListItem e1drcs2w1"><a href="https://www.bbc.com/zhongwen/simp/world-53726817" class="css-h9s9st-InlineLink e1cs6q200">美国微信禁令：投入海外中国人群体的一颗“震撼弹”</a></li>
+        <li role="listitem" class="css-chb3zw-BulletedListItem e1drcs2w1"><a href="https://www.bbc.com/zhongwen/simp/chinese-news-53925424" class="css-h9s9st-InlineLink e1cs6q200">中美开启科技脱钩：中国强调“本土创新”</a></li>
+      </ul>
+    </div>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">加入之后，使用者可以选择任何感兴趣的话题：时政、科技、读书、商务、健康、饮食、育儿、教育、养老……. 使用者提供的感兴趣话题越多，软件就能推荐更多的聊天室和个人供参考和加入。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">聊天室就像一个电话会议，少数人主讲，大部分人听，不听则可以悄悄离开。聊天结束后，会议室关闭，所有的音频也消失，这一功能虽然满足了对私密的要求，但是使用者仍然有录音的可能。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <h2 id="如何获得邀请" tabindex="-1" class="css-10tk4x-SubHeading e14hemmw1">如何获得邀请？</h2>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">要使用这款软件，必须有一位已经成为成员的使用者发出邀请。而且每位成员只有两份邀请函可用。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">不过，这款软件的开发者已经表示，正在努力完成所有调试，力争2021年向全世界开放。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <h2 id="首富马斯克的宣传效果" tabindex="-1" class="css-10tk4x-SubHeading e14hemmw1">首富马斯克的宣传效果？</h2>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-oijotl-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/1FC5/production/_116833180_82f3e58d-30ac-452b-894b-3bb52f56368c.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/1FC5/production/_116833180_82f3e58d-30ac-452b-894b-3bb52f56368c.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/1FC5/production/_116833180_82f3e58d-30ac-452b-894b-3bb52f56368c.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/1FC5/production/_116833180_82f3e58d-30ac-452b-894b-3bb52f56368c.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/1FC5/production/_116833180_82f3e58d-30ac-452b-894b-3bb52f56368c.jpg 800w" alt="伊隆·马斯克（Elon Musk）与美国金融服务公司罗宾汉（Robinhood）的总裁弗拉德·特涅夫（Vlad Tenev）有一场对话会" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/1FC5/production/_116833180_82f3e58d-30ac-452b-894b-3bb52f56368c.jpg" width="976" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>伊隆·马斯克（Elon Musk）与美国金融服务公司罗宾汉（Robinhood）的总裁弗拉德·特涅夫（Vlad Tenev）有一场对话会</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">Clubhouse在2020年3月推出，由美国硅谷两位创新企业家保罗·戴维森（Paul Davidson）和罗涵·赛斯（Rohan Seth）开发。2020年5月，它只有1500个用户。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">但是本周，特拉斯汽车创始人，世界首富伊隆·马斯克（Elon Musk）与美国金融服务公司罗宾汉（Robinhood）的总裁弗拉德·特涅夫（Vlad Tenev）有一场对话会，通过YouTube 现场直播后，Clubhouse一时间名声大噪。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">在中国市场上，这一软件的邀请居然像歌星演唱会的门票一样，有人高价转手。 而在日本、台湾和香港，这款软件都成为最多人下载的软件之一。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <div class="css-1fobf8d e1gggypo0">
+      <ul dir="ltr" role="list" class="css-4c9jmx-BulletedList e1drcs2w0">
+        <li role="listitem" class="css-chb3zw-BulletedListItem e1drcs2w1"><a href="https://www.bbc.com/zhongwen/simp/world-53356360" class="css-h9s9st-InlineLink e1cs6q200">Tiktok和抖音：从默默无闻到充满争议</a></li>
+        <li role="listitem" class="css-chb3zw-BulletedListItem e1drcs2w1"><a href="https://www.bbc.com/zhongwen/simp/chinese-news-48381511" class="css-h9s9st-InlineLink e1cs6q200">中美科技冷战：盘点世界领先的七大中国科技</a></li>
+        <li role="listitem" class="css-chb3zw-BulletedListItem e1drcs2w1"><a href="https://www.bbc.com/zhongwen/simp/world-55556170" class="css-h9s9st-InlineLink e1cs6q200">特朗普签行政命令 禁通过支付宝、微信支付等八款应用程序在美交易</a></li>
+      </ul>
+    </div>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">推特、脸书等西方流行的社交平台在中国被封，Clubhouse可能暂时还没有进入中国网络监管当局的视线，但今后是否能继续在中国使用尚需观察。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <h2 id="超级软件" tabindex="-1" class="css-10tk4x-SubHeading e14hemmw1">超级软件</h2>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">据BBC亚洲商务事务记者卡莉什玛·瓦斯瓦尼（Karishma Vaswani）的报道，全球各国正在展开一场软件竞赛，开发出下一个超级手机软件。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">中国庞大的人口总数为超级软件的诞生提供了绝佳的土壤。目前全世界使用人数过10亿的两款手机软件都是中国国产，一是微信，另一个是支付宝。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">这两款软件与中国的日常生活紧密联系的同时，隐私问题也日益成为关注焦点。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">而东南亚因为有约6亿人口，也成为最有可能出现下一个超级手机软件的地区。来自中国、美国和巨头科技公司已经把注意力放在了东南亚市场。</p>
+  </div>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#BBC 的其它文章</h4>
+    
+      <li>
+        <time>2021-02-06</time>
+        <a href="https://nodebe4.github.io/waimei/2021-02-06/Science-%E6%96%B0%E5%86%A0%E7%96%AB%E8%8B%97-%E4%B8%80%E9%92%88%E8%BF%98%E6%98%AF%E4%B8%A4%E9%92%88-%E7%AD%89%E9%87%8D%E8%A6%81%E9%97%AE%E9%A2%98%E7%9A%84%E7%A7%91%E5%AD%A6%E8%A7%A3%E7%AD%94">
+          [Science] 新冠疫苗：“一针还是两针”等重要问题的科学解答
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-02-06</time>
+        <a href="https://nodebe4.github.io/waimei/2021-02-06/World-%E7%BC%85%E7%94%B8%E5%86%9B%E4%BA%8B%E6%94%BF%E5%8F%98-%E6%98%82%E5%B1%B1%E7%B4%A0%E5%AD%A3%E8%83%BD%E5%90%A6%E4%B8%9C%E5%B1%B1%E5%86%8D%E8%B5%B7">
+          [World] 缅甸军事政变：昂山素季能否东山再起?
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-02-04</time>
+        <a href="https://nodebe4.github.io/waimei/2021-02-04/Uk-%E6%96%B0%E5%86%A0%E7%96%AB%E8%8B%97-%E5%A5%BD%E8%8E%B1%E5%9D%9E%E7%94%B5%E5%BD%B1-%E4%BC%A0%E6%9F%93%E7%97%85-%E7%BB%99%E8%8B%B1%E5%9B%BD%E5%8D%AB%E7%94%9F%E5%A4%A7%E8%87%A3%E7%9A%84%E5%90%AF%E7%A4%BA">
+          [Uk] 新冠疫苗：好莱坞电影《传染病》给英国卫生大臣的启示
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-02-03</time>
+        <a href="https://nodebe4.github.io/waimei/2021-02-03/World-%E6%AC%A7%E6%B4%B2%E4%B8%AD%E4%B8%96%E7%BA%AA%E6%95%99%E4%BC%9A%E5%A6%82%E4%BD%95%E5%A1%91%E9%80%A0%E4%BA%86%E5%BD%93%E4%BB%8A%E7%9A%84-%E8%A5%BF%E6%96%B9%E6%80%9D%E6%83%B3">
+          [World] 欧洲中世纪教会如何塑造了当今的“西方思想”
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-02-04/Uk-%E6%96%B0%E5%86%A0%E7%96%AB%E8%8B%97-%E5%A5%BD%E8%8E%B1%E5%9D%9E%E7%94%B5%E5%BD%B1-%E4%BC%A0%E6%9F%93%E7%97%85-%E7%BB%99%E8%8B%B1%E5%9B%BD%E5%8D%AB%E7%94%9F%E5%A4%A7%E8%87%A3%E7%9A%84%E5%90%AF%E7%A4%BA">
+            前一篇：[Uk] 新冠疫苗：好莱坞电影《传染病》给英国卫生大臣的启示
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-02-06/World-%E7%BC%85%E7%94%B8%E5%86%9B%E4%BA%8B%E6%94%BF%E5%8F%98-%E6%98%82%E5%B1%B1%E7%B4%A0%E5%AD%A3%E8%83%BD%E5%90%A6%E4%B8%9C%E5%B1%B1%E5%86%8D%E8%B5%B7">
+            后一篇：[World] 缅甸军事政变：昂山素季能否东山再起?
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-02-04/Uk-%E6%96%B0%E5%86%A0%E7%96%AB%E8%8B%97-%E5%A5%BD%E8%8E%B1%E5%9D%9E%E7%94%B5%E5%BD%B1-%E4%BC%A0%E6%9F%93%E7%97%85-%E7%BB%99%E8%8B%B1%E5%9B%BD%E5%8D%AB%E7%94%9F%E5%A4%A7%E8%87%A3%E7%9A%84%E5%90%AF%E7%A4%BA'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-02-06/World-%E7%BC%85%E7%94%B8%E5%86%9B%E4%BA%8B%E6%94%BF%E5%8F%98-%E6%98%82%E5%B1%B1%E7%B4%A0%E5%AD%A3%E8%83%BD%E5%90%A6%E4%B8%9C%E5%B1%B1%E5%86%8D%E8%B5%B7'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-02-06/World-%E7%BC%85%E7%94%B8%E5%86%9B%E4%BA%8B%E6%94%BF%E5%8F%98-%E6%98%82%E5%B1%B1%E7%B4%A0%E5%AD%A3%E8%83%BD%E5%90%A6%E4%B8%9C%E5%B1%B1%E5%86%8D%E8%B5%B7'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-02-04/Uk-%E6%96%B0%E5%86%A0%E7%96%AB%E8%8B%97-%E5%A5%BD%E8%8E%B1%E5%9D%9E%E7%94%B5%E5%BD%B1-%E4%BC%A0%E6%9F%93%E7%97%85-%E7%BB%99%E8%8B%B1%E5%9B%BD%E5%8D%AB%E7%94%9F%E5%A4%A7%E8%87%A3%E7%9A%84%E5%90%AF%E7%A4%BA'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-02-04/Uk-%E6%96%B0%E5%86%A0%E7%96%AB%E8%8B%97-%E5%A5%BD%E8%8E%B1%E5%9D%9E%E7%94%B5%E5%BD%B1-%E4%BC%A0%E6%9F%93%E7%97%85-%E7%BB%99%E8%8B%B1%E5%9B%BD%E5%8D%AB%E7%94%9F%E5%A4%A7%E8%87%A3%E7%9A%84%E5%90%AF%E7%A4%BA">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-02-06/World-%E7%BC%85%E7%94%B8%E5%86%9B%E4%BA%8B%E6%94%BF%E5%8F%98-%E6%98%82%E5%B1%B1%E7%B4%A0%E5%AD%A3%E8%83%BD%E5%90%A6%E4%B8%9C%E5%B1%B1%E5%86%8D%E8%B5%B7">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<BBC>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-02-06/World-%E7%BC%85%E7%94%B8%E5%86%9B%E4%BA%8B%E6%94%BF%E5%8F%98-%E6%98%82%E5%B1%B1%E7%B4%A0%E5%AD%A3%E8%83%BD%E5%90%A6%E4%B8%9C%E5%B1%B1%E5%86%8D%E8%B5%B7">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<BBC>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-02-04/Uk-%E6%96%B0%E5%86%A0%E7%96%AB%E8%8B%97-%E5%A5%BD%E8%8E%B1%E5%9D%9E%E7%94%B5%E5%BD%B1-%E4%BC%A0%E6%9F%93%E7%97%85-%E7%BB%99%E8%8B%B1%E5%9B%BD%E5%8D%AB%E7%94%9F%E5%A4%A7%E8%87%A3%E7%9A%84%E5%90%AF%E7%A4%BA">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

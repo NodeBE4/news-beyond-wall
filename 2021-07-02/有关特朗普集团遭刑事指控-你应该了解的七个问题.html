@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>有关特朗普集团遭刑事指控，你应该了解的七个问题 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+有关特朗普集团遭刑事指控，你应该了解的七个问题
+——
+" />
+    <meta property="og:description" content="
+有关特朗普集团遭刑事指控，你应该了解的七个问题
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="有关特朗普集团遭刑事指控，你应该了解的七个问题" />
+    <meta property="twitter:title" content="有关特朗普集团遭刑事指控，你应该了解的七个问题" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fcn.nytimes.com%2Fusa%2F20210702%2Ftrump-organization-indictment-explained%2F&t=%E6%9C%89%E5%85%B3%E7%89%B9%E6%9C%97%E6%99%AE%E9%9B%86%E5%9B%A2%E9%81%AD%E5%88%91%E4%BA%8B%E6%8C%87%E6%8E%A7%EF%BC%8C%E4%BD%A0%E5%BA%94%E8%AF%A5%E4%BA%86%E8%A7%A3%E7%9A%84%E4%B8%83%E4%B8%AA%E9%97%AE%E9%A2%98" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fusa%2F20210702%2Ftrump-organization-indictment-explained%2F&t=%E6%9C%89%E5%85%B3%E7%89%B9%E6%9C%97%E6%99%AE%E9%9B%86%E5%9B%A2%E9%81%AD%E5%88%91%E4%BA%8B%E6%8C%87%E6%8E%A7%EF%BC%8C%E4%BD%A0%E5%BA%94%E8%AF%A5%E4%BA%86%E8%A7%A3%E7%9A%84%E4%B8%83%E4%B8%AA%E9%97%AE%E9%A2%98&d=2021-07-02&e=
+有关特朗普集团遭刑事指控，你应该了解的七个问题
+——
+
+
+  
+BEN PROTESS, KATE CHRISTOBEK, WILLIAM K. RASHBAUM
+  
+  2021年7月2日
+  
+    
+虽然前总统未被指控，但曼哈顿地区检察官的调查现在似乎完全集中在特朗普和其他公司高管身上。 Erin Schaff/The New York Times
+    
+  
+  
+    周四，曼哈顿地区检察官办公室宣布对唐纳德·J·特朗普(Donald J. Trump)的家族企业特朗普集团及其首席财务官艾伦·H·魏塞尔伯格(Allen H. Weisselberg)提出刑事指控。
+    这一起诉书标志着地方检察官小赛勒斯·R·万斯(Cyrus R. Vance Jr.)长期调查的一个重大转折点，起诉书的重点是魏塞尔伯格和其他高管没有为他们从特朗普集团获得的各种可观福利纳税。
+..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fusa%2F20210702%2Ftrump-organization-indictment-explained%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://cn.nytimes.com/usa/20210702/trump-organization-indictment-explained/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://cn.nytimes.com/usa/20210702/trump-organization-indictment-explained/&text=有关特朗普集团遭刑事指控，你应该了解的七个问题&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://cn.nytimes.com/usa/20210702/trump-organization-indictment-explained/&title=有关特朗普集团遭刑事指控，你应该了解的七个问题" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://cn.nytimes.com/usa/20210702/trump-organization-indictment-explained/&title=有关特朗普集团遭刑事指控，你应该了解的七个问题" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=有关特朗普集团遭刑事指控，你应该了解的七个问题&body=
+有关特朗普集团遭刑事指控，你应该了解的七个问题
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://cn.nytimes.com/usa/20210702/trump-organization-indictment-explained/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://cn.nytimes.com/usa/20210702/trump-organization-indictment-explained/&title=有关特朗普集团遭刑事指控，你应该了解的七个问题&caption=
+有关特朗普集团遭刑事指控，你应该了解的七个问题
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=有关特朗普集团遭刑事指控，你应该了解的七个问题&url=https://cn.nytimes.com/usa/20210702/trump-organization-indictment-explained/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>有关特朗普集团遭刑事指控，你应该了解的七个问题</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-07-02
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#纽约时报 ">
+          纽约时报
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://cn.nytimes.com/usa/20210702/trump-organization-indictment-explained/"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="纽约时报的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#纽约时报 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fusa%2F20210702%2Ftrump-organization-indictment-explained%2F&t=%E6%9C%89%E5%85%B3%E7%89%B9%E6%9C%97%E6%99%AE%E9%9B%86%E5%9B%A2%E9%81%AD%E5%88%91%E4%BA%8B%E6%8C%87%E6%8E%A7%EF%BC%8C%E4%BD%A0%E5%BA%94%E8%AF%A5%E4%BA%86%E8%A7%A3%E7%9A%84%E4%B8%83%E4%B8%AA%E9%97%AE%E9%A2%98&d=2021-07-02&e=
+有关特朗普集团遭刑事指控，你应该了解的七个问题
+——
+
+
+  
+BEN PROTESS, KATE CHRISTOBEK, WILLIAM K. RASHBAUM
+  
+  2021年7月2日
+  
+    
+虽然前总统未被指控，但曼哈顿地区检察官的调查现在似乎完全集中在特朗普和其他公司高管身上。 Erin Schaff/The New York Times
+    
+  
+  
+    周四，曼哈顿地区检察官办公室宣布对唐纳德·J·特朗普(Donald J. Trump)的家族企业特朗普集团及其首席财务官艾伦·H·魏塞尔伯格(Allen H. Weisselberg)提出刑事指控。
+    这一起诉书标志着地方检察官小赛勒斯·R·万斯(Cyrus R. Vance Jr.)长期调查的一个重大转折点，起诉书的重点是魏塞尔伯格和其他高管没有为他们从特朗普集团获得的各种可观福利纳税。
+..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fusa%2F20210702%2Ftrump-organization-indictment-explained%2F" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1625222221000-->
+<p><a href="https://cn.nytimes.com/usa/20210702/trump-organization-indictment-explained/">有关特朗普集团遭刑事指控，你应该了解的七个问题</a>
+——</p>
+
+<div>
+  <address>
+BEN PROTESS, KATE CHRISTOBEK, WILLIAM K. RASHBAUM
+  </address>
+  <time pudate="2021-07-02 06:24:35" datetime="2021-07-02 06:24:35">2021年7月2日</time>
+  <figure class="article-span-photo">
+<img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/01/nyregion/01nytrump-wwk1/merlin_177879498_d73733ef-8fa4-4b20-81bc-3630a8101e4c-master1050.jpg" width="1050" height="700" />    <figcaption>
+虽然前总统未被指控，但曼哈顿地区检察官的调查现在似乎完全集中在特朗普和其他公司高管身上。 <cite>Erin Schaff/The New York Times</cite>
+    </figcaption>
+  </figure>
+  <section class="article-body">
+    <p>周四，曼哈顿地区检察官办公室宣布对唐纳德·J·特朗普(Donald J. Trump)的家族企业<a href="https://www.nytimes.com/2021/07/01/nyregion/allen-weisselberg-charged-trump-organization.html?action=click&amp;module=Spotlight&amp;pgtype=Homepage">特朗普集团</a>及其首席财务官<a href="https://www.nytimes.com/2021/06/30/nyregion/trump-organization-cfo-allen-weisselberg.html" title="Link: https://www.nytimes.com/2021/06/30/nyregion/trump-organization-cfo-allen-weisselberg.html">艾伦·H·魏塞尔伯格</a>(Allen H. Weisselberg)提出刑事指控。</p>
+    <p>这一<a href="https://www.nytimes.com/interactive/2021/07/01/nyregion/trump-organization-indictment.html" title="Link: https://www.nytimes.com/interactive/2021/07/01/nyregion/trump-organization-indictment.html">起诉书</a>标志着地方检察官小赛勒斯·R·万斯(Cyrus R. Vance Jr.)<a href="https://www.nytimes.com/2021/02/18/nyregion/trump-investigation-manhattan.html" title="Link: https://www.nytimes.com/2021/02/18/nyregion/trump-investigation-manhattan.html">长期调查</a>的一个重大转折点，起诉书的重点是魏塞尔伯格和其他高管没有为他们<a href="https://www.nytimes.com/2021/06/25/nyregion/trump-organization-criminal-charges.html">从特朗普集团获得</a>的各种<a href="https://www.nytimes.com/2021/05/13/nyregion/trump-employee-gifts.html">可观福利</a>纳税。</p>
+    <p>以下是我们所知道的：</p>
+    <p><strong>有哪些指控？</strong></p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/01/nyregion/01nytrump-wwk-11/01nytrump-indictment01-master1050.jpg" /><small style="color: #999;">艾伦·魏塞尔伯格（中）周四早上前往曼哈顿下城的刑事法院和地方检察官办公室所在的大楼自首。</small></p>
+    <p>起诉书指控特朗普集团和魏塞尔伯格参与了一项从2005年开始的为期15年的计划，通过向高管提供不计入账目的津贴和奖金来帮助他们逃税。起诉书称，该公司还逃避了一些本应缴纳的税款。</p>
+    <p>起诉书称魏塞尔伯格是该计划的最大受益者之一，并称他获得了约176万美元的间接和隐性报酬，使他得以逃避政府各层级税款数十万美元。起诉书称他还不正当地收到了总计13.3万美元的联邦和州退税款。</p>
+    <p>魏塞尔伯格还被指控收取好处，例如租金免除、为他和妻子买汽车以及为亲戚付私立学校学费。起诉书称，该公司帮助魏塞尔伯格谎称他住在纽约市以外，减轻了他的税收负担。</p>
+    <p>它还说，魏塞尔伯格和其他高管通过包括马阿拉歌俱乐部在内的特朗普财产获得奖金，然后将这样的收入以合同工而不是正式雇员的身份上报。起诉书称，这使魏塞尔伯格能够为一种适用于自雇人士的延税养老金计划供款，使他能够赚取数十万美元他本不该得到的钱。</p>
+    <p><strong>特朗普被指控了吗？</strong></p>
+    <p>没有。尽管特朗普与以他的名字命名的房地产公司特朗普集团紧密相连，但起诉书并未指控他有不当行为。并且除了魏塞尔伯格之外，没有其他员工受到指控。</p>
+    <p>但<a href="https://www.nytimes.com/2021/02/18/nyregion/trump-investigation-manhattan.html" title="Link: https://www.nytimes.com/2021/02/18/nyregion/trump-investigation-manhattan.html">调查仍在继续</a>，现在似乎完全集中在特朗普和其他公司高管身上。检察官和一个由外部法证审计师和专家组成的团队正在继续梳理特朗普数百万页的个人和公司纳税申报表，以及相关的记录和文件。</p>
+    <p>具体来说，检察官一直在调查特朗普和特朗普集团是否<a href="https://www.nytimes.com/2021/02/22/nyregion/trump-taxes-cyrus-vance.html" title="Link: https://www.nytimes.com/2021/02/22/nyregion/trump-taxes-cyrus-vance.html">操纵该公司持有的房地产价值以获得贷款和税收优惠</a>，以及其他潜在的金融犯罪。</p>
+    <p>该案已于周四提交了起诉书，听取证词的特殊大陪审团将继续每周最多三次的会议，直到今年年底。根据法官的命令，这个期限还可以进一步推延。</p>
+    <p><strong>特朗普的子女们有没有受到指控？</strong></p>
+    <p>也没有。特朗普的三个成年子女伊万卡·特朗普(Ivanka Trump)、埃里克·特朗普(Eric Trump)和小唐纳德·特朗普(Donald Trump Jr.)随他们的父亲进入家族企业，他们的名字在调查中曾短暂出现过。</p>
+    <p>去年年底，万斯的办公室和纽约州总检察长<a href="https://www.nytimes.com/2021/05/18/nyregion/trump-ny-ag-investigation-vance.html">詹乐霞</a>(Letitia James)的办公室分别向特朗普集团发出传票，涉及<a href="https://www.nytimes.com/2020/11/19/nyregion/trump-fraud-investigations-taxes.html" title="Link: https://www.nytimes.com/2020/11/19/nyregion/trump-fraud-investigations-taxes.html">向TTT咨询公司(TTT Consulting L.L.C.)支付的数百万美元咨询费</a>的税务免除，该公司是为三个成年子女设立的。</p>
+    <p>但起诉书中没有提到特朗普的子女。</p>
+    <p><strong>一家公司如何被起诉？</strong></p>
+    <p>公司和人一样，可以因犯罪而受审。如果罪名成立，特朗普的公司可能面临巨额罚款或其他处罚。</p>
+    <p>即使特朗普集团没有公开上市交易，也没有以任何正式方式受到监管，它仍然可能面临来自其商业伙伴的影响。</p>
+    <p>特朗普集团欠<a href="https://www.nytimes.com/2020/02/04/magazine/deutsche-bank-trump.html">特朗普主要放款人德意志银行</a>约3.3亿美元的债务，起诉书不太可能改变这一状况。据了解内部商议情况的人士透露，该银行的官员已经确定，只有在特朗普集团被指控并定罪与银行相关的欺诈行为的情况下，它才会要求该公司立即偿还贷款。周四公布的起诉书不包括这些指控。</p>
+    <p>尽管如此，这仍可能会阻碍特朗普集团重新开放其酒店和其他项目的交易渠道的计划，此前特朗普在白宫的四年期间，该集团基本保持平稳运营。</p>
+    <p><strong>关于调查，特朗普怎么说？</strong></p>
+    <p>特朗普长期以来一直将调查视为党派政治的整人调查。周四，在接受《纽约时报》的简短采访时，他称这些指控是“从我走下自动扶梯时就开始的猎巫行动的延续”，走下自动扶梯指的是2015年他在特朗普大厦宣布竞选总统。</p>
+    <p>当被问及他是否担心魏塞尔伯格面临压力时，特朗普只说他的长期副手是一个“正直的人”。</p>
+    <p>“我始终站在他这一边，”他说。</p>
+    <p>在周四的一份声明中，特朗普集团表示，魏塞尔伯格是有人“企图用焦土战术伤害前总统的棋子”。</p>
+    <p>“地方检察官正在提起一项涉及雇员福利的刑事诉讼，而这样的刑事诉讼是国家税务局或任何其他地方检察官都不会考虑的，“声明中写道。“这不是正义；这就是政治。”该集团的律师表示，税务案件应由民事税务机关处理，而不是检察官。</p>
+    <p>特朗普可能会从这些指控中看到一些短期的政治反弹。<a href="https://www.nytimes.com/2021/06/26/us/politics/trump-rally-ohio.html" title="Link: https://www.nytimes.com/2021/06/26/us/politics/trump-rally-ohio.html">当他重新开始他的政治集会时</a>，这些指控——以及他对调查的谴责——可能会提振人群并动员他的支持者。</p>
+    <p>但这种提振可能是短暂的。即使他设法在支持者面前将这些指控美化为纯粹的善行，特朗普也可能面临他的公司接受审判的前景。如果他<a href="https://www.nytimes.com/2021/06/26/us/politics/trump-rally-ohio.html" title="Link: https://www.nytimes.com/2021/06/26/us/politics/trump-rally-ohio.html">试图发起另一场总统竞选</a>，那么这种干扰将会带来高昂的代价。</p>
+    <p><strong>万斯的职责是什么？</strong></p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/01/nyregion/01nytrump-wwk2/01nytrump-wwk2-master1050.jpg" /><small style="color: #999;">曼哈顿地区检察官小赛勒斯·R·万斯近三年来一直在调查特朗普及其商业往来。</small></p>
+    <p>万斯是曼哈顿的最高检察官；他有权执行纽约州法律。作为已连任三届且<a href="https://www.nytimes.com/2021/03/12/nyregion/cyrus-vance-district-attorney-manhattan.html">表示不再连任</a>的民主党人，多年来，他一直被质疑缺乏让有钱有势的人伏法的意愿。对前任总统创立的公司的起诉可能会对他的政绩产生持久的影响。</p>
+    <p>与近年来对特朗普进行审查的其他调查——包括由曼哈顿联邦检察官和特别检察官罗伯特·穆勒三世(Robert S. Mueller III)进行的调查——不同，万斯这件案件涉及特朗普的一名高级管理人员和公司本身。</p>
+    <p><a href="https://www.nytimes.com/2021/02/22/us/politics/supreme-court-trump-taxes-financial-records.html?searchResultPosition=20" title="Link: https://www.nytimes.com/2021/02/22/us/politics/supreme-court-trump-taxes-financial-records.html?searchResultPosition=20">万斯在美国最高法院两次击败特朗普</a>以获取前总统的税务记录，使案件出现了转折。在2月的第二次胜利之后，调查开始升温：检察官获得了纳税申报表，发出了一系列传票，并召集了正在听取案件证据的<a href="https://www.nytimes.com/2021/06/04/nyregion/trump-organization-investigation-allen-weisselberg.html" title="Link: https://www.nytimes.com/2021/06/04/nyregion/trump-organization-investigation-allen-weisselberg.html">特殊大陪审团</a>。</p>
+    <p>万斯偶尔会出席大陪审团的诉讼程序，并观看一些证人的证词，此案的重要性可见一斑。</p>
+    <p>万斯的办公室还从私营部门招募了一些帮手。FTI是一家法证会计方面的专业大型咨询公司，正在帮助分析特朗普的财务记录。</p>
+    <p>万斯聘请了一位专门处理白领和有组织犯罪案件的著名前联邦检察官<a href="https://www.nytimes.com/2021/02/18/nyregion/trump-investigation-manhattan.html">马克·波梅兰茨</a>(Mark Pomerantz)与万斯的总法律顾问凯莉·邓恩(Carey Dunne)一起接管调查的日常领导工作，后者曾在最高法院对税务案件提出公诉。</p>
+    <p>最近几周，一直在就同样一些行为进行民事调查的詹乐霞也加入了进来。</p>
+    <p><strong>那么，接下来会发生什么？</strong></p>
+    <p>魏塞尔伯格的起诉并非已成定局。几个月来，地区检察官办公室<a href="https://www.nytimes.com/2021/03/01/nyregion/trump-vance-investigation.html" title="Link: https://www.nytimes.com/2021/03/01/nyregion/trump-vance-investigation.html">一直希望他能配合对特朗普进行更广泛的调查</a>，但这一努力失败了，因为魏塞尔伯格支持他的老板，他近半个世纪以来一直是特朗普家族企业的忠实助手。</p>
+    <p>然而，既然魏塞尔伯格已被起诉，这项努力将进入一个新阶段，它对特朗普构成了直接威胁。作为回应，前总统聘请了辩护律师罗纳德·P·菲舍蒂(Ronald P. Fischetti)，他是波梅兰茨的前法律合伙人。</p>
+    <p>检察官通常会寻求与潜在证人交换筹码——通常是通过刑事起诉的威胁——将他们变成合作的证人。如果罪名成立，魏塞尔伯格可能面临在州监狱服刑。</p>
+    <p>也就是说，他现在有一些合作的动力，假设他确实掌握了有关特朗普或特朗普集团的宝贵信息，而该公司长期以来一直否认这一点。</p>
+    <p>检察官希望从魏塞尔伯格那里了解到特朗普的想法。他们正在审查前总统可能犯下的罪行，包括欺诈银行和保险公司，或实施税务欺诈或其他不当行为，对这些罪行提起诉讼需要证明其意图。</p>
+    <p>众所周知，特朗普避免使用电子邮件，因此他们需要求助于在他做关键决定时与他同处一室的人。而魏塞尔伯格几乎总是在场。</p>
+    <p>万斯曾表示，他将在12月31日卸任前决定是否起诉前总统。</p>
+  </section>
+  <footer class="author-info">
+    <p>David Enrich和Michael Rothfeld对本文有报道贡献。</p>
+    <p>Ben Protess是一名调查记者，报道针对前总统特朗普及其盟友的联邦政府、执法和各种刑事调查。欢迎在Twitter上关注他：<a rel="nofollow" target="_blank" href="https://twitter.com/benprotess">@benprotess</a>。</p>
+    <p>William K. Rashbaum是城市新闻栏目的资深作家，他的报道包括政治和市政腐败、法院、恐怖主义和更广泛的执法问题。他是获得2009年普利策突发新闻奖的团队成员之一。欢迎在<a rel="nofollow" target="_blank" href="https://www.facebook.com/100011318836079">Facebook</a>和<a rel="nofollow" target="_blank" href="https://twitter.com/WRashbaum">Twitter</a>上关注他。</p>
+    <p>翻译：明斋</p>
+    <p><a rel="nofollow" target="_blank" href="http://www.nytimes.com/2021/07/01/nyregion/trump-organization-indictment-explained.html">点击查看本文英文版。</a></p>
+  </footer>
+<br />  <hr />
+  <div>
+获取更多RSS：<br /><a href="https://feedx.net" style="color:orange" target="_blank">https://feedx.net</a> <br /><a href="https://feedx.top" style="color:orange" target="_blank">https://feedx.top</a><br />
+  </div>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#纽约时报 的其它文章</h4>
+    
+      <li>
+        <time>2021-07-04</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-04/%E7%AE%80%E6%8A%A5-%E4%B8%AD%E5%85%B1%E5%85%9A%E6%A0%A1%E5%A6%82%E4%BD%95%E5%9F%B9%E5%85%BB-%E5%BF%A0%E8%AF%9A%E6%8E%A5%E7%8F%AD%E4%BA%BA-%E6%BB%B4%E6%BB%B4%E8%A2%AB%E5%8B%92%E4%BB%A4%E4%B8%8B%E6%9E%B6%E6%95%B4%E6%94%B9">
+          简报：中共党校如何培养“忠诚接班人”；滴滴被勒令下架整改
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-04</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-04/%E7%BA%A2%E8%89%B2%E6%91%87%E7%AF%AE-%E4%B8%AD%E5%85%B1%E5%A6%82%E4%BD%95%E5%9F%B9%E5%85%BB-%E5%BF%A0%E8%AF%9A%E6%8E%A5%E7%8F%AD%E4%BA%BA">
+          “红色摇篮”：中共如何培养“忠诚接班人”
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-02</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-02/%E7%BA%A2%E8%89%B2%E6%AD%8C%E5%89%A7-%E7%88%B1%E5%9B%BD%E8%AF%B4%E5%94%B1-%E8%89%BA%E6%9C%AF-%E7%8C%AE%E7%A4%BC-%E4%B8%AD%E5%85%B1%E7%99%BE%E5%B9%B4">
+          红色歌剧、爱国说唱：艺术“献礼”中共百年
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-02</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-02/%E8%BF%BD%E6%B1%82%E4%BD%93%E8%82%B2%E6%A2%A6%E6%83%B3%E8%BF%98%E6%98%AF-%E8%A6%81%E5%A5%B3%E6%80%A7%E5%8C%96-%E6%97%A5%E6%9C%AC%E5%A5%B3%E8%BF%90%E5%8A%A8%E5%91%98%E7%9A%84%E5%9B%B0%E5%A2%83">
+          追求体育梦想还是“要女性化”：日本女运动员的困境
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-02/%E6%B8%AF%E7%94%B7%E8%A5%B2%E8%AD%A6%E5%BE%8C%E8%87%AA%E6%AE%BA-%E8%AD%A6%E6%96%B9%E8%AD%B4%E8%B2%AC%E6%9C%89%E4%BA%BA%E7%BE%8E%E5%8C%96%E6%9A%B4%E5%8A%9B">
+            前一篇：港男襲警後自殺 警方譴責有人美化暴力
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-02/%E5%85%9A%E5%AA%92%E5%AE%A3%E4%BC%A0%E4%B8%AD%E5%85%B1%E7%99%BE%E5%B9%B4-%E4%B9%A0%E8%BF%91%E5%B9%B3%E5%A4%A7%E8%B6%85%E6%89%80%E6%9C%89%E5%89%8D%E4%BB%BB">
+            后一篇：党媒宣传中共百年 习近平大超所有前任
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-07-02/%E6%B8%AF%E7%94%B7%E8%A5%B2%E8%AD%A6%E5%BE%8C%E8%87%AA%E6%AE%BA-%E8%AD%A6%E6%96%B9%E8%AD%B4%E8%B2%AC%E6%9C%89%E4%BA%BA%E7%BE%8E%E5%8C%96%E6%9A%B4%E5%8A%9B'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-07-02/%E5%85%9A%E5%AA%92%E5%AE%A3%E4%BC%A0%E4%B8%AD%E5%85%B1%E7%99%BE%E5%B9%B4-%E4%B9%A0%E8%BF%91%E5%B9%B3%E5%A4%A7%E8%B6%85%E6%89%80%E6%9C%89%E5%89%8D%E4%BB%BB'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-07-04/%E7%BA%A2%E8%89%B2%E6%91%87%E7%AF%AE-%E4%B8%AD%E5%85%B1%E5%A6%82%E4%BD%95%E5%9F%B9%E5%85%BB-%E5%BF%A0%E8%AF%9A%E6%8E%A5%E7%8F%AD%E4%BA%BA'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-07-02/%E7%BA%A2%E8%89%B2%E6%AD%8C%E5%89%A7-%E7%88%B1%E5%9B%BD%E8%AF%B4%E5%94%B1-%E8%89%BA%E6%9C%AF-%E7%8C%AE%E7%A4%BC-%E4%B8%AD%E5%85%B1%E7%99%BE%E5%B9%B4'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-07-02/%E6%B8%AF%E7%94%B7%E8%A5%B2%E8%AD%A6%E5%BE%8C%E8%87%AA%E6%AE%BA-%E8%AD%A6%E6%96%B9%E8%AD%B4%E8%B2%AC%E6%9C%89%E4%BA%BA%E7%BE%8E%E5%8C%96%E6%9A%B4%E5%8A%9B">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-07-02/%E5%85%9A%E5%AA%92%E5%AE%A3%E4%BC%A0%E4%B8%AD%E5%85%B1%E7%99%BE%E5%B9%B4-%E4%B9%A0%E8%BF%91%E5%B9%B3%E5%A4%A7%E8%B6%85%E6%89%80%E6%9C%89%E5%89%8D%E4%BB%BB">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<纽约时报>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-07-04/%E7%BA%A2%E8%89%B2%E6%91%87%E7%AF%AE-%E4%B8%AD%E5%85%B1%E5%A6%82%E4%BD%95%E5%9F%B9%E5%85%BB-%E5%BF%A0%E8%AF%9A%E6%8E%A5%E7%8F%AD%E4%BA%BA">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<纽约时报>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-07-02/%E7%BA%A2%E8%89%B2%E6%AD%8C%E5%89%A7-%E7%88%B1%E5%9B%BD%E8%AF%B4%E5%94%B1-%E8%89%BA%E6%9C%AF-%E7%8C%AE%E7%A4%BC-%E4%B8%AD%E5%85%B1%E7%99%BE%E5%B9%B4">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

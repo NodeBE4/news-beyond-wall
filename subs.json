@@ -1,0 +1,62 @@
+[
+    {
+        "site": "路透",
+        "url": "https://feedx.net/rss/reuters.xml"
+    },
+    {
+        "site": "纽约时报",
+        "url": "https://feedx.net/rss/nytimes.xml"
+    },
+    {
+        "site": "美国之音",
+        "url": "https://feedx.net/rss/mgzy1.xml"
+    },
+    {
+        "site": "BBC",
+        "url": "https://rsshub.app/bbc/chinese"
+    },
+    {
+        "site": "自由亚洲电台",
+        "url": "https://www.rfa.org/mandarin/yataibaodao/rss2.xml"
+    },
+    {
+        "site": "法广",
+        "url": "https://feedx.net/rss/rfi.xml"
+    },
+    {
+        "site": "德国之声",
+        "url": "https://feedx.net/rss/dw.xml"
+    },
+    {
+        "site": "联合早报",
+        "url": "https://rsshub.app/zaobao/realtime/china"
+    },
+    {
+        "site": "(臺)中央社CNA",
+        "url": "https://feedx.net/rss/cna.xml"
+    },
+    {
+        "site": "CCTV新闻联播",
+        "url": "https://rsshub.app/xinwenlianbo/index"
+    },
+    {
+        "site": "维权网",
+        "url": "https://wqw2010.blogspot.com/feeds/posts/default"
+    },
+    {
+        "site": "寒冬",
+        "url": "https://zh.bitterwinter.org/feed/"
+    },
+    {
+        "site": "Solidot",
+        "url": "https://www.solidot.org/index.rss"
+    },
+    {
+        "site": "中国数字时代",
+        "url": "https://chinadigitaltimes.net/chinese/feed/"
+    },
+    {
+        "site": "大纪元",
+        "url": "https://www.epochtimes.com/gb/nsc413.xml"
+    }
+]

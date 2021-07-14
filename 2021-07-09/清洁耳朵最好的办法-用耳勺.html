@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>清洁耳朵最好的办法：用耳勺 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+清洁耳朵最好的办法：用耳勺
+——
+" />
+    <meta property="og:description" content="
+清洁耳朵最好的办法：用耳勺
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="清洁耳朵最好的办法：用耳勺" />
+    <meta property="twitter:title" content="清洁耳朵最好的办法：用耳勺" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fcn.nytimes.com%2Fstyle%2F20210709%2Fear-wax-removal-ear-pick%2F&t=%E6%B8%85%E6%B4%81%E8%80%B3%E6%9C%B5%E6%9C%80%E5%A5%BD%E7%9A%84%E5%8A%9E%E6%B3%95%EF%BC%9A%E7%94%A8%E8%80%B3%E5%8B%BA" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fstyle%2F20210709%2Fear-wax-removal-ear-pick%2F&t=%E6%B8%85%E6%B4%81%E8%80%B3%E6%9C%B5%E6%9C%80%E5%A5%BD%E7%9A%84%E5%8A%9E%E6%B3%95%EF%BC%9A%E7%94%A8%E8%80%B3%E5%8B%BA&d=2021-07-09&e=
+清洁耳朵最好的办法：用耳勺
+——
+
+
+  
+VANESSA HUA
+  
+  2021年7月9日
+  
+    
+Kyoko Hamada for The New York Times
+    
+  
+  
+    小时候在旧金山东郊，老师们常说：“不要往你的耳朵里放任何东西（除非是你的手肘）。”不管耳朵有多痒，我们都被告知不可以用钢笔帽、2号铅笔上的粉色橡皮擦或是棉签去捅；这样做可能会刺破我们的耳膜。
+    确实有这个可能——但我们老师说的却跟我的中国外祖母做的不一样。她移民到美国，搬进我家，在我父母工作的时候帮忙照看我和我的兄弟姐妹。我们叫她外婆，而她会把我们的脑袋舒舒服服地摆在宽宽的大腿之间，然后清理我们的耳朵。她的打理让我认识了耳勺——这种又叫耳挖、耳挖器或耳刮的长柄刮勺，是亚洲家庭的常用工具。
+    传统耳勺可以由银、铜、塑料、竹子或其他光滑坚硬的材料制成；旧金山亚洲..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fstyle%2F20210709%2Fear-wax-removal-ear-pick%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://cn.nytimes.com/style/20210709/ear-wax-removal-ear-pick/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://cn.nytimes.com/style/20210709/ear-wax-removal-ear-pick/&text=清洁耳朵最好的办法：用耳勺&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://cn.nytimes.com/style/20210709/ear-wax-removal-ear-pick/&title=清洁耳朵最好的办法：用耳勺" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://cn.nytimes.com/style/20210709/ear-wax-removal-ear-pick/&title=清洁耳朵最好的办法：用耳勺" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=清洁耳朵最好的办法：用耳勺&body=
+清洁耳朵最好的办法：用耳勺
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://cn.nytimes.com/style/20210709/ear-wax-removal-ear-pick/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://cn.nytimes.com/style/20210709/ear-wax-removal-ear-pick/&title=清洁耳朵最好的办法：用耳勺&caption=
+清洁耳朵最好的办法：用耳勺
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=清洁耳朵最好的办法：用耳勺&url=https://cn.nytimes.com/style/20210709/ear-wax-removal-ear-pick/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>清洁耳朵最好的办法：用耳勺</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-07-09
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#纽约时报 ">
+          纽约时报
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://cn.nytimes.com/style/20210709/ear-wax-removal-ear-pick/"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="纽约时报的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#纽约时报 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fstyle%2F20210709%2Fear-wax-removal-ear-pick%2F&t=%E6%B8%85%E6%B4%81%E8%80%B3%E6%9C%B5%E6%9C%80%E5%A5%BD%E7%9A%84%E5%8A%9E%E6%B3%95%EF%BC%9A%E7%94%A8%E8%80%B3%E5%8B%BA&d=2021-07-09&e=
+清洁耳朵最好的办法：用耳勺
+——
+
+
+  
+VANESSA HUA
+  
+  2021年7月9日
+  
+    
+Kyoko Hamada for The New York Times
+    
+  
+  
+    小时候在旧金山东郊，老师们常说：“不要往你的耳朵里放任何东西（除非是你的手肘）。”不管耳朵有多痒，我们都被告知不可以用钢笔帽、2号铅笔上的粉色橡皮擦或是棉签去捅；这样做可能会刺破我们的耳膜。
+    确实有这个可能——但我们老师说的却跟我的中国外祖母做的不一样。她移民到美国，搬进我家，在我父母工作的时候帮忙照看我和我的兄弟姐妹。我们叫她外婆，而她会把我们的脑袋舒舒服服地摆在宽宽的大腿之间，然后清理我们的耳朵。她的打理让我认识了耳勺——这种又叫耳挖、耳挖器或耳刮的长柄刮勺，是亚洲家庭的常用工具。
+    传统耳勺可以由银、铜、塑料、竹子或其他光滑坚硬的材料制成；旧金山亚洲..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fstyle%2F20210709%2Fear-wax-removal-ear-pick%2F" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1625818022000-->
+<p><a href="https://cn.nytimes.com/style/20210709/ear-wax-removal-ear-pick/">清洁耳朵最好的办法：用耳勺</a>
+——</p>
+
+<div>
+  <address>
+VANESSA HUA
+  </address>
+  <time pudate="2021-07-09 03:35:41" datetime="2021-07-09 03:35:41">2021年7月9日</time>
+  <figure class="article-span-photo">
+<img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/06/27/magazine/27mag-LOR/27mag-LOR-master1050.jpg" width="1050" height="764" />    <figcaption>
+<cite>Kyoko Hamada for The New York Times</cite>
+    </figcaption>
+  </figure>
+  <section class="article-body">
+    <p>小时候在旧金山东郊，老师们常说：“不要往你的耳朵里放任何东西（除非是你的手肘）。”不管耳朵有多痒，我们都被告知不可以用钢笔帽、2号铅笔上的粉色橡皮擦或是棉签去捅；这样做可能会刺破我们的耳膜。</p>
+    <p>确实有这个可能——但我们老师说的却跟我的中国外祖母做的不一样。她移民到美国，搬进我家，在我父母工作的时候帮忙照看我和我的兄弟姐妹。我们叫她外婆，而她会把我们的脑袋舒舒服服地摆在宽宽的大腿之间，然后清理我们的耳朵。她的打理让我认识了耳勺——这种又叫耳挖、耳挖器或耳刮的长柄刮勺，是亚洲家庭的常用工具。</p>
+    <p>传统耳勺可以由银、铜、塑料、竹子或其他光滑坚硬的材料制成；旧金山亚洲艺术博物馆(Asian Art Museum of San Francisco)就藏有一件精美的清代翡翠发饰，可兼做耳勺。我已经记不清外婆的长相，只记得她坐在自己卧室里的样子——我记得那里的灯光，灯罩上皱巴巴的透明塑料，以及梳妆台上她那瓶玉兰油(Oil of Olay)护肤品——她让我们感受到了珍爱。</p>
+    <p>我知道，外婆的其他习惯可能会让我们的白人邻居觉得奇怪或反常。她把肉挂在我家车库的房檐上风干，手里握着核桃以保持手指的强壮灵活。她还爱看《价格猜猜猜》(The Price is Right)，我们会跟着主持人鲍勃·巴克尔(Bob Barker)一起喊“一辆新车！”——这是她能用英语说出的短语之一。最后，到我八九岁的时候，她就搬到南加州和我姨妈住在一起了。</p>
+    <p>后来在我的少女时代，我又开始清理耳朵，这次是用发夹。虽然我知道这是被禁止的行为，但我还是忍不住要把那些浅色碎屑弄出来。我挖出来的东西看起来像是干蘑菇，手指一捏就会碎。那感觉就像打出一个巨大的喷嚏一样满足。</p>
+    <p>我断断续续地保留了这个习惯，只要手边有发夹就挖一通。我总是一个人的时候这样做；不想被分心，而且清理耳朵感觉就是件很私密的事。在宿舍里，我一挖完耳朵就开始剪脚趾甲。但我不想说这是一件苦差事。随着时间推移，我开始把这一行为当作某种更深刻的东西：一种冥想的形式，一种专注的修行。你必须全神贯注，在这个欲望不断蒸腾的世界全身心地活在当下。</p>
+    <p>几年前，我意识到自己应该用上更合适的工具，就在网上买了一个。它有我的手掌大小，暗色钢材象征着简单而古老的实用，我把它放在了首饰盒的最上层。每隔一周左右，当痒感——或好奇——来袭，我就会用它挖耳朵，但对我的双胞胎儿子就没用得那么频繁了。</p>
+    <p>这是在培养一种亲密的信任，因为成年人的耳道只有一英寸长；而孩子的耳道则因年龄和头部大小而异。薄薄的皮肤布满神经末梢和血管，动作必须缓慢而细腻。</p>
+    <p>我的小儿子比他哥哥晚出生26分钟，他会说我下手总是太重。曾经，在清洁耳朵的时候，他会忍耐，随后，我们两个人会观察我挖出来的东西，每一片都像飞蛾的翅膀一样脆弱。现在，九岁的他拒绝了我。他像拍一只蚊子一样把我拍走，如果我试图将他的头摆在台灯前，他会很生气。他更愿意看视频，看如何在“我的世界”(Minecraft)中制造核武器，或者为他的柠檬水和松饼摊制定商业计划。</p>
+    <p>他继承了我的干耳垢，东亚人通常会产生这种耳垢。它与湿耳垢截然不同，欧洲和非洲人后裔通常分泌一种像花生酱一样稠的耳垢。我从来没有试图用这种方式来为他哥哥挖耳朵；他遗传了我的白人丈夫的耳蜡膜，挖耳勺没有效果。</p>
+    <p>在TikTok上可以找到各种各样的耳垢，<a rel="noopener noreferrer" target="_blank" href="https://www.tiktok.com/tag/bebird">一些人热衷于BeBird</a>——一种带有连接手机应用的摄像头、LED灯和陀螺仪的高科技“清洁棒”，他们已经观看了超过4600万次标题为“<a rel="noopener noreferrer" target="_blank" href="https://www.tiktok.com/@thehouseofsequins/video/6888680525670698246?sender_device=pc&amp;sender_web_id=6896154560550176261&amp;is_from_webapp=v1&amp;is_copy_url=0">莫名满足</a>”和“<a rel="noopener noreferrer" target="_blank" href="https://www.tiktok.com/@theprettyhotmess.pov/video/6916888945016032518">警告：可能会恶心到你</a>”的视频。不久前，银幕上也出现了一个耳勺，十分罕见地进入了美国主流描绘：当我看到外婆温柔的手法在《<a href="https://www.nytimes.com/2021/02/11/movies/minari-review.html">米纳里</a>》(Minari)中重现时，我深吸了一口气。这部奥斯卡获奖影片讲述了阿肯色州农村的一个韩国移民家庭。</p>
+    <p>耳鼻喉科医生强烈建议人们不要挖耳朵。但是即使很清楚这一点，还是要挖，这是人类本性的一部分。从我第一次开始清洁耳朵起，几十年后，它似乎仍然隐约像是违规行为，就像抽烟一样。然而，它也让人感觉良好且高效，类似于我在韩国澡堂的体验，在那里，澡堂大婶用力给我搓澡，搓出成卷的死皮。我以厌恶、痴迷和自豪的心情看待这些碎屑：它们是我生产的。</p>
+  </section>
+  <footer class="author-info">
+    <p>本文最初发表于2021年6月22日。</p>
+    <p>Vanessa Hua是《欺骗和其他可能》(Deceit and Other Possibilities)和《星河》(A River of Stars)的作者，即将出版新书《紫禁城》(Forbidden City)。</p>
+    <p>翻译：Harry Wong、明斋</p>
+    <p><a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/06/22/magazine/ear-wax-removal-ear-pick.html">点击查看本文英文版。</a></p>
+  </footer>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#纽约时报 的其它文章</h4>
+    
+      <li>
+        <time>2021-07-11</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-11/%E6%96%AF%E8%AF%BA%E4%B9%8B%E5%AD%90-%E6%88%91%E7%88%B6%E4%BA%B2%E5%BD%93%E5%B9%B4%E5%A6%82%E4%BD%95%E6%8A%A5%E9%81%93%E4%B8%AD%E5%9B%BD">
+          斯诺之子：我父亲当年如何报道中国
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-09</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-09/%E5%A6%82%E6%9E%9C%E4%BD%A0%E7%9A%84%E6%A2%A6%E6%83%B3%E4%B8%8E%E7%88%B6%E6%AF%8D%E7%9A%84%E6%9C%9F%E6%9C%9B%E8%83%8C%E9%81%93%E8%80%8C%E9%A9%B0">
+          如果你的梦想与父母的期望背道而驰
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-09</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-09/%E8%90%8C-%E5%8C%96%E4%BA%BA%E5%BF%83-%E5%B7%A8%E5%9E%8B3D%E7%8C%AB%E5%92%AA%E4%BA%AE%E7%9B%B8%E6%97%A5%E6%9C%AC%E8%A1%97%E5%A4%B4">
+          “萌”化人心：巨型3D猫咪亮相日本街头
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-09</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-09/%E8%85%BE%E8%AE%AF%E5%90%AF%E7%94%A8%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB%E9%99%90%E5%88%B6%E6%9C%AA%E6%88%90%E5%B9%B4%E7%8E%A9%E5%AE%B6-%E5%BC%95%E5%8F%91%E9%9A%90%E7%A7%81%E4%BA%89%E8%AE%AE">
+          腾讯启用人脸识别限制未成年玩家，引发隐私争议
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-09/%E8%B7%AF%E9%80%8F-%E4%B8%AD%E4%BC%81%E5%A2%83%E5%A4%96%E4%B8%8A%E5%B8%82%E5%B0%87%E9%9C%80%E8%A6%81%E9%83%A8%E5%A7%94%E5%90%8C%E6%84%8F">
+            前一篇：路透：中企境外上市將需要部委同意
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-09/%E4%B9%90%E6%96%BD%E4%BC%9A-2020%E5%B9%B4%E5%85%A8%E7%90%83%E9%A5%A5%E9%A5%BF%E4%BA%BA%E5%8F%A3%E7%8C%9B%E5%A2%9E">
+            后一篇：乐施会 : 2020年全球饥饿人口猛增
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-07-09/%E8%B7%AF%E9%80%8F-%E4%B8%AD%E4%BC%81%E5%A2%83%E5%A4%96%E4%B8%8A%E5%B8%82%E5%B0%87%E9%9C%80%E8%A6%81%E9%83%A8%E5%A7%94%E5%90%8C%E6%84%8F'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-07-09/%E4%B9%90%E6%96%BD%E4%BC%9A-2020%E5%B9%B4%E5%85%A8%E7%90%83%E9%A5%A5%E9%A5%BF%E4%BA%BA%E5%8F%A3%E7%8C%9B%E5%A2%9E'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-07-09/%E5%A6%82%E6%9E%9C%E4%BD%A0%E7%9A%84%E6%A2%A6%E6%83%B3%E4%B8%8E%E7%88%B6%E6%AF%8D%E7%9A%84%E6%9C%9F%E6%9C%9B%E8%83%8C%E9%81%93%E8%80%8C%E9%A9%B0'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-07-09/%E8%90%8C-%E5%8C%96%E4%BA%BA%E5%BF%83-%E5%B7%A8%E5%9E%8B3D%E7%8C%AB%E5%92%AA%E4%BA%AE%E7%9B%B8%E6%97%A5%E6%9C%AC%E8%A1%97%E5%A4%B4'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-07-09/%E8%B7%AF%E9%80%8F-%E4%B8%AD%E4%BC%81%E5%A2%83%E5%A4%96%E4%B8%8A%E5%B8%82%E5%B0%87%E9%9C%80%E8%A6%81%E9%83%A8%E5%A7%94%E5%90%8C%E6%84%8F">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-07-09/%E4%B9%90%E6%96%BD%E4%BC%9A-2020%E5%B9%B4%E5%85%A8%E7%90%83%E9%A5%A5%E9%A5%BF%E4%BA%BA%E5%8F%A3%E7%8C%9B%E5%A2%9E">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<纽约时报>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-07-09/%E5%A6%82%E6%9E%9C%E4%BD%A0%E7%9A%84%E6%A2%A6%E6%83%B3%E4%B8%8E%E7%88%B6%E6%AF%8D%E7%9A%84%E6%9C%9F%E6%9C%9B%E8%83%8C%E9%81%93%E8%80%8C%E9%A9%B0">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<纽约时报>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-07-09/%E8%90%8C-%E5%8C%96%E4%BA%BA%E5%BF%83-%E5%B7%A8%E5%9E%8B3D%E7%8C%AB%E5%92%AA%E4%BA%AE%E7%9B%B8%E6%97%A5%E6%9C%AC%E8%A1%97%E5%A4%B4">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

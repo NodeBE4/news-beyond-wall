@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>极昼工作室｜学汽修的17岁女孩，独自闯入男性世界 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+极昼工作室｜学汽修的17岁女孩，独自闯入男性世界
+——
+" />
+    <meta property="og:description" content="
+极昼工作室｜学汽修的17岁女孩，独自闯入男性世界
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="极昼工作室｜学汽修的17岁女孩，独自闯入男性世界" />
+    <meta property="twitter:title" content="极昼工作室｜学汽修的17岁女孩，独自闯入男性世界" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F668188.html&t=%E6%9E%81%E6%98%BC%E5%B7%A5%E4%BD%9C%E5%AE%A4%EF%BD%9C%E5%AD%A6%E6%B1%BD%E4%BF%AE%E7%9A%8417%E5%B2%81%E5%A5%B3%E5%AD%A9%EF%BC%8C%E7%8B%AC%E8%87%AA%E9%97%AF%E5%85%A5%E7%94%B7%E6%80%A7%E4%B8%96%E7%95%8C" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F668188.html&t=%E6%9E%81%E6%98%BC%E5%B7%A5%E4%BD%9C%E5%AE%A4%EF%BD%9C%E5%AD%A6%E6%B1%BD%E4%BF%AE%E7%9A%8417%E5%B2%81%E5%A5%B3%E5%AD%A9%EF%BC%8C%E7%8B%AC%E8%87%AA%E9%97%AF%E5%85%A5%E7%94%B7%E6%80%A7%E4%B8%96%E7%95%8C&d=2021-07-13&e=
+极昼工作室｜学汽修的17岁女孩，独自闯入男性世界
+——
+
+
+  
+  
+  文 **| **周航
+  编辑 **| **李晓芳
+  一切都在提示你，这里是男孩的地盘。汽车像宇宙飞船架在空中，扳手和钳子碰撞出清脆的金属声，空气中到处混合着机油、汽油和汗水的味道。
+  直到不信邪的古慧晶出现。17岁的女孩面庞清秀，尤其那双细长上翘的眼睛，如柳叶落在花园般美丽。女孩也爱漂亮，学校每周升旗仪式由她主持，更衣室挂着一排她挑选的礼服。
+  但更多时候，她穿着灰色工装，换好带铁板的工鞋，待在训练基地。头发扎成小丸子，汗水依旧沿刘海淌下来，手一抹，全是黑色油迹。
+  十一年了，她是学校唯一参加汽车机电维修项目集训的女生。这个项目要求两个半小时内完成发动机检修、全车维护等四项任务。就像奥数一样，参与者除了课堂学习，要投入大量时间额外训练，如果足够优秀，可以一路比到全国乃至国际大赛。
+  深圳市第二职..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F668188.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/668188.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/668188.html&text=极昼工作室｜学汽修的17岁女孩，独自闯入男性世界&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/668188.html&title=极昼工作室｜学汽修的17岁女孩，独自闯入男性世界" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/668188.html&title=极昼工作室｜学汽修的17岁女孩，独自闯入男性世界" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=极昼工作室｜学汽修的17岁女孩，独自闯入男性世界&body=
+极昼工作室｜学汽修的17岁女孩，独自闯入男性世界
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/668188.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/668188.html&title=极昼工作室｜学汽修的17岁女孩，独自闯入男性世界&caption=
+极昼工作室｜学汽修的17岁女孩，独自闯入男性世界
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=极昼工作室｜学汽修的17岁女孩，独自闯入男性世界&url=https://chinadigitaltimes.net/chinese/668188.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>极昼工作室｜学汽修的17岁女孩，独自闯入男性世界</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-07-13
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/668188.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F668188.html&t=%E6%9E%81%E6%98%BC%E5%B7%A5%E4%BD%9C%E5%AE%A4%EF%BD%9C%E5%AD%A6%E6%B1%BD%E4%BF%AE%E7%9A%8417%E5%B2%81%E5%A5%B3%E5%AD%A9%EF%BC%8C%E7%8B%AC%E8%87%AA%E9%97%AF%E5%85%A5%E7%94%B7%E6%80%A7%E4%B8%96%E7%95%8C&d=2021-07-13&e=
+极昼工作室｜学汽修的17岁女孩，独自闯入男性世界
+——
+
+
+  
+  
+  文 **| **周航
+  编辑 **| **李晓芳
+  一切都在提示你，这里是男孩的地盘。汽车像宇宙飞船架在空中，扳手和钳子碰撞出清脆的金属声，空气中到处混合着机油、汽油和汗水的味道。
+  直到不信邪的古慧晶出现。17岁的女孩面庞清秀，尤其那双细长上翘的眼睛，如柳叶落在花园般美丽。女孩也爱漂亮，学校每周升旗仪式由她主持，更衣室挂着一排她挑选的礼服。
+  但更多时候，她穿着灰色工装，换好带铁板的工鞋，待在训练基地。头发扎成小丸子，汗水依旧沿刘海淌下来，手一抹，全是黑色油迹。
+  十一年了，她是学校唯一参加汽车机电维修项目集训的女生。这个项目要求两个半小时内完成发动机检修、全车维护等四项任务。就像奥数一样，参与者除了课堂学习，要投入大量时间额外训练，如果足够优秀，可以一路比到全国乃至国际大赛。
+  深圳市第二职..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F668188.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1626168966000-->
+<p><a href="https://chinadigitaltimes.net/chinese/668188.html">极昼工作室｜学汽修的17岁女孩，独自闯入男性世界</a>
+——</p>
+
+<div>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/07/image-1626168815505.png" alt="file" /></p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/07/image-1626168822260.png" alt="file" /></p>
+  <p><strong>文 **</strong>| **周航</p>
+  <p><strong>编辑 **</strong>| **李晓芳</p>
+  <p>一切都在提示你，这里是男孩的地盘。汽车像宇宙飞船架在空中，扳手和钳子碰撞出清脆的金属声，空气中到处混合着机油、汽油和汗水的味道。</p>
+  <p>直到不信邪的古慧晶出现。17岁的女孩面庞清秀，尤其那双细长上翘的眼睛，如柳叶落在花园般美丽。女孩也爱漂亮，学校每周升旗仪式由她主持，更衣室挂着一排她挑选的礼服。</p>
+  <p>但更多时候，她穿着灰色工装，换好带铁板的工鞋，待在训练基地。头发扎成小丸子，汗水依旧沿刘海淌下来，手一抹，全是黑色油迹。</p>
+  <p>十一年了，她是学校唯一参加汽车机电维修项目集训的女生。这个项目要求两个半小时内完成发动机检修、全车维护等四项任务。就像奥数一样，参与者除了课堂学习，要投入大量时间额外训练，如果足够优秀，可以一路比到全国乃至国际大赛。</p>
+  <p>深圳市第二职业技术学校汽车部教学负责人李世川看到过女性在汽修行业获得成功。他曾公派德国学习，看到许多异性在修理厂工作，只不过，这些女技师个头跟他一样结实。</p>
+  <p>正式集训前，李世川找过古慧晶，建议要不去汽车营销集训队，那里胜算更大，也是女生通常的选择。机电修理太考验体力，两个半小时一刻不能歇，他担心细胳膊细腿的女孩实在坚持不下去。</p>
+  <p>但古慧晶坚持留下来。那时起，李世川决定，尽可能带这个女孩走到最远的地方。</p>
+  <p>李世川49岁了，他在汽修厂待过十多年，至今保持着某种年轻的心态，从老校长到“00”后学生，都称他为“川哥”。李世川把自己掌握的省力技巧传授给古慧晶，为她安排特殊的培训计划，比如在生理期那几天避开重体力的活。他调侃古慧晶，是第一个让他赛前还能休息几天的选手。</p>
+  <p>一路都是奇异眼光，当古慧晶在校内选拔脱颖而出，代表深圳参加广东省技能大赛，引来教育局领导亲自过问。比赛现场，没任务的裁判纷纷来到她的赛台，围观这个历史上第一个参赛女生。</p>
+  <p>信任和训练得到回报，古慧晶拿了一等奖，全省第三的名次，创造了学校历史最好成绩，还获得全国技能大赛遴选赛入场券。</p>
+  <p>结果是重要的。这让李世川对古慧晶未来职业更有信心，不会输给他这个高级技师。他过往那些优秀的弟子，有的已经成为汽车公司独当一面的能人，有几个还自己开了汽修店。</p>
+  <p>但李世川觉得，她是第一个参赛的女生，可能也是最后一个。她太特别了，李世川和她下过象棋，小女孩棋风凌厉，充满攻击性，也从不悔棋，“没有一点娇滴滴的样子。”</p>
+  <p>对古慧晶来说，这也证明她做对了选择。只有她清楚，自己经历了多少艰辛，才赢得这份成绩。</p>
+  <p>以下是古慧晶口述的经历：</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/07/post-668188-60ed5e0e616fb.png" alt="image" /></p>
+  <p><strong>没见过晚上的操场</strong></p>
+  <p>为什么报汽修？那时候想得很简单，就看电影里修车，像《速度与激情》《变形金刚》，觉得好酷炫好帅，希望自己也能有本领组装一台很帅的车。</p>
+  <p>对了，我从小喜欢闻机油味，发动机打火启动瞬间，会弥漫一点机油味，我觉得好香啊，就偷偷地使劲闻。我也问过别人，都说一般，或者好臭，但我很迷恋这种味道。后来我老师说这可能是“方向味”，意思是指引了我人生方向。</p>
+  <p>我对自己认知很清楚，因为偏科，上了普高不一定能考进自己心仪的大学。初二开始吧，就听不进去了，后来100分可能就考个四五十分吧。</p>
+  <p>我决定保送职校，初中班里同学传来传去，传到整个年级，传到别的学校。大家会开玩笑，说我去职校就为了混混日子，只是去玩而已。</p>
+  <p>我很难过，但他们这样质疑，我更加坚定要证明自己选择没错。我就希望能把一件事情做到最好，不是浑浑噩噩地度过（时间）。我爸妈也说，一定要对得起自己的选择。</p>
+  <p>当时真的很单纯，我以为汽车有4个轮子，1个方向盘，加上汽油，就能跑了。我以为汽车修理都是普通操作，没想到有这么多系统化东西，工程量这么大。</p>
+  <p>我参加的机电修理比赛有四个部分，车轮定位、发动机拆装、汽车定期维护和汽车故障诊断，每个部分都很累。</p>
+  <p>比如说车轮定位，我们要拆减震器，就是一个弹簧。男生确实有优势，力量更强大，他们一下就拔出来了减震器，我根本拔不动，动都不动一下。</p>
+  <p>有一次，我拆下来了，实在塞不回去，很崩溃，内心已经在吼了，但是周围那么多人，没真的吼出来。最后用一个长把手压住横拉杆，使劲往死里弄，才把减震器弄进去。</p>
+  <p>拆也要用长把手，这是我跟老师一起研制的方法，把它压在我胳膊下，借力到汽车一个部件下，胳膊一压，手一拔，就好拔出来了。就是坚持这样用巧力去训练。</p>
+  <p>再比如汽车定期维护，节奏特别快，很多部件要抱出来，恨不得飞起来做。我们要穿工鞋防打滑，每只鞋里面有两斤重的铁板吧。一共五个流程，我做完第一个流程，就没力气了。没办法啊，就是硬着头皮坚持下来。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/07/post-668188-60ed5e0e9dc5c." alt="image" /></p>
+  <p>● 训练中的古慧晶。讲述者供图。</p>
+  <p>高一为了加强体力，我每天早上绕学校去跑一周，25分钟，再去做早操。</p>
+  <p>高二就没有时间了。一开始两周回一次家，再后来一个月回一次，最后两个月回一次。晚上11点下班，我还会自己加练，到12点甚至更晚。最后比赛前一个月，所有课都停了，从早上6点练到晚上12点，还经常要加班，冲刺嘛，没办法。</p>
+  <p>学这个项目太累了，也太枯燥了，日复一日做一样的东西。最早大概有30多个人报了，大多数人都坚持不下来。</p>
+  <p>我们专业一届两百多个人，我们班45个人，八个女生，正好一个寝室。有个女生家里做这行的，其他人可能都是调剂。她们也会参加比赛，报汽车营销这个项目，那里基本都是女孩子。业余时间，她们可能会去图书馆看书，奶茶店坐一坐，晚自习结束，去操场走走。我都在实训室。我就没见过学校操场晚上长什么样子。</p>
+  <p>参加机电维修，我优势是比较踏实吧，老师教的步骤完成得很干净，其他人可能会有多余动作，我用了三步，他们可能会用四五步，也没有那么细致，分就没吃到。我觉得自己没有特别优秀。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/07/post-668188-60ed5e0e616fb.png" alt="image" /></p>
+  <p><strong>每天想放弃一百次</strong></p>
+  <p>我每天都想放弃，一天想100次。真的，不仅仅是身体累，只有男生的环境下特别辛苦，特别孤独。</p>
+  <p>集训队其他三个都是男生，他们一块吃饭，一块玩，我就是一个人。回寝室室友都睡着了，洗澡都是拿手机照，用桶接水，轻轻擦，不敢弄出太大声音。</p>
+  <p>对我来说最难的是故障诊断，要看懂电路图，比初中物理复杂多了，各种控件，老师怎么教我都搞不清楚。找他们请教，他们说你一个女生来这里干嘛，学不会就别学了，为什么不去营销（汽车部另一个集训队）？我就不说话了。</p>
+  <p>高二我自己突然开窍了，可能也是慢慢熟能生巧了。现在你只要给我维修手册、维修工具，哪里出故障，我都能找出问题。</p>
+  <p>我邀请过他们（男同学）一起去吃饭，但人家都不搭理你，我有什么办法。每次我自己有吃的，比如家里带来的一箱牛奶，我会分享给他们，他们也是不开心的样子。</p>
+  <p>一开始我还以为他们心情不好，后来才意识到，可能是排斥我。也是因为竞争关系吧，只有一个参赛名额，他们没想到，我一个女生竟然赢了他们。学长就会很照顾我，去请教问题，他们会很耐心解答。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/07/post-668188-60ed5e0f0e505." alt="image" /></p>
+  <p>● 职校汽修班，学生多为男性。</p>
+  <p>每天都特别累，我的发泄方式就是周末宿舍没人，晚上训练完之后我一个人在寝室大哭，哭到睡着。</p>
+  <p>好想有个女生陪我，不是说陪我一起训练，我的意思就是说，希望女生能够强大一点。</p>
+  <p>但一些女生心思也好奇怪。有学姐说，我参加机电修理，就是因为男生多。我超沮丧的，我选择自己喜欢的，结果你说我是为了勾引男人，这种人的见识太短了。包括这次（拿奖）上热搜，辅导员在班群里分享新闻，结果宿舍群里有人说，这有什么好上热搜。当然只是一两个人这样。</p>
+  <p>我不会回击。我比较佛系，他们说就说吧，虽然自己还是会很伤心。</p>
+  <p>我也不知道为啥自己硬着头皮坚持了下来，可能是不太想辜负我的两位老师，然后熬下来了。家里人也一直鼓励我，说付出就会有回报。</p>
+  <p>老师一开始就很照顾我，开始报名的人很多，不是每个人都有工位，他们就会说让一下女生，让我先去学习。我不觉得这种照顾有什么不正确，毕竟以前没有过女生嘛，而且我是很认真去学习，不是去玩的，老师也看得出来。</p>
+  <p>我经常觉得自己做的不好。有时候忍不住就流泪了，挡着点，偷偷流，他们都以为出的汗。比赛前两周，我在拆发动机，觉得自己一直在原地打转，没有进步，又觉得很压抑，又哭了。</p>
+  <p>那次被老师看到了，他们会说，其实你做的很棒的，只要再自信一点。他们也注意到男生在排挤我，就跟我说，你只用踏实做你自己，剩下的他们会搞定。</p>
+  <p>他们会跟男生说，男士要大气一点。但其实也没什么用，他们（男生）年纪也小吧。</p>
+  <p>未来职场我没想过。我觉得可能只要有竞争关系，都会有打压吧，可能被男性打压，也可能被女性打压。但我现在都不怕了。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/07/post-668188-60ed5e0e616fb.png" alt="image" /></p>
+  <p><strong>本领是自己的</strong></p>
+  <p>我其实挺爱打扮的，从小就臭美（笑）。初中晚上用洗面奶洗完脸，会敷个面膜，刻意看自己皮肤有没有长痘痘，保养一下。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/07/post-668188-60ed5e0f5d457." alt="image" /></p>
+  <p>● 古慧晶生活照。汽修之外，她也喜欢化妆、拍照和美丽的裙子。讲述者供图。</p>
+  <p>选择这个专业之后，完全就没打理过了。每天都黑头黑脸，手也黑。洗干净就行了。起床花5分钟或者3分钟，我就洗漱完了，夹个头发、刷个牙，直接出门。</p>
+  <p>我不会觉得机油脏啊，你看美术师，他们需要用到颜料，必须上色，画才会更加深邃什么的。我们学汽修的，机油、汽油不就是我们的原料么。</p>
+  <p>什么场合做什么事，我自己分得很清楚。很正式的场合，一定会提前护肤，化个妆。出去逛街或者拍照，不打扮我真的会疯掉的，就不想干这个事了。学校里只有工服和校服，但家里我衣服挺多的。比赛完，我和朋友出门逛街，可以花一个半小时挑衣服，换来换去的，旗袍我喜欢，洛丽塔和JK也喜欢，裙子喜欢，裤子也喜欢，只要好看的我都喜欢。我还喜欢抓娃娃，家里的床一半放满了娃娃，有小黄人呀，Hello Kitty也有，觉得好幸福啊，在学校时候就想着回家。我出去比赛还带了最喜欢的一个棉花娃娃，纯手工的，可以换衣服，特别可爱，放在酒店，陪我睡觉。</p>
+  <p>会有男生追求我，给我送奶茶，送水，挺努力的，中秋节那一天，我收到了还算挺多的月饼，他们塞给我，我就很尴尬，不知道怎么还礼。</p>
+  <p>我都直接说我有男朋友，我就这样子说了，我无所谓。其实我没有男朋友，也没谈过恋爱。</p>
+  <p>不是不喜欢男生，（笑）我蛮花心的，比较帅比较善良的那种，见一个喜欢一个喜欢一个，但喜欢超过不了20分钟。我就是怕麻烦，身边也有朋友谈恋爱的，他们会吵架呐，还要去考虑别人的感受，多累，我天，还不如我自己一个人开开心心的。不向往电影里的爱情，因为我知道那些是假的。</p>
+  <p>我觉得我是很大方，很友好，很善良的小女孩，真的，如果我要是男生，我就会喜欢我自己。但我只希望不要有人喜欢我（笑）。我的原则是高调做事，低调做人。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/07/post-668188-60ed5e0f8dcfe." alt="image" /></p>
+  <p>● 古慧晶未来的理想是成为汽修界大佬。讲述者供图。</p>
+  <p>我现在已经保送到了深圳职业技术学院，还是会选择汽车专业。我就想做汽修界的大佬，不是大老板，就是汽修界什么都能做到那种大佬，不管机修、售后、营销还是保养，我都能做。就是很厉害的那种师傅。</p>
+  <p>上热搜，看到有些人说又骗大家去职校。我觉得每个人都有自己想法。报这个专业前，我也问过学长学姐，他们说学的知识还是很多的，也很充分，只要你好好学，本领就是自己。拿奖了以后，我妈妈发了条朋友圈：“古家有女初长成，她用事实证明读职校也是有出息的。”</p>
+  <p>我觉得，不管在哪个领域，只要做好自己，坚持为自己的目标奋斗，都是优秀的人。</p>
+  <p>版权声明：本文所有内容著作权归属极昼工作室，未经书面许可，不得转载、摘编或以其他形式使用，另有声明除外。</p>
+  <ul>
+    <li>END –</li>
+  </ul>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2021-07-13</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-13/%E7%9F%A5%E4%B9%8E-Seasee-Youl%E7%AD%94%E9%97%AE-%E4%BD%A0%E8%B6%8A%E6%9D%A5%E8%B6%8A%E6%B2%89%E9%BB%98%E7%9A%84%E5%8E%9F%E5%9B%A0%E6%98%AF%E4%BB%80%E4%B9%88">
+          知乎｜Seasee Youl答问：你越来越沉默的原因是什么?
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-13</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-13/%E5%8C%BB%E5%AD%A6%E7%95%8C-%E5%A4%9A%E5%9C%B0%E5%8F%91%E9%80%9A%E5%91%8A-%E4%B8%8D%E6%89%93%E7%96%AB%E8%8B%97-%E8%BF%99%E4%BA%9B%E5%9C%B0%E6%96%B9%E7%A6%81%E6%AD%A2%E8%BF%9B%E5%85%A5">
+          医学界｜多地发通告：不打疫苗，这些地方禁止进入
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-13</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-13/404%E6%96%87%E5%BA%93-%E4%B8%AD%E7%BE%8E%E5%8D%B0%E8%B1%A1%E7%BD%91-2015-2020-%E4%B8%AD%E7%BE%8E%E7%AB%9E%E4%BA%89%E7%9A%84%E5%85%B3%E9%94%AE%E4%BA%94%E5%B9%B4">
+          【404文库】中美印象网｜2015-2020，中美竞争的关键五年
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-12</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-12/%E6%9D%8E%E6%9C%AA%E7%86%9F%E6%93%92%E8%AF%9D-%E4%B8%8D%E6%87%82%E5%B0%B1%E9%97%AE-%E5%A1%94%E5%88%A9%E7%8F%AD%E7%A4%BA%E7%88%B1-%E6%98%AF%E5%81%9A%E7%9A%84%E6%89%B9%E5%8F%91%E8%BF%98%E6%98%AF%E9%9B%B6%E5%94%AE">
+          李未熟擒话 | 不懂就问：塔利班示爱，是做的批发还是零售？
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-13/%E6%A1%83%E5%9C%92%E6%96%B0%E5%A2%9E2%E4%BE%8B-%E8%B2%A8%E9%81%8B%E8%A1%8C%E5%93%A1%E5%B7%A5%E7%A2%BA%E8%A8%BA%E6%84%9F%E6%9F%93%E6%BA%90%E4%B8%8D%E6%98%8E">
+            前一篇：桃園新增2例 貨運行員工確診感染源不明
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-13/%E6%AF%8F%E4%B8%AA%E4%BA%BA%E9%83%BD%E6%9C%89%E5%BF%8D%E6%97%A0%E5%8F%AF%E5%BF%8D%E7%9A%84%E6%97%B6%E5%80%99-%E5%8F%A4%E5%B7%B4%E7%88%86%E5%8F%91%E5%A4%A7%E8%A7%84%E6%A8%A1%E6%8A%97%E8%AE%AE">
+            后一篇：“每个人都有忍无可忍的时候”：古巴爆发大规模抗议
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-07-13/%E6%A1%83%E5%9C%92%E6%96%B0%E5%A2%9E2%E4%BE%8B-%E8%B2%A8%E9%81%8B%E8%A1%8C%E5%93%A1%E5%B7%A5%E7%A2%BA%E8%A8%BA%E6%84%9F%E6%9F%93%E6%BA%90%E4%B8%8D%E6%98%8E'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-07-13/%E6%AF%8F%E4%B8%AA%E4%BA%BA%E9%83%BD%E6%9C%89%E5%BF%8D%E6%97%A0%E5%8F%AF%E5%BF%8D%E7%9A%84%E6%97%B6%E5%80%99-%E5%8F%A4%E5%B7%B4%E7%88%86%E5%8F%91%E5%A4%A7%E8%A7%84%E6%A8%A1%E6%8A%97%E8%AE%AE'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-07-13/%E5%8C%BB%E5%AD%A6%E7%95%8C-%E5%A4%9A%E5%9C%B0%E5%8F%91%E9%80%9A%E5%91%8A-%E4%B8%8D%E6%89%93%E7%96%AB%E8%8B%97-%E8%BF%99%E4%BA%9B%E5%9C%B0%E6%96%B9%E7%A6%81%E6%AD%A2%E8%BF%9B%E5%85%A5'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-07-13/404%E6%96%87%E5%BA%93-%E4%B8%AD%E7%BE%8E%E5%8D%B0%E8%B1%A1%E7%BD%91-2015-2020-%E4%B8%AD%E7%BE%8E%E7%AB%9E%E4%BA%89%E7%9A%84%E5%85%B3%E9%94%AE%E4%BA%94%E5%B9%B4'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-07-13/%E6%A1%83%E5%9C%92%E6%96%B0%E5%A2%9E2%E4%BE%8B-%E8%B2%A8%E9%81%8B%E8%A1%8C%E5%93%A1%E5%B7%A5%E7%A2%BA%E8%A8%BA%E6%84%9F%E6%9F%93%E6%BA%90%E4%B8%8D%E6%98%8E">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-07-13/%E6%AF%8F%E4%B8%AA%E4%BA%BA%E9%83%BD%E6%9C%89%E5%BF%8D%E6%97%A0%E5%8F%AF%E5%BF%8D%E7%9A%84%E6%97%B6%E5%80%99-%E5%8F%A4%E5%B7%B4%E7%88%86%E5%8F%91%E5%A4%A7%E8%A7%84%E6%A8%A1%E6%8A%97%E8%AE%AE">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-07-13/%E5%8C%BB%E5%AD%A6%E7%95%8C-%E5%A4%9A%E5%9C%B0%E5%8F%91%E9%80%9A%E5%91%8A-%E4%B8%8D%E6%89%93%E7%96%AB%E8%8B%97-%E8%BF%99%E4%BA%9B%E5%9C%B0%E6%96%B9%E7%A6%81%E6%AD%A2%E8%BF%9B%E5%85%A5">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-07-13/404%E6%96%87%E5%BA%93-%E4%B8%AD%E7%BE%8E%E5%8D%B0%E8%B1%A1%E7%BD%91-2015-2020-%E4%B8%AD%E7%BE%8E%E7%AB%9E%E4%BA%89%E7%9A%84%E5%85%B3%E9%94%AE%E4%BA%94%E5%B9%B4">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

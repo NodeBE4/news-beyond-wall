@@ -1,0 +1,2104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>[World] 欧洲中世纪教会如何塑造了当今的“西方思想” – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+[World] 欧洲中世纪教会如何塑造了当今的“西方思想”
+——
+" />
+    <meta property="og:description" content="
+[World] 欧洲中世纪教会如何塑造了当今的“西方思想”
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="[World] 欧洲中世纪教会如何塑造了当今的“西方思想”" />
+    <meta property="twitter:title" content="[World] 欧洲中世纪教会如何塑造了当今的“西方思想”" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fworld-55883900&t=%5BWorld%5D+%E6%AC%A7%E6%B4%B2%E4%B8%AD%E4%B8%96%E7%BA%AA%E6%95%99%E4%BC%9A%E5%A6%82%E4%BD%95%E5%A1%91%E9%80%A0%E4%BA%86%E5%BD%93%E4%BB%8A%E7%9A%84%E2%80%9C%E8%A5%BF%E6%96%B9%E6%80%9D%E6%83%B3%E2%80%9D" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fworld-55883900&t=%5BWorld%5D+%E6%AC%A7%E6%B4%B2%E4%B8%AD%E4%B8%96%E7%BA%AA%E6%95%99%E4%BC%9A%E5%A6%82%E4%BD%95%E5%A1%91%E9%80%A0%E4%BA%86%E5%BD%93%E4%BB%8A%E7%9A%84%E2%80%9C%E8%A5%BF%E6%96%B9%E6%80%9D%E6%83%B3%E2%80%9D&d=2021-02-03&e=
+[World] 欧洲中世纪教会如何塑造了当今的“西方思想”
+——
+
+
+  
+    欧洲中世纪教会如何塑造了当今的“西方思想”
+  
+  
+    
+      
+        乔·亨里奇
+        （Joe Henrich）
+      
+    
+  
+  
+    7 小时前
+  
+  
+    
+      
+        
+          
+            图像来源，Getty Images
+          
+        
+        
+          
+图像加注文字，            个人主义和从众心理的程度在不同社会各有不同，而这种差异早在几百年前已开始产生。
+          
+        
+      
+    
+  
+  
+    人类心理学的大多数研究都集中在当今西方社会，其实西方人思维方式的形成可以追溯到中世..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fworld-55883900" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=http://www.bbc.com/zhongwen/simp/world-55883900" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=http://www.bbc.com/zhongwen/simp/world-55883900&text=[World] 欧洲中世纪教会如何塑造了当今的“西方思想”&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=http://www.bbc.com/zhongwen/simp/world-55883900&title=[World] 欧洲中世纪教会如何塑造了当今的“西方思想”" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://www.bbc.com/zhongwen/simp/world-55883900&title=[World] 欧洲中世纪教会如何塑造了当今的“西方思想”" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=[World] 欧洲中世纪教会如何塑造了当今的“西方思想”&body=
+[World] 欧洲中世纪教会如何塑造了当今的“西方思想”
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=http://www.bbc.com/zhongwen/simp/world-55883900" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=http://www.bbc.com/zhongwen/simp/world-55883900&title=[World] 欧洲中世纪教会如何塑造了当今的“西方思想”&caption=
+[World] 欧洲中世纪教会如何塑造了当今的“西方思想”
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=[World] 欧洲中世纪教会如何塑造了当今的“西方思想”&url=http://www.bbc.com/zhongwen/simp/world-55883900" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>[World] 欧洲中世纪教会如何塑造了当今的“西方思想”</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-02-03
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#BBC ">
+          BBC
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="http://www.bbc.com/zhongwen/simp/world-55883900"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="BBC的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#BBC 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fworld-55883900&t=%5BWorld%5D+%E6%AC%A7%E6%B4%B2%E4%B8%AD%E4%B8%96%E7%BA%AA%E6%95%99%E4%BC%9A%E5%A6%82%E4%BD%95%E5%A1%91%E9%80%A0%E4%BA%86%E5%BD%93%E4%BB%8A%E7%9A%84%E2%80%9C%E8%A5%BF%E6%96%B9%E6%80%9D%E6%83%B3%E2%80%9D&d=2021-02-03&e=
+[World] 欧洲中世纪教会如何塑造了当今的“西方思想”
+——
+
+
+  
+    欧洲中世纪教会如何塑造了当今的“西方思想”
+  
+  
+    
+      
+        乔·亨里奇
+        （Joe Henrich）
+      
+    
+  
+  
+    7 小时前
+  
+  
+    
+      
+        
+          
+            图像来源，Getty Images
+          
+        
+        
+          
+图像加注文字，            个人主义和从众心理的程度在不同社会各有不同，而这种差异早在几百年前已开始产生。
+          
+        
+      
+    
+  
+  
+    人类心理学的大多数研究都集中在当今西方社会，其实西方人思维方式的形成可以追溯到中世..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fworld-55883900" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1612412408000-->
+<p><a href="http://www.bbc.com/zhongwen/simp/world-55883900">[World] 欧洲中世纪教会如何塑造了当今的“西方思想”</a>
+——</p>
+
+<div>
+  <div dir="ltr" class="css-e19l8g-GridComponent e57qer20">
+    <h1 id="content" tabindex="-1" class="css-1wfn6k3-Headline e1yj3cbb0">欧洲中世纪教会如何塑造了当今的“西方思想”</h1>
+  </div>
+  <div dir="ltr" class="e1j2237y2 css-vf19ca-GridComponent e57qer20">
+    <div class="css-s561j-Container e1c9i7u10">
+      <ul role="list" class="css-pu07qy-Person e1c9i7u12">
+        <li role="listitem" class="css-dvly96-Name e1c9i7u13">乔·亨里奇</li>
+        <li role="listitem" class="css-1942rtw-Title e1c9i7u14">（Joe Henrich）</li>
+      </ul>
+    </div>
+  </div>
+  <div dir="ltr" class="e1j2237y1 css-vf19ca-GridComponent e57qer20">
+    <time datetime="2021-02-04" class="css-pb6w51-StyledTimestamp e4zesg50">7 小时前</time>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-oijotl-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/412C/production/_116748661_16007449-10ee-4477-8a5b-bb2820308bdc.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/412C/production/_116748661_16007449-10ee-4477-8a5b-bb2820308bdc.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/412C/production/_116748661_16007449-10ee-4477-8a5b-bb2820308bdc.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/412C/production/_116748661_16007449-10ee-4477-8a5b-bb2820308bdc.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/412C/production/_116748661_16007449-10ee-4477-8a5b-bb2820308bdc.jpg 800w" alt="个人主义和从众心理的程度在不同社会各有不同，而这种差异早在几百年前已开始产生。" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/412C/production/_116748661_16007449-10ee-4477-8a5b-bb2820308bdc.jpg" width="1024" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />            <p role="text" class="css-19db9gm-Copyright etq3yw90"><span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像来源，</span><span lang="en-GB">Getty Images</span></p>
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>个人主义和从众心理的程度在不同社会各有不同，而这种差异早在几百年前已开始产生。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70"><strong>人类心理学的大多数研究都集中在当今西方社会，其实西方人思维方式的形成可以追溯到中世纪家庭结构的变迁。</strong></p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">在这个心理学实验室，你是一小组参与实验者之一，你和其他参与者的任务是将你身边的一条直线与另外三条长度不等的直线相比较，找出三直线中与你身边直线等长的直线。然后参与者须依次大声说出你认为你已找到的正确直线。有时候其他参与者的选择和你一样。但有时他们彼此似乎一致，却与你找出的直线不相同。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">最后才轮到你大声说出你的判断。此时，你是跟随实验伙伴们的选择而人云亦云，还是始终坚持自己的最初判断?</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">这在很大程度上取决于你来自何处。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">这项从20世纪中叶开始就吸引了心理学家和大学生纷纷投入的实验显示，有很大一部分实验参加者会按照同伴们不准确的判断作出选择。即使正确答案是显而易见，他们也会随大流选择错误的答案。而如果是独自一人或是一组人中第一个先回答，则给出正确答案的几率超过98%。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">上述发现引发两个问题。首先，尽管心理学教科书提到参与实验者时，使用的是泛指一词“人们”，但实际上几乎所有这类研究都是在特定的人群，即美国学生中进行的。然而，自十九世纪法国思想家亚历克西斯·德·托克维尔（Alexis De Tocqueville）以来，历代的社会评论家们都指出，美国人特别崇尚个人主义和独立自主。那么，是否像教科书所暗示的，美国人的心理代表了智人这个物种的普遍心理状态？第二，为什么这个结果对研究人员和参与的学生都感觉震惊？</p>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-oijotl-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/8F4C/production/_116748663_1d424eb8-f7a3-4c39-956d-91949d7b07e0.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/8F4C/production/_116748663_1d424eb8-f7a3-4c39-956d-91949d7b07e0.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/8F4C/production/_116748663_1d424eb8-f7a3-4c39-956d-91949d7b07e0.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/8F4C/production/_116748663_1d424eb8-f7a3-4c39-956d-91949d7b07e0.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/8F4C/production/_116748663_1d424eb8-f7a3-4c39-956d-91949d7b07e0.jpg 800w" alt="在一些文化中，特立独行被视为有创见，而在另一些文化中则被视为离经叛道的坏行为。" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/8F4C/production/_116748663_1d424eb8-f7a3-4c39-956d-91949d7b07e0.jpg" width="1024" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>在一些文化中，特立独行被视为有创见，而在另一些文化中则被视为离经叛道的坏行为。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">为了解答第一个问题，研究人员在20世纪90年代分析了17个国家的上述实验（AschConformity Task即著名的阿希从众实验）的研究结果，发现在这17国实验参与者的从众程度比分中，美国的实验参与者的从众比分位于最低端。法国和北美的学生跟随同伙的判断作出判断的从众比为20%，而加纳和斐济的学生为50%。来自其他文化，包括日本、香港和黎巴嫩的学生，其从众比例则介于上述两组学生之间。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">美国德克萨斯大学奥斯汀分校的认知科学家克里斯汀·勒加雷（Cristine Legare）领导的研究进一步研究了这些模式，其研究可能有助于解释为什么人类的从众心理程度让心理学者也感到震惊。勒加雷的团队让美国和南太平洋岛国瓦努阿图的两组成年人观看两段儿童制作项链的视频。在这两个视频中，都有一位孩子首先观看制作示范，然后被要求自己制作。不过，在其中一个视频中，这个孩子用珠子串了一条项链，珠子颜色和排列顺序都与示范者完全相同。而在第二个视频中，孩子制作的项链彩色珠子排列顺序则不一样。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">被问及哪个孩子“更聪明”时，瓦努阿图88%的成年人指的是亦步亦趋的“从众”孩子，而美国作出同样回答的只有19%。美国的成年人被问及为什么他们认为不按照示范者顺序串珠子的孩子“更聪明”时，回答说这个孩子“有创见”。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">如果问，两个孩子哪一位表现得较好，78%的瓦努阿图成年人认为是从众孩子，而美国受访者中只有不到一半（44%）的人有同样的感觉。相反，大多数美国人（56%）认为按照示范串珠子的孩子和不按照示范的孩子表现得都一样好。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">这彰显了一个事实，在很多地方称某人为“循规蹈矩者”是一种赞赏，但在美国不是。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">然而，从众心理并不是文化差异的特殊情况，只代表人类心理冰山露出水面的一角。我们认识人类心理现象的数据主要（事实上大约达95%）来自西方的、受过教育的、工业化的、富裕的和民主的人类群体，即称为WEIRD（Western, Educated, Industrialised, Rich and Democratic）5个英文形容词的首字母缩写，而英文weird一词也有怪异之意) 的社会，而WEIRD社会人口在很多方面有其独特性。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">与今天世界上的许多人，以及曾经生活在这个世界上的大多数人不同，WEIRD社会的人其思想高度强调个人主义，有自尊自爱倾向和负罪感，并善于理性分析。他们对自我，即自己的个性、成就和抱负的看重强于对人际关系和社会角色的重视。WEIRD社会的人在思考时，倾向于抽象归类事物来认识世界。他们会将复杂的现象分门别类为不同的元素和属性，或设想成基本粒子、病原体或人类个性的诸多类型，以此来简化复杂的世界现象。</p>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-oijotl-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/DD6C/production/_116748665_90094f14-8638-4692-acfb-e6959aa09263.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/DD6C/production/_116748665_90094f14-8638-4692-acfb-e6959aa09263.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/DD6C/production/_116748665_90094f14-8638-4692-acfb-e6959aa09263.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/DD6C/production/_116748665_90094f14-8638-4692-acfb-e6959aa09263.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/DD6C/production/_116748665_90094f14-8638-4692-acfb-e6959aa09263.jpg 800w" alt="欧洲人的婚姻和家庭结构模式导致欧洲人的思维方式不同于世界其他地区的人类。" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/DD6C/production/_116748665_90094f14-8638-4692-acfb-e6959aa09263.jpg" width="1024" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>欧洲人的婚姻和家庭结构模式导致欧洲人的思维方式不同于世界其他地区的人类。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">尽管WEIRD社会的人看起来比较自尊自爱，但他们也倾向于坚持公正的原则，能信任和公平对待异乡人，并能够与其合作。在情感上，WEIRD人群相对来说少羞耻感，因此不那么在乎他人的眼光，但又会经常因无法达到自己强加的人生标准而感到内疚自责。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">这些心理差异从何而来?为什么欧洲人，以及他们在北美等地的文化后裔，会位于全球心理分布的另一端？</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">越来越多的研究将这些心理差异追溯到家庭结构，即人类学家所称的亲族组织。这类研究表明，我们的思想在我们的成长过程中会去量度记录并适应我们生活的社会。直到最近，世界大多数社会都以紧密的亲族制度为基础，其核心是多代同堂大家庭、宗族、堂表亲婚姻、一夫多妻制和其他诸多亲族家法等，所有这一切规范着并凝聚着人们的社会生活。如今，这种以亲族为基础的社会制度在世界许多地区仍然存在，特别是在农村地区。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">与世界主流不同的是，至少从中世纪末期之后，许多欧洲国家主要实行的是一夫一妻核心家庭制度，这种社会构成模式历史学家称之为“欧洲婚姻模式”。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">科学分析验证了这一观点，发现生活在以亲族为基础的人比较从众随大流，较少个人主义，群体认同思维较重，内疚自责感较低，也不太信任异乡陌生人。无论我们是比较国家之间、国家内部的不同地区之间，还是比较居住在同一个地方来自不同国度的第二代移民，都会发现这样的模式。我们人类出生来到这个世界上，第一个接触到，通常也是最重要的社会制度就是家庭网络结构，而家庭制度用于解释全球心理多样性原因，可起到核心作用。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">但是，为什么不同社会的家庭组织方式会有如此的不同？而欧洲的家庭制度为什么在中世纪末期就已经独树一帜？</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">虽然影响全球各地亲族婚姻制度多样性的因素甚多，但若追溯欧洲婚姻模式之源，会发现主要来自一种宗教突变因素。基督教其中一个宗派，即影响欧洲数百上千年的罗马天主教，从欧洲古典时代晚期开始，逐渐颁布一系列关于婚姻和家庭的禁令和规定。例如，罗马天主教会禁止堂亲表亲婚姻、包办婚姻和一夫多妻等。与其他基督教教派不同的是，罗马天主教会将"乱伦"关系定义不断扩大，到11世纪时候已扩展到第六代堂表兄妹。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">罗马天主教会推行的严格一夫一妻婚姻制度尽管常常遭到顽强的抵抗，但最终逐渐瓦解了原欧洲以亲族为基础的复杂部族制度，最终形成一种为欧洲文化理想和共同模式的独立核心家庭制。</p>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-oijotl-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/471D/production/_116750281_98faca9a-d832-4c20-b0b7-6af1114ec20c.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/471D/production/_116750281_98faca9a-d832-4c20-b0b7-6af1114ec20c.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/471D/production/_116750281_98faca9a-d832-4c20-b0b7-6af1114ec20c.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/471D/production/_116750281_98faca9a-d832-4c20-b0b7-6af1114ec20c.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/471D/production/_116750281_98faca9a-d832-4c20-b0b7-6af1114ec20c.jpg 800w" alt="全世界不同文化有不同的群体认同程度，但为何90%的有关心理学研究只着眼于西方的人口？" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/471D/production/_116750281_98faca9a-d832-4c20-b0b7-6af1114ec20c.jpg" width="1024" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>全世界不同文化有不同的群体认同程度，但为何90%的有关心理学研究只着眼于西方的人口？</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">为了验证中世纪教会塑造了现代西方心理这一观点，我们可以通过追踪公元500年至1500年天主教在欧洲的传播分布，来探索这一历史过程所形成的不平衡性。分析发现，在欧洲，天主教会最早传播，受教会影响比其他区域早了几百年的地区，今天这些地区的欧洲人不太从众随大流，他们比较特立独行，对待异乡客和外人表现较信任和公平。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">从全球范围来看，在历史上受到罗马天主教影响较久的国家，其国民不仅亲族制度较弱，而且现在其人民心理上也比较接近“WEIRD”群体。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">我们大多数人可能更愿意认为自己是生而独立的理性思考者。但其实，我们思考、感知和推理的方式，包括我们的从众心理倾向和性喜理性分析的偏好，无一不受到历史事件、文化传统和几百年甚至上千年的婚姻禁忌的影响。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">了解历史如何塑造我们今天的思想，是探索和拥抱今天人类社会多样性的方法之一。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70"><em class="css-mzjj9u ewc4zcb0">*乔·亨里奇是哈佛大学人类进化生物学系教授，著有《探讨全球WEIRD性格最强的群体：西方文化心理特立独行和繁荣之谜》一书（The WEIRDest People in the World: How the West became psychologically peculiar and particularly prosperous.）</em></p>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-3p1z99-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/15AA8/production/_116744788_464x2.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/15AA8/production/_116744788_464x2.jpg 320w, https://ichef.bbci.co.uk/news/464/cpsprodpb/15AA8/production/_116744788_464x2.jpg 464w" alt="Grey line" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/15AA8/production/_116744788_464x2.jpg" width="464" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70"><em class="css-mzjj9u ewc4zcb0"><strong>WEIRD的西方</strong></em></p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70"><em class="css-mzjj9u ewc4zcb0">这篇文章是我们《WEIRD的西方》系列的一部分。早在2010年，加拿大英属哥伦比亚大学的一个研究小组就指出，心理学研究存在一个重大缺陷，即大部分研究样本完全来自西方、受过教育的、工业化的、富裕的、民主的社会，即WEIRD社会。研究人员常常误认为他们的研究发现是放诸四海而皆准。但英属哥伦比亚大学研究团队在分析这些研究发现，从思考风格到视觉感知，WEIRD社会的成员实际上是"最不具代表全人类普遍心理的群体"。</em></p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70"><em class="css-mzjj9u ewc4zcb0">然而，无论是主流媒体还是学术界，仍然普遍将WEIRD思想模式视为"通例"，或者至少作为审视其他文化、其他人类群体的"标准"。在本系列中，我们将深入了解WEIRD思想模式在日常生活中的状态。了解在WEIRD社会中，哪些习惯和思维方式是常见不怪的，但生活在世界其他地方的人可能会觉得怪异（weird，与WEIRD谐音）? 这对我们有何启示？是否能告诉我们何为文化差异，以及我们为何成为今日的我们？从什么时候洗澡到如何购物，这个系列会重新审视那些经常被认为是理所当然的日常行为，并探索为什么所谓的"标准"罕有是最好的标准，也并非是唯一的标准。</em></p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70"><i class="css-mzjj9u ewc4zcb0">请访问 </i><a href="https://www.bbc.com/future/" class="css-h9s9st-InlineLink e1cs6q200">BBC Future</a><i class="css-mzjj9u ewc4zcb0"> 阅读 </i><a href="https://www.bbc.com/future/article/20201231-how-the-way-you-think-was-shaped-centuries-ago" class="css-h9s9st-InlineLink e1cs6q200">英文原文</a><em class="css-mzjj9u ewc4zcb0">。</em></p>
+  </div>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#BBC 的其它文章</h4>
+    
+      <li>
+        <time>2021-02-05</time>
+        <a href="https://nodebe4.github.io/waimei/2021-02-05/Business-Clubhouse-%E9%9C%80%E8%A6%81%E9%82%80%E8%AF%B7%E5%87%BD%E6%89%8D%E8%83%BD%E5%8A%A0%E5%85%A5%E7%9A%84-%E7%B2%BE%E8%8B%B1%E4%BF%B1%E4%B9%90%E9%83%A8">
+          [Business] Clubhouse 需要邀请函才能加入的“精英俱乐部”？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-02-04</time>
+        <a href="https://nodebe4.github.io/waimei/2021-02-04/Uk-%E6%96%B0%E5%86%A0%E7%96%AB%E8%8B%97-%E5%A5%BD%E8%8E%B1%E5%9D%9E%E7%94%B5%E5%BD%B1-%E4%BC%A0%E6%9F%93%E7%97%85-%E7%BB%99%E8%8B%B1%E5%9B%BD%E5%8D%AB%E7%94%9F%E5%A4%A7%E8%87%A3%E7%9A%84%E5%90%AF%E7%A4%BA">
+          [Uk] 新冠疫苗：好莱坞电影《传染病》给英国卫生大臣的启示
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-02-03</time>
+        <a href="https://nodebe4.github.io/waimei/2021-02-03/Science-%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E-%E6%88%91%E4%BB%AC%E5%AF%B9%E4%B8%AD%E5%9B%BDCOVID-19%E7%96%AB%E8%8B%97%E4%BA%86%E8%A7%A3%E5%A4%9A%E5%B0%91">
+          [Science] 新冠肺炎：我们对中国COVID-19疫苗了解多少
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-02-02</time>
+        <a href="https://nodebe4.github.io/waimei/2021-02-02/Science-%E9%A5%AE%E9%A3%9F%E4%B8%8E%E5%81%A5%E5%BA%B7-%E4%B8%8D%E4%BB%A5%E5%87%8F%E8%82%A5%E4%B8%BA%E7%9B%AE%E7%9A%84-%E4%BA%94%E7%A7%8D%E6%96%B9%E6%B3%95%E5%B8%AE%E4%BD%A0%E6%94%B9%E5%96%84%E9%A5%AE%E9%A3%9F%E4%B9%A0%E6%83%AF">
+          [Science] 饮食与健康：不以减肥为目的 五种方法帮你改善饮食习惯
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-02-03/Science-%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E-%E6%88%91%E4%BB%AC%E5%AF%B9%E4%B8%AD%E5%9B%BDCOVID-19%E7%96%AB%E8%8B%97%E4%BA%86%E8%A7%A3%E5%A4%9A%E5%B0%91">
+            前一篇：[Science] 新冠肺炎：我们对中国COVID-19疫苗了解多少
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-02-04/Uk-%E6%96%B0%E5%86%A0%E7%96%AB%E8%8B%97-%E5%A5%BD%E8%8E%B1%E5%9D%9E%E7%94%B5%E5%BD%B1-%E4%BC%A0%E6%9F%93%E7%97%85-%E7%BB%99%E8%8B%B1%E5%9B%BD%E5%8D%AB%E7%94%9F%E5%A4%A7%E8%87%A3%E7%9A%84%E5%90%AF%E7%A4%BA">
+            后一篇：[Uk] 新冠疫苗：好莱坞电影《传染病》给英国卫生大臣的启示
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-02-03/Science-%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E-%E6%88%91%E4%BB%AC%E5%AF%B9%E4%B8%AD%E5%9B%BDCOVID-19%E7%96%AB%E8%8B%97%E4%BA%86%E8%A7%A3%E5%A4%9A%E5%B0%91'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-02-04/Uk-%E6%96%B0%E5%86%A0%E7%96%AB%E8%8B%97-%E5%A5%BD%E8%8E%B1%E5%9D%9E%E7%94%B5%E5%BD%B1-%E4%BC%A0%E6%9F%93%E7%97%85-%E7%BB%99%E8%8B%B1%E5%9B%BD%E5%8D%AB%E7%94%9F%E5%A4%A7%E8%87%A3%E7%9A%84%E5%90%AF%E7%A4%BA'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-02-04/Uk-%E6%96%B0%E5%86%A0%E7%96%AB%E8%8B%97-%E5%A5%BD%E8%8E%B1%E5%9D%9E%E7%94%B5%E5%BD%B1-%E4%BC%A0%E6%9F%93%E7%97%85-%E7%BB%99%E8%8B%B1%E5%9B%BD%E5%8D%AB%E7%94%9F%E5%A4%A7%E8%87%A3%E7%9A%84%E5%90%AF%E7%A4%BA'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-02-03/Science-%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E-%E6%88%91%E4%BB%AC%E5%AF%B9%E4%B8%AD%E5%9B%BDCOVID-19%E7%96%AB%E8%8B%97%E4%BA%86%E8%A7%A3%E5%A4%9A%E5%B0%91'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-02-03/Science-%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E-%E6%88%91%E4%BB%AC%E5%AF%B9%E4%B8%AD%E5%9B%BDCOVID-19%E7%96%AB%E8%8B%97%E4%BA%86%E8%A7%A3%E5%A4%9A%E5%B0%91">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-02-04/Uk-%E6%96%B0%E5%86%A0%E7%96%AB%E8%8B%97-%E5%A5%BD%E8%8E%B1%E5%9D%9E%E7%94%B5%E5%BD%B1-%E4%BC%A0%E6%9F%93%E7%97%85-%E7%BB%99%E8%8B%B1%E5%9B%BD%E5%8D%AB%E7%94%9F%E5%A4%A7%E8%87%A3%E7%9A%84%E5%90%AF%E7%A4%BA">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<BBC>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-02-04/Uk-%E6%96%B0%E5%86%A0%E7%96%AB%E8%8B%97-%E5%A5%BD%E8%8E%B1%E5%9D%9E%E7%94%B5%E5%BD%B1-%E4%BC%A0%E6%9F%93%E7%97%85-%E7%BB%99%E8%8B%B1%E5%9B%BD%E5%8D%AB%E7%94%9F%E5%A4%A7%E8%87%A3%E7%9A%84%E5%90%AF%E7%A4%BA">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<BBC>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-02-03/Science-%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E-%E6%88%91%E4%BB%AC%E5%AF%B9%E4%B8%AD%E5%9B%BDCOVID-19%E7%96%AB%E8%8B%97%E4%BA%86%E8%A7%A3%E5%A4%9A%E5%B0%91">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

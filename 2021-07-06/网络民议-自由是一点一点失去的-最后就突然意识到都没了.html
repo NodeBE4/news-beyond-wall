@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>【网络民议】自由是一点一点失去的，最后就突然意识到都没了 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+【网络民议】自由是一点一点失去的，最后就突然意识到都没了
+——
+" />
+    <meta property="og:description" content="
+【网络民议】自由是一点一点失去的，最后就突然意识到都没了
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="【网络民议】自由是一点一点失去的，最后就突然意识到都没了" />
+    <meta property="twitter:title" content="【网络民议】自由是一点一点失去的，最后就突然意识到都没了" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F667925.html&t=%E3%80%90%E7%BD%91%E7%BB%9C%E6%B0%91%E8%AE%AE%E3%80%91%E8%87%AA%E7%94%B1%E6%98%AF%E4%B8%80%E7%82%B9%E4%B8%80%E7%82%B9%E5%A4%B1%E5%8E%BB%E7%9A%84%EF%BC%8C%E6%9C%80%E5%90%8E%E5%B0%B1%E7%AA%81%E7%84%B6%E6%84%8F%E8%AF%86%E5%88%B0%E9%83%BD%E6%B2%A1%E4%BA%86" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F667925.html&t=%E3%80%90%E7%BD%91%E7%BB%9C%E6%B0%91%E8%AE%AE%E3%80%91%E8%87%AA%E7%94%B1%E6%98%AF%E4%B8%80%E7%82%B9%E4%B8%80%E7%82%B9%E5%A4%B1%E5%8E%BB%E7%9A%84%EF%BC%8C%E6%9C%80%E5%90%8E%E5%B0%B1%E7%AA%81%E7%84%B6%E6%84%8F%E8%AF%86%E5%88%B0%E9%83%BD%E6%B2%A1%E4%BA%86&d=2021-07-06&e=
+【网络民议】自由是一点一点失去的，最后就突然意识到都没了
+——
+
+
+  
+    @琴师D018：刷到这个当年轰动一时的视频，回顾一下当年青涩却锋芒毕露的韩寒同学据说让领导脸都绿了的厦门大学演讲。真心诚意的为当年厦门大学领导们的胸襟点赞～
+  
+  相关报道：
+  自由亚洲｜韩寒厦大演讲抨击审查制度 发布时间：2010年2月2日
+  中国青年作家韩寒星期一应邀到厦门大学演讲，在这场题为“所谓大国文化”的论坛上，韩寒表示中国的审查制度危害国家文化，并希望每个人都不要沉默，保护国家不受到迫害。
+      
+
+  以下评论由中国数字时代编辑搜集自微博：
+  
+    blogsn2019：韩寒的这个视频能现在允许存在吗？
+    一横-：其实也没几年啊 唉～～
+    倔强的观澜：那时候的环境，真敢说、还能说!
+    箫青：也就是12年而已。自由不是一下没有的，而是一点一点的，一点一..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F667925.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/667925.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/667925.html&text=【网络民议】自由是一点一点失去的，最后就突然意识到都没了&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/667925.html&title=【网络民议】自由是一点一点失去的，最后就突然意识到都没了" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/667925.html&title=【网络民议】自由是一点一点失去的，最后就突然意识到都没了" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=【网络民议】自由是一点一点失去的，最后就突然意识到都没了&body=
+【网络民议】自由是一点一点失去的，最后就突然意识到都没了
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/667925.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/667925.html&title=【网络民议】自由是一点一点失去的，最后就突然意识到都没了&caption=
+【网络民议】自由是一点一点失去的，最后就突然意识到都没了
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=【网络民议】自由是一点一点失去的，最后就突然意识到都没了&url=https://chinadigitaltimes.net/chinese/667925.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>【网络民议】自由是一点一点失去的，最后就突然意识到都没了</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-07-06
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/667925.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F667925.html&t=%E3%80%90%E7%BD%91%E7%BB%9C%E6%B0%91%E8%AE%AE%E3%80%91%E8%87%AA%E7%94%B1%E6%98%AF%E4%B8%80%E7%82%B9%E4%B8%80%E7%82%B9%E5%A4%B1%E5%8E%BB%E7%9A%84%EF%BC%8C%E6%9C%80%E5%90%8E%E5%B0%B1%E7%AA%81%E7%84%B6%E6%84%8F%E8%AF%86%E5%88%B0%E9%83%BD%E6%B2%A1%E4%BA%86&d=2021-07-06&e=
+【网络民议】自由是一点一点失去的，最后就突然意识到都没了
+——
+
+
+  
+    @琴师D018：刷到这个当年轰动一时的视频，回顾一下当年青涩却锋芒毕露的韩寒同学据说让领导脸都绿了的厦门大学演讲。真心诚意的为当年厦门大学领导们的胸襟点赞～
+  
+  相关报道：
+  自由亚洲｜韩寒厦大演讲抨击审查制度 发布时间：2010年2月2日
+  中国青年作家韩寒星期一应邀到厦门大学演讲，在这场题为“所谓大国文化”的论坛上，韩寒表示中国的审查制度危害国家文化，并希望每个人都不要沉默，保护国家不受到迫害。
+      
+
+  以下评论由中国数字时代编辑搜集自微博：
+  
+    blogsn2019：韩寒的这个视频能现在允许存在吗？
+    一横-：其实也没几年啊 唉～～
+    倔强的观澜：那时候的环境，真敢说、还能说!
+    箫青：也就是12年而已。自由不是一下没有的，而是一点一点的，一点一..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F667925.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1625572020000-->
+<p><a href="https://chinadigitaltimes.net/chinese/667925.html">【网络民议】自由是一点一点失去的，最后就突然意识到都没了</a>
+——</p>
+
+<div>
+  <blockquote>
+    <p>@琴师D018：刷到这个当年轰动一时的视频，回顾一下当年青涩却锋芒毕露的韩寒同学据说让领导脸都绿了的厦门大学演讲。真心诚意的为当年厦门大学领导们的胸襟点赞～</p>
+  </blockquote>
+  <p><strong>相关报道：</strong></p>
+  <p>自由亚洲｜韩寒厦大演讲抨击审查制度 发布时间：2010年2月2日</p>
+  <p>中国青年作家韩寒星期一应邀到厦门大学演讲，在这场题为“所谓大国文化”的论坛上，韩寒表示中国的审查制度危害国家文化，并希望每个人都不要沉默，保护国家不受到迫害。</p>
+  <p>    <iframe title="韩寒在厦门大学的演讲——所谓的文化大国" width="1080" height="810" src="https://www.youtube.com/embed/rbP34yvmVBw?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</p>
+  <p><strong>以下评论由中国数字时代编辑搜集自微博：</strong></p>
+  <blockquote>
+    <p>blogsn2019：韩寒的这个视频能现在允许存在吗？</p>
+    <p>一横-：其实也没几年啊 唉～～</p>
+    <p>倔强的观澜：那时候的环境，真敢说、还能说!</p>
+    <p>箫青：也就是12年而已。自由不是一下没有的，而是一点一点的，一点一点的没有的，最后突然意识到都没有了。</p>
+    <p>围观而已：当年得尺度和乐观。</p>
+    <p>我每天要打十个女人：“如果我们都能够来反对文化的审查，让我们的屏蔽词里除了那些反人类的词汇以外，不再有其他的词汇，那我们才有可能去创造一一个文化的大国。哪怕在这个过程当中，你我的名字都会进入这个屏蔽词库，但是我相信，一个屏蔽词库是有他的最大的载重量的，每一个新增加的词汇其实都是在加速它的灭亡。”</p>
+    <p>起劲二：越来越禁锢，全中国只有一个声音，那就是：</p>
+    <p>花怿君：“通往朝鲜的道路是由每一个沉默的人铺就的” “当然，我相信很多人并不是沉默的，大家只是被和谐了而已”</p>
+    <p>加速入关：厦门散步一个关键字：连岳。</p>
+    <p>葫芦头DT：十多年以后的今天，我们泪流满面。</p>
+    <p>赛插cx：一声叹息，仅仅十二年而已……</p>
+    <p>飒木限定版：以为是开始，原来是顶峰的，那个时代。</p>
+    <p>王叔叔叔-：也就是2009年的事，怎么感觉跟五四运动一般久远了。</p>
+    <p>鳥籠inthiscage：有天你在控诉你的遭遇时，他们也会将你屏蔽。</p>
+    <p>人类幻觉体验师：这种尺度的讲座和公共言说，在十年前的大学是家常便饭。</p>
+    <p>–灵活de胖纸–：也就是以前，现在的话，视频都留不住。</p>
+    <p>新东方烹饪学校大师哥：这个视频居然还能流传于互联网，忆当年。</p>
+    <p>SONAM·Loshe丨陸：可惜听到这段话的人还是太少。</p>
+    <p>自己和自己WAN：当年看了这个视频，现在回看像过了一个世纪。</p>
+    <p>老鹰YZW：我跟他差不多大，当年我买过他第一期也是最后一期杂志《独唱团》。我相信他现在内心还是一样，只是看透了也无奈了，最后也无语了。</p>
+    <p>攻守2：现如今是保守主义盛行。</p>
+    <p>校长梁山：不敢转，一转又怕麻烦浪秘。</p>
+    <p>蓝天麦子夏天：美好的00年代，那时候谁能想到十几年后会变成现在这样。</p>
+    <p>Akira0712：放到现在，公开影射挡中央，网络hwb喷不死你。</p>
+    <p>时间的味道VII：迅速滑坡。</p>
+    <p>gougoudad：恍若隔世。</p>
+    <p>仙人授长生：地瓜熊老六还有五分钟到达战场。</p>
+    <p>你在煩惱什麼-：这要放现在，底下在座的估计已经有人去举报了……</p>
+    <p>华伦海特451：哭了，2009的南周，2009的韩寒。</p>
+  </blockquote>
+  <p>另附：</p>
+  <blockquote>
+    <p>（韩寒厦大演讲发言稿全文）</p>
+    <p>大家好。第二次来到厦门，然后这里的空气很好，难怪大家都喜欢散步。</p>
+    <p>刚才我听邓老师说了一些关于爱国主义的东西，然后我想到了两句话，是之前看到的，那是别人说的不是我说的。第一句话是“爱国主义是流氓最后的庇护所。”第二句话是“真正的爱国主义就是要保护这个国家，让这个国家不受到政府的迫害。”</p>
+    <p>然后今天我也准备了一些说的内容，我带了一个稿纸。这是为了约束我自己，免得到时候大家受到什么迫害，我怕我满嘴跑火车。</p>
+    <p>开始了。</p>
+    <p>各位领导，各位老师，各位同学：</p>
+    <p>大家好。</p>
+    <p>大家知道中国为什么一直成不了一个文化大国吗？因为在我们大部分的讲话的时候，“各位领导”永远是放在第一位的，而各位领导都是没有文化的。不光光是这样，他们还是惧怕文化的、是审查文化的，但是呢他们能能够控制文化。所以说这个国家怎么能够成为文化大国呢？各位领导你们说呢？</p>
+    <p>其实中国是有成为一个文化大国的潜力的，我给大家讲一个故事。我要主编一本杂志到现在都没有出版。然后呢宪法上有规定，每个公民都拥有出版的自由。但是呢我们的王法又有规定，就是呢领导有不让你出版的自由。这个杂志在很多地方在审查上遇到了一些问题：里面有一幅漫画，漫画里是张图，主人公是个男的，他没有穿衣服——当然这是不可以的嘛，因为相关的法律法规规定我们不能露出那个阴部在公开的杂志上——但这个我认可，我觉得没有问题。所以我特地把那个杂志特别大的一个logo把它放在不合法的那个部位。突然之间就是出版社和审查人员告诉我们这个不可以，你把这个人的中间这个地方挡住了，这个是在暗喻“党中央”。我的反应和大家一样——我被雷到了。我当时脑子里就在想，朋友，把你这个惊天地泣鬼神的想象力放在文艺创作上而不是文艺审查上那该有多好。</p>
+    <p>通过这个故事我想告诉大家其实大家都是很有想象力的。当然想多事情我们只能想，我们不能去做、不能写，甚至很多场合不能说。我们的限制太多了，这是一个限制级的国家。在限制级的国家里怎么可能产生非常丰富的文化呢？我已经算是一个自我限制很少的同志了，但是在我落笔的时候我就会情不自禁地想这个警察不能写、领导不能写、政策不能写、制度不能写、司法不能写、很多历史不能写、西藏不能写、新疆不能写、集会不能写、流行不能写、黄色不能写、封杀不能写、艺术不能写——而高雅我又写不出。我真的写不出那么高雅的东西，我又不是余秋雨。</p>
+    <p>在网络上发表的一些文章尺度已经比较大了。很多写剧本的朋友，我知道一些写剧本的朋友，像类似宁财神啊写一些话剧，还有一些电影剧本电视剧（的作者），他们非常地痛苦。在这样的一个文化环境下，我一直在想，如何成为一个文化大国？除非全世界只剩下中国、朝鲜还有阿富汗。朝鲜是文化禁地，大家都知道；阿富汗是因为国内的形势还搞不清楚，他们还顾不上文化。但纵然这样，他们都已经有作家写出了《追风筝的人》，当然比较遗憾的是这也不是在阿富汗出版的。我想一旦阿富汗搞清楚了也不是没有可能超过中国。</p>
+    <p>我们所谓的在国际交流上不能再拿那些四大名著和和孔孟之道，我们知道的，这个就像相亲的时候女方问你有没有钱，你说我的祖宗十八辈很有钱。没用的。这个悲剧的造成和大家没有任何的关系。虽然说通往朝鲜的道路是由每一个沉默的人铺就的。但是一方面我们当然要比朝鲜强很很多，因为大家知道朝鲜是什么样子的。另外一方面呢我相信在座的大家，其实很多人并不沉默——大家只是被和谐了而已。在中国的扫黄史上，可能很多同学——我想大家都知道——毕竟是大学生了——虽然现在的教材上已经没有这些内容了，就是邓丽君和刘文正都是黄色、下流、淫秽的。但是因为听的人多了，他们就变成了黄色、下流，他们就不淫秽了。但是呢到最后全国人民都在听，所以他们就即不黄色，也不下流了。如果我们都能够来反对文化的审查，让我们的屏蔽词里除了反人类的词外不再有其他的词汇，那我们才有可能去创造出一个文化的大国。哪怕在这个过程当中你我的名字都会进入这个屏蔽词库，但是我相信一个屏蔽词库是有它的最大的载重量的——每一个新增加的词汇都是在加速他的灭亡。</p>
+    <p>所以我希望我们的新闻媒体的从业者、我们的学生老师、每一个文化的从业者、爱好者，包括每一个版主啊，可以努力让我们的屏蔽和审查越来越少。我们的领导们 ——注意这个领导和大家是分开的——我们的领导们、我们的政府，可以有足够的自信让文化更加地开放。我知道我们的领导很喜欢向国外输出我们的文化，觉得这个是一个强国的象征，但是你现有的文化我觉得实在是输不出去的。我们在创作作品的时候每一个作者，每一个从业人员，他们在时刻进行着自我的审查。在这样的一个创作环境下，我觉得怎么能产生像样的作品呢？在全世界范围内，你把所有的作品阉割得像新闻联播一样给外国人看，企图输出中国的文化，你当外国人是外星人啊？我觉得中国是不是真正地在经济上崛起了这个要等我们的房地产业崩盘了以后再谈，现在一切都不好说。但是如果一个国家在文化上真正地崛起了那它真是一定是个强国，而且我想应该永远不会有崩盘的危险。</p>
+    <p>最后说回到我们的屏蔽词库——一个屏蔽词库里面的词越是多，这个国家的文化可能就会越是弱。但我们的政府会给你很多的解释，他们会告诉你我们这么做是为了保护青少年，是为了社会的稳定。文化是自由的，所以他们有权屏蔽任何危害青少年、破坏社会稳定的资讯和文化。但是如果你认同了，迟早有一天你会发现，你在控诉你的遭遇的时候，他们会将你屏蔽，罪名是破坏社会的稳定。到最后凡是不利于统治阶层的，不利于他们获得利益的言论都是破坏社会的稳定，都是危害青少年。如果我们当时容忍了绿坝花季护航，很快我们就会看到绿坝花甲护航。到那时我们就不光光是看到文化的濒死了。所以同学们，我们不能让这一天的到来。否则在以后，在若干年的以后，在你的孙子的通过卫星接收到的电子课本的历史书上，我们都会是笑料。</p>
+  </blockquote>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2021-07-06</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-06/404%E6%96%87%E5%BA%93-%E6%81%B0%E5%B8%95%E6%96%AF%E4%B8%9C%E9%A3%8ERadio-%E6%8A%95%E7%A8%BF-%E4%BB%8A%E6%99%9A%E6%88%91%E4%BB%AC%E9%83%BD%E6%98%AF-%E6%9C%AA%E5%91%BD%E5%90%8D%E5%85%AC%E4%BC%97%E5%8F%B7">
+          【404文库】恰帕斯东风Radio | 投稿：今晚我们都是“未命名公众号”
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-06</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-06/Photo-The-last-tribute,-by-Gauthier-DELECROIX-%E9%83%AD">
+          Photo: The last tribute, by Gauthier DELECROIX – 郭天
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-06</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-06/%E7%AB%8B%E5%9C%BA%E6%96%B0%E9%97%BB-%E9%A6%99%E6%B8%AF%E7%94%B5%E5%BD%B1%E9%87%91%E5%83%8F%E5%A5%96%E6%9C%80%E4%BD%B3%E5%BD%B1%E7%89%87-%E5%8D%81%E5%B9%B4-%E6%9C%88%E5%BA%95%E5%B0%86%E4%BB%8ENetflix%E4%B8%8B%E6%9E%B6">
+          立场新闻｜香港电影金像奖最佳影片《十年》月底将从Netflix下架
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-06</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-06/Matters-%E6%BB%95%E5%BD%AA-%E4%BD%A0%E4%BB%AC%E5%85%A8%E5%AE%B6%E9%83%BD%E6%98%AF%E5%85%B1%E4%BA%A7%E5%85%9A%E5%91%98">
+          Matters｜滕彪：“你们全家都是共产党员！”
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-06/%E7%BB%B4%E4%BB%96%E5%A5%B6%E6%9C%89%E9%AB%98%E5%B1%82%E7%A6%BB%E8%81%8C-%E7%8E%B0-%E8%AF%88%E5%BC%B9-%E8%AD%A6%E5%91%8A-%E8%AD%A6%E6%96%B9%E6%8C%87%E7%96%91%E5%87%B6%E7%95%99%E6%9C%89%E8%87%AA%E6%9D%80%E9%81%97%E4%B9%A6">
+            前一篇：维他奶有高层离职 现「诈弹」警告 警方指疑凶留有自杀遗书
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-06/%E6%9E%97%E9%83%91%E6%9C%88%E5%A8%A5-%E4%B9%A0%E8%BF%91%E5%B9%B3%E5%85%A5%E6%A6%9C%E5%85%A8%E7%90%83-%E6%96%B0%E9%97%BB%E8%87%AA%E7%94%B1%E6%8E%A0%E5%A4%BA%E8%80%85">
+            后一篇：林郑月娥、习近平入榜全球“新闻自由掠夺者”
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-07-06/%E7%BB%B4%E4%BB%96%E5%A5%B6%E6%9C%89%E9%AB%98%E5%B1%82%E7%A6%BB%E8%81%8C-%E7%8E%B0-%E8%AF%88%E5%BC%B9-%E8%AD%A6%E5%91%8A-%E8%AD%A6%E6%96%B9%E6%8C%87%E7%96%91%E5%87%B6%E7%95%99%E6%9C%89%E8%87%AA%E6%9D%80%E9%81%97%E4%B9%A6'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-07-06/%E6%9E%97%E9%83%91%E6%9C%88%E5%A8%A5-%E4%B9%A0%E8%BF%91%E5%B9%B3%E5%85%A5%E6%A6%9C%E5%85%A8%E7%90%83-%E6%96%B0%E9%97%BB%E8%87%AA%E7%94%B1%E6%8E%A0%E5%A4%BA%E8%80%85'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-07-06/Photo-The-last-tribute,-by-Gauthier-DELECROIX-%E9%83%AD'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-07-06/%E7%AB%8B%E5%9C%BA%E6%96%B0%E9%97%BB-%E9%A6%99%E6%B8%AF%E7%94%B5%E5%BD%B1%E9%87%91%E5%83%8F%E5%A5%96%E6%9C%80%E4%BD%B3%E5%BD%B1%E7%89%87-%E5%8D%81%E5%B9%B4-%E6%9C%88%E5%BA%95%E5%B0%86%E4%BB%8ENetflix%E4%B8%8B%E6%9E%B6'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-07-06/%E7%BB%B4%E4%BB%96%E5%A5%B6%E6%9C%89%E9%AB%98%E5%B1%82%E7%A6%BB%E8%81%8C-%E7%8E%B0-%E8%AF%88%E5%BC%B9-%E8%AD%A6%E5%91%8A-%E8%AD%A6%E6%96%B9%E6%8C%87%E7%96%91%E5%87%B6%E7%95%99%E6%9C%89%E8%87%AA%E6%9D%80%E9%81%97%E4%B9%A6">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-07-06/%E6%9E%97%E9%83%91%E6%9C%88%E5%A8%A5-%E4%B9%A0%E8%BF%91%E5%B9%B3%E5%85%A5%E6%A6%9C%E5%85%A8%E7%90%83-%E6%96%B0%E9%97%BB%E8%87%AA%E7%94%B1%E6%8E%A0%E5%A4%BA%E8%80%85">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-07-06/Photo-The-last-tribute,-by-Gauthier-DELECROIX-%E9%83%AD">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-07-06/%E7%AB%8B%E5%9C%BA%E6%96%B0%E9%97%BB-%E9%A6%99%E6%B8%AF%E7%94%B5%E5%BD%B1%E9%87%91%E5%83%8F%E5%A5%96%E6%9C%80%E4%BD%B3%E5%BD%B1%E7%89%87-%E5%8D%81%E5%B9%B4-%E6%9C%88%E5%BA%95%E5%B0%86%E4%BB%8ENetflix%E4%B8%8B%E6%9E%B6">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

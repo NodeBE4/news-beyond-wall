@@ -1,0 +1,3132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>下午察：林生斌人设崩塌背后的网络乱象 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+下午察：林生斌人设崩塌背后的网络乱象
+——
+" />
+    <meta property="og:description" content="
+下午察：林生斌人设崩塌背后的网络乱象
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="下午察：林生斌人设崩塌背后的网络乱象" />
+    <meta property="twitter:title" content="下午察：林生斌人设崩塌背后的网络乱象" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.zaobao.com%2Frealtime%2Fchina%2Fstory20210709-1166981&t=%E4%B8%8B%E5%8D%88%E5%AF%9F%EF%BC%9A%E6%9E%97%E7%94%9F%E6%96%8C%E4%BA%BA%E8%AE%BE%E5%B4%A9%E5%A1%8C%E8%83%8C%E5%90%8E%E7%9A%84%E7%BD%91%E7%BB%9C%E4%B9%B1%E8%B1%A1" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.zaobao.com%2Frealtime%2Fchina%2Fstory20210709-1166981&t=%E4%B8%8B%E5%8D%88%E5%AF%9F%EF%BC%9A%E6%9E%97%E7%94%9F%E6%96%8C%E4%BA%BA%E8%AE%BE%E5%B4%A9%E5%A1%8C%E8%83%8C%E5%90%8E%E7%9A%84%E7%BD%91%E7%BB%9C%E4%B9%B1%E8%B1%A1&d=2021-07-09&e=
+下午察：林生斌人设崩塌背后的网络乱象
+——
+
+
+  
+
+  
+  
+林生斌说他后背的这个纹身，是要把朱小贞和三个孩子永远地留在自己的身上，“刻在背上，融进血液，这辈子，我继续背你们前行。” （互联网）
+  
+  五年前发生在杭州的一场纵火案，让痛失妻儿的林生斌成了不少中国网民最心疼的男人。但有关他的剧情上周大逆转，宣布再婚的林生斌经营多时的“深情好男人”人设瞬间崩塌，沦为人人喊打的对象。
+  林生斌的不少“黑料”被网民挖出，大众也收起了曾经对他的同情与怜悯，痛骂他是“消费同情”“卖惨赚钱”的渣男。林生斌也反驳指控。
+  他说的是真话吗？还是一直在处心积虑骗取大家的同情？如是，为何林生斌要在此时“自毁人设”？中国网络上的这种乱象，有人管吗？
+  
+    
+  
+  轰动一时的杭州保姆纵火案
+  一切要从2017年6月22日凌晨发生的纵火案说起。综合多方信息，浙江省杭州市蓝色钱江小区..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.zaobao.com%2Frealtime%2Fchina%2Fstory20210709-1166981" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.zaobao.com/realtime/china/story20210709-1166981" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.zaobao.com/realtime/china/story20210709-1166981&text=下午察：林生斌人设崩塌背后的网络乱象&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.zaobao.com/realtime/china/story20210709-1166981&title=下午察：林生斌人设崩塌背后的网络乱象" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.zaobao.com/realtime/china/story20210709-1166981&title=下午察：林生斌人设崩塌背后的网络乱象" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=下午察：林生斌人设崩塌背后的网络乱象&body=
+下午察：林生斌人设崩塌背后的网络乱象
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.zaobao.com/realtime/china/story20210709-1166981" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.zaobao.com/realtime/china/story20210709-1166981&title=下午察：林生斌人设崩塌背后的网络乱象&caption=
+下午察：林生斌人设崩塌背后的网络乱象
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=下午察：林生斌人设崩塌背后的网络乱象&url=https://www.zaobao.com/realtime/china/story20210709-1166981" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>下午察：林生斌人设崩塌背后的网络乱象</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-07-09
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#联合早报 ">
+          联合早报
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.zaobao.com/realtime/china/story20210709-1166981"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="联合早报的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#联合早报 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.zaobao.com%2Frealtime%2Fchina%2Fstory20210709-1166981&t=%E4%B8%8B%E5%8D%88%E5%AF%9F%EF%BC%9A%E6%9E%97%E7%94%9F%E6%96%8C%E4%BA%BA%E8%AE%BE%E5%B4%A9%E5%A1%8C%E8%83%8C%E5%90%8E%E7%9A%84%E7%BD%91%E7%BB%9C%E4%B9%B1%E8%B1%A1&d=2021-07-09&e=
+下午察：林生斌人设崩塌背后的网络乱象
+——
+
+
+  
+
+  
+  
+林生斌说他后背的这个纹身，是要把朱小贞和三个孩子永远地留在自己的身上，“刻在背上，融进血液，这辈子，我继续背你们前行。” （互联网）
+  
+  五年前发生在杭州的一场纵火案，让痛失妻儿的林生斌成了不少中国网民最心疼的男人。但有关他的剧情上周大逆转，宣布再婚的林生斌经营多时的“深情好男人”人设瞬间崩塌，沦为人人喊打的对象。
+  林生斌的不少“黑料”被网民挖出，大众也收起了曾经对他的同情与怜悯，痛骂他是“消费同情”“卖惨赚钱”的渣男。林生斌也反驳指控。
+  他说的是真话吗？还是一直在处心积虑骗取大家的同情？如是，为何林生斌要在此时“自毁人设”？中国网络上的这种乱象，有人管吗？
+  
+    
+  
+  轰动一时的杭州保姆纵火案
+  一切要从2017年6月22日凌晨发生的纵火案说起。综合多方信息，浙江省杭州市蓝色钱江小区..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.zaobao.com%2Frealtime%2Fchina%2Fstory20210709-1166981" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1625861460000-->
+<p><a href="https://www.zaobao.com/realtime/china/story20210709-1166981">下午察：林生斌人设崩塌背后的网络乱象</a>
+——</p>
+
+<div>
+  <div class="figure-media">
+<img class="img-fluid lazyload" data-src="https://static.zaobao.com/s3fs-public/styles/article_large_full/public/2021-07/3e1f18a04568470a988a21d03d1c4649.jpeg?1pzchBqIKys.wi5dg4ECZwodLXL07htk&amp;itok=sDE03CP2" title="林生斌说他后背的这个纹身，是要把朱小贞和三个孩子永远地留在自己的身上，“刻在背上，融进血液，这辈子，我继续背你们前行。” （互联网）" alt="林生斌说他后背的这个纹身，是要把朱小贞和三个孩子永远地留在自己的身上，“刻在背上，融进血液，这辈子，我继续背你们前行。” （互联网）" src="https://www.zaobao.com/realtime/china/undefined" referrerpolicy="no-referrer" />
+  </div>
+  <figcaption>
+林生斌说他后背的这个纹身，是要把朱小贞和三个孩子永远地留在自己的身上，“刻在背上，融进血液，这辈子，我继续背你们前行。” （互联网）
+  </figcaption>
+  <p>五年前发生在杭州的一场纵火案，让痛失妻儿的林生斌成了不少中国网民最心疼的男人。但有关他的剧情上周大逆转，宣布再婚的林生斌经营多时的“深情好男人”人设瞬间崩塌，沦为人人喊打的对象。</p>
+  <p>林生斌的不少“黑料”被网民挖出，大众也收起了曾经对他的同情与怜悯，痛骂他是“消费同情”“卖惨赚钱”的渣男。林生斌也反驳指控。</p>
+  <p>他说的是真话吗？还是一直在处心积虑骗取大家的同情？如是，为何林生斌要在此时“自毁人设”？中国网络上的这种乱象，有人管吗？</p>
+  <section id="imu">
+    <div id="dfp-ad-imu1"></div>
+  </section>
+  <p><strong>轰动一时的杭州保姆纵火案</strong></p>
+  <p>一切要从2017年6月22日凌晨发生的纵火案说起。综合多方信息，浙江省杭州市蓝色钱江小区一名保姆莫焕晶当天用打火机点燃书本，引燃林生斌家中家具。林生斌当时不在家，妻子朱小贞及两个儿子与一个女儿在大火中逝世。</p>
+  <figure class="image-placeholder ">
+<img alt="" class="" src="https://static.zaobao.com/s3fs-public/styles/inline_medium/public/2021-07/7d651d0e5f94474197b4d6e68f54b8b6.jpeg?5AEGiamRRg6XfY.TOzB46uN5GIqOMvi7&amp;itok=pFbBR_oR" pinger-seen="true" referrerpolicy="no-referrer" />     <figcaption>
+林生斌（右一）的妻子与三个子女在纵火案中不幸逝世。（互联网）
+    </figcaption>
+  </figure>
+  <p>莫焕晶因沉迷赌博，频繁向雇主借钱。纵火当晚，在输光6万多元（人民币，下同，1万2500新元）后，她决定“放火再灭火”，博取朱小贞感激，从而再次开口借钱。但水火无情，酿成惨案。莫焕晶以放火罪、盗窃罪被捕。2018年2月9日，案件一审宣判莫焕晶死刑。莫焕晶提起上诉但被驳回。她在9月21日被执行死刑。</p>
+  <p>这场让人悲痛的纵火案当年被广泛报道，牵涉物业维护管理、公共应急处置系统、高楼层消防安全、保姆甄选机制等问题。但舆论的关注焦点，尤其集中在一夜间痛失家人的林生斌。</p>
+  <div id="innity-in-post"></div>
+  <div id="dfp-ad-midarticlespecial"></div>
+  <p>2017年6月23日，也就是纵火案发生隔天，林生斌以“老婆孩子在天堂”为名开通新浪微博并持续更新，讲述案发经过和后续情况。7月12日，林生斌发布微博称，决定联合一些好友发起设立“潼臻一生”（从已故儿女青潼、臻娅和柽一名字中各取一字）公益基金，以提升中国高层住宅防火减灾水平，促进家政服务业完善保姆的甄选管理机制等。他当年还捐赠一口水井给杭州当地寺庙。</p>
+  <figure class="image-placeholder ">
+<img alt="" class="" src="https://static.zaobao.com/s3fs-public/styles/inline_medium/public/2021-07/86d7356cdaf54397819fa89d68ffe070.jpeg?iWSE0ukwdIttZk62q8q1_.hHI6motY.o&amp;itok=EdPM6DoI" pinger-seen="true" referrerpolicy="no-referrer" />     <figcaption>
+林生斌（左二）在纵火案发生后，被记者拍到他坐在墙角哭泣的画面，感动了无数人。（互联网）
+    </figcaption>
+  </figure>
+  <p>林生斌频频发声，引来不少网民同情。记者拍到他事发后坐在墙角哭泣的画面也感动了无数人。他后来更把妻子和三个孩子纹在了后背上，在微博上展示并留言“刻在背上，融进血液，这辈子，我继续背你们前行”。他还曾发文说：“等我忙完这一生，就去看你们”。林生斌后来获得“爱妻好男人”等称号，并被网民追捧为“真心男人”的典范。</p>
+  <p>2019年10月16日，林生斌开设网店“潼臻一生”售卖童装，价格不便宜，但据说销量很好。他常常在淘宝店做直播宣传产品，有时谈起纵火事件泪眼汪汪，哭诉追忆，引许多网民捧场，据说有人“几十套几十套地疯狂购买”以表支持。</p>
+  <p>冠病疫情去年年初席卷中国时，林生斌向杭州市红十字会捐赠了5000个口罩，总金额9万元，收获不少赞许。</p>
+  <p><strong>宣布组建新家被炮轰</strong></p>
+  <p>到今年6月30日，林生斌发微博宣布自己已再婚，并已诞下一个女儿的消息。他写道：“思虑再三，还是想把这份喜悦和大家一起分享。感谢大家这几年的关心和鼓励，让我那段灰暗的岁月里，看见太阳般的温暖。”</p>
+  <p>林生斌还说，自己现在有了新的生活，妻子是一位完全包容理解他，并让他有安全感的女孩子，也有了可爱的小公主，看着她出生那一刻，“我忍不住泪流满面，她终于又回来了”。他透露，女儿的小名叫“暖暖”。</p>
+  <figure class="image-placeholder ">
+<img alt="" class="" src="https://static.zaobao.com/s3fs-public/styles/inline_medium/public/2021-07/deeddc4d535c4b42b04a0f138be39f7b.jpeg?vR5pq7phONpyoHUUSIBnRFFEJCEmRs9P&amp;itok=53ROeSDD" pinger-seen="true" referrerpolicy="no-referrer" />     <figcaption>
+林生斌6月30日宣布自己已组建新家庭，并晒出女儿“暖暖”的照片（“-林生斌-”微博）
+    </figcaption>
+  </figure>
+  <p>这个看起来充满暖意的微博，却瞬间让支持他的网民心寒，认为曾经对已故妻儿如此深情的人，不该这么快“另寻新欢”。有网民质疑，林生斌再婚太快，指他之前一直在“卖深情人设”博取同情。</p>
+  <p>网民根据他女儿出生日期往前推算，再对应他这些年发的微博，质疑他一边深情款款地表示怀念亡妻，一边在另寻新欢、积极备孕，是在“消费”网民们。有网民推算，从2017年至今短短四年，扣减一年孕期及一年相识时间，林生斌可能是在妻儿去世不足两年、案件尚未宣判之际，就已“从黑暗中走出”。</p>
+  <p>舆论一夜变了风向，质疑接踵而至。有网民批评，林生斌的网店是以惨剧作“卖点”，营造深情形象，质疑实际上是消费去世的妻儿，“可怜他前妻和三个孩子，已成了他的赚钱工具”。网上更出现不少段子，指林生斌“白天是老婆孩子在天堂，晚上是新婚妻子在新床”，并戏谑他之前发的所有深情悼念文为“伤痕文学”。</p>
+  <p>7月1日下午，林生斌亡妻朱小贞的哥哥发文，指责林生斌忘恩负义，并透露他独吞1.2亿的火灾意外赔偿款，还要和亡妻的父母对簿公堂。隔天，纵火案事故物业绿城前员工发文爆料，指纵火案事发后第一个星期，林生斌就去找了营销公司和公关公司营造舆论。在其妻儿刚离世几天、尸骨未寒的时候，已经找公关公司打起了赔偿金的主意，“从来没有一个男子在妻儿逝世以后的第一个星期就把利益得失算得如此清楚。我当时就知道林生斌总有一天会被舆论翻车。心疼三个小孩和母亲，但从来没有同情过林生斌一秒。”</p>
+  <p>网民随后综合信息并挖掘更多内幕，对林生斌发出六项指控，包括在与前妻婚内就出轨、独吞赔偿金、为钱与前岳父岳母翻脸、用亡妻亡子卖惨立人设赚钱、捐的水井栏上写“童臻一生”少写三点水，以及故意挑6月30日宣布成立新家庭，因为隔天中共党庆，消息数日上不了热搜。</p>
+  <figure class="image-placeholder ">
+<img alt="" class="" src="https://static.zaobao.com/s3fs-public/styles/inline_medium/public/2021-07/f58f084d41aa43f8a675aabc65204f04.jpeg?psEWQ_GkcTIyr7xp01fJdPgIPCqIkAuQ&amp;itok=7BxzrZjH" pinger-seen="true" referrerpolicy="no-referrer" />     <figcaption>
+有网民发现，林生斌2017年捐给寺庙的水井栏上刻着“童臻一生”，“童”字少写了三点水。（互联网）
+    </figcaption>
+  </figure>
+  <p>林生斌昨天（7月8日）在舆论压力下连发五条微博回应，内容大致包括：1、从未忘记前妻和孩子；将委托律师，把涉及非私德方面的公示逐一转发于众。2、暗指前妻哥哥散播谣言，称“人性凉薄、人心叵测”。3、讲述自己与现任妻子小乐相识相恋过程。4、解释火灾赔偿金去向，并澄清未与岳父岳母对簿公堂。5、晒出与岳父岳母聊天及转账记录，称自己十几年来对岳父岳母的尊敬从未改变。</p>
+  <p>网民没有对林生斌的回应买账，继续炮轰质问，朱小贞哥哥也发微博指：“你永远无法叫醒一个装睡的人。”</p>
+  <p><strong>为何要“自毁人设”？</strong></p>
+  <p>事件目前还在发酵，但至此有一点令人好奇：为什么林生斌要出来“自毁人设”？若他真的在“消费同情心”，靠“卖惨”蹭热度卖货，为何此时要“自断销路”？</p>
+  <p>对此，有网上流传几种猜测。第一，林生斌作为颇有名气的人物，组建新家庭这件事早晚纸包不住火，与其被人曝光，显得鬼鬼祟祟、陷入被动，还不如自己先挑明。而选6月30日公布，正是为了要让消息隔几天都不会上热搜，淹没在中共党庆的各种消息中，等大部分网民回过神来，消息已是“旧闻”了。</p>
+  <p>第二种相关联的猜测，是指林生斌与前妻家人确实因为赔偿金的事闹得不可开交，双方僵持不下，对方“放大招”，用曝光林生斌已组建新家从而打击他的形象作为威胁，林生斌就先“自我曝光”抢占话语权，让对方没有把柄。</p>
+  <p>第三种猜测是，林生斌靠“卖惨”赚流量的路子遇到瓶颈，“祥林嫂式”的哭诉几年下来换来的同情与热度随时间递减，越来越少人知道杭州保姆纵火案。因此，林生斌刻意抛出有争议性的内容，反向塑造新人设，靠“新戏上映”再蹭一波流量。反正在数据面前，没有道德与价值观，只有数据变现。或许当林生斌被网民与前妻家人乱棍狂打后，又能重建“卖惨人设”，成为先有丧妻丧子之痛，后有网络霸凌之辱的“终极受害者”。</p>
+  <p><strong>网络乱象与道德底线</strong></p>
+  <p>无论如何，关于此事件众说纷纭。虽然中国网民现在一面倒炮轰林生斌，但当年纵火案发生后也有众多网民支持他，所以舆论风向很难作为衡量对错虚实的标杆，更何况这件事的很多细节目前还真假难辨。至于林生斌的所作所为有没有涉及违法行为，则需要从法律的角度去检验事实，才能有结论。</p>
+  <p>纵观网民的评论，更多是从道德的制高点批评林生斌，认为他谎称怀念逝世的妻儿，事实上是为了博取同情，蹭流量卖货。批评者中不乏从前支持过林生斌的人，现在觉得被戏弄欺骗，白白投入了时间与金钱。</p>
+  <figure class="image-placeholder ">
+<img alt="" class="" src="https://static.zaobao.com/s3fs-public/styles/inline_medium/public/2021-07/2021_0606_9e3d4c2cg00qua5kw02vmc0009000k0m.gif?aTvNeldnVjY2tT5E_O1XDK4NK5kDSvNM&amp;itok=TCYHU3dp" pinger-seen="true" referrerpolicy="no-referrer" />     <figcaption>
+2019年10月16日，林生斌开设网店“潼臻一生”售卖童装。他常在淘宝店做直播宣传产品，有时谈起纵火事件泪眼汪汪，哭诉追忆，引许多网民捧场，据说有人“几十套几十套地疯狂购买”以表支持。（互联网）
+    </figcaption>
+  </figure>
+  <p>林生斌在2017年以“老婆孩子在天堂”为名开通新浪微博之时，正值电子商务从商家直销朝网红带货过渡的时期。林生斌踩上这个风口，打造人设，并选择卖童装这个与丧子之痛相关联的产品，收获了不少同情与销量。但纵使如此，旁人也很难分辨，林生斌在直播带货时哭泣怀念家人，有多少是真情、有多少是假意。</p>
+  <p>事实上，利用自己的不幸经历博取同情与利益的案例，在中国互联网上比比皆是。打开各种平台的直播，不难看到“创业失败妻离子散又东山再起”的“逆袭者”兜售理财课、“父母不注意身体重病不起”的“孝子”售卖健康品等，这些也都真假难辨。就连以乡村生活为背景拍视频的网红李子柒，也被指以几万元设备制作视频，扭曲农村质朴环境，消费农民等等。</p>
+  <p>可以说，中国互联网急速发展，网红经济一路高歌，都为这些谋利活动提供了平台与可能性。无论是真是假，林生斌以及众多消费自己或他人经历的网红，之所以这么做，也是看到了其中巨大流量背后的商机。庞大的、不断优化的平台与广大的、愿意为网红付费的网民，为他们提供了条件与动力。</p>
+  <p>中国官方目前还没有针对性、系统性地整顿互联网上“博感情”的乱象，况且这些真假难辨、亦真亦假的所谓“人设”也很难有核实的标准。</p>
+  <p>以林生斌的事件为例，他的妻子儿女在火中丧命是事实，他售卖的产品也没被发现有什么严重的造假或质量问题，至于他直接或间接谈及往事，很难说他是在“诈骗”，只能用道德的标注评论。</p>
+  <p>但值得一提的是，至今官方比较在意的是炫富、鼓吹奢侈消费，可能会加剧社会不满与仇富心理的网络内容，认为这类内容造成不良社会影响，还没有盯上“卖惨”这一块。</p>
+  <figure class="image-placeholder ">
+<img alt="" class="" src="https://static.zaobao.com/s3fs-public/styles/inline_medium/public/2021-07/download.jpg?t6E3jyZ6tTTOk2zyZKngz77INfmrVy2Z&amp;itok=HnxeSMG7" pinger-seen="true" referrerpolicy="no-referrer" />     <figcaption>
+在直播平台抖音上拥有千万粉丝的美食博主“大LOGO”，此前发布不少测评高端餐馆的视频，后来被官方媒体批评炫富。（互联网）
+    </figcaption>
+  </figure>
+  <p>例如抖音上一名拥有千万粉丝的美食博主“大LOGO”，此前专攻高端饮食与休闲场所、拍视频记录他每顿动辄上千上万、“吃垮北京”的体验，引来不少批评。今年4月，《人民日报》、新华社等官方媒体先后发文批评其“以奢侈生活为卖点”“一味追求流量，社会责任靠边站”“频繁展示的纸醉金迷内容腐化社会风气”等。“大LOGO”随后道歉并改变视频内容方向。</p>
+  <p>这次林生斌的事件会如一阵风吹过，还是继续发酵，造成舆论持续施压，让官方有所行动呢？</p>
+ <a href="https://subscribe.sph.com.sg/promotions/chinese-3-months-99-cents-promotion/?utm_campaign=cn3in199c&amp;utm_medium=sph-publication&amp;utm_source=zb&amp;utm_content=subscribelink-free-endofarticle" target="_blank"><img class="view-desktop lazyload  " data-src="https://static.zaobao.com/s3fs-public/freemium_images/20210209/399-default-desktop-l_0_1.jpg" alt="" style="width:100%;" pinger-seen="true" src="https://static.zaobao.com/s3fs-public/freemium_images/20210209/399-default-desktop-l_0_1.jpg" referrerpolicy="no-referrer" /></a> <a href="https://subscribe.sph.com.sg/promotions/chinese-3-months-99-cents-promotion/?utm_campaign=cn3in199c&amp;utm_medium=sph-publication&amp;utm_source=zb&amp;utm_content=subscribelink-free-endofarticle" target="_blank"><img class="view-mobile lazyload " data-src="https://static.zaobao.com/s3fs-public/freemium_images/20210209/399-default-mobile_1.jpg" alt="" pinger-seen="true" src="https://static.zaobao.com/s3fs-public/freemium_images/20210209/399-default-mobile_1.jpg" referrerpolicy="no-referrer" /></a>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#联合早报 的其它文章</h4>
+    
+      <li>
+        <time>2021-07-09</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-09/%E8%83%A1%E7%9F%A5%E9%B8%B7%E4%BB%BB%E7%91%9E%E4%BF%A1%E4%B8%AD%E5%9B%BD%E5%8C%BA%E9%A6%96%E5%B8%AD%E6%89%A7%E8%A1%8C%E5%AE%98">
+          胡知鸷任瑞信中国区首席执行官
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-09</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-09/%E5%BD%AD%E5%8D%9A-%E4%B8%80%E5%97%A8%E7%A7%9F%E8%BD%A6%E6%8B%9F%E8%B5%B4%E6%B8%AF%E4%B8%8A%E5%B8%82-%E6%88%96%E7%AD%B9%E8%B5%8410%E4%BA%BF%E7%BE%8E%E5%85%83">
+          彭博：一嗨租车拟赴港上市 或筹资10亿美元
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-09</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-09/%E5%AD%97%E8%8A%82%E8%B7%B3%E5%8A%A88%E6%9C%88%E5%8F%96%E6%B6%88-%E5%A4%A7%E5%B0%8F%E5%91%A8-%E5%B7%A5%E4%BD%9C%E5%AE%89%E6%8E%92">
+          字节跳动8月取消“大小周”工作安排
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-09</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-09/%E9%99%88%E8%8C%82%E6%B3%A2%E9%A2%84%E6%96%99%E9%A6%99%E6%B8%AF%E5%85%A8%E5%B9%B4GDP%E6%9C%89%E6%9C%9B%E5%A2%9E%E9%80%BE5.5">
+          陈茂波预料香港全年GDP有望增逾5.5%
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-09/%E6%A9%8B%E7%A7%91%E9%96%8B%E7%99%BC%E6%A1%88%E9%80%9A%E9%81%8E%E5%8D%80%E6%AE%B5%E5%BE%B5%E6%94%B6-%E9%AB%98%E5%B8%8210%E6%9C%88%E8%BE%A6%E5%85%AC%E5%91%8A">
+            前一篇：橋科開發案通過區段徵收 高市10月辦公告
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-09/World-%E6%9C%9D%E9%B2%9C-%E5%8D%B1%E6%9C%BA-%E6%96%B0%E5%86%A0%E7%96%AB%E6%83%85-%E7%B2%AE%E9%A3%9F%E7%9F%AD%E7%BC%BA%E4%B8%8E%E5%9B%BD%E9%99%85%E6%8F%B4%E5%8A%A9%E7%9A%84%E8%81%94%E7%B3%BB">
+            后一篇：[World] 朝鲜“危机”：新冠疫情、粮食短缺与国际援助的联系
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-07-09/%E6%A9%8B%E7%A7%91%E9%96%8B%E7%99%BC%E6%A1%88%E9%80%9A%E9%81%8E%E5%8D%80%E6%AE%B5%E5%BE%B5%E6%94%B6-%E9%AB%98%E5%B8%8210%E6%9C%88%E8%BE%A6%E5%85%AC%E5%91%8A'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-07-09/World-%E6%9C%9D%E9%B2%9C-%E5%8D%B1%E6%9C%BA-%E6%96%B0%E5%86%A0%E7%96%AB%E6%83%85-%E7%B2%AE%E9%A3%9F%E7%9F%AD%E7%BC%BA%E4%B8%8E%E5%9B%BD%E9%99%85%E6%8F%B4%E5%8A%A9%E7%9A%84%E8%81%94%E7%B3%BB'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-07-09/%E5%BD%AD%E5%8D%9A-%E4%B8%80%E5%97%A8%E7%A7%9F%E8%BD%A6%E6%8B%9F%E8%B5%B4%E6%B8%AF%E4%B8%8A%E5%B8%82-%E6%88%96%E7%AD%B9%E8%B5%8410%E4%BA%BF%E7%BE%8E%E5%85%83'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-07-09/%E5%AD%97%E8%8A%82%E8%B7%B3%E5%8A%A88%E6%9C%88%E5%8F%96%E6%B6%88-%E5%A4%A7%E5%B0%8F%E5%91%A8-%E5%B7%A5%E4%BD%9C%E5%AE%89%E6%8E%92'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-07-09/%E6%A9%8B%E7%A7%91%E9%96%8B%E7%99%BC%E6%A1%88%E9%80%9A%E9%81%8E%E5%8D%80%E6%AE%B5%E5%BE%B5%E6%94%B6-%E9%AB%98%E5%B8%8210%E6%9C%88%E8%BE%A6%E5%85%AC%E5%91%8A">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-07-09/World-%E6%9C%9D%E9%B2%9C-%E5%8D%B1%E6%9C%BA-%E6%96%B0%E5%86%A0%E7%96%AB%E6%83%85-%E7%B2%AE%E9%A3%9F%E7%9F%AD%E7%BC%BA%E4%B8%8E%E5%9B%BD%E9%99%85%E6%8F%B4%E5%8A%A9%E7%9A%84%E8%81%94%E7%B3%BB">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<联合早报>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-07-09/%E5%BD%AD%E5%8D%9A-%E4%B8%80%E5%97%A8%E7%A7%9F%E8%BD%A6%E6%8B%9F%E8%B5%B4%E6%B8%AF%E4%B8%8A%E5%B8%82-%E6%88%96%E7%AD%B9%E8%B5%8410%E4%BA%BF%E7%BE%8E%E5%85%83">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<联合早报>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-07-09/%E5%AD%97%E8%8A%82%E8%B7%B3%E5%8A%A88%E6%9C%88%E5%8F%96%E6%B6%88-%E5%A4%A7%E5%B0%8F%E5%91%A8-%E5%B7%A5%E4%BD%9C%E5%AE%89%E6%8E%92">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

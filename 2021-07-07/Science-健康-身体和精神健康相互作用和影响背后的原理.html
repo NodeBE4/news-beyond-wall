@@ -1,0 +1,2098 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>[Science] 健康：身体和精神健康相互作用和影响背后的原理 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+[Science] 健康：身体和精神健康相互作用和影响背后的原理
+——
+" />
+    <meta property="og:description" content="
+[Science] 健康：身体和精神健康相互作用和影响背后的原理
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="[Science] 健康：身体和精神健康相互作用和影响背后的原理" />
+    <meta property="twitter:title" content="[Science] 健康：身体和精神健康相互作用和影响背后的原理" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-57739492&t=%5BScience%5D+%E5%81%A5%E5%BA%B7%EF%BC%9A%E8%BA%AB%E4%BD%93%E5%92%8C%E7%B2%BE%E7%A5%9E%E5%81%A5%E5%BA%B7%E7%9B%B8%E4%BA%92%E4%BD%9C%E7%94%A8%E5%92%8C%E5%BD%B1%E5%93%8D%E8%83%8C%E5%90%8E%E7%9A%84%E5%8E%9F%E7%90%86" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-57739492&t=%5BScience%5D+%E5%81%A5%E5%BA%B7%EF%BC%9A%E8%BA%AB%E4%BD%93%E5%92%8C%E7%B2%BE%E7%A5%9E%E5%81%A5%E5%BA%B7%E7%9B%B8%E4%BA%92%E4%BD%9C%E7%94%A8%E5%92%8C%E5%BD%B1%E5%93%8D%E8%83%8C%E5%90%8E%E7%9A%84%E5%8E%9F%E7%90%86&d=2021-07-07&e=
+[Science] 健康：身体和精神健康相互作用和影响背后的原理
+——
+
+
+  
+    健康：身体和精神健康相互作用和影响背后的原理
+  
+  
+    51 分钟前
+  
+  
+    
+      
+        
+          
+            图像来源，Getty Images
+          
+        
+        
+          
+图像加注文字，            要常和家人和朋友保持联系
+          
+        
+      
+    
+  
+  
+    如果你说自己情绪低落，别人可能会建议你做些运动，比如，出去走走步。
+  
+  
+    同样，如果你生病不舒服，可能也不像平时那样活泼、爱说笑。
+  
+  
+    这意味着我们的身体健康和精神健康是相互交织的，当其中之一受到打击时，另一个也会受到影响。
+ ..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-57739492" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=http://www.bbc.com/zhongwen/simp/science-57739492" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=http://www.bbc.com/zhongwen/simp/science-57739492&text=[Science] 健康：身体和精神健康相互作用和影响背后的原理&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=http://www.bbc.com/zhongwen/simp/science-57739492&title=[Science] 健康：身体和精神健康相互作用和影响背后的原理" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://www.bbc.com/zhongwen/simp/science-57739492&title=[Science] 健康：身体和精神健康相互作用和影响背后的原理" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=[Science] 健康：身体和精神健康相互作用和影响背后的原理&body=
+[Science] 健康：身体和精神健康相互作用和影响背后的原理
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=http://www.bbc.com/zhongwen/simp/science-57739492" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=http://www.bbc.com/zhongwen/simp/science-57739492&title=[Science] 健康：身体和精神健康相互作用和影响背后的原理&caption=
+[Science] 健康：身体和精神健康相互作用和影响背后的原理
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=[Science] 健康：身体和精神健康相互作用和影响背后的原理&url=http://www.bbc.com/zhongwen/simp/science-57739492" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>[Science] 健康：身体和精神健康相互作用和影响背后的原理</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-07-07
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#BBC ">
+          BBC
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="http://www.bbc.com/zhongwen/simp/science-57739492"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="BBC的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#BBC 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-57739492&t=%5BScience%5D+%E5%81%A5%E5%BA%B7%EF%BC%9A%E8%BA%AB%E4%BD%93%E5%92%8C%E7%B2%BE%E7%A5%9E%E5%81%A5%E5%BA%B7%E7%9B%B8%E4%BA%92%E4%BD%9C%E7%94%A8%E5%92%8C%E5%BD%B1%E5%93%8D%E8%83%8C%E5%90%8E%E7%9A%84%E5%8E%9F%E7%90%86&d=2021-07-07&e=
+[Science] 健康：身体和精神健康相互作用和影响背后的原理
+——
+
+
+  
+    健康：身体和精神健康相互作用和影响背后的原理
+  
+  
+    51 分钟前
+  
+  
+    
+      
+        
+          
+            图像来源，Getty Images
+          
+        
+        
+          
+图像加注文字，            要常和家人和朋友保持联系
+          
+        
+      
+    
+  
+  
+    如果你说自己情绪低落，别人可能会建议你做些运动，比如，出去走走步。
+  
+  
+    同样，如果你生病不舒服，可能也不像平时那样活泼、爱说笑。
+  
+  
+    这意味着我们的身体健康和精神健康是相互交织的，当其中之一受到打击时，另一个也会受到影响。
+ ..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-57739492" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1625668104000-->
+<p><a href="http://www.bbc.com/zhongwen/simp/science-57739492">[Science] 健康：身体和精神健康相互作用和影响背后的原理</a>
+——</p>
+
+<div>
+  <div dir="ltr" class="bbc-1151pbn e57qer20">
+    <h1 id="content" tabindex="-1" class="bbc-6yjyco e1yj3cbb0">健康：身体和精神健康相互作用和影响背后的原理</h1>
+  </div>
+  <div dir="ltr" class="e1j2237y6 bbc-q4ibpr e57qer20">
+    <time datetime="2021-07-07" class="bbc-529aew e4zesg50">51 分钟前</time>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-1k5hvrj e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/115C2/production/_119260117_30eb1d80-7ce1-493d-92f9-7ea2490b3aa7.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/115C2/production/_119260117_30eb1d80-7ce1-493d-92f9-7ea2490b3aa7.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/115C2/production/_119260117_30eb1d80-7ce1-493d-92f9-7ea2490b3aa7.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/115C2/production/_119260117_30eb1d80-7ce1-493d-92f9-7ea2490b3aa7.jpg 624w, https://ichef.bbci.co.uk/news/640/cpsprodpb/115C2/production/_119260117_30eb1d80-7ce1-493d-92f9-7ea2490b3aa7.jpg 640w" alt="family and friend" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/115C2/production/_119260117_30eb1d80-7ce1-493d-92f9-7ea2490b3aa7.jpg" width="640" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />            <p role="text" class="bbc-1s1cxbv etq3yw90"><span class="bbc-1gnhmg2 e1yt7oin0">图像来源，</span><span lang="en-GB">Getty Images</span></p>
+          </div>
+        </div>
+        <div dir="ltr" class="bbc-3edg7g e57qer20">
+          <figcaption dir="ltr" class="bbc-l9ltpr eede9f50">
+<span class="bbc-1gnhmg2 e1yt7oin0">图像加注文字，</span>            <p>要常和家人和朋友保持联系</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70"><strong>如果你说自己情绪低落，别人可能会建议你做些运动，比如，出去走走步。</strong></p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">同样，如果你生病不舒服，可能也不像平时那样活泼、爱说笑。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">这意味着我们的身体健康和精神健康是相互交织的，当其中之一受到打击时，另一个也会受到影响。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">但不太确定的是，这两者为什么、怎样互动？BBC Bitesize请教了两位研究人员，听听他们的解读。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <div class="bbc-1fobf8d e1gggypo0">
+      <ul dir="ltr" role="list" class="bbc-1gidoyr e1drcs2w1">
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0"><a href="https://www.bbc.com/zhongwen/simp/science-57614986" class="bbc-n8oauk e1cs6q200">知足和感恩或许真能让人身心获益的原因</a></li>
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0"><a href="https://www.bbc.com/zhongwen/simp/uk-56253310" class="bbc-n8oauk e1cs6q200">悦目方可赏心：家居整理改善精神健康的道理和窍门</a></li>
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0"><a href="https://www.bbc.com/zhongwen/simp/science-53642105" class="bbc-n8oauk e1cs6q200">饮食与健康：饮食如何影响你的精神健康</a></li>
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0"><a href="https://www.bbc.com/zhongwen/simp/science-48280883" class="bbc-n8oauk e1cs6q200">精神健康大敌：男人难以启齿的五大话题</a></li>
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0"><a href="https://www.bbc.com/zhongwen/simp/science-50195836" class="bbc-n8oauk e1cs6q200">幸福、健康与长寿的三大领域九大技巧</a></li>
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0"><a href="https://www.bbc.com/zhongwen/simp/uk-53740677" class="bbc-n8oauk e1cs6q200">80高龄健步如飞 青春永驻的一个关键三个秘诀</a></li>
+      </ul>
+    </div>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <h2 id="就像拼图游戏一样" tabindex="-1" class="bbc-6w9yzd e14hemmw0">就像“拼图游戏”一样</h2>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-1k5hvrj e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/13CD2/production/_119260118_7bdf0414-9f8a-4963-85f8-91b15193808e.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/13CD2/production/_119260118_7bdf0414-9f8a-4963-85f8-91b15193808e.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/13CD2/production/_119260118_7bdf0414-9f8a-4963-85f8-91b15193808e.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/13CD2/production/_119260118_7bdf0414-9f8a-4963-85f8-91b15193808e.jpg 624w" alt="走步" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/13CD2/production/_119260118_7bdf0414-9f8a-4963-85f8-91b15193808e.jpg" width="624" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="bbc-3edg7g e57qer20">
+          <figcaption dir="ltr" class="bbc-l9ltpr eede9f50">
+<span class="bbc-1gnhmg2 e1yt7oin0">图像加注文字，</span>            <p>走步也是运动，运动可以改善身心健康。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">影响身心健康的原因数不胜数，有些比较明显 - 比如，如果白天不好好进食可能会情绪不佳；运动可能会让人更有活力。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">一些研究显示，可能还有其他一些不太直截了当的互动在发生，例如，压力和抑郁能够让免疫系统更脆弱，免疫脆弱会让人更容易生病。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">情绪障碍也与罹患心脏病几率增加有关。因此，它是一种双向机制：即如果身体健康受影响，也会影响精神健康；反之亦然。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">然而，事情会变得更复杂。一些其他因素，诸如社交互动，甚至儿时的经历也会有潜在巨大影响。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">伦敦帝国理工传染病流行病学系的奥恩伯格博士解释说，事实上这些都是一组叫“健康决定因素”的一部分。他们包括遗传、社交及支持网络、环境因素--即我们居住的地方--这都会影响我们的整体健康。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">但他的研究发现，另一方面也成立：即精神和身体健康也能影响生活的其他方面。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">例如，如果精神健康状态好，也更可能去运动，但至关重要的是，运动也能改善精神健康。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">如果患有抑郁症，很难找到动力并继续下去，这可能会影响锻炼的能力，可能身体状况欠佳，因此更不愿意运动，依此类推等等。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">奥恩伯格博士认为，换句话说，它就像“拼图游戏”一样，每一块拼图不仅组合在一起形成整体健康的大全貌，同时这种全貌也决定着各个部分的外观。奥恩伯格博士说，这就帮助解释了为什么身体健康和精神健康往往是息息相关的。</p>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-367mqz e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/12CED/production/_113673077_4c547051-3f19-4b28-a0ad-36fd154ee696.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/12CED/production/_113673077_4c547051-3f19-4b28-a0ad-36fd154ee696.jpg 320w, https://ichef.bbci.co.uk/news/464/cpsprodpb/12CED/production/_113673077_4c547051-3f19-4b28-a0ad-36fd154ee696.jpg 464w" alt="line" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/12CED/production/_113673077_4c547051-3f19-4b28-a0ad-36fd154ee696.jpg" width="464" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">一些有利于身心健康的建议：</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <div class="bbc-1fobf8d e1gggypo0">
+      <ul dir="ltr" role="list" class="bbc-1gidoyr e1drcs2w1">
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0">经常运动</li>
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0">吃均衡饮食</li>
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0">保障充足睡眠</li>
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0">掌握好学习/工作与其他事情之间的平衡</li>
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0">找时间放松及培养兴趣、爱好</li>
+      </ul>
+    </div>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <h2 id="全在于你怎么想" tabindex="-1" class="bbc-6w9yzd e14hemmw0">全在于你怎么想？</h2>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">有人说，这在一定程度上全看你怎么想。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">有些人认为，在一些情况下，我们需要重新思考对身心健康如何相互作用的传统理解。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">布尔摩尔是剑桥大学神经学家和精神病学教授，他写了一本名为《终结抑郁症》（The Inflamed Mind）的书，在书中他提出有些精神健康问题是由大脑炎症引起的。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">发炎是身体对感染或受伤的反应。免疫系统认为身体受到攻击时就会启动它，发炎也是愈合过程的一部分。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">但当接到假警报时，就会出现问题，身体一些未受伤的部位会出现炎症。布尔摩尔教授认为，如果这种炎症到达脑部，可能可以帮助解释一些人遭受抑郁、焦虑和其他一些精神健康问题的原因。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">这是在实验室环境中在动物身上观察到的，当然要在人身上测量要难得多。但已经有一些研究为这种联系提供了证据。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">布尔摩尔教授表示，其中一项研究观察到了儿童时期的炎症与晚年时患抑郁症风险之间的潜在关系，即“抑郁症前的身体发炎”。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">布尔摩尔教授表示，了解抑郁症的根源可能不止一个在许多方面都会有帮助，比如，在提供治疗方面。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">他认为从历史上来看，医学总是把所有人分成两大类：或是有身体疾患，那要去看医生；或者有精神问题，去看心理医生。但他认为这样做是不对的 - 应该把人视为一个整体，而不是两个独立个体的一半。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <h2 id="谜团解开了吗" tabindex="-1" class="bbc-6w9yzd e14hemmw0">谜团解开了吗？</h2>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-1k5hvrj e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/152EF/production/_119276768_f2497d83-3a81-446f-852e-ad21b94adcd1.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/152EF/production/_119276768_f2497d83-3a81-446f-852e-ad21b94adcd1.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/152EF/production/_119276768_f2497d83-3a81-446f-852e-ad21b94adcd1.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/152EF/production/_119276768_f2497d83-3a81-446f-852e-ad21b94adcd1.jpg 624w, https://ichef.bbci.co.uk/news/640/cpsprodpb/152EF/production/_119276768_f2497d83-3a81-446f-852e-ad21b94adcd1.jpg 640w" alt="food" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/152EF/production/_119276768_f2497d83-3a81-446f-852e-ad21b94adcd1.jpg" width="640" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="bbc-3edg7g e57qer20">
+          <figcaption dir="ltr" class="bbc-l9ltpr eede9f50">
+<span class="bbc-1gnhmg2 e1yt7oin0">图像加注文字，</span>            <p>多吃健康美味果蔬对身体有好处。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">当然，还有其他关于我们身心健康相互作用的例子。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">正如布尔摩尔教授所说，关于精神健康以及身体健康单方面的研究已经有许多年，对这两者之间关系的研究相对更少。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">但现在人们正在对此展开研究。坐等更确定答案之际，不妨继续做一些知道对我们有好处的事 - 比如在大自然中度过时光；吃许多健康又美味的食品；与朋友和家人保持联系等。</p>
+  </div>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#BBC 的其它文章</h4>
+    
+      <li>
+        <time>2021-07-07</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-07/World-%E7%BE%8E%E5%9B%BD%E5%9C%A8%E5%8F%B0%E5%8D%8F%E4%BC%9A%E5%85%AC%E5%B8%83%E6%96%B0%E4%BB%BB%E5%A4%84%E9%95%BF-%E6%8B%9C%E7%99%BB%E6%94%BF%E5%BA%9C%E9%87%8D%E6%96%B0%E5%B8%83%E5%B1%80%E4%B8%9C%E4%BA%9A%E5%A4%96%E4%BA%A4%E5%AE%98%E5%91%98">
+          [World] 美国在台协会公布新任处长 拜登政府重新布局东亚外交官员
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-07</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-07/World-%E6%96%B0%E5%86%A0%E5%A4%A7%E6%B5%81%E8%A1%8C%E6%8C%89%E6%B5%81%E6%84%9F%E5%A4%84%E7%90%86-%E5%A6%82%E4%BD%95%E7%9C%8B%E5%BE%85%E6%96%B0%E5%8A%A0%E5%9D%A1%E6%8A%97%E7%96%AB%E6%96%B0%E6%80%9D%E8%B7%AF">
+          [World] 新冠大流行按流感处理 如何看待新加坡抗疫新思路
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-07</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-07/World-%E5%8F%B0%E6%B5%B7%E5%86%B2%E7%AA%81-%E5%AA%92%E4%BD%93%E5%85%B3%E6%B3%A8%E7%BE%8E%E6%97%A5%E5%86%9B%E4%BA%8B%E4%BB%8B%E5%85%A5%E5%89%8D%E6%99%AF%E4%B8%8E%E4%BF%9D%E6%8C%81-%E6%88%98%E7%95%A5%E6%A8%A1%E7%B3%8A">
+          [World] 台海冲突：媒体关注美日军事介入前景与保持“战略模糊”
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-07</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-07/Sport-%E6%96%B0%E5%86%A0%E7%97%85%E6%AF%92%E6%A3%80%E6%B5%8B-%E5%A6%82%E4%BD%95%E8%AF%86%E5%88%AB%E7%94%A8%E5%8F%AF%E4%B9%90%E6%88%96%E6%9E%9C%E6%B1%81%E5%81%9A%E5%87%BA%E6%9D%A5%E7%9A%84%E5%81%87%E9%98%B3%E6%80%A7%E7%BB%93%E6%9E%9C">
+          [Sport] 新冠病毒检测：如何识别用可乐或果汁做出来的假阳性结果
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-07/%E8%8D%B7%E5%85%B0%E8%91%97%E5%90%8D%E7%8A%AF%E7%BD%AA%E9%97%AE%E9%A2%98%E8%AE%B0%E8%80%85%E9%81%AD%E6%9E%AA%E5%87%BB">
+            前一篇：荷兰著名犯罪问题记者遭枪击   
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-07/%E5%85%B3%E4%BA%8E%E9%9F%A9%E8%89%AF%E6%A1%88%E4%BB%B6%E7%9A%84%E5%A3%B0%E6%98%8E-%E7%AC%AC%E4%B8%80%E5%8F%B7">
+            后一篇：《关于韩良案件的声明》（第一号）   
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-07-07/%E8%8D%B7%E5%85%B0%E8%91%97%E5%90%8D%E7%8A%AF%E7%BD%AA%E9%97%AE%E9%A2%98%E8%AE%B0%E8%80%85%E9%81%AD%E6%9E%AA%E5%87%BB'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-07-07/%E5%85%B3%E4%BA%8E%E9%9F%A9%E8%89%AF%E6%A1%88%E4%BB%B6%E7%9A%84%E5%A3%B0%E6%98%8E-%E7%AC%AC%E4%B8%80%E5%8F%B7'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-07-07/World-%E6%96%B0%E5%86%A0%E5%A4%A7%E6%B5%81%E8%A1%8C%E6%8C%89%E6%B5%81%E6%84%9F%E5%A4%84%E7%90%86-%E5%A6%82%E4%BD%95%E7%9C%8B%E5%BE%85%E6%96%B0%E5%8A%A0%E5%9D%A1%E6%8A%97%E7%96%AB%E6%96%B0%E6%80%9D%E8%B7%AF'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-07-07/World-%E5%8F%B0%E6%B5%B7%E5%86%B2%E7%AA%81-%E5%AA%92%E4%BD%93%E5%85%B3%E6%B3%A8%E7%BE%8E%E6%97%A5%E5%86%9B%E4%BA%8B%E4%BB%8B%E5%85%A5%E5%89%8D%E6%99%AF%E4%B8%8E%E4%BF%9D%E6%8C%81-%E6%88%98%E7%95%A5%E6%A8%A1%E7%B3%8A'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-07-07/%E8%8D%B7%E5%85%B0%E8%91%97%E5%90%8D%E7%8A%AF%E7%BD%AA%E9%97%AE%E9%A2%98%E8%AE%B0%E8%80%85%E9%81%AD%E6%9E%AA%E5%87%BB">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-07-07/%E5%85%B3%E4%BA%8E%E9%9F%A9%E8%89%AF%E6%A1%88%E4%BB%B6%E7%9A%84%E5%A3%B0%E6%98%8E-%E7%AC%AC%E4%B8%80%E5%8F%B7">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<BBC>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-07-07/World-%E6%96%B0%E5%86%A0%E5%A4%A7%E6%B5%81%E8%A1%8C%E6%8C%89%E6%B5%81%E6%84%9F%E5%A4%84%E7%90%86-%E5%A6%82%E4%BD%95%E7%9C%8B%E5%BE%85%E6%96%B0%E5%8A%A0%E5%9D%A1%E6%8A%97%E7%96%AB%E6%96%B0%E6%80%9D%E8%B7%AF">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<BBC>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-07-07/World-%E5%8F%B0%E6%B5%B7%E5%86%B2%E7%AA%81-%E5%AA%92%E4%BD%93%E5%85%B3%E6%B3%A8%E7%BE%8E%E6%97%A5%E5%86%9B%E4%BA%8B%E4%BB%8B%E5%85%A5%E5%89%8D%E6%99%AF%E4%B8%8E%E4%BF%9D%E6%8C%81-%E6%88%98%E7%95%A5%E6%A8%A1%E7%B3%8A">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

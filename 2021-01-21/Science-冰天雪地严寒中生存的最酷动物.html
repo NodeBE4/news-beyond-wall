@@ -1,0 +1,2144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>[Science] 冰天雪地严寒中生存的最酷动物 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+[Science] 冰天雪地严寒中生存的最酷动物
+——
+" />
+    <meta property="og:description" content="
+[Science] 冰天雪地严寒中生存的最酷动物
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="[Science] 冰天雪地严寒中生存的最酷动物" />
+    <meta property="twitter:title" content="[Science] 冰天雪地严寒中生存的最酷动物" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-55745040&t=%5BScience%5D+%E5%86%B0%E5%A4%A9%E9%9B%AA%E5%9C%B0%E4%B8%A5%E5%AF%92%E4%B8%AD%E7%94%9F%E5%AD%98%E7%9A%84%E6%9C%80%E9%85%B7%E5%8A%A8%E7%89%A9" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-55745040&t=%5BScience%5D+%E5%86%B0%E5%A4%A9%E9%9B%AA%E5%9C%B0%E4%B8%A5%E5%AF%92%E4%B8%AD%E7%94%9F%E5%AD%98%E7%9A%84%E6%9C%80%E9%85%B7%E5%8A%A8%E7%89%A9&d=2021-01-21&e=
+[Science] 冰天雪地严寒中生存的最酷动物
+——
+
+
+  
+    冰天雪地严寒中生存的最酷动物
+  
+  
+    
+      
+        戴尔‧肖
+        （ Dale Shaw ）
+      
+    
+  
+  
+    2021年1月21日
+  
+  
+    
+      
+        
+          
+            图像来源，Paul Souders/Getty Images
+          
+        
+        
+          
+图像加注文字，            帝企鹅靠着抱团取暖的团队精神顽强地生活在南极大陆。
+          
+        
+      
+    
+  
+  
+    让我们先来看看地球上最伟大的嗜雪动物（chionophiles）。没错，就是嗜雪动物，或换言之，即生..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-55745040" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=http://www.bbc.com/zhongwen/simp/science-55745040" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=http://www.bbc.com/zhongwen/simp/science-55745040&text=[Science] 冰天雪地严寒中生存的最酷动物&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=http://www.bbc.com/zhongwen/simp/science-55745040&title=[Science] 冰天雪地严寒中生存的最酷动物" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://www.bbc.com/zhongwen/simp/science-55745040&title=[Science] 冰天雪地严寒中生存的最酷动物" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=[Science] 冰天雪地严寒中生存的最酷动物&body=
+[Science] 冰天雪地严寒中生存的最酷动物
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=http://www.bbc.com/zhongwen/simp/science-55745040" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=http://www.bbc.com/zhongwen/simp/science-55745040&title=[Science] 冰天雪地严寒中生存的最酷动物&caption=
+[Science] 冰天雪地严寒中生存的最酷动物
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=[Science] 冰天雪地严寒中生存的最酷动物&url=http://www.bbc.com/zhongwen/simp/science-55745040" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>[Science] 冰天雪地严寒中生存的最酷动物</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-21
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#BBC ">
+          BBC
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="http://www.bbc.com/zhongwen/simp/science-55745040"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="BBC的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#BBC 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-55745040&t=%5BScience%5D+%E5%86%B0%E5%A4%A9%E9%9B%AA%E5%9C%B0%E4%B8%A5%E5%AF%92%E4%B8%AD%E7%94%9F%E5%AD%98%E7%9A%84%E6%9C%80%E9%85%B7%E5%8A%A8%E7%89%A9&d=2021-01-21&e=
+[Science] 冰天雪地严寒中生存的最酷动物
+——
+
+
+  
+    冰天雪地严寒中生存的最酷动物
+  
+  
+    
+      
+        戴尔‧肖
+        （ Dale Shaw ）
+      
+    
+  
+  
+    2021年1月21日
+  
+  
+    
+      
+        
+          
+            图像来源，Paul Souders/Getty Images
+          
+        
+        
+          
+图像加注文字，            帝企鹅靠着抱团取暖的团队精神顽强地生活在南极大陆。
+          
+        
+      
+    
+  
+  
+    让我们先来看看地球上最伟大的嗜雪动物（chionophiles）。没错，就是嗜雪动物，或换言之，即生..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-55745040" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1611209228000-->
+<p><a href="http://www.bbc.com/zhongwen/simp/science-55745040">[Science] 冰天雪地严寒中生存的最酷动物</a>
+——</p>
+
+<div>
+  <div dir="ltr" class="css-e19l8g-GridComponent e57qer20">
+    <h1 id="content" tabindex="-1" class="css-1wfn6k3-Headline e1yj3cbb0">冰天雪地严寒中生存的最酷动物</h1>
+  </div>
+  <div dir="ltr" class="e1j2237y2 css-vf19ca-GridComponent e57qer20">
+    <div class="css-s561j-Container e1c9i7u10">
+      <ul role="list" class="css-pu07qy-Person e1c9i7u12">
+        <li role="listitem" class="css-dvly96-Name e1c9i7u13">戴尔‧肖</li>
+        <li role="listitem" class="css-1942rtw-Title e1c9i7u14">（ Dale Shaw ）</li>
+      </ul>
+    </div>
+  </div>
+  <div dir="ltr" class="e1j2237y1 css-vf19ca-GridComponent e57qer20">
+    <time datetime="2021-01-21" class="css-pb6w51-StyledTimestamp e4zesg50">2021年1月21日</time>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-1poe7f8-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/43D0/production/_116606371_ed3deede-a405-4659-8e97-e91e2814feac.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/43D0/production/_116606371_ed3deede-a405-4659-8e97-e91e2814feac.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/43D0/production/_116606371_ed3deede-a405-4659-8e97-e91e2814feac.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/43D0/production/_116606371_ed3deede-a405-4659-8e97-e91e2814feac.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/43D0/production/_116606371_ed3deede-a405-4659-8e97-e91e2814feac.jpg 800w" alt="帝企鹅靠着抱团取暖的团队精神顽强地生活在南极大陆。" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/43D0/production/_116606371_ed3deede-a405-4659-8e97-e91e2814feac.jpg" width="976" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />            <p role="text" class="css-19db9gm-Copyright etq3yw90"><span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像来源，</span><span lang="en-GB">Paul Souders/Getty Images</span></p>
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>帝企鹅靠着抱团取暖的团队精神顽强地生活在南极大陆。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70"><strong>让我们先来看看地球上最伟大的嗜雪动物（chionophiles）。没错，就是嗜雪动物，或换言之，即生活在冰雪世界，在严寒气候中仍能生存繁衍的耐极度寒冷的动物。</strong></p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">然后，我们再来看哪些动物能在最严酷的低温环境中绵绵不绝地延续生命？以下就是本星球上最酷最耐寒的住客：</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <h2 id="帝企鹅" tabindex="-1" class="css-10tk4x-SubHeading e14hemmw1">帝企鹅</h2>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">南极的凌烈寒风可以达到让人牙齿打颤的零下60摄氏度，对帝企鹅的生存是严峻的挑战。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">这种企鹅是地球上所有企鹅物种中体型最大的，由于身高比生活在南极体型较小的王企鹅要高，因而更容易暴露在刺骨的寒风中。但帝企鹅得以在南极大陆传宗接代，主要靠抱团取暖的团队合作。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">在南极最寒冷的几个月里，所有帝企鹅会全部挤在一起保暖，挤在中间的最暖和，因此一旦中间的帝企鹅身体暖和过来，就会转到外围挡住寒风，以让外围吃寒风的帝企鹅进到暖和的中心，彼此交换取暖度过严寒。</p>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-1poe7f8-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/91F0/production/_116606373_27dfe443-7d18-4184-b0ea-99e7abef409e.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/91F0/production/_116606373_27dfe443-7d18-4184-b0ea-99e7abef409e.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/91F0/production/_116606373_27dfe443-7d18-4184-b0ea-99e7abef409e.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/91F0/production/_116606373_27dfe443-7d18-4184-b0ea-99e7abef409e.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/91F0/production/_116606373_27dfe443-7d18-4184-b0ea-99e7abef409e.jpg 800w" alt="北极地松鼠躲在地下熬过严寒。" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/91F0/production/_116606373_27dfe443-7d18-4184-b0ea-99e7abef409e.jpg" width="976" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>北极地松鼠躲在地下熬过严寒。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <h2 id="北极地松鼠" tabindex="-1" class="css-10tk4x-SubHeading e14hemmw1">北极地松鼠</h2>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">如果目前的世界现状让你想要冬眠，那么你可能希望仿效北极地松鼠过冬的方式。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">北极地松鼠生活在北美洲温度可降到零下63摄氏度的北极苔原上，为了熬过最严酷的寒冬，会躲到地下洞穴中冬眠，一年有八个月的时间沉睡不醒。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">北极地松鼠冬眠时，大脑温度会下降到冰点以上，而核心体温则会降到破纪录的零下2.9摄氏度，心率下降到大约每分钟1次。一旦冬眠结束，北极地松鼠需要三个小时才能完全恢复正常体温。</p>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-1poe7f8-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/E010/production/_116606375_744da9ad-c47a-404b-98be-d4f9c4cf4889.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/E010/production/_116606375_744da9ad-c47a-404b-98be-d4f9c4cf4889.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/E010/production/_116606375_744da9ad-c47a-404b-98be-d4f9c4cf4889.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/E010/production/_116606375_744da9ad-c47a-404b-98be-d4f9c4cf4889.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/E010/production/_116606375_744da9ad-c47a-404b-98be-d4f9c4cf4889.jpg 800w" alt="威德尔海豹会用牙齿戳穿海冰以呼吸。" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/E010/production/_116606375_744da9ad-c47a-404b-98be-d4f9c4cf4889.jpg" width="976" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>威德尔海豹会用牙齿戳穿海冰以呼吸。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <h2 id="威德尔海豹" tabindex="-1" class="css-10tk4x-SubHeading e14hemmw1">威德尔海豹</h2>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">如果你要找的是一种全身上下无一不适应极地酷寒气候的哺乳动物，那就让我为你介绍威德尔海豹吧。这种海豹的生活区域在所有海豹同类中最接近南极点，它们大部分时间都待在南极冰层下捕猎，同时避免被虎鲸猎杀。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">威德尔海豹能潜到令人惊叹的2000英尺深的水下，并能在水下呆上45分钟，如果找不到冰缝换气吸氧，就会用牙齿在头顶的冰层给自己钻一个通气孔。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">南极的海水温度比海上面的空气要高很多，海面气温可骤降到零下70摄氏度，所以在特别严酷的冬季风暴骤起时，威德尔海豹会潜到海洋里泡水暖身。</p>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-1poe7f8-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/117EC/production/_116606617_49ec9dd5-bd93-4534-b4b5-0eb4115237e5.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/117EC/production/_116606617_49ec9dd5-bd93-4534-b4b5-0eb4115237e5.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/117EC/production/_116606617_49ec9dd5-bd93-4534-b4b5-0eb4115237e5.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/117EC/production/_116606617_49ec9dd5-bd93-4534-b4b5-0eb4115237e5.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/117EC/production/_116606617_49ec9dd5-bd93-4534-b4b5-0eb4115237e5.jpg 800w" alt="巨大的格陵兰鲨鱼能耐严寒的冰雪海洋。" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/117EC/production/_116606617_49ec9dd5-bd93-4534-b4b5-0eb4115237e5.jpg" width="976" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>巨大的格陵兰鲨鱼能耐严寒的冰雪海洋。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <h2 id="格陵兰鲨鱼" tabindex="-1" class="css-10tk4x-SubHeading e14hemmw1">格陵兰鲨鱼</h2>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">格陵兰大鲨鱼生活在北大西洋和北冰洋的深水中，不仅能在寒冷的海水中悠游生存，还是地球上已知的脊椎动物中寿命最长的，平均寿命在300到500岁之间。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">格陵兰鲨鱼极其缓慢的新陈代谢有助于体温控制和延年益寿。它们也是鲨鱼体型最巨大的其中一类，身体可长达6.4米，体重约1000公斤。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">不过世界第一飞人博尔特却不必担心，因为体型虽巨大，但其速度最高只有每小时1.6英里，因此不出所料，所能捕食的都是睡着了的猎物。</p>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-oijotl-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/14B7C/production/_116606848_7e88b146-a871-4366-b229-1ea3909ae61c.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/14B7C/production/_116606848_7e88b146-a871-4366-b229-1ea3909ae61c.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/14B7C/production/_116606848_7e88b146-a871-4366-b229-1ea3909ae61c.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/14B7C/production/_116606848_7e88b146-a871-4366-b229-1ea3909ae61c.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/14B7C/production/_116606848_7e88b146-a871-4366-b229-1ea3909ae61c.jpg 800w" alt="南极雪鞘嘴鸥有一层很厚的绒毛以保暖。" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/14B7C/production/_116606848_7e88b146-a871-4366-b229-1ea3909ae61c.jpg" width="976" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>南极雪鞘嘴鸥有一层很厚的绒毛以保暖。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <h2 id="南极雪鞘嘴鸥" tabindex="-1" class="css-10tk4x-SubHeading e14hemmw1">南极雪鞘嘴鸥</h2>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">这种外貌像鸽子，羽毛纯白的勇敢之鸟是南极大陆唯一的陆栖鸟类，也是唯一在南极大陆生活繁殖的鸟类。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">南极雪鞘嘴鸥有一层厚厚的羽绒保暖，大部分时间都待在地面上，觅食其他鸟类的剩饭剩菜。这其实是不错的生存之道。南极雪鞘嘴鸥也是南极唯一没有蹼足的鸟类。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">如果这种陆禽一直在冰冷的陆地上走动，那么要如何保持脚趾暖和舒服？这次，没有神奇的生理诀窍，就是花很多时间两脚轮流单跳避免过久接触冰冷地面而已。</p>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-1poe7f8-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/16E4/production/_116606850_d43253de-30cd-4c4d-9e95-fb998775afa2.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/16E4/production/_116606850_d43253de-30cd-4c4d-9e95-fb998775afa2.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/16E4/production/_116606850_d43253de-30cd-4c4d-9e95-fb998775afa2.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/16E4/production/_116606850_d43253de-30cd-4c4d-9e95-fb998775afa2.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/16E4/production/_116606850_d43253de-30cd-4c4d-9e95-fb998775afa2.jpg 800w" alt="麝牛靠自己厚实的多层毛皮适应北极冻土地带的严寒气候。" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/16E4/production/_116606850_d43253de-30cd-4c4d-9e95-fb998775afa2.jpg" width="976" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>麝牛靠自己厚实的多层毛皮适应北极冻土地带的严寒气候。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <h2 id="麝牛" tabindex="-1" class="css-10tk4x-SubHeading e14hemmw1">麝牛</h2>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">麝牛是生活在西伯利亚和格陵兰岛的另一种冻土带动物。其得名，很不幸是来自于发情季节释放出的强烈气味，即麝香。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">这种威风凛凛的野兽在北极和近北极极度恶劣的环境中生存了上万年，其耐寒生存秘诀就在其独特的蓬松下垂体毛中。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">麝牛体毛由两层组成，浓密很长的外层被称为保护毛层，覆盖在第二层较短的内毛上，因此能在最冷的严酷寒冬提供额外的御寒保暖功能。</p>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-oijotl-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/6504/production/_116606852_2d1d4872-a8b2-419b-b25b-5b959040a805.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/6504/production/_116606852_2d1d4872-a8b2-419b-b25b-5b959040a805.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/6504/production/_116606852_2d1d4872-a8b2-419b-b25b-5b959040a805.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/6504/production/_116606852_2d1d4872-a8b2-419b-b25b-5b959040a805.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/6504/production/_116606852_2d1d4872-a8b2-419b-b25b-5b959040a805.jpg 800w" alt="生活在树皮下，这种勇抗逆境的红扁皮甲虫能在地球上极度严寒的环境中生存。" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/6504/production/_116606852_2d1d4872-a8b2-419b-b25b-5b959040a805.jpg" width="976" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>生活在树皮下，这种勇抗逆境的红扁皮甲虫能在地球上极度严寒的环境中生存。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <h2 id="红扁皮甲虫" tabindex="-1" class="css-10tk4x-SubHeading e14hemmw1">红扁皮甲虫</h2>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">红扁皮甲虫这种半英寸长的甲虫分布范围可从北卡罗来纳州一直延伸到极度寒冷的北极圈。这种甲虫生活在树皮下，其生存方式就是为适应最严酷的冬季环境。对于这些特别耐寒的虫子，极地寒冬的气候就如8月炎热的西班牙贝尼多姆那样是稀松等闲之事。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">在实验室测试中，红扁皮甲虫甚至可以在低至零下150°C的温度下仍然不会结冰。这是超乎想象的寒冷啊！事实上，这是我们人类能发现的最寒冷低温。对抗这种低到极度的寒冷，红扁皮甲虫是如何做到的？</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">原来在极度寒冷状态中，这种甲虫会排出体内30-40%的水分，并利用细胞膜间的抗冻蛋白来防止体内其余水分结冰。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">请访问 <a href="https://www.bbcearth.com/blog" aria-label="BBC Earth, 外部链接" class="css-h9s9st-InlineLink e1cs6q200">BBC Earth</a> 阅读 <a href="https://www.bbcearth.com/blog/?article=surviving-the-extreme" aria-label="英文原文, 外部链接" class="css-h9s9st-InlineLink e1cs6q200">英文原文</a>。</p>
+  </div>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#BBC 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-23</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-23/Science-%E4%BB%8E%E9%83%91%E7%88%BD%E9%A3%8E%E6%B3%A2%E8%AF%B4%E8%B5%B7-%E5%85%B3%E4%BA%8E%E4%BB%A3%E5%AD%95%E4%BD%A0%E9%9C%80%E8%A6%81%E4%BA%86%E8%A7%A3%E7%9A%84%E5%87%A0%E4%B8%AA%E5%9F%BA%E6%9C%AC%E9%97%AE%E9%A2%98">
+          [Science] 从郑爽风波说起：关于代孕你需要了解的几个基本问题
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-22</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-22/World-BBC%E7%BA%AA%E5%BD%95%E7%89%87-%E6%B3%B0%E5%9B%BD%E7%9A%84%E9%9D%92%E5%B9%B4%E6%8A%97%E8%AE%AE-%E6%8C%91%E6%88%98%E4%B8%8D%E5%8F%AF%E6%92%BC%E5%8A%A8%E7%9A%84%E7%8E%8B%E6%9D%83">
+          [World] BBC纪录片：泰国的青年抗议——挑战不可撼动的王权
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-20</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-20/Chinese-%E9%A6%99%E6%B8%AF%E9%A6%96%E6%AC%A1%E5%BC%95-%E5%9B%BD%E5%AE%89%E6%B3%95-%E5%B0%81%E9%94%81%E7%BD%91%E7%AB%99-%E6%B8%AF%E7%89%88-%E9%98%B2%E7%81%AB%E9%95%BF%E5%9F%8E-%E8%BF%91%E5%9C%A8%E7%9C%BC%E5%89%8D">
+          [Chinese] 香港首次引《国安法》封锁网站，港版“防火长城”近在眼前？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-20</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-20/World-%E6%8B%9C%E7%99%BB%E5%86%85%E9%98%81-%E7%A1%AE%E5%AE%9E%E6%AF%94%E5%8E%86%E5%B1%8A%E7%BE%8E%E5%9B%BD%E6%94%BF%E5%BA%9C%E6%9B%B4%E5%85%B7%E5%A4%9A%E5%85%83%E4%BB%A3%E8%A1%A8%E6%80%A7">
+          [World] 拜登内阁：确实比历届美国政府更具多元代表性？
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-20/Chinese-%E9%A6%99%E6%B8%AF%E9%A6%96%E6%AC%A1%E5%BC%95-%E5%9B%BD%E5%AE%89%E6%B3%95-%E5%B0%81%E9%94%81%E7%BD%91%E7%AB%99-%E6%B8%AF%E7%89%88-%E9%98%B2%E7%81%AB%E9%95%BF%E5%9F%8E-%E8%BF%91%E5%9C%A8%E7%9C%BC%E5%89%8D">
+            前一篇：[Chinese] 香港首次引《国安法》封锁网站，港版“防火长城”近在眼前？
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-22/World-BBC%E7%BA%AA%E5%BD%95%E7%89%87-%E6%B3%B0%E5%9B%BD%E7%9A%84%E9%9D%92%E5%B9%B4%E6%8A%97%E8%AE%AE-%E6%8C%91%E6%88%98%E4%B8%8D%E5%8F%AF%E6%92%BC%E5%8A%A8%E7%9A%84%E7%8E%8B%E6%9D%83">
+            后一篇：[World] BBC纪录片：泰国的青年抗议——挑战不可撼动的王权
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-20/Chinese-%E9%A6%99%E6%B8%AF%E9%A6%96%E6%AC%A1%E5%BC%95-%E5%9B%BD%E5%AE%89%E6%B3%95-%E5%B0%81%E9%94%81%E7%BD%91%E7%AB%99-%E6%B8%AF%E7%89%88-%E9%98%B2%E7%81%AB%E9%95%BF%E5%9F%8E-%E8%BF%91%E5%9C%A8%E7%9C%BC%E5%89%8D'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-22/World-BBC%E7%BA%AA%E5%BD%95%E7%89%87-%E6%B3%B0%E5%9B%BD%E7%9A%84%E9%9D%92%E5%B9%B4%E6%8A%97%E8%AE%AE-%E6%8C%91%E6%88%98%E4%B8%8D%E5%8F%AF%E6%92%BC%E5%8A%A8%E7%9A%84%E7%8E%8B%E6%9D%83'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-22/World-BBC%E7%BA%AA%E5%BD%95%E7%89%87-%E6%B3%B0%E5%9B%BD%E7%9A%84%E9%9D%92%E5%B9%B4%E6%8A%97%E8%AE%AE-%E6%8C%91%E6%88%98%E4%B8%8D%E5%8F%AF%E6%92%BC%E5%8A%A8%E7%9A%84%E7%8E%8B%E6%9D%83'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-20/Chinese-%E9%A6%99%E6%B8%AF%E9%A6%96%E6%AC%A1%E5%BC%95-%E5%9B%BD%E5%AE%89%E6%B3%95-%E5%B0%81%E9%94%81%E7%BD%91%E7%AB%99-%E6%B8%AF%E7%89%88-%E9%98%B2%E7%81%AB%E9%95%BF%E5%9F%8E-%E8%BF%91%E5%9C%A8%E7%9C%BC%E5%89%8D'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-20/Chinese-%E9%A6%99%E6%B8%AF%E9%A6%96%E6%AC%A1%E5%BC%95-%E5%9B%BD%E5%AE%89%E6%B3%95-%E5%B0%81%E9%94%81%E7%BD%91%E7%AB%99-%E6%B8%AF%E7%89%88-%E9%98%B2%E7%81%AB%E9%95%BF%E5%9F%8E-%E8%BF%91%E5%9C%A8%E7%9C%BC%E5%89%8D">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-22/World-BBC%E7%BA%AA%E5%BD%95%E7%89%87-%E6%B3%B0%E5%9B%BD%E7%9A%84%E9%9D%92%E5%B9%B4%E6%8A%97%E8%AE%AE-%E6%8C%91%E6%88%98%E4%B8%8D%E5%8F%AF%E6%92%BC%E5%8A%A8%E7%9A%84%E7%8E%8B%E6%9D%83">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<BBC>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-22/World-BBC%E7%BA%AA%E5%BD%95%E7%89%87-%E6%B3%B0%E5%9B%BD%E7%9A%84%E9%9D%92%E5%B9%B4%E6%8A%97%E8%AE%AE-%E6%8C%91%E6%88%98%E4%B8%8D%E5%8F%AF%E6%92%BC%E5%8A%A8%E7%9A%84%E7%8E%8B%E6%9D%83">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<BBC>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-20/Chinese-%E9%A6%99%E6%B8%AF%E9%A6%96%E6%AC%A1%E5%BC%95-%E5%9B%BD%E5%AE%89%E6%B3%95-%E5%B0%81%E9%94%81%E7%BD%91%E7%AB%99-%E6%B8%AF%E7%89%88-%E9%98%B2%E7%81%AB%E9%95%BF%E5%9F%8E-%E8%BF%91%E5%9C%A8%E7%9C%BC%E5%89%8D">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

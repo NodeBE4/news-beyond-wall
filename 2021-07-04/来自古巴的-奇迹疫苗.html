@@ -1,0 +1,1592 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>来自古巴的“奇迹疫苗” – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+来自古巴的“奇迹疫苗”
+——
+" />
+    <meta property="og:description" content="
+来自古巴的“奇迹疫苗”
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="来自古巴的“奇迹疫苗”" />
+    <meta property="twitter:title" content="来自古巴的“奇迹疫苗”" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E6%259D%25A5%25E8%2587%25AA%25E5%258F%25A4%25E5%25B7%25B4%25E7%259A%2584%25E2%2580%259C%25E5%25A5%2587%25E8%25BF%25B9%25E7%2596%25AB%25E8%258B%2597%25E2%2580%259D%2Fa-58120482&t=%E6%9D%A5%E8%87%AA%E5%8F%A4%E5%B7%B4%E7%9A%84%E2%80%9C%E5%A5%87%E8%BF%B9%E7%96%AB%E8%8B%97%E2%80%9D" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E6%259D%25A5%25E8%2587%25AA%25E5%258F%25A4%25E5%25B7%25B4%25E7%259A%2584%25E2%2580%259C%25E5%25A5%2587%25E8%25BF%25B9%25E7%2596%25AB%25E8%258B%2597%25E2%2580%259D%2Fa-58120482&t=%E6%9D%A5%E8%87%AA%E5%8F%A4%E5%B7%B4%E7%9A%84%E2%80%9C%E5%A5%87%E8%BF%B9%E7%96%AB%E8%8B%97%E2%80%9D&d=2021-07-04&e=
+来自古巴的“奇迹疫苗”
+——
+
+
+  
+Oliver Pieper2021-07-04T09:44:09.814Z
+  
+  
+古巴推出国产疫苗Abdala抗击新冠疫情
+  
+  (德国之声中文网)古巴疫苗“Abdala”或许很快就能在全球与辉瑞、阿斯利康、莫德纳齐名。这个名字寓意深长，在古巴民族英雄何塞·马蒂(José Martí)所创作的戏剧中, 为保护国家而战的年轻英雄就叫Abdala。Abdala象征着慷慨激昂的爱国主义，无论对手多强大都一往无前。
+  在许多古巴人眼中，这是最适合这支拉丁美洲开发的第一款新冠疫苗的完美名称。它背后象征的是：拥有1100万人口的古巴再次向全球展示它拥有杰出的科研人员，无论致命病毒或美国60年的经济封锁都无法将其击垮。
+  科学家成为全民英雄 
+  Abdala疫苗是由位于哈瓦那的基因工程和生物技术中心（CIGB）生产，其医学研究部主任吉伦（G..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E6%259D%25A5%25E8%2587%25AA%25E5%258F%25A4%25E5%25B7%25B4%25E7%259A%2584%25E2%2580%259C%25E5%25A5%2587%25E8%25BF%25B9%25E7%2596%25AB%25E8%258B%2597%25E2%2580%259D%2Fa-58120482" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.dw.com/zh/%E6%9D%A5%E8%87%AA%E5%8F%A4%E5%B7%B4%E7%9A%84%E2%80%9C%E5%A5%87%E8%BF%B9%E7%96%AB%E8%8B%97%E2%80%9D/a-58120482" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.dw.com/zh/%E6%9D%A5%E8%87%AA%E5%8F%A4%E5%B7%B4%E7%9A%84%E2%80%9C%E5%A5%87%E8%BF%B9%E7%96%AB%E8%8B%97%E2%80%9D/a-58120482&text=来自古巴的“奇迹疫苗”&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.dw.com/zh/%E6%9D%A5%E8%87%AA%E5%8F%A4%E5%B7%B4%E7%9A%84%E2%80%9C%E5%A5%87%E8%BF%B9%E7%96%AB%E8%8B%97%E2%80%9D/a-58120482&title=来自古巴的“奇迹疫苗”" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.dw.com/zh/%E6%9D%A5%E8%87%AA%E5%8F%A4%E5%B7%B4%E7%9A%84%E2%80%9C%E5%A5%87%E8%BF%B9%E7%96%AB%E8%8B%97%E2%80%9D/a-58120482&title=来自古巴的“奇迹疫苗”" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=来自古巴的“奇迹疫苗”&body=
+来自古巴的“奇迹疫苗”
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.dw.com/zh/%E6%9D%A5%E8%87%AA%E5%8F%A4%E5%B7%B4%E7%9A%84%E2%80%9C%E5%A5%87%E8%BF%B9%E7%96%AB%E8%8B%97%E2%80%9D/a-58120482" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.dw.com/zh/%E6%9D%A5%E8%87%AA%E5%8F%A4%E5%B7%B4%E7%9A%84%E2%80%9C%E5%A5%87%E8%BF%B9%E7%96%AB%E8%8B%97%E2%80%9D/a-58120482&title=来自古巴的“奇迹疫苗”&caption=
+来自古巴的“奇迹疫苗”
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=来自古巴的“奇迹疫苗”&url=https://www.dw.com/zh/%E6%9D%A5%E8%87%AA%E5%8F%A4%E5%B7%B4%E7%9A%84%E2%80%9C%E5%A5%87%E8%BF%B9%E7%96%AB%E8%8B%97%E2%80%9D/a-58120482" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>来自古巴的“奇迹疫苗”</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-07-04
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#德国之声 ">
+          德国之声
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.dw.com/zh/%E6%9D%A5%E8%87%AA%E5%8F%A4%E5%B7%B4%E7%9A%84%E2%80%9C%E5%A5%87%E8%BF%B9%E7%96%AB%E8%8B%97%E2%80%9D/a-58120482"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="德国之声的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#德国之声 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E6%259D%25A5%25E8%2587%25AA%25E5%258F%25A4%25E5%25B7%25B4%25E7%259A%2584%25E2%2580%259C%25E5%25A5%2587%25E8%25BF%25B9%25E7%2596%25AB%25E8%258B%2597%25E2%2580%259D%2Fa-58120482&t=%E6%9D%A5%E8%87%AA%E5%8F%A4%E5%B7%B4%E7%9A%84%E2%80%9C%E5%A5%87%E8%BF%B9%E7%96%AB%E8%8B%97%E2%80%9D&d=2021-07-04&e=
+来自古巴的“奇迹疫苗”
+——
+
+
+  
+Oliver Pieper2021-07-04T09:44:09.814Z
+  
+  
+古巴推出国产疫苗Abdala抗击新冠疫情
+  
+  (德国之声中文网)古巴疫苗“Abdala”或许很快就能在全球与辉瑞、阿斯利康、莫德纳齐名。这个名字寓意深长，在古巴民族英雄何塞·马蒂(José Martí)所创作的戏剧中, 为保护国家而战的年轻英雄就叫Abdala。Abdala象征着慷慨激昂的爱国主义，无论对手多强大都一往无前。
+  在许多古巴人眼中，这是最适合这支拉丁美洲开发的第一款新冠疫苗的完美名称。它背后象征的是：拥有1100万人口的古巴再次向全球展示它拥有杰出的科研人员，无论致命病毒或美国60年的经济封锁都无法将其击垮。
+  科学家成为全民英雄 
+  Abdala疫苗是由位于哈瓦那的基因工程和生物技术中心（CIGB）生产，其医学研究部主任吉伦（G..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.dw.com%2Fzh%2F%25E6%259D%25A5%25E8%2587%25AA%25E5%258F%25A4%25E5%25B7%25B4%25E7%259A%2584%25E2%2580%259C%25E5%25A5%2587%25E8%25BF%25B9%25E7%2596%25AB%25E8%258B%2597%25E2%2580%259D%2Fa-58120482" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1625393825000-->
+<p><a href="https://www.dw.com/zh/%E6%9D%A5%E8%87%AA%E5%8F%A4%E5%B7%B4%E7%9A%84%E2%80%9C%E5%A5%87%E8%BF%B9%E7%96%AB%E8%8B%97%E2%80%9D/a-58120482">来自古巴的“奇迹疫苗”</a>
+——</p>
+
+<div>
+  <div>
+<em>Oliver Pieper<br />2021-07-04T09:44:09.814Z</em>
+  </div>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/58008497_303.jpg" width="100%" />  <div>
+<small style="color: #999;">古巴推出国产疫苗Abdala抗击新冠疫情</small>
+  </div>
+  <p>(德国之声中文网)古巴疫苗“Abdala”或许很快就能在全球与辉瑞、阿斯利康、莫德纳齐名。这个名字寓意深长，在古巴民族英雄何塞·马蒂(José Martí)所创作的戏剧中, 为保护国家而战的年轻英雄就叫Abdala。Abdala象征着慷慨激昂的爱国主义，无论对手多强大都一往无前。</p>
+  <p>在许多古巴人眼中，这是最适合这支拉丁美洲开发的第一款新冠疫苗的完美名称。它背后象征的是：拥有1100万人口的古巴再次向全球展示它拥有杰出的科研人员，无论致命病毒或美国60年的经济封锁都无法将其击垮。</p>
+  <p><strong><strong>科学家成为全民英雄 </strong></strong></p>
+  <p>Abdala疫苗是由位于哈瓦那的基因工程和生物技术中心（CIGB）生产，其医学研究部主任吉伦（Gerardo Guillén）主导研发了这款疫苗。</p>
+  <p>古巴电视台在上周日父亲节当天播出了一支广告，在戏剧性配乐的衬托下，开场画面是吉伦坐在办公室中，镜头后他的儿子讲述着父亲如何不懈地为了家庭和工作全力付出。</p>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/58017744_303.jpg" width="100%" />  <div>
+<small style="color: #999;">CIGB的吉伦表示：“我们召集了各领域的研究人员共同开发新冠疫苗。”</small>
+  </div>
+  <p>这名备受赞誉的科学家表示：“自疫情爆发以来我们不断努力，每个周六、周日，从清晨到深夜，一刻都没有松懈。而我们欣喜非常，因为结果超乎我们预期。我们知道这支疫苗非常好，但即便是我也没有料到这个结果。”</p>
+  <p><strong><strong>古巴一如既往走自己的路</strong></strong></p>
+  <p>古巴国有生物科技公司Biocubafarma评估，Abdala疫苗的保护力高达92.28%，其效力可以媲美BioNTech/辉瑞以及莫德纳疫苗。当这个梦幻般的消息周一在CIGB的礼堂里发布后，科学家和工作人员报以热烈掌声。</p>
+  <p>自此之后，吉伦接到各种采访邀约，全世界都想知道Abdala疫苗的成功秘诀。因为这支古巴疫苗既不是载体疫苗，也不使用mRNA技术，而是所谓的蛋白质疫苗，它与病毒本身的突刺蛋白对接，从而激发免疫反应。古巴科学家利用酵母细胞进行研究。</p>
+  <p>古巴自五月中旬开始疫苗接种，政府称之为“卫生干预”。使用的疫苗除了Abdala外，还有另一款古巴自主研发的 "主权2"（Soberana 2），两款疫苗都在第三期临床试验结束前获得紧急使用授权。这是古巴第一批投入使用的新冠疫苗，该国此前拒绝进口俄罗斯或中国疫苗，也没有加入Covax疫苗计划。</p>
+  <p>今年三月，Abdala展开第三期临床试验，48000名志愿者接种该疫苗。</p>
+  <p>“我们知道最终还是必须靠自己，依靠自己的力量和能力”，吉伦话里暗指美国禁运造成的政治孤立。“结果是我们拥有一个集中管理的免费医疗卫生系统，而且不断完善快速应变灾害的能力，无论是临床研究、疫苗接种或疫苗生产皆然。”</p>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/58008515_303.jpg" width="100%" />  <div>
+<small style="color: #999;">古巴自五月中旬展开疫苗接种活动</small>
+  </div>
+  <p><strong><strong>加快疫苗接种抗击疫情</strong></strong></p>
+  <p>吉伦骄傲地表示，迄今已有220万古巴民众接种第一剂疫苗，170万人接种了第二剂，90万人施打了第三剂疫苗。Abdala疫苗需接种三剂，每次间隔两周。根据古巴政府雄心勃勃的计划，截至8月，70%的古巴民众都能接种到疫苗。</p>
+  <p>这是一场与时间的赛跑，因为古巴的新冠新增感染人数持续上升，每日新增病例超过2000例，累计近1200人死于新冠肺炎。吉伦寄希望于疫苗接种计划，也认为古巴在全球抗击疫情的过程中拥有优势。</p>
+  <p>“古巴民众对于医疗卫生系统的信任度前所未见。例如我们在寻找临床试验的志愿者时从未遇到过问题。古巴人接种疫苗的意愿很高。没有人会想着不接种，因为所有人都知道其重要性。”</p>
+  <p>哈瓦那的一个独立小组将对Abdala疫苗进行审查，预计在未来两周内能获得官方紧急批准。接着古巴便能向世界卫生组织(WHO)申请批准Abdala疫苗的国际使用。玻利维亚、牙买加、委内瑞拉、阿根廷和墨西哥都已对古巴疫苗表示出兴趣。</p>
+  <p><strong><strong>卫生组织表示乐观</strong></strong></p>
+  <p>但Abdala疫苗的保护力真的如此神奇？秘鲁医生莫亚（José Moya）或许是最适合对此进行评估的人士。莫亚30多年前在秘鲁阿亚库乔开始担任流行病学家，此后作为无国界医生前往危地马拉、莫桑比克和尼日利亚。</p>
+<img src="https://images.weserv.nl/?url=static.dw.com/image/58037707_303.jpg" width="100%" />  <div>
+<small style="color: #999;">秘鲁医生莫亚表示，92%意味着是对科研、政府和人民的信任</small>
+  </div>
+  <p>两年前开始，莫亚出任泛美卫生组织（PAHO）驻古巴代表。该组织是WHO的区域性组织，设有27个国家办事处。莫亚表示：“GIGB研究中心拥有30年的疫苗研究经验。我相信发表的结果。这些都是严肃的研究，由致力于科学的研究人员和机构参与。”</p>
+  <p>他认为，古巴八成疫苗都是国内自产就是最好的证明。莫亚对于Abdala的高保护力并不感到特别惊讶，在该国医疗系统稳定运行数十年后，这是合理结果。“科研人员前期发表的报告就显示，在产生抗体方面数据良好。”</p>
+  <p>但除了疫苗的科学评估外，古巴总统迪亚斯-卡内尔（Miguel Díaz-Canel）更想借此契机进行政治攻击：“这份成就必须与我们的巨大牺牲相提并论。它是一个骄傲的例子，显示出这个自1962年遭到美国经济禁运的国家是如何发展它的制药业。”</p>
+  <p> </p>
+  <p><em>© 2021</em><em>年</em> <em>德国之声版权声明：本文所有内容受到著作权法保护，如无德国之声特别授权，不得擅自使用。任何不当行为都将导致追偿，并受到刑事追究</em><em>。</em></p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#德国之声 的其它文章</h4>
+    
+      <li>
+        <time>2021-07-04</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-04/%E8%8F%B2%E5%BE%8B%E5%AE%BE%E5%86%9B%E6%9C%BA%E5%9D%A0%E6%AF%81-17%E4%BA%BA%E4%B8%A7%E7%94%9F">
+          菲律宾军机坠毁 17人丧生
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-04</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-04/%E7%96%AB%E6%83%85%E8%82%86%E8%99%90%E5%85%A8%E7%90%83-%E4%BD%86%E6%B2%A1%E8%80%BD%E8%AF%AF%E5%AF%8C%E7%BF%81%E8%B5%9A%E9%92%B1">
+          疫情肆虐全球，但没耽误富翁赚钱
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-04</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-04/%E5%A4%AA%E7%A9%BA%E8%A1%8C%E8%B5%B0%E7%BA%A67%E5%B0%8F%E6%97%B6-%E4%B8%AD%E5%9B%BD%E5%AE%87%E8%88%AA%E5%91%98%E5%87%BA%E8%88%B1%E4%BD%9C%E4%B8%9A">
+          太空行走约7小时 中国宇航员出舱作业 
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-04</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-04/%E7%96%AB%E6%83%85%E4%B8%80%E5%B9%B4%E5%90%8E-%E4%B8%AD%E5%9B%BD%E4%BA%BA%E6%9B%B4%E9%9D%92%E7%9D%90%E6%9C%AC%E5%9C%9F%E5%93%81%E7%89%8C">
+          疫情一年后 中国人更青睐本土品牌 
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-04/%E5%A4%AA%E7%A9%BA%E8%A1%8C%E8%B5%B0%E7%BA%A67%E5%B0%8F%E6%97%B6-%E4%B8%AD%E5%9B%BD%E5%AE%87%E8%88%AA%E5%91%98%E5%87%BA%E8%88%B1%E4%BD%9C%E4%B8%9A">
+            前一篇：太空行走约7小时 中国宇航员出舱作业 
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-04/%E7%96%AB%E6%83%85%E8%82%86%E8%99%90%E5%85%A8%E7%90%83-%E4%BD%86%E6%B2%A1%E8%80%BD%E8%AF%AF%E5%AF%8C%E7%BF%81%E8%B5%9A%E9%92%B1">
+            后一篇：疫情肆虐全球，但没耽误富翁赚钱
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-07-04/%E5%A4%AA%E7%A9%BA%E8%A1%8C%E8%B5%B0%E7%BA%A67%E5%B0%8F%E6%97%B6-%E4%B8%AD%E5%9B%BD%E5%AE%87%E8%88%AA%E5%91%98%E5%87%BA%E8%88%B1%E4%BD%9C%E4%B8%9A'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-07-04/%E7%96%AB%E6%83%85%E8%82%86%E8%99%90%E5%85%A8%E7%90%83-%E4%BD%86%E6%B2%A1%E8%80%BD%E8%AF%AF%E5%AF%8C%E7%BF%81%E8%B5%9A%E9%92%B1'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-07-04/%E7%96%AB%E6%83%85%E8%82%86%E8%99%90%E5%85%A8%E7%90%83-%E4%BD%86%E6%B2%A1%E8%80%BD%E8%AF%AF%E5%AF%8C%E7%BF%81%E8%B5%9A%E9%92%B1'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-07-04/%E5%A4%AA%E7%A9%BA%E8%A1%8C%E8%B5%B0%E7%BA%A67%E5%B0%8F%E6%97%B6-%E4%B8%AD%E5%9B%BD%E5%AE%87%E8%88%AA%E5%91%98%E5%87%BA%E8%88%B1%E4%BD%9C%E4%B8%9A'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-07-04/%E5%A4%AA%E7%A9%BA%E8%A1%8C%E8%B5%B0%E7%BA%A67%E5%B0%8F%E6%97%B6-%E4%B8%AD%E5%9B%BD%E5%AE%87%E8%88%AA%E5%91%98%E5%87%BA%E8%88%B1%E4%BD%9C%E4%B8%9A">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-07-04/%E7%96%AB%E6%83%85%E8%82%86%E8%99%90%E5%85%A8%E7%90%83-%E4%BD%86%E6%B2%A1%E8%80%BD%E8%AF%AF%E5%AF%8C%E7%BF%81%E8%B5%9A%E9%92%B1">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<德国之声>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-07-04/%E7%96%AB%E6%83%85%E8%82%86%E8%99%90%E5%85%A8%E7%90%83-%E4%BD%86%E6%B2%A1%E8%80%BD%E8%AF%AF%E5%AF%8C%E7%BF%81%E8%B5%9A%E9%92%B1">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<德国之声>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-07-04/%E5%A4%AA%E7%A9%BA%E8%A1%8C%E8%B5%B0%E7%BA%A67%E5%B0%8F%E6%97%B6-%E4%B8%AD%E5%9B%BD%E5%AE%87%E8%88%AA%E5%91%98%E5%87%BA%E8%88%B1%E4%BD%9C%E4%B8%9A">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

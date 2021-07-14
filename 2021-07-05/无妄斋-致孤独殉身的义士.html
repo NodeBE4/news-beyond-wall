@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>无妄斋｜致孤独殉身的义士 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+无妄斋｜致孤独殉身的义士
+——
+" />
+    <meta property="og:description" content="
+无妄斋｜致孤独殉身的义士
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="无妄斋｜致孤独殉身的义士" />
+    <meta property="twitter:title" content="无妄斋｜致孤独殉身的义士" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F667889.html&t=%E6%97%A0%E5%A6%84%E6%96%8B%EF%BD%9C%E8%87%B4%E5%AD%A4%E7%8B%AC%E6%AE%89%E8%BA%AB%E7%9A%84%E4%B9%89%E5%A3%AB" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F667889.html&t=%E6%97%A0%E5%A6%84%E6%96%8B%EF%BD%9C%E8%87%B4%E5%AD%A4%E7%8B%AC%E6%AE%89%E8%BA%AB%E7%9A%84%E4%B9%89%E5%A3%AB&d=2021-07-05&e=
+无妄斋｜致孤独殉身的义士
+——
+
+
+  
+  
+    「一旦制度无法解决纷争，执法以至法治陷入失效，那么最原始的『自助』(Self-help)，就是惟一能够恢复社会正义的手段，回应民众的共同价值与理念诉求。」 — 2019年曾经写下这句，不过委婉的「自助」，似乎无法使人领略其意味。
+  
+  2021年7月1日，既为中共建党百周年庆典，亦是香港沦陷中国殖民第24年。 与北京的普天同庆迥异，香港却活像戒严一般：继前一天 邹幸彤 被撤保释再度被捕后， 七一游行 没有了，维园因 《 公安条例 》 被封了，有组织在铜锣湾设街站，也被大批警察盘问，更有部份市民被捕。
+  威权祭出的阵仗，如临大敌；歌舞升平背后，尽是疫情与白色恐怖交织而成的惶恐不安。
+  此时，一位无名 义士 出现—以刀刺伤警员后自戳胸膛，然而黑警在他受创后并非及时急救，而是将他双手反绑重压地上，任鲜血流了一地。 孤独的他，..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F667889.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/667889.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/667889.html&text=无妄斋｜致孤独殉身的义士&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/667889.html&title=无妄斋｜致孤独殉身的义士" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/667889.html&title=无妄斋｜致孤独殉身的义士" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=无妄斋｜致孤独殉身的义士&body=
+无妄斋｜致孤独殉身的义士
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/667889.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/667889.html&title=无妄斋｜致孤独殉身的义士&caption=
+无妄斋｜致孤独殉身的义士
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=无妄斋｜致孤独殉身的义士&url=https://chinadigitaltimes.net/chinese/667889.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>无妄斋｜致孤独殉身的义士</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-07-05
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/667889.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F667889.html&t=%E6%97%A0%E5%A6%84%E6%96%8B%EF%BD%9C%E8%87%B4%E5%AD%A4%E7%8B%AC%E6%AE%89%E8%BA%AB%E7%9A%84%E4%B9%89%E5%A3%AB&d=2021-07-05&e=
+无妄斋｜致孤独殉身的义士
+——
+
+
+  
+  
+    「一旦制度无法解决纷争，执法以至法治陷入失效，那么最原始的『自助』(Self-help)，就是惟一能够恢复社会正义的手段，回应民众的共同价值与理念诉求。」 — 2019年曾经写下这句，不过委婉的「自助」，似乎无法使人领略其意味。
+  
+  2021年7月1日，既为中共建党百周年庆典，亦是香港沦陷中国殖民第24年。 与北京的普天同庆迥异，香港却活像戒严一般：继前一天 邹幸彤 被撤保释再度被捕后， 七一游行 没有了，维园因 《 公安条例 》 被封了，有组织在铜锣湾设街站，也被大批警察盘问，更有部份市民被捕。
+  威权祭出的阵仗，如临大敌；歌舞升平背后，尽是疫情与白色恐怖交织而成的惶恐不安。
+  此时，一位无名 义士 出现—以刀刺伤警员后自戳胸膛，然而黑警在他受创后并非及时急救，而是将他双手反绑重压地上，任鲜血流了一地。 孤独的他，..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F667889.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1625463439000-->
+<p><a href="https://chinadigitaltimes.net/chinese/667889.html">无妄斋｜致孤独殉身的义士</a>
+——</p>
+
+<div>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/07/image-1625481742535.png" alt="file" /></p>
+  <blockquote>
+    <p>「一旦制度无法解决纷争，执法以至法治陷入失效，那么最原始的『自助』(Self-help)，就是惟一能够恢复社会正义的手段，回应民众的共同价值与理念诉求。」 — 2019年曾经写下这句，不过委婉的「自助」，似乎无法使人领略其意味。</p>
+  </blockquote>
+  <p>2021年7月1日，既为中共建党百周年庆典，亦是香港沦陷中国殖民第24年。 与北京的普天同庆迥异，香港却活像戒严一般：继前一天 <a href="https://news.rthk.hk/rthk/ch/component/k2/1598524-20210630.htm"><strong>邹幸彤</strong></a> 被撤保释再度被捕后， <a href="https://www.bbc.com/zhongwen/trad/chinese-news-57678356">七一游行</a> 没有了，维园因 <strong>《</strong> <a href="https://news.rthk.hk/rthk/ch/component/k2/1598651-20210701.htm"><strong>公安条例</strong></a> <strong>》</strong> 被封了，有组织在铜锣湾设街站，也被大批警察盘问，更有部份市民被捕。</p>
+  <p>威权祭出的阵仗，如临大敌；歌舞升平背后，尽是疫情与白色恐怖交织而成的惶恐不安。</p>
+  <p>此时，一位无名 <a href="https://www.thestandnews.com/society/ab71%E9%8A%85%E9%91%BC%E7%81%A3%E8%AD%A6%E5%93%A1sogo%E5%A4%96%E7%96%91%E4%B8%AD%E5%88%80-%E6%B6%88%E6%81%AF%E6%8C%87%E6%87%B7%E7%96%91%E6%96%BD%E8%A5%B2%E7%94%B7%E5%86%8D%E7%94%A8%E5%88%80%E8%87%AA%E6%8F%92%E5%BF%83%E5%8F%A3%E5%80%92%E5%9C%B0">义士</a> 出现—以刀刺伤警员后自戳胸膛，然而黑警在他受创后并非及时急救，而是将他双手反绑重压地上，任鲜血流了一地。 孤独的他，送院后伤重不治。</p>
+  <p>无人知道其出身背景，抱持何种信念，随身并未携带只言片语，甚至连名字也没有留下。 究竟他怀着怎样的心情，刺向敌人以及自己胸口，亦已考究无从。 他恍若一颗流星，划破天际，自身却化为灰烬散落，不留丝毫痕迹。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/07/image-1625481540571.png" alt="file" /></p>
+  <blockquote>
+    <p>「死者已矣，再讨论也无补于事，在生的人如何走下去，才是重点。」</p>
+    <p>「我并不鼓励如此白白送命，但对烈士致上最高敬意。愿安息！」</p>
+    <p>「如果他活着进警署，你认为他的下场会是怎样？所以他过身，其实是好事。何况自插心脏是他的决定，他已经豁出去，尊重他的决定。」</p>
+    <p>「那是对暴政的死谏。」</p>
+  </blockquote>
+  <p>以上评语，是敢怒不敢言的港人真实反应。</p>
+  <p>但同时，也有人急于化身 <strong>「捉鬼大师」</strong> ，企图带动事件可疑的风向；或是祭出阴谋论，认定无名义人是党国证成「孤狼式本土恐袭」，旨在加速 <strong>《基本法》</strong> 23条立法的精心安排；或是 <strong>「离地KOLs」</strong> 再度贩卖恐惧，用以说服港人应该高飞远走，哪怕最终香港沦为赤地荒原。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/07/image-1625481565311.png" alt="file" /></p>
+  <p>再多的口水，也无改铁一般的事实：义士拥有无比的勇气与自制，胜过无数光说不练的塘边鹤。 命如蝼蚁，却负重千钧。</p>
+  <p>社会充斥不公正，公平、正义等良善价值一律失灵，单凭个人无力与体制颉颃，试问如何自处？ 社会戾气源自中共党国、特区政府的政权暴力，警察不再是维护公共安全的象征，而是肆意殴打、残虐、侵犯市民的执法机关。 此时，「自力救济」是理所当然之事。</p>
+  <p>义士并非「报复社会」，更无滥伤无辜，他是明确针对黑警行刺，虽死无悔。 质疑甚至嘲笑勇者的行为，不过是暴露自身的卑劣与丑陋，而已。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/07/image-1625481589361.png" alt="file" /></p>
+  <p>去年杨佳母亲的悼辞</p>
+  <p>无须想像义人如 <a href="https://www.thenewslens.com/article/79491"><strong>安重根</strong></a> 般志士忧国，因为公义沦丧、希冀尽失，已是最有力的理由。</p>
+  <p>一如2008年的北京青年 <a href="https://www.dw.com/zh/%E6%9D%A8%E4%BD%B3%E6%89%A7%E8%A1%8C%E6%AD%BB%E5%88%91%E4%B8%89%E5%91%A8%E5%B9%B4-%E7%BD%91%E6%B0%91%E8%87%AA%E5%8F%91%E7%BA%AA%E5%BF%B5/a-15559418"><strong>杨佳</strong></a> 。 同样是7月1日，曾遭警察冤枉、侮辱、虐待的杨佳，历经苦诉无门，身心俱疲，终于无奈选择以暴易暴、以杀止杀的做法，杀伤上海市公安分局内警员及保安。 事发后他被判死刑，虽有知识份子、社会人士为其奔走请命，最终仍逃不过死亡的命运，于同年11月处刑。</p>
+  <p>他生前曾说过： <strong><em>「有些委屈如果要一辈子背在身上，那我宁愿犯法。任何事情，你要给我一个说法，你不给我一个说法，我就给你一个说法。」</em></strong> 可谓其人生写照，也是上述「自助」的真实面目—并非逞私义以取代公义，而是在正义败坏的当下，凭借良知之裁量，摆脱体制主宰，复归个人意志之觉醒，铸炼成自由之剑与盾，重塑良善正义的社会。</p>
+  <p>时至今天，依旧有人默默悼念杨佳，即使许多不支持他的行为，但至少，仍不忘那位为求公道而挺身的他，为那短暂消逝的正义致哀。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/07/image-1625481623800.png" alt="file" /></p>
+  <p>英雄烈士即使化为历史陈迹，往往不能以成败论。 然而之于威权党国，必将设法控制舆论，剥夺悲壮的死亡，污蔑成暴徒、恐怖份子，让他们死得卑微丑恶，背负骂名，尊严尽丧，求仁而不得，反沦为畏罪懦夫，好让愚夫愚妇以处决穷凶极恶的罪犯般的眼光，旁观烈士行刑，呼喊罪有应得。</p>
+  <p>但，请记住烈士的姓名： <strong>梁健辉</strong> 。 为这位孤独英雄，与其壮烈的反动，深深默哀。 纵然命消身殒，但强大意志永不毁灭，光复香港的英灵殿上，必有他的一席位。</p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/07/image-1625481642136.png" alt="file" /></p>
+  <p>请记住烈士的名字： <strong>梁健辉</strong></p>
+  <p><img src="https://chinadigitaltimes.net/chinese/files/2021/07/image-1625481656800.png" alt="file" /></p>
+  <p><strong>补记：《</strong> <a href="https://www.scmp.com/news/hong-kong/law-and-crime/article/3139555/man-who-stabbed-hong-kong-police-officer-left-multiple"><strong>SCMP</strong></a> <strong>》</strong> 独家披露梁氏生前在家留下五纸遗书以及一些文宣，遗言说此举是为这城市而做</p>
+  <p>168</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2021-07-05</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-05/%E7%9C%8B%E7%90%86%E6%83%B3-%E4%BD%95%E4%BC%9F%E7%A6%BB%E5%BC%80%E4%B8%AD%E5%9B%BD-%E6%97%B6%E9%97%B4%E5%B0%B1%E5%9C%A8%E8%BF%99%E9%87%8C-%E8%AF%B7%E4%BD%A0%E4%BB%AC%E8%AE%B0%E5%BD%95%E4%B8%80%E5%88%87">
+          看理想｜何伟离开中国：时间就在这里，请你们记录一切
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-05</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-05/%E9%B1%BC%E7%9C%BC%E8%A7%82%E5%AF%9F-%E6%89%93%E9%99%A2%E5%A3%AB%E7%9A%84%E5%BC%A0%E9%99%B6-%E8%BF%99%E4%B8%AA%E4%BA%BA%E4%B8%8D%E7%AE%80%E5%8D%95">
+          鱼眼观察｜打院士的张陶，这个人不简单​
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-04</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-04/404%E6%A1%A3%E6%A1%88%E9%A6%86-CDT%E6%92%AD%E5%AE%A2%E7%AC%AC10%E6%9C%9F-%E8%B0%81%E8%A6%81%E6%98%AF%E8%AE%A9%E6%88%91%E8%BF%99%E4%B8%AA%E7%94%9F%E6%97%A5%E8%BF%87%E5%BE%97%E4%B8%8D%E8%88%92%E5%9D%A6-%E6%88%91%E5%B0%B1%E8%AE%A9%E4%BB%96%E4%B8%80%E8%BE%88%E5%AD%90%E4%B8%8D%E8%88%92%E5%9D%A6">
+          【404档案馆】CDT播客第10期：谁要是让我这个生日过得不舒坦，我就让他一辈子不舒坦
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-03</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-03/%E7%BD%91%E7%BB%9C%E6%B0%91%E8%AE%AE-%E4%B8%AD%E5%9B%BD%E8%88%AA%E5%A4%A9%E6%8A%95%E8%B5%84%E6%8E%A7%E8%82%A1%E5%85%AC%E5%8F%B8%E5%85%9A%E5%A7%94%E4%B9%A6%E8%AE%B0%E5%BC%A0%E9%99%B6%E8%B0%8B%E6%B1%82%E6%8E%A8%E8%8D%90%E9%99%A2%E5%A3%AB%E6%9C%AA%E9%81%82%E6%9A%B4%E6%89%93%E5%90%B4%E7%BE%8E%E8%93%89-85%E5%B2%81-%E7%8E%8B%E6%99%8B%E5%B9%B4%E4%B8%A4%E4%BD%8D%E9%99%A2%E5%A3%AB%E8%87%B4%E9%87%8D">
+          【网络民议】中国航天投资控股公司党委书记张陶谋求推荐院士未遂暴打吴美蓉（85岁）、王晋年两位院士致重伤
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-05/%E6%BB%B4%E6%BB%B4%E8%A2%AB%E5%8B%92%E4%BB%A4%E4%B8%8B%E6%9E%B6%E6%95%B4%E6%94%B9-%E4%B8%AD%E5%9B%BD%E4%BA%92%E8%81%94%E7%BD%91%E7%9B%91%E7%AE%A1%E5%8A%9B%E5%BA%A6%E5%8D%87%E7%BA%A7">
+            前一篇：滴滴被勒令下架整改，中国互联网监管力度升级
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-05/%E6%AC%A7%E4%B8%AD%E6%8A%95%E8%B5%84%E5%8D%8F%E5%AE%9A%E5%8D%A1%E5%85%B3-%E6%AC%A7%E7%9B%9F%E9%A9%BB%E5%8D%8E%E5%A4%96%E4%BA%A4%E5%AE%98%E9%BD%90%E5%8F%91%E5%A3%B0">
+            后一篇：欧中投资协定卡关  欧盟驻华外交官齐发声
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-07-05/%E6%BB%B4%E6%BB%B4%E8%A2%AB%E5%8B%92%E4%BB%A4%E4%B8%8B%E6%9E%B6%E6%95%B4%E6%94%B9-%E4%B8%AD%E5%9B%BD%E4%BA%92%E8%81%94%E7%BD%91%E7%9B%91%E7%AE%A1%E5%8A%9B%E5%BA%A6%E5%8D%87%E7%BA%A7'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-07-05/%E6%AC%A7%E4%B8%AD%E6%8A%95%E8%B5%84%E5%8D%8F%E5%AE%9A%E5%8D%A1%E5%85%B3-%E6%AC%A7%E7%9B%9F%E9%A9%BB%E5%8D%8E%E5%A4%96%E4%BA%A4%E5%AE%98%E9%BD%90%E5%8F%91%E5%A3%B0'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-07-05/%E9%B1%BC%E7%9C%BC%E8%A7%82%E5%AF%9F-%E6%89%93%E9%99%A2%E5%A3%AB%E7%9A%84%E5%BC%A0%E9%99%B6-%E8%BF%99%E4%B8%AA%E4%BA%BA%E4%B8%8D%E7%AE%80%E5%8D%95'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-07-04/404%E6%A1%A3%E6%A1%88%E9%A6%86-CDT%E6%92%AD%E5%AE%A2%E7%AC%AC10%E6%9C%9F-%E8%B0%81%E8%A6%81%E6%98%AF%E8%AE%A9%E6%88%91%E8%BF%99%E4%B8%AA%E7%94%9F%E6%97%A5%E8%BF%87%E5%BE%97%E4%B8%8D%E8%88%92%E5%9D%A6-%E6%88%91%E5%B0%B1%E8%AE%A9%E4%BB%96%E4%B8%80%E8%BE%88%E5%AD%90%E4%B8%8D%E8%88%92%E5%9D%A6'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-07-05/%E6%BB%B4%E6%BB%B4%E8%A2%AB%E5%8B%92%E4%BB%A4%E4%B8%8B%E6%9E%B6%E6%95%B4%E6%94%B9-%E4%B8%AD%E5%9B%BD%E4%BA%92%E8%81%94%E7%BD%91%E7%9B%91%E7%AE%A1%E5%8A%9B%E5%BA%A6%E5%8D%87%E7%BA%A7">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-07-05/%E6%AC%A7%E4%B8%AD%E6%8A%95%E8%B5%84%E5%8D%8F%E5%AE%9A%E5%8D%A1%E5%85%B3-%E6%AC%A7%E7%9B%9F%E9%A9%BB%E5%8D%8E%E5%A4%96%E4%BA%A4%E5%AE%98%E9%BD%90%E5%8F%91%E5%A3%B0">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-07-05/%E9%B1%BC%E7%9C%BC%E8%A7%82%E5%AF%9F-%E6%89%93%E9%99%A2%E5%A3%AB%E7%9A%84%E5%BC%A0%E9%99%B6-%E8%BF%99%E4%B8%AA%E4%BA%BA%E4%B8%8D%E7%AE%80%E5%8D%95">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-07-04/404%E6%A1%A3%E6%A1%88%E9%A6%86-CDT%E6%92%AD%E5%AE%A2%E7%AC%AC10%E6%9C%9F-%E8%B0%81%E8%A6%81%E6%98%AF%E8%AE%A9%E6%88%91%E8%BF%99%E4%B8%AA%E7%94%9F%E6%97%A5%E8%BF%87%E5%BE%97%E4%B8%8D%E8%88%92%E5%9D%A6-%E6%88%91%E5%B0%B1%E8%AE%A9%E4%BB%96%E4%B8%80%E8%BE%88%E5%AD%90%E4%B8%8D%E8%88%92%E5%9D%A6">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

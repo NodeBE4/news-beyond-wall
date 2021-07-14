@@ -1,0 +1,3686 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>被遗忘的百年历史（Ⅸ）1919 至2021 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+被遗忘的百年历史（Ⅸ）1919 至2021
+——
+" />
+    <meta property="og:description" content="
+被遗忘的百年历史（Ⅸ）1919 至2021
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="被遗忘的百年历史（Ⅸ）1919 至2021" />
+    <meta property="twitter:title" content="被遗忘的百年历史（Ⅸ）1919 至2021" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.epochtimes.com%2Fgb%2F21%2F6%2F25%2Fn13048246.htm&t=%E8%A2%AB%E9%81%97%E5%BF%98%E7%9A%84%E7%99%BE%E5%B9%B4%E5%8E%86%E5%8F%B2%EF%BC%88%E2%85%A8%EF%BC%891919+%E8%87%B32021" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.epochtimes.com%2Fgb%2F21%2F6%2F25%2Fn13048246.htm&t=%E8%A2%AB%E9%81%97%E5%BF%98%E7%9A%84%E7%99%BE%E5%B9%B4%E5%8E%86%E5%8F%B2%EF%BC%88%E2%85%A8%EF%BC%891919+%E8%87%B32021&d=2021-07-08&e=
+被遗忘的百年历史（Ⅸ）1919 至2021
+——
+
+
+  【大纪元2021年06月26日讯】随着红色帝国跃上世界舞台，它加快了前进的速度。
+  被俘虏的国土上发生着许多变化，牵动着生活在这块土地上的人们。
+  随着极权中国朝向它定下的百年大梦前进，这架“百年寻梦机”碾过土地上手无寸铁的人们，把他们拖入一个越来越不可收拾的梦魇。
+  
+    
+红色中国的百年大梦以古国人民心灵深处的创伤为驱动力，来实践一个横跨一百年的复仇计划。（Greg Baker/AFP）
+    
+  
+  （接上文）
+  毛的继承人
+  在述及21世纪红色中国的蜕变前，我们得提到神州大地心脏部位上的一个物体。
+  那就是硬插入天安门广场的毛纪念堂。在苏联专家建议下，中共敲倒了天安门广场中轴线上的三朝国门：分别在三朝称为大明门、大清门、中华门的中华帝国国门。也即是说，为了建造毛纪念堂，神州大地的风水被毁了。纪念..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.epochtimes.com%2Fgb%2F21%2F6%2F25%2Fn13048246.htm" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.epochtimes.com/gb/21/6/25/n13048246.htm" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.epochtimes.com/gb/21/6/25/n13048246.htm&text=被遗忘的百年历史（Ⅸ）1919 至2021&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.epochtimes.com/gb/21/6/25/n13048246.htm&title=被遗忘的百年历史（Ⅸ）1919 至2021" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.epochtimes.com/gb/21/6/25/n13048246.htm&title=被遗忘的百年历史（Ⅸ）1919 至2021" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=被遗忘的百年历史（Ⅸ）1919 至2021&body=
+被遗忘的百年历史（Ⅸ）1919 至2021
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.epochtimes.com/gb/21/6/25/n13048246.htm" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.epochtimes.com/gb/21/6/25/n13048246.htm&title=被遗忘的百年历史（Ⅸ）1919 至2021&caption=
+被遗忘的百年历史（Ⅸ）1919 至2021
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=被遗忘的百年历史（Ⅸ）1919 至2021&url=https://www.epochtimes.com/gb/21/6/25/n13048246.htm" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>被遗忘的百年历史（Ⅸ）1919 至2021</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-07-08
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#大纪元 ">
+          大纪元
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.epochtimes.com/gb/21/6/25/n13048246.htm"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="大纪元的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#大纪元 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.epochtimes.com%2Fgb%2F21%2F6%2F25%2Fn13048246.htm&t=%E8%A2%AB%E9%81%97%E5%BF%98%E7%9A%84%E7%99%BE%E5%B9%B4%E5%8E%86%E5%8F%B2%EF%BC%88%E2%85%A8%EF%BC%891919+%E8%87%B32021&d=2021-07-08&e=
+被遗忘的百年历史（Ⅸ）1919 至2021
+——
+
+
+  【大纪元2021年06月26日讯】随着红色帝国跃上世界舞台，它加快了前进的速度。
+  被俘虏的国土上发生着许多变化，牵动着生活在这块土地上的人们。
+  随着极权中国朝向它定下的百年大梦前进，这架“百年寻梦机”碾过土地上手无寸铁的人们，把他们拖入一个越来越不可收拾的梦魇。
+  
+    
+红色中国的百年大梦以古国人民心灵深处的创伤为驱动力，来实践一个横跨一百年的复仇计划。（Greg Baker/AFP）
+    
+  
+  （接上文）
+  毛的继承人
+  在述及21世纪红色中国的蜕变前，我们得提到神州大地心脏部位上的一个物体。
+  那就是硬插入天安门广场的毛纪念堂。在苏联专家建议下，中共敲倒了天安门广场中轴线上的三朝国门：分别在三朝称为大明门、大清门、中华门的中华帝国国门。也即是说，为了建造毛纪念堂，神州大地的风水被毁了。纪念..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.epochtimes.com%2Fgb%2F21%2F6%2F25%2Fn13048246.htm" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1625781600000-->
+<p><a href="https://www.epochtimes.com/gb/21/6/25/n13048246.htm">被遗忘的百年历史（Ⅸ）1919 至2021</a>
+——</p>
+
+<div>
+  <p>【大纪元2021年06月26日讯】<em>随着<a href="https://www.epochtimes.com/gb/tag/%E7%BA%A2%E8%89%B2%E5%B8%9D%E5%9B%BD.html">红色帝国</a>跃上世界舞台，它加快了前进的速度。</em></p>
+  <p><em>被俘虏的国土上发生着许多变化，牵动着生活在这块土地上的人们。</em></p>
+  <p><em>随着极权中国朝向它定下的<a href="https://www.epochtimes.com/gb/tag/%E7%99%BE%E5%B9%B4%E5%A4%A7%E6%A2%A6.html">百年大梦</a>前进，这架“百年寻梦机”碾过土地上手无寸铁的人们，把他们拖入一个越来越不可收拾的梦魇。</em></p>
+  <figure id="attachment_13048255" aria-describedby="caption-attachment-13048255" style="width: 600px" class="wp-caption aligncenter">
+<a target="_blank" href="https://i.epochtimes.com/assets/uploads/2021/06/id13048255-GettyImages-664338806-e1624655324671.jpg"><img class="size-large wp-image-13048255" src="https://i.epochtimes.com/assets/uploads/2021/06/id13048255-GettyImages-664338806-600x391.jpg" alt="" width="600" height="391" /></a>    <figcaption id="caption-attachment-13048255" class="wp-caption-text">
+红色中国的<a href="https://www.epochtimes.com/gb/tag/%E7%99%BE%E5%B9%B4%E5%A4%A7%E6%A2%A6.html">百年大梦</a>以古国人民心灵深处的创伤为驱动力，来实践一个横跨一百年的复仇计划。（Greg Baker/AFP）
+    </figcaption>
+  </figure>
+  <p>（<a href="https://www.epochtimes.com/gb/21/6/25/n13048188.htm">接上文</a>）</p>
+  <h2 id="section">毛的继承人</h2>
+  <p>在述及21世纪红色中国的蜕变前，我们得提到神州大地心脏部位上的一个物体。</p>
+  <p>那就是硬插入天安门广场的毛纪念堂。在苏联专家建议下，中共敲倒了天安门广场中轴线上的三朝国门：分别在三朝称为大明门、大清门、中华门的中华帝国国门。也即是说，为了建造毛纪念堂，神州大地的风水被毁了。纪念堂里有一件东西，那就是防腐液中，与人类历史逆向而行的毛。</p>
+  <figure id="attachment_13048251" aria-describedby="caption-attachment-13048251" style="width: 600px" class="wp-caption aligncenter">
+<a target="_blank" href="https://i.epochtimes.com/assets/uploads/2021/06/id13048251-GettyImages-80516587-e1624655369846.jpg"><img class="size-large wp-image-13048251" src="https://i.epochtimes.com/assets/uploads/2021/06/id13048251-GettyImages-80516587-600x395.jpg" alt="" width="600" height="395" /></a>    <figcaption id="caption-attachment-13048251" class="wp-caption-text">
+为了建造毛纪念堂，中共敲倒了天安门广场中轴线上的三朝国门，神州大地的风水被毁了。（Guang Niu/Getty Images）
+    </figcaption>
+  </figure>
+  <p>毛作为“新中国的红太阳”，作为十年文革幕前幕后的推手，直到现在，依然被中共极左视为“伟大的领导人”。毛在建党之初立下的百年大梦实质上一直是与马克思主义并行，PRC（People’s Republic of China）统筹全局的纲领。无论怎么“改革开放”，无论如何“市场经济化”，PRC从未偏离这纲领。半世纪以来，毛躺在天安门广场上，暗中主宰了神州大地的空间场。</p>
+  <p>毛死后一直停放在三朝国门的原址上。也就是说：一具尸体取代了中华帝国六百多年来的国门。这里面的象征意义，当初提此建议的苏联专家不会不知道。</p>
+  <p>从毛的第一个继承人华国锋开始，毛的意志贯穿了红色中国每一个领导人的意志。他们所做的事情，表面上或许是朝向改革开放，或是自我利益的夺取，然而最终我们会发现，所有真正有决定性的举动都是通向红色中国为自己定下的最终目的而做先导的。而我们知道，共产主义的终极目的是毁灭人类。在通向这终极目的时，实现毛定下的百年大梦是必要条件。</p>
+  <p>这百年大梦有一历史背景。从1840年鸦片战争起，世界上唯一延绵不断的文明古国：中国，受到了西方列强的侵略，这五千年未遇的奇耻大辱深植在古国人民心中。毛利用了这样的心理，描绘了红色中国取代美帝，成为世界最强国的百年大梦。而为毛的意志牢牢捆绑的中共领导人一心一意要去实践这大梦。他们身不由己。毛在历届领导人空间场中从上到下，布下了难以挣脱的蛊。</p>
+  <p>依照哈维尔，共产极权国家是一架自动运转的机器，一旦启动就无法停止。而放入红色中国特有的情境，诚实来说，这个大梦是用来复仇的。是以古国人民心灵深处的创伤，他们心中复仇的愿望为驱动力，来实践一个横跨一百年的复仇计划。</p>
+  <p>极权中国的目的是通过这个大梦，走向全世界。它的真正目的是占领世界，毁灭全人类。一百年来发生在共产阵营中，夺取了一亿人生命的杀戮足以使我们看出来马克思主义驱使着<a href="https://www.epochtimes.com/gb/tag/%E5%85%B1%E4%BA%A7%E5%85%9A.html">共产党</a>人执行它毁灭人类的意志。如果要说是复仇，这是撒旦的复仇。是撒旦对把自己从天堂驱逐的上帝的复仇。</p>
+  <p>我们记得，背叛上帝放弃基督教，转而信奉撒旦教的马克思是撒旦的仆人。他曾写过这样的诗句：“我渴望向上帝复仇。”而马克思是共产主义名义上的鼻祖。</p>
+  <p>1847年，正义者同盟付给马克思一袋金币，让他在期限内完成《共产主义宣言》。正义者同盟的背后是光明会。光明会是以德国为基地的一个秘密组织，它拜撒旦为“光明的把持者”，暗中掌控世界上最高的经济政治核心要害，在地上执行撒旦的意志。马克思执笔的《共产主义宣言》许多基本论点不是他的原创，而是来自于光明会。也就是说，共产主义真正的创始人是崇拜撒旦的光明会。和光明会一样，马克思是撒旦在人间的代理人。</p>
+  <p>明白了共产主义这一纠结甚深，直探黑暗之源的系谱，明白了红色中国百年大梦的心理背景，我们也就理解了PRC如何一步步背着这沉重的大梦，走到了今天。在各届领导人中，习近平对于这中国梦情有独钟。事实上，对于保党，习有一种强烈的危机感，以及热忱的“使命感”。比起历届领导人更甚，他在心理上拥抱毛布下的蛊阵，上位后多次拜访革命旧地，一回回更深的坠入毛的渊薮。习把早已破产的马克思主义形容为“壮丽的日出”，对其有着深不可拔的愚忠。</p>
+  <p>2012年，从习一上任开始，在三朝国师王沪宁执笔策画的“中国梦”宣导诱使下，习近平成为毛百年大梦最忠实的实行者。十年来，习动员PRC改革开放后的斩获，动用国库中丰厚的外币金银孤注一掷，逐渐的，百年大梦蜕变为百年强国大梦，又在军队的大力改革，现代科技化、数码化、生物化细菌化下，变成了百年军事强国大梦，直到我们抵达2020年这天崩地裂的一年。</p>
+  <p>在这之前，世人多不知道这百年大梦。即使知道，顶多视之为<a href="https://www.epochtimes.com/gb/tag/%E7%BA%A2%E8%89%B2%E5%B8%9D%E5%9B%BD.html">红色帝国</a>自我安慰，如超英赶美一样痴人说梦的一个可笑的梦而已。直到2020年美国大选被窃，直到美国实际上被左派与中共联手窃取，西方人才如梦方醒，看见了这极权中国偷偷做了一百年的大梦。看到了在不知情的西方世界（尤其是美帝）的大方输血下，中共党人是如何顽固的，迂回前行的，一步一步实现了他们的梦。</p>
+  <h2 id="section-1">跨世纪红色蓝图</h2>
+  <p>今天，从极权中国图穷匕见的终局回望，我们才能看出幕后的全局。才能看出来它的每个国家领导人或明或暗中扮演了什么角色，也才能更好地解读这最后十年惊心动魄的事件。一切不是偶然，而是出自一个贯穿全局，终极的计谋。</p>
+  <p>在2008到2009年间，中共祭出了大外宣，投入450亿人民币在世界上夺取话语权。这是PRC经改丰硕的斩获中不小的一笔数字。这数字本身说明了红色帝国的决心，可人们却忽视了这个决心。</p>
+  <figure id="attachment_13048252" aria-describedby="caption-attachment-13048252" style="width: 600px" class="wp-caption aligncenter">
+<a target="_blank" href="https://i.epochtimes.com/assets/uploads/2021/06/id13048252-GettyImages-120216649-e1624655401785.jpg"><img class="size-large wp-image-13048252" src="https://i.epochtimes.com/assets/uploads/2021/06/id13048252-GettyImages-120216649-600x426.jpg" alt="" width="600" height="426" /></a>    <figcaption id="caption-attachment-13048252" class="wp-caption-text">
+2008到2009年间，中共祭出了大外宣，投入450亿人民币在世界上夺取话语权。图为2011年8月1日，中共新华社在纽约时代广场租用24小时电子广告牌，遭遇抗议活动。（Stan Honda / AFP）
+    </figcaption>
+  </figure>
+  <p>大外宣是在相对温和的胡温时代启动的。这巨大的投入背后是一个人们低估了的，巨大而危险的目的。大外宣收割了惊人的战利品，收编了各国主流媒体，世人几乎是一无抵抗的投降卸甲，俯首称臣。就这一点而言，红色帝国为达到目的而设下的布局是全方位，滴水不漏的。</p>
+  <p>人类正面对着一个巨大的危机。这危机有一个根源，它不是来自人类，却是来自于马克思主义最终的源头：撒旦，以及撒旦的意志在人间神秘的执行者。只有追溯到这终极的渊源，才能解释何以红色帝国大外宣会有如此致命而全面的斩获，近乎把人类一网打尽。我们才能看见这惊人的斩获背后那真正的不可告人的目的。</p>
+  <p>世界<a href="https://www.epochtimes.com/gb/tag/%E5%85%B1%E4%BA%A7%E5%85%9A.html">共产党</a>是一个共同体，他们侍奉同一个主子，为了一个共同的目的而整体协调运作。大外宣事实上是马克思主义在跨世纪世界性行动中的一个后期环节。它的主导是最后一个共产极权大国PRC，然而支撑它的，却是世界共产党一个世纪以来在全球全面的筹画运作。</p>
+  <p>1919年，共产国际（第三国际）成立，以莫斯科为基地，深入各国吸收大量共产党员。共产国际的目标是领导各国共产党，推动世界革命。1922年，前苏联成立，不久，苏共以多国语种大量印制廉价版《共产主义宣言》，把共产主义推向全球。</p>
+  <p>与此同时，共产国际加速运作，推向全世界。作为“世界革命司令部”，它训练出了大量的特务，包括以周恩来为首的中共特务。从一开始，美帝就是马克思主义所认定的，共产主义占领全球的最终目的地。20世纪初，共产国际大力在美国推动马克思主义，美国共产党员最终渗透入美国政府高层，深远的影响了美国在二战的政策，包括对华政策，直接导致共军打败原本处于绝对优势的蒋介石，夺取了中华民国。</p>
+  <figure id="attachment_13048250" aria-describedby="caption-attachment-13048250" style="width: 600px" class="wp-caption aligncenter">
+<a target="_blank" href="https://i.epochtimes.com/assets/uploads/2021/06/id13048250-GettyImages-2747722-e1624655821415.jpg"><img class="size-large wp-image-13048250" src="https://i.epochtimes.com/assets/uploads/2021/06/id13048250-GettyImages-2747722-600x428.jpg" alt="" width="600" height="428" /></a>    <figcaption id="caption-attachment-13048250" class="wp-caption-text">
+美国是马克思主义占领世界最终的目的地，也是红色中国梦想取代的世界第一强国。图为在 19 世纪一幅画作，描绘一位女神帮助美国括荒者建立文明。（Kean Collection/Getty Images）
+    </figcaption>
+  </figure>
+  <p>这只是共产党暗中左右世界历史的冰山一角。</p>
+  <p>一战后，当欧洲工人始终没有起来推翻资本主义，马克思主义者终于认识到只有把西方文明和基督教摧毁，共产主义才可能在西方实现。1919年，卢卡奇在匈牙利公立学校引进性教育，向西方传统的性道德挑战。一百年后的今天，性教育已进入各国学校的课本中。</p>
+  <p>1923年，德国马克思主义者在法兰克福大学创建了法兰克福学派，文化马克思主义在这里发端。二战爆发，法兰克福学派离开德国逃到纽约。在那儿，它发展出影响深远的批判理论，着手摧毁西方的传统文化及基督教信仰。日后法兰克福学派哲学及批判理论深入学院，成为欧美知识界时髦的东西，主导着现代、后现代意识及思潮。</p>
+  <p>法兰克福学派的著作多深奥难懂。1955年，年轻的马尔库塞（Herbert Marcuse）出版《爱欲与文明》（Eros and Civilization），迅速为年轻一代接受，带动了西方的性解放，推动了现代叛逆前卫的社会风潮。随着道德观念及传统思维、家庭价值、形而上信仰一一被冲破，文化马克思主义摧毁了西方文明和基督教，也摧毁了人类赖以生存的精神基石。</p>
+  <p>60年代，透过在各国推动种种时髦的社会及文化思想运动，文化马克思主义全面改变了人类意识。女性主义、性解放、现代艺术、后现代艺术、法兰克福学派、解构主义，这些耸动的新思潮鼓动着人心，对传统及神灵的信仰产生逆反心理，逐渐形成了变异的现代文化，彻底改造了人类。</p>
+  <figure id="attachment_13048258" aria-describedby="caption-attachment-13048258" style="width: 600px" class="wp-caption aligncenter">
+<a target="_blank" href="https://i.epochtimes.com/assets/uploads/2021/06/id13048258-GettyImages-1212745007-e1624655851510.jpg"><img class="size-large wp-image-13048258" src="https://i.epochtimes.com/assets/uploads/2021/06/id13048258-GettyImages-1212745007-600x392.jpg" alt="" width="600" height="392" /></a>    <figcaption id="caption-attachment-13048258" class="wp-caption-text">
+文化马克思主义的两大目标是摧毁西方文化和基督教。图为英国约克座堂牧师在复活节点燃复活节蜡烛。（Oli Scarff/AFP via Getty Images）
+    </figcaption>
+  </figure>
+  <p>美国女性主义者贝蒂．弗里丹（Betty Friedan）1963年出版的《女性的奥秘》（Feminine Mystique）影响很大，在女性主义著作中举足轻重。然而弗里丹的真实身份是一个极端共产主义者，生涯中长期积极参与美国共产主义活动。事实上，这些文化社会风潮背后的推手多是别有用意的共产党员。他们最终的目的是摧毁人类的伦理道德和家庭观念，侵蚀人类文明。</p>
+  <figure id="attachment_13048249" aria-describedby="caption-attachment-13048249" style="width: 600px" class="wp-caption aligncenter">
+<a target="_blank" href="https://i.epochtimes.com/assets/uploads/2021/06/id13048249-000_Was242053-e1624655879624.jpg"><img class="size-large wp-image-13048249" src="https://i.epochtimes.com/assets/uploads/2021/06/id13048249-000_Was242053-600x456.jpg" alt="" width="600" height="456" /></a>    <figcaption id="caption-attachment-13048249" class="wp-caption-text">
+美国女性主义者贝蒂．弗里丹的真实身份是一个极端共产主义者，生涯中长期积极参与美国共产主义活动。图为弗里登1995年9月4日在中国怀柔“95北京非政府组织妇女论坛”上。（Tao-Chuan Yeh / AFP）
+    </figcaption>
+  </figure>
+  <p>从20世纪上叶起，几个世代人的思维被改造，传统伦理道德退位消失，被时髦的后现代多元化、没有真理、反叛、以人为中心、切去形上背景的现代意识取代。学院里弥漫着后现代“什么都可以”的虚无主义；年轻一代嘴上挂着一个时髦得意的名词：“解构主义”，把固有的价值观和传统观念解体。马克思主义动用了头脑结构多变，辩才无碍的左派知识分子，打造了一系列扭曲桀骜的理论，把人类固有的知识系统打乱打翻。</p>
+  <p>由于这些马克思主义者非常清楚他们意图摧毁的是主导人类文明数千年，有着荣耀成就及非凡神采的西方古典文明及基督教精神，他们使尽浑身解数，想出各种亵渎叛逆，诱惑人心的思潮倾巢而出，扑朔迷离。</p>
+  <figure id="attachment_13048248" aria-describedby="caption-attachment-13048248" style="width: 600px" class="wp-caption aligncenter">
+<a target="_blank" href="https://i.epochtimes.com/assets/uploads/2021/06/id13048248-000_Par8215581-e1624655906842.jpg"><img class="size-large wp-image-13048248" src="https://i.epochtimes.com/assets/uploads/2021/06/id13048248-000_Par8215581-600x399.jpg" alt="" width="600" height="399" /></a>    <figcaption id="caption-attachment-13048248" class="wp-caption-text">
+西方文明是文化马克思主义极力摧毁的目标。20世纪兴起的社会风潮最终目的就是腐蚀人类文明精神的根基。图为希腊雅典卫城前的各国游客。（Louisa Gouliamaki/AFP）
+    </figcaption>
+  </figure>
+  <p>20世纪末，共产极权阵营崩溃后，共产党人绝地反扑，把这一全球化的思潮运动加大力度，再度启动，同时把共产主义包装成无害的“民主社会主义”，推向各国政界。也就是说，表面上共产极权是失败了，然而马克思主义者从地下绝地反扑，全面策画更深层的人类思想革命，悄悄夺权。</p>
+  <p>经过长达近一个世纪的意识蜕变，到了21世纪，当中共跃上世界舞台，四处洒币请君入瓮时，世人早已失去传统的价值观，不再受传统美德的约束，从而失去了对权钱色诱惑的抵抗力。于是世人集体卸甲，放弃道德底线，坠入马克思主义一寸寸为人类掘下的深渊。</p>
+  <p>从后知者的视野来看，这跨越两个世纪，用心险恶，规划缜密的文化马克思风潮为下一步社会主义深入普罗大众，横行世界预备了温床。而红色中国展开大外宣绑架世界，收编全球政经、教育、文化、高科技界，正是以这人类道德壁垒的崩塌为前提的。在道德坍塌而形成的土壤中，世人抛弃了信誓旦旦的人权、仁义，被人民币收买而堕落深渊。</p>
+  <p>在文化马克思主义彻底改造了人类思想后，接下来，赚尽了金币的红色帝国展开全球大外宣，以社会主义极左思潮为基点，进一步扭转人类背离传统的思想。一个世纪的侵蚀已损害了人类道德的根基，拔起人类对神佛的信仰，对真理及传统美德的信念。就这样，在人们不知不觉中，鼓吹革命、暴力及仇恨的社会主义悄悄铺下了在人世再度滋生蔓延的温床。</p>
+  <h2 id="section-2">地下蜿蜒的一条赤龙</h2>
+  <p>2018年发生了一件事。央视罕见的曝光了一个隐藏了数十年的秘密：那就是埋藏在国土地下的地下核长城。</p>
+  <p>推动红色中国占有世界的大外宣是在胡锦涛任内推动的。而这一浩大的工程：长达五千公里的地下核长城则是在1965年毛时代动工。它进行了30年，动用了数万名解放军、炮兵，横跨20省，藏身在地下数百米深处。它跨越了毛、华、邓、胡、江、习，每一届中共最高领导人一个不落的都是这个工程的继承人。也就是说，这些领导人一个不落地被绑架，向极权中国百年大梦输入了大量的鲜血。</p>
+  <figure id="attachment_13048254" aria-describedby="caption-attachment-13048254" style="width: 600px" class="wp-caption aligncenter">
+<a target="_blank" href="https://i.epochtimes.com/assets/uploads/2021/06/id13048254-GettyImages-654271554-e1624655930643.jpg"><img class="size-large wp-image-13048254" src="https://i.epochtimes.com/assets/uploads/2021/06/id13048254-GettyImages-654271554-600x399.jpg" alt="" width="600" height="399" /></a>    <figcaption id="caption-attachment-13048254" class="wp-caption-text">
+长达五千公里的地下核长城在1965年毛时代动工，进行了30年。这一座深埋地底的赤龙在神州大地下蜿蜒，摧毁了神州大地的风水。图为重庆市涪陵区816地下核工程，2017年2月。（Wang Zhao / AFP）
+    </figcaption>
+  </figure>
+  <p>这一座深埋地底的赤龙在神州大地下蜿蜒。它与天安门广场上的毛纪念堂呼应，摧毁了神州大地的风水。绝非出于偶然，共产党在这神传文化的神圣舞台：神州大地的地心埋下了一座丑恶的赤龙，破坏了土地的生态，永久的改变了黄土地的结构。正如这块黄土地上的空气、水、森林、河流被破坏殆尽，埋入了这一条空心的赤龙后，这块古老的土地本身不可逆转的异质化，难以复原。</p>
+  <p>正如共产党违法建设的三峡大坝在长江埋下一颗定时炸弹，它在中华民族的神圣国土地下埋下一条剧毒的恶龙。这条赤龙的恐怖结构说明了进入21世纪，红色帝国鱼龙混杂，百毒并存的现状。</p>
+  <p>这道地下核长城由多个独立的网络状地下隧道构成。隧道分几个部分；一部分藏着三千多枚核弹头（乔治城大学教授菲力普．卡伯研究数据），这些核弹头可以随发射器移动，机动的朝外发射。每个地下隧道网络都有数十个出入口和发射口。地下核长城的深度至少是100米以上，可以抵抗核弹的攻击。赤龙另一边是地下集中营，这里关押着数量庞大的法轮功修炼人。他们如同动物一般被关押，他们的基因和血液的数据被输入巨大的数据库，军队系统探入数据库，寻找匹配的器官。世界各国病患随时可以前来中国，住入某一城市做器官移植手术的医院等待。等待的时间从几小时到几周。寻找到匹配的器官后，在一个特定的日子，一名内脏健康的修炼人被绑到一座床上，脖子上插一根灌输液管，一群医生围绕着他做手术，在最短的时间内取下他的心肝肾（有一个冷血的术语，叫“卸货”），然后紧急运送到外国病患所在的医院，移入他的身体。</p>
+  <p>为了迅速的达到运送器官的任务，全国各地机场出现了人体器官运输绿色通道。最早被报导出现绿色通道的机场在新疆乌鲁木齐。之后，青海西宁曹家堡、伊宁、喀什、天津、桂林、上海、北京、武汉、杭州、广州机场也出现了人体器官运输绿色通道。</p>
+  <p>2016年5月，国家卫计委、公安部、交通运输部、中国民用航空局、中国铁路总公司、中国红十字会总会联合印发了《关于建立人体捐献器官转运绿色通道的通知》，推动建立人体捐献器官转运绿色通道。在极权中国各部门联手大力推动下，全国各地建立人体器官运输绿色通道的机场难以尽数。</p>
+  <p>让我们把红色帝国立体化，视觉化：在它的地下是一条关押着千百万沉默的法轮功修炼人的隧道，他们作为器官供体被关押着。在它上面，在阴霾弥漫的空中，各航空公司飞机载着来自这些修炼人体内，依旧鲜活跳动的脏器，急速飞行在各大城市之间。然后，这些价格不菲的脏器再度通过机场紧急绿色通道，在救护车的警笛中呼啸着，驶往那一间国际知名的器官移植中心或医院地下室。</p>
+  <figure id="attachment_13048260" aria-describedby="caption-attachment-13048260" style="width: 600px" class="wp-caption aligncenter">
+<a target="_blank" href="https://i.epochtimes.com/assets/uploads/2021/06/id13048260-image-e1624655989279.png"><img class="size-large wp-image-13048260" src="https://i.epochtimes.com/assets/uploads/2021/06/id13048260-image-600x338.png" alt="" width="600" height="338" /></a>    <figcaption id="caption-attachment-13048260" class="wp-caption-text">
+2017年1月6日，中国民航和医院人士在机场紧急转运活体器官。（中国民航官网）
+    </figcaption>
+  </figure>
+  <p>与此同时，数目不详的法轮功修炼人继续被关押在冰冷，缺乏人性的地下长城中，不见天日。冰冷的灯光，冰冷的隧道，冷酷无情的隧道墙壁把他们围绕。他们可能知道，也可能不知道他们之中又有一个人昂贵的器官被手术刀冷酷的一个个全部夺去。一起被夺去的，是他的没有标价的生命。</p>
+  <p>没有人知道这些人在哪里。人们只知道他们在某一天从某一间劳改营、洗脑班消失，此后再没有下落。没有人知道他们在何方，是否还活着。</p>
+  <p>苏家屯护士安妮曾经这样描述过关押在苏家屯地下集中营的法轮功修炼人。</p>
+  <p>“法轮功学员的表情和一般的监狱人的表情不同。其他人在监狱里都有家属，只有法轮功学员被送过来，家属不知道。法轮功学员很多人绝食抗议，不吃饭已经很虚弱。每个人给一张纸，如果不炼了，不炼法轮功了，按上手印，就马上释放。一个人出去了，里面的人不知道。他们会觉得被释放，可能被告知带到外面治疗。带出来的人先打昏，注射麻药。”</p>
+  <p>在这座埋在地下数百米的地下隧道，这些修炼真善忍，对自己的信仰坚如磐石的修炼人有什么样的表情？</p>
+  <p>在赤龙另一边是生物研究室。当年日本在东北兴建许多地下军事要塞，用途之一就是以中国人为实验对象的秘密研究室。在PRC成立后，这些地下军事隧道以及隧道中的实验室为中共所继承。和当年日本所做的种种不人道的实验一样，这座地下生物研究室所做的实验不为人知，充满了不可告人的机密。</p>
+  <p>核长城的另一端则是开放给民众的购物中心。当然，这一部分和核子武器，地下实验室及地下集中营相隔遥远。至少，这一部分和其他这些敏感高危部分密不相通。也就是说，你可以来到这貌似时髦先进的地下购物中心，好整以暇的慢慢选购消费，却不会知道相隔多少公里，就在同一隧道中，有一座生物研究室进行着高度机密的实验。就在同一隧道中，关押着无数牲口一般等待死亡，没有名字，只有编号的法轮功修炼人。</p>
+  <p>自2017年起，中共在新疆建造了约380座拘留营，其中约200座“再教育营”（澳洲战略政策学会数据）。发生在再教育营中的种种酷刑性侵已广为世人所知。同时，2017年开始，中共开始收集维吾尔族人DNA信息。流亡英国的维吾尔族医生安华托帝认为，维吾尔族人是继法轮功修炼人之后新一批活摘器官的供体。</p>
+  <p>然而随着新疆再教育营真相曝光，这座关押最早一批器官移植供体：法轮功修炼人的地下赤龙却仍然是一个秘密。这一座地下长城耗费了30年，投入了数万炮兵才完成。这一座反人类的地下万里长城贯穿了历届领导人，是他们共同参与打造的恐怖工程。</p>
+  <p>站在时间的这一点回望，我们发现从70年代邓的改革开放、90年代江的贪腐治国、2008年至2009年胡启动的大外宣，直到从2012到今天习的监控帝国加百年军事强国，事实上都是按照既定的轨道前行。每一届领导人依据红色中国在时间中的不同进程被分配了既定的不同角色。有一个早已写好的蓝图，一个内在的逻辑，红色帝国按照这蓝图一路走到了今天。</p>
+  <p>与它同行的，是效忠同一个主子的各国共产党人。他们依据一个更大的，根源更深的蓝图秘密前行。（待续）</p>
+  <p>——转载自《<a href="https://www.epochweekly.com/">新纪元</a>》<br />点阅【<a href="https://www.epochtimes.com/gb/tag/%e8%a2%ab%e9%81%ba%e5%bf%98%e7%9a%84%e7%99%be%e5%b9%b4%e6%ad%b7%e5%8f%b2.html">被遗忘的百年历史</a>】系列文章</p>
+  <p>责任编辑：连书华</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#大纪元 的其它文章</h4>
+    
+      <li>
+        <time>2021-07-08</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-08/%E6%97%B6%E4%BA%8B%E7%BA%B5%E6%A8%AA-%E4%B8%AD%E5%85%B1%E7%A5%9E%E7%A7%98%E5%8C%BA%E6%9B%9D%E5%85%89-%E5%A5%B3%E8%B4%A9%E5%8F%8C%E5%88%80%E5%90%93%E9%80%80%E5%9F%8E%E7%AE%A1">
+          【时事纵横】中共神秘区曝光 女贩双刀吓退城管
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-08</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-08/%E8%8B%B1%E5%A4%96%E4%BA%A4%E5%A7%94%E5%91%98%E4%BC%9A%E8%A6%81%E6%B1%82%E6%89%A9%E5%A4%A7%E5%88%B6%E8%A3%81%E4%B8%AD%E5%85%B1-%E6%8A%B5%E5%88%B6%E5%8C%97%E4%BA%AC%E5%86%AC%E5%A5%A5">
+          英外交委员会要求扩大制裁中共 抵制北京冬奥
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-08</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-08/%E4%B8%AD%E5%85%B1%E7%99%BE%E5%B9%B4%E5%85%9A%E5%BA%86-%E7%9C%8B%E5%85%B6%E9%93%81%E7%AA%97%E4%B8%8B%E7%B2%BE%E8%8B%B1%E4%BB%AC%E7%9A%84%E8%8B%A6%E9%9A%BE-5">
+          中共百年党庆 看其铁窗下精英们的苦难（5）
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-08</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-08/21%E5%B9%B4%E5%89%8D-%E5%90%89%E6%9E%97%E5%BE%B7%E6%83%A0%E5%B8%82%E4%BA%BA%E5%A4%A7%E4%BB%A3%E8%A1%A8%E6%AD%BB%E4%BA%8E%E7%9C%8B%E5%AE%88%E6%89%80">
+          21年前 吉林德惠市人大代表死于看守所
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-08/%E9%99%88%E7%A0%B4%E7%A9%BA-%E4%B9%A0%E8%BF%91%E5%B9%B3%E7%99%BE%E5%B9%B4%E5%85%9A%E5%BA%86%E5%BC%BA%E5%8A%BF%E6%94%BE%E8%AF%9D-%E6%AD%A6%E7%BB%9F%E5%8F%B0%E6%B9%BE%E6%8F%90%E4%B8%8A%E6%97%A5%E7%A8%8B%E8%BF%98%E6%98%AF%E8%99%9A%E5%BC%A0%E5%A3%B0%E5%8A%BF-%E5%85%AC%E6%B0%91%E8%AE%BA%E5%9D%9B">
+            前一篇：陈破空：习近平百年党庆强势放话，武统台湾提上日程还是虚张声势？ - 公民论坛
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-08/%E4%B8%9C%E4%BA%AC%E5%A5%A5%E8%BF%90%E4%BC%9A-%E6%B2%A1%E6%9C%89%E8%A7%82%E4%BC%97-%E6%B2%A1%E6%9C%89%E6%8E%8C%E5%A3%B0-%E8%A6%81%E9%97%BB%E5%88%86%E6%9E%90">
+            后一篇：东京奥运会 没有观众 没有掌声 - 要闻分析
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-07-08/%E9%99%88%E7%A0%B4%E7%A9%BA-%E4%B9%A0%E8%BF%91%E5%B9%B3%E7%99%BE%E5%B9%B4%E5%85%9A%E5%BA%86%E5%BC%BA%E5%8A%BF%E6%94%BE%E8%AF%9D-%E6%AD%A6%E7%BB%9F%E5%8F%B0%E6%B9%BE%E6%8F%90%E4%B8%8A%E6%97%A5%E7%A8%8B%E8%BF%98%E6%98%AF%E8%99%9A%E5%BC%A0%E5%A3%B0%E5%8A%BF-%E5%85%AC%E6%B0%91%E8%AE%BA%E5%9D%9B'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-07-08/%E4%B8%9C%E4%BA%AC%E5%A5%A5%E8%BF%90%E4%BC%9A-%E6%B2%A1%E6%9C%89%E8%A7%82%E4%BC%97-%E6%B2%A1%E6%9C%89%E6%8E%8C%E5%A3%B0-%E8%A6%81%E9%97%BB%E5%88%86%E6%9E%90'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-07-08/%E8%8B%B1%E5%A4%96%E4%BA%A4%E5%A7%94%E5%91%98%E4%BC%9A%E8%A6%81%E6%B1%82%E6%89%A9%E5%A4%A7%E5%88%B6%E8%A3%81%E4%B8%AD%E5%85%B1-%E6%8A%B5%E5%88%B6%E5%8C%97%E4%BA%AC%E5%86%AC%E5%A5%A5'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-07-08/%E4%B8%AD%E5%85%B1%E7%99%BE%E5%B9%B4%E5%85%9A%E5%BA%86-%E7%9C%8B%E5%85%B6%E9%93%81%E7%AA%97%E4%B8%8B%E7%B2%BE%E8%8B%B1%E4%BB%AC%E7%9A%84%E8%8B%A6%E9%9A%BE-5'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-07-08/%E9%99%88%E7%A0%B4%E7%A9%BA-%E4%B9%A0%E8%BF%91%E5%B9%B3%E7%99%BE%E5%B9%B4%E5%85%9A%E5%BA%86%E5%BC%BA%E5%8A%BF%E6%94%BE%E8%AF%9D-%E6%AD%A6%E7%BB%9F%E5%8F%B0%E6%B9%BE%E6%8F%90%E4%B8%8A%E6%97%A5%E7%A8%8B%E8%BF%98%E6%98%AF%E8%99%9A%E5%BC%A0%E5%A3%B0%E5%8A%BF-%E5%85%AC%E6%B0%91%E8%AE%BA%E5%9D%9B">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-07-08/%E4%B8%9C%E4%BA%AC%E5%A5%A5%E8%BF%90%E4%BC%9A-%E6%B2%A1%E6%9C%89%E8%A7%82%E4%BC%97-%E6%B2%A1%E6%9C%89%E6%8E%8C%E5%A3%B0-%E8%A6%81%E9%97%BB%E5%88%86%E6%9E%90">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<大纪元>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-07-08/%E8%8B%B1%E5%A4%96%E4%BA%A4%E5%A7%94%E5%91%98%E4%BC%9A%E8%A6%81%E6%B1%82%E6%89%A9%E5%A4%A7%E5%88%B6%E8%A3%81%E4%B8%AD%E5%85%B1-%E6%8A%B5%E5%88%B6%E5%8C%97%E4%BA%AC%E5%86%AC%E5%A5%A5">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<大纪元>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-07-08/%E4%B8%AD%E5%85%B1%E7%99%BE%E5%B9%B4%E5%85%9A%E5%BA%86-%E7%9C%8B%E5%85%B6%E9%93%81%E7%AA%97%E4%B8%8B%E7%B2%BE%E8%8B%B1%E4%BB%AC%E7%9A%84%E8%8B%A6%E9%9A%BE-5">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

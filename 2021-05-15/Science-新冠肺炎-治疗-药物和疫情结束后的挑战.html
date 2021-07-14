@@ -1,0 +1,2239 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>[Science] 新冠肺炎：治疗、药物和疫情结束后的挑战 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+[Science] 新冠肺炎：治疗、药物和疫情结束后的挑战
+——
+" />
+    <meta property="og:description" content="
+[Science] 新冠肺炎：治疗、药物和疫情结束后的挑战
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="[Science] 新冠肺炎：治疗、药物和疫情结束后的挑战" />
+    <meta property="twitter:title" content="[Science] 新冠肺炎：治疗、药物和疫情结束后的挑战" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-57059562&t=%5BScience%5D+%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E%EF%BC%9A%E6%B2%BB%E7%96%97%E3%80%81%E8%8D%AF%E7%89%A9%E5%92%8C%E7%96%AB%E6%83%85%E7%BB%93%E6%9D%9F%E5%90%8E%E7%9A%84%E6%8C%91%E6%88%98" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-57059562&t=%5BScience%5D+%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E%EF%BC%9A%E6%B2%BB%E7%96%97%E3%80%81%E8%8D%AF%E7%89%A9%E5%92%8C%E7%96%AB%E6%83%85%E7%BB%93%E6%9D%9F%E5%90%8E%E7%9A%84%E6%8C%91%E6%88%98&d=2021-05-15&e=
+[Science] 新冠肺炎：治疗、药物和疫情结束后的挑战
+——
+
+
+  
+    新冠肺炎：治疗、药物和疫情结束后的挑战
+  
+  
+    26 分钟前
+  
+  
+    
+      
+        
+          
+            图像来源，Getty Images
+          
+        
+      
+    
+  
+  
+    全球新冠疫情大流行什么时候结束现在没有确切答案，但可以肯定会结束。同样可以肯定，那将不会是个“零新冠”世界，而是病毒与人类共存。
+  
+  
+    新冠肺炎可能就像流感、肝炎、疟疾之类传染病一样，在一定程度上以某种形式与人类并存共处，像流感一样呈季节性爆发。每年秋冬流感季，将来可能也是“新冠季”。
+  
+  
+    而从大流行疫情转变为社会常态，疫苗、药物和防疫机制是关键。
+  
+  
+    新冠疫苗率先..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-57059562" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=http://www.bbc.com/zhongwen/simp/science-57059562" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=http://www.bbc.com/zhongwen/simp/science-57059562&text=[Science] 新冠肺炎：治疗、药物和疫情结束后的挑战&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=http://www.bbc.com/zhongwen/simp/science-57059562&title=[Science] 新冠肺炎：治疗、药物和疫情结束后的挑战" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://www.bbc.com/zhongwen/simp/science-57059562&title=[Science] 新冠肺炎：治疗、药物和疫情结束后的挑战" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=[Science] 新冠肺炎：治疗、药物和疫情结束后的挑战&body=
+[Science] 新冠肺炎：治疗、药物和疫情结束后的挑战
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=http://www.bbc.com/zhongwen/simp/science-57059562" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=http://www.bbc.com/zhongwen/simp/science-57059562&title=[Science] 新冠肺炎：治疗、药物和疫情结束后的挑战&caption=
+[Science] 新冠肺炎：治疗、药物和疫情结束后的挑战
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=[Science] 新冠肺炎：治疗、药物和疫情结束后的挑战&url=http://www.bbc.com/zhongwen/simp/science-57059562" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>[Science] 新冠肺炎：治疗、药物和疫情结束后的挑战</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-05-15
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#BBC ">
+          BBC
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="http://www.bbc.com/zhongwen/simp/science-57059562"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="BBC的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#BBC 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-57059562&t=%5BScience%5D+%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E%EF%BC%9A%E6%B2%BB%E7%96%97%E3%80%81%E8%8D%AF%E7%89%A9%E5%92%8C%E7%96%AB%E6%83%85%E7%BB%93%E6%9D%9F%E5%90%8E%E7%9A%84%E6%8C%91%E6%88%98&d=2021-05-15&e=
+[Science] 新冠肺炎：治疗、药物和疫情结束后的挑战
+——
+
+
+  
+    新冠肺炎：治疗、药物和疫情结束后的挑战
+  
+  
+    26 分钟前
+  
+  
+    
+      
+        
+          
+            图像来源，Getty Images
+          
+        
+      
+    
+  
+  
+    全球新冠疫情大流行什么时候结束现在没有确切答案，但可以肯定会结束。同样可以肯定，那将不会是个“零新冠”世界，而是病毒与人类共存。
+  
+  
+    新冠肺炎可能就像流感、肝炎、疟疾之类传染病一样，在一定程度上以某种形式与人类并存共处，像流感一样呈季节性爆发。每年秋冬流感季，将来可能也是“新冠季”。
+  
+  
+    而从大流行疫情转变为社会常态，疫苗、药物和防疫机制是关键。
+  
+  
+    新冠疫苗率先..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-57059562" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1621073501000-->
+<p><a href="http://www.bbc.com/zhongwen/simp/science-57059562">[Science] 新冠肺炎：治疗、药物和疫情结束后的挑战</a>
+——</p>
+
+<div>
+  <div dir="ltr" class="bbc-1151pbn e57qer20">
+    <h1 id="content" tabindex="-1" class="bbc-6yjyco e1yj3cbb0">新冠肺炎：治疗、药物和疫情结束后的挑战</h1>
+  </div>
+  <div dir="ltr" class="e1j2237y7 bbc-q4ibpr e57qer20">
+    <time datetime="2021-05-15" class="bbc-529aew e4zesg50">26 分钟前</time>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-1k5hvrj e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/1867C/production/_114246999_1024treatmentgettyimages-1255593809.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/1867C/production/_114246999_1024treatmentgettyimages-1255593809.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/1867C/production/_114246999_1024treatmentgettyimages-1255593809.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/1867C/production/_114246999_1024treatmentgettyimages-1255593809.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/1867C/production/_114246999_1024treatmentgettyimages-1255593809.jpg 800w" alt="Woman in hospital bed" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/1867C/production/_114246999_1024treatmentgettyimages-1255593809.jpg" width="1024" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />            <p role="text" class="bbc-1s1cxbv etq3yw90"><span class="bbc-1gnhmg2 e1yt7oin0">图像来源，</span><span lang="en-GB">Getty Images</span></p>
+          </div>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70"><strong>全球新冠疫情大流行什么时候结束现在没有确切答案，但可以肯定会结束。同样可以肯定，那将不会是个“零新冠”世界，而是病毒与人类共存。</strong></p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">新冠肺炎可能就像流感、肝炎、疟疾之类传染病一样，在一定程度上以某种形式与人类并存共处，像流感一样呈季节性爆发。每年秋冬流感季，将来可能也是“新冠季”。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">而从大流行疫情转变为社会常态，疫苗、药物和防疫机制是关键。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">新冠疫苗率先突破，研发速度空前，已纳入世界卫生组织（WHO）紧急使用清单的和正在审核评估的有十几种。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">大致同时起步的是新冠药物开发和疗法探索，同样重要，但路径不同于疫苗研发。全球各地正在研发、试验中的新冠药物有百余种。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">英国成立了“抗病毒特别工作组”，争取2021年秋季找到至少两种针对新冠感染早期症状的有效药物。首相鲍里斯·约翰逊表示，最好是口服药片。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">那么，新冠药物和疗法领域的进展如何？</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <div class="bbc-1fobf8d e1gggypo0">
+      <ul dir="ltr" role="list" class="bbc-1gidoyr e1drcs2w1">
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0"><a href="https://www.bbc.com/zhongwen/simp/science-56737453" class="bbc-n8oauk e1cs6q200">新冠疫苗：副作用、混合接种和其他几个你需要了解的基本问题</a></li>
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0"><a href="https://www.bbc.com/ukchina/simp/54470268" class="bbc-n8oauk e1cs6q200">新冠长期症状：为什么有的患者无法痊愈？</a></li>
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0"><a href="https://www.bbc.com/zhongwen/simp/world-54628047" class="bbc-n8oauk e1cs6q200">与病毒共处 — 新冠、流感和人类的三角关系</a></li>
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0"><a href="https://www.bbc.com/zhongwen/resources/idt-ae57eb25-a3d3-4479-bd06-cf689e1f5f1d" class="bbc-n8oauk e1cs6q200">历史上几次疾病大流行是怎么结束的</a></li>
+      </ul>
+    </div>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-fz3y0s e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/D7D8/production/_111165255_cps_web_banner_bottom_640x3-nc.png 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/D7D8/production/_111165255_cps_web_banner_bottom_640x3-nc.png 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/D7D8/production/_111165255_cps_web_banner_bottom_640x3-nc.png 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/D7D8/production/_111165255_cps_web_banner_bottom_640x3-nc.png 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/D7D8/production/_111165255_cps_web_banner_bottom_640x3-nc.png 800w" alt="Banner" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/D7D8/production/_111165255_cps_web_banner_bottom_640x3-nc.png" width="1920" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-1k5hvrj e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/AAA1/production/_111118634_c0482507-testing_for_covid-19_infection-spl.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/AAA1/production/_111118634_c0482507-testing_for_covid-19_infection-spl.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/AAA1/production/_111118634_c0482507-testing_for_covid-19_infection-spl.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/AAA1/production/_111118634_c0482507-testing_for_covid-19_infection-spl.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/AAA1/production/_111118634_c0482507-testing_for_covid-19_infection-spl.jpg 800w" alt="核酸试子" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/AAA1/production/_111118634_c0482507-testing_for_covid-19_infection-spl.jpg" width="976" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="bbc-3edg7g e57qer20">
+          <figcaption dir="ltr" class="bbc-l9ltpr eede9f50">
+<span class="bbc-1gnhmg2 e1yt7oin0">图像加注文字，</span>            <p>测试、疫苗和药物是结束大流行疫情的关键</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">BBC健康与科学事务记者詹姆斯·加拉格尔（James Gallagher）梳理新冠治疗和药物研发领域正在推进的大型试验项目和三大研究方向：</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <h2 id="主要试验项目" tabindex="-1" class="bbc-6w9yzd e14hemmw0">主要试验项目</h2>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <div class="bbc-1fobf8d e1gggypo0">
+      <ul dir="ltr" role="list" class="bbc-1gidoyr e1drcs2w1">
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0">英国牛津正在进行世界上最大规模的临床试验，<a href="https://www.gov.uk/government/news/worlds-largest-trial-of-potential-coronavirus-treatments-rolled-out-across-the-uk" aria-label="康复（Recovery）, 外部链接" class="bbc-n8oauk e1cs6q200">康复（Recovery）</a>，有一万二千多名患者参与，目的是确定药物对新冠症状的作用；</li>
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0">世卫组织（WHO）的多国临床试验，<a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/global-research-on-novel-coronavirus-2019-ncov/solidarity-clinical-trial-for-covid-19-treatments" aria-label="团结（Solidarity trial）, 外部链接" class="bbc-n8oauk e1cs6q200">团结（Solidarity trial）</a>，目的是评估不同潜在疗法在世界各国的表现；</li>
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0">牛津大学的临床试验，<a href="https://www.principletrial.org/" aria-label="原则（ Principle trial）, 外部链接" class="bbc-n8oauk e1cs6q200">原则（ Principle trial）</a>，目的是研发可供新冠患者在家治疗、消除新冠症状的药物；</li>
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0">若干制药公司分别在展开各自的药物研发试验。</li>
+      </ul>
+    </div>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70"><strong>三</strong><strong>大研究课题</strong><strong>：</strong></p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <div class="bbc-1fobf8d e1gggypo0">
+      <ul dir="ltr" role="list" class="bbc-1gidoyr e1drcs2w1">
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0">直接针对冠状病毒在人体内生存繁殖的抗病毒药</li>
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0">镇定免疫系统的药物（以防患者自身免疫反应过激导致脏器受损）</li>
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0">从治愈者者血浆提取或实验室合成针对病毒的抗体</li>
+      </ul>
+    </div>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">不同药物在不同阶段所起的不同作用、不同方案混合使用效果如何等也是研究重点。</p>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-fz3y0s e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/D7D8/production/_111165255_cps_web_banner_bottom_640x3-nc.png 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/D7D8/production/_111165255_cps_web_banner_bottom_640x3-nc.png 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/D7D8/production/_111165255_cps_web_banner_bottom_640x3-nc.png 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/D7D8/production/_111165255_cps_web_banner_bottom_640x3-nc.png 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/D7D8/production/_111165255_cps_web_banner_bottom_640x3-nc.png 800w" alt="Banner" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/D7D8/production/_111165255_cps_web_banner_bottom_640x3-nc.png" width="1920" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-1k5hvrj e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/13C28/production/_111863908_gettyimages-1210352379.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/13C28/production/_111863908_gettyimages-1210352379.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/13C28/production/_111863908_gettyimages-1210352379.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/13C28/production/_111863908_gettyimages-1210352379.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/13C28/production/_111863908_gettyimages-1210352379.jpg 800w" alt="Covid-19 patient" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/13C28/production/_111863908_gettyimages-1210352379.jpg" width="976" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70"><strong>潜在新药</strong><strong>和疗法</strong></p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">曾经有两种抗病毒药物被认为对具有治疗新冠的潜力，一度引起轰动，后来发现其实对降低死亡率、缩短住院治疗时间、缓减症状等各方面都几乎无效，被WHO叫停；一种是针对埃博拉病毒的<strong>瑞德西韦（Remdesivir）</strong><strong>，</strong>另一种是治疗疟疾的<strong>氯奎（Chloroquine）</strong>及其衍生物<strong>羟氯喹（hydroxychloroquine）</strong><strong>。</strong></p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <div class="bbc-1fobf8d e1gggypo0">
+      <ul dir="ltr" role="list" class="bbc-1gidoyr e1drcs2w1">
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0"><strong>类固醇</strong><strong>激素</strong></li>
+      </ul>
+    </div>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">牛津“康复”试验发现，一款极普通的人工合成类固醇激素类大众消炎药<strong>地塞米松（dexamethasone）</strong>可以降低住院新冠重症患者死亡率。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">医院临床试验显示，用呼吸机的新冠重症患者用药后死亡率降低三分之一，需要吸氧的患者死亡率降低五分之一。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">另一种激素药物，<strong>氢化可的松（hydrocortisone</strong>，又译氢化可体松），被发现有类似的疗效。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">这两款类固醇药物都有消炎作用。炎症是免疫反应的一部分，有可能造成严重损害。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">不过，地塞米松对症状温和的患者不起作用。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <div class="bbc-1fobf8d e1gggypo0">
+      <ul dir="ltr" role="list" class="bbc-1gidoyr e1drcs2w1">
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0"><a href="https://www.bbc.com/zhongwen/simp/science-56084055" class="bbc-n8oauk e1cs6q200">新冠疫苗：全球各地接种进展动态追踪</a></li>
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0"><a href="https://www.bbc.com/zhongwen/simp/science-53590987" class="bbc-n8oauk e1cs6q200">肺炎疫情：BBC盘点最新“解药”及“疗法”进度</a></li>
+      </ul>
+    </div>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-1k5hvrj e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/169BA/production/_113820629_index_treatments_976.png 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/169BA/production/_113820629_index_treatments_976.png 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/169BA/production/_113820629_index_treatments_976.png 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/169BA/production/_113820629_index_treatments_976.png 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/169BA/production/_113820629_index_treatments_976.png 800w" alt="Graphic of bottle of tablets" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/169BA/production/_113820629_index_treatments_976.png" width="976" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">另有研究发现治哮喘激素药物<strong>，</strong><strong>布地奈德（budesonide）</strong>，有早期新冠症状的患者在家用这种吸入式类固醇消炎药被发现有助于加速患者的康复。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <div class="bbc-1fobf8d e1gggypo0">
+      <ul dir="ltr" role="list" class="bbc-1gidoyr e1drcs2w1">
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0"><strong>免疫抑制剂</strong></li>
+      </ul>
+    </div>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">用于治疗类风湿关节炎的免疫抑制剂<strong>托珠单抗（tocilizumab）</strong>与<strong>沙利姆单抗（sarilumab）</strong>被发现可以降低新冠重症患者死亡率。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">这类药物可以防止新冠患者的免疫反应过激，导致肺和其他器官受损。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">包括英国在内的六个国家展开的临床试验显示，给深切看护病房（重症监护）800名患者用药后，死亡率有所降低。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">科学家们正在研究合成"单克隆"抗体或吸入型皮质类固醇消炎药对延缓新冠患者病情恶化、降低住院重症病例的作用。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">牛津“康复”数据显示，这两种免疫抑制剂与地塞米松一起使用效果可以增强。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">这些研究报告还有待同行评估，尚未在专业期刊上发表。</p>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-1k5hvrj e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/179A0/production/_115027669_68fd366c-bfb0-466d-85dc-1eb68b4ac426.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/179A0/production/_115027669_68fd366c-bfb0-466d-85dc-1eb68b4ac426.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/179A0/production/_115027669_68fd366c-bfb0-466d-85dc-1eb68b4ac426.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/179A0/production/_115027669_68fd366c-bfb0-466d-85dc-1eb68b4ac426.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/179A0/production/_115027669_68fd366c-bfb0-466d-85dc-1eb68b4ac426.jpg 800w" alt="." src="https://ichef.bbci.co.uk/news/640/cpsprodpb/179A0/production/_115027669_68fd366c-bfb0-466d-85dc-1eb68b4ac426.jpg" width="976" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <div class="bbc-1fobf8d e1gggypo0">
+      <ul dir="ltr" role="list" class="bbc-1gidoyr e1drcs2w1">
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0"><strong>干扰素β</strong>（Interferon beta）</li>
+      </ul>
+    </div>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">这是人体感染病毒后产生的一种蛋白。英国大量新冠药物研究都是围绕干扰素β展开。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">临床试验用喷雾剂让住院重症患者吸入干扰素β，观察它是否如预期那样刺激免疫系统，激活细胞做好抵抗入侵病毒的准备。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">这种药物传统上用来治疗神经系统多发性硬化症，用在新冠重症患者身上，目前的试验结果显示能使出现严重并发症的几率减少将近80%。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">另一个研究课题涉及血栓。住院治疗的新冠重症患者容易出现血栓，因此会使用稀释血液的药物，而这类药物的一个常见副作用是出血。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">因此，需要在治疗新冠症状和减少药物副作用之间找到最佳平衡，然后才能考虑推广这种疗法。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <div class="bbc-1fobf8d e1gggypo0">
+      <ul dir="ltr" role="list" class="bbc-1gidoyr e1drcs2w1">
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0"><strong>新冠治愈者血浆</strong></li>
+      </ul>
+    </div>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">这种疗法目前仍在广泛试验阶段，效果难以定论。感染新冠后痊愈的人血液中有新冠抗体。曾经尝试过把他们的血浆注入新冠重症患者体内作为“恢复期血浆”，为患者自身的免疫系统助力。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">美国食品与药物管理局（FDA）为“血浆疗法”紧急使用授权开了绿灯，世界多国科研团队正在研究治愈者血浆对早期或轻症患者有多大作用。</p>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-1k5hvrj e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/3FCB/production/_118113361_68a03197-1a19-4829-baa4-75ba68283af6.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/3FCB/production/_118113361_68a03197-1a19-4829-baa4-75ba68283af6.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/3FCB/production/_118113361_68a03197-1a19-4829-baa4-75ba68283af6.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/3FCB/production/_118113361_68a03197-1a19-4829-baa4-75ba68283af6.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/3FCB/production/_118113361_68a03197-1a19-4829-baa4-75ba68283af6.jpg 800w" alt="试管" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/3FCB/production/_118113361_68a03197-1a19-4829-baa4-75ba68283af6.jpg" width="976" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-fz3y0s e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/D7D8/production/_111165255_cps_web_banner_bottom_640x3-nc.png 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/D7D8/production/_111165255_cps_web_banner_bottom_640x3-nc.png 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/D7D8/production/_111165255_cps_web_banner_bottom_640x3-nc.png 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/D7D8/production/_111165255_cps_web_banner_bottom_640x3-nc.png 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/D7D8/production/_111165255_cps_web_banner_bottom_640x3-nc.png 800w" alt="Banner" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/D7D8/production/_111165255_cps_web_banner_bottom_640x3-nc.png" width="1920" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <div class="bbc-1fobf8d e1gggypo0">
+      <ul dir="ltr" role="list" class="bbc-1gidoyr e1drcs2w1">
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0"><a href="https://www.bbc.com/zhongwen/simp/science-54647710" class="bbc-n8oauk e1cs6q200">新冠长期症状：哪些人风险更高？</a></li>
+      </ul>
+    </div>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <h2 id="展望未来" tabindex="-1" class="bbc-6w9yzd e14hemmw0">展望未来</h2>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">利物浦大学传染病临床医学讲师汤姆·温菲尔德（Tom Wingfield）和热带医药学院全球公共健康教授米丽亚姆·泰特梅耶（Miriam Taegtmeyer）认为，“零新冠”的目标基本上不可能实现，但局部地区消灭新冠病毒是可以做到的。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">他们在<a href="https://theconversation.com/covid-is-unlikely-to-be-eliminated-heres-how-well-treat-it-in-the-future-155931?utm_medium=email&amp;utm_campaign=Latest%20from%20The%20Conversation%20for%20May%206%202021%20-%201939818992&amp;utm_content=Latest%20from%20The%20Conversation%20for%20May%206%202021%20-%201939818992+CID_bd79ee76d178af4d3438560255b4b9d6&amp;utm_source=campaign_monitor_uk&amp;utm_term=how%20well%20be%20looking%20after%20people%20with%20COVID%20in%20future" aria-label="《对话》杂志, 外部链接" class="bbc-n8oauk e1cs6q200">《对话》杂志</a>撰文展望全球新冠疫情基本结束后的世界，认为从全球范围来看，在可以预见的未来更现实的预期是针对季节性反复出现的局部新冠流行做好预防、纾解，还有为患者提供人文关怀。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">这些都需要及早筹谋规划。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <h2 id="新冠长期症状" tabindex="-1" class="bbc-6w9yzd e14hemmw0">新冠长期症状</h2>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">除此之外，还有一个全新的挑战：新冠长期症状（long Covid，“长新冠”）。</p>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-1k5hvrj e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/17D05/production/_118114579_ecacb563-4382-461e-a867-373f4a5325a7.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/17D05/production/_118114579_ecacb563-4382-461e-a867-373f4a5325a7.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/17D05/production/_118114579_ecacb563-4382-461e-a867-373f4a5325a7.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/17D05/production/_118114579_ecacb563-4382-461e-a867-373f4a5325a7.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/17D05/production/_118114579_ecacb563-4382-461e-a867-373f4a5325a7.jpg 800w" alt="graphics" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/17D05/production/_118114579_ecacb563-4382-461e-a867-373f4a5325a7.jpg" width="976" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">相对于急性新型冠状病毒感染而言，长期症状具有慢性疾病特点，意味着对患者的治疗和护理要求更复杂。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">温菲尔德和泰特梅耶估计，大约每10位新冠患者中有一人在治愈几个月后仍有相关症状，全球可能有数百万人属于这一类有长期症状者。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">他们认为，预防新冠长期症状的最佳方式是避免感染新冠病毒，但对于那些不幸出现长期症状的患者，则需要建立相应的诊断、治疗和康复的规则。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">“治疗新冠长期症状需要积累相关证据，而这就需要改善疾病识别、诊断和报告机制。”</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">新冠长期症状的诊断、治疗和护理，已经纳入英国国民医疗保健服务（NHS）的长期发展规划，其中提到混合型医患交流模式，包括当面问诊、视频、电话和双向信息交流平台等各种渠道，而可穿戴健康跟踪监测仪的使用也将更广泛。</p>
+  </div>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#BBC 的其它文章</h4>
+    
+      <li>
+        <time>2021-05-17</time>
+        <a href="https://nodebe4.github.io/waimei/2021-05-17/Chinese-%E5%8F%B0%E6%B9%BE%E7%96%AB%E6%83%85-%E6%9C%AC%E5%9C%9F%E7%A1%AE%E8%AF%8A%E6%96%B0%E5%A2%9E333%E4%BE%8B-%E5%86%8D%E5%88%9B%E5%8D%95%E6%97%A5%E6%96%B0%E9%AB%98">
+          [Chinese] 台湾疫情：本土确诊新增333例 再创单日新高
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-05-16</time>
+        <a href="https://nodebe4.github.io/waimei/2021-05-16/Science-%E6%8B%A5%E6%8A%B1%E7%9A%84%E5%AD%A6%E9%97%AE-%E4%BA%B2%E5%AF%86%E6%8E%A5%E8%A7%A6-%E4%B8%BA%E4%BD%95%E9%9A%BE%E4%BB%A5%E5%8F%96%E4%BB%A3">
+          [Science] 拥抱的学问：“亲密接触”为何难以取代
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-05-14</time>
+        <a href="https://nodebe4.github.io/waimei/2021-05-14/Science-%E4%B8%AD%E5%9B%BD-%E5%90%8D%E8%B4%B5%E5%85%BB%E7%94%9F%E5%93%81-%E8%8A%B1%E8%83%B6%E5%B8%A6%E7%BB%99%E5%B0%8F%E5%A4%B4%E9%BC%A0%E6%B5%B7%E8%B1%9A%E7%9A%84%E7%81%AD%E9%A1%B6%E4%B9%8B%E7%81%BE">
+          [Science] 中国“名贵养生品”花胶带给小头鼠海豚的灭顶之灾
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-05-14</time>
+        <a href="https://nodebe4.github.io/waimei/2021-05-14/Chinese-%E8%A5%BF%E5%AE%89%E7%BE%8E%E9%A3%9F-%E4%B8%80%E7%A7%8D%E5%90%8D%E5%AD%97%E5%86%99%E4%B8%8D%E5%87%BA%E6%9D%A5%E7%9A%84%E4%B8%AD%E5%BC%8F%E9%9D%A2%E9%A3%9F">
+          [Chinese] 西安美食：一种名字写不出来的中式面食
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-05-14/Science-%E4%B8%AD%E5%9B%BD-%E5%90%8D%E8%B4%B5%E5%85%BB%E7%94%9F%E5%93%81-%E8%8A%B1%E8%83%B6%E5%B8%A6%E7%BB%99%E5%B0%8F%E5%A4%B4%E9%BC%A0%E6%B5%B7%E8%B1%9A%E7%9A%84%E7%81%AD%E9%A1%B6%E4%B9%8B%E7%81%BE">
+            前一篇：[Science] 中国“名贵养生品”花胶带给小头鼠海豚的灭顶之灾
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-05-16/Science-%E6%8B%A5%E6%8A%B1%E7%9A%84%E5%AD%A6%E9%97%AE-%E4%BA%B2%E5%AF%86%E6%8E%A5%E8%A7%A6-%E4%B8%BA%E4%BD%95%E9%9A%BE%E4%BB%A5%E5%8F%96%E4%BB%A3">
+            后一篇：[Science] 拥抱的学问：“亲密接触”为何难以取代
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-05-14/Science-%E4%B8%AD%E5%9B%BD-%E5%90%8D%E8%B4%B5%E5%85%BB%E7%94%9F%E5%93%81-%E8%8A%B1%E8%83%B6%E5%B8%A6%E7%BB%99%E5%B0%8F%E5%A4%B4%E9%BC%A0%E6%B5%B7%E8%B1%9A%E7%9A%84%E7%81%AD%E9%A1%B6%E4%B9%8B%E7%81%BE'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-05-16/Science-%E6%8B%A5%E6%8A%B1%E7%9A%84%E5%AD%A6%E9%97%AE-%E4%BA%B2%E5%AF%86%E6%8E%A5%E8%A7%A6-%E4%B8%BA%E4%BD%95%E9%9A%BE%E4%BB%A5%E5%8F%96%E4%BB%A3'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-05-16/Science-%E6%8B%A5%E6%8A%B1%E7%9A%84%E5%AD%A6%E9%97%AE-%E4%BA%B2%E5%AF%86%E6%8E%A5%E8%A7%A6-%E4%B8%BA%E4%BD%95%E9%9A%BE%E4%BB%A5%E5%8F%96%E4%BB%A3'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-05-14/Science-%E4%B8%AD%E5%9B%BD-%E5%90%8D%E8%B4%B5%E5%85%BB%E7%94%9F%E5%93%81-%E8%8A%B1%E8%83%B6%E5%B8%A6%E7%BB%99%E5%B0%8F%E5%A4%B4%E9%BC%A0%E6%B5%B7%E8%B1%9A%E7%9A%84%E7%81%AD%E9%A1%B6%E4%B9%8B%E7%81%BE'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-05-14/Science-%E4%B8%AD%E5%9B%BD-%E5%90%8D%E8%B4%B5%E5%85%BB%E7%94%9F%E5%93%81-%E8%8A%B1%E8%83%B6%E5%B8%A6%E7%BB%99%E5%B0%8F%E5%A4%B4%E9%BC%A0%E6%B5%B7%E8%B1%9A%E7%9A%84%E7%81%AD%E9%A1%B6%E4%B9%8B%E7%81%BE">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-05-16/Science-%E6%8B%A5%E6%8A%B1%E7%9A%84%E5%AD%A6%E9%97%AE-%E4%BA%B2%E5%AF%86%E6%8E%A5%E8%A7%A6-%E4%B8%BA%E4%BD%95%E9%9A%BE%E4%BB%A5%E5%8F%96%E4%BB%A3">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<BBC>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-05-16/Science-%E6%8B%A5%E6%8A%B1%E7%9A%84%E5%AD%A6%E9%97%AE-%E4%BA%B2%E5%AF%86%E6%8E%A5%E8%A7%A6-%E4%B8%BA%E4%BD%95%E9%9A%BE%E4%BB%A5%E5%8F%96%E4%BB%A3">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<BBC>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-05-14/Science-%E4%B8%AD%E5%9B%BD-%E5%90%8D%E8%B4%B5%E5%85%BB%E7%94%9F%E5%93%81-%E8%8A%B1%E8%83%B6%E5%B8%A6%E7%BB%99%E5%B0%8F%E5%A4%B4%E9%BC%A0%E6%B5%B7%E8%B1%9A%E7%9A%84%E7%81%AD%E9%A1%B6%E4%B9%8B%E7%81%BE">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

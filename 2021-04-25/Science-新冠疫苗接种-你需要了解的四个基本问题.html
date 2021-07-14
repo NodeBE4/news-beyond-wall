@@ -1,0 +1,2191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>[Science] 新冠疫苗接种 你需要了解的四个基本问题 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+[Science] 新冠疫苗接种 你需要了解的四个基本问题
+——
+" />
+    <meta property="og:description" content="
+[Science] 新冠疫苗接种 你需要了解的四个基本问题
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="[Science] 新冠疫苗接种 你需要了解的四个基本问题" />
+    <meta property="twitter:title" content="[Science] 新冠疫苗接种 你需要了解的四个基本问题" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-56737453&t=%5BScience%5D+%E6%96%B0%E5%86%A0%E7%96%AB%E8%8B%97%E6%8E%A5%E7%A7%8D+%E4%BD%A0%E9%9C%80%E8%A6%81%E4%BA%86%E8%A7%A3%E7%9A%84%E5%9B%9B%E4%B8%AA%E5%9F%BA%E6%9C%AC%E9%97%AE%E9%A2%98" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-56737453&t=%5BScience%5D+%E6%96%B0%E5%86%A0%E7%96%AB%E8%8B%97%E6%8E%A5%E7%A7%8D+%E4%BD%A0%E9%9C%80%E8%A6%81%E4%BA%86%E8%A7%A3%E7%9A%84%E5%9B%9B%E4%B8%AA%E5%9F%BA%E6%9C%AC%E9%97%AE%E9%A2%98&d=2021-04-25&e=
+[Science] 新冠疫苗接种 你需要了解的四个基本问题
+——
+
+
+  
+    新冠疫苗接种 你需要了解的四个基本问题
+  
+  
+    46 分钟前
+  
+  
+    
+      
+        
+          
+            图像来源，Science Photo Library
+          
+        
+      
+    
+  
+  
+    新冠疫苗大规模接种在全球铺开，从最初辉瑞和莫德纳疫苗举世无敌，到至少8种疫苗，到获准使用的疫苗种类增多，研发努力仍在继续。
+  
+  
+    关于疫苗有几个需要了解的基本问题，包括可能会有哪些副作用、免疫效力可持续多久、不同的疫苗怎么比较等等。
+  
+  
+    
+      
+        新冠疫苗：全球各地接种进展动态追踪
+        新冠疫苗：中国科兴疫苗 你可能想知道的四个问..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-56737453" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=http://www.bbc.com/zhongwen/simp/science-56737453" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=http://www.bbc.com/zhongwen/simp/science-56737453&text=[Science] 新冠疫苗接种 你需要了解的四个基本问题&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=http://www.bbc.com/zhongwen/simp/science-56737453&title=[Science] 新冠疫苗接种 你需要了解的四个基本问题" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://www.bbc.com/zhongwen/simp/science-56737453&title=[Science] 新冠疫苗接种 你需要了解的四个基本问题" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=[Science] 新冠疫苗接种 你需要了解的四个基本问题&body=
+[Science] 新冠疫苗接种 你需要了解的四个基本问题
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=http://www.bbc.com/zhongwen/simp/science-56737453" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=http://www.bbc.com/zhongwen/simp/science-56737453&title=[Science] 新冠疫苗接种 你需要了解的四个基本问题&caption=
+[Science] 新冠疫苗接种 你需要了解的四个基本问题
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=[Science] 新冠疫苗接种 你需要了解的四个基本问题&url=http://www.bbc.com/zhongwen/simp/science-56737453" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>[Science] 新冠疫苗接种 你需要了解的四个基本问题</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-04-25
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#BBC ">
+          BBC
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="http://www.bbc.com/zhongwen/simp/science-56737453"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="BBC的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#BBC 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-56737453&t=%5BScience%5D+%E6%96%B0%E5%86%A0%E7%96%AB%E8%8B%97%E6%8E%A5%E7%A7%8D+%E4%BD%A0%E9%9C%80%E8%A6%81%E4%BA%86%E8%A7%A3%E7%9A%84%E5%9B%9B%E4%B8%AA%E5%9F%BA%E6%9C%AC%E9%97%AE%E9%A2%98&d=2021-04-25&e=
+[Science] 新冠疫苗接种 你需要了解的四个基本问题
+——
+
+
+  
+    新冠疫苗接种 你需要了解的四个基本问题
+  
+  
+    46 分钟前
+  
+  
+    
+      
+        
+          
+            图像来源，Science Photo Library
+          
+        
+      
+    
+  
+  
+    新冠疫苗大规模接种在全球铺开，从最初辉瑞和莫德纳疫苗举世无敌，到至少8种疫苗，到获准使用的疫苗种类增多，研发努力仍在继续。
+  
+  
+    关于疫苗有几个需要了解的基本问题，包括可能会有哪些副作用、免疫效力可持续多久、不同的疫苗怎么比较等等。
+  
+  
+    
+      
+        新冠疫苗：全球各地接种进展动态追踪
+        新冠疫苗：中国科兴疫苗 你可能想知道的四个问..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-56737453" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1619347150000-->
+<p><a href="http://www.bbc.com/zhongwen/simp/science-56737453">[Science] 新冠疫苗接种 你需要了解的四个基本问题</a>
+——</p>
+
+<div>
+  <div dir="ltr" class="bbc-1151pbn e57qer20">
+    <h1 id="content" tabindex="-1" class="bbc-6yjyco e1yj3cbb0">新冠疫苗接种 你需要了解的四个基本问题</h1>
+  </div>
+  <div dir="ltr" class="e1j2237y7 bbc-q4ibpr e57qer20">
+    <time datetime="2021-04-25" class="bbc-529aew e4zesg50">46 分钟前</time>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-1k5hvrj e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/13D61/production/_110594218_e740c11b-f19c-41c8-b607-5ffe73f6ea72.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/13D61/production/_110594218_e740c11b-f19c-41c8-b607-5ffe73f6ea72.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/13D61/production/_110594218_e740c11b-f19c-41c8-b607-5ffe73f6ea72.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/13D61/production/_110594218_e740c11b-f19c-41c8-b607-5ffe73f6ea72.jpg 624w" alt="T细胞攻击癌细胞" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/13D61/production/_110594218_e740c11b-f19c-41c8-b607-5ffe73f6ea72.jpg" width="624" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />            <p role="text" class="bbc-1s1cxbv etq3yw90"><span class="bbc-1gnhmg2 e1yt7oin0">图像来源，</span><span lang="en-GB">Science Photo Library</span></p>
+          </div>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70"><strong>新冠疫苗大规模接种在全球铺开，从最初辉瑞和莫德纳疫苗举世无敌，到至少8种疫苗，到获准使用的疫苗种类增多，研发努力仍在继续。</strong></p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">关于疫苗有几个需要了解的基本问题，包括可能会有哪些副作用、免疫效力可持续多久、不同的疫苗怎么比较等等。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <div class="bbc-1fobf8d e1gggypo0">
+      <ul dir="ltr" role="list" class="bbc-1gidoyr e1drcs2w1">
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0"><a href="https://www.bbc.com/zhongwen/simp/science-56084055" class="bbc-n8oauk e1cs6q200">新冠疫苗：全球各地接种进展动态追踪</a></li>
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0"><a href="https://www.bbc.com/zhongwen/simp/chinese-news-56737307" class="bbc-n8oauk e1cs6q200">新冠疫苗：中国科兴疫苗 你可能想知道的四个问题</a></li>
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0"><a href="https://www.bbc.com/zhongwen/simp/science-56416673" class="bbc-n8oauk e1cs6q200">新冠疫苗：牛津/阿斯利康 你可能想了解的三个问题</a></li>
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0"><a href="https://www.bbc.com/ukchina/simp/55971927" class="bbc-n8oauk e1cs6q200">新冠疫苗：“一针还是两针”等重要问题的科学解答</a></li>
+      </ul>
+    </div>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-1k5hvrj e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/3FCB/production/_118113361_68a03197-1a19-4829-baa4-75ba68283af6.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/3FCB/production/_118113361_68a03197-1a19-4829-baa4-75ba68283af6.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/3FCB/production/_118113361_68a03197-1a19-4829-baa4-75ba68283af6.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/3FCB/production/_118113361_68a03197-1a19-4829-baa4-75ba68283af6.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/3FCB/production/_118113361_68a03197-1a19-4829-baa4-75ba68283af6.jpg 800w" alt="试管" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/3FCB/production/_118113361_68a03197-1a19-4829-baa4-75ba68283af6.jpg" width="976" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <h2 id="1-疫苗能提供多少保护" tabindex="-1" class="bbc-6w9yzd e14hemmw0">1. 疫苗能提供多少保护？</h2>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">疫苗不能提供百分之百的保护，也不能保证接种后不会感染、传播病毒。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">英国萨里大学免疫学教授戴博拉·邓恩-沃特斯（Deborah Dunn-Walters）解释说，疫苗作用于人体的后天免疫系统，又称获得性免疫。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">这个系统通过与病原体接触而产生识别病毒病启动针对特定病原体免疫反应，通过刺激人体产生免疫细胞，其中一部分会产生对病毒的抗体。这个过程需要一段时间。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">接种疫苗后之所以仍有可能感染并传播新冠病毒，主要因为评估疫苗效力主要通过观察接种后是否出现症状而不是有没有感染来衡量，而无症状感染是新冠病毒的一大特征。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">她指出，现在还没有证据说明现有疫苗、不管是打一针还是两针，能够阻止病毒传播。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">大部分疫苗完全接种需要打两针，因为第二针疫苗才会激发第二阶段免疫反应，产生长期免疫力。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">伦敦帝国理工学院免疫学教授丹尼·奥特曼（Danny Altmann） 称之为激发自身免疫机能进入一种新的微调模式。</p>
+  </div>
+  <div dir="ltr" class="ek1plzs1 bbc-9m7iam e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-vx18wi e57qer20">
+        <div dir="ltr" class="bbc-rprdln e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-1bz4a1b e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/B4FB/production/_118113364_2792807e-96e1-4d09-aee2-8dd7efc296a6.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/B4FB/production/_118113364_2792807e-96e1-4d09-aee2-8dd7efc296a6.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/B4FB/production/_118113364_2792807e-96e1-4d09-aee2-8dd7efc296a6.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/B4FB/production/_118113364_2792807e-96e1-4d09-aee2-8dd7efc296a6.jpg 624w, https://ichef.bbci.co.uk/news/640/cpsprodpb/B4FB/production/_118113364_2792807e-96e1-4d09-aee2-8dd7efc296a6.jpg 640w" alt="图" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/B4FB/production/_118113364_2792807e-96e1-4d09-aee2-8dd7efc296a6.jpg" width="640" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">身体免疫系统初次跟疫苗相遇时，会激活两种重要的白血球（白细胞）：B浆细胞和T细胞。B浆细胞主要功能是产生抗体，但寿命不长，几周过后如果不注射第二剂疫苗的话，抗体数量会锐减。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">T细胞又叫T淋巴细胞，成熟后分化成不同的效应亚型，能识别和杀死不同的病原，其中一种叫记忆T细胞，如果没有碰到格杀对象（病毒），在体内可以存活几十年。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">关键是这种记忆T细胞只有在注射了第二针疫苗之后才会大量产生。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">至于两针疫苗注射间隔应该多长时间，似乎仍有变化的可能。辉瑞和莫德纳在英国普及接种之初是两针之间隔三周，后来变成间隔三个月。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">关于第一针疫苗可提供免疫保护的时间究竟多长的问题，目前没有定论。令问题更复杂的是，疫苗对各人的效力也会因人而异。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <h2 id="2-疫苗有哪些副作用" tabindex="-1" class="bbc-6w9yzd e14hemmw0">2. 疫苗有哪些副作用？</h2>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">接种疫苗通常会有一些常见副作用，而这正说明疫苗在起作用，成功激活了身体自我免疫反应。也有罕见副作用，即出现概率极小的对疫苗的反应，程度有轻有重。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">被疫苗触发而自然释放的化学物质叫细胞因子和趋化因子，也称为趋化激素、趋化素，是细胞分泌的蛋白信号。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">激活免疫反应的化学物质让人感到不适，但一般不会严重到干扰日常生活起居的程度，而且大致三天后症状就会消失。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">接种疫苗后肯定会出现副作用症状，关键是程度 — 激发的免疫反应不能太大，也不能太小，必须恰到好处；在副作用和免疫力之间找到最佳平衡点。</p>
+  </div>
+  <div dir="ltr" class="ek1plzs1 bbc-9m7iam e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-vx18wi e57qer20">
+        <div dir="ltr" class="bbc-rprdln e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-wu8dgb e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/22BE/production/_118049880_vaccine_risks-2x.png 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/22BE/production/_118049880_vaccine_risks-2x.png 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/22BE/production/_118049880_vaccine_risks-2x.png 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/22BE/production/_118049880_vaccine_risks-2x.png 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/22BE/production/_118049880_vaccine_risks-2x.png 800w" alt="风险比较" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/22BE/production/_118049880_vaccine_risks-2x.png" width="1280" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">几种主要疫苗已知最常见的副作用包括扎针处局部疼痛、疲乏、头疼及肌肉疼痛。其他不太常见的副作用包括恶心、发烧、畏寒。 随着接种普及，罕见副作用病例开始增多。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">罕见病例中最引人关注的是血栓症状，涉及牛津/阿斯利康疫苗和强生/杨森疫苗。阿斯利康疫苗一度被殴亚十几个国家叫停接种，强生/杨森也被美欧和南非叫停。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">但是，新冠疫苗和血栓之间是否存在因果关系、如果存在那么诱发机制是什么，目前尚无定论。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">欧洲药品管理局（EMA）4月7日表示，罕见血栓应被列为牛津/阿斯利康疫苗的一种非常罕见副作用，但目前无法确定诸如年龄或性别等是否相关风险因素。EMA执行董事库克（Emer Cooke）表示，这些罕见副作用的 “合理解释是（个体）对疫苗的免疫反应”。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">这类似于接受药物肝素治疗的人的情况。肝素是一种用于防止血栓形成的血液稀释剂，在某些情况下，对该药物产生的潜在危险免疫不良反应，导致一种称为肝素诱导的血小板减少症。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">出现血栓症状也是口服避孕药的罕见副作用之一。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">截止3月22日，欧洲2500万人接种阿斯利康疫苗，记录在案的血栓病例有86起，大部分患者为60岁以下女性，其中18例致命。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">美国食品药物管理局（FDA）4月中旬表示，在群体接种680多万剂疫苗后发现6例血栓，都是介于18至48岁之间的女性，在接种疫苗后第6至13天出现血栓症状。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <div class="bbc-1fobf8d e1gggypo0">
+      <ul dir="ltr" role="list" class="bbc-1gidoyr e1drcs2w1">
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0"><a href="https://www.bbc.com/zhongwen/simp/science-48675793" class="bbc-n8oauk e1cs6q200">疫苗简史知一二：治病救人的它缘何受到质疑</a></li>
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0"><a href="https://www.bbc.com/zhongwen/simp/science-56243672" class="bbc-n8oauk e1cs6q200">Covax：一文看懂国际社会的“疫苗分享”计划</a></li>
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0"><a href="https://www.bbc.com/zhongwen/simp/science-51908577" class="bbc-n8oauk e1cs6q200">疫苗？我这辈子至少三次战胜致命流感病毒</a></li>
+      </ul>
+    </div>
+  </div>
+  <div dir="ltr" class="ek1plzs1 bbc-9m7iam e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-vx18wi e57qer20">
+        <div dir="ltr" class="bbc-rprdln e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-1wm9zea e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/CEBB/production/_115332925_covid19_how_vaccines_work_v3_chinese-nc.png 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/CEBB/production/_115332925_covid19_how_vaccines_work_v3_chinese-nc.png 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/CEBB/production/_115332925_covid19_how_vaccines_work_v3_chinese-nc.png 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/CEBB/production/_115332925_covid19_how_vaccines_work_v3_chinese-nc.png 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/CEBB/production/_115332925_covid19_how_vaccines_work_v3_chinese-nc.png 800w" alt="graphics" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/CEBB/production/_115332925_covid19_how_vaccines_work_v3_chinese-nc.png" width="1280" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <h2 id="3-疫苗效力可维持多久" tabindex="-1" class="bbc-6w9yzd e14hemmw0">3. 疫苗效力可维持多久？</h2>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">对轻症和需要住院治疗的重症 ，不同疫苗的效力各有所长。实验室环境下的“效能”与实际应用中产生的“效力”会有差别。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">在实际应用时，疫苗的“效力”可能会受接种对象的年龄、身体状况、本身有没有疾病等因素影响。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">由于病毒和疫苗都问世不久，因此目前很难推断各种疫苗的中长期效力，但一般认为大致可以提供半年到一年的免疫保护。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">2021年初，美国加州拉霍亚免疫学研究所（La Jolla Institute for Immunology）发表研究报告称新冠病毒感染者痊愈后自身免疫力能维持至少6个月。英格兰公共卫生机构（Public Health England）的发现是至少5个月。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">疫苗提供的免疫力和感染后自然产生的免疫力大致相同，但持续时间因各人体质和健康状况不同，可维持的时间有长有短。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">英国莱斯特大学病毒学家朱利安·唐（Julian Tang）表示，疫苗免疫力大致可持续6-12个月，但很大程度上取决于各人自身情况，以及疫苗的种类。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">美国梅奥诊所医学中心（Mayo Clinic）的分子医学教授巴德利（Andrew Badley）认为，疫苗的效用和免疫力可能持续几年，但对变异毒株感染病例和患者接种后的反应密切观察非常重要。</p>
+  </div>
+  <div dir="ltr" class="e46rrwz0 bbc-1bh6w8m e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div data-e2e="media-player" class="bbc-rl27ak e15ilq0t1">
+        <div class="bbc-1b4920d e2pb29i2">
+<img srcset="https://ichef.bbci.co.uk/images/ic/1024x576/p07dkc8k.jpg 240w, https://ichef.bbci.co.uk/images/ic/1024x576/p07dkc8k.jpg 320w, https://ichef.bbci.co.uk/images/ic/1024x576/p07dkc8k.jpg 480w, https://ichef.bbci.co.uk/images/ic/1024x576/p07dkc8k.jpg 624w, https://ichef.bbci.co.uk/images/ic/1024x576/p07dkc8k.jpg 800w" alt="" src="https://ichef.bbci.co.uk/images/ic/1024x576/p07dkc8k.jpg" aria-hidden="true" class="bbc-yfiktt e1enwo3v0" referrerpolicy="no-referrer" />          <div class="bbc-nrvtsn e2pb29i1">
+<strong class="bbc-1k5stce e2pb29i0">你的器材不支持播放多媒体材料</strong>
+          </div>
+        </div>
+      </div>
+      <figcaption dir="ltr" class="bbc-l9ltpr eede9f50">
+<span class="bbc-1gnhmg2 e1yt7oin0">视频加注文字，</span>        <p>防疫疫苗如何救人一命？</p>
+      </figcaption>
+    </figure>
+  </div>
+  <div dir="ltr" class="ek1plzs1 bbc-9m7iam e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-vx18wi e57qer20">
+        <div dir="ltr" class="bbc-rprdln e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-1w2e2bd e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/49CE/production/_118049881_more_vaccines_compared_v2_2x_640-nc.png 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/49CE/production/_118049881_more_vaccines_compared_v2_2x_640-nc.png 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/49CE/production/_118049881_more_vaccines_compared_v2_2x_640-nc.png 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/49CE/production/_118049881_more_vaccines_compared_v2_2x_640-nc.png 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/49CE/production/_118049881_more_vaccines_compared_v2_2x_640-nc.png 800w" alt="疫苗比较" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/49CE/production/_118049881_more_vaccines_compared_v2_2x_640-nc.png" width="1280" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <h2 id="4-不同疫苗怎么比较" tabindex="-1" class="bbc-6w9yzd e14hemmw0">4. 不同疫苗怎么比较？</h2>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">很难简单比较优劣。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">有的疫苗对轻症的免疫效果胜于对需住院治疗的重症的保护，有的则相反；有的常见副作用较多，但出现严重副作用几率较小，有的常见副作用较少，但程度较重。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">比如，病毒载体类疫苗可能会引发淋巴肿大，但重组蛋白疫苗则不会出现这个反应。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">除此之外，疫苗之间的比较涉及储存、运输、接种剂量、次数、供应状况和价格等多种因素。各国政府制定本国疫苗接种推广计划时还有更多其他方面的考量，包括成本、政治和外交因素。</p>
+  </div>
+  <div dir="ltr" class="e46rrwz0 bbc-1bh6w8m e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div data-e2e="media-player" class="bbc-rl27ak e15ilq0t1">
+        <div class="bbc-1b4920d e2pb29i2">
+<img srcset="https://ichef.bbci.co.uk/images/ic/1024x576/p08tgt8k.jpg 240w, https://ichef.bbci.co.uk/images/ic/1024x576/p08tgt8k.jpg 320w, https://ichef.bbci.co.uk/images/ic/1024x576/p08tgt8k.jpg 480w, https://ichef.bbci.co.uk/images/ic/1024x576/p08tgt8k.jpg 624w, https://ichef.bbci.co.uk/images/ic/1024x576/p08tgt8k.jpg 800w" alt="" src="https://ichef.bbci.co.uk/images/ic/1024x576/p08tgt8k.jpg" aria-hidden="true" class="bbc-yfiktt e1enwo3v0" referrerpolicy="no-referrer" />          <div class="bbc-nrvtsn e2pb29i1">
+<strong class="bbc-1k5stce e2pb29i0">你的器材不支持播放多媒体材料</strong>
+          </div>
+        </div>
+      </div>
+      <figcaption dir="ltr" class="bbc-l9ltpr eede9f50">
+<span class="bbc-1gnhmg2 e1yt7oin0">视频加注文字，</span>        <p>新冠疫情：一群冒险协助加快研发疫苗的志愿者</p>
+      </figcaption>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">莫德纳和阿斯利康疫苗都通过信使核糖核酸（mRNA）激发人体细胞对新冠肺炎病毒的免疫反应，但这种信使核糖核酸十分脆弱，温度略高就会分裂失效，因此需要注入脂类微粒（lipid nanoparticle）保护层，在超低温条件下保存。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">其他种类的疫苗只需常规低温储存，保质期较长，便于运输。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">现有疫苗对变异毒株是否有效，是研发机构和公众都十分关切的问题。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">莫德纳疫苗研发机构称这款疫苗对英国和南非新出现的变异病毒也有效，但正在研发新的疫苗成分，以提高保护力。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">辉瑞/BioNTech疫苗也表示能有效对抗新变异毒株。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">总体而言，各国政府和公共卫生机构将密切观察是否有新变异病毒株出现，并评估现有治疗方法和疫苗是否有效。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">美国梅奥诊所医学中心分子医学教授巴德利（Andrew Badley）表示，没有100%有效的疫苗；疫苗的保护程度在很大程度上取决于病毒变异情况。</p>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-1k5hvrj e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/17D05/production/_118114579_ecacb563-4382-461e-a867-373f4a5325a7.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/17D05/production/_118114579_ecacb563-4382-461e-a867-373f4a5325a7.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/17D05/production/_118114579_ecacb563-4382-461e-a867-373f4a5325a7.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/17D05/production/_118114579_ecacb563-4382-461e-a867-373f4a5325a7.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/17D05/production/_118114579_ecacb563-4382-461e-a867-373f4a5325a7.jpg 800w" alt="graphics" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/17D05/production/_118114579_ecacb563-4382-461e-a867-373f4a5325a7.jpg" width="976" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#BBC 的其它文章</h4>
+    
+      <li>
+        <time>2021-04-27</time>
+        <a href="https://nodebe4.github.io/waimei/2021-04-27/World-%E6%8B%9C%E7%99%BB%E6%94%B9%E9%9D%A9%E8%B7%AF%E4%B8%8A%E7%9A%84%E6%9C%80%E5%A4%A7%E9%9A%9C%E7%A2%8D-%E6%8B%96%E5%BB%B6%E6%88%98%E6%9C%AF">
+          [World] 拜登改革路上的最大障碍——拖延战术
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-04-26</time>
+        <a href="https://nodebe4.github.io/waimei/2021-04-26/Chinese-%E5%A5%A5%E6%96%AF%E5%8D%A1%E6%96%B0%E7%A7%91%E6%9C%80%E4%BD%B3%E5%AF%BC%E6%BC%94%E8%B5%B5%E5%A9%B7-%E4%BB%8E%E6%9B%BE%E7%BB%8F%E7%9A%84-%E4%B8%AD%E5%9B%BD%E9%AA%84%E5%82%B2-%E5%88%B0%E5%A6%82%E4%BB%8A%E5%85%A8%E7%BD%91%E5%88%A0%E5%B8%96">
+          [Chinese] 奥斯卡新科最佳导演赵婷：从曾经的“中国骄傲”，到如今全网删帖
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-04-24</time>
+        <a href="https://nodebe4.github.io/waimei/2021-04-24/Science-%E7%96%AB%E8%8B%97%E6%8A%A4%E7%85%A7%E4%BB%8A%E6%98%94-%E4%BB%8E%E7%89%9B%E7%97%98%E7%96%A4%E5%88%B0%E6%89%8B%E6%9C%BA%E4%BA%8C%E7%BB%B4%E7%A0%81">
+          [Science] 疫苗护照今昔：从牛痘疤到手机二维码
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-04-22</time>
+        <a href="https://nodebe4.github.io/waimei/2021-04-22/Chinese-%E6%99%B6%E7%89%87%E4%B8%8E%E5%87%A4%E6%A2%A8-2021%E5%B9%B4%E8%AE%A9%E5%8F%B0%E6%B9%BE%E6%83%8A%E9%86%92%E7%9A%84%E4%B8%A4%E5%9C%BA%E5%A4%A7%E6%88%8F">
+          [Chinese] 晶片与凤梨：2021年让台湾惊醒的两场大戏
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-04-24/Science-%E7%96%AB%E8%8B%97%E6%8A%A4%E7%85%A7%E4%BB%8A%E6%98%94-%E4%BB%8E%E7%89%9B%E7%97%98%E7%96%A4%E5%88%B0%E6%89%8B%E6%9C%BA%E4%BA%8C%E7%BB%B4%E7%A0%81">
+            前一篇：[Science] 疫苗护照今昔：从牛痘疤到手机二维码
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-04-26/Chinese-%E5%A5%A5%E6%96%AF%E5%8D%A1%E6%96%B0%E7%A7%91%E6%9C%80%E4%BD%B3%E5%AF%BC%E6%BC%94%E8%B5%B5%E5%A9%B7-%E4%BB%8E%E6%9B%BE%E7%BB%8F%E7%9A%84-%E4%B8%AD%E5%9B%BD%E9%AA%84%E5%82%B2-%E5%88%B0%E5%A6%82%E4%BB%8A%E5%85%A8%E7%BD%91%E5%88%A0%E5%B8%96">
+            后一篇：[Chinese] 奥斯卡新科最佳导演赵婷：从曾经的“中国骄傲”，到如今全网删帖
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-04-24/Science-%E7%96%AB%E8%8B%97%E6%8A%A4%E7%85%A7%E4%BB%8A%E6%98%94-%E4%BB%8E%E7%89%9B%E7%97%98%E7%96%A4%E5%88%B0%E6%89%8B%E6%9C%BA%E4%BA%8C%E7%BB%B4%E7%A0%81'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-04-26/Chinese-%E5%A5%A5%E6%96%AF%E5%8D%A1%E6%96%B0%E7%A7%91%E6%9C%80%E4%BD%B3%E5%AF%BC%E6%BC%94%E8%B5%B5%E5%A9%B7-%E4%BB%8E%E6%9B%BE%E7%BB%8F%E7%9A%84-%E4%B8%AD%E5%9B%BD%E9%AA%84%E5%82%B2-%E5%88%B0%E5%A6%82%E4%BB%8A%E5%85%A8%E7%BD%91%E5%88%A0%E5%B8%96'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-04-26/Chinese-%E5%A5%A5%E6%96%AF%E5%8D%A1%E6%96%B0%E7%A7%91%E6%9C%80%E4%BD%B3%E5%AF%BC%E6%BC%94%E8%B5%B5%E5%A9%B7-%E4%BB%8E%E6%9B%BE%E7%BB%8F%E7%9A%84-%E4%B8%AD%E5%9B%BD%E9%AA%84%E5%82%B2-%E5%88%B0%E5%A6%82%E4%BB%8A%E5%85%A8%E7%BD%91%E5%88%A0%E5%B8%96'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-04-24/Science-%E7%96%AB%E8%8B%97%E6%8A%A4%E7%85%A7%E4%BB%8A%E6%98%94-%E4%BB%8E%E7%89%9B%E7%97%98%E7%96%A4%E5%88%B0%E6%89%8B%E6%9C%BA%E4%BA%8C%E7%BB%B4%E7%A0%81'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-04-24/Science-%E7%96%AB%E8%8B%97%E6%8A%A4%E7%85%A7%E4%BB%8A%E6%98%94-%E4%BB%8E%E7%89%9B%E7%97%98%E7%96%A4%E5%88%B0%E6%89%8B%E6%9C%BA%E4%BA%8C%E7%BB%B4%E7%A0%81">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-04-26/Chinese-%E5%A5%A5%E6%96%AF%E5%8D%A1%E6%96%B0%E7%A7%91%E6%9C%80%E4%BD%B3%E5%AF%BC%E6%BC%94%E8%B5%B5%E5%A9%B7-%E4%BB%8E%E6%9B%BE%E7%BB%8F%E7%9A%84-%E4%B8%AD%E5%9B%BD%E9%AA%84%E5%82%B2-%E5%88%B0%E5%A6%82%E4%BB%8A%E5%85%A8%E7%BD%91%E5%88%A0%E5%B8%96">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<BBC>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-04-26/Chinese-%E5%A5%A5%E6%96%AF%E5%8D%A1%E6%96%B0%E7%A7%91%E6%9C%80%E4%BD%B3%E5%AF%BC%E6%BC%94%E8%B5%B5%E5%A9%B7-%E4%BB%8E%E6%9B%BE%E7%BB%8F%E7%9A%84-%E4%B8%AD%E5%9B%BD%E9%AA%84%E5%82%B2-%E5%88%B0%E5%A6%82%E4%BB%8A%E5%85%A8%E7%BD%91%E5%88%A0%E5%B8%96">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<BBC>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-04-24/Science-%E7%96%AB%E8%8B%97%E6%8A%A4%E7%85%A7%E4%BB%8A%E6%98%94-%E4%BB%8E%E7%89%9B%E7%97%98%E7%96%A4%E5%88%B0%E6%89%8B%E6%9C%BA%E4%BA%8C%E7%BB%B4%E7%A0%81">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

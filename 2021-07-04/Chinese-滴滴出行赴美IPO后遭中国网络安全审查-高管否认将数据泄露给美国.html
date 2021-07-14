@@ -1,0 +1,2076 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>[Chinese] 滴滴出行赴美IPO后遭中国网络安全审查，高管否认将数据泄露给美国 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+[Chinese] 滴滴出行赴美IPO后遭中国网络安全审查，高管否认将数据泄露给美国
+——
+" />
+    <meta property="og:description" content="
+[Chinese] 滴滴出行赴美IPO后遭中国网络安全审查，高管否认将数据泄露给美国
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="[Chinese] 滴滴出行赴美IPO后遭中国网络安全审查，高管否认将数据泄露给美国" />
+    <meta property="twitter:title" content="[Chinese] 滴滴出行赴美IPO后遭中国网络安全审查，高管否认将数据泄露给美国" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fchinese-news-57711979&t=%5BChinese%5D+%E6%BB%B4%E6%BB%B4%E5%87%BA%E8%A1%8C%E8%B5%B4%E7%BE%8EIPO%E5%90%8E%E9%81%AD%E4%B8%AD%E5%9B%BD%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%AE%A1%E6%9F%A5%EF%BC%8C%E9%AB%98%E7%AE%A1%E5%90%A6%E8%AE%A4%E5%B0%86%E6%95%B0%E6%8D%AE%E6%B3%84%E9%9C%B2%E7%BB%99%E7%BE%8E%E5%9B%BD" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fchinese-news-57711979&t=%5BChinese%5D+%E6%BB%B4%E6%BB%B4%E5%87%BA%E8%A1%8C%E8%B5%B4%E7%BE%8EIPO%E5%90%8E%E9%81%AD%E4%B8%AD%E5%9B%BD%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%AE%A1%E6%9F%A5%EF%BC%8C%E9%AB%98%E7%AE%A1%E5%90%A6%E8%AE%A4%E5%B0%86%E6%95%B0%E6%8D%AE%E6%B3%84%E9%9C%B2%E7%BB%99%E7%BE%8E%E5%9B%BD&d=2021-07-04&e=
+[Chinese] 滴滴出行赴美IPO后遭中国网络安全审查，高管否认将数据泄露给美国
+——
+
+
+  
+    滴滴出行赴美IPO后遭中国网络安全审查，高管否认将数据泄露给美国
+  
+  
+    44 分钟前
+  
+  
+    
+      
+        
+          
+            图像来源，Getty Images
+          
+        
+        
+          
+图像加注文字，            滴滴出行公司标志。
+          
+        
+      
+    
+  
+  
+    中国国家互联网信息监管机构近日启动对中国网上租车平台“滴滴出行”的网络安全审查，并决定在审查期间禁止滴滴注册新用户。
+  
+  
+    周六（7月3日），滴滴出行的全球公司副总裁李敏表示，该公司将中国所有用户和道路数据存储..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fchinese-news-57711979" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=http://www.bbc.com/zhongwen/simp/chinese-news-57711979" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=http://www.bbc.com/zhongwen/simp/chinese-news-57711979&text=[Chinese] 滴滴出行赴美IPO后遭中国网络安全审查，高管否认将数据泄露给美国&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=http://www.bbc.com/zhongwen/simp/chinese-news-57711979&title=[Chinese] 滴滴出行赴美IPO后遭中国网络安全审查，高管否认将数据泄露给美国" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://www.bbc.com/zhongwen/simp/chinese-news-57711979&title=[Chinese] 滴滴出行赴美IPO后遭中国网络安全审查，高管否认将数据泄露给美国" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=[Chinese] 滴滴出行赴美IPO后遭中国网络安全审查，高管否认将数据泄露给美国&body=
+[Chinese] 滴滴出行赴美IPO后遭中国网络安全审查，高管否认将数据泄露给美国
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=http://www.bbc.com/zhongwen/simp/chinese-news-57711979" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=http://www.bbc.com/zhongwen/simp/chinese-news-57711979&title=[Chinese] 滴滴出行赴美IPO后遭中国网络安全审查，高管否认将数据泄露给美国&caption=
+[Chinese] 滴滴出行赴美IPO后遭中国网络安全审查，高管否认将数据泄露给美国
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=[Chinese] 滴滴出行赴美IPO后遭中国网络安全审查，高管否认将数据泄露给美国&url=http://www.bbc.com/zhongwen/simp/chinese-news-57711979" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>[Chinese] 滴滴出行赴美IPO后遭中国网络安全审查，高管否认将数据泄露给美国</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-07-04
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#BBC ">
+          BBC
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="http://www.bbc.com/zhongwen/simp/chinese-news-57711979"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="BBC的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#BBC 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fchinese-news-57711979&t=%5BChinese%5D+%E6%BB%B4%E6%BB%B4%E5%87%BA%E8%A1%8C%E8%B5%B4%E7%BE%8EIPO%E5%90%8E%E9%81%AD%E4%B8%AD%E5%9B%BD%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%AE%A1%E6%9F%A5%EF%BC%8C%E9%AB%98%E7%AE%A1%E5%90%A6%E8%AE%A4%E5%B0%86%E6%95%B0%E6%8D%AE%E6%B3%84%E9%9C%B2%E7%BB%99%E7%BE%8E%E5%9B%BD&d=2021-07-04&e=
+[Chinese] 滴滴出行赴美IPO后遭中国网络安全审查，高管否认将数据泄露给美国
+——
+
+
+  
+    滴滴出行赴美IPO后遭中国网络安全审查，高管否认将数据泄露给美国
+  
+  
+    44 分钟前
+  
+  
+    
+      
+        
+          
+            图像来源，Getty Images
+          
+        
+        
+          
+图像加注文字，            滴滴出行公司标志。
+          
+        
+      
+    
+  
+  
+    中国国家互联网信息监管机构近日启动对中国网上租车平台“滴滴出行”的网络安全审查，并决定在审查期间禁止滴滴注册新用户。
+  
+  
+    周六（7月3日），滴滴出行的全球公司副总裁李敏表示，该公司将中国所有用户和道路数据存储..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fchinese-news-57711979" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1625384023000-->
+<p><a href="http://www.bbc.com/zhongwen/simp/chinese-news-57711979">[Chinese] 滴滴出行赴美IPO后遭中国网络安全审查，高管否认将数据泄露给美国</a>
+——</p>
+
+<div>
+  <div dir="ltr" class="bbc-1151pbn e57qer20">
+    <h1 id="content" tabindex="-1" class="bbc-6yjyco e1yj3cbb0">滴滴出行赴美IPO后遭中国网络安全审查，高管否认将数据泄露给美国</h1>
+  </div>
+  <div dir="ltr" class="e1j2237y6 bbc-q4ibpr e57qer20">
+    <time datetime="2021-07-04" class="bbc-529aew e4zesg50">44 分钟前</time>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-1k5hvrj e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/49EB/production/_119232981_whatsubject.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/49EB/production/_119232981_whatsubject.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/49EB/production/_119232981_whatsubject.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/49EB/production/_119232981_whatsubject.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/49EB/production/_119232981_whatsubject.jpg 800w" alt="滴滴出行公司标志。" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/49EB/production/_119232981_whatsubject.jpg" width="976" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />            <p role="text" class="bbc-1s1cxbv etq3yw90"><span class="bbc-1gnhmg2 e1yt7oin0">图像来源，</span><span lang="en-GB">Getty Images</span></p>
+          </div>
+        </div>
+        <div dir="ltr" class="bbc-3edg7g e57qer20">
+          <figcaption dir="ltr" class="bbc-l9ltpr eede9f50">
+<span class="bbc-1gnhmg2 e1yt7oin0">图像加注文字，</span>            <p>滴滴出行公司标志。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70"><strong>中国国家互联网信息监管机构近日启动对中国网上租车平台“滴滴出行”的网络安全审查，并决定在审查期间禁止滴滴注册新用户。</strong></p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">周六（7月3日），滴滴出行的全球公司副总裁李敏表示，该公司将中国所有用户和道路数据存储在其国内的服务器上，“绝对不可能”将数据泄露给美国。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">滴滴公司6月30日刚在美国首次公开募股（IPO）。有社交媒体用户在微博上质疑该公司转移数据。李敏对此回应称，该公司将起诉这些用户。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <h2 id="中国国家网信办启动调查" tabindex="-1" class="bbc-6w9yzd e14hemmw0">中国国家网信办启动调查</h2>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">上周五（7月2日），中国国家互联网信息办公室宣布，已经启动对滴滴出行的审查，以保护国家安全和公众利益。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">该机构下设的<a href="http://www.cac.gov.cn/2021-07/02/c_1626811521011934.htm" aria-label="网络安全审查办公室的公告称, 外部链接" class="bbc-n8oauk e1cs6q200">网络安全审查办公室的公告称</a>，“为防范国家数据安全风险，维护国家安全，保障公共利益，依据《中华人民共和国国家安全法》《中华人民共和国网络安全法》，网络安全审查办公室按照《网络安全审查办法》，对‘滴滴出行’实施网络安全审查。”</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">公告还称，“为配合网络安全审查工作，防范风险扩大，审查期间‘滴滴出行’停止新用户注册。”</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">这些举动使总部位于北京的滴滴股价周五下跌5%。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">7月3日，<a href="https://weibo.com/1642084983/Kn1pcnFWX" aria-label="李敏在微博上发帖称, 外部链接" class="bbc-n8oauk e1cs6q200">李敏在微博上发帖称</a>，“和众多在海外上市的中国企业一样，滴滴国内用户的数据都存放在国内服务器，绝无可能把数据交给美国。另外，相关恶意造谣者虽然已经主动删帖，但我们坚决起诉维权”。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">除了用户数据,　网友还质疑道路数是否已递交。李敏在最新回应中表示，他所称的数据“也包括道路数据”，并呼吁网友“不要恶意揣测”。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">在李敏的帖子发布之前，Aequitas研究总监苏米特·辛格（Sumeet Singh）周六告诉路透社，“我不确定最终影响会是什么，但监管机构的打击一直是持续担忧，甚至在上市之前，滴滴就已经被监管机构问询了两次。”</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">“这次阻止公司吸收新用户只要不持续太长时间，就不会对公司造成太大伤害，因为公司已经拥有超过80%的市场份额。”</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">根据路透社，该网络机构没有说明审查将持续多长时间，也没有提供其他细节。</p>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-1k5hvrj e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/980B/production/_119232983_whatsubject.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/980B/production/_119232983_whatsubject.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/980B/production/_119232983_whatsubject.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/980B/production/_119232983_whatsubject.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/980B/production/_119232983_whatsubject.jpg 800w" alt="一名司机在驾驶中使用滴滴出行。" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/980B/production/_119232983_whatsubject.jpg" width="976" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="bbc-3edg7g e57qer20">
+          <figcaption dir="ltr" class="bbc-l9ltpr eede9f50">
+<span class="bbc-1gnhmg2 e1yt7oin0">图像加注文字，</span>            <p>一名司机在驾驶中使用滴滴出行。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <h2 id="中美关系紧张时寻求在美上市" tabindex="-1" class="bbc-6w9yzd e14hemmw0">中美关系紧张时寻求在美上市</h2>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">就在审查启动前两天，滴滴公司在纽约证券交易所上市交易。融资44亿美元，上市首日，市值为684.9亿美元。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">与此同时，该公司股价收盘仅比发行价14美元高1%，此前该公司股价从早些时候的强劲上涨中有所回落。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">这是自阿里巴巴2014年在美国上市以来，中国企业在美上市规模最大的一次。也是最新一家利用繁荣的美国股市获利的中国公司。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">虽然华盛顿和北京之间近年来关系紧张，美国监管机构也对一些中国公司的财务报告表示担忧，但在美国资本市场的巨大诱惑下，寻求在美上市的中国企业数量不断攀升。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">金融市场数据提供商Refinitiv的数据显示，今年上半年，约有29家中国企业通过IPO筹资76亿美元。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">据路透社3月份的一篇报道，滴滴最初希望估值高达1000亿美元。据称，在潜在投资者对该公司扩张计划的速度和盈利能力表示担忧后，预期已经下调。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">与大多数叫车平台一样，滴滴一直处于亏损状态，直到今年前三个月报告盈利3000万美元。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">2020年，该公司报告称，由于业务受到大流行的打击，该公司每年亏损16亿美元。</p>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-1k5hvrj e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/1209C/production/_117948837_hi047533512.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/1209C/production/_117948837_hi047533512.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/1209C/production/_117948837_hi047533512.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/1209C/production/_117948837_hi047533512.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/1209C/production/_117948837_hi047533512.jpg 800w" alt="阿里巴巴" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/1209C/production/_117948837_hi047533512.jpg" width="976" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="bbc-3edg7g e57qer20">
+          <figcaption dir="ltr" class="bbc-l9ltpr eede9f50">
+<span class="bbc-1gnhmg2 e1yt7oin0">图像加注文字，</span>            <p>日本软银是滴滴最大的单一投资者，持有超过20%的股份。它还得到了中国科技巨头阿里巴巴和腾讯的支持。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <h2 id="滴滴出行与中国对科技巨头的监管" tabindex="-1" class="bbc-6w9yzd e14hemmw0">滴滴出行与中国对科技巨头的监管</h2>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">滴滴在中国及15个国际市场提供服务，收集大量实时移动数据，并将部分数据用于自动驾驶技术和交通分析。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">该公司由程维于2012年创立，已经在中国面临有关安全及运营许可证的监管调查。程维曾表示，他在2012年萌生推出一个叫车平台的想法，当时他在北京一个寒冷夜晚很难打到出租车。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">程维拥有该公司6.5%的股份，同时由于科技公司普遍采用的双重股权结构，他拥有35.5%的投票权。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">日本软银是滴滴最大的单一投资者，持有超过20%的股份。它还得到了中国科技巨头阿里巴巴和腾讯的支持。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">2016年滴滴收购优步中国后，优步还拥有该公司12%的股份。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">今年6月就有报道称，滴滴正在接受中国市场监管机构的调查。</p>
+  </div>
+  <div dir="ltr" class="e46rrwz0 bbc-1bh6w8m e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div data-e2e="media-player" class="bbc-rl27ak e15ilq0t1">
+        <div class="bbc-1b4920d e2pb29i2">
+<img srcset="https://ichef.bbci.co.uk/images/ic/1024x576/p06456wk.jpg 240w, https://ichef.bbci.co.uk/images/ic/1024x576/p06456wk.jpg 320w, https://ichef.bbci.co.uk/images/ic/1024x576/p06456wk.jpg 480w, https://ichef.bbci.co.uk/images/ic/1024x576/p06456wk.jpg 624w, https://ichef.bbci.co.uk/images/ic/1024x576/p06456wk.jpg 800w" alt="" src="https://ichef.bbci.co.uk/images/ic/1024x576/p06456wk.jpg" aria-hidden="true" class="bbc-yfiktt e1enwo3v0" referrerpolicy="no-referrer" />          <div class="bbc-nrvtsn e2pb29i1">
+<strong class="bbc-1k5stce e2pb29i0">你的器材不支持播放多媒体材料</strong>
+          </div>
+        </div>
+      </div>
+      <figcaption dir="ltr" class="bbc-l9ltpr eede9f50">
+<span class="bbc-1gnhmg2 e1yt7oin0">视频加注文字，</span>        <p>滴滴出行打进国际市场的大计</p>
+      </figcaption>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">北京正逐步控制中国的科技巨头，包括阿里巴巴和腾讯。据路透社报道，中国国家市场监督管理总局正在调查阿里巴巴，是否存在不公平地排挤规模较小的竞争对手的行为。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">滴滴周五表示，计划对网络安全风险进行全面检查，并将全力配合相关政府部门。该公司还表示，除了暂停在中国的新用户注册外，该公司运营正常。</p>
+  </div>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#BBC 的其它文章</h4>
+    
+      <li>
+        <time>2021-07-04</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-04/World-%E9%AB%98%E6%B8%A9%E5%A4%A9%E6%B0%94-%E7%83%AD%E6%B5%AA%E5%A6%82%E4%BD%95%E5%BD%B1%E5%93%8D%E6%88%91%E4%BB%AC%E7%9A%84%E5%A4%A7%E8%84%91%E5%92%8C%E8%A1%8C%E4%B8%BA">
+          [World] 高温天气：热浪如何影响我们的大脑和行为？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-04</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-04/World-%E7%BE%8E%E5%9B%BD%E5%8F%B0%E6%B9%BE%E9%87%8D%E5%90%AF%E8%B4%B8%E6%98%93%E6%9A%A8%E6%8A%95%E8%B5%84%E6%9E%B6%E6%9E%84%E5%8D%8F%E5%AE%9ATIFA%E5%AF%B9%E8%AF%9D%E7%9A%84%E4%BA%94%E5%A4%A7%E7%9C%8B%E7%82%B9">
+          [World] 美国台湾重启贸易暨投资架构协定TIFA对话的五大看点
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-03</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-03/Uk-%E5%B8%AE%E5%8A%A9%E6%97%A0%E5%AE%B6%E5%8F%AF%E5%BD%92%E7%8C%AB%E5%92%AA%E7%9A%84%E4%BC%A6%E6%95%A6%E5%92%96%E5%95%A1%E5%8E%85">
+          [Uk] 帮助无家可归猫咪的伦敦咖啡厅
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-03</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-03/World-%E5%86%B7%E6%88%98%E8%B0%8D%E6%B5%B7%E6%8F%AD%E7%A7%98-%E6%8D%B7%E5%85%8B%E5%8F%8C%E9%9D%A2%E8%B0%8D%E8%87%AA%E5%91%8A%E5%A5%8B%E5%8B%87-%E5%A5%B3%E5%84%BF%E5%9D%90%E4%BA%AB%E5%A4%A7%E7%AC%94%E9%81%97%E4%BA%A7">
+          [World] 冷战谍海揭秘：“捷克双面谍自告奋勇 女儿坐享大笔遗产”
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-04/%E4%B8%8A%E6%B5%B7%E5%8A%9E-%E5%9F%BA%E7%9D%A3%E6%95%99%E7%88%B1%E5%85%9A-%E5%B1%95-%E8%A2%AB%E6%8C%87%E6%8E%A9%E7%9E%92%E4%BA%8B%E5%AE%9E%E7%9C%9F%E7%9B%B8">
+            前一篇：上海办“基督教爱党”展 被指掩瞒事实真相
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-04/%E5%AE%89%E5%BE%BD-%E6%B1%9F%E8%8B%8F%E7%AD%8911%E7%9C%81%E6%8C%81%E7%BB%AD%E5%A4%A7%E6%9A%B4%E9%9B%A8">
+            后一篇：安徽、江苏等11省持续大暴雨
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-07-04/%E4%B8%8A%E6%B5%B7%E5%8A%9E-%E5%9F%BA%E7%9D%A3%E6%95%99%E7%88%B1%E5%85%9A-%E5%B1%95-%E8%A2%AB%E6%8C%87%E6%8E%A9%E7%9E%92%E4%BA%8B%E5%AE%9E%E7%9C%9F%E7%9B%B8'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-07-04/%E5%AE%89%E5%BE%BD-%E6%B1%9F%E8%8B%8F%E7%AD%8911%E7%9C%81%E6%8C%81%E7%BB%AD%E5%A4%A7%E6%9A%B4%E9%9B%A8'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-07-04/World-%E7%BE%8E%E5%9B%BD%E5%8F%B0%E6%B9%BE%E9%87%8D%E5%90%AF%E8%B4%B8%E6%98%93%E6%9A%A8%E6%8A%95%E8%B5%84%E6%9E%B6%E6%9E%84%E5%8D%8F%E5%AE%9ATIFA%E5%AF%B9%E8%AF%9D%E7%9A%84%E4%BA%94%E5%A4%A7%E7%9C%8B%E7%82%B9'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-07-03/Uk-%E5%B8%AE%E5%8A%A9%E6%97%A0%E5%AE%B6%E5%8F%AF%E5%BD%92%E7%8C%AB%E5%92%AA%E7%9A%84%E4%BC%A6%E6%95%A6%E5%92%96%E5%95%A1%E5%8E%85'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-07-04/%E4%B8%8A%E6%B5%B7%E5%8A%9E-%E5%9F%BA%E7%9D%A3%E6%95%99%E7%88%B1%E5%85%9A-%E5%B1%95-%E8%A2%AB%E6%8C%87%E6%8E%A9%E7%9E%92%E4%BA%8B%E5%AE%9E%E7%9C%9F%E7%9B%B8">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-07-04/%E5%AE%89%E5%BE%BD-%E6%B1%9F%E8%8B%8F%E7%AD%8911%E7%9C%81%E6%8C%81%E7%BB%AD%E5%A4%A7%E6%9A%B4%E9%9B%A8">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<BBC>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-07-04/World-%E7%BE%8E%E5%9B%BD%E5%8F%B0%E6%B9%BE%E9%87%8D%E5%90%AF%E8%B4%B8%E6%98%93%E6%9A%A8%E6%8A%95%E8%B5%84%E6%9E%B6%E6%9E%84%E5%8D%8F%E5%AE%9ATIFA%E5%AF%B9%E8%AF%9D%E7%9A%84%E4%BA%94%E5%A4%A7%E7%9C%8B%E7%82%B9">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<BBC>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-07-03/Uk-%E5%B8%AE%E5%8A%A9%E6%97%A0%E5%AE%B6%E5%8F%AF%E5%BD%92%E7%8C%AB%E5%92%AA%E7%9A%84%E4%BC%A6%E6%95%A6%E5%92%96%E5%95%A1%E5%8E%85">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

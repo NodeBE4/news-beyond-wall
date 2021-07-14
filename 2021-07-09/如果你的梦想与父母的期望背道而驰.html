@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>如果你的梦想与父母的期望背道而驰 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+如果你的梦想与父母的期望背道而驰
+——
+" />
+    <meta property="og:description" content="
+如果你的梦想与父母的期望背道而驰
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="如果你的梦想与父母的期望背道而驰" />
+    <meta property="twitter:title" content="如果你的梦想与父母的期望背道而驰" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fcn.nytimes.com%2Fopinion%2F20210709%2Fparents-expectations-writing-art%2F&t=%E5%A6%82%E6%9E%9C%E4%BD%A0%E7%9A%84%E6%A2%A6%E6%83%B3%E4%B8%8E%E7%88%B6%E6%AF%8D%E7%9A%84%E6%9C%9F%E6%9C%9B%E8%83%8C%E9%81%93%E8%80%8C%E9%A9%B0" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fopinion%2F20210709%2Fparents-expectations-writing-art%2F&t=%E5%A6%82%E6%9E%9C%E4%BD%A0%E7%9A%84%E6%A2%A6%E6%83%B3%E4%B8%8E%E7%88%B6%E6%AF%8D%E7%9A%84%E6%9C%9F%E6%9C%9B%E8%83%8C%E9%81%93%E8%80%8C%E9%A9%B0&d=2021-07-09&e=
+如果你的梦想与父母的期望背道而驰
+——
+
+
+  
+VIET THANH NGUYEN
+  
+  2021年7月9日
+  
+    
+María Medem
+    
+  
+  
+    在大学里讲课时，我被问到的最难回答的问题就是：“我想追逐我的梦想，但我的父母想要我做别的。我该怎么办？”
+    我感同身受。我年轻的时候，成为一名作家并学习文学会让我感到快乐。而能让我父母开心的是我要像哥哥一样成为一名医生，他去了哈佛和斯坦福。我该如何回家告诉在杂货铺一周工作七天的难民父母，我想读简·奥斯汀(Jane Austen)和浪漫主义诗人的书并主修英语，一种他们在家中不会使用的语言？
+    最终，我还是告诉了父母我要主修英语，但一开始我还没准备好告诉他们我想成为一名作家。那有点太遥远了。我的正职工作是做一名教授，我梦想的工作是做一名作家，作家的工作占据了我的夜晚、周末和夏天。这很辛苦，但..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fopinion%2F20210709%2Fparents-expectations-writing-art%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://cn.nytimes.com/opinion/20210709/parents-expectations-writing-art/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://cn.nytimes.com/opinion/20210709/parents-expectations-writing-art/&text=如果你的梦想与父母的期望背道而驰&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://cn.nytimes.com/opinion/20210709/parents-expectations-writing-art/&title=如果你的梦想与父母的期望背道而驰" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://cn.nytimes.com/opinion/20210709/parents-expectations-writing-art/&title=如果你的梦想与父母的期望背道而驰" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=如果你的梦想与父母的期望背道而驰&body=
+如果你的梦想与父母的期望背道而驰
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://cn.nytimes.com/opinion/20210709/parents-expectations-writing-art/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://cn.nytimes.com/opinion/20210709/parents-expectations-writing-art/&title=如果你的梦想与父母的期望背道而驰&caption=
+如果你的梦想与父母的期望背道而驰
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=如果你的梦想与父母的期望背道而驰&url=https://cn.nytimes.com/opinion/20210709/parents-expectations-writing-art/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>如果你的梦想与父母的期望背道而驰</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-07-09
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#纽约时报 ">
+          纽约时报
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://cn.nytimes.com/opinion/20210709/parents-expectations-writing-art/"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="纽约时报的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#纽约时报 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fopinion%2F20210709%2Fparents-expectations-writing-art%2F&t=%E5%A6%82%E6%9E%9C%E4%BD%A0%E7%9A%84%E6%A2%A6%E6%83%B3%E4%B8%8E%E7%88%B6%E6%AF%8D%E7%9A%84%E6%9C%9F%E6%9C%9B%E8%83%8C%E9%81%93%E8%80%8C%E9%A9%B0&d=2021-07-09&e=
+如果你的梦想与父母的期望背道而驰
+——
+
+
+  
+VIET THANH NGUYEN
+  
+  2021年7月9日
+  
+    
+María Medem
+    
+  
+  
+    在大学里讲课时，我被问到的最难回答的问题就是：“我想追逐我的梦想，但我的父母想要我做别的。我该怎么办？”
+    我感同身受。我年轻的时候，成为一名作家并学习文学会让我感到快乐。而能让我父母开心的是我要像哥哥一样成为一名医生，他去了哈佛和斯坦福。我该如何回家告诉在杂货铺一周工作七天的难民父母，我想读简·奥斯汀(Jane Austen)和浪漫主义诗人的书并主修英语，一种他们在家中不会使用的语言？
+    最终，我还是告诉了父母我要主修英语，但一开始我还没准备好告诉他们我想成为一名作家。那有点太遥远了。我的正职工作是做一名教授，我梦想的工作是做一名作家，作家的工作占据了我的夜晚、周末和夏天。这很辛苦，但..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fopinion%2F20210709%2Fparents-expectations-writing-art%2F" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1625827022000-->
+<p><a href="https://cn.nytimes.com/opinion/20210709/parents-expectations-writing-art/">如果你的梦想与父母的期望背道而驰</a>
+——</p>
+
+<div>
+  <address>
+VIET THANH NGUYEN
+  </address>
+  <time pudate="2021-07-09 05:07:15" datetime="2021-07-09 05:07:15">2021年7月9日</time>
+  <figure class="article-span-photo">
+<img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/26/opinion/sunday/26Nguyen_2/26Nguyen_2-master1050.jpg" width="1050" height="788" />    <figcaption>
+<cite>María Medem</cite>
+    </figcaption>
+  </figure>
+  <section class="article-body">
+    <p>在大学里讲课时，我被问到的最难回答的问题就是：“我想追逐我的梦想，但我的父母想要我做别的。我该怎么办？”</p>
+    <p>我感同身受。我年轻的时候，成为一名作家并学习文学会让我感到快乐。而能让我父母开心的是我要像哥哥一样成为一名医生，他去了哈佛和斯坦福。我该如何回家告诉在杂货铺一周工作七天的难民父母，我想读简·奥斯汀(Jane Austen)和浪漫主义诗人的书并主修英语，一种他们在家中不会使用的语言？</p>
+    <p>最终，我还是告诉了父母我要主修英语，但一开始我还没准备好告诉他们我想成为一名作家。那有点太遥远了。我的正职工作是做一名教授，我梦想的工作是做一名作家，作家的工作占据了我的夜晚、周末和夏天。这很辛苦，但我父母为我们做出的牺牲也很辛苦。</p>
+    <p>我没想到我的父母会读我写的书。他们接受我成为教授的选择，对我来说已经足够。然后有一天，我向他们展示了他们没想到的东西：一本小说。惊不惊喜！</p>
+    <p>*</p>
+    <p>当我们的父母对幸福的定义使我们的幸福变得遥不可及时该怎么办？在大学校园，问我这个问题的年轻人通常是像我一样的亚裔美国人，但是当<a rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/story.php?story_fbid=10108992807683145&amp;id=3418151">我在Facebook上提出这个问题</a>时，各种不同背景的人——其中许多是成功且富有创造力的人——写下了他们的经历和建议作为回答。</p>
+    <p>没有某种解决方案适用于所有情况。境遇、资源和机会千差万别，父母试图引导孩子走向或远离特定职业的动机也各不相同。</p>
+    <p>除了关心孩子的生计之外，父母可能在试图保护他们免受失败的痛苦。如果是这种情况，他们是对的——失败（和贫困）总是一种风险。我们中的许多人相信追求梦想会带来幸福。但也许不会。我花了20多年的努力才成为一名作家，但也有可能，经过这20年的努力我发现我并不是个作家。这不就是人生彩票的一部分吗？</p>
+    <p>一旦我们决定追求我们的爱好，接下来怎么做最好？以下是从我的朋友和熟人那里收集到的一些策略：</p>
+    <p><strong>放手去做吧。</strong></p>
+    <p><a rel="noopener noreferrer" target="_blank" href="https://yukoart.com/">清水裕子</a>(Yuko Shimizu)的父母想要她过墨守成规的生活，所以她去了东京的大学读广告学。然后在33岁时，她辞去了公司公关部门的工作，离开了她的祖国日本，移居美国成为一名艺术家。她这样解释她的决定：“你的父母最终会去世，你必须为自己而活。”</p>
+    <p><strong>你的父母容忍你的选择可能就足够了。</strong></p>
+    <p><a rel="noopener noreferrer" target="_blank" href="https://www.aeramirez.com/">阿德里亚娜·拉米雷斯</a>(Adriana Ramírez)告诉我，她的父母对她选择的诗人生活“仍然不接受，而且永远不会接受”。但“因为他们爱我，所以他们就容忍我的选择”。</p>
+    <p><strong>没必要太诚实。</strong></p>
+    <p>作家<a rel="noopener noreferrer" target="_blank" href="https://ziahaiderrahman.com/">齐亚·海德尔·拉赫曼</a>(Zia Haider Rahman)建议的策略则是：“说谎。”</p>
+    <p>有时，这是避免毫无意义的对抗的唯一方法。我经常对父母撒谎，有的是真骗，有的只是故意不说。例如：我父亲是一个虔诚的天主教徒，每天都去教堂，而我是一个无神论者，但我回家探望他时，我带他去教堂，对我的信仰只字不提。（我们的父母可能也对我们撒了谎。）</p>
+    <p><strong>上个双保险。</strong></p>
+    <p>追求你的梦想，但准备一个备用计划——例如双专业（一个为了你的父母，一个为了你自己）。这通常为创造性的生活做了良好的准备。这就是我所做的，在日常工作中追求学术，但希望有一天可以自称作家。</p>
+    <p><strong>要有耐心。</strong></p>
+    <p>虽然年轻人通常希望立即得到答案，但获得父母接纳的道路可能很长。我们可能不得不像<a rel="noopener noreferrer" target="_blank" href="http://www.matthuynh.com/">马迪·黄</a>(Matty Huynh，音)那样逐渐消磨父母的期待。“我没有宣称我要做艺术家，但我创造了艺术，”他说。当他离开法学院时，他的父母已经习惯绕着他们车库里的画框和书箱走来走去。“继续创作艺术已经变成了日常，带来了不便，”他说，但最终它变成了“必然”。</p>
+    <p><strong>尊重他们，同时坚持你的独立性。</strong></p>
+    <p>父母，尤其是移民父母，常常非常努力地为他们的孩子创造机会。尽管如此，一些父母必须明白，无论他们做出什么牺牲，孩子的人生都不属于他们。尊重是关键，作家<a rel="noopener noreferrer" target="_blank" href="http://kavitadas.com/">卡维塔·达斯</a>(Kavita Das)说：“归根结底是要帮助他们明白，我们不是在浪费他们所有的辛勤工作，而是尊重他们的辛勤工作，因为他们的辛勤使我们能够追求自己的梦想。”</p>
+    <p>马迪·黄建议别把父母的认可看得太重：“说一个人不应该征求同意听起来可能有点强势，但对于那些没有经验并且只对你的宏大梦想感到焦虑的人来说，不期待从他们那里得到祝福是更友善的做法。”</p>
+    <p>*</p>
+    <p>现在我自己也为人父母，我想我会允许我的儿子成为他想成为的任何人，比如作家、艺术家或音乐家。</p>
+    <p>“职业电子游戏玩家呢？”我妻子问。</p>
+    <p>读者们——我犹豫了。我仍然在犹豫。</p>
+    <p>但我知道我将不得不让他走自己的路，并相信如果我们为他做好了适当的准备，他会为自己做出正确的选择。</p>
+    <p>我的父母也接受了我，我希望即使我在追求梦想的道路上失败了，他们也会接受我。毕竟，作为难民，他们自己也承担了巨大的风险——抛下家人，自己做老板，而不是接受他们更有可能从事的工作。这个国家受益于他们的工作和牺牲。</p>
+    <p>医生、律师和工程师也做出了巨大的社会贡献。尽管如此，我们将永远需要我们的诗人和艺术家、我们的老师和讲故事的人、我们的格格不入者和梦想家、逆行者和冒险者。</p>
+  </section>
+  <footer class="author-info">
+    <p>Viet Thanh Nguyen是普利策奖获奖小说《同情者》(The Sympathizer)及其续集《承诺》(The Committed)的作者。他是南加州大学(University of Southern California)英美研究和比较文学的教授。欢迎在Twitter上关注他：<a rel="nofollow" target="_blank" href="https://twitter.com/viet_t_nguyen">@viet_t_nguyen</a>。</p>
+    <p>翻译：明斋</p>
+    <p><a rel="nofollow" target="_blank" href="http://www.nytimes.com/2021/07/08/opinion/culture/parents-expectations-writing-art.html">点击查看本文英文版。</a></p>
+  </footer>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#纽约时报 的其它文章</h4>
+    
+      <li>
+        <time>2021-07-11</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-11/%E7%AE%80%E6%8A%A5-%E4%B8%AD%E5%9B%BD%E5%B0%86%E5%8A%A0%E5%BC%BA%E5%AF%B9%E6%AC%B2%E8%B5%B4%E6%B5%B7%E5%A4%96%E4%B8%8A%E5%B8%82%E4%BC%81%E4%B8%9A%E5%AE%A1%E6%9F%A5-%E7%BB%B4%E7%8F%8D%E9%93%B6%E6%B2%B3%E5%88%9B%E5%A7%8B%E4%BA%BA%E5%B8%83%E5%85%B0%E6%A3%AE%E5%AE%8C%E6%88%90%E5%A4%AA%E7%A9%BA%E6%97%85%E8%A1%8C">
+          简报：中国将加强对欲赴海外上市企业审查；维珍银河创始人布兰森完成太空旅行
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-11</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-11/%E6%96%AF%E8%AF%BA%E4%B9%8B%E5%AD%90-%E6%88%91%E7%88%B6%E4%BA%B2%E5%BD%93%E5%B9%B4%E5%A6%82%E4%BD%95%E6%8A%A5%E9%81%93%E4%B8%AD%E5%9B%BD">
+          斯诺之子：我父亲当年如何报道中国
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-09</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-09/%E6%B8%85%E6%B4%81%E8%80%B3%E6%9C%B5%E6%9C%80%E5%A5%BD%E7%9A%84%E5%8A%9E%E6%B3%95-%E7%94%A8%E8%80%B3%E5%8B%BA">
+          清洁耳朵最好的办法：用耳勺
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-09</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-09/%E8%90%8C-%E5%8C%96%E4%BA%BA%E5%BF%83-%E5%B7%A8%E5%9E%8B3D%E7%8C%AB%E5%92%AA%E4%BA%AE%E7%9B%B8%E6%97%A5%E6%9C%AC%E8%A1%97%E5%A4%B4">
+          “萌”化人心：巨型3D猫咪亮相日本街头
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-09/%E8%A1%9B%E7%A6%8F%E9%83%A8%E8%B3%BC550%E5%8F%B0HFNC%E5%85%A8%E6%95%B8%E5%88%B0%E8%B2%A8-%E9%85%8D%E7%99%BC97%E5%AE%B6%E9%86%AB%E9%99%A2-%E7%8D%A8%E5%AE%B6">
+            前一篇：衛福部購550台HFNC全數到貨 配發97家醫院【獨家】
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-09/%E5%85%AB%E7%82%B9%E5%81%A5%E9%97%BB-%E6%88%91%E5%B8%AE300%E4%BD%8D%E6%95%B4%E5%BD%A2%E5%A4%B1%E8%B4%A5%E7%9A%84%E5%A7%91%E5%A8%98%E7%BB%B4%E6%9D%83">
+            后一篇：八点健闻 | 我帮300位整形失败的姑娘维权
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-07-09/%E8%A1%9B%E7%A6%8F%E9%83%A8%E8%B3%BC550%E5%8F%B0HFNC%E5%85%A8%E6%95%B8%E5%88%B0%E8%B2%A8-%E9%85%8D%E7%99%BC97%E5%AE%B6%E9%86%AB%E9%99%A2-%E7%8D%A8%E5%AE%B6'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-07-09/%E5%85%AB%E7%82%B9%E5%81%A5%E9%97%BB-%E6%88%91%E5%B8%AE300%E4%BD%8D%E6%95%B4%E5%BD%A2%E5%A4%B1%E8%B4%A5%E7%9A%84%E5%A7%91%E5%A8%98%E7%BB%B4%E6%9D%83'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-07-11/%E6%96%AF%E8%AF%BA%E4%B9%8B%E5%AD%90-%E6%88%91%E7%88%B6%E4%BA%B2%E5%BD%93%E5%B9%B4%E5%A6%82%E4%BD%95%E6%8A%A5%E9%81%93%E4%B8%AD%E5%9B%BD'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-07-09/%E6%B8%85%E6%B4%81%E8%80%B3%E6%9C%B5%E6%9C%80%E5%A5%BD%E7%9A%84%E5%8A%9E%E6%B3%95-%E7%94%A8%E8%80%B3%E5%8B%BA'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-07-09/%E8%A1%9B%E7%A6%8F%E9%83%A8%E8%B3%BC550%E5%8F%B0HFNC%E5%85%A8%E6%95%B8%E5%88%B0%E8%B2%A8-%E9%85%8D%E7%99%BC97%E5%AE%B6%E9%86%AB%E9%99%A2-%E7%8D%A8%E5%AE%B6">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-07-09/%E5%85%AB%E7%82%B9%E5%81%A5%E9%97%BB-%E6%88%91%E5%B8%AE300%E4%BD%8D%E6%95%B4%E5%BD%A2%E5%A4%B1%E8%B4%A5%E7%9A%84%E5%A7%91%E5%A8%98%E7%BB%B4%E6%9D%83">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<纽约时报>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-07-11/%E6%96%AF%E8%AF%BA%E4%B9%8B%E5%AD%90-%E6%88%91%E7%88%B6%E4%BA%B2%E5%BD%93%E5%B9%B4%E5%A6%82%E4%BD%95%E6%8A%A5%E9%81%93%E4%B8%AD%E5%9B%BD">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<纽约时报>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-07-09/%E6%B8%85%E6%B4%81%E8%80%B3%E6%9C%B5%E6%9C%80%E5%A5%BD%E7%9A%84%E5%8A%9E%E6%B3%95-%E7%94%A8%E8%80%B3%E5%8B%BA">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

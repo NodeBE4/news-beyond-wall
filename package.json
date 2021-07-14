@@ -1,0 +1,23 @@
+{
+  "name": "chinadigitaltimes-latest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duty-machine/chinadigitaltimes-latest.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/duty-machine/chinadigitaltimes-latest/issues"
+  },
+  "homepage": "https://github.com/duty-machine/chinadigitaltimes-latest#readme",
+  "dependencies": {
+    "request": "^2.88.2",
+    "rss-parser": "^3.9.0"
+  }
+}

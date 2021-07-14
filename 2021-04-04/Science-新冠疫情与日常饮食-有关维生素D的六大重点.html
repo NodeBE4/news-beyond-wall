@@ -1,0 +1,2171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>[Science] 新冠疫情与日常饮食 有关维生素D的六大重点 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+[Science] 新冠疫情与日常饮食 有关维生素D的六大重点
+——
+" />
+    <meta property="og:description" content="
+[Science] 新冠疫情与日常饮食 有关维生素D的六大重点
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="[Science] 新冠疫情与日常饮食 有关维生素D的六大重点" />
+    <meta property="twitter:title" content="[Science] 新冠疫情与日常饮食 有关维生素D的六大重点" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-56568092&t=%5BScience%5D+%E6%96%B0%E5%86%A0%E7%96%AB%E6%83%85%E4%B8%8E%E6%97%A5%E5%B8%B8%E9%A5%AE%E9%A3%9F+%E6%9C%89%E5%85%B3%E7%BB%B4%E7%94%9F%E7%B4%A0D%E7%9A%84%E5%85%AD%E5%A4%A7%E9%87%8D%E7%82%B9" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-56568092&t=%5BScience%5D+%E6%96%B0%E5%86%A0%E7%96%AB%E6%83%85%E4%B8%8E%E6%97%A5%E5%B8%B8%E9%A5%AE%E9%A3%9F+%E6%9C%89%E5%85%B3%E7%BB%B4%E7%94%9F%E7%B4%A0D%E7%9A%84%E5%85%AD%E5%A4%A7%E9%87%8D%E7%82%B9&d=2021-04-04&e=
+[Science] 新冠疫情与日常饮食 有关维生素D的六大重点
+——
+
+
+  
+    新冠疫情与日常饮食 有关维生素D的六大重点
+  
+  
+    
+      
+        艾米莉·托马斯（Emily Thomas）/西蒙·图利特（ Simon Tulett）
+        BBC记者
+      
+    
+  
+  
+    52 分钟前
+  
+  
+    
+      
+        
+          
+
+          
+        
+      
+    
+  
+  
+    维生素D有助于保持骨骼、牙齿和肌肉的强壮与健康。但现在科学家认为，它还可能在增强免疫系统功能中扮演重要角色，因此可能在抵抗新冠病毒方面发挥作用。
+  
+  
+    
+      
+        维生素D：面对新冠和严冬 你究竟需不需要补
+        许多人需要补充..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-56568092" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=http://www.bbc.com/zhongwen/simp/science-56568092" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=http://www.bbc.com/zhongwen/simp/science-56568092&text=[Science] 新冠疫情与日常饮食 有关维生素D的六大重点&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=http://www.bbc.com/zhongwen/simp/science-56568092&title=[Science] 新冠疫情与日常饮食 有关维生素D的六大重点" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://www.bbc.com/zhongwen/simp/science-56568092&title=[Science] 新冠疫情与日常饮食 有关维生素D的六大重点" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=[Science] 新冠疫情与日常饮食 有关维生素D的六大重点&body=
+[Science] 新冠疫情与日常饮食 有关维生素D的六大重点
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=http://www.bbc.com/zhongwen/simp/science-56568092" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=http://www.bbc.com/zhongwen/simp/science-56568092&title=[Science] 新冠疫情与日常饮食 有关维生素D的六大重点&caption=
+[Science] 新冠疫情与日常饮食 有关维生素D的六大重点
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=[Science] 新冠疫情与日常饮食 有关维生素D的六大重点&url=http://www.bbc.com/zhongwen/simp/science-56568092" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>[Science] 新冠疫情与日常饮食 有关维生素D的六大重点</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-04-04
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#BBC ">
+          BBC
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="http://www.bbc.com/zhongwen/simp/science-56568092"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="BBC的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#BBC 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-56568092&t=%5BScience%5D+%E6%96%B0%E5%86%A0%E7%96%AB%E6%83%85%E4%B8%8E%E6%97%A5%E5%B8%B8%E9%A5%AE%E9%A3%9F+%E6%9C%89%E5%85%B3%E7%BB%B4%E7%94%9F%E7%B4%A0D%E7%9A%84%E5%85%AD%E5%A4%A7%E9%87%8D%E7%82%B9&d=2021-04-04&e=
+[Science] 新冠疫情与日常饮食 有关维生素D的六大重点
+——
+
+
+  
+    新冠疫情与日常饮食 有关维生素D的六大重点
+  
+  
+    
+      
+        艾米莉·托马斯（Emily Thomas）/西蒙·图利特（ Simon Tulett）
+        BBC记者
+      
+    
+  
+  
+    52 分钟前
+  
+  
+    
+      
+        
+          
+
+          
+        
+      
+    
+  
+  
+    维生素D有助于保持骨骼、牙齿和肌肉的强壮与健康。但现在科学家认为，它还可能在增强免疫系统功能中扮演重要角色，因此可能在抵抗新冠病毒方面发挥作用。
+  
+  
+    
+      
+        维生素D：面对新冠和严冬 你究竟需不需要补
+        许多人需要补充..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-56568092" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1617551316000-->
+<p><a href="http://www.bbc.com/zhongwen/simp/science-56568092">[Science] 新冠疫情与日常饮食 有关维生素D的六大重点</a>
+——</p>
+
+<div>
+  <div dir="ltr" class="bbc-1151pbn e57qer20">
+    <h1 id="content" tabindex="-1" class="bbc-6yjyco e1yj3cbb0">新冠疫情与日常饮食 有关维生素D的六大重点</h1>
+  </div>
+  <div dir="ltr" class="e1j2237y6 bbc-q4ibpr e57qer20">
+    <div class="bbc-1atl7vu e1c9i7u14">
+      <ul role="list" class="bbc-1oyneen e1c9i7u12">
+        <li role="listitem" class="bbc-1a3w4ok e1c9i7u11">艾米莉·托马斯（Emily Thomas）/西蒙·图利特（ Simon Tulett）</li>
+        <li role="listitem" class="bbc-1p92jtu e1c9i7u10">BBC记者</li>
+      </ul>
+    </div>
+  </div>
+  <div dir="ltr" class="e1j2237y7 bbc-q4ibpr e57qer20">
+    <time datetime="2021-04-04" class="bbc-529aew e4zesg50">52 分钟前</time>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-1k5hvrj e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/14A7E/production/_117560648_af813787-282c-43aa-9b06-40a2e7dcca5c.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/14A7E/production/_117560648_af813787-282c-43aa-9b06-40a2e7dcca5c.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/14A7E/production/_117560648_af813787-282c-43aa-9b06-40a2e7dcca5c.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/14A7E/production/_117560648_af813787-282c-43aa-9b06-40a2e7dcca5c.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/14A7E/production/_117560648_af813787-282c-43aa-9b06-40a2e7dcca5c.jpg 800w" alt="Illustration of a child eating a vitamin that looks like the Sun" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/14A7E/production/_117560648_af813787-282c-43aa-9b06-40a2e7dcca5c.jpg" width="976" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70"><strong>维生素D有助于保持骨骼、牙齿和肌肉的强壮与健康。但现在科学家认为，它还可能在增强免疫系统功能中扮演重要角色，因此可能在抵抗新冠病毒方面发挥作用。</strong></p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <div class="bbc-1fobf8d e1gggypo0">
+      <ul dir="ltr" role="list" class="bbc-1gidoyr e1drcs2w1">
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0"><a href="https://www.bbc.com/zhongwen/simp/chinese-news-55134083" class="bbc-n8oauk e1cs6q200">维生素D：面对新冠和严冬 你究竟需不需要补</a></li>
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0"><a href="https://www.bbc.com/ukchina/simp/vert-fut-46113585" class="bbc-n8oauk e1cs6q200">许多人需要补充维生素D 但你可能不必</a></li>
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0"><a href="https://www.bbc.com/zhongwen/simp/science-38998794" class="bbc-n8oauk e1cs6q200">研究：维生素D可防感冒 常补充最有效</a></li>
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0"><a href="https://www.bbc.com/ukchina/simp/54579034" class="bbc-n8oauk e1cs6q200">冬季养生保健 英国专家告诉你提高免疫力的四个关键</a></li>
+      </ul>
+    </div>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <h2 id="什么是维生素D" tabindex="-1" class="bbc-6w9yzd e14hemmw0">什么是维生素D</h2>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-1k5hvrj e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/15E6/production/_117560650_4189ea69-75e1-4e42-b43c-ca7709da4ea5.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/15E6/production/_117560650_4189ea69-75e1-4e42-b43c-ca7709da4ea5.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/15E6/production/_117560650_4189ea69-75e1-4e42-b43c-ca7709da4ea5.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/15E6/production/_117560650_4189ea69-75e1-4e42-b43c-ca7709da4ea5.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/15E6/production/_117560650_4189ea69-75e1-4e42-b43c-ca7709da4ea5.jpg 800w" alt="Vitamin tablets arranged so they look like a Sun" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/15E6/production/_117560650_4189ea69-75e1-4e42-b43c-ca7709da4ea5.jpg" width="976" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">维生素D通常被称为“阳光维生素”，因为它是人体唯一通过皮肤日照所产生的营养素。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">研究表明，一旦进入新陈代谢它就可以帮助人体吸收钙、磷酸盐，这些都是维持健康牙齿、肌肉和骨骼的营养素。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">生物医学研究显示，佝偻病、软骨病以及骨质疏松症都是严重缺乏维生素D的直接后果。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">爱尔兰科克大学的卡什曼教授（Prof Kevin Cashman）专门从事维生素D、营养及骨骼健康研究，他说缺乏维生素D的后果还不止这些。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">卡什曼教授表示，那些缺乏维生素D的人也更容易受到感染和炎症影响，而这是今年最热门话题。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">他说，过去20年人们对维生素D有了新的认知，它的作用不仅仅局限于骨骼。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">“维生素D有助于调节免疫系统，”他说。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <h2 id="维生素D是否有助于抵抗新冠病毒" tabindex="-1" class="bbc-6w9yzd e14hemmw0">维生素D是否有助于抵抗新冠病毒？</h2>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-1k5hvrj e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/BED0/production/_117584884_a742ea0a-c000-4617-8cf6-626bc0a0c30b.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/BED0/production/_117584884_a742ea0a-c000-4617-8cf6-626bc0a0c30b.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/BED0/production/_117584884_a742ea0a-c000-4617-8cf6-626bc0a0c30b.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/BED0/production/_117584884_a742ea0a-c000-4617-8cf6-626bc0a0c30b.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/BED0/production/_117584884_a742ea0a-c000-4617-8cf6-626bc0a0c30b.jpg 800w" alt="A family walk along a hiking trail in Hong Kong, as sunlight filters through the trees" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/BED0/production/_117584884_a742ea0a-c000-4617-8cf6-626bc0a0c30b.jpg" width="976" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">卡什曼教授表示，科学家们认为即使轻度缺乏维生素D也会增加罹患心血管疾病、糖尿病、某些癌症、传染病甚至一些炎症的风险。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">但维生素D与新冠之间是否有直接相关性呢？</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">卡什曼教授说一些顶尖科学研究显示，“在维生素D不足与新冠对人体健康影响所导致的后果之间绝对存在有形证据”。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">但其证据目前还不足以建议人们服用维生素D补充剂来预防和治疗新冠。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">然而，卡什曼教授相信有关研究正在步入正轨，新冠大流行又让维生素D不足问题成为关注的焦点。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">卡什曼教授表示，目前普遍的共识是证据仍不充分，但人们已经在进行试验，并有新的证据出来。新冠也只不过才一年的时间，因此需要一段时间才能产生数据。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">但他表示，真正有意思的是如果你接受维生素D不足绝对可以导致呼吸系统疾病、流感和感冒等，那我们都知道维生素D对骨骼的重要性，因此，可以推断它对呼吸系统疾病有积极和保护作用，就像一种额外的好处。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <h2 id="维生素D来源" tabindex="-1" class="bbc-6w9yzd e14hemmw0">维生素D来源</h2>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-1k5hvrj e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/6406/production/_117560652_238798df-2b7b-4bc3-866f-171c59330a63.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/6406/production/_117560652_238798df-2b7b-4bc3-866f-171c59330a63.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/6406/production/_117560652_238798df-2b7b-4bc3-866f-171c59330a63.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/6406/production/_117560652_238798df-2b7b-4bc3-866f-171c59330a63.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/6406/production/_117560652_238798df-2b7b-4bc3-866f-171c59330a63.jpg 800w" alt="Woman, indoors, with the sun on her face" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/6406/production/_117560652_238798df-2b7b-4bc3-866f-171c59330a63.jpg" width="976" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">卡什曼教授说，人体主要通过日照来合成维生素D。但我们能获得多少维生素D取决于日晒的强度，以及取决于你在地球上所处的位置和一年中的不同时间。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">总的来说，距离赤道越近太阳光越强，你所能获得的维生素D也越多。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">然而，在印度和非洲许多国家却是受维生素D严重缺乏症影响最严重的地区，这又是为什么呢？</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">卡什曼教授解释说，这可能有文化原因，或许是宗教甚至衣着原因；或许是正午高温人们设法躲避烈日等因素。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">同时，还包括污染阻隔阳光以及生活在城市中等因素。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">另一个原因可能与人们的肤色有关。根据《欧洲临床营养学杂志》发表的数据，12%的欧洲人口缺乏维生素D，但在欧洲国家的少数族裔人口中维生素D缺乏症者却是这一数字的两倍甚至三倍，因为皮肤中的黑色素起到了天然阻断阳光的作用。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <h2 id="如何从饮食中获取维生素D" tabindex="-1" class="bbc-6w9yzd e14hemmw0">如何从饮食中获取维生素D？</h2>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-1k5hvrj e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/2290/production/_117584880_0300b994-4fb5-42ca-83de-7ee34ae5cd5d.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/2290/production/_117584880_0300b994-4fb5-42ca-83de-7ee34ae5cd5d.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/2290/production/_117584880_0300b994-4fb5-42ca-83de-7ee34ae5cd5d.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/2290/production/_117584880_0300b994-4fb5-42ca-83de-7ee34ae5cd5d.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/2290/production/_117584880_0300b994-4fb5-42ca-83de-7ee34ae5cd5d.jpg 800w" alt="Display of foods rich in vitamin D" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/2290/production/_117584880_0300b994-4fb5-42ca-83de-7ee34ae5cd5d.jpg" width="976" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">幸运的是，食物可以为我们提供维生素D的替代来源，比如，在油性鱼、红肉、蛋黄以及奶制品中都含有维生素D。但对绝大多数人来说，仅从食物中获取足够的维生素D还是有困难的。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">卡什曼教授表示，一般来说，大多数富含维生素D的食品是动物食品，植物性食品没有维生素D。这意味着那些素食者或是吃不起肉和蛋奶食品的人维生素D不足的风险更高。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">例如，由BBC食物链节目开展的研究显示，蒙古至少有 70%-80%的成年人以及90%的儿童维生素D不足。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">蒙古一家儿童慈善基金会经理表示，富含维生素D的食品对贫穷社区来说非常昂贵。但该负责人表示，政府已经宣布在所有小麦粉中添加维生素D的计划。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">小麦是蒙古人广泛食用的食物，也是确保所有人口都能受益的最佳办法。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <h2 id="你会不会摄入过多的维生素D" tabindex="-1" class="bbc-6w9yzd e14hemmw0">你会不会摄入过多的维生素D？</h2>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-1k5hvrj e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/B2EE/production/_117560854_b4a8ffb9-57dc-4614-b61a-d1b8c9810c08.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/B2EE/production/_117560854_b4a8ffb9-57dc-4614-b61a-d1b8c9810c08.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/B2EE/production/_117560854_b4a8ffb9-57dc-4614-b61a-d1b8c9810c08.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/B2EE/production/_117560854_b4a8ffb9-57dc-4614-b61a-d1b8c9810c08.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/B2EE/production/_117560854_b4a8ffb9-57dc-4614-b61a-d1b8c9810c08.jpg 800w" alt="Concept image: a burger made up of pills and vitamins" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/B2EE/production/_117560854_b4a8ffb9-57dc-4614-b61a-d1b8c9810c08.jpg" width="976" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">大多数公共卫生组织建议人们每天至少摄入10微克的维生素D，如果超过100微克会对人体有害。长期大量服用高剂量维生素D可以导致体内钙过多，从而削弱骨骼，并会损害心脏和肾脏。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">卡什曼教授说，有时你可能在不经意时摄入高剂量的维生素D，比如，如果你购买了剂量很高的补充剂，或是一次服用了好几片。但吃维生素D强化食品基本不会有问题，因为其含量比较适当。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <h2 id="维生素D还有哪些来源" tabindex="-1" class="bbc-6w9yzd e14hemmw0">维生素D还有哪些来源？</h2>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-1k5hvrj e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/14B46/production/_117560848_cdd8759a-9f9f-4098-98c4-7ae953e06e85.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/14B46/production/_117560848_cdd8759a-9f9f-4098-98c4-7ae953e06e85.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/14B46/production/_117560848_cdd8759a-9f9f-4098-98c4-7ae953e06e85.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/14B46/production/_117560848_cdd8759a-9f9f-4098-98c4-7ae953e06e85.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/14B46/production/_117560848_cdd8759a-9f9f-4098-98c4-7ae953e06e85.jpg 800w" alt="Vitamins on a plate" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/14B46/production/_117560848_cdd8759a-9f9f-4098-98c4-7ae953e06e85.jpg" width="976" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">当然你可以服用维生素D药丸或补充剂，但对全球数百万人来说这种选择可能太贵，吃不起。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">因此，卡什曼教授建议说，另外一种办法就是在食物链中加入更多的维生素D，特别是在主食中。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">这一强化食品技术在工业发达国家已经使用了80多年，在发展中国家也越来越普遍。许多研究营养不良的微营养素专家们认为，这是解决全球范围内维生素D不足的最佳途径。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">虽然因所在地而异，但可以强化维生素D的食品包括牛奶以及植物奶（比如豆奶、燕麦、杏仁以及米奶）、果汁、酸奶、人造黄油、面粉、植物油、早餐麦片、鸡蛋等。</p>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-1k5hvrj e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/70B0/production/_117584882_55e1539a-ddde-4736-a926-74aa58e972d8.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/70B0/production/_117584882_55e1539a-ddde-4736-a926-74aa58e972d8.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/70B0/production/_117584882_55e1539a-ddde-4736-a926-74aa58e972d8.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/70B0/production/_117584882_55e1539a-ddde-4736-a926-74aa58e972d8.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/70B0/production/_117584882_55e1539a-ddde-4736-a926-74aa58e972d8.jpg 800w" alt="Concept image: foods in a pill blister" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/70B0/production/_117584882_55e1539a-ddde-4736-a926-74aa58e972d8.jpg" width="976" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">同时，还取决于维生素D不足程度，各国政府也可以决定强制实行强化食品，或是让食品制造商自愿去做。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">目前，只有几个少数国家，例如加拿大和芬兰这些大部分时间日照强度较低的国家使用强化维生素D食品项目。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">卡什曼教授认为新冠将鼓励其他国家考虑芬兰的做法，这种投资从许多方面讲都是有道理的。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">他说，向一吨小麦粉里添加维生素D很便宜，但其带来的好处是长期的：更加健康和营养平衡的人口。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">根据2015年德国卫生当局的一项调查估计，维生素D强化面包可将65岁以上女性的骨折率减少10%以上，每年节省的医疗费用大约为3.8 亿美元。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">“这种节省是惊人的，”卡什曼教授说。</p>
+  </div>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#BBC 的其它文章</h4>
+    
+      <li>
+        <time>2021-04-06</time>
+        <a href="https://nodebe4.github.io/waimei/2021-04-06/Chinese-%E6%8A%A4%E9%9A%90%E7%A7%81%E8%BF%98%E6%98%AF%E9%81%AE%E4%B8%91%E9%97%BB-%E9%A6%99%E6%B8%AF%E9%99%8D%E4%BD%8E%E5%85%AC%E5%8F%B8%E9%80%8F%E6%98%8E%E5%BA%A6%E4%B9%8B%E4%B8%BE%E5%8F%97%E8%B4%A8%E7%96%91">
+          [Chinese] 护隐私还是遮丑闻 香港降低公司透明度之举受质疑
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-04-05</time>
+        <a href="https://nodebe4.github.io/waimei/2021-04-05/Chinese-%E5%A4%AA%E9%B2%81%E9%98%81%E5%8F%B7%E6%83%A8%E9%87%8D%E4%BC%A4%E4%BA%A1%E4%B9%8B%E5%90%8E-%E6%89%BF%E5%8C%85%E5%95%86%E5%92%8C%E5%8F%B0%E9%93%81%E9%9D%A2%E4%B8%B4%E8%BF%BD%E8%B4%A3">
+          [Chinese] 太鲁阁号惨重伤亡之后 承包商和台铁面临追责
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-04-03</time>
+        <a href="https://nodebe4.github.io/waimei/2021-04-03/Uk-%E5%85%AD%E5%9B%9B%E4%BA%8B%E4%BB%B6-%E7%BA%AA%E5%BF%B5%E6%89%8B%E8%A1%A8%E5%8D%96%E5%AE%B6%E9%81%AD%E5%A8%81%E8%83%81-%E8%87%B4%E8%8B%B1%E5%9B%BD%E6%8B%8D%E5%8D%96%E8%A1%8C%E6%92%A4%E6%8B%8D">
+          [Uk] “六四事件”纪念手表卖家遭威胁 致英国拍卖行撤拍
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-04-02</time>
+        <a href="https://nodebe4.github.io/waimei/2021-04-02/World-%E6%96%B0%E5%86%A0%E7%96%AB%E6%83%85-%E5%A5%BD%E8%8E%B1%E5%9D%9E%E6%98%8E%E6%98%9F-%E9%81%BF%E7%96%AB-%E6%BE%B3%E5%A4%A7%E5%88%A9%E4%BA%9A-%E6%BB%9E%E7%95%99%E6%B5%B7%E5%A4%96%E6%BE%B3%E6%B4%B2%E5%9B%BD%E6%B0%91%E6%8C%87%E8%B4%A3-%E5%8F%8C%E9%87%8D%E6%A0%87%E5%87%86">
+          [World] 新冠疫情：好莱坞明星“避疫”澳大利亚，滞留海外澳洲国民指责“双重标准”
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-04-03/Uk-%E5%85%AD%E5%9B%9B%E4%BA%8B%E4%BB%B6-%E7%BA%AA%E5%BF%B5%E6%89%8B%E8%A1%A8%E5%8D%96%E5%AE%B6%E9%81%AD%E5%A8%81%E8%83%81-%E8%87%B4%E8%8B%B1%E5%9B%BD%E6%8B%8D%E5%8D%96%E8%A1%8C%E6%92%A4%E6%8B%8D">
+            前一篇：[Uk] “六四事件”纪念手表卖家遭威胁 致英国拍卖行撤拍
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-04-05/Chinese-%E5%A4%AA%E9%B2%81%E9%98%81%E5%8F%B7%E6%83%A8%E9%87%8D%E4%BC%A4%E4%BA%A1%E4%B9%8B%E5%90%8E-%E6%89%BF%E5%8C%85%E5%95%86%E5%92%8C%E5%8F%B0%E9%93%81%E9%9D%A2%E4%B8%B4%E8%BF%BD%E8%B4%A3">
+            后一篇：[Chinese] 太鲁阁号惨重伤亡之后 承包商和台铁面临追责
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-04-03/Uk-%E5%85%AD%E5%9B%9B%E4%BA%8B%E4%BB%B6-%E7%BA%AA%E5%BF%B5%E6%89%8B%E8%A1%A8%E5%8D%96%E5%AE%B6%E9%81%AD%E5%A8%81%E8%83%81-%E8%87%B4%E8%8B%B1%E5%9B%BD%E6%8B%8D%E5%8D%96%E8%A1%8C%E6%92%A4%E6%8B%8D'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-04-05/Chinese-%E5%A4%AA%E9%B2%81%E9%98%81%E5%8F%B7%E6%83%A8%E9%87%8D%E4%BC%A4%E4%BA%A1%E4%B9%8B%E5%90%8E-%E6%89%BF%E5%8C%85%E5%95%86%E5%92%8C%E5%8F%B0%E9%93%81%E9%9D%A2%E4%B8%B4%E8%BF%BD%E8%B4%A3'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-04-05/Chinese-%E5%A4%AA%E9%B2%81%E9%98%81%E5%8F%B7%E6%83%A8%E9%87%8D%E4%BC%A4%E4%BA%A1%E4%B9%8B%E5%90%8E-%E6%89%BF%E5%8C%85%E5%95%86%E5%92%8C%E5%8F%B0%E9%93%81%E9%9D%A2%E4%B8%B4%E8%BF%BD%E8%B4%A3'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-04-03/Uk-%E5%85%AD%E5%9B%9B%E4%BA%8B%E4%BB%B6-%E7%BA%AA%E5%BF%B5%E6%89%8B%E8%A1%A8%E5%8D%96%E5%AE%B6%E9%81%AD%E5%A8%81%E8%83%81-%E8%87%B4%E8%8B%B1%E5%9B%BD%E6%8B%8D%E5%8D%96%E8%A1%8C%E6%92%A4%E6%8B%8D'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-04-03/Uk-%E5%85%AD%E5%9B%9B%E4%BA%8B%E4%BB%B6-%E7%BA%AA%E5%BF%B5%E6%89%8B%E8%A1%A8%E5%8D%96%E5%AE%B6%E9%81%AD%E5%A8%81%E8%83%81-%E8%87%B4%E8%8B%B1%E5%9B%BD%E6%8B%8D%E5%8D%96%E8%A1%8C%E6%92%A4%E6%8B%8D">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-04-05/Chinese-%E5%A4%AA%E9%B2%81%E9%98%81%E5%8F%B7%E6%83%A8%E9%87%8D%E4%BC%A4%E4%BA%A1%E4%B9%8B%E5%90%8E-%E6%89%BF%E5%8C%85%E5%95%86%E5%92%8C%E5%8F%B0%E9%93%81%E9%9D%A2%E4%B8%B4%E8%BF%BD%E8%B4%A3">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<BBC>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-04-05/Chinese-%E5%A4%AA%E9%B2%81%E9%98%81%E5%8F%B7%E6%83%A8%E9%87%8D%E4%BC%A4%E4%BA%A1%E4%B9%8B%E5%90%8E-%E6%89%BF%E5%8C%85%E5%95%86%E5%92%8C%E5%8F%B0%E9%93%81%E9%9D%A2%E4%B8%B4%E8%BF%BD%E8%B4%A3">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<BBC>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-04-03/Uk-%E5%85%AD%E5%9B%9B%E4%BA%8B%E4%BB%B6-%E7%BA%AA%E5%BF%B5%E6%89%8B%E8%A1%A8%E5%8D%96%E5%AE%B6%E9%81%AD%E5%A8%81%E8%83%81-%E8%87%B4%E8%8B%B1%E5%9B%BD%E6%8B%8D%E5%8D%96%E8%A1%8C%E6%92%A4%E6%8B%8D">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

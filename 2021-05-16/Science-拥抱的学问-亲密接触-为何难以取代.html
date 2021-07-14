@@ -1,0 +1,2094 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>[Science] 拥抱的学问：“亲密接触”为何难以取代 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+[Science] 拥抱的学问：“亲密接触”为何难以取代
+——
+" />
+    <meta property="og:description" content="
+[Science] 拥抱的学问：“亲密接触”为何难以取代
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="[Science] 拥抱的学问：“亲密接触”为何难以取代" />
+    <meta property="twitter:title" content="[Science] 拥抱的学问：“亲密接触”为何难以取代" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-57106304&t=%5BScience%5D+%E6%8B%A5%E6%8A%B1%E7%9A%84%E5%AD%A6%E9%97%AE%EF%BC%9A%E2%80%9C%E4%BA%B2%E5%AF%86%E6%8E%A5%E8%A7%A6%E2%80%9D%E4%B8%BA%E4%BD%95%E9%9A%BE%E4%BB%A5%E5%8F%96%E4%BB%A3" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-57106304&t=%5BScience%5D+%E6%8B%A5%E6%8A%B1%E7%9A%84%E5%AD%A6%E9%97%AE%EF%BC%9A%E2%80%9C%E4%BA%B2%E5%AF%86%E6%8E%A5%E8%A7%A6%E2%80%9D%E4%B8%BA%E4%BD%95%E9%9A%BE%E4%BB%A5%E5%8F%96%E4%BB%A3&d=2021-05-16&e=
+[Science] 拥抱的学问：“亲密接触”为何难以取代
+——
+
+
+  
+    拥抱的学问：“亲密接触”为何难以取代
+  
+  
+    35 分钟前
+  
+  
+    
+      
+        
+          
+
+          
+        
+      
+    
+  
+  
+    新冠病毒疫情给全世界许多地方带来不同程度的封锁措施，禁止人与人之间的近距离接触，这违反了人类作为社交群聚动物的天性。
+  
+  
+    自从英国去年3月实施封锁措施之后，大部分的时间美容美发化妆行业的从业人员都不得工作，在伦敦从事化妆工作的阿德努加（Joy Adenuga）也是其中之一。
+  
+  
+    “我是给人化妆的，我工作的时候一定会碰触到人体，我会摸到他们的脸，我很喜欢一边化妆一边跟他们讲话聊天，封城之后我的工作突然停止了，精神上很难调适。”
+  
+  
+ ..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-57106304" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=http://www.bbc.com/zhongwen/simp/science-57106304" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=http://www.bbc.com/zhongwen/simp/science-57106304&text=[Science] 拥抱的学问：“亲密接触”为何难以取代&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=http://www.bbc.com/zhongwen/simp/science-57106304&title=[Science] 拥抱的学问：“亲密接触”为何难以取代" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://www.bbc.com/zhongwen/simp/science-57106304&title=[Science] 拥抱的学问：“亲密接触”为何难以取代" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=[Science] 拥抱的学问：“亲密接触”为何难以取代&body=
+[Science] 拥抱的学问：“亲密接触”为何难以取代
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=http://www.bbc.com/zhongwen/simp/science-57106304" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=http://www.bbc.com/zhongwen/simp/science-57106304&title=[Science] 拥抱的学问：“亲密接触”为何难以取代&caption=
+[Science] 拥抱的学问：“亲密接触”为何难以取代
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=[Science] 拥抱的学问：“亲密接触”为何难以取代&url=http://www.bbc.com/zhongwen/simp/science-57106304" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>[Science] 拥抱的学问：“亲密接触”为何难以取代</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-05-16
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#BBC ">
+          BBC
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="http://www.bbc.com/zhongwen/simp/science-57106304"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="BBC的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#BBC 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-57106304&t=%5BScience%5D+%E6%8B%A5%E6%8A%B1%E7%9A%84%E5%AD%A6%E9%97%AE%EF%BC%9A%E2%80%9C%E4%BA%B2%E5%AF%86%E6%8E%A5%E8%A7%A6%E2%80%9D%E4%B8%BA%E4%BD%95%E9%9A%BE%E4%BB%A5%E5%8F%96%E4%BB%A3&d=2021-05-16&e=
+[Science] 拥抱的学问：“亲密接触”为何难以取代
+——
+
+
+  
+    拥抱的学问：“亲密接触”为何难以取代
+  
+  
+    35 分钟前
+  
+  
+    
+      
+        
+          
+
+          
+        
+      
+    
+  
+  
+    新冠病毒疫情给全世界许多地方带来不同程度的封锁措施，禁止人与人之间的近距离接触，这违反了人类作为社交群聚动物的天性。
+  
+  
+    自从英国去年3月实施封锁措施之后，大部分的时间美容美发化妆行业的从业人员都不得工作，在伦敦从事化妆工作的阿德努加（Joy Adenuga）也是其中之一。
+  
+  
+    “我是给人化妆的，我工作的时候一定会碰触到人体，我会摸到他们的脸，我很喜欢一边化妆一边跟他们讲话聊天，封城之后我的工作突然停止了，精神上很难调适。”
+  
+  
+ ..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-57106304" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1621182630000-->
+<p><a href="http://www.bbc.com/zhongwen/simp/science-57106304">[Science] 拥抱的学问：“亲密接触”为何难以取代</a>
+——</p>
+
+<div>
+  <div dir="ltr" class="bbc-1151pbn e57qer20">
+    <h1 id="content" tabindex="-1" class="bbc-6yjyco e1yj3cbb0">拥抱的学问：“亲密接触”为何难以取代</h1>
+  </div>
+  <div dir="ltr" class="e1j2237y7 bbc-q4ibpr e57qer20">
+    <time datetime="2021-05-16" class="bbc-529aew e4zesg50">35 分钟前</time>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-1k5hvrj e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/10336/production/_112085366_hug-nc.png 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/10336/production/_112085366_hug-nc.png 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/10336/production/_112085366_hug-nc.png 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/10336/production/_112085366_hug-nc.png 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/10336/production/_112085366_hug-nc.png 800w" alt="Girl hugging grandmother" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/10336/production/_112085366_hug-nc.png" width="976" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70"><strong>新冠病毒疫情给全世界许多地方带来不同程度的封锁措施，禁止人与人之间的近距离接触，这违反了人类作为社交群聚动物的天性。</strong></p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">自从英国去年3月实施封锁措施之后，大部分的时间美容美发化妆行业的从业人员都不得工作，在伦敦从事化妆工作的阿德努加（Joy Adenuga）也是其中之一。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">“我是给人化妆的，我工作的时候一定会碰触到人体，我会摸到他们的脸，我很喜欢一边化妆一边跟他们讲话聊天，封城之后我的工作突然停止了，精神上很难调适。”</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">收入上的损失不是唯一的问题，阿德努加化妆造型师的工作本来就有淡季和旺季的差别，收入有高有低，失去跟人的近距离接触才是她精神上难以调适的主要问题。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">她把这个现象形容为缺乏社交上的触摸。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">另一名造型化妆师格林威尔（Mary Greenwell）最近在社交网站分享她和一位朋友的录像，这位朋友是她“社交泡泡”里面的人，“能够触摸到真的人实在很幸运，这是封城以来我第一次触摸到的人。”</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <div class="bbc-1fobf8d e1gggypo0">
+      <ul dir="ltr" role="list" class="bbc-1gidoyr e1drcs2w1">
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0"><a href="https://www.bbc.com/zhongwen/simp/world-52584093" class="bbc-n8oauk e1cs6q200">后疫情世界：我们是不是永远不能握手了？</a></li>
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0"><a href="https://www.bbc.com/zhongwen/simp/world-52031837" class="bbc-n8oauk e1cs6q200">肺炎疫情：保持社交距离与自我隔离到底是什么</a></li>
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0"><a href="https://www.bbc.com/zhongwen/simp/world-52106729" class="bbc-n8oauk e1cs6q200">肺炎疫情时期的性爱七问</a></li>
+      </ul>
+    </div>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <h2 id="肌肤饥饿" tabindex="-1" class="bbc-6w9yzd e14hemmw0">“肌肤饥饿”</h2>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-1k5hvrj e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/3885/production/_118496441_57106304.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/3885/production/_118496441_57106304.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/3885/production/_118496441_57106304.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/3885/production/_118496441_57106304.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/3885/production/_118496441_57106304.jpg 800w" alt="新冠疫情下的另类拥抱方式（EPA）" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/3885/production/_118496441_57106304.jpg" width="976" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="bbc-3edg7g e57qer20">
+          <figcaption dir="ltr" class="bbc-l9ltpr eede9f50">
+<span class="bbc-1gnhmg2 e1yt7oin0">图像加注文字，</span>            <p>新冠疫情下的另类拥抱方式</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">她社交网站上的一位关注者留言说，“ 人与人之间的接触，我指的不是恋人或亲人之间，而是普通人日常生活上的接触，在这个时候就显得特别重要。”</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">另一位关注者回复表示，“有许多老年人渴望和别人接触，他们唯一接触到的人就是美发师，这些老年人独自居住没有其他人。”</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">为什么人类会渴望和别人近距离接触，身体接触为什么难以取代？</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">美国亚利桑那大学（University of Arizona）的弗洛伊德（Kory Floyd）是研究缺乏激情的专家，缺乏社交上的触摸就是他研究的领域之一，独居者没有人说话也是情感缺乏之一。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">封锁措施禁止人与人近距离接触，更不用说彼此拥抱肢体上的接触了，虽然人们可以用电话或网络视频维持联系，但那和实际的身体接触完全不同。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">弗洛伊德说，人们想要有近距离接触，或者是肢体上的触碰，如果缺乏这种社交行为，就会有渴望的感觉，就好像人类需要食物，没东西吃喝的时候就会有饥渴的感觉。</p>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-1k5hvrj e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/86A5/production/_118496443_57106304.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/86A5/production/_118496443_57106304.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/86A5/production/_118496443_57106304.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/86A5/production/_118496443_57106304.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/86A5/production/_118496443_57106304.jpg 800w" alt="为了防疫，剪头发也受到很多限制（Getty Images）" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/86A5/production/_118496443_57106304.jpg" width="976" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="bbc-3edg7g e57qer20">
+          <figcaption dir="ltr" class="bbc-l9ltpr eede9f50">
+<span class="bbc-1gnhmg2 e1yt7oin0">图像加注文字，</span>            <p>为了防疫，剪头发也受到很多限制</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">弗洛伊德表示，“很多人并没有意识到自己缺少了什么，他们只是感觉到哪里不太对劲，其实是他们已经有好几个星期没有跟人拥抱过，或是没有和孙子孙女或成年子女见面。”</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">但是这种感受也是因人而异，一些人比其他人更需要与人接触，渴望和别人接触的程度每个人都不一样，但是只有绝少数人完全不需要和其他人保持联系和交流。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">弗洛伊德表示，大部分的人都需要和别人接触，有些人喜欢和别人肢体上的触碰，有些人不喜欢，这从一般的社交行为就可以看得出来，最容易感到孤独的人也最需要和别人接触，从人口的研究得知，年轻人最容易感到孤独，再来就是老年人，这两类群体也最需要和别人有肢体上的接触。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">一般人可能会认为老年人是最孤独的群体，但事实上老年人的生活没有太大的改变。新冠疫情封城措施以前，老年人也并没有天天能和孙子孙女或成年子女相处见面。封城措施影响最大的那些每天都有朋友围绕在身边的群体。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <h2 id="精神健康" tabindex="-1" class="bbc-6w9yzd e14hemmw0">精神健康</h2>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-1k5hvrj e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/0F64/production/_118504930_f03e7d39-362d-4c9b-8d25-b9dfc9f5a0b2.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/0F64/production/_118504930_f03e7d39-362d-4c9b-8d25-b9dfc9f5a0b2.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/0F64/production/_118504930_f03e7d39-362d-4c9b-8d25-b9dfc9f5a0b2.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/0F64/production/_118504930_f03e7d39-362d-4c9b-8d25-b9dfc9f5a0b2.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/0F64/production/_118504930_f03e7d39-362d-4c9b-8d25-b9dfc9f5a0b2.jpg 800w" alt="解除封锁之后，人们可以和亲人朋友互相拥抱" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/0F64/production/_118504930_f03e7d39-362d-4c9b-8d25-b9dfc9f5a0b2.jpg" width="976" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="bbc-3edg7g e57qer20">
+          <figcaption dir="ltr" class="bbc-l9ltpr eede9f50">
+<span class="bbc-1gnhmg2 e1yt7oin0">图像加注文字，</span>            <p>解除封锁之后，人们可以和亲人朋友互相拥抱</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">少了与人的近距离接触，还有什么能取代人的肢体接触呢？有一种借助高科技的电传导触摸技术和设备，可以由亲人在远端控制，通过电传触摸在另一端的亲人，但接受者的感觉或许不是那么好。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">再来就是真人大小的发热抱枕了。在新冠疫情以前，渴望与人肢体接触的人还可以参加“拥抱聚会”，一群陌生人在控制的环境下互相交换拥抱，但和陌生人拥抱感觉比不上和亲人或朋友的拥抱。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">弗洛伊德表示，只要感觉不是负面的，不是受威胁或侵犯性的话，与陌生人的拥抱也比没有任何肢体接触要好，不管是拥抱聚会或者去给人按摩，都比完全没有肢体接触要好。但是，如果肢体接触附带正面的情感联系，那么会给我们的精神健康带来更多好处。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">从这点来看，即使和宠物的肢体接触都有很大的好处。在情感层面上，和宠物拥抱比和陌生人的拥抱聚会更真实。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">新冠疫情封锁措施实施以来，各地的宠物需求都增加了，甚至连美国的一些流浪动物之家可供领养的宠物都被领养一空。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <h2 id="后疫情时代" tabindex="-1" class="bbc-6w9yzd e14hemmw0">后疫情时代</h2>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-1k5hvrj e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/5D84/production/_118504932_7d4b87a1-2a3f-4ea9-9a06-5cdbb1b79bd6.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/5D84/production/_118504932_7d4b87a1-2a3f-4ea9-9a06-5cdbb1b79bd6.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/5D84/production/_118504932_7d4b87a1-2a3f-4ea9-9a06-5cdbb1b79bd6.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/5D84/production/_118504932_7d4b87a1-2a3f-4ea9-9a06-5cdbb1b79bd6.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/5D84/production/_118504932_7d4b87a1-2a3f-4ea9-9a06-5cdbb1b79bd6.jpg 800w" alt="健身教练" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/5D84/production/_118504932_7d4b87a1-2a3f-4ea9-9a06-5cdbb1b79bd6.jpg" width="976" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="bbc-3edg7g e57qer20">
+          <figcaption dir="ltr" class="bbc-l9ltpr eede9f50">
+<span class="bbc-1gnhmg2 e1yt7oin0">图像加注文字，</span>            <p>健身锻炼也变得不一样</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">新冠疫情过后我们的生活肯定不会一样。美国一些卫生官员甚至要求人们在回去工作之后不要和别人握手，以往被视为理所当然的社交接触以后会变怎么样？</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">对造型化妆师阿德努加而言，回去工作可能意味着以后必须戴上手套和面罩或口罩，她很怀疑戴手套要怎么给人化妆，毕竟很多时候她必须用手触摸客户的皮肤，但她相信一定会有办法的。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">她的很多客户都是要结婚的新娘子。想象一下，在你大喜的日子，一早上来给你化妆作造型的人戴着手套，脸口鼻都蒙着，新娘子看了会有什么感觉？</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">难道人与人的近距离接触真的从此一去不回了吗？弗洛伊德认为也许未必，“我猜想疫情过后我们很快会恢复正常。”</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">“人与人的肢体接触是人类的天性，对我们的精神健康也非常重要，疫情过后可能会有短暂的谨慎期，但我猜想很快就会恢复正常。”</p>
+  </div>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#BBC 的其它文章</h4>
+    
+      <li>
+        <time>2021-05-17</time>
+        <a href="https://nodebe4.github.io/waimei/2021-05-17/Science-%E6%96%B0%E5%86%A0%E7%96%AB%E8%8B%97-%E7%89%9B%E6%B4%A5-%E9%98%BF%E6%96%AF%E5%88%A9%E5%BA%B7-%E4%BD%A0%E5%8F%AF%E8%83%BD%E6%83%B3%E4%BA%86%E8%A7%A3%E7%9A%84%E4%B8%89%E4%B8%AA%E9%97%AE%E9%A2%98">
+          [Science] 新冠疫苗：牛津/阿斯利康 你可能想了解的三个问题
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-05-17</time>
+        <a href="https://nodebe4.github.io/waimei/2021-05-17/Chinese-%E5%8F%B0%E6%B9%BE%E7%96%AB%E6%83%85-%E6%9C%AC%E5%9C%9F%E7%A1%AE%E8%AF%8A%E6%96%B0%E5%A2%9E333%E4%BE%8B-%E5%86%8D%E5%88%9B%E5%8D%95%E6%97%A5%E6%96%B0%E9%AB%98">
+          [Chinese] 台湾疫情：本土确诊新增333例 再创单日新高
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-05-15</time>
+        <a href="https://nodebe4.github.io/waimei/2021-05-15/Science-%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E-%E6%B2%BB%E7%96%97-%E8%8D%AF%E7%89%A9%E5%92%8C%E7%96%AB%E6%83%85%E7%BB%93%E6%9D%9F%E5%90%8E%E7%9A%84%E6%8C%91%E6%88%98">
+          [Science] 新冠肺炎：治疗、药物和疫情结束后的挑战
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-05-14</time>
+        <a href="https://nodebe4.github.io/waimei/2021-05-14/Science-%E4%B8%AD%E5%9B%BD-%E5%90%8D%E8%B4%B5%E5%85%BB%E7%94%9F%E5%93%81-%E8%8A%B1%E8%83%B6%E5%B8%A6%E7%BB%99%E5%B0%8F%E5%A4%B4%E9%BC%A0%E6%B5%B7%E8%B1%9A%E7%9A%84%E7%81%AD%E9%A1%B6%E4%B9%8B%E7%81%BE">
+          [Science] 中国“名贵养生品”花胶带给小头鼠海豚的灭顶之灾
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-05-15/Science-%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E-%E6%B2%BB%E7%96%97-%E8%8D%AF%E7%89%A9%E5%92%8C%E7%96%AB%E6%83%85%E7%BB%93%E6%9D%9F%E5%90%8E%E7%9A%84%E6%8C%91%E6%88%98">
+            前一篇：[Science] 新冠肺炎：治疗、药物和疫情结束后的挑战
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-05-17/Chinese-%E5%8F%B0%E6%B9%BE%E7%96%AB%E6%83%85-%E6%9C%AC%E5%9C%9F%E7%A1%AE%E8%AF%8A%E6%96%B0%E5%A2%9E333%E4%BE%8B-%E5%86%8D%E5%88%9B%E5%8D%95%E6%97%A5%E6%96%B0%E9%AB%98">
+            后一篇：[Chinese] 台湾疫情：本土确诊新增333例 再创单日新高
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-05-15/Science-%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E-%E6%B2%BB%E7%96%97-%E8%8D%AF%E7%89%A9%E5%92%8C%E7%96%AB%E6%83%85%E7%BB%93%E6%9D%9F%E5%90%8E%E7%9A%84%E6%8C%91%E6%88%98'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-05-17/Chinese-%E5%8F%B0%E6%B9%BE%E7%96%AB%E6%83%85-%E6%9C%AC%E5%9C%9F%E7%A1%AE%E8%AF%8A%E6%96%B0%E5%A2%9E333%E4%BE%8B-%E5%86%8D%E5%88%9B%E5%8D%95%E6%97%A5%E6%96%B0%E9%AB%98'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-05-17/Chinese-%E5%8F%B0%E6%B9%BE%E7%96%AB%E6%83%85-%E6%9C%AC%E5%9C%9F%E7%A1%AE%E8%AF%8A%E6%96%B0%E5%A2%9E333%E4%BE%8B-%E5%86%8D%E5%88%9B%E5%8D%95%E6%97%A5%E6%96%B0%E9%AB%98'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-05-15/Science-%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E-%E6%B2%BB%E7%96%97-%E8%8D%AF%E7%89%A9%E5%92%8C%E7%96%AB%E6%83%85%E7%BB%93%E6%9D%9F%E5%90%8E%E7%9A%84%E6%8C%91%E6%88%98'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-05-15/Science-%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E-%E6%B2%BB%E7%96%97-%E8%8D%AF%E7%89%A9%E5%92%8C%E7%96%AB%E6%83%85%E7%BB%93%E6%9D%9F%E5%90%8E%E7%9A%84%E6%8C%91%E6%88%98">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-05-17/Chinese-%E5%8F%B0%E6%B9%BE%E7%96%AB%E6%83%85-%E6%9C%AC%E5%9C%9F%E7%A1%AE%E8%AF%8A%E6%96%B0%E5%A2%9E333%E4%BE%8B-%E5%86%8D%E5%88%9B%E5%8D%95%E6%97%A5%E6%96%B0%E9%AB%98">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<BBC>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-05-17/Chinese-%E5%8F%B0%E6%B9%BE%E7%96%AB%E6%83%85-%E6%9C%AC%E5%9C%9F%E7%A1%AE%E8%AF%8A%E6%96%B0%E5%A2%9E333%E4%BE%8B-%E5%86%8D%E5%88%9B%E5%8D%95%E6%97%A5%E6%96%B0%E9%AB%98">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<BBC>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-05-15/Science-%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E-%E6%B2%BB%E7%96%97-%E8%8D%AF%E7%89%A9%E5%92%8C%E7%96%AB%E6%83%85%E7%BB%93%E6%9D%9F%E5%90%8E%E7%9A%84%E6%8C%91%E6%88%98">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

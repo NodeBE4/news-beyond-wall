@@ -1,0 +1,2284 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>[Science] 新冠之后，科学家开始防堵另一种病毒来袭 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+[Science] 新冠之后，科学家开始防堵另一种病毒来袭
+——
+" />
+    <meta property="og:description" content="
+[Science] 新冠之后，科学家开始防堵另一种病毒来袭
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="[Science] 新冠之后，科学家开始防堵另一种病毒来袭" />
+    <meta property="twitter:title" content="[Science] 新冠之后，科学家开始防堵另一种病毒来袭" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-55728928&t=%5BScience%5D+%E6%96%B0%E5%86%A0%E4%B9%8B%E5%90%8E%EF%BC%8C%E7%A7%91%E5%AD%A6%E5%AE%B6%E5%BC%80%E5%A7%8B%E9%98%B2%E5%A0%B5%E5%8F%A6%E4%B8%80%E7%A7%8D%E7%97%85%E6%AF%92%E6%9D%A5%E8%A2%AD" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-55728928&t=%5BScience%5D+%E6%96%B0%E5%86%A0%E4%B9%8B%E5%90%8E%EF%BC%8C%E7%A7%91%E5%AD%A6%E5%AE%B6%E5%BC%80%E5%A7%8B%E9%98%B2%E5%A0%B5%E5%8F%A6%E4%B8%80%E7%A7%8D%E7%97%85%E6%AF%92%E6%9D%A5%E8%A2%AD&d=2021-01-19&e=
+[Science] 新冠之后，科学家开始防堵另一种病毒来袭
+——
+
+
+  
+    新冠之后，科学家开始防堵另一种病毒来袭
+  
+  
+    
+      
+        哈雷特‧康斯坦博
+        （ Harriet Constable ）
+      
+    
+  
+  
+    2021年1月20日
+  
+  
+    
+      
+        
+          
+            图像来源，Getty Images
+          
+        
+        
+          
+图像加注文字，            果蝠是尼帕病毒的自然宿主。
+          
+        
+      
+    
+  
+  
+    2020年1月3日，泰国病毒专家苏帕蓬‧哇卡拿鲁萨蒂（Supaporn Wacharapluesadee）..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-55728928" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=http://www.bbc.com/zhongwen/simp/science-55728928" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=http://www.bbc.com/zhongwen/simp/science-55728928&text=[Science] 新冠之后，科学家开始防堵另一种病毒来袭&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=http://www.bbc.com/zhongwen/simp/science-55728928&title=[Science] 新冠之后，科学家开始防堵另一种病毒来袭" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://www.bbc.com/zhongwen/simp/science-55728928&title=[Science] 新冠之后，科学家开始防堵另一种病毒来袭" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=[Science] 新冠之后，科学家开始防堵另一种病毒来袭&body=
+[Science] 新冠之后，科学家开始防堵另一种病毒来袭
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=http://www.bbc.com/zhongwen/simp/science-55728928" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=http://www.bbc.com/zhongwen/simp/science-55728928&title=[Science] 新冠之后，科学家开始防堵另一种病毒来袭&caption=
+[Science] 新冠之后，科学家开始防堵另一种病毒来袭
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=[Science] 新冠之后，科学家开始防堵另一种病毒来袭&url=http://www.bbc.com/zhongwen/simp/science-55728928" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>[Science] 新冠之后，科学家开始防堵另一种病毒来袭</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-01-19
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#BBC ">
+          BBC
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="http://www.bbc.com/zhongwen/simp/science-55728928"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="BBC的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#BBC 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-55728928&t=%5BScience%5D+%E6%96%B0%E5%86%A0%E4%B9%8B%E5%90%8E%EF%BC%8C%E7%A7%91%E5%AD%A6%E5%AE%B6%E5%BC%80%E5%A7%8B%E9%98%B2%E5%A0%B5%E5%8F%A6%E4%B8%80%E7%A7%8D%E7%97%85%E6%AF%92%E6%9D%A5%E8%A2%AD&d=2021-01-19&e=
+[Science] 新冠之后，科学家开始防堵另一种病毒来袭
+——
+
+
+  
+    新冠之后，科学家开始防堵另一种病毒来袭
+  
+  
+    
+      
+        哈雷特‧康斯坦博
+        （ Harriet Constable ）
+      
+    
+  
+  
+    2021年1月20日
+  
+  
+    
+      
+        
+          
+            图像来源，Getty Images
+          
+        
+        
+          
+图像加注文字，            果蝠是尼帕病毒的自然宿主。
+          
+        
+      
+    
+  
+  
+    2020年1月3日，泰国病毒专家苏帕蓬‧哇卡拿鲁萨蒂（Supaporn Wacharapluesadee）..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-55728928" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1611120161000-->
+<p><a href="http://www.bbc.com/zhongwen/simp/science-55728928">[Science] 新冠之后，科学家开始防堵另一种病毒来袭</a>
+——</p>
+
+<div>
+  <div dir="ltr" class="css-e19l8g-GridComponent e57qer20">
+    <h1 id="content" tabindex="-1" class="css-1wfn6k3-Headline e1yj3cbb0">新冠之后，科学家开始防堵另一种病毒来袭</h1>
+  </div>
+  <div dir="ltr" class="e1j2237y2 css-vf19ca-GridComponent e57qer20">
+    <div class="css-s561j-Container e1c9i7u10">
+      <ul role="list" class="css-pu07qy-Person e1c9i7u12">
+        <li role="listitem" class="css-dvly96-Name e1c9i7u13">哈雷特‧康斯坦博</li>
+        <li role="listitem" class="css-1942rtw-Title e1c9i7u14">（ Harriet Constable ）</li>
+      </ul>
+    </div>
+  </div>
+  <div dir="ltr" class="e1j2237y1 css-vf19ca-GridComponent e57qer20">
+    <time datetime="2021-01-20" class="css-pb6w51-StyledTimestamp e4zesg50">2021年1月20日</time>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-oijotl-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/F850/production/_116586536_7e7eec13-4ae4-453e-a52d-3eece9153bef.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/F850/production/_116586536_7e7eec13-4ae4-453e-a52d-3eece9153bef.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/F850/production/_116586536_7e7eec13-4ae4-453e-a52d-3eece9153bef.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/F850/production/_116586536_7e7eec13-4ae4-453e-a52d-3eece9153bef.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/F850/production/_116586536_7e7eec13-4ae4-453e-a52d-3eece9153bef.jpg 800w" alt="果蝠是尼帕病毒的自然宿主。" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/F850/production/_116586536_7e7eec13-4ae4-453e-a52d-3eece9153bef.jpg" width="1024" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />            <p role="text" class="css-19db9gm-Copyright etq3yw90"><span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像来源，</span><span lang="en-GB">Getty Images</span></p>
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>果蝠是尼帕病毒的自然宿主。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70"><strong>2020年1月3日，泰国病毒专家苏帕蓬‧哇卡拿鲁萨蒂（Supaporn Wacharapluesadee）正在等待交付病毒采样。当时消息传出，在中国武汉，某种呼吸道传染病正在迅速传播。因中国农历新年临近，许多中国游客前往邻国泰国过节。泰国政府为防患于未然，开始在机场对武汉来的旅客进行身体检查，并挑选了一些科学实验室（包括哇卡拿鲁萨蒂的实验室）来处理采样，发现问题。</strong></p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">哇卡拿鲁萨蒂在曼谷主管泰国红十字会新兴传染病健康科学中心。在过去的10年里，她一直是名为“预则”（Predict）的一项流行病早期预警计划的成员。这项卫生计划是在全球范围尽快发现动物身上的病原体，然后阻止其传播到人类。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">她和她的团队对许多动物进行了取样。但他们的主要关注点一直是蝙蝠，众所周知，蝙蝠携带着许多种类的冠状病毒。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">她和她的团队在短短几天内就对来自武汉的传染病有了认识，发现了中国境外首宗新冠病毒病例。他们发现，新冠病毒不是起源自人体的一种新病毒，此外还发现新冠病毒与他们已经在蝙蝠身上发现的多种冠状病毒最为接近。得益于她们早期的发现，泰国政府能够迅速采取行动隔离患者并向国民发出警告。尽管泰国是一个人口接近7000万的国家，但截至2021年1月3日，已记录的新冠病人仅止於8955人，死亡65人。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <h2 id="下一个威胁来临" tabindex="-1" class="css-10tk4x-SubHeading e14hemmw1">下一个威胁来临</h2>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">虽然全世界还在与新冠病毒苦战，哇卡拿鲁萨蒂已经开始留意另一种病毒可能引发的大爆发。</p>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-oijotl-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/14670/production/_116586538_ce242c40-756a-46d3-b3bb-24527fac2fba.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/14670/production/_116586538_ce242c40-756a-46d3-b3bb-24527fac2fba.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/14670/production/_116586538_ce242c40-756a-46d3-b3bb-24527fac2fba.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/14670/production/_116586538_ce242c40-756a-46d3-b3bb-24527fac2fba.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/14670/production/_116586538_ce242c40-756a-46d3-b3bb-24527fac2fba.jpg 800w" alt="2020年9月哇卡拿鲁萨蒂和她的研究团队讨论找寻蝙蝠所带病毒的计划。她和她的团队曾发现中国之外首宗新冠病毒病例。" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/14670/production/_116586538_ce242c40-756a-46d3-b3bb-24527fac2fba.jpg" width="1024" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>2020年9月哇卡拿鲁萨蒂和她的研究团队讨论找寻蝙蝠所带病毒的计划。她和她的团队曾发现中国之外首宗新冠病毒病例。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">亚洲新发传染病的数量很高。因为亚洲热带地区拥有丰富的生物多样性，这也意味着亚洲热带地区也是大量病原体的家园，出现新型病毒的可能性也很大。在这些地区，人口的不断增长，以及人类与野生动物的频繁接触，也升高了新型病毒传播的风险因素。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">哇卡拿鲁萨蒂和她的同事在他们的研究中对数千只蝙蝠进行了抽样，发现了许多新的病毒。他们的发现大多是冠状病毒，但也发现了可以传染给人类的其他致命病原体。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">其中就包括<a href="https://www.who.int/csr/disease/nipah/zh/" aria-label="尼帕病毒, 外部链接" class="css-h9s9st-InlineLink e1cs6q200">尼帕病毒</a>。果蝠是这种病毒的自然宿主。哇卡拿鲁萨蒂说，“这是一个大问题，因为没有治疗方法……而且这种病毒导致的死亡率很高。”尼帕病毒的死亡率从40%到75%不等，具体数字取决于疫情发生的地点。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">并非只是她一个人有此忧虑。世界卫生组织每年都会审查可能导致公共卫生紧急状况的大量病原体，以决定如何优先安排其研发资金。世卫重点关注的是那些对人类健康构成最大威胁的传染病，以及有可能大流行和无疫苗预防的传染病。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">尼帕病毒就在世卫组织关注的前10名传染病之中。而且，由于亚洲已经发生了几起尼帕病毒爆发疫情，很可能我们看到的并非是最后一次爆发。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">尼帕病毒非常凶险有几个原因。首先是潜伏期很长，据报道，有一例潜伏期竟长达45天，这意味受感染的病人有足够的机会将尼帕病毒传播开来，而病人甚至不知道自己已经感染。其次，尼帕病毒还可以感染多种动物，使得病毒传播的可能性更大。而且尼帕病毒可以通过直接接触或食用受污染的食物而感染。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">感染尼帕病毒后病人可能会出现呼吸道症状，包括咳嗽、喉咙痛、疼痛和疲劳，也可能患上脑炎，致使脑部肿胀，甚至导致癫痫和死亡。可以肯定地说，这是一种世卫组织力图要防止传播的可怕传染病。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <h2 id="风险无处不在" tabindex="-1" class="css-10tk4x-SubHeading e14hemmw1">风险无处不在</h2>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">这天，柬埔寨西北部桑卡河畔的城市马德望，晨光初现。清晨5点，早晨街市开张，摩托车从购物者身边呼啸而过，在车后扬起一路灰尘。堆满货物的手推车停在临时搭建的摊位旁边，上面盖着五颜六色的布单，摊位上卖着各种形状的水果。当地人在摊位间进进出出，手提塑料袋里装满了购买的东西。戴着宽边帽的老妇人蹲在堆满售卖蔬菜的毯子上。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">换句话说，这是一个寻常不过的早晨街市。直到你抬头望向天空，才察觉有异。</p>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-oijotl-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/38E8/production/_116586541_fbd68f82-a718-4c22-89e7-d66b9964758f.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/38E8/production/_116586541_fbd68f82-a718-4c22-89e7-d66b9964758f.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/38E8/production/_116586541_fbd68f82-a718-4c22-89e7-d66b9964758f.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/38E8/production/_116586541_fbd68f82-a718-4c22-89e7-d66b9964758f.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/38E8/production/_116586541_fbd68f82-a718-4c22-89e7-d66b9964758f.jpg 800w" alt="柬埔寨马德望的早晨街市一切看来都寻常不过，除了果蝠之外。" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/38E8/production/_116586541_fbd68f82-a718-4c22-89e7-d66b9964758f.jpg" width="1024" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>柬埔寨马德望的早晨街市一切看来都寻常不过，除了果蝠之外。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">抬头上望，会看见头顶的大树上静静挂着成千上万的果蝠，它们的粪便就排泄在下面经过的人和东西身上。再仔细观察，会发现街市档位的顶棚上全是蝙蝠排泄物。金边巴斯德科学研究实验室病毒学部门负责人维斯那东（Veasna Duong）说，“人和流浪狗每天经过这里都会淋到蝙蝠尿。”维斯那东是哇卡拿鲁萨蒂的同行和研究合作者。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">维斯那东发现柬埔寨很多地方人类日常生活都与果蝠和其他动物混杂在一起，马德望早晨街市仅是其中之一。他的研究团队认为，人类和果蝠之间的任何接触都是“高风险接触”，也就是说极有可能发生果蝠身上的病毒传播到人类的危险。他说，“这种接触可能会使果蝠身上的病毒发生变异，导致病毒的大流行。”</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">尽管存在危险，但人类与蝙蝠的密切接触之例是不胜枚举。维斯那东说，“我们在柬埔寨和泰国的市场、宗教场所、学校和像吴哥窟这样的旅游景点都能看到果蝠，两个国家都有大量的蝙蝠。”吴哥窟通常每年要接待260万游客，这即是说，仅在吴哥窟一处尼帕病毒每年就有260万次机率从蝙蝠身上传染给人类。</p>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-oijotl-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/8708/production/_116586543_8a6f62af-8484-4b66-af63-88cacab53997.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/8708/production/_116586543_8a6f62af-8484-4b66-af63-88cacab53997.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/8708/production/_116586543_8a6f62af-8484-4b66-af63-88cacab53997.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/8708/production/_116586543_8a6f62af-8484-4b66-af63-88cacab53997.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/8708/production/_116586543_8a6f62af-8484-4b66-af63-88cacab53997.jpg 800w" alt="马德望街市上空飞舞的果蝠。在柬埔寨，这个街市只不过是蝙蝠和人类日常生活混杂在一起的众多地点之一而已。" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/8708/production/_116586543_8a6f62af-8484-4b66-af63-88cacab53997.jpg" width="1024" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>马德望街市上空飞舞的果蝠。在柬埔寨，这个街市只不过是蝙蝠和人类日常生活混杂在一起的众多地点之一而已。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">维斯那东和他的团队从2013年到2016年，启动了一个GPS跟踪计划，以了解果蝠和尼帕病毒的关系，并比较柬埔寨蝙蝠与其他热点地区蝙蝠的活动情况。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">其中两个蝙蝠热点地区是孟加拉国和印度。这两个国家过去都曾爆发过尼帕病毒感染人类，而两国的尼帕病毒爆发都可能与当地人饮用了受到蝙蝠污染的椰枣汁有关。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">晚上，带尼帕病毒的蝙蝠会飞到椰枣树种植园，舔食从树上流出的汁液。蝙蝠狂饮椰枣汁的时候，会在人类收集椰枣汁的罐子中排尿。不知情的当地人第二天从街头小贩那里买一杯含有蝙蝠尿液的椰枣汁，喝下肚后就会感染上尼帕病毒。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">在2001年至2011年之间，孟加拉国爆发了11次尼帕病毒，检测到196人感染，其中150人死亡。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">椰枣汁在柬埔寨也很受欢迎。维斯那东和他的团队发现，柬埔寨的果蝠会飞很远去寻找椰枣树，每晚最远可飞100公里。所以，这些地区的人不仅要担心与蝙蝠过于接近而受到感染，而且还要担心食用到被蝙蝠污染的产品。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">维斯那东和他的团队还发现了其他高风险情况。在柬埔寨和泰国，蝙蝠粪是一种很受欢迎的肥料。在工作机会很少的农村地区，出售蝙蝠粪是一种谋生之道。维斯那东发现很多地方的当地人甚至欢迎他们称之为飞狐的果蝠在他们家附近安家，以便收集出售蝙蝠粪便。</p>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-oijotl-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/E0E0/production/_116586575_9d8fd4d8-5d7e-4498-b52d-ed57a6c43abb.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/E0E0/production/_116586575_9d8fd4d8-5d7e-4498-b52d-ed57a6c43abb.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/E0E0/production/_116586575_9d8fd4d8-5d7e-4498-b52d-ed57a6c43abb.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/E0E0/production/_116586575_9d8fd4d8-5d7e-4498-b52d-ed57a6c43abb.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/E0E0/production/_116586575_9d8fd4d8-5d7e-4498-b52d-ed57a6c43abb.jpg 800w" alt="柬埔寨村民在收集蝙蝠粪。在柬埔寨和泰国，蝙蝠粪是很受欢迎的肥料，但收集这种肥料也会带来病毒感染的危险。" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/E0E0/production/_116586575_9d8fd4d8-5d7e-4498-b52d-ed57a6c43abb.jpg" width="1024" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>柬埔寨村民在收集蝙蝠粪。在柬埔寨和泰国，蝙蝠粪是很受欢迎的肥料，但收集这种肥料也会带来病毒感染的危险。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">但许多蝙蝠粪采收者并不知道他们会面临什么样的风险。维斯那东说，“我们采访的人60%不知道蝙蝠会传播疾病。他们仍然缺乏这方面的知识。”</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">在马德望市场卖鸭蛋的索福恩·迪恩（Sophrn Deun）被问及，她是否听说过可能从蝙蝠传染到人类的尼帕病毒，她回答说，“从来没有听说过。村里的人不怕飞狐，我从来没有因飞狐感染生病。”</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">维斯那东认为，教育当地人了解蝙蝠带来的危险应该是一个重要的工作。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <h2 id="改变世界" tabindex="-1" class="css-10tk4x-SubHeading e14hemmw1">改变世界</h2>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">在人类历史上某个时候，要避开蝙蝠可能轻而易举，但随着人口的增长，人类为满足日益增长的资源需求，正在改变这个星球，破坏野生栖息地，结果是加速疾病的传播。作家丽贝卡J‧怀特（Rebekah J White）和奥利‧拉古尔（Orly Razgour）在2020年英国埃克塞特大学一篇关于新出现的人畜共患疾病的综述论文中这样说，“因为森林砍伐、城市化和农业集约化生产等类土地利用变化的出现，这些[人畜共患]病原体的传播和传播风险正在加速。”</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">现亚洲和太平洋地区已居住全球60%的人口，而快速的城市化仍在进行中。根据世界银行的数据，2000年至2010年，东亚地区有近2亿人迁入城市生活。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">过去，蝙蝠栖息地的破坏曾导致尼帕病毒的爆发。1998年，马来西亚爆发的尼帕病毒导致100多人死亡。研究人员得出的结论是，森林大火和当地的干旱使得蝙蝠迁离其自然栖息地，迫使它们改而以农场的果树栖身，与农场饲养的猪一起生长。而且已发现在生存压力下，蝙蝠会释放更多的病毒。被迫迁离原栖息地，在加上与本不相关的物种近距离接触，结果使得蝙蝠身上的病毒会传染给猪，然后再传染给农民。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">此外，亚洲拥有全球近15%的热带森林，但也因此成为森林砍伐的热点地区。亚洲大陆是世界上生物多样性丧失程度最高的大陆之一。这在很大程度上是由于为了建生产棕榈油等产品的种植园而开发土地，以及建设人类住宅区和牲畜养殖场而致森林遭到大面积破坏。</p>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-oijotl-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/12F00/production/_116586577_0e103b37-fde3-40e9-aa63-e4aab24fa3d1.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/12F00/production/_116586577_0e103b37-fde3-40e9-aa63-e4aab24fa3d1.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/12F00/production/_116586577_0e103b37-fde3-40e9-aa63-e4aab24fa3d1.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/12F00/production/_116586577_0e103b37-fde3-40e9-aa63-e4aab24fa3d1.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/12F00/production/_116586577_0e103b37-fde3-40e9-aa63-e4aab24fa3d1.jpg 800w" alt="亚洲大量森林遭破坏，原因常是为生产棕榈油之类产品而开发土地建种植场。" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/12F00/production/_116586577_0e103b37-fde3-40e9-aa63-e4aab24fa3d1.jpg" width="1024" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>亚洲大量森林遭破坏，原因常是为生产棕榈油之类产品而开发土地建种植场。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">果蝠往往生活在有大量的果树供食用的茂密森林地区。如果栖息地被破坏或受损时，蝙蝠就会寻找新的地方栖身，比如人类房子的屋顶，或者吴哥窟有裂缝的塔楼。维斯那东说“蝙蝠栖息地的破坏和人类狩猎造成的干扰迫使飞狐要寻找其他栖息地。”维斯那东的研究小组观察到的蝙蝠每晚要飞行100公里去找果实吃，这很可能是因为能供给其食物的自然栖息地已经不复存在。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">但我们现在知道，蝙蝠对人类是有威胁的，其身上聚居着许多肮脏的疾病，有尼帕病毒和新冠病毒，还有埃博拉病毒和萨斯病毒（或称非典）。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">那么，我们是否应该干脆消灭蝙蝠以根绝这些病毒？对这个问题，一体化健康实验室（One Health institute Laboratory）的主任、“预测”项目实验室主任特蕾西•戈尔茨坦(Tracey Goldstein)的回答是，“除非我们想让情况变得更糟糕。”</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">戈尔茨坦指出，“蝙蝠在自然生态中扮演着非常重要的角色。”蝙蝠为500多种植物授粉，帮助其繁殖。她说，蝙蝠还有助于控制害虫，在人类疾病控制中发挥了非常重要的作用，比如吃蚊子来减少疟疾，“对人类健康帮助很大。”</p>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-oijotl-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/17D20/production/_116586579_94fedcf2-846b-423a-945f-9ede3b467670.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/17D20/production/_116586579_94fedcf2-846b-423a-945f-9ede3b467670.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/17D20/production/_116586579_94fedcf2-846b-423a-945f-9ede3b467670.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/17D20/production/_116586579_94fedcf2-846b-423a-945f-9ede3b467670.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/17D20/production/_116586579_94fedcf2-846b-423a-945f-9ede3b467670.jpg 800w" alt="科学家说，虽然蝙蝠带有很多病毒,但也因为吃昆虫，能帮助人类控制疾病，因此消灭蝙蝠不是好的解决办法。" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/17D20/production/_116586579_94fedcf2-846b-423a-945f-9ede3b467670.jpg" width="1024" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>科学家说，虽然蝙蝠带有很多病毒,但也因为吃昆虫，能帮助人类控制疾病，因此消灭蝙蝠不是好的解决办法。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">她还指出，即或从疾病的角度思考，捕杀蝙蝠已经被证明是有害的。她说，“如果一个物种数量下降，就会加速繁殖，结果反使人类更易受到感染。杀死动物会增加风险，因为你是增加了能传播病毒的动物数量。”</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <h2 id="寻找答案提出新问题" tabindex="-1" class="css-10tk4x-SubHeading e14hemmw1">寻找答案，提出新问题</h2>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">尽管维斯那东和他的团队找到了很多答案，但总会有更多的问题出现。其中一个新问题是，既然与果蝠接触会有很高风险，为什么柬埔寨至今还没有爆发尼帕病毒疫情？这是否只是时间早迟的问题？抑或是柬埔寨的果蝠和马来西亚的果蝠略有不同？或者柬埔寨果蝠携带的病毒与马来西亚有所差异？或者不同国家的人与蝙蝠的接触互动方式各有不同？</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">维斯那东的团队正在努力寻找答案，但至今还未找到。</p>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-oijotl-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/4888/production/_116586581_648dffd1-f250-4aef-bfcb-b893a042fe70.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/4888/production/_116586581_648dffd1-f250-4aef-bfcb-b893a042fe70.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/4888/production/_116586581_648dffd1-f250-4aef-bfcb-b893a042fe70.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/4888/production/_116586581_648dffd1-f250-4aef-bfcb-b893a042fe70.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/4888/production/_116586581_648dffd1-f250-4aef-bfcb-b893a042fe70.jpg 800w" alt="对蝙蝠和尼帕病毒的许多问题，维斯那东和他的团队至今还未找到答案。" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/4888/production/_116586581_648dffd1-f250-4aef-bfcb-b893a042fe70.jpg" width="1024" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>对蝙蝠和尼帕病毒的许多问题，维斯那东和他的团队至今还未找到答案。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">当然，研究这些问题的并非只有维斯那东的团队。猎捕威胁人类的病毒是全球性的大规模合作行动，科学家、兽医、自然资源保护人士，甚至民间科学家都参与其中，大家联合行动以了解我们正面临什么样的疾病威胁，以及如何避免疫情的爆发。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">维斯那东对蝙蝠进行取样并发现尼帕病毒后，会将采样送到澳大利亚疾病预防中心紧急疾病实验室诊断小组的负责人大卫‧威廉姆斯（David Williams）处。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">尼帕病毒非常危险，各国政府都认为可被恐怖主义者当成生化武器，因此全世界只有极少数实验室获许能培养、繁殖和储存这种病毒。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">威廉姆斯的实验室就是其中之一。他的团队成员中有些是世界领先的尼帕病毒专家，他的实验室并有大多数实验室无法提供的大量诊断工具。在他的实验室，这些穿着密闭防护服的尼帕病毒专家，能够从这个高度危险病毒的细小的样本中培育出更多的病毒株，然后顶着巨大的压力测试，了解尼帕病毒是如何复制、传播和引起疾病。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">要采集和运输尼帕病毒到澳大利亚实验室是大费周章的事。首先，在柬埔寨的维斯那东会在蝙蝠窝下铺上一张塑料布来收集蝙蝠的尿液，以此避免抓捕蝙蝠令蝙蝠受到惊吓。他把采集到的样品带回实验室，放入试管中，贴上标签，然后放入低温盒子中以保安全。再把这些危险的病毒样本交给获准专门装运危险货物的特快专递公司空运到澳大利亚。病毒样本抵达澳大利亚后需要特别通关获得入境许可。</p>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-oijotl-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/96A8/production/_116586583_d1f304e2-85c2-4291-ae3b-fda4a6885e61.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/96A8/production/_116586583_d1f304e2-85c2-4291-ae3b-fda4a6885e61.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/96A8/production/_116586583_d1f304e2-85c2-4291-ae3b-fda4a6885e61.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/96A8/production/_116586583_d1f304e2-85c2-4291-ae3b-fda4a6885e61.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/96A8/production/_116586583_d1f304e2-85c2-4291-ae3b-fda4a6885e61.jpg 800w" alt="维斯那东实验室一名成员正在检查一份蝙蝠尿样本。" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/96A8/production/_116586583_d1f304e2-85c2-4291-ae3b-fda4a6885e61.jpg" width="1024" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>维斯那东实验室一名成员正在检查一份蝙蝠尿样本。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">最终，蝙蝠尿液样本到达威廉姆斯的实验室。经测试之后，威廉姆斯将与柬埔寨的维斯那东分享结果。我问威廉姆斯，在全球范围内建立更多像他这样高度安全的实验室，是否能加速对危险传染病的检测。他说，“有此可能。如果能在柬埔寨这样的地方直接建立更多[生物安全]实验室，可以加快对危险病毒的特征识别和诊断。但是，建造和维护这样的实验室很昂贵。这就是建立这样的实验室会受到限制的原因。”</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">支持维斯那东和哇卡拿鲁萨蒂的研究工作的资金在过去一直是零零碎碎的，无法完全保障。已运作10年的预测计划已被特朗普政府终止，不过美国当选总统拜登已承诺恢复这个流行病预防项目。与此同时，哇卡拿鲁萨蒂为一项称作“泰国病毒体项目”的新计划提供了资金。这是她的团队与政府的泰国国家公园、野生动植物保护部门合作开展的新项目，使她能够对更多的蝙蝠和更广泛的野生动物进行取样，以了解其所携带的疾病及对人类健康的威胁。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">维斯那东和他的团队正在为他们下一步病原体检测之旅寻求资金。他的下一步计划是持续监测柬埔寨的蝙蝠，并搞清楚是否有迄今为止还未报告的人类感染尼帕病毒事件。</p>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-oijotl-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/C5EC/production/_116586605_41248fb8-224b-4ade-89bc-afe04406a85f.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/C5EC/production/_116586605_41248fb8-224b-4ade-89bc-afe04406a85f.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/C5EC/production/_116586605_41248fb8-224b-4ade-89bc-afe04406a85f.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/C5EC/production/_116586605_41248fb8-224b-4ade-89bc-afe04406a85f.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/C5EC/production/_116586605_41248fb8-224b-4ade-89bc-afe04406a85f.jpg 800w" alt="维斯那东研究团队正在寻求资金，以开展他们找寻病原体的下一阶段计划。" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/C5EC/production/_116586605_41248fb8-224b-4ade-89bc-afe04406a85f.jpg" width="1024" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="css-5z6hrn-GridComponent e57qer20">
+          <figcaption dir="ltr" class="css-rq8hou-Caption eede9f50">
+<span class="css-ow3j0s-VisuallyHiddenText e1yt7oin0">图像加注文字，</span>            <p>维斯那东研究团队正在寻求资金，以开展他们找寻病原体的下一阶段计划。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">他们还没有获得继续研究尼帕病毒的资金。他们说，如果计划无法开展，爆发再一次灾难性大流行的几率就会增大。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">维斯那东说，“长期的监测有助于我们……向当局提供信息［以制定］预防措施，并防止未被发现但可能导致疫情大爆发的病毒跨物种传播。”如果没有持续的培训，科学家可能无法像哇卡拿鲁萨蒂在泰国发现新冠病毒个案那样能迅速识别和鉴定新病毒。这些信息能帮助研制疫苗。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">我2020年6月与哇卡拿鲁萨蒂视频通话时，我问她是否为她的团队的非凡成就感到自豪。她回答说，“自豪吗？确实，我很骄傲。”</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">她接着说，“预测计划是如何从野生动物身上诊断新病毒的试验。因此，当我和我的团队发现(冠状病毒)的基因组时，并不太意外，因为我们参与的预测计划就是一个与此有关的研究项目，给了我们很多经验，加强了我们的能力。”</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">维斯那东和哇卡拿鲁萨蒂希望继续合作以预防可能在东南亚爆发的尼帕病毒。两人已经起草了一份共同监测该地区尼帕病毒的提案，计划在新冠病毒危机告一段落后提交给美国国防威胁减除署（Defense Threat Reduction Agency）。这是美国政府的一个机构，可资助旨在减少传染病对人类构成威胁的工作。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">2020年9月，我问哇卡拿鲁萨蒂是否认为自己有能力阻止下一次大流行。她穿着白大褂坐在自己的办公室里，在过去几个月里处理了数十万个新冠病毒样本，工作之重远远超出了她的实验室在任何正常年份的正常工作量。</p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70">尽管如此，她脸上还是绽开了笑容，说“我会去尝试阻止”。</p>
+  </div>
+  <div dir="ltr" class="css-1vcyzo4-GridComponent e57qer20">
+    <figure class="css-m91nxa-Figure e6bmn90">
+      <div dir="ltr" class="css-18d1333-GridComponent e57qer20">
+        <div dir="ltr" class="css-1p8eeyy-GridComponent e57qer20">
+          <div class="css-17dhpt4-ImagePlaceholder e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/FB9C/production/_90021446_grey_line_new.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/FB9C/production/_90021446_grey_line_new.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/FB9C/production/_90021446_grey_line_new.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/FB9C/production/_90021446_grey_line_new.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/FB9C/production/_90021446_grey_line_new.jpg 800w" alt="Short presentational grey line" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/FB9C/production/_90021446_grey_line_new.jpg" width="1333" class="css-1vsigzm-StyledImg-fadeIn e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70"><em class="css-mzjj9u ewc4zcb0">柬埔寨</em><em class="css-mzjj9u ewc4zcb0">的</em><em class="css-mzjj9u ewc4zcb0">莫拉·皮塞斯（Mora Piseth）</em><em class="css-mzjj9u ewc4zcb0">对此文也有贡献。</em></p>
+  </div>
+  <div dir="ltr" class="css-oywjep-GridComponent e57qer20">
+    <p dir="ltr" class="css-3pm568-Paragraph e1cc2ql70"><i class="css-mzjj9u ewc4zcb0"><b>请访问 </b></i><a href="https://www.bbc.com/future" class="css-h9s9st-InlineLink e1cs6q200">BBC Future</a><i class="css-mzjj9u ewc4zcb0"><b> 阅读 </b></i><a href="https://www.bbc.com/future/article/20210106-nipah-virus-how-bats-could-cause-the-next-pandemic" class="css-h9s9st-InlineLink e1cs6q200">英文原文</a><em class="css-mzjj9u ewc4zcb0"><strong>。</strong></em></p>
+  </div>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#BBC 的其它文章</h4>
+    
+      <li>
+        <time>2021-01-20</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-20/World-%E6%8B%9C%E7%99%BB%E5%86%85%E9%98%81-%E7%A1%AE%E5%AE%9E%E6%AF%94%E5%8E%86%E5%B1%8A%E7%BE%8E%E5%9B%BD%E6%94%BF%E5%BA%9C%E6%9B%B4%E5%85%B7%E5%A4%9A%E5%85%83%E4%BB%A3%E8%A1%A8%E6%80%A7">
+          [World] 拜登内阁：确实比历届美国政府更具多元代表性？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-20</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-20/Chinese-%E9%83%91%E7%88%BD%E9%A3%8E%E6%B3%A2-%E4%B8%AD%E5%9B%BD%E6%98%8E%E6%98%9F%E8%A2%AB%E6%8C%87%E5%9C%A8%E7%BE%8E%E5%9B%BD%E4%BB%A3%E5%AD%95%E5%A9%B4%E5%84%BF%E5%B9%B6-%E5%BC%83%E5%85%BB-%E9%81%AD%E7%8C%9B%E7%83%88%E6%8A%A8%E5%87%BB">
+          [Chinese] 郑爽风波：中国明星被指在美国代孕婴儿并“弃养” 遭猛烈抨击
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-19</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-19/Uk-%E9%A6%99%E6%B8%AF%E4%BA%BA%E7%A7%BB%E6%B0%91%E5%8E%BB%E8%8B%B1%E5%9B%BD-BNO%E6%96%B0%E7%AD%BE%E8%AF%81%E8%AE%A1%E5%88%92%E5%8F%AF%E5%90%A6%E6%BF%80%E6%B4%BB%E6%96%B0%E7%94%9F%E6%B4%BB">
+          [Uk] 香港人移民去英国：BNO新签证计划可否激活新生活？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-01-19</time>
+        <a href="https://nodebe4.github.io/waimei/2021-01-19/World-%E7%96%AB%E6%83%85%E4%B8%8B%E5%AF%82%E5%AF%9E%E8%8A%B3%E5%BF%83%E9%81%87%E7%BD%91%E4%B8%8A-%E7%88%B1%E6%83%85%E9%AA%97%E5%AD%90-%E8%AF%88%E8%B4%A2">
+          [World] 疫情下寂寞芳心遇网上“爱情骗子”诈财
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-19/Uk-%E9%A6%99%E6%B8%AF%E4%BA%BA%E7%A7%BB%E6%B0%91%E5%8E%BB%E8%8B%B1%E5%9B%BD-BNO%E6%96%B0%E7%AD%BE%E8%AF%81%E8%AE%A1%E5%88%92%E5%8F%AF%E5%90%A6%E6%BF%80%E6%B4%BB%E6%96%B0%E7%94%9F%E6%B4%BB">
+            前一篇：[Uk] 香港人移民去英国：BNO新签证计划可否激活新生活？
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-01-20/Chinese-%E9%83%91%E7%88%BD%E9%A3%8E%E6%B3%A2-%E4%B8%AD%E5%9B%BD%E6%98%8E%E6%98%9F%E8%A2%AB%E6%8C%87%E5%9C%A8%E7%BE%8E%E5%9B%BD%E4%BB%A3%E5%AD%95%E5%A9%B4%E5%84%BF%E5%B9%B6-%E5%BC%83%E5%85%BB-%E9%81%AD%E7%8C%9B%E7%83%88%E6%8A%A8%E5%87%BB">
+            后一篇：[Chinese] 郑爽风波：中国明星被指在美国代孕婴儿并“弃养” 遭猛烈抨击
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-01-19/Uk-%E9%A6%99%E6%B8%AF%E4%BA%BA%E7%A7%BB%E6%B0%91%E5%8E%BB%E8%8B%B1%E5%9B%BD-BNO%E6%96%B0%E7%AD%BE%E8%AF%81%E8%AE%A1%E5%88%92%E5%8F%AF%E5%90%A6%E6%BF%80%E6%B4%BB%E6%96%B0%E7%94%9F%E6%B4%BB'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-01-20/Chinese-%E9%83%91%E7%88%BD%E9%A3%8E%E6%B3%A2-%E4%B8%AD%E5%9B%BD%E6%98%8E%E6%98%9F%E8%A2%AB%E6%8C%87%E5%9C%A8%E7%BE%8E%E5%9B%BD%E4%BB%A3%E5%AD%95%E5%A9%B4%E5%84%BF%E5%B9%B6-%E5%BC%83%E5%85%BB-%E9%81%AD%E7%8C%9B%E7%83%88%E6%8A%A8%E5%87%BB'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-01-20/Chinese-%E9%83%91%E7%88%BD%E9%A3%8E%E6%B3%A2-%E4%B8%AD%E5%9B%BD%E6%98%8E%E6%98%9F%E8%A2%AB%E6%8C%87%E5%9C%A8%E7%BE%8E%E5%9B%BD%E4%BB%A3%E5%AD%95%E5%A9%B4%E5%84%BF%E5%B9%B6-%E5%BC%83%E5%85%BB-%E9%81%AD%E7%8C%9B%E7%83%88%E6%8A%A8%E5%87%BB'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-01-19/Uk-%E9%A6%99%E6%B8%AF%E4%BA%BA%E7%A7%BB%E6%B0%91%E5%8E%BB%E8%8B%B1%E5%9B%BD-BNO%E6%96%B0%E7%AD%BE%E8%AF%81%E8%AE%A1%E5%88%92%E5%8F%AF%E5%90%A6%E6%BF%80%E6%B4%BB%E6%96%B0%E7%94%9F%E6%B4%BB'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-01-19/Uk-%E9%A6%99%E6%B8%AF%E4%BA%BA%E7%A7%BB%E6%B0%91%E5%8E%BB%E8%8B%B1%E5%9B%BD-BNO%E6%96%B0%E7%AD%BE%E8%AF%81%E8%AE%A1%E5%88%92%E5%8F%AF%E5%90%A6%E6%BF%80%E6%B4%BB%E6%96%B0%E7%94%9F%E6%B4%BB">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-01-20/Chinese-%E9%83%91%E7%88%BD%E9%A3%8E%E6%B3%A2-%E4%B8%AD%E5%9B%BD%E6%98%8E%E6%98%9F%E8%A2%AB%E6%8C%87%E5%9C%A8%E7%BE%8E%E5%9B%BD%E4%BB%A3%E5%AD%95%E5%A9%B4%E5%84%BF%E5%B9%B6-%E5%BC%83%E5%85%BB-%E9%81%AD%E7%8C%9B%E7%83%88%E6%8A%A8%E5%87%BB">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<BBC>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-01-20/Chinese-%E9%83%91%E7%88%BD%E9%A3%8E%E6%B3%A2-%E4%B8%AD%E5%9B%BD%E6%98%8E%E6%98%9F%E8%A2%AB%E6%8C%87%E5%9C%A8%E7%BE%8E%E5%9B%BD%E4%BB%A3%E5%AD%95%E5%A9%B4%E5%84%BF%E5%B9%B6-%E5%BC%83%E5%85%BB-%E9%81%AD%E7%8C%9B%E7%83%88%E6%8A%A8%E5%87%BB">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<BBC>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-01-19/Uk-%E9%A6%99%E6%B8%AF%E4%BA%BA%E7%A7%BB%E6%B0%91%E5%8E%BB%E8%8B%B1%E5%9B%BD-BNO%E6%96%B0%E7%AD%BE%E8%AF%81%E8%AE%A1%E5%88%92%E5%8F%AF%E5%90%A6%E6%BF%80%E6%B4%BB%E6%96%B0%E7%94%9F%E6%B4%BB">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

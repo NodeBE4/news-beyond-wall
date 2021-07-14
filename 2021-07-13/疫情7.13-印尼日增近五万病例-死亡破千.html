@@ -1,0 +1,3787 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>【疫情7.13】印尼日增近五万病例 死亡破千 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+【疫情7.13】印尼日增近五万病例 死亡破千
+——
+" />
+    <meta property="og:description" content="
+【疫情7.13】印尼日增近五万病例 死亡破千
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="【疫情7.13】印尼日增近五万病例 死亡破千" />
+    <meta property="twitter:title" content="【疫情7.13】印尼日增近五万病例 死亡破千" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.epochtimes.com%2Fgb%2F21%2F7%2F13%2Fn13085637.htm&t=%E3%80%90%E7%96%AB%E6%83%857.13%E3%80%91%E5%8D%B0%E5%B0%BC%E6%97%A5%E5%A2%9E%E8%BF%91%E4%BA%94%E4%B8%87%E7%97%85%E4%BE%8B+%E6%AD%BB%E4%BA%A1%E7%A0%B4%E5%8D%83" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.epochtimes.com%2Fgb%2F21%2F7%2F13%2Fn13085637.htm&t=%E3%80%90%E7%96%AB%E6%83%857.13%E3%80%91%E5%8D%B0%E5%B0%BC%E6%97%A5%E5%A2%9E%E8%BF%91%E4%BA%94%E4%B8%87%E7%97%85%E4%BE%8B+%E6%AD%BB%E4%BA%A1%E7%A0%B4%E5%8D%83&d=2021-07-13&e=
+【疫情7.13】印尼日增近五万病例 死亡破千
+——
+
+
+  【大纪元2021年07月13日讯】（大纪元记者徐简、戴芙若、李言综合报导）据约翰‧霍普金斯大学的统计数据，截至美东夏令时周二（7月13日）中午12:00点，全球的中共病毒（武汉肺炎、COVID-19）病例总数超过1.87亿（187,453,777）例，死亡人数超过404万（4,043,684）人。
+  以下是7月11日（周一）单日新增确诊病例和死亡人数（部分数据或来自worldometer）：
+  美国32,765例确诊，236人死亡；英国34,810例确诊，6人死亡；德国553例确诊，27人死亡；法国1,268例确诊，28人死亡；印度30,827例确诊，546人死亡；巴西17,031例确诊，745人死亡；俄罗斯24,649例确诊，700人死亡；日本1,511例确诊，3人死亡；韩国1,150例确诊，2人死亡；台湾24例确诊..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.epochtimes.com%2Fgb%2F21%2F7%2F13%2Fn13085637.htm" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.epochtimes.com/gb/21/7/13/n13085637.htm" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.epochtimes.com/gb/21/7/13/n13085637.htm&text=【疫情7.13】印尼日增近五万病例 死亡破千&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.epochtimes.com/gb/21/7/13/n13085637.htm&title=【疫情7.13】印尼日增近五万病例 死亡破千" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.epochtimes.com/gb/21/7/13/n13085637.htm&title=【疫情7.13】印尼日增近五万病例 死亡破千" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=【疫情7.13】印尼日增近五万病例 死亡破千&body=
+【疫情7.13】印尼日增近五万病例 死亡破千
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.epochtimes.com/gb/21/7/13/n13085637.htm" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.epochtimes.com/gb/21/7/13/n13085637.htm&title=【疫情7.13】印尼日增近五万病例 死亡破千&caption=
+【疫情7.13】印尼日增近五万病例 死亡破千
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=【疫情7.13】印尼日增近五万病例 死亡破千&url=https://www.epochtimes.com/gb/21/7/13/n13085637.htm" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>【疫情7.13】印尼日增近五万病例 死亡破千</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-07-13
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#大纪元 ">
+          大纪元
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.epochtimes.com/gb/21/7/13/n13085637.htm"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="大纪元的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#大纪元 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.epochtimes.com%2Fgb%2F21%2F7%2F13%2Fn13085637.htm&t=%E3%80%90%E7%96%AB%E6%83%857.13%E3%80%91%E5%8D%B0%E5%B0%BC%E6%97%A5%E5%A2%9E%E8%BF%91%E4%BA%94%E4%B8%87%E7%97%85%E4%BE%8B+%E6%AD%BB%E4%BA%A1%E7%A0%B4%E5%8D%83&d=2021-07-13&e=
+【疫情7.13】印尼日增近五万病例 死亡破千
+——
+
+
+  【大纪元2021年07月13日讯】（大纪元记者徐简、戴芙若、李言综合报导）据约翰‧霍普金斯大学的统计数据，截至美东夏令时周二（7月13日）中午12:00点，全球的中共病毒（武汉肺炎、COVID-19）病例总数超过1.87亿（187,453,777）例，死亡人数超过404万（4,043,684）人。
+  以下是7月11日（周一）单日新增确诊病例和死亡人数（部分数据或来自worldometer）：
+  美国32,765例确诊，236人死亡；英国34,810例确诊，6人死亡；德国553例确诊，27人死亡；法国1,268例确诊，28人死亡；印度30,827例确诊，546人死亡；巴西17,031例确诊，745人死亡；俄罗斯24,649例确诊，700人死亡；日本1,511例确诊，3人死亡；韩国1,150例确诊，2人死亡；台湾24例确诊..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.epochtimes.com%2Fgb%2F21%2F7%2F13%2Fn13085637.htm" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1626176930000-->
+<p><a href="https://www.epochtimes.com/gb/21/7/13/n13085637.htm">【疫情7.13】印尼日增近五万病例 死亡破千</a>
+——</p>
+
+<div>
+  <p>【大纪元2021年07月13日讯】（大纪元记者徐简、戴芙若、李言综合报导）据约翰‧霍普金斯大学的统计数据，截至美东夏令时周二（7月13日）中午12:00点，全球的<a href="https://www.epochtimes.com/gb/tag/%E4%B8%AD%E5%85%B1%E7%97%85%E6%AF%92.html">中共病毒</a>（武汉肺炎、COVID-19）病例总数超过1.87亿（187,453,777）例，死亡人数超过404万（4,043,684）人。</p>
+  <p>以下是7月11日（周一）单日新增确诊病例和死亡人数（部分数据或来自worldometer）：</p>
+  <p>美国32,765例确诊，236人死亡；<br />英国34,810例确诊，6人死亡；<br />德国553例确诊，27人死亡；<br />法国1,268例确诊，28人死亡；<br />印度30,827例确诊，546人死亡；<br />巴西17,031例确诊，745人死亡；<br />俄罗斯24,649例确诊，700人死亡；<br />日本1,511例确诊，3人死亡；<br />韩国1,150例确诊，2人死亡；<br />台湾24例确诊，1人死亡。</p>
+  <h2 id="section">以下是有关<a href="https://www.epochtimes.com/gb/tag/%E4%B8%AD%E5%85%B1%E7%97%85%E6%AF%92.html">中共病毒</a><a href="https://www.epochtimes.com/gb/tag/%E7%96%AB%E6%83%85.html">疫情</a>的实时更新：</h2>
+  <h3 id="section-1">印尼日增近五万确诊病例 死亡破千人 全球最高</h3>
+  <figure id="attachment_13086583" aria-describedby="caption-attachment-13086583" style="width: 600px" class="wp-caption aligncenter">
+<a target="_blank" href="https://i.epochtimes.com/assets/uploads/2021/07/id13086583-GettyImages-1233953477.jpg"><img class="size-large wp-image-13086583" src="https://i.epochtimes.com/assets/uploads/2021/07/id13086583-GettyImages-1233953477-600x399.jpg" alt="" width="600" height="399" /></a>    <figcaption id="caption-attachment-13086583" class="wp-caption-text">
+2021 年 7 月 13 日，印度尼西亚面临由高度传染性的 Delta 变种导致的最严重的<a href="https://www.epochtimes.com/gb/tag/%E7%96%AB%E6%83%85.html">疫情</a>，在日惹，患者在帐篷下接受治疗。（AGUNG SUPRIYANTO/AFP via Getty Images）
+    </figcaption>
+  </figure>
+  <p>印尼单日确诊已接近5万例，最近8天新增了30万例确诊病例，单日死亡人数为全球最高，医疗资源不足，患者得不到及时照护，政府推出免费远距医疗咨询，并发放药品包给在家隔离的弱势民众。</p>
+  <p>中央社报导，印尼这波COVID-19疫情自5月中开斋节后升温，迅速蔓延全国各地。根据世界卫生组织（WHO）的报告，在6月28日至7月4日这周，印尼半数约17个省的新增确诊人数比上一周增长50%，其中有11个省更增长1至3倍。</p>
+  <p>印尼官方统计，单日确诊数7月6日首度破3万例后持续攀升，7月13日更高达4.78万例。过去8天新增约30 万例确诊，累计约40.7万例在治疗或隔离，疑似患者约18万例。超过3/4省份的筛检率低于WHO的标准，许多专家认为，疫情远远被低估。</p>
+  <p>印尼医疗资源本即短缺，每千人仅0.4名医生、1.2 张病床。印尼民间疫情资讯分享平台LaporCOVID-19统计，已有1,244名医疗工作者染疫去世，包括458名医生、393名护士。当局坦承，应对疫情仍短缺约3,000名医生、1.6万至2万名护士。</p>
+  <p>患者激增，许多医院传出危机，无法收治更多患者，医疗资源也不足。日惹（Yogyakarta）的萨吉托医师综合医院（Dr. Sardjito General Hospital）日前爆出，因氧气不足而造成33名患者死亡。东爪哇省长柯菲法（Khofifah Indar Parawansa）昨天说，医院的氧气很快会用完，呼吁政府尽速因应。</p>
+  <p>印尼近来已有2天的单日死亡超过千人，根据世界实时统计数据Worldometer网站，印尼多日成为单日死亡人数最高的国家。印尼官方未统计多少被医院拒收的患者在家中死亡，LaporCOVID-19统计，自6月至今已490人，恐怕仅是冰山一角。</p>
+  <p>印尼1月中开始施打中国科兴（Sinovac）<a href="https://www.epochtimes.com/gb/tag/%E7%96%AB%E8%8B%97.html">疫苗</a>，占目前使用疫苗的9成，3月中获得英国阿斯利康（AstraZeneca）疫苗，中国国药（Sinopharm）的疫苗也在使用中。此外，美国近日提供450万剂莫德纳（Moderna）疫苗，但还没开始接种。</p>
+  <h3 id="section-2">英国新增36,660病例 50人死亡</h3>
+  <p>英国周二报告了 36,660 例病例，以及50 人在阳性检测后的 28 天内死亡，这是自 4 月以来最严重的死亡人数。</p>
+  <p>英国国家统计局公布的单独数据显示，英国有 154,000 人的死亡证明上提到了 Covid-19。</p>
+  <p>据约翰‧霍普金斯大学的统计数据，截至目前，英国的确诊病例总数达到了5,173,995例，死亡总人数升至128,697人。</p>
+  <h3 id="section-3">默克尔：德国不打算强制接种<a href="https://www.epochtimes.com/gb/tag/%E7%96%AB%E8%8B%97.html">疫苗</a></h3>
+  <figure id="attachment_13086595" aria-describedby="caption-attachment-13086595" style="width: 600px" class="wp-caption aligncenter">
+<a target="_blank" href="https://i.epochtimes.com/assets/uploads/2021/07/id13086595-GettyImages-1233954393.jpg"><img class="size-large wp-image-13086595" src="https://i.epochtimes.com/assets/uploads/2021/07/id13086595-GettyImages-1233954393-600x401.jpg" alt="" width="600" height="401" /></a>    <figcaption id="caption-attachment-13086595" class="wp-caption-text">
+2021 年 7 月 13 日，德国总理默克尔 (Angela Merkel) 在访问罗伯特·科赫研究所 (RKI，德国国家机构和疾病控制与预防研究所) 后举行了新闻发布会。（MICHAEL KAPPELER/POOL/AFP via Getty Images）
+    </figcaption>
+  </figure>
+  <p>德国总理默克尔（Angela Merkel）表示，德国不打算像法国和其它国家那样为部分人群实施强制性 Covid-19 疫苗接种，</p>
+  <p>“我们不打算走这条路，”默克尔说，“我们正处于我们仍在推广（疫苗接种）阶段的开始，我们拥有的疫苗比想要接种疫苗的人还多。”</p>
+  <p>在今年早些时候疫苗接种运动开始缓慢之后，德国在夏季加快了疫苗接种速度，到周二已为 42.6% 的成年人完全接种了疫苗，其中 58.5% 的人至少接种了一次。但据法新社报导，过去两周需求有所放缓，昨天的接种次数为 2 月以来的最低水平。</p>
+  <p>默克尔表示，她不相信德国政府可以通过走强制接种这条路来“获得信任”。 “我认为我们可以通过宣传疫苗接种以及让人口中尽可能多的人（……）根据自己的经验成为疫苗的大使来获得信任，”她说。</p>
+  <p>而在英国，与其它地方一样，建议接种疫苗，但即使是医护人员也没有强制接种，许多人担心由于缺乏长期的实验数据，疫苗尚未获得完全批准使用。</p>
+  <h3 id="section-4">俄罗斯单日死亡780人 创新纪录</h3>
+  <p>俄罗斯创造了新的记录，每天有 780 人死于新冠肺炎。</p>
+  <p>路透社报导称，俄罗斯已记录了 780 例与中共病毒相关的死亡，这是自大流行开始以来单日死亡人数最多的一天，全国单日新增病例 24,702 例。</p>
+  <p>俄罗斯正面临案件激增的局面，当局将其归咎于传染性Delta变种和疫苗接种速度缓慢。</p>
+  <p>莫斯科市长表示情况开始稳定，莫斯科报告了 4,991 例新的 Covid 病例。</p>
+  <h3 id="section-5">缅甸疫情政变双夹击 医用氧气短缺单日确诊创新高</h3>
+  <figure id="attachment_13086575" aria-describedby="caption-attachment-13086575" style="width: 600px" class="wp-caption aligncenter">
+<a target="_blank" href="https://i.epochtimes.com/assets/uploads/2021/07/id13086575-GettyImages-1233958196.jpg"><img class="size-large wp-image-13086575" src="https://i.epochtimes.com/assets/uploads/2021/07/id13086575-GettyImages-1233958196-600x400.jpg" alt="" width="600" height="400" /></a>    <figcaption id="caption-attachment-13086575" class="wp-caption-text">
+2021 年 7 月 13 日，缅甸疫情严重病例激增，人们在曼德勒一家工厂外等待填充空的氧气罐。（STR/AFP via Getty Images）
+    </figcaption>
+  </figure>
+  <p>缅甸疫情升温，仰光和瓦城两大城医疗用氧气短缺，死亡人数大幅上升，但受到2月军方政变影响，缅甸医疗系统的筛检量及检测能力不足，实际情况可能远比官方公布的更严峻。</p>
+  <p>中央社报导，缅甸今年2月爆发军人政变后，医护人员参加公民不服从运动，医疗能量吃紧，第一大城市仰光（Yangon ）及第二大城瓦城（Mandalay）的居民已难以买到氧气瓶。</p>
+  <p>缅甸昨天单日新增COVID-19确诊达5,014人，是疫情爆发以来首次超过5,000人的新高纪录，单日新增死亡89人。昨天公布的检测样本约1.4万份，确诊超过5,000人，阳性率超过3成，疫情益发严峻，医用氧气短缺问题也更严重。</p>
+  <p>截至昨天为止，缅甸累计病例数19万7227人，死亡3927人，但由于筛检量及检测能力不足，实际确诊及死亡人数都有可能更高。</p>
+  <p>独立媒体今日缅甸（Myanmar Now）报导，患者无法获得足够的氧气，过去几天在仰光有100多人死亡。</p>
+  <p>缅甸军政府发言人绍敏通（Zaw Min Tun）昨天在一场记者会中表示，军方的医院已准备好面对第三波疫情来袭。但多数缅甸人拒绝前往军医院就医，而街头的抗议始终没有停过。</p>
+  <p>社群媒体上充满了缅甸人在帮家人寻找医疗物资和氧气的讯息，还有各种缅甸人排队等待氧气的画面。协助提供医疗物资的志工团体Shwe Thanlyin指出，他们一天接到超过300通求救电话。</p>
+  <p>为了遏止疫情扩散，缅甸军政府在主要大城实施居家令，民众非必要不得外出。</p>
+  <h3 id="section-6">欧洲面临新一波疫情考验 荷兰法国扩大防疫限制</h3>
+  <p>欧洲正面临新一波疫情考验，许多国家扩大防疫限制，荷兰10日起关闭舞厅、法国扩大限制需出示健康通行证场所，而马尔他14日起将禁止未接种疫苗者入境。</p>
+  <p>中央社报导，荷兰自6月26日解封后病例激增，单日新增确诊病例从解封前约500例飙升，7月9日达到约6,900例，当晚荷兰总理吕特（Mark Rutte）召开记者会宣布，自7月10日至8月13日起启动紧缩防疫措施，包括所有餐厅与酒吧自午夜至清晨6时关闭、禁止现场表演和大声播放音乐、关闭舞厅和夜总会、民众在餐厅吃饭，座位须保持1.5公尺距离。</p>
+  <p>荷兰解封后2周病例激增约10倍，总理吕特（Mark Rutte）7月12日进一步承认政府过早松绑防疫限制，以及因未在7月9的新闻记者会上承认错误而道歉。</p>
+  <p>而法国近期单日新增确诊也回升至4,000例，法国总统马克龙（Emmanuel Macron）12日晚间宣布，将需要出示健康通行证措施扩大至包括餐厅、电影院和剧院。另8月起搭乘长途火车和飞机同样需要健康通行证。</p>
+  <figure id="attachment_13084761" aria-describedby="caption-attachment-13084761" style="width: 600px" class="wp-caption aligncenter">
+<a target="_blank" href="https://i.epochtimes.com/assets/uploads/2021/07/id13084761-GettyImages-1233945600.jpg"><img class="size-large wp-image-13084761" src="https://i.epochtimes.com/assets/uploads/2021/07/id13084761-GettyImages-1233945600-600x327.jpg" alt="" width="600" height="327" /></a>    <figcaption id="caption-attachment-13084761" class="wp-caption-text">
+2021年7月12日，法国总统马克龙在巴黎临时大王宫向全国发表电视讲话。马克龙宣布对医护人员进行强制性 Covid 疫苗接种，并且从八月开始需要在餐馆除湿COVID健康通行证。(LUDOVIC MARIN/AFP via Getty Images)
+    </figcaption>
+  </figure>
+  <p>此外，马克龙说医护人员必须在9月15日前接种疫苗，否则将承担后果。另现阶段虽不强制大众接种疫苗，但没有接种的人会受限制。</p>
+  <p>此外，马尔他则宣布7月14日起将禁止未接种疫苗者入境，马尔他卫生部长费恩（Chris Fearne）说：“我们会是第一个这么做的欧盟国家，但我们必须保护我们的社会”。</p>
+  <p>相较多个欧盟国家紧缩防疫措施，但英国反其道而行，不畏具高度传染力的Delta变异株肆虐，将在7月19日解除现行多数的防疫限制，并称这一天为“自由日”。</p>
+  <h3 id="section-7"></h3>
+  <h3 id="section-8">马来西亚新增确诊数首度破万 接种中心逾200工作人员染疫</h3>
+  <p>马来西亚疫情高烧不退，今天新增11,079名COVID-19确诊病例，再度刷新该国单日确诊人数纪录。在加速推动疫苗接种之际，竟传出接种中心染疫，逾200人确诊。</p>
+  <p>中央社报导，大马疫情延烧，当局自6月开始实施全面封锁，至今仍未见疫情明显好转。9日起连续3天单日新增确诊人数都超过9,000人，昨天虽降至8,500多，今天却飙破万人，创下单日新增确诊人数最高纪录；其中，全国工业化程度最高的雪兰莪州（Selangor）占了约一半以上的病例。</p>
+  <p>同时，位于雪兰莪州沙亚南会展中心（IDCC）的疫苗接种中心竟传出多名员工确诊，今天关闭进行消毒。当地媒体报导，负责COVID-19疫苗接种计划的科学部长凯里（Khairy Jamaluddin）表示，目前有204名工作人员确诊，这个接种中心将换上一批新的工作人员，民众明天起前往这个接种中心是安全的。</p>
+  <p>综合马媒报导，马来西亚卫生总监诺希山（Noor Hisham Abdullah）今天表示，境内新增11,079人确诊，全国累计确诊案例为855,949例；另新增125起死亡病例，累计病故人数为6,385人。</p>
+  <p>他指出，近日新增确诊人数暴增是因为巴生河流域实施加强行动管制令和进行大规模筛检的缘故，估计再过一两周新增案例数就会下降。</p>
+  <p>诺希山表示，马来西亚国内疫情飙升与变种病毒息息相关，特别是源自印度的Delta变异株，具有高传染力及危险性。“若有100人感染，它可以在短时间内传给800人”。</p>
+  <p>由于疫情仍然严峻，马国政府日前宣布，自6月开始实施的全国封锁措施将无限期延长，除非马来西亚单日新增确诊人数降至4,000以下、疫苗接种率达到10%及加护病房需求降低，否则封锁措施不会松绑。</p>
+  <p>在许多民众生活因疫情陷入困境之际，马国民间发起“白旗运动”（#BenderaPutih），鼓励有困难的人主动在家门口挂上白旗寻求协助。有不少民众确实因此获得及时援助，度过难关。</p>
+  <h3 id="section-9">接种中国疫苗入境免隔离 韩国学界忧防疫安全</h3>
+  <p>韩国自本月起免除海外中共病毒（新冠肺炎）疫苗接种完成者入境时的隔离规定。然而，除中国产疫苗的有效性受外界质疑导致的安全问题外，韩国专家还担心，这一举措可能会影响到韩国防疫外交。</p>
+  <p>韩国7月起实行的海外疫苗接种者入境免隔离制度中，最引起争议的一点是，只要入境者接种世界卫生组织（WHO）批准紧急使用的疫苗，都予以承认免除隔离，但外界对部分疫苗的有效性和安全性存在忧虑和不信任，特别是中国产的国药和科兴疫苗。</p>
+  <p>WHO批准中国产疫苗用于急用时表示，国药和科兴的有效率分别为79%和51%，该数据远低于辉瑞的95%和莫德纳的94.1%。但即使如此，外界认为实际有效率可能更低。</p>
+  <p>韩国学术界和政界都对此表示担忧，峨山政策研究院副研究委员李东奎（音）在11日的报告中举例称，接种中国产疫苗的地区疫情反而恶化，比如科兴疫苗接种率高达51%的智利，每天仍有5000多名新增确诊者，在印尼接种中国产疫苗的350多名医务人员也被感染。</p>
+  <p>另外，泰国卫生部当地时间11日表示，618名医护人员接种2次中国科兴疫苗后仍被确诊，其中1名30岁的护士死亡。对此，泰国决定在第二次交叉接种中使用阿斯利康疫苗。</p>
+  <p>李东奎表示，“考虑到中国境内只接种中国产疫苗，因此中国入境者大部分接种的都是中国产疫苗，这部分人以探亲等目的入境后遍布全国各地，很难对其防疫状况进行检查或管理。”</p>
+  <h3 id="section-10">美国疫情：确诊病例和死亡人数最多的前十州</h3>
+  <figure id="attachment_12736540" aria-describedby="caption-attachment-12736540" style="width: 600px" class="wp-caption aligncenter">
+<a target="_blank" href="https://i.epochtimes.com/assets/uploads/2021/02/GettyImages-1296654307.jpg"><img class="size-large wp-image-12736540" src="https://i.epochtimes.com/assets/uploads/2021/02/GettyImages-1296654307-600x394.jpg" alt="" width="600" height="394" /></a>    <figcaption id="caption-attachment-12736540" class="wp-caption-text">
+图为2021年1月15日，加利福尼亚州埃尔卡洪市：一家殡仪馆员工正在将一名Covid-19死者的棺材装入灵车内。（Mario Tama/Getty Images）
+    </figcaption>
+  </figure>
+  <p>据约翰‧霍普金斯大学的统计数据，截至周二上午，中共病毒已感染了192个国家和地区的超过 187,412,467人，导致至少4,043,222人死亡。</p>
+  <p>在美国，所有50个州和哥伦比亚特区都报告了确诊的COVID-19病例，总计超过33,890,840例疾病和至少 607,445例死亡。</p>
+  <p>以下是确诊病例最多的前十个州：</p>
+  <p>1. 加利福尼亚州：3,840,251例<br />2. 德克萨斯州：3,020,949例<br />3. 佛罗里达州：2,404,895例<br />4. 纽约州：2,121,119例<br />5. 伊利诺伊州：1,397,089例<br />6. 宾夕法尼亚州：1,218,886例<br />7. 乔治亚州：1,141,159例<br />8. 俄亥俄州：1,114,491例<br />9. 新泽西州：1,026,286例<br />10. 北卡罗来纳州：1,019,298例</p>
+  <p>以下是死亡人数最多的前十个州：</p>
+  <p>1. 加利福尼亚州：63,964人死亡<br />2. 纽约州：53,737人死亡<br />3. 德克萨斯州：52,661人死亡<br />4. 佛罗里达州：38,157人死亡<br />5. 宾夕法尼亚州：27,750人死亡<br />6. 新泽西州：26,509人死亡<br />7. 伊利诺伊州：25,757人死亡<br />8. 乔治亚州：21,499人死亡<br />9. 密歇根州：21,059人死亡<br />10. 俄亥俄州：20,380人死亡</p>
+  <h3 id="fda">FDA提醒：强生疫苗或导致罕见的神经系统副作用</h3>
+  <p>强生公司的Covid-19疫苗曾被爆出或导致严重血凝块，该公司本周一表示，他们在与美国监管机构讨论其疫苗的另外一种罕见的神经系统副作用。</p>
+  <p>该公司表示，在接种单次注射疫苗后，有人出现了罕见的吉兰-巴雷（Guillain-Barré ）综合症病例。该公司表示：“发生这种情况的可能性非常低。”</p>
+  <p>周一当天，美国食品和药物管理局（FDA）更新了对强生疫苗的说明，警告接种疫苗者可能会患上被称为吉兰-巴雷的这种罕见的神经系统并发症。</p>
+  <p>吉兰-巴雷综合症是一种罕见的神经系统疾病，这种神经系统紊乱会导致身体的免疫系统攻击神经，并可能导致患者瘫痪。强生没有说明有多少患者报告了这种疾病。</p>
+  <p>英国《金融时报》报导说，强生疫苗的副作用可能会动摇外界对其疫苗的信心，今年早些时候，这种疫苗也被发现可能导致某些患者出现罕见的血凝块。</p>
+  <h3 id="section-11">澳议员：强制性疫苗接种违反国际法和联邦法</h3>
+  <figure id="attachment_13085647" aria-describedby="caption-attachment-13085647" style="width: 600px" class="wp-caption aligncenter">
+<a target="_blank" href="https://i.epochtimes.com/assets/uploads/2021/07/id13085647-1.jpeg"><img class="size-large wp-image-13085647" src="https://i.epochtimes.com/assets/uploads/2021/07/id13085647-1-600x400.jpeg" alt="" width="600" height="400" /></a>    <figcaption id="caption-attachment-13085647" class="wp-caption-text">
+7月13日，澳洲联邦参议员安蒂克（Alex Antic）刊文指强制性疫苗接种违反国际法，并呼吁政府拒绝疫苗护照。图为联邦参议员安蒂克。（Alex Antic提供）
+    </figcaption>
+  </figure>
+  <p>7月13日，澳洲联邦参议员安蒂克（Alex Antic）在《旁观者》（The Spectator）上刊文指强制性疫苗接种违反《纽伦堡法典》，并呼吁政府拒绝疫苗护照。</p>
+  <p>他在题为“我们必须拒绝疫苗护照”一文中表示，每个人都有权利对是否使用医疗服务做出自己的决定。他说，许多澳洲人对疫苗的安全性感到担忧，还有许多人因持有宗教观点，不接种疫苗，“这是他们的权利。”</p>
+  <p>他说，澳洲政府最近宣布未来防疫工作上将遵循“四个阶段计划”，其中详细说明了数字疫苗接种证书的使用，就意图和目的而言，这相当于“疫苗护照”。</p>
+  <p>安蒂克说，《澳洲免疫接种手册》（The Australian Immunisation Handbook）指出，（疫苗）必须在没有不当压力、胁迫或操纵的情况下自愿接种。</p>
+  <h3 id="section-12">台湾疫苗预约平台 开放18岁以上者意愿登记</h3>
+  <figure id="attachment_13085646" aria-describedby="caption-attachment-13085646" style="width: 600px" class="wp-caption aligncenter">
+<a target="_blank" href="https://i.epochtimes.com/assets/uploads/2021/07/id13085646-2.jpeg"><img class="size-large wp-image-13085646" src="https://i.epochtimes.com/assets/uploads/2021/07/id13085646-2-600x400.jpeg" alt="" width="600" height="400" /></a>    <figcaption id="caption-attachment-13085646" class="wp-caption-text">
+示意图 (Getty Images)
+    </figcaption>
+  </figure>
+  <p>台湾COVID-19（中共肺炎）疫苗预约平台意愿登记实施对象再扩大，7月13日上午开放第9类（19至64岁高风险、罕见疾病及重大伤病者）及2003年（含）以前出生者意愿登记，疫苗种类可选择AZ或莫德纳，也可以复选。</p>
+  <p>台湾中央流行疫情指挥中心副指挥官陈宗彦于全国防疫会议会后记者会上公布，第三轮疫苗接种意愿登记已开放给所有18岁以上一般民众。</p>
+  <p>截至11日为止，台湾累计接种3,565,840人次，AstraZeneca接种1,998,872人次，Moderna接种1,566,968人次，COVID-19（中共肺炎）疫苗接种人口涵盖率约为14.87%。</p>
+  <h3 id="section-13">德国旅游度假 防疫及注意事项一览</h3>
+  <figure id="attachment_13085645" aria-describedby="caption-attachment-13085645" style="width: 600px" class="wp-caption aligncenter">
+<a target="_blank" href="https://i.epochtimes.com/assets/uploads/2021/07/id13085645-3.jpeg"><img class="size-large wp-image-13085645" src="https://i.epochtimes.com/assets/uploads/2021/07/id13085645-3-600x400.jpeg" alt="" width="600" height="400" /></a>    <figcaption id="caption-attachment-13085645" class="wp-caption-text">
+示意图，图为欧洲游客。(JAIME REINA/AFP via Getty Images)
+    </figcaption>
+  </figure>
+  <p>德国根据各国的疫情，划分了三个等级：风险区、高风险区和病毒变异区。</p>
+  <p>风险区：风险区即简单风险区。任何从风险区乘飞机返回德国的人必须在出发前向航空公司出示阴性测试结果、疫苗接种证明或染疫后的康复证明。</p>
+  <p>一般来说，在风险地区停留后，必须填写电子入境申报单。任何返回德国的人都必须接受10天的隔离，但只要有疫苗接种证书、康复证明或阴性测试证明，就可以规避或提前结束隔离。</p>
+  <p>高风险区：与简单风险地区的规则大致相同，但有一个特别之处，任何未接种疫苗或非已康复人士都必须接受至少5天的隔离。</p>
+  <p>病毒变异区：与风险区的规则大致相同，但是必须进行14天的隔离，不可以提前终止。从病毒变异地区进入德国时，禁止乘坐公共交通工具，即不能够乘坐飞机、火车、公共汽车、轮船等。</p>
+  <h3 id="section-14">毕马威报告：疫情导致澳洲房价暴涨</h3>
+  <figure id="attachment_13085644" aria-describedby="caption-attachment-13085644" style="width: 600px" class="wp-caption aligncenter">
+<a target="_blank" href="https://i.epochtimes.com/assets/uploads/2021/07/id13085644-4.jpeg"><img class="size-large wp-image-13085644" src="https://i.epochtimes.com/assets/uploads/2021/07/id13085644-4-600x400.jpeg" alt="" width="600" height="400" /></a>    <figcaption id="caption-attachment-13085644" class="wp-caption-text">
+疫情之下，悉尼的房价增幅达到难以置信的25%，而如果没有发生疫情，增幅可能只有13%，这意味着疫情导致房价增幅几乎翻了一倍。(Lisa Maree Williams/Getty Images)
+    </figcaption>
+  </figure>
+  <p>一项最新研究发现，如果疫情没有发生，澳洲的房价会比目前低得多。分析显示，澳洲独立屋在疫情之下的价格比正常环境高12%，公寓价格也高了13%。</p>
+  <p>四大会计师事务所之一的毕马威7月12日发布了《疫情对澳洲住宅房地产市场的影响》的报告，研究了过去18个月房地产在疫情之中的情况，并与没有发生疫情的正常市场环境进行对比。</p>
+  <p>该报告发现，疫情之下，悉尼的房价增幅达到难以置信的25%，而如果没有发生疫情，增幅可能只有13%，这意味着疫情导致房价增幅几乎翻了一倍。</p>
+  <p>报告说，如果疫情没有发生，政府应对疫情的经济支持政策，包括创纪录的低利率、鼓励建房的HomeBuild项目和量化宽松政策等就不会出现，而这些政策是房价上涨的主要因素。</p>
+  <p>报告认为，超低利率再加上政府对住房市场的支持，已经超过了房地产市场存在的长期负面因素，如缺乏移民和人口增长放缓。</p>
+  <h3 id="covid-">世卫敦促停止混合接种COVID疫苗 加国辩护</h3>
+  <p>世界卫生组织的首席科学家周一（7月12日）建议人们不要混打来自不同制造商的COVID-19疫苗，称这是一种“危险的趋势”，因为关于混打疫苗对健康影响的数据很少。加拿大官员当天为本国实施混打疫苗的做法进行了辩护。</p>
+  <p>世卫的最新建议显然与加拿大目前注射疫苗的做法不同。加拿大国家免疫咨询委员会（NACI）允许辉瑞和莫德纳交叉“混打”，即第一剂打辉瑞，第二剂可打莫德纳，反之亦可。但不建议第一剂接种辉瑞或莫德纳疫苗的人，第二剂接种阿斯利康疫苗。</p>
+  <p>针对世卫官员呼吁停止混打疫苗的这一建议，加拿大官员周一做出回应。据CTV报导，联邦采购部长阿南德说：“不管科学家们的建议是什么，我们都会确保有充足的疫苗，协助各省和地区的疫苗接种工作。”</p>
+  <p>在接受CTV采访时，萨斯喀彻温大学的医学副教授马斯瑞（Hassan Masri ）博士对世卫组织官员的信息提出质疑，指这并没有反映出最近对混合疫苗的研究，并可能导致更多人不愿打疫苗。</p>
+  <h3 id="az">加拿大捐赠1,770万剂AZ疫苗给中低收入国</h3>
+  <p>加拿大政府周一（7月12日）宣布，加拿大将捐赠 1,770 万剂阿斯利康COVID疫苗给中低收入国家。</p>
+  <p>据CBC报导，国际开发事务部长古尔德（Karina Gould）和采购部长阿南德（Anita Anand）周一表示，联邦政府捐赠的疫苗是与阿斯利康公司达成的预购协议的一部分，将通过全球分享疫苗计划COVAX发放给需要的国家。</p>
+  <p>COVAX疫苗分享计划是由世界卫生组织、流行病防范创新联盟和疫苗联盟Gavi联合协调的。该计划汇集来自较富裕国家的资金，购买疫苗并确保低收入和中等收入国家也能获得疫苗。</p>
+  <p>阿南德表示，加国在今年9月底前收到4,400万剂莫德纳和5,100万剂辉瑞的目标未有改变。“截至本周，加拿大总共将收到超5,500万剂疫苗，并且满足了各省和地区对该疫苗的需求，我们现在可以捐赠多余的剂量。”阿南德说。联邦政府已经承诺捐赠给COVAX 4.4亿元。</p>
+  <h3 id="section-15">纽约市长白思豪称加强为游民接种疫苗</h3>
+  <figure id="attachment_13085643" aria-describedby="caption-attachment-13085643" style="width: 600px" class="wp-caption aligncenter">
+<a target="_blank" href="https://i.epochtimes.com/assets/uploads/2021/07/id13085643-5.jpeg"><img class="size-large wp-image-13085643" src="https://i.epochtimes.com/assets/uploads/2021/07/id13085643-5-600x400.jpeg" alt="" width="600" height="400" /></a>    <figcaption id="caption-attachment-13085643" class="wp-caption-text">
+2021年7月12日，纽约市长白思豪出席记者会。（视讯会议截图）
+    </figcaption>
+  </figure>
+  <p>近日，纽约法律援助协会（Legal Aid Society）向纽约联邦法院提请暂缓市游民服务局（DHS）将游民迁出酒店的行动，但有效期只到周二（13日）。</p>
+  <p>在市民反对声浪加强的情况下，市府仍有可能在最近将游民迁回收容所，同时加强为游民接种疫苗。</p>
+  <p>周一记者会的问答环节中，有记者提问，市府将游民迁回收容所后是否会因应Delta变种病毒肆虐，加强为生病、行动不便的游民接种疫苗，纽约市长白思豪的答案是肯定的，他说：“我希望每个人都接种疫苗；不论是给收容所内还是收容所外的游民接种疫苗，都是第一要务。”</p>
+  <h3 class="p1" id="delta"><span class="s1"><strong>纽约市卫生局长警告</strong></span><span class="s2"><b> Delta</b></span><span class="s1"><strong>变种病毒在史坦顿岛传播</strong></span></h3>
+  <figure id="attachment_13086043" aria-describedby="caption-attachment-13086043" style="width: 600px" class="wp-caption aligncenter">
+<a href=" https://i.epochtimes.com/assets/uploads/2021/07/id13086043-1-600x400.jpeg" target="_blank" rel="noreferrer noopener"> <img class="size-large wp-image-13086043" src="https://i.epochtimes.com/assets/uploads/2021/07/id13086043-1-600x400.jpeg" alt="" width="600" height="400" /></a>    <figcaption id="caption-attachment-13086043" class="wp-caption-text">
+图为纽约市卫生局局长乔克西（Dave Chokshi）出席市长记者会。（纽约市长办公室提供）
+    </figcaption>
+  </figure>
+  <p>纽约市卫生局长乔克西（Dave Chokshi）7月12日警告，纽约市史坦顿岛近期确诊COVID-19的患者增加，提醒当地民众注意防疫，以及印度Delta变种病毒传播力更强。</p>
+  <p>乔克西表示，“我们看到史坦顿岛最近几天和几周的确诊率、确诊病例数有所增加”，“（Delta变种病毒）这种新病毒株的传染性特别强，因此对于未接种疫苗的民众来说，他们（可能）感染病毒的风险较高，可能出现严重并发症。”</p>
+  <p>纽约市卫生局公布的疫情数据显示，整体而言，纽约市染疫病例略有增加，7月10日的7天平均确诊率为1.27%、7天平均确诊病例数为328人，7天平均确诊率较4周前的数据增长32%。</p>
+  <p>史坦顿岛成为一个疫情微型热点，截止到7月8日，该区的7天平均阳性率为2.34%，远高于全市平均水平。</p>
+  <p>目前一共有85个国家报告了Delta变种，现在它是印度和英国最常见的变种，占了这些国家染疫病例的90%以上。而Delta变种在美国占了测序样本的一半以上。</p>
+  <h3 id="section-16">南京现染疫病患 行动轨迹遍及地铁公交等</h3>
+  <p>云南瑞丽持续有新增中共肺炎病例的同时，南京也出现病例。南京患者行动轨迹涉及南京南站、地铁、公交，还曾到浙江台州出差，亦曾到宁波中转。</p>
+  <p>7月12日，中共云南省卫健委通报称，11日0时至24时，该省本土确诊病例新增9例，境外输入新增3例。通报还指，这些病例均是瑞丽市全员核酸检测中发现。</p>
+  <p>在云南疫情未消之际，南京也出现疫情病例。7月12日，中共南京市委宣传部官方微博“南京发布”发通报称，7月9日，南京市雨花台区接到安徽省萧县疾控中心协查通知，指肖某是安徽一无症状感染者的密切接触者，核酸检测结果为阳性。</p>
+  <p>由于中共一贯掩盖真相，外界普遍质疑官方数据的真实性。</p>
+  <h3 id="section-17">台湾7/13增28例本土病例 6例死亡</h3>
+  <figure id="attachment_13086038" aria-describedby="caption-attachment-13086038" style="width: 600px" class="wp-caption aligncenter">
+<a target="_blank" href="https://i.epochtimes.com/assets/uploads/2021/07/id13086038-6.jpeg"><img class="size-large wp-image-13086038" src="https://i.epochtimes.com/assets/uploads/2021/07/id13086038-6-600x400.jpeg" alt="" width="600" height="400" /></a>    <figcaption id="caption-attachment-13086038" class="wp-caption-text">
+台湾中央流行疫情指挥中心宣布全国三级警戒延长至7月26日，13日起放宽部分场域规定进行“微解封”。微解封首日，民众搭乘捷运上班，靠在车厢内闭目养神。（中央社）
+    </figcaption>
+  </figure>
+  <p>台湾中央流行疫情指挥中心今日（7月13日）公布台湾新增28例COVID-19（中共病毒）本土个案确定病例及1例境外移入；另确诊个案中新增6例死亡。</p>
+  <p>台湾中央流行疫情指挥中心指挥官陈时中13日下午在疫情记者会表示，今日新增之28例本土病例(其中11例为居家隔离期间或期满检验阳性者)，为18例男性、10例女性，年龄介于未满10岁至80多岁，发病日介于今(2021)年6月26日至7月12日。</p>
+  <p>台湾指挥中心再次呼吁，民众应落实手部卫生、咳嗽礼节及佩戴口罩等个人防护措施，减少不必要移动、活动或集会，避免出入人多拥挤的场所，或高感染传播风险场域，并主动积极配合各项防疫措施，共同严守社区防线。</p>
+  <h3 id="section-18">纽约州中共病毒阳性率略有反弹 单日破1%</h3>
+  <figure id="attachment_13086042" aria-describedby="caption-attachment-13086042" style="width: 600px" class="wp-caption aligncenter">
+<a target="_blank" href="https://i.epochtimes.com/assets/uploads/2021/07/id13086042-2.jpeg"><img class="size-large wp-image-13086042" src="https://i.epochtimes.com/assets/uploads/2021/07/id13086042-2-600x400.jpeg" alt="" width="600" height="400" /></a>    <figcaption id="caption-attachment-13086042" class="wp-caption-text">
+根据州长办公室发布最新疫情数据，纽约州染疫阳性率略有反弹，周日（7月11日）数据突破1%。（纽约州长办公室提供）
+    </figcaption>
+  </figure>
+  <p>纽约州长办公室11日（周日）公布疫情数据，纽约州中共病毒阳性率反弹，超过1%，这是自5月18日以来全州首次单日阳性率破1%。</p>
+  <p>根据11日州府公布的数据，最新的单日检测数量为65,049例，阳性病例666例，阳性率为1.02%；纽约州7天平均阳性率为0.84%。州府10日（上周六）公布的单日阳性率为0.82%，纽约州7天平均阳性率为0.79%。</p>
+  <p>在纽约市，11日公布的单日阳性率为1.23%，过去7天的平均阳性率为1.18%；史坦顿岛7天平均阳性率在五个行政区中最高，为1.42%，其它区低于1%。</p>
+  <p>最早在印度发现的Delta变种病毒，已经成为美国的主要毒株。根据纽约市卫生局公布的数据，6月20日至6月26日这周，纽约市印度Delta变种病毒病例占测序样本的45.0%。</p>
+  <h3 id="section-19">美商务部长：推动政府放宽旅行限制</h3>
+  <figure id="attachment_13086040" aria-describedby="caption-attachment-13086040" style="width: 594px" class="wp-caption aligncenter">
+<a target="_blank" href="https://i.epochtimes.com/assets/uploads/2021/07/id13086040-4.jpeg"><img class="size-full wp-image-13086040" src="https://i.epochtimes.com/assets/uploads/2021/07/id13086040-4.jpeg" alt="" width="594" height="396" /></a>    <figcaption id="caption-attachment-13086040" class="wp-caption-text">
+图为美加边境 。(Joe Raedle/Getty Images)
+    </figcaption>
+  </figure>
+  <p>美国商务部长吉娜·雷蒙多（Gina Raimondo）周一（7月12日）表示，她正在敦促放宽禁止世界上许多国家的公民前往美国旅行的限制。但美国卫生官员仍然担心，这会导致疫情进一步爆发。</p>
+  <p>十几个美国商业团体、议员和外国政府官员敦促乔·拜登（Joe Biden）政府，放松前总统唐纳德·川普（特朗普）时期实施的、严格的旅行限制。雷蒙多在接受路透社采访时表示：“我们正在就此工作，我正在非常努力地推动。”</p>
+  <p>她透露说，她在上周五（7月9日）会见了美国卫生与公众服务部（U.S. Health and Human Services Secretary）部长泽维尔·贝塞拉（Xavier Becerra）。但她没有透露关于何时可能做出决定的信息。</p>
+  <p>据知情人士透露，美国交通部长皮特·布蒂吉格（Pete Buttigieg）已经在与商务部长雷蒙多一起推动取消旅行限制，但是政府中的其他人仍然担心，向更多的国外旅行者开放大门，可能会导致COVID-19（中共病毒）感染率的上升。</p>
+  <h3 id="az-1">日本第三度送暖 再捐赠台湾百万剂AZ疫苗</h3>
+  <figure id="attachment_13086039" aria-describedby="caption-attachment-13086039" style="width: 600px" class="wp-caption aligncenter">
+<a target="_blank" href="https://i.epochtimes.com/assets/uploads/2021/07/id13086039-5.jpeg"><img class="size-large wp-image-13086039" src="https://i.epochtimes.com/assets/uploads/2021/07/id13086039-5-600x400.jpeg" alt="" width="600" height="400" /></a>    <figcaption id="caption-attachment-13086039" class="wp-caption-text">
+日本外务大臣茂木敏充7月13日表示，决定再追加提供100万剂AZ疫苗给台湾，资料照。（中央社）
+    </figcaption>
+  </figure>
+  <p>日本外务大臣茂木敏充7月13日在记者会中宣布，再追加提供100万剂阿斯特捷利康（AZ）疫苗给台湾。中华民国外交部表示诚挚感谢，日本第3度提供AZ疫苗，3批合计337万剂。</p>
+  <p>茂木敏充13日在记者会中表示，日本决定追加提供给印尼、越南、台湾各100万剂AZ疫苗，这些AZ疫苗都是在日本制造的。</p>
+  <p>这是日本政府继6月4日捐赠124万剂疫苗及本月8日捐赠113万剂疫苗之后，日本对中华民国进行第三批援助，与前二批合计，共捐赠台湾超过330万剂疫苗。对日本的隆情义举，外交部表示，谨代表台湾政府及人民再次表达由衷谢意。</p>
+  <p>日本前首相安倍晋三6月18日说，台湾对日本来说是重要老朋友，提供疫苗理所当然。对此，中华民国外交部表示感谢，也说台日永结同心，每当台日发生天然灾害与人为事故时，双方均能即时驰援，极为难能可贵。</p>
+  <h3 id="section-20">白宫：州和地方政府可用疫情救济金打击犯罪</h3>
+  <figure id="attachment_13086041" aria-describedby="caption-attachment-13086041" style="width: 600px" class="wp-caption aligncenter">
+<a target="_blank" href="https://i.epochtimes.com/assets/uploads/2021/07/id13086041-3.jpeg"><img class="size-large wp-image-13086041" src="https://i.epochtimes.com/assets/uploads/2021/07/id13086041-3-600x400.jpeg" alt="" width="600" height="400" /></a>    <figcaption id="caption-attachment-13086041" class="wp-caption-text">
+纽约近来枪击案和谋杀案增多。图为纽约警察在执法。(BRYAN R. SMITH/AFP via Getty Images)
+    </figcaption>
+  </figure>
+  <p>美国白宫官员周一（7月12日）指示全美国各地政府利用联邦拨款的中共病毒（武汉肺炎、COVID-19）疫情救济资金，打击逾一年不断上升的犯罪浪潮，包括枪击案和杀人案件。</p>
+  <p>拜登的国内政策顾问苏珊‧赖斯（Susan Rice）和两名官员周一在备忘录中写道，总统近日公布了打击犯罪战略核心，要求与各州、各城市建立伙伴关系，给予他们“历史上著名（或重要）水平的联邦资金和一系列工具，以解决目前枪支暴力等多方面的挑战”这份备忘录已发给了全美国各地的地方和州政府官员。<br />目前，已有州和地方政府在使用这些资金增聘警员和购置枪击检测系统等反犯罪技术。</p>
+  <p>这些地方包括：新墨西哥州的阿尔伯克基市（Albuquerque）使用了45万美元来招募新警官，和花费300万美元来扩大检测系统。宾夕法尼亚州的费城使用了130万美元在预防暴力计划。在亚利桑那州，图森市（Tucson）正计划使用至少700万美元来加强公共安全。</p>
+  <p>责任编辑：李玲</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#大纪元 的其它文章</h4>
+    
+      <li>
+        <time>2021-07-13</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-13/%E4%BC%A0%E6%8B%9C%E7%99%BB%E6%94%BF%E5%BA%9C%E5%B0%86%E8%AD%A6%E5%91%8A%E5%9C%A8%E6%B8%AF%E7%BE%8E%E4%BC%81-%E6%8B%9F%E6%89%A9%E5%A4%A7%E5%88%B6%E8%A3%81%E4%B8%AD%E5%85%B1">
+          传拜登政府将警告在港美企 拟扩大制裁中共
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-13</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-13/%E9%99%86%E4%BC%81%E8%BF%9D%E7%BA%A6%E5%88%9B%E6%96%B0%E9%AB%98-%E4%B8%89%E5%A4%A7%E8%AF%84%E7%BA%A7%E6%9C%BA%E6%9E%84%E5%AF%B9%E5%A4%A7%E9%99%86%E5%80%BA%E5%8A%A1%E5%8F%91%E8%AD%A6%E5%91%8A">
+          陆企违约创新高 三大评级机构对大陆债务发警告
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-13</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-13/%E7%96%AB%E6%83%857.13-FDA%E8%AD%A6%E5%91%8A%E5%BC%BA%E7%94%9F%E7%96%AB%E8%8B%97%E5%8F%A6%E4%B8%80%E5%89%AF%E4%BD%9C%E7%94%A8">
+          【疫情7.13】FDA警告强生疫苗另一副作用
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-13</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-13/%E5%A4%A7%E9%99%8611%E5%9F%8E%E6%B7%B1%E5%BA%A6%E8%80%81%E9%BE%84%E5%8C%96-35%E5%9F%8E%E8%80%81%E9%BE%84%E5%8C%96%E6%95%B0%E6%8D%AE%E6%9B%9D%E5%85%89">
+          大陆11城深度老龄化  35城老龄化数据曝光
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-13/%E7%96%AB%E6%83%857.13-FDA%E8%AD%A6%E5%91%8A%E5%BC%BA%E7%94%9F%E7%96%AB%E8%8B%97%E5%8F%A6%E4%B8%80%E5%89%AF%E4%BD%9C%E7%94%A8">
+            前一篇：【疫情7.13】FDA警告强生疫苗另一副作用
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-13/%E4%B8%AD%E5%9B%BD%E6%90%9C%E7%8B%97%E7%BE%8E%E8%82%A1%E7%9B%98%E5%89%8D%E4%B8%8A%E6%B6%A82.5-%E6%AD%A4%E5%89%8D%E4%B8%AD%E5%9B%BD%E6%97%A0%E6%9D%A1%E4%BB%B6%E6%89%B9%E5%87%86%E8%85%BE%E8%AE%AF%E6%8E%A7%E8%82%A1%E5%AF%B9%E5%85%B6%E7%A7%81%E6%9C%89%E5%8C%96">
+            后一篇：中国搜狗美股盘前上涨2.5% 此前中国无条件批准腾讯控股对其私有化
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-07-13/%E7%96%AB%E6%83%857.13-FDA%E8%AD%A6%E5%91%8A%E5%BC%BA%E7%94%9F%E7%96%AB%E8%8B%97%E5%8F%A6%E4%B8%80%E5%89%AF%E4%BD%9C%E7%94%A8'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-07-13/%E4%B8%AD%E5%9B%BD%E6%90%9C%E7%8B%97%E7%BE%8E%E8%82%A1%E7%9B%98%E5%89%8D%E4%B8%8A%E6%B6%A82.5-%E6%AD%A4%E5%89%8D%E4%B8%AD%E5%9B%BD%E6%97%A0%E6%9D%A1%E4%BB%B6%E6%89%B9%E5%87%86%E8%85%BE%E8%AE%AF%E6%8E%A7%E8%82%A1%E5%AF%B9%E5%85%B6%E7%A7%81%E6%9C%89%E5%8C%96'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-07-13/%E9%99%86%E4%BC%81%E8%BF%9D%E7%BA%A6%E5%88%9B%E6%96%B0%E9%AB%98-%E4%B8%89%E5%A4%A7%E8%AF%84%E7%BA%A7%E6%9C%BA%E6%9E%84%E5%AF%B9%E5%A4%A7%E9%99%86%E5%80%BA%E5%8A%A1%E5%8F%91%E8%AD%A6%E5%91%8A'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-07-13/%E7%96%AB%E6%83%857.13-FDA%E8%AD%A6%E5%91%8A%E5%BC%BA%E7%94%9F%E7%96%AB%E8%8B%97%E5%8F%A6%E4%B8%80%E5%89%AF%E4%BD%9C%E7%94%A8'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-07-13/%E7%96%AB%E6%83%857.13-FDA%E8%AD%A6%E5%91%8A%E5%BC%BA%E7%94%9F%E7%96%AB%E8%8B%97%E5%8F%A6%E4%B8%80%E5%89%AF%E4%BD%9C%E7%94%A8">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-07-13/%E4%B8%AD%E5%9B%BD%E6%90%9C%E7%8B%97%E7%BE%8E%E8%82%A1%E7%9B%98%E5%89%8D%E4%B8%8A%E6%B6%A82.5-%E6%AD%A4%E5%89%8D%E4%B8%AD%E5%9B%BD%E6%97%A0%E6%9D%A1%E4%BB%B6%E6%89%B9%E5%87%86%E8%85%BE%E8%AE%AF%E6%8E%A7%E8%82%A1%E5%AF%B9%E5%85%B6%E7%A7%81%E6%9C%89%E5%8C%96">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<大纪元>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-07-13/%E9%99%86%E4%BC%81%E8%BF%9D%E7%BA%A6%E5%88%9B%E6%96%B0%E9%AB%98-%E4%B8%89%E5%A4%A7%E8%AF%84%E7%BA%A7%E6%9C%BA%E6%9E%84%E5%AF%B9%E5%A4%A7%E9%99%86%E5%80%BA%E5%8A%A1%E5%8F%91%E8%AD%A6%E5%91%8A">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<大纪元>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-07-13/%E7%96%AB%E6%83%857.13-FDA%E8%AD%A6%E5%91%8A%E5%BC%BA%E7%94%9F%E7%96%AB%E8%8B%97%E5%8F%A6%E4%B8%80%E5%89%AF%E4%BD%9C%E7%94%A8">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

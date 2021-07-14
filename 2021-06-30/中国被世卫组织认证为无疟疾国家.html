@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>中国被世卫组织认证为无疟疾国家 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+中国被世卫组织认证为无疟疾国家
+——
+" />
+    <meta property="og:description" content="
+中国被世卫组织认证为无疟疾国家
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="中国被世卫组织认证为无疟疾国家" />
+    <meta property="twitter:title" content="中国被世卫组织认证为无疟疾国家" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fcn.nytimes.com%2Fchina%2F20210701%2Fchina-malaria%2F&t=%E4%B8%AD%E5%9B%BD%E8%A2%AB%E4%B8%96%E5%8D%AB%E7%BB%84%E7%BB%87%E8%AE%A4%E8%AF%81%E4%B8%BA%E6%97%A0%E7%96%9F%E7%96%BE%E5%9B%BD%E5%AE%B6" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fchina%2F20210701%2Fchina-malaria%2F&t=%E4%B8%AD%E5%9B%BD%E8%A2%AB%E4%B8%96%E5%8D%AB%E7%BB%84%E7%BB%87%E8%AE%A4%E8%AF%81%E4%B8%BA%E6%97%A0%E7%96%9F%E7%96%BE%E5%9B%BD%E5%AE%B6&d=2021-06-30&e=
+中国被世卫组织认证为无疟疾国家
+——
+
+
+  
+黄瑞黎
+  
+  2021年7月1日
+  
+    
+去年在中国种植的黄花蒿苗。2015年，一名中国科学家因发现青蒿素被授予诺贝尔奖。青蒿素是黄花蒿的衍生物，是当今最有效的抗疟疾药物的核心化合物。 Costfoto/Barcroft Media, via Getty Images
+    
+  
+  
+    世界卫生组织(The World Health Organization)周三宣布，经过70年的抗击疟疾努力之后，中国获得了世卫组织给予的无疟疾认证。疟疾曾在中国导致数十万人死亡。
+    该成就是这个世界上人口最多国家的一个重要里程碑——中国是世卫组织西太平洋区域30多年来第一个获得无疟疾认证的国家。据世卫组织的数据，该地区只有其他三个国家获得了无疟疾认证：澳大利亚、文莱和新加坡。
+    “今天，我们祝贺中国人民消除了疟疾，..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fchina%2F20210701%2Fchina-malaria%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://cn.nytimes.com/china/20210701/china-malaria/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://cn.nytimes.com/china/20210701/china-malaria/&text=中国被世卫组织认证为无疟疾国家&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://cn.nytimes.com/china/20210701/china-malaria/&title=中国被世卫组织认证为无疟疾国家" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://cn.nytimes.com/china/20210701/china-malaria/&title=中国被世卫组织认证为无疟疾国家" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=中国被世卫组织认证为无疟疾国家&body=
+中国被世卫组织认证为无疟疾国家
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://cn.nytimes.com/china/20210701/china-malaria/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://cn.nytimes.com/china/20210701/china-malaria/&title=中国被世卫组织认证为无疟疾国家&caption=
+中国被世卫组织认证为无疟疾国家
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=中国被世卫组织认证为无疟疾国家&url=https://cn.nytimes.com/china/20210701/china-malaria/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>中国被世卫组织认证为无疟疾国家</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-06-30
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#纽约时报 ">
+          纽约时报
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://cn.nytimes.com/china/20210701/china-malaria/"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="纽约时报的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#纽约时报 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fchina%2F20210701%2Fchina-malaria%2F&t=%E4%B8%AD%E5%9B%BD%E8%A2%AB%E4%B8%96%E5%8D%AB%E7%BB%84%E7%BB%87%E8%AE%A4%E8%AF%81%E4%B8%BA%E6%97%A0%E7%96%9F%E7%96%BE%E5%9B%BD%E5%AE%B6&d=2021-06-30&e=
+中国被世卫组织认证为无疟疾国家
+——
+
+
+  
+黄瑞黎
+  
+  2021年7月1日
+  
+    
+去年在中国种植的黄花蒿苗。2015年，一名中国科学家因发现青蒿素被授予诺贝尔奖。青蒿素是黄花蒿的衍生物，是当今最有效的抗疟疾药物的核心化合物。 Costfoto/Barcroft Media, via Getty Images
+    
+  
+  
+    世界卫生组织(The World Health Organization)周三宣布，经过70年的抗击疟疾努力之后，中国获得了世卫组织给予的无疟疾认证。疟疾曾在中国导致数十万人死亡。
+    该成就是这个世界上人口最多国家的一个重要里程碑——中国是世卫组织西太平洋区域30多年来第一个获得无疟疾认证的国家。据世卫组织的数据，该地区只有其他三个国家获得了无疟疾认证：澳大利亚、文莱和新加坡。
+    “今天，我们祝贺中国人民消除了疟疾，..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fchina%2F20210701%2Fchina-malaria%2F" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1625105221000-->
+<p><a href="https://cn.nytimes.com/china/20210701/china-malaria/">中国被世卫组织认证为无疟疾国家</a>
+——</p>
+
+<div>
+  <address>
+黄瑞黎
+  </address>
+  <time pudate="2021-07-01 09:53:07" datetime="2021-07-01 09:53:07">2021年7月1日</time>
+  <figure class="article-span-photo">
+<img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/06/30/world/30china-malaria-01/merlin_190137780_4a0384c4-ad50-41eb-aace-ae5410e62fd3-master1050.jpg" width="1050" height="700" />    <figcaption>
+去年在中国种植的黄花蒿苗。2015年，一名中国科学家因发现青蒿素被授予诺贝尔奖。青蒿素是黄花蒿的衍生物，是当今最有效的抗疟疾药物的核心化合物。 <cite>Costfoto/Barcroft Media, via Getty Images</cite>
+    </figcaption>
+  </figure>
+  <section class="article-body">
+    <p>世界卫生组织(The World Health Organization)周三宣布，经过70年的抗击疟疾努力之后，中国获得了世卫组织给予的<a rel="noopener noreferrer" target="_blank" href="https://www.who.int/news/item/30-06-2021-from-30-million-cases-to-zero-china-is-certified-malaria-free-by-who">无疟疾认证</a>。疟疾曾在中国导致数十万人死亡。</p>
+    <p>该成就是这个世界上人口最多国家的一个重要里程碑——中国是世卫组织西太平洋区域30多年来第一个获得无疟疾认证的国家。据世卫组织的数据，该地区只有其他三个国家获得了无疟疾认证：澳大利亚、文莱和新加坡。</p>
+    <p>“今天，我们祝贺中国人民消除了疟疾，”世界卫生组织总干事谭德塞博士(Dr. Tedros Adhanom Ghebreyesus)在一份声明中说。</p>
+    <p>“他们的成功来之不易，是经过几十年有针对性的持续行动才取得的，”谭德塞还说。“随着这一宣布，中国加入了越来越多国家的行列，向世界表明，无疟疾的未来是一个可行的目标。”</p>
+    <p>尽管世卫组织警告，疟疾可能会在中国再次出现，但该国战胜疟疾表明，创新的治疗方法和积极的疾病监测可以遏制疟疾。</p>
+    <p>疟疾是一种血液疾病，通过被受感染的蚊子叮咬来传播，越来越多的国家正在摆脱疟疾的困扰。据世卫组织，目前已有40个国家和地区获得了无疟疾认证。</p>
+    <p>非洲仍承受着与其人口不相称的全球疟疾负担。2019年，全球94%的疟疾感染和死亡病例发生在非洲。那年，全世界因疟疾死亡的人数估计是40.9万人。大多数死者是儿童。</p>
+    <p>中国官员已寻求与非洲大陆分享他们抗击疟疾的经验。2020年12月，来自中国疾病预防控制中心的官员曾为这个目的与哈佛大学(Harvard University)和世卫组织举行了一次研讨会。</p>
+    <p>中国遏制疟疾的努力已进行了几十年。中国在20世纪50年代每年曾发生多达3000万例感染病例，死亡率为1%。疟疾的问题如此之严重，以至于为寻找解决办法，毛泽东启动了一个秘密的军事项目，即“523”项目。</p>
+    <p>正是通过“523”项目，中国科学家<a href="https://www.nytimes.com/2015/10/07/world/asia/tu-youyou-chinese-scientist-nobel-prize.html" title="Link: https://www.nytimes.com/2015/10/07/world/asia/tu-youyou-chinese-scientist-nobel-prize.html">屠呦呦</a>发现了青蒿素，这是当今最有效的抗疟药物的核心化合物。屠呦呦后来在2015年获得了诺贝尔奖。</p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/06/30/world/30china-malaria-02/merlin_99997907_6baae5bb-be8b-4d52-a7fd-71d90b9ff7ec-master1050.jpg" /><small style="color: #999;">中国中医科学院药理学家屠呦呦（右）在20世纪50年代与楼之岑教授一起工作。</small></p>
+    <p>20世纪80年代，早在世卫组织建议用蚊帐控制疟疾之前，中国就在国内使用药浸蚊帐来预防疟疾。到1988年，在全国范围内分发了240多万顶蚊帐。</p>
+    <p>到1990年底，中国的疟疾病例数已降至11.7万例，死亡人数减少了95%。2003年，中国为抗击疟疾加强了培训、人员配备、实验室设备和药品。</p>
+    <p>2010年，中国政府决定为消除疟疾采取更全面的措施，政府启动了全国范围内消除疟疾的计划，动员了包括卫生、警察、军队和旅游部门在内的13个部委展开联合行动。</p>
+    <p>这些部委按照中国称之为“1-3-7”战略的时间表对出现的疫情做出快速响应。它要求卫生机构在一天内报告疟疾诊断；到第三天结束时，卫生主管部门需要确认病例并确定传播风险；在七天内，必须采取适当的措施来防止疾病的进一步传播。</p>
+    <p>这个战略在云南省被证明有效，云南是中国疟疾高发县最多的省份。云南的雨季为蚊子的孳生创造了良好的条件。云南也与疟疾流行的越南、缅甸和老挝接壤。</p>
+    <p>云南省每次出现确诊病例后，当地官员都会对社区的许多成员进行检测，敲响警钟。他们对引发感染的蚊子种类进行调查，还发动了喷洒杀虫剂杀死蚊子的运动。</p>
+    <p>结果是，云南几年来已未报告过一例疟疾感染病例。据世卫组织说，到2020年，中国已连续四年报告零本地病例。今年5月，独立的消除疟疾认证小组成员前往中国，核实该国的无疟疾状态。小组成员告诉世卫组织，中国消除了疟疾。</p>
+  </section>
+  <footer class="author-info">
+    <p>黄瑞黎(Sui-Lee Wee)是《纽约时报》报道中国的记者。她自2010年开始报道中国，关注医疗保健、性别及人口等议题。欢迎在Twitter上关注她 <a rel="nofollow" target="_blank" href="https://twitter.com/suilee">@suilee</a>。</p>
+    <p>翻译：Cindy Hao</p>
+    <p><a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/06/30/world/asia/china-malaria.html">点击查看本文英文版。</a></p>
+  </footer>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#纽约时报 的其它文章</h4>
+    
+      <li>
+        <time>2021-07-01</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-01/%E6%83%B3%E6%B4%BB%E5%BE%97%E6%9B%B4%E4%B9%85-%E4%BD%A0%E5%8F%AF%E4%BB%A5%E8%80%83%E8%99%91%E5%86%B7%E5%86%BB%E8%87%AA%E5%B7%B1">
+          想活得更久？你可以考虑冷冻自己
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-06-30</time>
+        <a href="https://nodebe4.github.io/waimei/2021-06-30/%E6%BB%B4%E6%BB%B4%E8%B5%B4%E7%BE%8E%E4%B8%8A%E5%B8%82-%E5%A2%9E%E9%95%BF%E5%92%8C%E7%9B%91%E7%AE%A1%E9%9A%90%E5%BF%A7%E7%8A%B9%E5%AD%98">
+          滴滴赴美上市，增长和监管隐忧犹存
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-06-30</time>
+        <a href="https://nodebe4.github.io/waimei/2021-06-30/%E7%9B%B4%E6%92%AD-%E4%B8%AD%E5%85%B1%E5%BA%86%E7%A5%9D%E5%BB%BA%E5%85%9A%E7%99%BE%E5%B9%B4-%E4%B9%A0%E8%BF%91%E5%B9%B3%E5%B0%86%E5%8F%91%E8%A1%A8%E8%AE%B2%E8%AF%9D">
+          直播：中共庆祝建党百年，习近平将发表讲话
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-06-30</time>
+        <a href="https://nodebe4.github.io/waimei/2021-06-30/%E6%B8%AF%E4%B8%AD%E5%A4%A7%E6%95%99%E6%8E%88%E5%91%A8%E4%BF%9D%E6%9D%BE-%E5%8F%AA%E8%A6%81%E5%9D%9A%E6%8C%81%E6%8A%97%E4%BA%89-%E9%A6%99%E6%B8%AF%E7%9A%84%E5%8E%86%E5%8F%B2%E5%B0%B1%E4%B8%8D%E4%BC%9A%E7%BB%93%E6%9D%9F">
+          港中大教授周保松：只要坚持抗争，香港的历史就不会结束
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-06-30/%E7%BF%92%E8%BF%91%E5%B9%B3-%E5%A0%85%E6%8C%81%E6%8E%A8%E9%80%B2%E5%92%8C%E5%B9%B3%E7%B5%B1%E4%B8%80%E9%80%B2%E7%A8%8B-%E7%B2%89%E7%A2%8E%E5%8F%B0%E7%8D%A8%E5%9C%96%E8%AC%80">
+            前一篇：習近平：堅持推進和平統一進程 粉碎台獨圖謀
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-06-30/%E4%B8%AD%E5%85%B1%E4%B8%83%E4%B8%80%E5%BB%BA%E5%85%9A%E7%99%BE%E5%B9%B4%E6%B4%BB%E5%8A%A8-%E8%83%A1%E6%B8%A9%E7%8E%B0%E8%BA%AB%E6%B1%9F%E6%9C%AA%E5%87%BA%E5%B8%AD">
+            后一篇：中共七一建党百年活动 胡温现身江未出席
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-06-30/%E7%BF%92%E8%BF%91%E5%B9%B3-%E5%A0%85%E6%8C%81%E6%8E%A8%E9%80%B2%E5%92%8C%E5%B9%B3%E7%B5%B1%E4%B8%80%E9%80%B2%E7%A8%8B-%E7%B2%89%E7%A2%8E%E5%8F%B0%E7%8D%A8%E5%9C%96%E8%AC%80'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-06-30/%E4%B8%AD%E5%85%B1%E4%B8%83%E4%B8%80%E5%BB%BA%E5%85%9A%E7%99%BE%E5%B9%B4%E6%B4%BB%E5%8A%A8-%E8%83%A1%E6%B8%A9%E7%8E%B0%E8%BA%AB%E6%B1%9F%E6%9C%AA%E5%87%BA%E5%B8%AD'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-06-30/%E6%BB%B4%E6%BB%B4%E8%B5%B4%E7%BE%8E%E4%B8%8A%E5%B8%82-%E5%A2%9E%E9%95%BF%E5%92%8C%E7%9B%91%E7%AE%A1%E9%9A%90%E5%BF%A7%E7%8A%B9%E5%AD%98'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-06-30/%E7%9B%B4%E6%92%AD-%E4%B8%AD%E5%85%B1%E5%BA%86%E7%A5%9D%E5%BB%BA%E5%85%9A%E7%99%BE%E5%B9%B4-%E4%B9%A0%E8%BF%91%E5%B9%B3%E5%B0%86%E5%8F%91%E8%A1%A8%E8%AE%B2%E8%AF%9D'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-06-30/%E7%BF%92%E8%BF%91%E5%B9%B3-%E5%A0%85%E6%8C%81%E6%8E%A8%E9%80%B2%E5%92%8C%E5%B9%B3%E7%B5%B1%E4%B8%80%E9%80%B2%E7%A8%8B-%E7%B2%89%E7%A2%8E%E5%8F%B0%E7%8D%A8%E5%9C%96%E8%AC%80">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-06-30/%E4%B8%AD%E5%85%B1%E4%B8%83%E4%B8%80%E5%BB%BA%E5%85%9A%E7%99%BE%E5%B9%B4%E6%B4%BB%E5%8A%A8-%E8%83%A1%E6%B8%A9%E7%8E%B0%E8%BA%AB%E6%B1%9F%E6%9C%AA%E5%87%BA%E5%B8%AD">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<纽约时报>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-06-30/%E6%BB%B4%E6%BB%B4%E8%B5%B4%E7%BE%8E%E4%B8%8A%E5%B8%82-%E5%A2%9E%E9%95%BF%E5%92%8C%E7%9B%91%E7%AE%A1%E9%9A%90%E5%BF%A7%E7%8A%B9%E5%AD%98">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<纽约时报>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-06-30/%E7%9B%B4%E6%92%AD-%E4%B8%AD%E5%85%B1%E5%BA%86%E7%A5%9D%E5%BB%BA%E5%85%9A%E7%99%BE%E5%B9%B4-%E4%B9%A0%E8%BF%91%E5%B9%B3%E5%B0%86%E5%8F%91%E8%A1%A8%E8%AE%B2%E8%AF%9D">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

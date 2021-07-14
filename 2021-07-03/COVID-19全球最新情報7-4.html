@@ -1,0 +1,5322 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>COVID-19全球最新情報7/4 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+COVID-19全球最新情報7/4
+——
+" />
+    <meta property="og:description" content="
+COVID-19全球最新情報7/4
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="COVID-19全球最新情報7/4" />
+    <meta property="twitter:title" content="COVID-19全球最新情報7/4" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fwww.cna.com.tw%2Fnews%2Ffirstnews%2F202107040011.aspx&t=COVID-19%E5%85%A8%E7%90%83%E6%9C%80%E6%96%B0%E6%83%85%E5%A0%B17%2F4" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.cna.com.tw%2Fnews%2Ffirstnews%2F202107040011.aspx&t=COVID-19%E5%85%A8%E7%90%83%E6%9C%80%E6%96%B0%E6%83%85%E5%A0%B17%2F4&d=2021-07-03&e=
+COVID-19全球最新情報7/4
+——
+
+
+  
+    
+      
+        
+      
+      
+國內COVID-19疫情尚未完全退燒，目前仍維持全台防疫3級警戒狀態，預計持續至12日，民眾戴口罩外出已經成為日常。中央社記者謝佳璋攝 110年7月3日
+      
+    
+  
+  
+  
+    （中央社台北4日電）最早在印度發現的2019冠狀病毒（COVID-19）變異株Delta入侵多國，伊朗憂將爆發第5波疫情；俄羅斯連5日新增死亡創新高；印尼因篩檢不足，疫情嚴重被低估，專家建議政府應封城。
+    世界衛生組織（WHO）秘書長譚德塞（Tedros Adhanom Ghebreyesus）則表示，全球疫情正處於「非常危險時期」，並指出更具傳染力的Delta變異病毒株已在近100個國家現蹤。
+    
+      
+        
+世衛：Delta變..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.cna.com.tw%2Fnews%2Ffirstnews%2F202107040011.aspx" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://www.cna.com.tw/news/firstnews/202107040011.aspx" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://www.cna.com.tw/news/firstnews/202107040011.aspx&text=COVID-19全球最新情報7/4&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://www.cna.com.tw/news/firstnews/202107040011.aspx&title=COVID-19全球最新情報7/4" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.cna.com.tw/news/firstnews/202107040011.aspx&title=COVID-19全球最新情報7/4" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=COVID-19全球最新情報7/4&body=
+COVID-19全球最新情報7/4
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://www.cna.com.tw/news/firstnews/202107040011.aspx" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.cna.com.tw/news/firstnews/202107040011.aspx&title=COVID-19全球最新情報7/4&caption=
+COVID-19全球最新情報7/4
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=COVID-19全球最新情報7/4&url=https://www.cna.com.tw/news/firstnews/202107040011.aspx" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>COVID-19全球最新情報7/4</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-07-03
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#(臺)中央社CNA ">
+          (臺)中央社CNA
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://www.cna.com.tw/news/firstnews/202107040011.aspx"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="(臺)中央社CNA的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#(臺)中央社CNA 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fwww.cna.com.tw%2Fnews%2Ffirstnews%2F202107040011.aspx&t=COVID-19%E5%85%A8%E7%90%83%E6%9C%80%E6%96%B0%E6%83%85%E5%A0%B17%2F4&d=2021-07-03&e=
+COVID-19全球最新情報7/4
+——
+
+
+  
+    
+      
+        
+      
+      
+國內COVID-19疫情尚未完全退燒，目前仍維持全台防疫3級警戒狀態，預計持續至12日，民眾戴口罩外出已經成為日常。中央社記者謝佳璋攝 110年7月3日
+      
+    
+  
+  
+  
+    （中央社台北4日電）最早在印度發現的2019冠狀病毒（COVID-19）變異株Delta入侵多國，伊朗憂將爆發第5波疫情；俄羅斯連5日新增死亡創新高；印尼因篩檢不足，疫情嚴重被低估，專家建議政府應封城。
+    世界衛生組織（WHO）秘書長譚德塞（Tedros Adhanom Ghebreyesus）則表示，全球疫情正處於「非常危險時期」，並指出更具傳染力的Delta變異病毒株已在近100個國家現蹤。
+    
+      
+        
+世衛：Delta變..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fwww.cna.com.tw%2Fnews%2Ffirstnews%2F202107040011.aspx" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1625360642000-->
+<p><a href="https://www.cna.com.tw/news/firstnews/202107040011.aspx">COVID-19全球最新情報7/4</a>
+——</p>
+
+<div>
+  <div class="fullPic">
+    <div class="floatImg center">
+      <div class="BGimgWrap" style="--aspect-ratio:1048/768;">
+        <picture><source media="(max-width: 414px)" srcset="https://imgcdn.cna.com.tw/www/WebPhotos/800/20210704/1048x768_052512311220.jpg" /><source media="(min-width: 413px)" srcset="https://imgcdn.cna.com.tw/www/WebPhotos/1024/20210704/1048x768_052512311220.jpg" /><img src="https://images.weserv.nl/?url=imgcdn.cna.com.tw/www/WebPhotos/800/20210704/1048x768_052512311220.jpg" alt="國內COVID-19疫情尚未完全退燒，目前仍維持全台防疫3級警戒狀態，預計持續至12日，民眾戴口罩外出已經成為日常。中央社記者謝佳璋攝 110年7月3日" srcset="https://imgcdn.cna.com.tw/www/WebPhotos/800/20210704/1048x768_052512311220.jpg 414w, https://imgcdn.cna.com.tw/www/WebPhotos/1024/20210704/1048x768_052512311220.jpg 1024w" /></picture>
+      </div>
+      <div class="picinfo">
+國內COVID-19疫情尚未完全退燒，目前仍維持全台防疫3級警戒狀態，預計持續至12日，民眾戴口罩外出已經成為日常。中央社記者謝佳璋攝 110年7月3日
+      </div>
+    </div>
+  </div>
+  <div></div>
+  <div class="paragraph">
+    <p>（中央社台北4日電）最早在印度發現的2019冠狀病毒（COVID-19）變異株Delta入侵多國，伊朗憂將爆發第5波疫情；俄羅斯連5日新增死亡創新高；印尼因篩檢不足，疫情嚴重被低估，專家建議政府應封城。</p>
+    <p>世界衛生組織（WHO）秘書長譚德塞（Tedros Adhanom Ghebreyesus）則表示，全球疫情正處於「非常危險時期」，並指出更具傳染力的Delta變異病毒株已在近100個國家現蹤。</p>
+    <div class="media">
+      <div class="insertGroup">
+        <div>
+<a class="insert" href="https://www.cna.com.tw/news/aopl/202107030079.aspx"><em class="icon-dot"></em><span>世衛：Delta變異株現蹤近百國家 全球疫情拉警報</span></a>
+        </div>
+      </div>
+    </div>
+    <p>美國約翰霍普金斯大學（Johns Hopkins University）網站追蹤數據顯示，截至台灣4日上午7時，全球至少396萬7390人病逝，至少1億8331萬9994例確診。</p>
+    <p>以下為全球各地過去24小時的疫情與相關發展：</p>
+    <h2 id="section">※ 亞洲</h2>
+    <p><strong>● 台灣</strong></p>
+    <p>指揮中心3日宣布，台灣新增76例本土病例與10例死亡個案，指揮官陳時中表示，以這兩天採檢日來看，確診個案確實比較多，但主要是大規模篩檢所致，整體疫情趨勢還是向下。</p>
+    <p>截至目前台灣累計143萬7283例新型冠狀病毒肺炎相關通報（含142萬997例排除），其中1萬4991例確診，分別為1180例境外移入，1萬3758例本土病例，36例敦睦艦隊、2例航空器感染、1例不明及14例調查中。</p>
+    <p>另據指揮中心統計，2日全台有超過18.4萬人次接種COVID-19疫苗，創疫苗施打以來新高，次高為6月15日18.3萬人次；全台累計接種227萬人次疫苗，疫苗覆蓋率達9.5%。</p>
+    <p>因台北市發生批發市場群聚案，外界關心疫情警戒第三級在12日後能否「微解封」，陳時中說，評判標準除疫情外，還要看全民警覺心與應變作為的速度。</p>
+    <div class="media">
+      <div class="insertGroup">
+        <div>
+<a class="insert" href="https://www.cna.com.tw/news/firstnews/202107035006.aspx"><em class="icon-dot"></em><span>7/3增76本土、10死 陳時中：整體疫情趨勢往下</span></a>
+        </div>
+        <div>
+<a class="insert" href="https://www.cna.com.tw/news/firstnews/202107030139.aspx"><em class="icon-dot"></em><span>三級警戒7/12後微解封？陳時中列3大評判標準</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="media">
+      <div class="noWidthMedia">
+        <div class="infogram-embed" data-id="0513a308-7f58-4bfa-94b6-66f6ebf55803" data-type="interactive" data-title="病例校正回歸 新增確診數"></div>
+        <script>!function(e,i,n,s){var t="InfogramEmbeds",d=e.getElementsByTagName("script")[0];if(window[t]&&window[t].initialized)window[t].process&&window[t].process();else if(!e.getElementById(n)){var o=e.createElement("script");o.async=1,o.id=n,o.src="https://e.infogram.com/js/dist/embed-loader-min.js",d.parentNode.insertBefore(o,d)}}(document,0,"infogram-async");</script>
+        <div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px">
+<a href="https://infogram.com/0513a308-7f58-4bfa-94b6-66f6ebf55803" style="color:#989898!important;text-decoration:none!important;" target="_blank">病例校正回歸 新增確診數</a><br /><a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a>
+        </div>
+      </div>
+    </div>
+    <div class="media">
+      <div class="noWidthMedia">
+        <div class="infogram-embed" data-id="1b5e8a8c-905e-4e8d-a4ba-33c8d47c2e7c" data-type="interactive" data-title="死亡人數變化"></div>
+        <script>!function(e,i,n,s){var t="InfogramEmbeds",d=e.getElementsByTagName("script")[0];if(window[t]&&window[t].initialized)window[t].process&&window[t].process();else if(!e.getElementById(n)){var o=e.createElement("script");o.async=1,o.id=n,o.src="https://e.infogram.com/js/dist/embed-loader-min.js",d.parentNode.insertBefore(o,d)}}(document,0,"infogram-async");</script>
+        <div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px">
+<a href="https://infogram.com/1b5e8a8c-905e-4e8d-a4ba-33c8d47c2e7c" style="color:#989898!important;text-decoration:none!important;" target="_blank">死亡人數變化</a><br /><a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a>
+        </div>
+      </div>
+    </div>
+    <p><strong>● 中國</strong></p>
+    <p>中國2日新增23例確診，都屬境外移入病例。</p>
+    <p>截至2日24時，中國大陸現有確診病例431例，累計治癒出院8萬6766例，累計死亡4636例，累計報告確診9 萬1833例，現有疑似病例7例。</p>
+    <div class="media">
+      <div class="insertGroup">
+        <div>
+<a class="insert" href="https://www.cna.com.tw/news/acn/202107030024.aspx"><em class="icon-dot"></em><span>中國新增23例確診 都為境外移入</span></a>
+        </div>
+      </div>
+    </div>
+    <p><strong>● 日本</strong></p>
+    <p>日本東京奧運即將於7月23日開幕，但東京都疫情仍未趨緩，3日又新增716例確診病例，較上週六增加182例，也是連續14天高於上週同日。東京都至今累計病例數17萬5983例。</p>
+    <p>受首都圈疫情擴大影響，預料部分東京奧運賽事將閉門舉行，開閉幕式及首都圈的棒球及足球場館等賽事，可能不會開放觀眾進場。</p>
+    <p>同屬首都圈的神奈川縣新增254例確診病例，連續4天單日新增逾200例，也是連續8天高於上週同日。神奈川縣至今累計病例數6萬8085例，包括952例死亡病例。</p>
+    <p>大阪府新增148例確診病例，連續5天單日新增逾百例，至今累計病例數10萬3762例。</p>
+    <p>根據日本放送協會（NHK）自行統計數據顯示，3日截至日本時間晚間23時59分止，日本單日新增1881例確診病例及9例死亡病例。</p>
+    <p>日本全境包括邊境檢疫及鑽石公主號郵輪，至今累計病例數已達80萬5917例；至今累計死亡病例數1萬4855例。</p>
+    <div class="media">
+      <div class="insertGroup">
+        <div>
+<a class="insert" href="https://www.cna.com.tw/news/aopl/202107030175.aspx"><em class="icon-dot"></em><span>東京新增716例COVID-19 連續14天高於上週同日</span></a>
+        </div>
+        <div>
+<a class="insert" href="https://www.cna.com.tw/news/aspt/202107030117.aspx"><em class="icon-dot"></em><span>東京疫情未趨緩 東奧部分賽事恐閉門舉行</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="media">
+      <div class="floatImg center">
+        <div class="BGimgWrap" style="--aspect-ratio:1025/768;">
+          <picture> <source media="(max-width: 414px)" data-srcset="https://imgcdn.cna.com.tw/www/WebPhotos/800/20210704/1025x768_549842735443.jpg" /> <source media="(min-width: 413px)" data-srcset="https://imgcdn.cna.com.tw/www/WebPhotos/1024/20210704/1025x768_549842735443.jpg" /> <img class="lazyload" alt="日本東京奧運23日將開幕，但東京都疫情仍未趨緩，3日又新增716例確診病例。圖為東京澀谷鬧區。（中央社檔案照片）" data-src="https://imgcdn.cna.com.tw/www/WebPhotos/800/20210704/1025x768_549842735443.jpg" data-srcset="https://imgcdn.cna.com.tw/www/WebPhotos/800/20210704/1025x768_549842735443.jpg 414w, https://imgcdn.cna.com.tw/www/WebPhotos/1024/20210704/1025x768_549842735443.jpg 1024w" /> </picture>
+        </div>
+        <div class="picinfo">
+日本東京奧運23日將開幕，但東京都疫情仍未趨緩，3日又新增716例確診病例。圖為東京澀谷鬧區。（中央社檔案照片）
+        </div>
+      </div>
+    </div>
+    <p><strong>● 韓國</strong></p>
+    <p>韓國1日單日新增確診人數在時隔半年後突破800例，當局研判疫情可能在傳播力較強的Delta變種病毒影響下再次大規模擴散。</p>
+    <p>截至3日凌晨零時，韓國新增794例確診，其中359例位於首爾。首爾已連續4天新增300多例確診，近一週平均每天新增292例，外界憂心韓國境內可能爆發去年底以來又一次疫情大流行。</p>
+    <p>韓國至今累計確診15萬9342例；另外，3日新增1例死亡病例，累計死亡2025例，平均致死率1.28%。</p>
+    <p>韓國疫苗接種正在加緊腳步進行，累計超過1534萬人完成首劑接種，完成兩劑接種人數則上升至527萬人。</p>
+    <div class="media">
+      <div class="floatImg center">
+        <div class="BGimgWrap" style="--aspect-ratio:2000/1333;">
+          <picture> <source media="(max-width: 414px)" data-srcset="https://imgcdn.cna.com.tw/www/WebPhotos/800/20210702/2000x1333_0630027878833.jpg" /> <source media="(min-width: 413px)" data-srcset="https://imgcdn.cna.com.tw/www/WebPhotos/1024/20210702/2000x1333_0630027878833.jpg" /> <img class="lazyload" alt="韓國1日新增確診人數突破800例，當局研判疫情可能在傳播力較強的Delta變種病毒影響下再次大規模擴散。圖為首爾的篩檢站大排長龍。（韓聯社）" data-src="https://imgcdn.cna.com.tw/www/WebPhotos/800/20210702/2000x1333_0630027878833.jpg" data-srcset="https://imgcdn.cna.com.tw/www/WebPhotos/800/20210702/2000x1333_0630027878833.jpg 414w, https://imgcdn.cna.com.tw/www/WebPhotos/1024/20210702/2000x1333_0630027878833.jpg 1024w" /> </picture>
+        </div>
+        <div class="picinfo">
+韓國1日新增確診人數突破800例，當局研判疫情可能在傳播力較強的Delta變種病毒影響下再次大規模擴散。圖為首爾的篩檢站大排長龍。（韓聯社）
+        </div>
+      </div>
+    </div>
+    <p><strong>● 越南</strong></p>
+    <p>越南3日一口氣暴增914例本土病例，創下自去年1月疫情爆發以來的新高紀錄，確診個案主要來南部經濟樞紐胡志明市，共有714人染疫。</p>
+    <p>越南自去年1月疫情爆發以來，迄今共有逾1萬8000 人染疫、84人死亡。值得注意的是，越南4月下旬爆發新一波本土疫情，由於和高傳染力的變種病毒有關，迄今約2個月就有超過1萬5000人染疫。</p>
+    <div class="media">
+      <div class="insertGroup">
+        <div>
+<a class="insert" href="https://www.cna.com.tw/news/firstnews/202107030228.aspx"><em class="icon-dot"></em><span>越南單日增914本土病例 再創新高紀錄</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="media">
+      <div class="floatImg center">
+        <div class="BGimgWrap" style="--aspect-ratio:1024/768;">
+          <picture> <source media="(max-width: 414px)" data-srcset="https://imgcdn.cna.com.tw/www/WebPhotos/800/20210704/1024x768_613751236591.jpg" /> <source media="(min-width: 413px)" data-srcset="https://imgcdn.cna.com.tw/www/WebPhotos/1024/20210704/1024x768_613751236591.jpg" /> <img class="lazyload" alt="越南3日增914例COVID-19本土病例，創下去年1月疫情爆發以來的新高紀錄；確診個案主要來自南部經濟樞紐胡志明市。圖為胡志明市安東市場。（中央社檔案照片）" data-src="https://imgcdn.cna.com.tw/www/WebPhotos/800/20210704/1024x768_613751236591.jpg" data-srcset="https://imgcdn.cna.com.tw/www/WebPhotos/800/20210704/1024x768_613751236591.jpg 414w, https://imgcdn.cna.com.tw/www/WebPhotos/1024/20210704/1024x768_613751236591.jpg 1024w" /> </picture>
+        </div>
+        <div class="picinfo">
+越南3日增914例COVID-19本土病例，創下去年1月疫情爆發以來的新高紀錄；確診個案主要來自南部經濟樞紐胡志明市。圖為胡志明市安東市場。（中央社檔案照片）
+        </div>
+      </div>
+    </div>
+    <p><strong>● 印尼</strong></p>
+    <p>有專家說，印尼因篩檢不足，疫情嚴重低估，恐到7月底或8月中才到高峰，若無法有效控制，屆時單日確診可能近50萬，政府應封城，強力介入家庭社區找出感染源以切斷傳播鏈。</p>
+    <p>印尼是全球人口第4多的國家，疫情也是亞洲最嚴重的地方之一，自6月24日首度出現超過2萬例確診；7月3日通報新增2萬7913例，再創新高，累計225萬6851人染疫。另7月3日通報493人死亡，累計6萬27人不治。</p>
+    <div class="media">
+      <div class="insertGroup">
+        <div>
+<a class="insert" href="https://www.cna.com.tw/news/firstnews/202107030112.aspx"><em class="icon-dot"></em><span>特派專欄／專家：印尼疫情嚴重低估 恐燒至8月</span></a>
+        </div>
+        <div>
+<a class="insert" href="https://www.cna.com.tw/news/aopl/202107030023.aspx"><em class="icon-dot"></em><span>印尼疫情日趨嚴峻 美國將送400萬劑莫德納疫苗</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="media">
+      <div class="floatImg center">
+        <div class="BGimgWrap" style="--aspect-ratio:1152/768;">
+          <picture> <source media="(max-width: 414px)" data-srcset="https://imgcdn.cna.com.tw/www/WebPhotos/800/20210703/1152x768_20210703000066.jpg" /> <source media="(min-width: 413px)" data-srcset="https://imgcdn.cna.com.tw/www/WebPhotos/1024/20210703/1152x768_20210703000066.jpg" /> <img class="lazyload" alt="印尼疫情嚴峻，印尼流行病學專家布迪曼指出，因篩檢不足，疫情嚴重低估，這波疫情恐燒到7月底或8月中才到高峰。圖6月30日攝於勿加西縣立醫院。中央社記者石秀娟勿加西攝 110年7月3日" data-src="https://imgcdn.cna.com.tw/www/WebPhotos/800/20210703/1152x768_20210703000066.jpg" data-srcset="https://imgcdn.cna.com.tw/www/WebPhotos/800/20210703/1152x768_20210703000066.jpg 414w, https://imgcdn.cna.com.tw/www/WebPhotos/1024/20210703/1152x768_20210703000066.jpg 1024w" /> </picture>
+        </div>
+        <div class="picinfo">
+印尼疫情嚴峻，印尼流行病學專家布迪曼指出，因篩檢不足，疫情嚴重低估，這波疫情恐燒到7月底或8月中才到高峰。圖6月30日攝於勿加西縣立醫院。中央社記者石秀娟勿加西攝 110年7月3日
+        </div>
+      </div>
+    </div>
+    <p><strong>● 印度</strong></p>
+    <p>印度巴拉特生物技術公司（Bharat Biotech）表示，自製的Covaxin疫苗第3期試驗結果顯示，對抗重症有93.4%效力。</p>
+    <p>印度迄今累計3045萬起染疫病例，在全球僅次於美國的3300萬例；印度累計病亡人數目前已超過40萬人。</p>
+    <div class="media">
+      <div class="insertGroup">
+        <div>
+<a class="insert" href="https://www.cna.com.tw/news/aopl/202107030125.aspx"><em class="icon-dot"></em><span>印度Covaxin疫苗3期試驗結果出爐 抗重症效力逾9成</span></a>
+        </div>
+      </div>
+    </div>
+    <h2 id="section-1">※ 中東</h2>
+    <p><strong>● 伊朗</strong></p>
+    <p>伊朗總統羅哈尼（Hassan Rouhani）3日表示，由於Delta變異病毒株病例增加，他擔心境內爆發第5波疫情。</p>
+    <p>伊朗正遭遇中東地區最致命的疫情，當局統計，迄今該國已累計320萬人確診，其中逾8萬4000人死亡。當局也承認，實際染疫人數可能更多。</p>
+    <div class="media">
+      <div class="insertGroup">
+        <div>
+<a class="insert" href="https://www.cna.com.tw/news/aopl/202107030199.aspx"><em class="icon-dot"></em><span>Delta變異病毒肆虐 伊朗憂爆發第5波疫情</span></a>
+        </div>
+      </div>
+    </div>
+    <p><strong>● 以色列</strong></p>
+    <p>以色列有批超過百萬劑由美國輝瑞藥廠與德國BioNTech研發的疫苗將在7月底到期，原本打算交換英國即將在9月取得的同款疫苗但沒談成，這批快過期疫苗屆時恐怕得銷毀。</p>
+    <p>以色列單日確診數維持在300例左右，衛生當局擔心，Delta變異株散播之下，接下來單日確診恐升至500 例。以色列迄今確診累計達約84萬例，死亡總數維持在6429例。</p>
+    <div class="media">
+      <div class="insertGroup">
+        <div>
+<a class="insert" href="https://www.cna.com.tw/news/aopl/202107030151.aspx"><em class="icon-dot"></em><span>以色列與英國協商破局 逾百萬劑疫苗恐月底銷毀</span></a>
+        </div>
+      </div>
+    </div>
+    <h2 id="section-2">※ 大洋洲</h2>
+    <p><strong>● 澳洲</strong></p>
+    <p>澳洲數座主要城市3日解封；過去兩週以來，具高度傳染力的Delta變異株肆虐澳洲，人口占全國1/5的新南威爾斯州首府雪梨，疫情最嚴重。</p>
+    <p>新州州長貝雷吉克利安（Gladys Berejiklian）通報新增35例確診，高於前一天的31例，其中29例跟先前的病例有關，讓這一波疫情的確診病例累計破250例。</p>
+    <p>澳洲疫情控制在先進國家中相對成功，自去年以來總確診約3萬案例，910人病故。</p>
+    <div class="media">
+      <div class="insertGroup">
+        <div>
+<a class="insert" href="https://www.cna.com.tw/news/aopl/202107030114.aspx"><em class="icon-dot"></em><span>澳洲各城陸續解封 新州35例確診今年單日最多</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="media">
+      <div class="floatImg center">
+        <div class="BGimgWrap" style="--aspect-ratio:2000/1331;">
+          <picture> <source media="(max-width: 414px)" data-srcset="https://imgcdn.cna.com.tw/www/WebPhotos/800/20210704/2000x1331_0041213393880.jpg" /> <source media="(min-width: 413px)" data-srcset="https://imgcdn.cna.com.tw/www/WebPhotos/1024/20210704/2000x1331_0041213393880.jpg" /> <img class="lazyload" alt="過去兩週以來，具高度傳染力的Delta變異株肆虐澳洲，人口占全國1/5的新南威爾斯州首府雪梨，疫情最嚴重。圖為警察在雪梨歌劇院外巡邏。（安納杜魯新聞社）" data-src="https://imgcdn.cna.com.tw/www/WebPhotos/800/20210704/2000x1331_0041213393880.jpg" data-srcset="https://imgcdn.cna.com.tw/www/WebPhotos/800/20210704/2000x1331_0041213393880.jpg 414w, https://imgcdn.cna.com.tw/www/WebPhotos/1024/20210704/2000x1331_0041213393880.jpg 1024w" /> </picture>
+        </div>
+        <div class="picinfo">
+過去兩週以來，具高度傳染力的Delta變異株肆虐澳洲，人口占全國1/5的新南威爾斯州首府雪梨，疫情最嚴重。圖為警察在雪梨歌劇院外巡邏。（安納杜魯新聞社）
+        </div>
+      </div>
+    </div>
+    <h2 id="section-3">※ 歐洲</h2>
+    <p><strong>● 英國</strong></p>
+    <p>官方資料顯示，英國3日通報新增2萬4885人確診，較前一天的2萬7125人染疫減少，總數來到487萬9616例；此外，新增18人染疫不治，也較前一天的27死減少，亡故者總計達12萬8207人。</p>
+    <p>路透社報導，英國境內過去一個月以來，每日新增確診持續攀升，但快速施打疫苗計畫似乎已削弱染疫與病歿之間的關連。</p>
+    <p>官方資料也顯示，境內有4510萬人已接種一劑COVID-19疫苗，其中3340萬人已接種兩劑。</p>
+    <p><strong>● 俄羅斯</strong></p>
+    <p>俄羅斯3日通報新增697人因染疫喪命，這是去年3月爆發全球大流行疫情以來，俄羅斯單日新增最多的死亡病例，並且新增死亡是連5日創新高。</p>
+    <p>俄羅斯防疫小組公布，自今年元月初以來最多的新增確診2萬4439例，其中7446例在首都莫斯科，俄羅斯疫情加劇，當地官員歸咎於最早在印度發現的COVID-19 變異株Delta所致。</p>
+    <p>據官方公布的數據，截至目前為止累計俄羅斯確診病例550萬例，累計死亡病例13萬7262例。</p>
+    <p><strong>● 葡萄牙</strong></p>
+    <p>法新社報導，由於疫情加劇，葡萄牙境內45座城市包括首都里斯本（Lisbon）在內，自2日晚間11時起實施宵禁，受影響將近400萬人。</p>
+    <p>葡萄牙3日一口氣新增2605人染疫，為2月13日以來最高，自疫情爆發以來總確診數來到88萬7047例。</p>
+    <p>新增確診多為還未接種疫苗的較年輕族群，因此單日死亡案例仍能維持在個位數。</p>
+    <p>葡萄牙完整接種覆蓋率約35%，而18至29歲民眾可於4日開始預約接種。</p>
+    <p><strong>● 德國</strong></p>
+    <p>法新社報導，德國總理梅克爾（Angela Merkel）會晤英國首相強生（Boris Johnson）警告，2020歐國盃（Euro 2020）4強賽與決賽將在英國倫敦溫布利球場（Wembley Stadium）點燃戰火，可能導致疫情擴散。</p>
+    <p>隸屬德國聯邦衛生部的羅伯特．科赫研究所（Robert Koch Institute）3日通報，境內新增671例確診，累計達373萬353例；另新增16例死亡，總計9萬1023人病故。</p>
+    <p>德國衛生部長史巴恩（Jens Spahn）表示，一旦疫情捲土重來，已注射疫苗的民眾無須再度遵守全面封城，並且將享有比未接種疫苗的民眾更多自由。</p>
+    <h2 id="section-4">※ 美洲</h2>
+    <p><strong>● 巴西</strong></p>
+    <p>巴西新增病例和死亡人數自6月20日以來呈下降趨勢，顯示大規模疫苗接種開始奏效。但專家警告疫情尚未獲控制，且Delta變種病毒極具威脅性。</p>
+    <p>根據全國衛生廳委員會（Conass）的數據，過去7天每天平均新增5萬4115個病例，1558人死亡，分別為2 月27日和3月8日以來最低數值。</p>
+    <p>路透社報導，巴西衛生部3日通報，過去24小時新增1635人染疫不治，累計病故增至52萬3587例，排名全球第2高，僅次於美國。另外，巴西新增5萬4556人染疫，累計確診攀升至1874萬2025例，排名全球第3高，僅次於美國和印度。</p>
+    <p><strong>● 美國</strong></p>
+    <p>根據美國針對近4000名醫療人員、第一線急救人員和其他前線工作者進行的研究顯示，少數罕見已接種疫苗卻染疫的突破性感染病患，可能會比沒打疫苗而染疫的生病時間縮短，症狀也較輕微。</p>
+    <p>印尼確診病例激增，美國國家安全顧問蘇利文（Jake Sullivan）2日告知印尼外交部長，美國將運送400萬劑莫德納生技公司（Moderna Inc）的疫苗給印尼。</p>
+    <p>美國疫情在疫苗接種下已見緩減，但自去年1月以來已造成約3370萬人染疫，至少60萬人病故。</p>
+    <p><strong>● 薩爾瓦多</strong></p>
+    <p>白宮表示，美國將運送150萬劑莫德納疫苗給中美洲國家薩爾瓦多，隨後中國也宣布，要送150萬劑北京科興疫苗給薩國。</p>
+    <p>薩爾瓦多通報，境內累計7萬8766人確診，2393人病亡。</p>
+    <h2 id="section-5">※ 非洲</h2>
+    <p><strong>● 南非</strong></p>
+    <p>南非3日創下單日2萬6000人確診的新高。由於境內人口多未接種疫苗，第3波疫情衝擊相當慘重。</p>
+    <p>路透社報導，南非醫療量能已達臨界點，醫院沒有足夠病床，也沒有足夠人力，政府不得不實施部分封城措施。</p>
+    <p>衛生部數據顯示，南非迄今累積200多萬例確診，6 萬1500人病故。330萬人接種疫苗，覆蓋率約達5.5%。（編輯：曹宇帆/核稿：蔡佳敏）1100704</p>
+    <div class="media">
+      <div class="noWidthMedia">
+        <div style="background-color:#dedede;padding:10px;font-size:25px;">
+<strong>全球疫情統計（每日新增確診數）</strong>
+        </div>
+        <iframe class="lazyload" data-src="https://ourworldindata.org/explorers/coronavirus-data-explorer?tab=map&amp;zoomToSelection=true&amp;pickerSort=desc&amp;pickerMetric=new_cases_smoothed_per_million&amp;Metric=Confirmed+cases&amp;Interval=New+per+day&amp;Relative+to+Population=false&amp;Align+outbreaks=false&amp;country=~FRA&amp;hideControls=true" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+        <div style="background-color:#dedede;padding:10px;font-size:25px;">
+<strong>全球疫情統計（每百萬人確診數）</strong>
+        </div>
+        <iframe class="lazyload" data-src="https://ourworldindata.org/explorers/coronavirus-data-explorer?tab=map&amp;zoomToSelection=true&amp;pickerSort=desc&amp;pickerMetric=new_cases_smoothed_per_million&amp;Metric=Confirmed+cases&amp;Interval=7-day+rolling+average&amp;Relative+to+Population=true&amp;Align+outbreaks=false&amp;country=IND~USA~GBR~CAN~DEU~FRA&amp;hideControls=true" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+      </div>
+    </div>
+  </div>
+  <div class="paragraph bottomArticleBanner show">
+    <div class="pcBox adslot_infinite js_pcBox_EndAd2" id="adslot_pcBox_EndAd2" data-width="685" data-height="250" data-dfp="cna2018_article_685x250_end2"></div>
+    <div class="mbBox adslot_infinite js_mbBox_EndAd2" id="adslot_mbBox_EndAd2" data-width="300" data-height="250" data-dfp="cna2018_article_300x250_end2"></div>
+  </div>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#(臺)中央社CNA 的其它文章</h4>
+    
+      <li>
+        <time>2021-07-03</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-03/%E8%88%87%E4%B8%8A%E6%B5%B7%E5%BE%A9%E6%98%9F%E7%B0%BDBNT%E6%8E%A1%E8%B3%BC%E6%96%87%E4%BB%B6-%E9%83%AD%E5%8F%B0%E9%8A%98-%E5%88%A5%E5%86%8D%E8%87%86%E6%B8%AC%E5%A0%B1%E5%B0%8E">
+          與上海復星簽BNT採購文件？郭台銘：別再臆測報導
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-03</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-03/%E4%B8%AD%E5%9C%8B%E6%96%B0%E5%A2%9E14%E4%BE%8BCOVID-19-%E7%9A%86%E5%A2%83%E5%A4%96%E7%A7%BB%E5%85%A5">
+          中國新增14例COVID-19 皆境外移入
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-03</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-03/%E6%97%A9%E5%AE%89%E4%B8%96%E7%95%8C-%E7%96%AB%E6%83%85%E4%B8%89%E7%B4%9A%E8%AD%A6%E6%88%9212%E6%97%A5%E5%8F%AF%E5%90%A6%E7%B5%90%E6%9D%9F-%E9%99%B3%E6%99%82%E4%B8%AD%E5%88%973%E5%A4%A7%E8%A9%95%E5%88%A4%E6%A8%99%E6%BA%96">
+          早安世界》疫情三級警戒12日可否結束？陳時中列3大評判標準
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-03</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-03/%E8%B6%8A%E5%8D%97%E5%96%AE%E6%97%A5%E5%A2%9E914%E6%9C%AC%E5%9C%9F%E7%97%85%E4%BE%8B-%E5%86%8D%E5%89%B5%E6%96%B0%E9%AB%98%E7%B4%80%E9%8C%84">
+          越南單日增914本土病例  再創新高紀錄
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-03/%E5%AD%A6%E8%80%85-%E4%B8%AD%E5%85%B1%E7%99%BE%E5%B9%B4%E5%A4%96%E8%A1%A8%E4%B8%8B-%E9%9A%90%E8%97%8F%E7%9D%80%E6%B7%B1%E6%B7%B1%E4%B8%8D%E5%AE%89%E5%85%A8%E6%84%9F">
+            前一篇：学者：中共百年外表下 隐藏着深深不安全感
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-03/%E5%B9%BF%E8%A5%BF%E6%9A%B4%E9%9B%A8%E7%99%BE%E4%B8%87%E4%BA%BA%E9%81%AD%E7%81%BE-%E5%A4%AE%E8%A7%86%E8%81%9A%E7%84%A6-%E9%BB%84%E9%87%91%E7%80%91%E5%B8%83-%E6%8C%A8%E8%BD%B0">
+            后一篇：广西暴雨百万人遭灾 央视聚焦“黄金瀑布”挨轰
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-07-03/%E5%AD%A6%E8%80%85-%E4%B8%AD%E5%85%B1%E7%99%BE%E5%B9%B4%E5%A4%96%E8%A1%A8%E4%B8%8B-%E9%9A%90%E8%97%8F%E7%9D%80%E6%B7%B1%E6%B7%B1%E4%B8%8D%E5%AE%89%E5%85%A8%E6%84%9F'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-07-03/%E5%B9%BF%E8%A5%BF%E6%9A%B4%E9%9B%A8%E7%99%BE%E4%B8%87%E4%BA%BA%E9%81%AD%E7%81%BE-%E5%A4%AE%E8%A7%86%E8%81%9A%E7%84%A6-%E9%BB%84%E9%87%91%E7%80%91%E5%B8%83-%E6%8C%A8%E8%BD%B0'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-07-03/%E4%B8%AD%E5%9C%8B%E6%96%B0%E5%A2%9E14%E4%BE%8BCOVID-19-%E7%9A%86%E5%A2%83%E5%A4%96%E7%A7%BB%E5%85%A5'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-07-03/%E6%97%A9%E5%AE%89%E4%B8%96%E7%95%8C-%E7%96%AB%E6%83%85%E4%B8%89%E7%B4%9A%E8%AD%A6%E6%88%9212%E6%97%A5%E5%8F%AF%E5%90%A6%E7%B5%90%E6%9D%9F-%E9%99%B3%E6%99%82%E4%B8%AD%E5%88%973%E5%A4%A7%E8%A9%95%E5%88%A4%E6%A8%99%E6%BA%96'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-07-03/%E5%AD%A6%E8%80%85-%E4%B8%AD%E5%85%B1%E7%99%BE%E5%B9%B4%E5%A4%96%E8%A1%A8%E4%B8%8B-%E9%9A%90%E8%97%8F%E7%9D%80%E6%B7%B1%E6%B7%B1%E4%B8%8D%E5%AE%89%E5%85%A8%E6%84%9F">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-07-03/%E5%B9%BF%E8%A5%BF%E6%9A%B4%E9%9B%A8%E7%99%BE%E4%B8%87%E4%BA%BA%E9%81%AD%E7%81%BE-%E5%A4%AE%E8%A7%86%E8%81%9A%E7%84%A6-%E9%BB%84%E9%87%91%E7%80%91%E5%B8%83-%E6%8C%A8%E8%BD%B0">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<(臺)中央社CNA>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-07-03/%E4%B8%AD%E5%9C%8B%E6%96%B0%E5%A2%9E14%E4%BE%8BCOVID-19-%E7%9A%86%E5%A2%83%E5%A4%96%E7%A7%BB%E5%85%A5">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<(臺)中央社CNA>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-07-03/%E6%97%A9%E5%AE%89%E4%B8%96%E7%95%8C-%E7%96%AB%E6%83%85%E4%B8%89%E7%B4%9A%E8%AD%A6%E6%88%9212%E6%97%A5%E5%8F%AF%E5%90%A6%E7%B5%90%E6%9D%9F-%E9%99%B3%E6%99%82%E4%B8%AD%E5%88%973%E5%A4%A7%E8%A9%95%E5%88%A4%E6%A8%99%E6%BA%96">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

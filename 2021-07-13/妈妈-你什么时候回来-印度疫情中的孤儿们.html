@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>“妈妈，你什么时候回来？”：印度疫情中的孤儿们 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+“妈妈，你什么时候回来？”：印度疫情中的孤儿们
+——
+" />
+    <meta property="og:description" content="
+“妈妈，你什么时候回来？”：印度疫情中的孤儿们
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="“妈妈，你什么时候回来？”：印度疫情中的孤儿们" />
+    <meta property="twitter:title" content="“妈妈，你什么时候回来？”：印度疫情中的孤儿们" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fcn.nytimes.com%2Fworld%2F20210713%2Findia-covid-orphans%2F&t=%E2%80%9C%E5%A6%88%E5%A6%88%EF%BC%8C%E4%BD%A0%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E5%9B%9E%E6%9D%A5%EF%BC%9F%E2%80%9D%EF%BC%9A%E5%8D%B0%E5%BA%A6%E7%96%AB%E6%83%85%E4%B8%AD%E7%9A%84%E5%AD%A4%E5%84%BF%E4%BB%AC" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fworld%2F20210713%2Findia-covid-orphans%2F&t=%E2%80%9C%E5%A6%88%E5%A6%88%EF%BC%8C%E4%BD%A0%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E5%9B%9E%E6%9D%A5%EF%BC%9F%E2%80%9D%EF%BC%9A%E5%8D%B0%E5%BA%A6%E7%96%AB%E6%83%85%E4%B8%AD%E7%9A%84%E5%AD%A4%E5%84%BF%E4%BB%AC&d=2021-07-13&e=
+“妈妈，你什么时候回来？”：印度疫情中的孤儿们
+——
+
+
+  
+SUHASINI RAJ
+  
+  2021年7月13日
+  
+    
+G·哈安维·雷迪和弟弟妹妹生活在印度南部城市海得拉巴，因为双亲死于新冠，他们成了孤儿。 Rebecca Conway for The New York Times
+    
+  
+  
+    印度帕塔普尔——在印度东海岸一座色彩缤纷的小房子里，G·索纳利·雷迪(G.Sonali Reddy)白天给弟弟妹妹做饭，晚上哄他们入睡，希望能像她的母亲一样减轻他们的恐惧。
+    索纳利承担了照料家庭的角色，而她还只是个14岁的孩子。几年前，她的父亲在销售手推车备件的家族生意失败后自杀。然后在5月，灾难性的感染浪潮席卷了印度，她的母亲萨比塔(Sabita)感染了新冠病毒。
+    在抵达最近的有氧气瓶的城市医院几个小时后，雷迪女士就去世了。
+    “母..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fworld%2F20210713%2Findia-covid-orphans%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://cn.nytimes.com/world/20210713/india-covid-orphans/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://cn.nytimes.com/world/20210713/india-covid-orphans/&text=“妈妈，你什么时候回来？”：印度疫情中的孤儿们&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://cn.nytimes.com/world/20210713/india-covid-orphans/&title=“妈妈，你什么时候回来？”：印度疫情中的孤儿们" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://cn.nytimes.com/world/20210713/india-covid-orphans/&title=“妈妈，你什么时候回来？”：印度疫情中的孤儿们" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=“妈妈，你什么时候回来？”：印度疫情中的孤儿们&body=
+“妈妈，你什么时候回来？”：印度疫情中的孤儿们
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://cn.nytimes.com/world/20210713/india-covid-orphans/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://cn.nytimes.com/world/20210713/india-covid-orphans/&title=“妈妈，你什么时候回来？”：印度疫情中的孤儿们&caption=
+“妈妈，你什么时候回来？”：印度疫情中的孤儿们
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=“妈妈，你什么时候回来？”：印度疫情中的孤儿们&url=https://cn.nytimes.com/world/20210713/india-covid-orphans/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>“妈妈，你什么时候回来？”：印度疫情中的孤儿们</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-07-13
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#纽约时报 ">
+          纽约时报
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://cn.nytimes.com/world/20210713/india-covid-orphans/"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="纽约时报的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#纽约时报 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fworld%2F20210713%2Findia-covid-orphans%2F&t=%E2%80%9C%E5%A6%88%E5%A6%88%EF%BC%8C%E4%BD%A0%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E5%9B%9E%E6%9D%A5%EF%BC%9F%E2%80%9D%EF%BC%9A%E5%8D%B0%E5%BA%A6%E7%96%AB%E6%83%85%E4%B8%AD%E7%9A%84%E5%AD%A4%E5%84%BF%E4%BB%AC&d=2021-07-13&e=
+“妈妈，你什么时候回来？”：印度疫情中的孤儿们
+——
+
+
+  
+SUHASINI RAJ
+  
+  2021年7月13日
+  
+    
+G·哈安维·雷迪和弟弟妹妹生活在印度南部城市海得拉巴，因为双亲死于新冠，他们成了孤儿。 Rebecca Conway for The New York Times
+    
+  
+  
+    印度帕塔普尔——在印度东海岸一座色彩缤纷的小房子里，G·索纳利·雷迪(G.Sonali Reddy)白天给弟弟妹妹做饭，晚上哄他们入睡，希望能像她的母亲一样减轻他们的恐惧。
+    索纳利承担了照料家庭的角色，而她还只是个14岁的孩子。几年前，她的父亲在销售手推车备件的家族生意失败后自杀。然后在5月，灾难性的感染浪潮席卷了印度，她的母亲萨比塔(Sabita)感染了新冠病毒。
+    在抵达最近的有氧气瓶的城市医院几个小时后，雷迪女士就去世了。
+    “母..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fworld%2F20210713%2Findia-covid-orphans%2F" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1626152822000-->
+<p><a href="https://cn.nytimes.com/world/20210713/india-covid-orphans/">“妈妈，你什么时候回来？”：印度疫情中的孤儿们</a>
+——</p>
+
+<div>
+  <address>
+SUHASINI RAJ
+  </address>
+  <time pudate="2021-07-13 12:38:16" datetime="2021-07-13 12:38:16">2021年7月13日</time>
+  <figure class="article-span-photo">
+<img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/11/world/11virus-india-orphans-1/merlin_189827112_e90023e5-5398-4d9f-8b92-1d6c6fd75d6d-master1050.jpg" width="1050" height="700" />    <figcaption>
+G·哈安维·雷迪和弟弟妹妹生活在印度南部城市海得拉巴，因为双亲死于新冠，他们成了孤儿。 <cite>Rebecca Conway for The New York Times</cite>
+    </figcaption>
+  </figure>
+  <section class="article-body">
+    <p>印度帕塔普尔——在印度东海岸一座色彩缤纷的小房子里，G·索纳利·雷迪(G.Sonali Reddy)白天给弟弟妹妹做饭，晚上哄他们入睡，希望能像她的母亲一样减轻他们的恐惧。</p>
+    <p>索纳利承担了照料家庭的角色，而她还只是个14岁的孩子。几年前，她的父亲在销售手推车备件的家族生意失败后自杀。然后在5月，灾难性的感染浪潮席卷了印度，她的母亲萨比塔(Sabita)感染了新冠病毒。</p>
+    <p>在抵达最近的有氧气瓶的城市医院几个小时后，雷迪女士就去世了。</p>
+    <p>“母亲就像雨伞一样，为我们遮挡生活的风雨，”索纳利忍住泪水说道。“我想象她就在身边。这是我坚持下去的动力。”</p>
+    <p>据邦政府称，索纳利和她的弟弟妹妹是在大流行期间成为孤儿的3000多名印度儿童之一。新冠病毒在全国范围内夺走了数十万人的生命，这些孤儿是家庭惨遭悲剧的令人心碎的见证。</p>
+    <p>即使人们经历了如此多的失去，孤儿的困境仍然刺痛了公众，让人们看到了一个本就充满众多弱势儿童的国家所面临的深刻挑战。</p>
+    <p>印度各邦<a rel="noopener noreferrer" target="_blank" href="https://www.timesnownews.com/mirror-now/in-focus/article/full-details-children-orphaned-by-covid-states-take-them-under-their-wings/763099">已宣布为每个孤儿提供每月约7至68美元的补偿</a>，并承诺提供食物和免费教育。总理纳伦德拉·莫迪(Narendra Modi)<a rel="noopener noreferrer" target="_blank" href="https://twitter.com/narendramodi/status/1398630525435265032?s=20">在一条推文中誓言</a>要“确保孩子们过上有尊严和机会的生活”。</p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/11/world/11virus-india-orphans-3/merlin_189966087_c657c9d7-f0c8-4b9e-87ec-3f54d0727f66-master1050.jpg" /><small style="color: #999;">在北方邦家中的沙韦兹、沙伊卜和卡哈珊·赛非，他们的双亲死于新冠。</small></p>
+    <p>但倡导人士担心，当人们的关注不可避免地消退时，孤儿将会很容易受到忽视和剥削。</p>
+    <p>已经有一些失去全家、惊魂未定的孩子发现，他们很难开具死亡证明以获得接收政府福利的资格。有些孩子还发现自己很难回到学校。</p>
+    <p>从长远来看，许多来自偏远地区贫困家庭的孤儿面临着人口贩卖和童婚的风险。贩卖儿童在印度十分猖獗，他们被奴役，成为童工或遭到性剥削。据联合国儿童基金会(Unicef)称，该国的<a rel="noopener noreferrer" target="_blank" href="https://www.unicef.org/india/what-we-do/end-child-marriage#:~:text=Estimates%20suggest%20that%20each%20year,15%2D19%20are%20currently%20married.">童婚新娘数量居世界之首</a>。</p>
+    <p>由于收养属于文化禁忌，许多孤儿无法被收养。尤其是年龄较大的儿童，往往无法与收养家庭配对。</p>
+    <p>“随着灾难性的悲剧席卷印度，政府正试图挽回颜面，”德里大学法学生梅达·潘德(Medha Pande)说，<a rel="noopener noreferrer" target="_blank" href="https://scroll.in/article/997377/government-will-aid-children-who-have-lost-both-parents-to-covid-but-why-not-all-vulnerable-kids">她撰写了有关大流行引起的社会法律问题的文章</a>。</p>
+    <p>“政府出面时看起来毫无准备，”她还说。“他们只是在更大的弱势儿童群体中创建了一个子群体，说他们可以轻松照顾这些孩子。”</p>
+    <p>最近的一个早晨，奥里萨邦帕塔普尔村的官员来到了索纳利的家，她的外祖母在女儿去世后搬进了那里。</p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/02/world/00virus-india-orphans-2/merlin_189827232_56ceb574-f024-4b90-93d3-dcc3ef4ecf81-master1050.jpg" /><small style="color: #999;">印度奥里萨邦帕塔普尔村，14岁的G·索纳利·雷迪。母亲因感染新冠病毒去世，她和弟弟妹妹成了孤儿。</small></p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/11/world/11virus-india-orphans-4/merlin_189827214_c527aff2-b3b8-45dc-aa72-b55c04153ad9-master1050.jpg" /><small style="color: #999;">索纳利教弟弟妹妹们读书写字。</small></p>
+    <p>他们是来给孩子们提供“孤儿抚恤金”的，这笔钱可以维持一个夏天。银行账户是以他们的名义开设的。官员们放下大袋的大米。</p>
+    <p>索纳利惊讶地看着，仔细听他们滔滔不绝地念出一连串银行账户的使用说明。她的弟弟妹妹——八岁的雅加巴利亚(Jagabalia)和五岁的巴巴那(Bhabana)——抓着姐姐的蓝色连衣裙，无精打采地看着。</p>
+    <p>甚至在母亲去世之前，这个家庭就过着贫困的生活。刚丧偶的雷迪在他们家的前厅开了一家小点心店。她用仅有的钱让索纳利参加课后补习。</p>
+    <p>父亲去世后，索纳利与母亲的关系特别亲密。</p>
+    <p>“弟弟妹妹求我说：‘我们要去见妈妈，’”索纳利摆弄着拇指说。“父亲去世时，我们想，‘至少妈妈还在。’现在，病毒把她也带走了。”</p>
+    <p>在数百英里外的南部城市海得拉巴，13岁的G·萨斯维克·雷迪（G. Sathwik Reddy，与索纳利没有亲属关系）也听到了妹妹相似的请求，他们的父母在印度最近的感染高峰中去世。</p>
+    <p>三岁的妹妹哈安维(Haanvi)要“妈妈”和“爸爸”的时候，他只告诉她，“他们明天就回家了。”</p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/02/world/00virus-india-orphans-4/merlin_189871386_4c4f63b5-6a46-497d-8bb0-086932993d3a-master1050.jpg" /><small style="color: #999;">虽然国家承诺会帮助这些孤儿，但许多孩子面临着不确定的未来。</small></p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/02/world/00virus-india-orphans-8/merlin_189827139_c739ae49-d90c-444d-b45e-18630ad5f2f5-master1050.jpg" /><small style="color: #999;">这些孤儿使人们铭记印度经历的失去。</small></p>
+    <p>他们的父亲戈帕尔(Gopal)有个小生意，为农场制作铁栅栏。和印度的无数中产阶级家庭一样，他们尽可能多存钱，把孩子送进私立学校。母亲迪帕(Deepa)每周都会为孩子们做特殊的鸡肉菜肴，还辅导萨斯维克写作业。</p>
+    <p>4月，雷迪夫妇和孩子们的祖母在几天之内相继感染了病毒。由于印度<a href="https://www.nytimes.com/2021/06/28/world/asia/india-coronavirus-oxygen.html">长期缺少氧气</a>，医院拒绝接收病人，这家人担心他们将失去救治机会。</p>
+    <p>有一次在医院里，雷迪夫人病得很重。她插管两周，昏迷不醒。雷迪的肺部病情也迅速恶化。到5月初，三人全部去世。</p>
+    <p>在火葬场，萨斯维克透过塑料布看了一眼父亲的脸。他已经震惊到麻木了。现在，他经常哭着入睡。</p>
+    <p>“为了妹妹，我必须坚强起来，”他说。</p>
+    <p>在印度北部尘土飞扬的平原上，听到惊醒的妹妹尖叫着寻找母亲，18岁的沙韦兹·赛非(Shawez Saifi)也在黑夜中难忍抽泣。</p>
+    <p>他们的双亲沙姆沙德(Shamshad)和沙南(Shabnam)今年4月生了病，沙韦兹带他们去看当地医生，医生让他们做新冠检测。但因为这对父子在建筑工地的活路少了，日子过得紧巴巴，沙南建议他们回到穆拉德纳加尔的家中休养。</p>
+    <p>他们家只有一间屋，孩子们睡在屋外的阳台上，父母将自己锁在里面。病情迅速恶化之后，他们搬到了亲戚家里。几天后，沙南死了。那之后几天，她的丈夫也去世了。</p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/02/world/00virus-india-orphans-5/merlin_189827115_339a588c-affb-4df2-b427-807b7ecbced0-master1050.jpg" /><small style="color: #999;">G·萨斯维克·雷迪在家中写完学校作业，他与妹妹和祖父母住在一起。</small></p>
+    <p>双亲去世后，放弃学业和父亲一起打工的沙韦兹返回家中，<a rel="noopener noreferrer" target="_blank" href="https://twitter.com/ARUNSHARMAJI/status/1404663825450692609?s=20">房东将他们锁在门外</a>，说要等他交了房租才把钥匙给他们。他的叔叔借钱还掉了部分债务，沙韦兹和弟弟妹妹才有机会进门收拾行李。</p>
+    <p>沙韦兹九岁的妹妹卡哈珊(Kahkashan)受到的打击最大。她几乎每天都要给母亲打电话聊天，仿佛她真的在电话的另一端。</p>
+    <p>“妈妈，你什么时候回来？我想你了，”她说。</p>
+    <p>“我唯一的愿望就是教导弟弟妹妹，”沙韦兹说，“妈妈总在我外出工作的时候打电话问我，‘儿子，时候不早了。你什么时候回家？’现在没人再给我打电话了，”他说。</p>
+    <p>在帕塔普尔，索纳利也感觉好像失去了自己最强大的守护者。</p>
+    <p>她在一本厚厚的日记中写下双亲去世的日期，而在旁边的一页里，索纳利草草写下了一首献给母亲的诗。</p>
+    <p>最近的一天，她对弟弟妹妹朗读了这首诗。</p>
+    <p><em>人生起落茫茫，母亲将我们抚养。</em></p>
+    <p><em>母亲有最高大的身躯，是她守护我们的幸福。</em></p>
+    <p><em>没有母亲，世界都是荒芜，没有她，世界不再相同。</em></p>
+    <p><em>母亲替我们承受苦痛，可我们却无法替她分担。</em></p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/02/world/00virus-india-orphans-10/merlin_189827178_b387556b-dcd2-4fda-a7db-e7c65d802a8c-master1050.jpg" /><small style="color: #999;">索纳利的日记，里面写着诗歌，贴着父母的照片。</small></p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/11/world/11virus-india-orphans-2/merlin_189827229_5765a847-3d0c-463a-bd07-629df04202f2-master1050.jpg" /><small style="color: #999;">索纳利的外婆已经搬进了她家。</small></p>
+  </section>
+  <footer class="author-info">
+    <p>Suhasini Raj作为调查记者为印度和国际新闻媒体工作了十几年。她于2014年加入时报，任驻新德里分社记者。</p>
+    <p>翻译：Harry Wong、明斋</p>
+    <p><a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/07/10/world/asia/india-covid-orphans.html">点击查看本文英文版。</a></p>
+  </footer>
+<br />  <hr />
+  <div>
+获取更多RSS：<br /><a href="https://feedx.net" style="color:orange" target="_blank">https://feedx.net</a> <br /><a href="https://feedx.top" style="color:orange" target="_blank">https://feedx.top</a><br />
+  </div>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#纽约时报 的其它文章</h4>
+    
+      <li>
+        <time>2021-07-13</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-13/%E6%B5%B7%E5%9C%B0%E6%80%BB%E7%BB%9F%E9%81%87%E5%88%BA%E6%A1%88%E4%B9%8B%E8%B0%9C-%E4%B8%80%E5%90%8D%E5%8C%BB%E7%94%9F%E7%BC%98%E4%BD%95%E6%88%90%E4%B8%BA%E6%9C%80%E5%A4%A7%E5%AB%8C%E7%8A%AF">
+          海地总统遇刺案之谜：一名医生缘何成为最大嫌犯
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-13</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-13/%E6%92%9E%E4%B8%8A%E7%9B%91%E7%AE%A1%E9%AB%98%E5%A2%99-%E4%B8%AD%E5%9B%BD%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80%E4%B8%9A%E4%BD%95%E5%8E%BB%E4%BD%95%E4%BB%8E">
+          撞上监管高墙，中国金融科技业何去何从？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-12</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-12/%E5%8F%B0%E6%B9%BE%E4%B8%8EBioNTech%E8%BE%BE%E6%88%90%E7%96%AB%E8%8B%97%E8%B4%AD%E4%B9%B0%E5%8D%8F%E8%AE%AE-%E6%89%93%E7%A0%B4%E6%95%B0%E6%9C%88%E5%83%B5%E5%B1%80">
+          台湾与BioNTech达成疫苗购买协议，打破数月僵局
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-12</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-12/%E6%BC%AB%E6%B8%B8%E5%96%9C%E9%A9%AC%E6%8B%89%E9%9B%85-%E4%BD%93%E9%AA%8C%E4%B8%80%E4%B8%AA%E5%8F%98%E5%8C%96%E4%B8%AD%E7%9A%84%E8%A5%BF%E8%97%8F">
+          漫游喜马拉雅，体验一个变化中的西藏
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-13/%E7%BE%8E%E5%8F%91%E5%B8%83%E9%98%B2%E7%A7%8D%E6%97%8F%E7%81%AD%E7%BB%9D%E5%92%8C%E6%9A%B4%E8%A1%8C%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A-%E9%A6%96%E8%AF%84%E4%B8%AD%E5%9B%BD">
+            前一篇：美发布防种族灭绝和暴行年度报告 首评中国
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-13/%E4%B9%90%E8%A7%86%E6%B1%BD%E8%BD%A6%E8%A2%AB%E5%BC%BA%E5%88%B6%E6%89%A7%E8%A1%8C3000%E4%B8%87%E5%85%83">
+            后一篇：乐视汽车被强制执行3000万元
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-07-13/%E7%BE%8E%E5%8F%91%E5%B8%83%E9%98%B2%E7%A7%8D%E6%97%8F%E7%81%AD%E7%BB%9D%E5%92%8C%E6%9A%B4%E8%A1%8C%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A-%E9%A6%96%E8%AF%84%E4%B8%AD%E5%9B%BD'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-07-13/%E4%B9%90%E8%A7%86%E6%B1%BD%E8%BD%A6%E8%A2%AB%E5%BC%BA%E5%88%B6%E6%89%A7%E8%A1%8C3000%E4%B8%87%E5%85%83'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-07-13/%E6%92%9E%E4%B8%8A%E7%9B%91%E7%AE%A1%E9%AB%98%E5%A2%99-%E4%B8%AD%E5%9B%BD%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80%E4%B8%9A%E4%BD%95%E5%8E%BB%E4%BD%95%E4%BB%8E'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-07-12/%E5%8F%B0%E6%B9%BE%E4%B8%8EBioNTech%E8%BE%BE%E6%88%90%E7%96%AB%E8%8B%97%E8%B4%AD%E4%B9%B0%E5%8D%8F%E8%AE%AE-%E6%89%93%E7%A0%B4%E6%95%B0%E6%9C%88%E5%83%B5%E5%B1%80'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-07-13/%E7%BE%8E%E5%8F%91%E5%B8%83%E9%98%B2%E7%A7%8D%E6%97%8F%E7%81%AD%E7%BB%9D%E5%92%8C%E6%9A%B4%E8%A1%8C%E5%B9%B4%E5%BA%A6%E6%8A%A5%E5%91%8A-%E9%A6%96%E8%AF%84%E4%B8%AD%E5%9B%BD">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-07-13/%E4%B9%90%E8%A7%86%E6%B1%BD%E8%BD%A6%E8%A2%AB%E5%BC%BA%E5%88%B6%E6%89%A7%E8%A1%8C3000%E4%B8%87%E5%85%83">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<纽约时报>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-07-13/%E6%92%9E%E4%B8%8A%E7%9B%91%E7%AE%A1%E9%AB%98%E5%A2%99-%E4%B8%AD%E5%9B%BD%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80%E4%B8%9A%E4%BD%95%E5%8E%BB%E4%BD%95%E4%BB%8E">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<纽约时报>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-07-12/%E5%8F%B0%E6%B9%BE%E4%B8%8EBioNTech%E8%BE%BE%E6%88%90%E7%96%AB%E8%8B%97%E8%B4%AD%E4%B9%B0%E5%8D%8F%E8%AE%AE-%E6%89%93%E7%A0%B4%E6%95%B0%E6%9C%88%E5%83%B5%E5%B1%80">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

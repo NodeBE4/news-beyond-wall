@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>【404文库】中美印象网｜2015-2020，中美竞争的关键五年 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+【404文库】中美印象网｜2015-2020，中美竞争的关键五年
+——
+" />
+    <meta property="og:description" content="
+【404文库】中美印象网｜2015-2020，中美竞争的关键五年
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="【404文库】中美印象网｜2015-2020，中美竞争的关键五年" />
+    <meta property="twitter:title" content="【404文库】中美印象网｜2015-2020，中美竞争的关键五年" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F668187.html&t=%E3%80%90404%E6%96%87%E5%BA%93%E3%80%91%E4%B8%AD%E7%BE%8E%E5%8D%B0%E8%B1%A1%E7%BD%91%EF%BD%9C2015-2020%EF%BC%8C%E4%B8%AD%E7%BE%8E%E7%AB%9E%E4%BA%89%E7%9A%84%E5%85%B3%E9%94%AE%E4%BA%94%E5%B9%B4" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F668187.html&t=%E3%80%90404%E6%96%87%E5%BA%93%E3%80%91%E4%B8%AD%E7%BE%8E%E5%8D%B0%E8%B1%A1%E7%BD%91%EF%BD%9C2015-2020%EF%BC%8C%E4%B8%AD%E7%BE%8E%E7%AB%9E%E4%BA%89%E7%9A%84%E5%85%B3%E9%94%AE%E4%BA%94%E5%B9%B4&d=2021-07-13&e=
+【404文库】中美印象网｜2015-2020，中美竞争的关键五年
+——
+
+
+  
+    2021年6月22日，兰德公司官网发布报告《美国与中国的战略竞争》（U.S. Strategic Competition with China）。总结了最近5年以来，兰德公司有关中美战略竞争主题的60多份报告，从中梳理了中美战略竞争的7个发展趋势，并归纳为6主题，最后为未来中美战略的制定提出建议方向。 —— 编者按
+  
+  作者：Timothy R. Heath
+  编译：学术plus评论员  谭惠文
+  中美关系虽然存在着长期争端，但长期以来总体保持稳定互利状态，然而近期关系的迅速变化已经导致全球政治动荡。尽管两国首都似乎都致力于和平解决分歧，但日益加剧的敌意和不信任让许多观察家担心两国可能走向对抗。
+  为此，本报告总结了最近五年（过去五年到2020年中期）的60多份兰德报告，集中讨论了..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F668187.html" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://chinadigitaltimes.net/chinese/668187.html" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://chinadigitaltimes.net/chinese/668187.html&text=【404文库】中美印象网｜2015-2020，中美竞争的关键五年&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://chinadigitaltimes.net/chinese/668187.html&title=【404文库】中美印象网｜2015-2020，中美竞争的关键五年" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://chinadigitaltimes.net/chinese/668187.html&title=【404文库】中美印象网｜2015-2020，中美竞争的关键五年" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=【404文库】中美印象网｜2015-2020，中美竞争的关键五年&body=
+【404文库】中美印象网｜2015-2020，中美竞争的关键五年
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://chinadigitaltimes.net/chinese/668187.html" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://chinadigitaltimes.net/chinese/668187.html&title=【404文库】中美印象网｜2015-2020，中美竞争的关键五年&caption=
+【404文库】中美印象网｜2015-2020，中美竞争的关键五年
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=【404文库】中美印象网｜2015-2020，中美竞争的关键五年&url=https://chinadigitaltimes.net/chinese/668187.html" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>【404文库】中美印象网｜2015-2020，中美竞争的关键五年</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-07-13
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#中国数字时代 ">
+          中国数字时代
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://chinadigitaltimes.net/chinese/668187.html"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="中国数字时代的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#中国数字时代 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F668187.html&t=%E3%80%90404%E6%96%87%E5%BA%93%E3%80%91%E4%B8%AD%E7%BE%8E%E5%8D%B0%E8%B1%A1%E7%BD%91%EF%BD%9C2015-2020%EF%BC%8C%E4%B8%AD%E7%BE%8E%E7%AB%9E%E4%BA%89%E7%9A%84%E5%85%B3%E9%94%AE%E4%BA%94%E5%B9%B4&d=2021-07-13&e=
+【404文库】中美印象网｜2015-2020，中美竞争的关键五年
+——
+
+
+  
+    2021年6月22日，兰德公司官网发布报告《美国与中国的战略竞争》（U.S. Strategic Competition with China）。总结了最近5年以来，兰德公司有关中美战略竞争主题的60多份报告，从中梳理了中美战略竞争的7个发展趋势，并归纳为6主题，最后为未来中美战略的制定提出建议方向。 —— 编者按
+  
+  作者：Timothy R. Heath
+  编译：学术plus评论员  谭惠文
+  中美关系虽然存在着长期争端，但长期以来总体保持稳定互利状态，然而近期关系的迅速变化已经导致全球政治动荡。尽管两国首都似乎都致力于和平解决分歧，但日益加剧的敌意和不信任让许多观察家担心两国可能走向对抗。
+  为此，本报告总结了最近五年（过去五年到2020年中期）的60多份兰德报告，集中讨论了..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fchinadigitaltimes.net%2Fchinese%2F668187.html" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1626163962000-->
+<p><a href="https://chinadigitaltimes.net/chinese/668187.html">【404文库】中美印象网｜2015-2020，中美竞争的关键五年</a>
+——</p>
+
+<div>
+  <blockquote>
+    <p>2021年6月22日，兰德公司官网发布报告《美国与中国的战略竞争》（U.S. Strategic Competition with China）。总结了最近5年以来，兰德公司有关中美战略竞争主题的60多份报告，从中梳理了中美战略竞争的7个发展趋势，并归纳为6主题，最后为未来中美战略的制定提出建议方向。 —— 编者按</p>
+  </blockquote>
+  <p>作者：Timothy R. Heath</p>
+  <p>编译：学术plus评论员  谭惠文</p>
+  <h1 id="section">中美关系虽然存在着长期争端，但长期以来总体保持稳定互利状态，然而近期关系的迅速变化已经导致全球政治动荡。尽管两国首都似乎都致力于和平解决分歧，但日益加剧的敌意和不信任让许多观察家担心两国可能走向对抗。</h1>
+  <p>为此，本报告总结了最近五年（过去五年到2020年中期）的60多份兰德报告，集中讨论了与中美战略竞争有关的各种问题，包括<strong>：中国的战略目标和优先事项，以及相关的政策和措施；中国的行动如何影响美国的战略利益；以及哪些行动可以进一步保护美国的利益。</strong></p>
+  <p><strong>一、中美战略竞争的七个趋势</strong></p>
+  <ol>
+    <li>
+      <p>与中国竞争成为美国战略高风险因素</p>
+    </li>
+    <li>
+      <p>经济、外交和技术的核心作用凸显</p>
+    </li>
+    <li>
+      <p>美国在综合国力上占据上风，但中国正在缩小差距</p>
+    </li>
+    <li>
+      <p>由于解放军的推进，美国在亚洲的安全地位受到了危险的侵蚀</p>
+    </li>
+    <li>
+      <p>美中发生灾难性战争的不确定性越来越大，但风险仍然很低</p>
+    </li>
+    <li>
+      <p>管理联盟和伙伴关系成为关键治国之道</p>
+    </li>
+    <li>
+      <p>非战争手段的斗争日益加强</p>
+    </li>
+  </ol>
+  <p><strong>【趋势1】与中国竞争成为美国战略高风险因素</strong></p>
+  <p><strong>兰德公司的研究强调了美国与中国竞争的重要性。</strong>过去的各种研究得出结论认为，竞争的结果可能会影响美国的经济前景，并对国际秩序的未来以及国际和平与稳定的前景产生深远的影响。</p>
+  <ul>
+    <li>
+      <p>2018年的研究指出“中国在塑造国际秩序的条件方面，与美国争夺影响力和领导权的竞争是否会升级为破坏国际秩序的动态，仍有待确定。</p>
+    </li>
+    <li>
+      <p>2019年的一项研究称“中国是一个对等的竞争对手，可能会塑造一个有利于其经济利益、不利于美国经济前景的国际秩序，中国构成了“不那么紧迫的威胁，但更大的长期威胁。</p>
+    </li>
+    <li>
+      <p>2019年，将当前的时代描述为一个“与中国进行全面竞争的时代，美中两国对国际竞争的整体特征具有“决定性”。</p>
+    </li>
+  </ul>
+  <p><strong>【趋势2】经济、外交和技术在中美竞争中的核心作用凸显</strong></p>
+  <p><strong>兰德强调了经济、技术和外交在当前竞争中的中心地位。 </strong></p>
+  <ul>
+    <li>2019年马扎尔的研究认为，竞争不会决定国家或体系的生存，而是决定它们的“相对实力和成功”。因此，重大投资和国家战略可能会集中在“主导某些行业，吸引投资，实现创新突破，提高国内增长率和社会繁荣.”2019年多宾斯的研究同样强调了外交、工业、贸易、创新和国际组织在美中竞争中的主导地位。</li>
+  </ul>
+  <p><strong>兰德公司特别关注中国的经济实力及其施加外交影响以加强其地位的意愿。</strong></p>
+  <ul>
+    <li>2019年多宾斯等人报告认为：<strong>争夺世界领导地位的将是地缘经济，而不是地缘政治。</strong>2020年的一项研究同样指出，中国愿意利用<strong>经济工具</strong>在安全和地缘政治领域进行竞争。</li>
+  </ul>
+  <p><strong>兰德公司还专注于一带一路倡议(BRI)，这是一项旨在整合亚欧经济的大规模贸易和基础设施建设努力。</strong></p>
+  <ul>
+    <li>2020年的一项研究进一步注意到中国经济前景对与美国竞争的重要性，并概述了美中关系未来可能的不同轨迹：“平行伙伴”(两者平行发展)；一个“相互冲突的竞争对手”(以冲突为特征)；一个“不同的方向”(中国被国内问题分散注意力)。</li>
+  </ul>
+  <p><strong>关于技术，兰德公司的研究强调了先进技术开发和制造中领导力的重要性。技术领先不仅能使经济快速增长，还能让一个国家的军队在战场上获得优势。</strong>兰德公司的研究人员已经开始检查特定的技术部门，以调查中国追求技术优势对美国工业构成了多大的威胁。</p>
+  <ul>
+    <li>瓦尔兹曼等研究了美中在人工智能领域的竞争状况，认为<strong>中国已经在大数据集领域相对于美国的优势，但美国在人工智能技术开发方面保持了适度的领先地位，因为它在先进的半导体领域拥有巨大的优势。</strong>2020年德里克·格罗斯曼的研究呼应了大数据分析的结论，指出北京有一整套应用该技术的政府战略。</li>
+  </ul>
+  <p><strong>【趋势3】综合国力上：美国仍占上风，中国差距不断缩小</strong></p>
+  <h2 id="section-1">兰德公司的研究通常认为美国在外交、经济、技术和军事上保持相当大的优势。然而，研究中的一个共识是，中国正在不断缩小与美国综合国力的差距。2018年《中国与国际秩序研究》指出，中国寻求更新而不是推翻现有的美国主导的秩序；但报告还指出，中国的长期目标仍不明朗。</h2>
+  <ul>
+    <li>
+      <p><strong>其中，兰德公司的研究已经认识到美国在其全球联盟和伙伴关系中的持久优势。</strong>如美国如何加强与亚洲国家的防务合作，美国的盟友和伙伴如何合作，与中国在亚太地区进行竞争。</p>
+    </li>
+    <li>
+      <p><strong>与此同时，研究也注意到了中国在经济和外交影响力方面的地区优势。</strong>2020年一项研究得出结论，亚洲国家认为中国比美国有更大的经济影响力。</p>
+    </li>
+    <li>
+      <p><strong>中国还缩小了在联合国和其他国际机构等多边组织中的影响力差距。</strong></p>
+    </li>
+    <li>
+      <p><strong>兰德研究人员还注意到中国的经济治国之道带来了战略优势。</strong>在2013年的一项关于关键材料竞争的研究指出，中国已成为11种“对美国制造业至关重要”的原材料和半成品的控制性生产商。</p>
+    </li>
+  </ul>
+  <p><strong>【趋势4】美国在亚洲安全地位的日渐侵蚀</strong></p>
+  <p>兰德研究开始关注美国在亚太地区安全地位的降低。2015年报告称，中国军事现代化的某些方面，以任何合理的历史标准来看，都来得非常快。</p>
+  <ul>
+    <li>
+      <p><strong>兰德公司的其他研究指出了中国反介入能力带来的挑战。</strong>2017年研究概述了几个涉及中国和美国的主要冲突场景，以检验反介入/区域拒止(A2/AD)能力对美国的兵力投射构成威胁的假设。</p>
+    </li>
+    <li>
+      <p><strong>军力差距的缩小发生在美国资源紧张的时候。</strong>2020年的研究称，美国及其盟友在阻止和击败可能威胁国家利益的侵略的能力方面存在“重大差距”。</p>
+    </li>
+    <li>
+      <p><strong>兰德公司的研究人员调查了全球威胁与美国军事资源之间的不匹配，以应对这些威胁。</strong>称美国“需要在一系列广泛的项目和倡议中进行大量的持续投资”，以充分解决“面临的不同挑战”。</p>
+    </li>
+  </ul>
+  <p><strong>【趋势5】美中重大战争的不确定性增大，但风险仍然很低</strong></p>
+  <p><strong>兰德公司的研究人员注意到，尽管总体战争风险仍然较低，但中美之间日益加剧的竞争加剧了热点地区的紧张局势。</strong>为了更好地管理风险，研究人员开发了衡量综合国力的方法。</p>
+  <ul>
+    <li>
+      <p>雅各布2020年的研究提出了一个包含国家军事、经济、技术、政治和人口实力的指标。使用这一指标，发现中美之间的综合国力差距正在缩小。提供了几个场景，涉及到未来几年可能会提高或降低风险的趋势，这取决于权力平衡的变化。</p>
+    </li>
+    <li>
+      <p>希斯2020年的研究提出了制定更严格设计的中美冲突场景的方法。该研究强调了一些因素，如力量平衡的迅速变化、一连串的军事化危机、军备竞赛行为以及对严重威胁的看法的出现，这些因素可能预示着冲突风险的增加。</p>
+    </li>
+  </ul>
+  <p><strong>随着紧张局势加剧，危机对抗中误判风险增加。为了更好地评估误判和误解的风险，兰德研究人员调查了灾难性军事决策的历史先例。</strong></p>
+  <ul>
+    <li>Gompert的一项研究揭示了过去战略失误的一个共同主题：个人和机构倾向于依赖现实的简化表示或“认知模型”。</li>
+  </ul>
+  <p><strong>【趋势6】管理联盟和伙伴关系成为关键治国之道</strong></p>
+  <p>中美竞争的性质表明，潜在的军事热点将集中在美国在亚洲的盟友问题上。兰德进行了一项研究，旨在消除中国军事力量对美国盟友和伙伴构成的威胁，并提高他们的战备状态。其中包括：分析了台湾岛屿防御的各个方面，并权衡了该岛提高防空能力的途径。此外还探索中国对日本和其他伙伴国家构成的一些挑战。</p>
+  <p><strong>【趋势7】非战争手段的斗争日益加强</strong></p>
+  <p><strong>鉴于中美间常规战争的风险和成本，两国都在采取战争以外的措施来保证各自的利益。兰德公司也相应开展如“混合战争”和灰色地带战术等研究。</strong></p>
+  <ul>
+    <li>
+      <p>2016年一项研究指出，中国可能会继续依赖灰色地带战术，作为以最大限度降低军事风险的方式实现其目标的首选手段。2019年一项研究警告称，这种灰色战术将成为未来的“最大危险”。</p>
+    </li>
+    <li>
+      <p>2020年，兰德发布了一系列关于2030年战争未来的报告。考察了经济、地缘政治、军事和其他可能影响国际和平与战争前景的趋势，强调了未来冲突的四个原型：反恐、灰色地带冲突、不对称战斗和高端战斗。</p>
+    </li>
+  </ul>
+  <p><strong>为了帮助美国决策者管理这些风险，兰德公司的研究人员已经开始提出美国应对中国灰色地带行动的方法。</strong></p>
+  <ul>
+    <li>2019年莫里斯的报告概述了可能应对方案。</li>
+  </ul>
+  <p><strong>二、中美战略竞争的6个关键主题</strong></p>
+  <ol>
+    <li>
+      <p>争夺地区领导权</p>
+    </li>
+    <li>
+      <p>争夺全球影响力</p>
+    </li>
+    <li>
+      <p>中国军事现代化</p>
+    </li>
+    <li>
+      <p>加强美国安全地位的需要</p>
+    </li>
+    <li>
+      <p>信息、网络空间与太空竞争</p>
+    </li>
+    <li>
+      <p>竞争中合作的重要性</p>
+    </li>
+  </ol>
+  <p><strong>【主题1】争夺地区领导权</strong></p>
+  <h2 id="section-2"></h2>
+  <ul>
+    <li>
+      <p>2020年的一项研究比较了美国和中国在印度-太平洋地区的影响。得出结论，东南亚国家将经济发展置于安全考虑之上，并认为中国的经济影响比其军事力量更具威胁性。此外，与中国相比，印太地区国家与美国有更多的共同利益，但不愿意在这两者之间做出选择。</p>
+    </li>
+    <li>
+      <p>2018年一项关于中国与BRI国家关系的研究列出了亚洲、非洲和拉丁美洲的“关键”伙伴国家，研究认为中国有五个重要的合作伙伴——俄罗斯、巴基斯坦、伊朗、南非和委内瑞拉，该研究还指出中国在东南亚有多个关键合作伙伴。</p>
+    </li>
+  </ul>
+  <p><strong>【主题2】争夺全球影响力</strong></p>
+  <p>兰德公司研究普遍认为，美中之间的竞争远远超出了亚太地区。就地缘政治而言，在全球外交伙伴的竞争中，<strong>对全球规范和价值观的思想和影响力的竞争日益激烈。兰德公司的研究人员已经调查了在亚洲以外的地区如以色列、非洲大陆地区争夺影响力的情况。</strong></p>
+  <ul>
+    <li>
+      <p>2019年关于中国与以色列关系的研究指出，在外交、贸易、投资、建设、教育伙伴关系和科学合作方面的合作正在扩大。该研究建议美国与以色列密切合作，以“消除冲突，形成并推进双方一致同意的与中国相关的议程。”</p>
+    </li>
+    <li>
+      <p>2014年的一项研究指出中国在非洲大陆的参与“并没有从根本上破坏美国在非洲大陆的经济和政治目标。研究还预计，美国和中国在非洲稳定方面有着共同的根本利益”，但在人权规范方面的分歧最大。</p>
+    </li>
+  </ul>
+  <p><strong>【主题3】中国军事现代化</strong></p>
+  <p>近年来，兰德围绕中国军事现代化研究了解放军的“体系对抗”理论、核威慑政策等其他<strong>关键作战概念。并提出核力量的现代化，军备控制以及核、空间和网络领域的威胁管理问题可能会变得越来越重要。</strong></p>
+  <p>此外还研究了中国战略支援部队、中国人民解放军海外行动、中国人民解放军潜在的突发事件和中国人民解放军空军的发展，支出这些改进都增强了中国作为军事竞争对手的实力。</p>
+  <p>此外，还分析了<strong>中国人民解放军无人系统的发展，评估了中国无人驾驶航空、水面和水下运载工具的研究和发展。</strong>指出对于无人平台来说，情报、监视和侦察仍然是“中国工业的主要焦点”。此外，中国还在寻求“出口无人驾驶系统，以此作为改善其在全球武器市场地位的方式”。</p>
+  <p>当然，<strong>兰德公司也分析了中国军队的长期不足之处。</strong>2015年的一项研究指出：与军方愿望不相容的组织特征、国防工业中的质量控制问题以及培训和作战支持功能的不足等问题。此外，中国在亚洲以外部署军事力量的能力也继续面临制约。</p>
+  <p><strong>【主题4】巩固美国军事地位的需要</strong></p>
+  <p>中国的军事现代化表明，<strong>需要新概念、新技术和新方法来加强美国在亚洲的安全地位。</strong>2017年研究得出结论，美国陆军将需要远程火炮系统和反舰能力，以应对大多数可能涉及中国的冲突场景；2019年一项研究确定，陆基A2/AD系统将把威慑负担转移到盟友和伙伴的肩上，可以针对中国产生有效的威慑；鉴于解放军不断增长的弹道导弹和巡航导弹库存，2016年关于美国对《中程核力量条约》的承诺的研究认为，美国应该审查在美国军队结构中增加传统陆基战区弹道导弹的好处和风险。</p>
+  <p><strong>【主题5】日益激烈的信息、网络空间与太空竞争</strong></p>
+  <p>兰德公司的研究人员探索了<strong>美中在网络空间竞争如何加剧。</strong>2019年的一项研究结论，中国可能会增加使用网络空间手段，主要因为成本相对较低且效果好。同时，网络战的风险刺激了对谈判网络空间规范和协议的可能性的研究。</p>
+  <p><strong>中美在太空竞争也可能加剧。</strong>2017年报告指出，中国已经通过建立战略支援部队提高了其军事太空行动的能力。为此，兰德团队研究了美国如何提高军事太空行动的能力。2020年研究分析了美国空间部队如何管理作战任务和支持任务；还在2020年提出空间倡议，以支持空间研究及其相关活动。</p>
+  <p><strong>【主题6】竞争中需要合作</strong></p>
+  <p>尽管中美之间的竞争在未来几年可能会加剧，但对于世界上最强大的两个国家来说，在共同关心的问题上进行合作的强烈动机将依然存在。美中两国的竞争离不开经济相互依存与面对共同威胁的脆弱性，这大大提高了合作的必要性。</p>
+  <ul>
+    <li>
+      <p><strong>2018年的一项研究建议美国“利用扩大合作”来稳定国际秩序，抑制中国的崛起。</strong></p>
+    </li>
+    <li>
+      <p>兰德研究了具体的主题，如强调流行病与健康威胁等方面合作的必要性。</p>
+    </li>
+    <li>
+      <p>强调了高超音速武器的危险，以及控制武器传播的必要性，这些武器能够在最低预警的情况下进行远距离打击。</p>
+    </li>
+    <li>
+      <p>研究建议美国和中国合作建立一个多边出口管制制度，参与方包括其他有能力生产核武器的国家。</p>
+    </li>
+  </ul>
+  <p><strong>三、建议与结论</strong></p>
+  <p>为了应对这些问题，兰德提出相关政策建议，涵盖了技术竞争、外交、威慑等诸多问题，具体包括:</p>
+  <ul>
+    <li>
+      <p>在技术竞争中，美国应该跟踪各领域和部门的发展，并为检验中国的创新体系制定一份计划书。</p>
+    </li>
+    <li>
+      <p>在印太地区竞争中，美国的政策应该倾向重要的伙伴国家，如印度尼西亚、菲律宾和越南，使其有助于美国建设伙伴能力的目标。</p>
+    </li>
+    <li>
+      <p>在人工智能的竞争中，美国应该通过开发和维护一个前瞻性的人工智能路线图来管理期望，突出国防部人 工智能在短期(一到两年)、中期(三到五年)和长期(六到十年)的现实目标。</p>
+    </li>
+    <li>
+      <p>在核威慑问题上，美国和中国应该加深在战略问题上的对话，以更好地理解克制在哪些方面可能产生最大的积极影响。</p>
+    </li>
+  </ul>
+  <p><strong>结论：进一步研究的领域</strong></p>
+  <p>为了应对中美两国异常复杂的战略竞争关系，兰德认为应在以下六个方面进行进一步研究，以支撑并充实对华战略与政策。</p>
+  <p>1、改善跨领域、级别、联盟和合作伙伴关系的协调的方法</p>
+  <p>兰德公司强调竞争的多领域和多层次性质。中美不仅在经济、安全、技术和政治领域展开竞争，且在全球层面同时展开。寻找改善美国各领域、区域和全球层面以及联盟伙伴关系之间协调的方法，仍是美国决策者的关键挑战。</p>
+  <p>2、竞争的最佳方式</p>
+  <p>尽管美国在竞争有占有优势，如：国内经济的实力、全球联盟和伙伴关系网络、成熟的创新能力以及世界上最强大的军队，但美国的联盟和伙伴关系已经变得松散；国际秩序更加支离破碎；缓慢增长的经济限制了国防支出。随着中国的快速增长，美国在国力方面的相对优势都在减弱。<strong>未来的研究可以探索美国在竞争中的最佳定位。最近的研究强调了：平衡安全与经济的关系；调和自由民主价值观的挑战；提高网络信息的安全性；以及对技术转让和间谍活动等应对。</strong></p>
+  <p>3、战争以外的措施</p>
+  <p>兰德公司的研究强调了准军事、代理和非军事资产在美中竞争中日益增长的重要性。强调低于战争门槛的对抗中部署各种军事和非军事力量，无论是被称为“除战争之外的措施”、“灰色地带战术”还是“混合战争”。这些方法有助于保护美国的利益，减弱来自中国的威胁，并在更大的影响力和领导力竞争中逐步获得优势。然而，此类部队的事件升级风险仍知之甚少，应研究如何使用除战争之外的措施来保护美国利益。</p>
+  <p>4、技术竞争的管理</p>
+  <p>先进的技术不仅可以提高经济收益，还可以极大地改变战争的方式，赋予掌握技术的一方显著的优势，对军事现代化产生重大影响。技术进步也将影响社会与政府的互动方式，以及操纵数字媒体带来的风险。美国与中国分别主导的技术生态系统之间的数字鸿沟也可能深刻影响全球经济。科学领域的成功竞争对国内政策具有重要影响，例如激励全球人才到美国学习和工作的政策。<strong>对美国政府来说，如何有效管理竞争的技术将是决定中美竞争结果的一个重要决定因素。</strong></p>
+  <p>5、竞争中的合作机制</p>
+  <p>兰德研究指出，美中的竞争与合作是并存的。尤其是两国都面临着流行病、全球恐怖组织、大规模移民和气候变化等共同的国际挑战。然而，竞争冲动会破坏在共同问题上的合作，正如新冠疫情那样。因此应研究有助于在维持竞争的同时建立合作的机制。</p>
+  <p>6、地缘政治机遇</p>
+  <p>兰德研究强调了亚太地区国家在中美竞争中的重要性。由于地缘政治争斗，不仅增加了中美关系误判的风险，还增加了与中美合作国家的危机风险。由此正在重塑多边机构，导致组织内部的政治化和两极分化。因此在未来几年，研究中美竞争如何重塑国际政治并创造新的机会，将成为美国决策者的重要话题。</p>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#中国数字时代 的其它文章</h4>
+    
+      <li>
+        <time>2021-07-13</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-13/%E5%8C%BB%E5%AD%A6%E7%95%8C-%E5%A4%9A%E5%9C%B0%E5%8F%91%E9%80%9A%E5%91%8A-%E4%B8%8D%E6%89%93%E7%96%AB%E8%8B%97-%E8%BF%99%E4%BA%9B%E5%9C%B0%E6%96%B9%E7%A6%81%E6%AD%A2%E8%BF%9B%E5%85%A5">
+          医学界｜多地发通告：不打疫苗，这些地方禁止进入
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-13</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-13/%E6%9E%81%E6%98%BC%E5%B7%A5%E4%BD%9C%E5%AE%A4-%E5%AD%A6%E6%B1%BD%E4%BF%AE%E7%9A%8417%E5%B2%81%E5%A5%B3%E5%AD%A9-%E7%8B%AC%E8%87%AA%E9%97%AF%E5%85%A5%E7%94%B7%E6%80%A7%E4%B8%96%E7%95%8C">
+          极昼工作室｜学汽修的17岁女孩，独自闯入男性世界
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-12</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-12/%E6%9D%8E%E6%9C%AA%E7%86%9F%E6%93%92%E8%AF%9D-%E4%B8%8D%E6%87%82%E5%B0%B1%E9%97%AE-%E5%A1%94%E5%88%A9%E7%8F%AD%E7%A4%BA%E7%88%B1-%E6%98%AF%E5%81%9A%E7%9A%84%E6%89%B9%E5%8F%91%E8%BF%98%E6%98%AF%E9%9B%B6%E5%94%AE">
+          李未熟擒话 | 不懂就问：塔利班示爱，是做的批发还是零售？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-12</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-12/%E7%BB%B4%E8%88%9F%E7%9A%84%E6%96%B9%E8%88%9F-%E9%BB%91%E9%BE%99%E6%B1%9F%E7%9A%84%E5%87%BA%E8%B7%AF">
+          维舟的方舟 | 黑龙江的出路
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-13/%E6%92%9E%E4%B8%8A%E7%9B%91%E7%AE%A1%E9%AB%98%E5%A2%99-%E4%B8%AD%E5%9B%BD%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80%E4%B8%9A%E4%BD%95%E5%8E%BB%E4%BD%95%E4%BB%8E">
+            前一篇：撞上监管高墙，中国金融科技业何去何从？
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-13/World-%E8%87%AA%E7%94%B1-%E5%92%8C-%E6%89%93%E5%80%92%E7%8B%AC%E8%A3%81-%E7%9A%84%E5%91%BC%E5%A3%B0-%E5%8F%A4%E5%B7%B4%E7%BD%95%E8%A7%81%E4%B8%BE%E8%A1%8C%E5%A4%A7%E8%A7%84%E6%A8%A1%E5%8F%8D%E6%94%BF%E5%BA%9C%E7%A4%BA%E5%A8%81">
+            后一篇：[World] “自由”和“打倒独裁”的呼声：古巴罕见举行大规模反政府示威
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-07-13/%E6%92%9E%E4%B8%8A%E7%9B%91%E7%AE%A1%E9%AB%98%E5%A2%99-%E4%B8%AD%E5%9B%BD%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80%E4%B8%9A%E4%BD%95%E5%8E%BB%E4%BD%95%E4%BB%8E'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-07-13/World-%E8%87%AA%E7%94%B1-%E5%92%8C-%E6%89%93%E5%80%92%E7%8B%AC%E8%A3%81-%E7%9A%84%E5%91%BC%E5%A3%B0-%E5%8F%A4%E5%B7%B4%E7%BD%95%E8%A7%81%E4%B8%BE%E8%A1%8C%E5%A4%A7%E8%A7%84%E6%A8%A1%E5%8F%8D%E6%94%BF%E5%BA%9C%E7%A4%BA%E5%A8%81'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-07-13/%E6%9E%81%E6%98%BC%E5%B7%A5%E4%BD%9C%E5%AE%A4-%E5%AD%A6%E6%B1%BD%E4%BF%AE%E7%9A%8417%E5%B2%81%E5%A5%B3%E5%AD%A9-%E7%8B%AC%E8%87%AA%E9%97%AF%E5%85%A5%E7%94%B7%E6%80%A7%E4%B8%96%E7%95%8C'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-07-12/%E6%9D%8E%E6%9C%AA%E7%86%9F%E6%93%92%E8%AF%9D-%E4%B8%8D%E6%87%82%E5%B0%B1%E9%97%AE-%E5%A1%94%E5%88%A9%E7%8F%AD%E7%A4%BA%E7%88%B1-%E6%98%AF%E5%81%9A%E7%9A%84%E6%89%B9%E5%8F%91%E8%BF%98%E6%98%AF%E9%9B%B6%E5%94%AE'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-07-13/%E6%92%9E%E4%B8%8A%E7%9B%91%E7%AE%A1%E9%AB%98%E5%A2%99-%E4%B8%AD%E5%9B%BD%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80%E4%B8%9A%E4%BD%95%E5%8E%BB%E4%BD%95%E4%BB%8E">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-07-13/World-%E8%87%AA%E7%94%B1-%E5%92%8C-%E6%89%93%E5%80%92%E7%8B%AC%E8%A3%81-%E7%9A%84%E5%91%BC%E5%A3%B0-%E5%8F%A4%E5%B7%B4%E7%BD%95%E8%A7%81%E4%B8%BE%E8%A1%8C%E5%A4%A7%E8%A7%84%E6%A8%A1%E5%8F%8D%E6%94%BF%E5%BA%9C%E7%A4%BA%E5%A8%81">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<中国数字时代>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-07-13/%E6%9E%81%E6%98%BC%E5%B7%A5%E4%BD%9C%E5%AE%A4-%E5%AD%A6%E6%B1%BD%E4%BF%AE%E7%9A%8417%E5%B2%81%E5%A5%B3%E5%AD%A9-%E7%8B%AC%E8%87%AA%E9%97%AF%E5%85%A5%E7%94%B7%E6%80%A7%E4%B8%96%E7%95%8C">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<中国数字时代>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-07-12/%E6%9D%8E%E6%9C%AA%E7%86%9F%E6%93%92%E8%AF%9D-%E4%B8%8D%E6%87%82%E5%B0%B1%E9%97%AE-%E5%A1%94%E5%88%A9%E7%8F%AD%E7%A4%BA%E7%88%B1-%E6%98%AF%E5%81%9A%E7%9A%84%E6%89%B9%E5%8F%91%E8%BF%98%E6%98%AF%E9%9B%B6%E5%94%AE">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

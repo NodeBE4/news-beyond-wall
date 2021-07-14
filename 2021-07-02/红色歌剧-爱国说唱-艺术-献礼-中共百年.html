@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>红色歌剧、爱国说唱：艺术“献礼”中共百年 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+红色歌剧、爱国说唱：艺术“献礼”中共百年
+——
+" />
+    <meta property="og:description" content="
+红色歌剧、爱国说唱：艺术“献礼”中共百年
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="红色歌剧、爱国说唱：艺术“献礼”中共百年" />
+    <meta property="twitter:title" content="红色歌剧、爱国说唱：艺术“献礼”中共百年" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fcn.nytimes.com%2Fchina%2F20210702%2Fchina-communist-party-music-theater-dance%2F&t=%E7%BA%A2%E8%89%B2%E6%AD%8C%E5%89%A7%E3%80%81%E7%88%B1%E5%9B%BD%E8%AF%B4%E5%94%B1%EF%BC%9A%E8%89%BA%E6%9C%AF%E2%80%9C%E7%8C%AE%E7%A4%BC%E2%80%9D%E4%B8%AD%E5%85%B1%E7%99%BE%E5%B9%B4" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fchina%2F20210702%2Fchina-communist-party-music-theater-dance%2F&t=%E7%BA%A2%E8%89%B2%E6%AD%8C%E5%89%A7%E3%80%81%E7%88%B1%E5%9B%BD%E8%AF%B4%E5%94%B1%EF%BC%9A%E8%89%BA%E6%9C%AF%E2%80%9C%E7%8C%AE%E7%A4%BC%E2%80%9D%E4%B8%AD%E5%85%B1%E7%99%BE%E5%B9%B4&d=2021-07-02&e=
+红色歌剧、爱国说唱：艺术“献礼”中共百年
+——
+
+
+  
+赫海威, JOY DONG
+  
+  2021年7月2日
+  
+    
+周一在北京举行的中国共产党成立一百周年纪念演出。 Noel Celis/Agence France-Presse — Getty Images
+    
+  
+  
+    中国男高音歌唱家严圣民以对百老汇歌曲的活泼演绎和在《卡门》(Carmen)等歌剧中的深情表演而闻名。
+    但是最近，严圣民开始关注另一种类型。他成了为庆祝本周中国共产党成立100周年而创作的爱国歌剧《红船》的主演。严圣民欣然接受了这个角色，他沉浸在党的历史中，并且大量观看有关革命英雄的电视节目作为准备。
+    “我压力非常大，”严圣民在排练间隙接受采访时说。“（建党）100周年是一个大庆啊。”
+    一股民族主义音乐、戏剧和舞蹈的浪潮正在席卷中国，共产党正努力确保其百年庆典..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fchina%2F20210702%2Fchina-communist-party-music-theater-dance%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://cn.nytimes.com/china/20210702/china-communist-party-music-theater-dance/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://cn.nytimes.com/china/20210702/china-communist-party-music-theater-dance/&text=红色歌剧、爱国说唱：艺术“献礼”中共百年&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://cn.nytimes.com/china/20210702/china-communist-party-music-theater-dance/&title=红色歌剧、爱国说唱：艺术“献礼”中共百年" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://cn.nytimes.com/china/20210702/china-communist-party-music-theater-dance/&title=红色歌剧、爱国说唱：艺术“献礼”中共百年" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=红色歌剧、爱国说唱：艺术“献礼”中共百年&body=
+红色歌剧、爱国说唱：艺术“献礼”中共百年
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://cn.nytimes.com/china/20210702/china-communist-party-music-theater-dance/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://cn.nytimes.com/china/20210702/china-communist-party-music-theater-dance/&title=红色歌剧、爱国说唱：艺术“献礼”中共百年&caption=
+红色歌剧、爱国说唱：艺术“献礼”中共百年
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=红色歌剧、爱国说唱：艺术“献礼”中共百年&url=https://cn.nytimes.com/china/20210702/china-communist-party-music-theater-dance/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>红色歌剧、爱国说唱：艺术“献礼”中共百年</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-07-02
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#纽约时报 ">
+          纽约时报
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://cn.nytimes.com/china/20210702/china-communist-party-music-theater-dance/"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="纽约时报的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#纽约时报 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fchina%2F20210702%2Fchina-communist-party-music-theater-dance%2F&t=%E7%BA%A2%E8%89%B2%E6%AD%8C%E5%89%A7%E3%80%81%E7%88%B1%E5%9B%BD%E8%AF%B4%E5%94%B1%EF%BC%9A%E8%89%BA%E6%9C%AF%E2%80%9C%E7%8C%AE%E7%A4%BC%E2%80%9D%E4%B8%AD%E5%85%B1%E7%99%BE%E5%B9%B4&d=2021-07-02&e=
+红色歌剧、爱国说唱：艺术“献礼”中共百年
+——
+
+
+  
+赫海威, JOY DONG
+  
+  2021年7月2日
+  
+    
+周一在北京举行的中国共产党成立一百周年纪念演出。 Noel Celis/Agence France-Presse — Getty Images
+    
+  
+  
+    中国男高音歌唱家严圣民以对百老汇歌曲的活泼演绎和在《卡门》(Carmen)等歌剧中的深情表演而闻名。
+    但是最近，严圣民开始关注另一种类型。他成了为庆祝本周中国共产党成立100周年而创作的爱国歌剧《红船》的主演。严圣民欣然接受了这个角色，他沉浸在党的历史中，并且大量观看有关革命英雄的电视节目作为准备。
+    “我压力非常大，”严圣民在排练间隙接受采访时说。“（建党）100周年是一个大庆啊。”
+    一股民族主义音乐、戏剧和舞蹈的浪潮正在席卷中国，共产党正努力确保其百年庆典..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fchina%2F20210702%2Fchina-communist-party-music-theater-dance%2F" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1625220422000-->
+<p><a href="https://cn.nytimes.com/china/20210702/china-communist-party-music-theater-dance/">红色歌剧、爱国说唱：艺术“献礼”中共百年</a>
+——</p>
+
+<div>
+  <address>
+赫海威, JOY DONG
+  </address>
+  <time pudate="2021-07-02 05:34:03" datetime="2021-07-02 05:34:03">2021年7月2日</time>
+  <figure class="article-span-photo">
+<img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/01/world/01culture-china1/01culture-china1-master1050.jpg" width="1050" height="700" />    <figcaption>
+周一在北京举行的中国共产党成立一百周年纪念演出。 <cite>Noel Celis/Agence France-Presse — Getty Images</cite>
+    </figcaption>
+  </figure>
+  <section class="article-body">
+    <p>中国男高音歌唱家严圣民以对百老汇歌曲的活泼演绎和在《卡门》(Carmen)等歌剧中的深情表演而闻名。</p>
+    <p>但是最近，严圣民开始关注另一种类型。他成了为庆祝本周中国共产党成立<a href="https://cn.nytimes.com/china/20210702/xi-china-communist-party-anniversary/">100周年</a>而创作的爱国歌剧《红船》的主演。严圣民欣然接受了这个角色，他沉浸在党的历史中，并且大量观看有关革命英雄的电视节目作为准备。</p>
+    <p>“我压力非常大，”严圣民在排练间隙接受采访时说。“（建党）100周年是一个大庆啊。”</p>
+    <p>一股民族主义音乐、戏剧和舞蹈的浪潮正在席卷中国，共产党正努力确保其百年庆典能够隆重而盛大地举行。</p>
+    <p>著名编舞家正在上演关于革命烈士的芭蕾舞。剧院正在恢复关于阶级斗争的民族主义戏剧。嘻哈歌手正在创作歌颂党的成就的歌曲。管弦乐队正在表演纪念<a href="https://cn.nytimes.com/china/20161115/china-long-march-xi-jinping-mao/">长征</a>等共产主义里程碑的作品，合唱团成员都穿着浅蓝色军装。</p>
+    <p>这些庆祝活动是中国威权领导人习近平努力的一部分，目的是让党在人民生活中无处不在，并增强艺术家们的政治忠诚度。</p>
+    <p>自10年前掌权以来，习近平力主对中国言论自由的广泛镇压，<a rel="noopener noreferrer" target="_blank" href="https://www.chinadaily.com.cn/culture/art/2014-10/16/content_18746127.htm">他说</a>艺术家应该为社会主义事业服务，而不是成为市场的“奴隶”。</p>
+    <p>为纪念建党100周年，习近平政府宣布了300项歌剧、芭蕾、戏剧、音乐和其他作品的演出计划。其中包括《<a href="https://sinosphere.blogs.nytimes.com/2015/11/10/white-haired-girl-opera-created-under-mao-returns-to-stage/">白毛女</a>》这样的毛泽东时代经典作品，这部歌剧讲述了一位年轻农妇的家庭遭受残酷地主迫害的故事。还有《红船》这样的新作品，它记叙了1921年在上海附近一艘船上召开的党的<a href="https://cn.nytimes.com/china/20200109/china-xi-communist-party-oath-nanhu-lake/">第一次代表大会</a>。</p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/01/world/01culture-china2/merlin_190129431_d0f49395-a1bf-481c-892e-16ac1d7ec732-master1050.jpg" /><small style="color: #999;">中国最高领导人习近平曾表示，艺术家应该为社会主义事业服务。</small></p>
+    <p>艺术表达的涌现是在中国的<a href="https://cn.nytimes.com/china/20201214/china-nationalists-covid/" title="Link: https://cn.nytimes.com/china/20201214/china-nationalists-covid/">民族主义日益高涨</a>之际发生的。许多艺术家别无选择，只能遵从政府对爱国艺术的更多要求，因为在中国自上而下的体制之内，官员对资金和节目制作的决策具有相当大的影响力。</p>
+    <p>“对于艺术家来说，遵守政治路线变得非常重要，”巴德学院美中音乐研习院(U.S.-China Music Institute at Bard College)院长蔡金冬说。“政府希望艺术家们关注与人们生活相关、反映中国积极形象的中国作品。”</p>
+    <p>批评者谴责所谓的“红色”作品是政治宣传。但中国艺术家认为不全是如此。</p>
+    <p>“中国现在非常强大，人们应该尊重这一点，”正在参加庆祝建党100周年全国巡演的中国男高音莫华伦说。</p>
+    <p>他说他希望用音乐提醒人们，共产党在提高中国人民生活水平方面取得了成功。不过，他说，爱国主义作品同西方音乐和其他艺术形式保持平衡是很重要的。</p>
+    <p>“你做的任何事情都不应该太极端，”他说。“如果你对自己的文化和民族主义缺乏安全感，你就会关上自己的大门。孤立对任何国家都没有好处。”</p>
+    <p>与共产党百年纪念有关的演出已经举行了数百场，预计到年底还会有更多演出。</p>
+    <p>在上海以西的苏州，编舞家王亚彬最近<a rel="noopener noreferrer" target="_blank" href="http://epaper.chinadaily.com.cn/a/202105/21/WS60a6f55da31099a23435642e.html">推出</a>了一部新的芭蕾舞剧《我的名字叫丁香》，讲述一位在第二次中日战争中牺牲的22岁烈士的故事。在东部城市南京，一个交响乐团最近演奏了作曲家赵继平创作的关于共产主义革命的交响乐《解放·1949》。</p>
+    <p>一些作品涉及当代主题，包括党为<a href="https://cn.nytimes.com/china/20201231/china-poverty-xi-jinping/">消除</a>极端贫困的努力，以及抗击新冠病毒所取得的<a href="https://cn.nytimes.com/china/20210205/china-covid-economy/">成功</a>，习近平已将后者作为中国威权模式优越性的证据。一部名为《人民至上》的话剧，描述了2019年底新冠疫情暴发后武汉地区医护人员的英雄事迹。</p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/01/world/01culture-china3/01culture-china3-master1050.jpg" /><small style="color: #999;">通过复兴老作品，习近平似乎急于提醒公众想起党的光辉岁月。</small></p>
+    <p>宣传艺术在中国有着悠久的历史，中国一些最著名的作品出现在严格的政治控制时期，包括二十世纪六七十年代被称为文化大革命的血腥动荡十年。在那段时间，古典音乐被抨击为颓废和资产阶级产物，许多西方作曲家和乐器遭到禁止。</p>
+    <p>在现代中国，文化大革命时期的音乐和舞蹈仍能引起公众的共鸣，其中包括《黄河钢琴协奏曲》和革命芭蕾舞剧《红色娘子军》等作品。</p>
+    <p>“这些文化产品有自己的艺术价值，”耶鲁大学(Yale University)研究中国20世纪历史的历史学助理教授何若书(Denise Ho)说。“对许多中国人来说，对毛时代的某些方面有一种怀旧情绪。”</p>
+    <p>通过恢复老作品，习近平似乎急于提醒公众想起党的光辉岁月。他的政府已经加倍努力，加强艺术家们对意识形态的忠诚。今年，一个由政府支持的行业协会发布了一份包括舞者、音乐家和杂技演员在内的表演艺术家的道德准则，呼吁他们忠于党，帮助推进社会主义事业。</p>
+    <p>本周，习近平在北京人民大会堂举行的仪式上，向29名党员干部<a rel="noopener noreferrer" target="_blank" href="http://www.xinhuanet.com/english/2021-06/29/c_1310034576.htm">颁发</a>了百年纪念章，其中包括经常被称为“红色艺术家”的演员蓝天野，以及以《红旗颂》一曲闻名的爱国主义作曲家陆启明。</p>
+    <p>“和毛泽东一样，对于习近平来说，艺术首先是政治工具，”何若书说。</p>
+    <p>近年来，中国政府试图利用音乐、舞蹈、电视和电影来改善自己的形象，特别是在年轻人中，他们中的许多人与1949年的共产主义革命没有直接的感情。</p>
+    <p>近日，一首名为《<a rel="noopener noreferrer" target="_blank" href="https://www.youtube.com/watch?v=LYjgD0HWzcw">100%</a>》的说唱歌曲在中国互联网上被广泛分享。但这首时长15分钟、有100名艺术家参与的歌曲却因其呆板的宣传口号而遭到嘲笑。</p>
+    <p>“造出的飞船都翱翔在天际，”一首歌词这样写道。“新中国必须get lit。”</p>
+    <p>表演者们说，他们希望这些百年庆典作品的高水准，包括精心制作的服装、布景和视觉效果，能够吸引年轻观众。</p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/01/world/01culture-china4/merlin_190127424_373c7865-3ed5-49e0-ad7b-dd2784a053bc-master1050.jpg" /><small style="color: #999;">一场关于长征的盛大演出。中国一些最著名的作品是在实施严苛政治控制的时期出现的。</small></p>
+    <p>36岁的王家俊是上海歌舞团的首席舞者，他在重排的舞蹈作品《<a rel="noopener noreferrer" target="_blank" href="https://www.shine.cn/feature/entertainment/2009156055/">永不消逝的电波</a>》中扮演一名烈士。他说，年轻人能认同这部作品。</p>
+    <p>“这些英雄所牺牲的时候也就十几、二十几、三十几岁。“是‘年轻人’的故事吸引了年轻人。”</p>
+    <p>对于参加百年庆典的艺术家来说，这种努力有时是艰苦的。</p>
+    <p>在德国学习音乐创作的中国籍研究生谢梦昊花了六个月时间，将一套<a href="https://www.nytimes.com/2017/10/15/world/asia/china-schools-propaganda-education.html">红军</a>歌曲<a rel="noopener noreferrer" target="_blank" href="https://www.shine.cn/feature/entertainment/2106130592/">改编</a>为一首关于长征的钢琴协奏曲，长征是共产党军队在1934年开始的长达6000英里的撤退，确立了毛泽东的领袖地位。这首曲子由上海爱乐乐团在上个月首演，他说他为这件作品感到自豪，但他还说，这次经历“更像是一份工作”。</p>
+    <p>“我只是按他们的要求做，”他在接受采访时说。“每个作曲家都只是考虑音乐。”</p>
+    <p>出演《红船》的男高音严圣民说，他发现自己很容易与自己的角色——共产党的创始人之一陈独秀——产生共鸣。但他说，排练并不总是那么容易。例如，他说，年轻的表演者需要更好地理解早期共产主义斗争中的情感体验。</p>
+    <p>“现在的年轻人没有这种诉求，去为国家的命运很激情地抗争，”56岁的严圣民说。“我一遍就找到了那种感觉。”</p>
+    <p>严圣民说，他相信这个节目会在中国乃至世界各地取得成功。</p>
+    <p>“我们只是描绘建党的历史，不是说教共产党伟大，”他说。“我们在剧中没有任何口号式的（表演），就是平铺直叙。”</p>
+  </section>
+  <footer class="author-info">
+    <p>赫海威自台北、Joy Dong自香港报道。</p>
+    <p>赫海威(Javier C. Hernández)是《纽约时报》文化记者，报道纽约及其他地方的古典乐和舞蹈。他于2008年加入时报，此前曾任驻北京和纽约记者。欢迎在Twitter上关注他<a rel="nofollow" target="_blank" href="https://twitter.com/HernandezJavier"> @HernandezJavier</a>。</p>
+    <p>翻译：纽约时报中文网</p>
+    <p><a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/07/01/arts/china-communist-party-music-theater-dance.html">点击查看本文英文版。</a></p>
+  </footer>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#纽约时报 的其它文章</h4>
+    
+      <li>
+        <time>2021-07-04</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-04/%E7%BA%A2%E8%89%B2%E6%91%87%E7%AF%AE-%E4%B8%AD%E5%85%B1%E5%A6%82%E4%BD%95%E5%9F%B9%E5%85%BB-%E5%BF%A0%E8%AF%9A%E6%8E%A5%E7%8F%AD%E4%BA%BA">
+          “红色摇篮”：中共如何培养“忠诚接班人”
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-02</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-02/%E6%9C%89%E5%85%B3%E7%89%B9%E6%9C%97%E6%99%AE%E9%9B%86%E5%9B%A2%E9%81%AD%E5%88%91%E4%BA%8B%E6%8C%87%E6%8E%A7-%E4%BD%A0%E5%BA%94%E8%AF%A5%E4%BA%86%E8%A7%A3%E7%9A%84%E4%B8%83%E4%B8%AA%E9%97%AE%E9%A2%98">
+          有关特朗普集团遭刑事指控，你应该了解的七个问题
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-02</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-02/%E8%BF%BD%E6%B1%82%E4%BD%93%E8%82%B2%E6%A2%A6%E6%83%B3%E8%BF%98%E6%98%AF-%E8%A6%81%E5%A5%B3%E6%80%A7%E5%8C%96-%E6%97%A5%E6%9C%AC%E5%A5%B3%E8%BF%90%E5%8A%A8%E5%91%98%E7%9A%84%E5%9B%B0%E5%A2%83">
+          追求体育梦想还是“要女性化”：日本女运动员的困境
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-02</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-02/%E4%B8%AD%E5%85%B1100%E5%B2%81%E4%BA%86-%E5%AE%83%E8%BF%98%E4%BC%9A%E6%B4%BB%E5%BE%97%E6%9B%B4%E4%B9%85">
+          中共100岁了，它还会活得更久
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-02/%E5%B9%B4%E5%BA%95%E5%85%AC%E6%8A%95%E6%8E%A8%E4%B8%8D%E5%9C%A8%E7%B1%8D%E6%8A%95%E7%A5%A8%E5%90%A6-%E6%9D%8E%E9%80%B2%E5%8B%87-%E8%8D%89%E6%A1%88%E6%94%BF%E9%99%A2%E5%AF%A9%E6%9F%A5%E4%B8%AD">
+            前一篇：年底公投推不在籍投票否 李進勇：草案政院審查中
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-02/%E4%B8%AD%E5%85%B1%E7%99%BE%E5%B9%B4%E5%85%9A%E5%BA%86-%E9%A9%AC%E6%96%AF%E5%85%8B%E5%8F%91%E6%96%87%E8%B5%9E%E5%8F%B9%E5%BC%95%E7%83%AD%E8%AE%AE">
+            后一篇：中共百年党庆 马斯克发文赞叹引热议
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-07-02/%E5%B9%B4%E5%BA%95%E5%85%AC%E6%8A%95%E6%8E%A8%E4%B8%8D%E5%9C%A8%E7%B1%8D%E6%8A%95%E7%A5%A8%E5%90%A6-%E6%9D%8E%E9%80%B2%E5%8B%87-%E8%8D%89%E6%A1%88%E6%94%BF%E9%99%A2%E5%AF%A9%E6%9F%A5%E4%B8%AD'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-07-02/%E4%B8%AD%E5%85%B1%E7%99%BE%E5%B9%B4%E5%85%9A%E5%BA%86-%E9%A9%AC%E6%96%AF%E5%85%8B%E5%8F%91%E6%96%87%E8%B5%9E%E5%8F%B9%E5%BC%95%E7%83%AD%E8%AE%AE'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-07-02/%E6%9C%89%E5%85%B3%E7%89%B9%E6%9C%97%E6%99%AE%E9%9B%86%E5%9B%A2%E9%81%AD%E5%88%91%E4%BA%8B%E6%8C%87%E6%8E%A7-%E4%BD%A0%E5%BA%94%E8%AF%A5%E4%BA%86%E8%A7%A3%E7%9A%84%E4%B8%83%E4%B8%AA%E9%97%AE%E9%A2%98'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-07-02/%E8%BF%BD%E6%B1%82%E4%BD%93%E8%82%B2%E6%A2%A6%E6%83%B3%E8%BF%98%E6%98%AF-%E8%A6%81%E5%A5%B3%E6%80%A7%E5%8C%96-%E6%97%A5%E6%9C%AC%E5%A5%B3%E8%BF%90%E5%8A%A8%E5%91%98%E7%9A%84%E5%9B%B0%E5%A2%83'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-07-02/%E5%B9%B4%E5%BA%95%E5%85%AC%E6%8A%95%E6%8E%A8%E4%B8%8D%E5%9C%A8%E7%B1%8D%E6%8A%95%E7%A5%A8%E5%90%A6-%E6%9D%8E%E9%80%B2%E5%8B%87-%E8%8D%89%E6%A1%88%E6%94%BF%E9%99%A2%E5%AF%A9%E6%9F%A5%E4%B8%AD">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-07-02/%E4%B8%AD%E5%85%B1%E7%99%BE%E5%B9%B4%E5%85%9A%E5%BA%86-%E9%A9%AC%E6%96%AF%E5%85%8B%E5%8F%91%E6%96%87%E8%B5%9E%E5%8F%B9%E5%BC%95%E7%83%AD%E8%AE%AE">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<纽约时报>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-07-02/%E6%9C%89%E5%85%B3%E7%89%B9%E6%9C%97%E6%99%AE%E9%9B%86%E5%9B%A2%E9%81%AD%E5%88%91%E4%BA%8B%E6%8C%87%E6%8E%A7-%E4%BD%A0%E5%BA%94%E8%AF%A5%E4%BA%86%E8%A7%A3%E7%9A%84%E4%B8%83%E4%B8%AA%E9%97%AE%E9%A2%98">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<纽约时报>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-07-02/%E8%BF%BD%E6%B1%82%E4%BD%93%E8%82%B2%E6%A2%A6%E6%83%B3%E8%BF%98%E6%98%AF-%E8%A6%81%E5%A5%B3%E6%80%A7%E5%8C%96-%E6%97%A5%E6%9C%AC%E5%A5%B3%E8%BF%90%E5%8A%A8%E5%91%98%E7%9A%84%E5%9B%B0%E5%A2%83">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

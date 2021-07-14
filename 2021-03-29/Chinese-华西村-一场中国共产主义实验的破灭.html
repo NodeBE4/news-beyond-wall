@@ -1,0 +1,2189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>[Chinese] 华西村：一场中国共产主义实验的破灭 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+[Chinese] 华西村：一场中国共产主义实验的破灭
+——
+" />
+    <meta property="og:description" content="
+[Chinese] 华西村：一场中国共产主义实验的破灭
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="[Chinese] 华西村：一场中国共产主义实验的破灭" />
+    <meta property="twitter:title" content="[Chinese] 华西村：一场中国共产主义实验的破灭" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fchinese-news-56563870&t=%5BChinese%5D+%E5%8D%8E%E8%A5%BF%E6%9D%91%EF%BC%9A%E4%B8%80%E5%9C%BA%E4%B8%AD%E5%9B%BD%E5%85%B1%E4%BA%A7%E4%B8%BB%E4%B9%89%E5%AE%9E%E9%AA%8C%E7%9A%84%E7%A0%B4%E7%81%AD" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fchinese-news-56563870&t=%5BChinese%5D+%E5%8D%8E%E8%A5%BF%E6%9D%91%EF%BC%9A%E4%B8%80%E5%9C%BA%E4%B8%AD%E5%9B%BD%E5%85%B1%E4%BA%A7%E4%B8%BB%E4%B9%89%E5%AE%9E%E9%AA%8C%E7%9A%84%E7%A0%B4%E7%81%AD&d=2021-03-29&e=
+[Chinese] 华西村：一场中国共产主义实验的破灭
+——
+
+
+  
+    华西村：一场中国共产主义实验的破灭
+  
+  
+    19 分钟前
+  
+  
+    
+      
+        
+          
+            图像来源，Reuters
+          
+        
+        
+          
+图像加注文字，            华西村，在中国被称为天下第一村，位于江苏省无锡市江阴市华士镇
+          
+        
+      
+    
+  
+  
+    近日，大量中国村民冒雨排队在华西村2号金塔兑付现金的视频（金塔是集餐饮、宾馆、会客、观光于一身的塔楼，是华西村的标志性建筑，被誉为“天下第一塔”）在社交媒体抖音和微博上广泛流传，随后华西村遭“挤兑”的新闻在中文互联网逐渐发酵。
+  
+  
+    华西..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fchinese-news-56563870" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=http://www.bbc.com/zhongwen/simp/chinese-news-56563870" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=http://www.bbc.com/zhongwen/simp/chinese-news-56563870&text=[Chinese] 华西村：一场中国共产主义实验的破灭&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=http://www.bbc.com/zhongwen/simp/chinese-news-56563870&title=[Chinese] 华西村：一场中国共产主义实验的破灭" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://www.bbc.com/zhongwen/simp/chinese-news-56563870&title=[Chinese] 华西村：一场中国共产主义实验的破灭" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=[Chinese] 华西村：一场中国共产主义实验的破灭&body=
+[Chinese] 华西村：一场中国共产主义实验的破灭
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=http://www.bbc.com/zhongwen/simp/chinese-news-56563870" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=http://www.bbc.com/zhongwen/simp/chinese-news-56563870&title=[Chinese] 华西村：一场中国共产主义实验的破灭&caption=
+[Chinese] 华西村：一场中国共产主义实验的破灭
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=[Chinese] 华西村：一场中国共产主义实验的破灭&url=http://www.bbc.com/zhongwen/simp/chinese-news-56563870" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>[Chinese] 华西村：一场中国共产主义实验的破灭</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-03-29
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#BBC ">
+          BBC
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="http://www.bbc.com/zhongwen/simp/chinese-news-56563870"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="BBC的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#BBC 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fchinese-news-56563870&t=%5BChinese%5D+%E5%8D%8E%E8%A5%BF%E6%9D%91%EF%BC%9A%E4%B8%80%E5%9C%BA%E4%B8%AD%E5%9B%BD%E5%85%B1%E4%BA%A7%E4%B8%BB%E4%B9%89%E5%AE%9E%E9%AA%8C%E7%9A%84%E7%A0%B4%E7%81%AD&d=2021-03-29&e=
+[Chinese] 华西村：一场中国共产主义实验的破灭
+——
+
+
+  
+    华西村：一场中国共产主义实验的破灭
+  
+  
+    19 分钟前
+  
+  
+    
+      
+        
+          
+            图像来源，Reuters
+          
+        
+        
+          
+图像加注文字，            华西村，在中国被称为天下第一村，位于江苏省无锡市江阴市华士镇
+          
+        
+      
+    
+  
+  
+    近日，大量中国村民冒雨排队在华西村2号金塔兑付现金的视频（金塔是集餐饮、宾馆、会客、观光于一身的塔楼，是华西村的标志性建筑，被誉为“天下第一塔”）在社交媒体抖音和微博上广泛流传，随后华西村遭“挤兑”的新闻在中文互联网逐渐发酵。
+  
+  
+    华西..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fchinese-news-56563870" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1617066580000-->
+<p><a href="http://www.bbc.com/zhongwen/simp/chinese-news-56563870">[Chinese] 华西村：一场中国共产主义实验的破灭</a>
+——</p>
+
+<div>
+  <div dir="ltr" class="bbc-1151pbn e57qer20">
+    <h1 id="content" tabindex="-1" class="bbc-6yjyco e1yj3cbb0">华西村：一场中国共产主义实验的破灭</h1>
+  </div>
+  <div dir="ltr" class="e1j2237y7 bbc-q4ibpr e57qer20">
+    <time datetime="2021-03-30" class="bbc-529aew e4zesg50">19 分钟前</time>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-1k5hvrj e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/130DC/production/_117744087_013118971-1.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/130DC/production/_117744087_013118971-1.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/130DC/production/_117744087_013118971-1.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/130DC/production/_117744087_013118971-1.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/130DC/production/_117744087_013118971-1.jpg 800w" alt="Huaxi village" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/130DC/production/_117744087_013118971-1.jpg" width="976" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />            <p role="text" class="bbc-1s1cxbv etq3yw90"><span class="bbc-1gnhmg2 e1yt7oin0">图像来源，</span><span lang="en-GB">Reuters</span></p>
+          </div>
+        </div>
+        <div dir="ltr" class="bbc-3edg7g e57qer20">
+          <figcaption dir="ltr" class="bbc-l9ltpr eede9f50">
+<span class="bbc-1gnhmg2 e1yt7oin0">图像加注文字，</span>            <p>华西村，在中国被称为天下第一村，位于江苏省无锡市江阴市华士镇</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70"><strong>近日，大量中国村民冒雨排队在华西村2号金塔兑付现金的视频（金塔是集餐饮、宾馆、会客、观光于一身的塔楼，是华西村的标志性建筑，被誉为“天下第一塔”）在社交媒体抖音和微博上广泛流传，随后华西村遭“挤兑”的新闻在中文互联网逐渐发酵。</strong></p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">华西村，在中国被称为天下第一村，位于江苏省无锡市江阴市华士镇西部，总面积35平方千米，早在20世纪90年代末便以村内“人人开豪车、住别墅”闻名海内外。自成立之初，“集体主义”便渗入华西村所有行为范式，被中国中央政府视为“集体主义经济模式”的典型。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">华西村第一任党委书记、一手缔造了华西村传奇的吴仁宝，曾是中国共产党的十届、十一届全国代表大会代表，六、七、八届全国人大代表，并受到中共历任总书记江泽民、胡锦涛、习近平的接见。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">在此之前数年，关于华西村破产、负债、神话破灭的消息已在民间悄然流传。随着吴仁宝的去世及其将华西村的权杖交于其四子吴协恩（华西村现任党委书记），华西村常年依赖的“强人模式”背后的种种问题渐次暴露。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">数家中文媒体试图报道此事，观察者也期待一个全面评价和反思由中共主导的社会主义经济发展模式是否可能的机会。但由于其巨大的敏感性，关于华西村的中文媒体报道和公共讨论，流传几日之后，又已被中国官方强力停止。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <h2 id="强人与共产主义" tabindex="-1" class="bbc-6w9yzd e14hemmw0">“强人”与共产主义</h2>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">华西村建村于1961年。彼时，华西村与中国国内众多乡村并无差别，人均年收入不足二十元人民币，村民常年在温饱线上挣扎。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">但因20世纪50年代全国范围的经济困难，被迫剥离江苏省江阴县华士瓠岱乡人民政府财粮委员这一“国家干部”身份。不得已调往华西村的吴仁宝的出现，使得华西村一骑绝尘，经过多年发展后成为享誉中国的“天下第一村”。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">据中国媒体《今日中国》报道，20世纪60年代，在全国都在发展社会主义经济时，时任华西村党委书记的吴仁宝便偷偷办起了小磨坊和小五金厂，成为村子里“先富起来的人”。80年代全国农村响应邓小平号召的分田到户的农村改革时，吴仁宝没有跟风，而是坚持走做大、做强集体经济的道路。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">这些行为在当时非常冒险，但后来华西村备受中央最高领导人肯定，为吴仁宝赢得了大胆、思路开阔的美誉。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">不过美誉背后吴仁宝也有相对保守和遵循传统的一面。据悉，他晚年最器重、并成功接班的四子吴协恩早前曾被吴仁宝夫妇送养，并在适婚年龄入赘女方家。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">在中国农村地区，儿子多，意味着家穷、分到的田地少，最小的儿子会很难娶到媳妇，所以通俗的做法就是把最小的儿子送给别人，成年后入赘到没有儿子的家庭，自家的家庭财产则由其他儿子共同继承。该习俗多年来一直延续，以致到后来即使家庭条件允许，墨守成规，儿子多的家庭，也多会选择将最小的儿子送走。而在吴协恩之前，吴仁宝已有三个儿子。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">谈及吴仁宝，相较于外界的赞美美誉，华西村上了年纪的村民则说：“老书记在村子里永远穿着黑布鞋，那么多企业家和官员来华西村给他送礼，但他平时根本不吃那些山珍海味，就吃面条和鸡蛋，特别简朴，和我们这些村民都是一样的。”</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">梳理华西村的发展历程，可以发现华西村真正的转机出现在1992年3月1日，彼时恰逢邓小平南巡结束。同样据《今日中国》报道，3月1日凌晨3点钟，华西村的主要村干部接到总机通知参加紧急会议。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">在会上，吴仁宝宣布了他对时局的判断：“邓小平讲话了，经济要大发展”。当时邓小平南巡讲话的内容还没有传达至基层，但位于广东省的《深圳特区报》刊载的8篇评论文章引起了吴仁宝的注意，《今日中国》报道称，吴仁宝敏锐地意识到这些文章传达的是邓小平思想。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">公开信息显示，鼓励发展和完善社会主义市场经济、缩小贫富差距并逐步实现共同富裕、打击政府官员腐败、治理社会道德滑坡是邓小平此番南巡讲话提出的应在改革中解决的问题。其中篇幅最大的发展社会主义市场经济让吴仁宝看到了希望。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70"><a href="https://www.bbc.com/zhongwen/simp/chinese-news-54106773" class="bbc-n8oauk e1cs6q200">中国贫富差距：经济学家新书、“月经贫困”争议和官僚贪腐</a></p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">于是，他进一步判断，经济发展必然导致原材料涨价，于是连夜开会，定下了“借钱吃足”的策略，借款2000余万元，又从银行贷款6000万元，购进了钢坯等大量原材料。在邓小平南巡讲话传遍中国后，原材料价格应声上涨。因此，外界盛传“吴仁宝开了一个会，赚了一个亿”。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">这笔财富，成为华西村腾飞的第一桶金。</p>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-1k5hvrj e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/17EFC/production/_117744089_031266786-1.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/17EFC/production/_117744089_031266786-1.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/17EFC/production/_117744089_031266786-1.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/17EFC/production/_117744089_031266786-1.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/17EFC/production/_117744089_031266786-1.jpg 800w" alt="China Iron Industry" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/17EFC/production/_117744089_031266786-1.jpg" width="976" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">但不同于《今日中国》的报道，一位接近吴仁宝的人士表示，相较于外界盛传的邓小平南巡讲话，助力华西村“起家”的钢铁原料——废铁轨钢，依赖的实为色彩强烈的内幕交易。“这是华西村发展的根基，但钢铁的利差不可能持续”，上述人士指出。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">作为华西村财富的源头，钢铁产业在过去多年是华西村的支柱产业。即使现在中国全国钢铁行业低迷，钢铁收入仍是华西村整体营收的主要组成部分。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">从毛泽东时期号召的全民大炼钢铁开始，钢铁产业一直是中国国民经济的重要基础产业，有分析指出中国钢铁行业以强大且丰富的产能强力支撑了中国经济的快速复苏。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">凭借钢铁积累的大量财富，华西村内部于90年代掀起了一场社会主义革命。如，集中村民原有的宅基地，为每户村民修建风格统一的别墅，并在村内建立了免费的医疗和教育体系。但不同于村民原有的自建房屋，村民们对别墅只有使用权，没有所有权，这意味着别墅无法在市场进行交易。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">同时，华西村征收农民的耕地后，解放了大量劳动力，在原有耕地上建设了大量的包括袜子厂、纺织厂在内的工厂，鼓励村民去工厂上班，并成立了由村委会控制的华西集团，集团每年年底会给村民分红，近年每年每人平均十万余元左右。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">公开信息显示，早在2004年华西村村民的人均工资已达到12.26万元，是中国农民平均工资的41.76倍，城镇居民平均工资的13.01倍。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">华西村因此也被誉为“在毛泽东思想、邓小平理论和'三个代表'重要思想指引下成长起来的先进典型，是中国农村发展的一面旗帜”。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <div class="bbc-1fobf8d e1gggypo0">
+      <ul dir="ltr" role="list" class="bbc-1gidoyr e1drcs2w1">
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0"><a href="https://www.bbc.com/zhongwen/simp/chinese-news-41662478" class="bbc-n8oauk e1cs6q200">习近平提出“新时代中国特色社会主义”</a></li>
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0"><a href="https://www.bbc.com/zhongwen/simp/chinese-news-41732749" class="bbc-n8oauk e1cs6q200">“习近平思想”写入党章 权力比肩毛邓</a></li>
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0"><a href="https://www.bbc.com/zhongwen/simp/chinese-news-46512070" class="bbc-n8oauk e1cs6q200">改革开放40年：邓小平究竟给今日中国留下什么</a></li>
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0"><a href="https://www.bbc.com/zhongwen/simp/chinese-news-56194835" class="bbc-n8oauk e1cs6q200">中国近亿人口脱贫 习近平称创造“人间奇迹”</a></li>
+      </ul>
+    </div>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">不过每年集团发放给村民的分红，仅有20%会以现金形式发放，其余部分直接存入华西村村委会，村民们需要办理诸如嫁娶之类的大事时，方可向村委会提交申请，支取所需资金，而且会被村委会以厉行节约为由减少支付额度。“比如申请支取10万元，最后村委会可能只会给4万”，一位祖籍为华西村的网友通过微博私信表示。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <h2 id="华西的秘密" tabindex="-1" class="bbc-6w9yzd e14hemmw0">华西的“秘密”</h2>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">中国青年经济学者温克坚曾特意前往华西村进行调研，在后来发布的文章中，他评价到，“华西村更像是个人造景点，外来人员很难见到普通的村民”。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">同时他在文章中引用曾在华西村进行蹲点调查的记者的感受，指出华西村在应对媒体和参观者方面非常专业，感觉总有一张无形的网把来访者和真实的世界给隔绝了。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">“偶尔也能遇到一些村民，但村民的回答更像是标准答案”。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">2007年，中共党报《人民日报》运营的论坛强国论坛曾组织网友前往华西村探访，但是后来披露出来的文字均是网友和华西村负责宣传的党委的座谈会。自始至终华西村的村民都是作为灰色的背景存在，没有自己的面孔，发不出自己的声音。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">在这时期，华西村的宣传资料显示，有村民将70多岁的吴仁宝奉为神人。根据《中国新闻周刊》的报道，村里有传说，某天村里搞活动，本来下着雨，但是老书记（吴仁宝）一到场，天气很快就风和日丽了。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">报道同时指出，即使华西村党委书记的职位由吴协恩接棒后，吴仁宝仍在关键时刻发挥着关键作用。其中一次为2003年，当时吴协恩刚接任党委书记不久，钢材市场风向发生了变化，吴仁宝立即出手，指挥老部下抛空库存，一个月后，钢铁价格果然大跳水。这让很多学经济的年轻人感到诧异：“难道老书记可以未卜先知？”</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">不过在互联网愈发便捷、快速，拉近了人与人之间距离的时代，华西村种种虚幻缥缈的形象建设激发了部分网友的好奇心，他们不禁在网络平台发问，“华西村有没有麻将屋？”“有没有卖淫嫖娼？”“有没有邻里纠纷？”“有没有人炒股买彩票？”"有没有城管？”“有没有洗头房？”</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">一部专供到访华西村的人士观看的弘扬华西村主旋律的宣传片《华西之路》努力给出了答案。这部由华西村自己出资拍摄制作的宣传片说，华西村已达到了新“三无”——无赌博、无封建迷信活动、无重大刑事犯罪和老“三无”——无上访、无告状、无暗斗。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">依然与社会阴暗面完全绝缘，继续向外界展示出了“理想之地”的完美无瑕。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">华西村命运的另一个转折点发生在2013年。当年3月18日，吴仁宝因病医治无效逝世。据悉，送别吴仁宝的人从华西村一直排队排到了殡仪馆。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">强人逝去，华西村能否一如既往的保持惯有的模式继续运转成为了摆在继任者面前的首要问题。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">公开资料显示，吴仁宝去世时，其四子吴协恩为华西村党委书记、华西村集团公司董事长兼总经理；其长子、二子、三子、女婿、侄媳、侄女婿、孙子、孙媳妇、外甥女、外甥女婿等十余人为华西村党委副书记，分管华西集团物流、教育、旅游、建筑、钢铁、金融投资、科技等领域。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">这表明，吴仁宝去世后，在华西村担任要职的均为吴仁宝家族的第二代和第三代，且吴氏家族全面掌握了华西村的核心资产。多家中国媒体报道指出，吴仁宝四个儿子掌控了华西村90%的资产。</p>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-1k5hvrj e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/4A64/production/_117744091_055709479-1.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/4A64/production/_117744091_055709479-1.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/4A64/production/_117744091_055709479-1.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/4A64/production/_117744091_055709479-1.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/4A64/production/_117744091_055709479-1.jpg 800w" alt="China Iron Industry" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/4A64/production/_117744091_055709479-1.jpg" width="976" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="bbc-3edg7g e57qer20">
+          <figcaption dir="ltr" class="bbc-l9ltpr eede9f50">
+<span class="bbc-1gnhmg2 e1yt7oin0">图像加注文字，</span>            <p>从毛泽东时期号召的全民大炼钢铁开始，钢铁产业一直是中国国民经济的重要基础产业</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <h2 id="逃离华西村" tabindex="-1" class="bbc-6w9yzd e14hemmw0">逃离华西村</h2>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">上述祖籍为华西村的网友表示，他与家人已于2015年搬离华西村，在江阴市买了房定居，并指出近几年大概有70%的村民已离开了华西村，留下的多为50岁以上的人，“年轻人都出来谋生了”。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">在他的描述中，华西村已没有了宣传资料中“人人喜气洋洋，初步建成社会主义新农村”的荣光。对于出走的原因，他表示，华西村的富有与村民无关，“钱和房子不能由我们自由支配，待下去有什么意义呢？”并举例称，他结婚时，父母想跟村委会申请支取50万人民币用于购买奔驰轿车，但村委会仅支付了10万元，并批评他们不注重实用价值、铺张浪费，“我最后只能买了一台悦达起亚”。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <div class="bbc-1fobf8d e1gggypo0">
+      <ul dir="ltr" role="list" class="bbc-1gidoyr e1drcs2w1">
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0"><a href="https://www.bbc.com/zhongwen/simp/press-review-41750625" class="bbc-n8oauk e1cs6q200">英媒：习近平为未来30年制定了政治蓝图</a></li>
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0"><a href="https://www.bbc.com/zhongwen/simp/chinese-news-54523074" class="bbc-n8oauk e1cs6q200">习近平广东考察：三次“新南巡”的时代背景</a></li>
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0"><a href="https://www.bbc.com/zhongwen/simp/business-54536796" class="bbc-n8oauk e1cs6q200">习近平“南巡”之际　数字人民币在深圳首测有何看点</a></li>
+      </ul>
+    </div>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">另外，未兑付给村民的分红会由村委会自制的“票据”代替现金，票据存放在村委会，且该票据只能在华西村内部流通。很多村民迫于无法取到现金的压力，便会在节假日拿着票据去华西村内部的龙希大酒店消费，“居住一晚的费用抵12000余人民币”，一位村民表示。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">从华西村挣的钱只能重新流入华西村，是华西村村民熟稔的潜规则，早在吴仁宝时期便已适用。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">“村民即使想用自己的钱在华西村外购买房产，也只能买华西集团自己开发的楼盘，否则一旦被发现，将会被村委会'除名'，就不能参与分红了”，一位熟悉华西村情况的人士表示。另外，华西村的自办高中教学质量偏低，在江阴市所有高等中学中的排名较靠后，但华西村村委会凭借资源、人力只能在华西村内部流通的“规矩”，多言辞强硬劝说村民将孩子继续留在自办高中读书。这直接导致很多想把孩子送到更好的学校接受教育的村民离开华西村，自谋生路。</p>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-1k5hvrj e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/9884/production/_117744093_066397247-1.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/9884/production/_117744093_066397247-1.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/9884/production/_117744093_066397247-1.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/9884/production/_117744093_066397247-1.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/9884/production/_117744093_066397247-1.jpg 800w" alt="Wuxi" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/9884/production/_117744093_066397247-1.jpg" width="976" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">此外，村民大量离开华西村的另一个原因是华西村周边县市的经济发展迅速，而华西村因为经营问题能提供给村民的集体福利大幅下降。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">2014年，吴仁宝去世第二年，华西村常年依赖的钢铁产业营收锐减，仅为2007年收入的一半，为125亿余人民币。对此，上述接近吴仁宝的人士分析称，“华西的钢铁产业发展凭借的是优惠政策，外加早期贷款容易。但在短缺经济结束后，仍然扩张钢铁产业，相当于自寻死路。老书记在世时还可以撑住，现在绝对不行了”。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">据悉，掌握绝对话语权的村官“二代”吴协恩在华西村的转型发展中更偏重金融投资和高科技产业。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">据熟悉华西村的人士回忆，前几年华西村在周边各个村庄张贴海报，呼吁村民将手里的钱存到华西金塔，并承诺三年及以上定期存款，利率为10%-15%（银行为4%左右），个别与华西村村委会人员交好的人士可拿到的利率甚至高达30%。此举吸引了江阴市甚至伤害、黑龙江的大量公众前来华西村存款。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">对此，多方分析认为华西村的金融产业涉及非法集资。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <h2 id="国资进场" tabindex="-1" class="bbc-6w9yzd e14hemmw0">国资进场？</h2>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">根据《财经》杂志的报道，2021年2月25日，多位将钱存至华西村的公众通过社交平台发布信息称，华西村先前承诺的利息现在难以兑现。报道指出，有人2月9日前去兑付资金时被告知2月24日才可以领取，而其家人在2月24日排队几小时后，仅拿到了本金。另有网友表示，只有2月24号之前兑付资金的投资者才在本金之外同时拿到了利息，但是利息仅为0.05%，与华西村此前承诺的10%相去甚远。而在资金兑付现场，几十名身穿“华西联防”制服的安保人员一直在人群中游走，数量一度超过了在大厅办理兑付业务的村民数量。针对华西集团资金周转困难、即将破产、华西村不行了的舆论早在2019年便在中国的互联网和民间有所发酵。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">2019年3月13日，江苏省无锡市人民政府办公室下发的一份名为2019年第7次市长办公会议通知（锡政办通【2019】24号）的文件显示该会议议题为“听取关于江阴华西集团流动性困难纾困有关情况的汇报”，列席单位包括市审计局、市国有资产监督管理委员会、地方金融监管局、市国联集团、产业集团、市建发公司。其中市国联集团是无锡市人民政府出资设立的国有资本投资运营和授权经营试点国企集团。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">一位接近无锡市政府的消息人士表示，会议在市政府三楼会议厅召开，会议当天市政府办公大楼1-5层的所有无关该会议的办公人员被直接要求下班，相当于对市政府办公大楼进行清场。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">但随后华西村党委书记、华西集团董事长吴协恩在接受媒体采访时表示，华西集团并不存在流动性困难。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">2020年7月10日，江苏华西村股份有限公司（华西股份，SZ.000936）发布公告，华西股份拟与无锡国联产业投资有限公司（下称“无锡国联”）、无锡致久企业管理合伙企业、一村资本有限公司签署《投资及合作协议》，其中无锡国联隶属市国联集团。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">根据公告，无锡国联将向华西股份受让一村资本34.431%股权，交易价格为9.98亿人民币。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">华西村股份有限公司是以江苏华西集团公司为主发起人设立的上市公司，而后者由华西村村委会控制。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">上述接近无锡市政府的人士指出，近几日无锡国联已派驻工作人员入驻华西村指导工作，并在清点华西村诸如旅游、钢铁之类的优质资产，同时表示，“华西村是国家的脸面，三任国家主席都曾到访华西村，政府不会置华西村于不顾、任由其破产，否则岂不是打自己的脸、打社会主义的脸”。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">上述早年接近吴仁宝的人士在吴仁宝去世后曾回访华西村，并直言：“华西村现在弥漫着浓郁的封建气息，令人难受。我注意到一个细节，华西村内一个景观亭上篆刻的书法丑陋不敢，陪同的人告诉我那是吴协恩的作品。从这里可以看出，有些人已经丧心病狂了”。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">至此，这场集众人之力施行的具备中国特色的共产主义实验已交出了成绩单。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">不过，《财经》上述报道华西村遭挤兑的稿件已经被删除。同时，中国多家主流媒体也已收到来自中国中央委员会宣传部禁止报道华西村负面新闻的指示。在远离华西村的地方，“天下第一村”仍是人们津津乐道的富足之地。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">但无数问题仍然没有人回答。</p>
+  </div>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#BBC 的其它文章</h4>
+    
+      <li>
+        <time>2021-04-01</time>
+        <a href="https://nodebe4.github.io/waimei/2021-04-01/World-%E6%96%B0%E7%96%86%E4%BA%BA%E6%9D%83-%E6%B5%B7%E5%A4%96%E7%BB%B4%E5%90%BE%E5%B0%94%E4%BA%BA%E6%8C%87%E6%8E%A7%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E5%90%8E%E4%BB%98%E5%87%BA%E7%9A%84%E4%BB%A3%E4%BB%B7">
+          [World] 新疆人权：海外维吾尔人指控中国政府后付出的代价
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-03-31</time>
+        <a href="https://nodebe4.github.io/waimei/2021-03-31/Science-%E6%96%B0%E5%86%A0-%E4%B8%96%E5%8D%AB%E6%BA%AF%E6%BA%90%E6%8A%A5%E5%91%8A%E5%BC%95%E6%9D%A5%E7%9A%84%E8%B5%9E%E8%B5%8F-%E4%BA%89%E8%AE%AE%E5%92%8C%E8%B4%A8%E7%96%91">
+          [Science] 新冠：世卫溯源报告引来的赞赏，争议和质疑
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-03-29</time>
+        <a href="https://nodebe4.github.io/waimei/2021-03-29/World-%E4%B8%AD%E5%9B%BD%E4%BC%8A%E6%9C%9725%E5%B9%B4%E5%85%A8%E9%9D%A2%E5%90%88%E4%BD%9C%E5%8D%8F%E8%AE%AE-%E9%9D%B4%E5%AD%90%E8%90%BD%E5%9C%B0-%E4%BC%8A%E6%9C%97%E6%B0%91%E9%97%B4%E5%8F%8D%E5%AF%B9%E5%A3%B0%E9%AB%98%E6%B6%A8">
+          [World] 中国伊朗25年全面合作协议“靴子落地” 伊朗民间反对声高涨
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-03-28</time>
+        <a href="https://nodebe4.github.io/waimei/2021-03-28/Science-%E7%9D%A1%E7%9C%A0%E4%B8%8E%E5%81%9A%E6%A2%A6-%E7%B4%A7%E5%BC%A0%E4%B8%8E%E5%8E%8B%E5%8A%9B%E5%A6%82%E4%BD%95%E5%BD%B1%E5%93%8D%E6%88%91%E4%BB%AC%E7%9A%84%E6%A2%A6%E5%A2%83">
+          [Science] 睡眠与做梦：紧张与压力如何影响我们的梦境
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-03-29/World-%E4%B8%AD%E5%9B%BD%E4%BC%8A%E6%9C%9725%E5%B9%B4%E5%85%A8%E9%9D%A2%E5%90%88%E4%BD%9C%E5%8D%8F%E8%AE%AE-%E9%9D%B4%E5%AD%90%E8%90%BD%E5%9C%B0-%E4%BC%8A%E6%9C%97%E6%B0%91%E9%97%B4%E5%8F%8D%E5%AF%B9%E5%A3%B0%E9%AB%98%E6%B6%A8">
+            前一篇：[World] 中国伊朗25年全面合作协议“靴子落地” 伊朗民间反对声高涨
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-03-31/Science-%E6%96%B0%E5%86%A0-%E4%B8%96%E5%8D%AB%E6%BA%AF%E6%BA%90%E6%8A%A5%E5%91%8A%E5%BC%95%E6%9D%A5%E7%9A%84%E8%B5%9E%E8%B5%8F-%E4%BA%89%E8%AE%AE%E5%92%8C%E8%B4%A8%E7%96%91">
+            后一篇：[Science] 新冠：世卫溯源报告引来的赞赏，争议和质疑
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-03-29/World-%E4%B8%AD%E5%9B%BD%E4%BC%8A%E6%9C%9725%E5%B9%B4%E5%85%A8%E9%9D%A2%E5%90%88%E4%BD%9C%E5%8D%8F%E8%AE%AE-%E9%9D%B4%E5%AD%90%E8%90%BD%E5%9C%B0-%E4%BC%8A%E6%9C%97%E6%B0%91%E9%97%B4%E5%8F%8D%E5%AF%B9%E5%A3%B0%E9%AB%98%E6%B6%A8'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-03-31/Science-%E6%96%B0%E5%86%A0-%E4%B8%96%E5%8D%AB%E6%BA%AF%E6%BA%90%E6%8A%A5%E5%91%8A%E5%BC%95%E6%9D%A5%E7%9A%84%E8%B5%9E%E8%B5%8F-%E4%BA%89%E8%AE%AE%E5%92%8C%E8%B4%A8%E7%96%91'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-03-31/Science-%E6%96%B0%E5%86%A0-%E4%B8%96%E5%8D%AB%E6%BA%AF%E6%BA%90%E6%8A%A5%E5%91%8A%E5%BC%95%E6%9D%A5%E7%9A%84%E8%B5%9E%E8%B5%8F-%E4%BA%89%E8%AE%AE%E5%92%8C%E8%B4%A8%E7%96%91'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-03-29/World-%E4%B8%AD%E5%9B%BD%E4%BC%8A%E6%9C%9725%E5%B9%B4%E5%85%A8%E9%9D%A2%E5%90%88%E4%BD%9C%E5%8D%8F%E8%AE%AE-%E9%9D%B4%E5%AD%90%E8%90%BD%E5%9C%B0-%E4%BC%8A%E6%9C%97%E6%B0%91%E9%97%B4%E5%8F%8D%E5%AF%B9%E5%A3%B0%E9%AB%98%E6%B6%A8'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-03-29/World-%E4%B8%AD%E5%9B%BD%E4%BC%8A%E6%9C%9725%E5%B9%B4%E5%85%A8%E9%9D%A2%E5%90%88%E4%BD%9C%E5%8D%8F%E8%AE%AE-%E9%9D%B4%E5%AD%90%E8%90%BD%E5%9C%B0-%E4%BC%8A%E6%9C%97%E6%B0%91%E9%97%B4%E5%8F%8D%E5%AF%B9%E5%A3%B0%E9%AB%98%E6%B6%A8">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-03-31/Science-%E6%96%B0%E5%86%A0-%E4%B8%96%E5%8D%AB%E6%BA%AF%E6%BA%90%E6%8A%A5%E5%91%8A%E5%BC%95%E6%9D%A5%E7%9A%84%E8%B5%9E%E8%B5%8F-%E4%BA%89%E8%AE%AE%E5%92%8C%E8%B4%A8%E7%96%91">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<BBC>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-03-31/Science-%E6%96%B0%E5%86%A0-%E4%B8%96%E5%8D%AB%E6%BA%AF%E6%BA%90%E6%8A%A5%E5%91%8A%E5%BC%95%E6%9D%A5%E7%9A%84%E8%B5%9E%E8%B5%8F-%E4%BA%89%E8%AE%AE%E5%92%8C%E8%B4%A8%E7%96%91">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<BBC>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-03-29/World-%E4%B8%AD%E5%9B%BD%E4%BC%8A%E6%9C%9725%E5%B9%B4%E5%85%A8%E9%9D%A2%E5%90%88%E4%BD%9C%E5%8D%8F%E8%AE%AE-%E9%9D%B4%E5%AD%90%E8%90%BD%E5%9C%B0-%E4%BC%8A%E6%9C%97%E6%B0%91%E9%97%B4%E5%8F%8D%E5%AF%B9%E5%A3%B0%E9%AB%98%E6%B6%A8">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

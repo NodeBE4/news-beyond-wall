@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>革命、动荡与控制：图片中的中共百年历史 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+革命、动荡与控制：图片中的中共百年历史
+——
+" />
+    <meta property="og:description" content="
+革命、动荡与控制：图片中的中共百年历史
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="革命、动荡与控制：图片中的中共百年历史" />
+    <meta property="twitter:title" content="革命、动荡与控制：图片中的中共百年历史" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fcn.nytimes.com%2Fchina%2F20210701%2Fchina-communists-100th-anniversary%2F&t=%E9%9D%A9%E5%91%BD%E3%80%81%E5%8A%A8%E8%8D%A1%E4%B8%8E%E6%8E%A7%E5%88%B6%EF%BC%9A%E5%9B%BE%E7%89%87%E4%B8%AD%E7%9A%84%E4%B8%AD%E5%85%B1%E7%99%BE%E5%B9%B4%E5%8E%86%E5%8F%B2" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fchina%2F20210701%2Fchina-communists-100th-anniversary%2F&t=%E9%9D%A9%E5%91%BD%E3%80%81%E5%8A%A8%E8%8D%A1%E4%B8%8E%E6%8E%A7%E5%88%B6%EF%BC%9A%E5%9B%BE%E7%89%87%E4%B8%AD%E7%9A%84%E4%B8%AD%E5%85%B1%E7%99%BE%E5%B9%B4%E5%8E%86%E5%8F%B2&d=2021-07-01&e=
+革命、动荡与控制：图片中的中共百年历史
+——
+
+
+  
+STEVEN LEE MYERS
+  
+  2021年7月1日
+  
+    
+1949年，庆祝共产党革命胜利的活动上，人们举着毛泽东的画像。 Associated Press
+    
+  
+  
+    1921年夏，中国共产党前途未卜，生存都成了问题。尤其是生存成问题。
+    在1911年清王朝覆灭、千年帝制结束的十年后，当时还是中华民国的中国仍在内乱和极度贫困中挣扎。
+    上海法租界——即19世纪被屈辱的殖民占领划出的街区——的一处砖砌校舍里，一场有12人（或许更多）参加的会议在商讨创建一支新的政治力量。启发他们的与其说是卡尔·马克思(Karl Marx)，不如说是十月革命，这场革命巩固了对此前一直由末代沙皇尼古拉二世统治的俄罗斯帝国的控制。
+    一个世纪后，中国成了如今国际共产主义的标杆，而不是于1991年..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fchina%2F20210701%2Fchina-communists-100th-anniversary%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://cn.nytimes.com/china/20210701/china-communists-100th-anniversary/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://cn.nytimes.com/china/20210701/china-communists-100th-anniversary/&text=革命、动荡与控制：图片中的中共百年历史&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://cn.nytimes.com/china/20210701/china-communists-100th-anniversary/&title=革命、动荡与控制：图片中的中共百年历史" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://cn.nytimes.com/china/20210701/china-communists-100th-anniversary/&title=革命、动荡与控制：图片中的中共百年历史" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=革命、动荡与控制：图片中的中共百年历史&body=
+革命、动荡与控制：图片中的中共百年历史
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://cn.nytimes.com/china/20210701/china-communists-100th-anniversary/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://cn.nytimes.com/china/20210701/china-communists-100th-anniversary/&title=革命、动荡与控制：图片中的中共百年历史&caption=
+革命、动荡与控制：图片中的中共百年历史
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=革命、动荡与控制：图片中的中共百年历史&url=https://cn.nytimes.com/china/20210701/china-communists-100th-anniversary/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>革命、动荡与控制：图片中的中共百年历史</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-07-01
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#纽约时报 ">
+          纽约时报
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://cn.nytimes.com/china/20210701/china-communists-100th-anniversary/"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="纽约时报的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#纽约时报 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fchina%2F20210701%2Fchina-communists-100th-anniversary%2F&t=%E9%9D%A9%E5%91%BD%E3%80%81%E5%8A%A8%E8%8D%A1%E4%B8%8E%E6%8E%A7%E5%88%B6%EF%BC%9A%E5%9B%BE%E7%89%87%E4%B8%AD%E7%9A%84%E4%B8%AD%E5%85%B1%E7%99%BE%E5%B9%B4%E5%8E%86%E5%8F%B2&d=2021-07-01&e=
+革命、动荡与控制：图片中的中共百年历史
+——
+
+
+  
+STEVEN LEE MYERS
+  
+  2021年7月1日
+  
+    
+1949年，庆祝共产党革命胜利的活动上，人们举着毛泽东的画像。 Associated Press
+    
+  
+  
+    1921年夏，中国共产党前途未卜，生存都成了问题。尤其是生存成问题。
+    在1911年清王朝覆灭、千年帝制结束的十年后，当时还是中华民国的中国仍在内乱和极度贫困中挣扎。
+    上海法租界——即19世纪被屈辱的殖民占领划出的街区——的一处砖砌校舍里，一场有12人（或许更多）参加的会议在商讨创建一支新的政治力量。启发他们的与其说是卡尔·马克思(Karl Marx)，不如说是十月革命，这场革命巩固了对此前一直由末代沙皇尼古拉二世统治的俄罗斯帝国的控制。
+    一个世纪后，中国成了如今国际共产主义的标杆，而不是于1991年..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fchina%2F20210701%2Fchina-communists-100th-anniversary%2F" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1625130421000-->
+<p><a href="https://cn.nytimes.com/china/20210701/china-communists-100th-anniversary/">革命、动荡与控制：图片中的中共百年历史</a>
+——</p>
+
+<div>
+  <address>
+STEVEN LEE MYERS
+  </address>
+  <time pudate="2021-07-01 04:54:05" datetime="2021-07-01 04:54:05">2021年7月1日</time>
+  <figure class="article-span-photo">
+<img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/01/world/01China-archive-top/01China-archive-top-master1050.jpg" width="1050" height="744" />    <figcaption>
+1949年，庆祝共产党革命胜利的活动上，人们举着毛泽东的画像。 <cite>Associated Press</cite>
+    </figcaption>
+  </figure>
+  <section class="article-body">
+    <p>1921年夏，中国共产党前途未卜，生存都成了问题。尤其是生存成问题。</p>
+    <p>在1911年清王朝覆灭、千年帝制结束的十年后，当时还是中华民国的中国仍在内乱和极度贫困中挣扎。</p>
+    <p>上海法租界——即19世纪被屈辱的殖民占领划出的街区——的一处砖砌校舍里，一场有12人（或许更多）参加的会议在商讨创建一支新的政治力量。启发他们的与其说是卡尔·马克思(Karl Marx)，不如说是十月革命，这场革命巩固了对此前一直由末代沙皇尼古拉二世统治的俄罗斯帝国的控制。</p>
+    <p>一个世纪后，中国成了如今国际共产主义的标杆，而不是于1991年解体的苏联。</p>
+    <p>按照中国政治宣传的说法——在党的百年诞辰正式到来前，<a href="https://cn.nytimes.com/china/20210420/china-communist-party-anniversary/">他们已经为此忙碌了数月</a>——党的崛起开启了中国成为全球大国的一个不可阻挡的历程。</p>
+    <p>但事实上，多年来中共一直在危机四伏、充满不确定性的处境中，经历了一次又一次挫败，其中很多都是自食其果。</p>
+    <p>1927年，上海的一次共产党起义遭到残酷镇压，数千人被杀。</p>
+    <p>残余党员四散奔逃，有些在江西省的农村山区重新集结，毛泽东就在这里成了领导者。也是在这里，革命者于1930年创立了中华苏维埃，但四年后就差点被蒋介石的部队剿灭。</p>
+    <p>那之后的灾难性撤退——即<a href="https://www.nytimes.com/1972/02/22/archives/the-long-march-for-communist-china-it-is-the-central-epic.html" title="Link: https://www.nytimes.com/1972/02/22/archives/the-long-march-for-communist-china-it-is-the-central-epic.html">长征</a>——直到毛泽东率领仅存的一些部队在一年后抵达陕西省一处安全地点才宣告结束。党在当地的领导人之一<a href="https://sinosphere.blogs.nytimes.com/2013/10/15/china-venerates-a-revolutionary-the-father-of-its-new-leader" title="Link: https://sinosphere.blogs.nytimes.com/2013/10/15/china-venerates-a-revolutionary-the-father-of-its-new-leader">习仲勋</a>，正是今天中国最高领导人习近平的父亲。</p>
+    <p>此后共产党以那里为根据地，在二战中与日军作战，同时也在寻求办法抗衡数倍于自己的国民党军队。1945年日本投降后，内战再次爆发。</p>
+    <p>共产党收获了难以置信的胜利，部分原因是得到了不堪贫困、腐败和暴力折磨的群众支持。1949年10月1日，<a href="https://timesmachine.nytimes.com/timesmachine/1949/10/02/issue.html">毛泽东</a>站在俯瞰天安门广场的城楼上，宣布中华人民共和国成立。</p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/01/world/01China-archive1/01China-archive1-master1050.jpg" /><small style="color: #999;">1947年中国内战期间，马背上的毛泽东。</small></p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/01/world/01China-archive2/01China-archive-30-master1050.jpg" /><small style="color: #999;">白色恐怖时期一次抓捕行动。1927年，蒋介石和国民党对共产党发起了围剿行动。</small></p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/01/world/01China-archive3/01China-archive-10-master1050.jpg" /><small style="color: #999;">1949年10月1日，毛泽东宣布中华人民共和国成立。</small></p>
+    <p>此后，一系列灾难接踵而至。新中国成立不到一年，就在1950年北朝鲜入侵南方后加入战争，<a href="https://cn.nytimes.com/china/20201026/china-us-korean-war/">对美国</a>及其盟友开战。</p>
+    <p>虽然中国的“志愿军”部队与美国主导的军队打到停火，但付出的代价是惨重的，官方公布死亡人数超过19.7万，但学者估计真实数字比这要多很多倍。</p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/01/world/01China-archive4/01China-archive4-master1050.jpg" /><small style="color: #999;">1951年朝鲜战争期间，俘获美国士兵的共产党士兵。</small></p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/01/world/01China-archive5/01China-archive5-master1050.jpg" /><small style="color: #999;">1951年，在朝鲜被美军俘获的中国士兵。</small></p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/01/world/01China-archive6/01China-archive6-master1050.jpg" /><small style="color: #999;">毛泽东与约瑟夫·斯大林、尼基塔·赫鲁晓夫（右）庆祝斯大林的70岁生日。</small></p>
+    <p>而毛泽东发起的代价最为惨重的运动发生在国内。</p>
+    <p>1958年，中共发起<a href="https://www.nytimes.com/2010/12/16/opinion/16iht-eddikotter16.html">大跃进</a>，强行推进农业集体化和农村工业化。</p>
+    <p>数千万人失去了生命——不仅包括大跃进后饥荒导致的饥馑和病死，也包括共产党官员执行毛泽东为促进生产而惩罚一切反抗者的错误命令时，被折磨、杀害或自杀的人。</p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/01/world/01China-archive7/01China-archive7-master1050.jpg" /><small style="color: #999;">上世纪50年代大跃进期间，在公社农场劳动的中国农民。</small></p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/01/world/01China-archive8/01China-archive8-master1050.jpg" /><small style="color: #999;">1962年，被港英当局抓捕的中国饥民。</small></p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/01/world/01China-archive9/01China-archive9-master1050.jpg" /><small style="color: #999;">为了推进大跃进快速实现工业化的目标，在公社后院建造的小型高炉。</small></p>
+    <p>1966年，毛泽东发出指示，警告“修正主义分子”在试图推翻共产党政权，发起了<a href="https://www.nytimes.com/2016/05/15/world/asia/china-cultural-revolution-explainer.html">文化大革命</a>。那之后十年，暴力运动和内部清洗席卷全国，即使党内精英也不能幸免。</p>
+    <p>年轻的红卫兵是文革早期的主导力量，他们虐待知识分子以及任何被视为“阶级敌人”的人。大学和博物馆被关闭，许多历史和宗教古迹遭到洗劫毁坏。</p>
+    <p>到文革后期，青年被送到乡下，表面上是为了重燃共产党早年的农村革命精神。这些“下乡青年”就包括了习近平和现任外交部长王毅。</p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/01/world/01China-archive10/01China-archive10-master1050.jpg" /><small style="color: #999;">“毛主席万岁。”1967年北京，手持“红宝书”的红卫兵。</small></p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/01/world/01China-archive11/01China-archive11-master1050.jpg" /><small style="color: #999;">在文革早期，年轻的红卫兵是主导力量。</small></p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/01/world/01China-archive12/01China-archive12-master1050.jpg" /><small style="color: #999;">在1996年哈尔滨的一次批斗会上，红卫兵羞辱官员，其中一人的罪名是与毛泽东长相相似。</small></p>
+    <p>动荡直到1976年毛泽东去世才真正结束。大跃进中的死亡人数仍是未知，但估计有50万到800万人丧生。</p>
+    <p>上海政治学者、风险投资家李世默本周表示，“重大自我革新”是中共的标志。</p>
+    <p>他解释道，第一次革新是党在1949年掌权，统治了世界上人口最多的国家之时。第二次革新是在毛泽东去世后，党开放了国家，致力于经济改革。</p>
+    <p>中国在上世纪80年代初只有少数几个经济特区，而在那之后的40年，中国发展成了一个经济强国，即将成为世界上最大的经济体，而这一成就正是党掌握权力的核心理由。</p>
+    <p>“他们犯了错误，”李世默在香港外国记者会(Foreign Correspondents Club of Hong Kong)组织的一场视频会议上表示。“比如文化大革命就是个错误。大跃进就是个错误。而他们纠正了路线。”</p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/01/world/01China-archive13/01China-archive13-master1050.jpg" /><small style="color: #999;">1976年，解放军官兵在毛泽东遗体前默哀。</small></p>
+    <p>“开放”并未延伸到政治领域。1989年，北京等其他城市数以千计的民众走上街头，要求更多政治自由。抗议是和平的，但党领导人邓小平视之为关乎存亡的威胁。</p>
+    <p>当年6月3日至4日晚，人民解放军进入北京市中心，清除了天安门广场上的抗议营地。就和中国惯例一样，死难人数仍是争议不下的问题，被官方机密掩盖。</p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/01/world/01China-archive14/01China-archive14-master1050.jpg" /><small style="color: #999;">在1989年6月的北京天安门广场抗议中，一名男子挡在了一排坦克面前。</small></p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/01/world/01China-archive15/01China-archive15-master1050.jpg" /><small style="color: #999;">天安门抗议持续了七周。</small></p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/01/world/01China-archive16/01China-archive16-master1050.jpg" /><small style="color: #999;">从天安门广场被疏散的一名受伤男子。死亡人数估计在数百到数千之间。</small></p>
+    <p>中国政府一度被外交孤立，但在短暂停顿后，邓小平继续推进中国的经济改革。</p>
+    <p>1997年，英国不顾多方保留意见，履行了与中国的协议，<a href="https://www.nytimes.com/1997/07/01/world/china-resumes-control-of-hong-kong-concluding-156-years-of-british-rule.html">归还香港主权</a>。2001年，国际奥委会将2008年夏季奥运会主办权交予北京，在许多中国人看来，举办这一<a href="https://www.nytimes.com/2008/08/09/sports/olympics/09china.html">盛事</a>代表了中国作为现代强国的崛起。</p>
+    <p>2007年，著名中国学者谢淑丽(Susan L. Shirk)在其中国<a rel="noopener noreferrer" target="_blank" href="https://www.chinafile.com/library/books/China-Fragile-Superpower">政治史</a>著作的标题中使用了一个矛盾的说法：《中国：脆弱的超级大国》(China: Fragile Superpower)。她的论点是，中国的自信之下隐藏着深深的不安，而这种不安侵蚀了共产党的统治根基。</p>
+    <p>而习近平本人，正是共产党统治培养——有些人会说是宠溺——出来的“太子党”之一。作为接班人，他被视为改革者而受到推崇。等到2012年成为党领导人时，他残酷地排挤对手，加强了党对权力的控制。</p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/01/world/01China-archive17/01China-archive17-master1050.jpg" /><small style="color: #999;">在1997年7月1日香港主权交接仪式上，中国军人升起中国国旗。</small></p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/01/world/01China-archive18/merlin_24379863_b9cf3f24-cb54-483f-929b-aeb833af4a64-master1050.jpg" /><small style="color: #999;">2008年北京奥运会开幕式上的表演者。</small></p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/01/world/01China-archive19/01China-archive19-master1050.jpg" /><small style="color: #999;">从毛泽东到习近平，这是位于北京的中国人民抗日战争纪念馆展示的五位共产中国领导人。</small></p>
+    <p>2018年，他力主<a href="https://cn.nytimes.com/china/20180227/china-xi-jinping-authoritarianism/">取消了宪法</a>对主席任期的限制，打破了自毛泽东时代以来保持的惯例，即领导人不能在位超过两个五年任期。</p>
+    <p>若非如此，习近平的第二任期将在明年党代会上结束。如今外界一致认为，他将继续留任，也许是无限期留任。</p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/01/world/01china-archive20/01china-archive20-master1050.jpg" /><small style="color: #999;">2018年3月5日，在北京全国人民代表大会开幕式上的习近平（中）。</small></p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/01/world/01china-archive21/merlin_135026322_207ba935-cdf3-4d90-a83b-b855ab8df67a-master1050.jpg" /><small style="color: #999;">全国人民代表大会开幕前，在人民代表大会堂外巡逻的中国士兵。</small></p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/01/world/01china-archive22/01china-archive22-master1050.jpg" /><small style="color: #999;">2019年10月1日，人们在北京庆祝中华人民共和国成立70周年。</small></p>
+    <p>习近平治下的特色，是对外积极扩张，例如在南海争端岛屿进行<a href="https://cn.nytimes.com/china/20201130/china-bhutan-india-border/">军事建设</a>，以及对内收紧政治控制。</p>
+    <p>在新疆，习近平政府发动了一场极为严酷的<a href="https://www.nytimes.com/zh/2019/11/16/world/asia/xinjiang-documents-chinese.html">拘禁和再教育运动</a>，美国称之为种族灭绝。</p>
+    <p>2019年，当大规模抗议席卷香港，北京实施了镇压，将中国在该地区承诺尊重的许多政治自由尽数<a href="https://cn.nytimes.com/china/20210630/hong-kong-security-law-anniversary/zh%200/" title="Link: https://cn.nytimes.com/china/20210630/hong-kong-security-law-anniversary/zh%200/">剥夺</a>。</p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/01/world/01China-archive23/01China-archive23-master1050.jpg" /><small style="color: #999;">2016年，在斯卡伯勒浅滩区域附近的中国海岸警卫队船只，中国和菲律宾都声称对此环礁拥有主权。</small></p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/01/world/01china-archive24/01china-archive24-master1050.jpg" /><small style="color: #999;">2019年，香港数以万计的抗议者。</small></p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/01/world/01China-archive25-sub/merlin_158992650_b553f8f5-f49f-4629-b6ab-5964c24fec5b-master1050.jpg" /><small style="color: #999;">2019年新疆，驻守和田夜市入口安检处的警察。</small></p>
+    <p>习近平还加大力气宣传党的革命意识形态根源，及其被美化过的百年征途历史。和许多中国老百姓一样，他似乎也相信中国成功的事实胜于雄辩。</p>
+    <p>加州大学圣地亚哥分校(University of California, San Diego)学者谢淑丽表示，脆弱的超级大国这个说法仍然成立。</p>
+    <p>她说，习近平似乎仍在担心“整个纸牌屋可能会突然倾颓”，就像苏联一样。这就是他吹捧党的意识形态使命，要求干部和公民全部保持忠诚的原因。</p>
+    <p>“没有一个人，”她写道，“敢把他这些政策的代价诚实地告诉他。”</p>
+    <p><img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/07/01/world/01china-archive26/merlin_186829359_b72abce9-9122-4656-92a3-13262042d92d-master1050.jpg" /><small style="color: #999;">4月，在井冈山革命博物馆前的阶梯上，打扮成红军士兵的孩子在拍摄集体照，这里是红军成立的地方。</small></p>
+  </section>
+  <footer class="author-info">
+    <p>Steven Lee Myers是《纽约时报》北京分社社长。他自1989年加入时报，曾在莫斯科、巴格达和华盛顿多地进行报道。他著有《新沙皇：弗拉基米尔·普京的崛起和统治》(The New Tsar: The Rise and Reign of Vladimir Putin)一书。欢迎在<a rel="nofollow" target="_blank" href="https://twitter.com/stevenleemyers">Twitter</a>和<a rel="nofollow" target="_blank" href="https://www.facebook.com/StevenLeeMyersNYT">Facebook</a>上关注他。</p>
+    <p>翻译：纽约时报中文网</p>
+    <p><a rel="nofollow" target="_blank" href="http://www.nytimes.com/2021/06/30/world/asia/china-communists-100th-anniversary.html">点击查看本文英文版。</a></p>
+  </footer>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#纽约时报 的其它文章</h4>
+    
+      <li>
+        <time>2021-07-01</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-01/%E7%AE%80%E6%8A%A5-%E4%B9%A0%E8%BF%91%E5%B9%B3-%E4%B8%83%E4%B8%80-%E8%AE%B2%E8%AF%9D%E4%BC%A0%E9%80%92%E5%93%AA%E4%BA%9B%E4%BF%A1%E5%8F%B7-%E7%89%B9%E6%9C%97%E6%99%AE%E9%9B%86%E5%9B%A2%E6%B6%89%E5%AB%8C%E7%A8%8E%E5%8A%A1%E7%8A%AF%E7%BD%AA%E8%A2%AB%E8%B5%B7%E8%AF%89">
+          简报：习近平“七一”讲话传递哪些信号；特朗普集团涉嫌税务犯罪被起诉
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-01</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-01/%E6%AF%95%E4%B8%9A%E5%AD%A3%E7%9A%84%E4%B8%87%E8%8A%B1%E7%AD%92%E6%8A%98%E5%B0%84%E5%87%BA%E4%B8%80%E4%B8%AA%E7%9C%9F%E7%BE%8E%E5%9B%BD">
+          毕业季的万花筒折射出一个真美国
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-01</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-01/%E6%83%B3%E6%B4%BB%E5%BE%97%E6%9B%B4%E4%B9%85-%E4%BD%A0%E5%8F%AF%E4%BB%A5%E8%80%83%E8%99%91%E5%86%B7%E5%86%BB%E8%87%AA%E5%B7%B1">
+          想活得更久？你可以考虑冷冻自己
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-06-30</time>
+        <a href="https://nodebe4.github.io/waimei/2021-06-30/%E6%BB%B4%E6%BB%B4%E8%B5%B4%E7%BE%8E%E4%B8%8A%E5%B8%82-%E5%A2%9E%E9%95%BF%E5%92%8C%E7%9B%91%E7%AE%A1%E9%9A%90%E5%BF%A7%E7%8A%B9%E5%AD%98">
+          滴滴赴美上市，增长和监管隐忧犹存
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-01/%E9%81%B8%E5%9C%A8%E4%B8%83%E4%B8%83%E4%BA%8B%E8%AE%8A%E7%B4%80%E5%BF%B5%E6%97%A5%E7%99%BC%E8%A1%A8%E6%96%B0%E6%89%8B%E6%A9%9F-%E7%B4%A2%E5%B0%BC%E4%B8%AD%E5%9C%8B%E9%81%93%E6%AD%89">
+            前一篇：選在七七事變紀念日發表新手機 索尼中國道歉
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-07-01/Google-%E5%92%8C%E5%BE%AE%E8%BD%AF%E5%90%8C%E6%84%8F%E5%BC%80%E5%A7%8B%E4%BA%92%E7%9B%B8%E8%B5%B7%E8%AF%89">
+            后一篇：Google 和微软同意开始互相起诉
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-07-01/%E9%81%B8%E5%9C%A8%E4%B8%83%E4%B8%83%E4%BA%8B%E8%AE%8A%E7%B4%80%E5%BF%B5%E6%97%A5%E7%99%BC%E8%A1%A8%E6%96%B0%E6%89%8B%E6%A9%9F-%E7%B4%A2%E5%B0%BC%E4%B8%AD%E5%9C%8B%E9%81%93%E6%AD%89'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-07-01/Google-%E5%92%8C%E5%BE%AE%E8%BD%AF%E5%90%8C%E6%84%8F%E5%BC%80%E5%A7%8B%E4%BA%92%E7%9B%B8%E8%B5%B7%E8%AF%89'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-07-01/%E6%AF%95%E4%B8%9A%E5%AD%A3%E7%9A%84%E4%B8%87%E8%8A%B1%E7%AD%92%E6%8A%98%E5%B0%84%E5%87%BA%E4%B8%80%E4%B8%AA%E7%9C%9F%E7%BE%8E%E5%9B%BD'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-07-01/%E6%83%B3%E6%B4%BB%E5%BE%97%E6%9B%B4%E4%B9%85-%E4%BD%A0%E5%8F%AF%E4%BB%A5%E8%80%83%E8%99%91%E5%86%B7%E5%86%BB%E8%87%AA%E5%B7%B1'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-07-01/%E9%81%B8%E5%9C%A8%E4%B8%83%E4%B8%83%E4%BA%8B%E8%AE%8A%E7%B4%80%E5%BF%B5%E6%97%A5%E7%99%BC%E8%A1%A8%E6%96%B0%E6%89%8B%E6%A9%9F-%E7%B4%A2%E5%B0%BC%E4%B8%AD%E5%9C%8B%E9%81%93%E6%AD%89">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-07-01/Google-%E5%92%8C%E5%BE%AE%E8%BD%AF%E5%90%8C%E6%84%8F%E5%BC%80%E5%A7%8B%E4%BA%92%E7%9B%B8%E8%B5%B7%E8%AF%89">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<纽约时报>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-07-01/%E6%AF%95%E4%B8%9A%E5%AD%A3%E7%9A%84%E4%B8%87%E8%8A%B1%E7%AD%92%E6%8A%98%E5%B0%84%E5%87%BA%E4%B8%80%E4%B8%AA%E7%9C%9F%E7%BE%8E%E5%9B%BD">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<纽约时报>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-07-01/%E6%83%B3%E6%B4%BB%E5%BE%97%E6%9B%B4%E4%B9%85-%E4%BD%A0%E5%8F%AF%E4%BB%A5%E8%80%83%E8%99%91%E5%86%B7%E5%86%BB%E8%87%AA%E5%B7%B1">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

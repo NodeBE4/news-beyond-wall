@@ -1,0 +1,2066 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>[Science] 新冠肺炎：Delta变种带来的挑战与难题 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+[Science] 新冠肺炎：Delta变种带来的挑战与难题
+——
+" />
+    <meta property="og:description" content="
+[Science] 新冠肺炎：Delta变种带来的挑战与难题
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="[Science] 新冠肺炎：Delta变种带来的挑战与难题" />
+    <meta property="twitter:title" content="[Science] 新冠肺炎：Delta变种带来的挑战与难题" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-57665837&t=%5BScience%5D+%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E%EF%BC%9ADelta%E5%8F%98%E7%A7%8D%E5%B8%A6%E6%9D%A5%E7%9A%84%E6%8C%91%E6%88%98%E4%B8%8E%E9%9A%BE%E9%A2%98" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-57665837&t=%5BScience%5D+%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E%EF%BC%9ADelta%E5%8F%98%E7%A7%8D%E5%B8%A6%E6%9D%A5%E7%9A%84%E6%8C%91%E6%88%98%E4%B8%8E%E9%9A%BE%E9%A2%98&d=2021-06-30&e=
+[Science] 新冠肺炎：Delta变种带来的挑战与难题
+——
+
+
+  
+    新冠肺炎：Delta变种带来的挑战与难题
+  
+  
+    41 分钟前
+  
+  
+    
+      
+        
+          
+            图像来源，EPA
+          
+        
+        
+          
+图像加注文字，            悉尼、达尔文、柏斯和布里斯班等多个澳洲城市先后宣布封城，防止新冠肺炎病毒变种传播。
+          
+        
+      
+    
+  
+  
+    随着新冠肺炎的Delta变种在全球传播，这个变种在一些国家已经成为主流传播的新冠肺炎病毒，令某些原本成功控制疫情的国家也变得措手不及。
+  
+  
+    其中，澳大利亚不同城市过去透过主动封城、封锁边境、社交追踪应用程式等成..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-57665837" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=http://www.bbc.com/zhongwen/simp/science-57665837" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=http://www.bbc.com/zhongwen/simp/science-57665837&text=[Science] 新冠肺炎：Delta变种带来的挑战与难题&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=http://www.bbc.com/zhongwen/simp/science-57665837&title=[Science] 新冠肺炎：Delta变种带来的挑战与难题" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://www.bbc.com/zhongwen/simp/science-57665837&title=[Science] 新冠肺炎：Delta变种带来的挑战与难题" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=[Science] 新冠肺炎：Delta变种带来的挑战与难题&body=
+[Science] 新冠肺炎：Delta变种带来的挑战与难题
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=http://www.bbc.com/zhongwen/simp/science-57665837" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=http://www.bbc.com/zhongwen/simp/science-57665837&title=[Science] 新冠肺炎：Delta变种带来的挑战与难题&caption=
+[Science] 新冠肺炎：Delta变种带来的挑战与难题
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=[Science] 新冠肺炎：Delta变种带来的挑战与难题&url=http://www.bbc.com/zhongwen/simp/science-57665837" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>[Science] 新冠肺炎：Delta变种带来的挑战与难题</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-06-30
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#BBC ">
+          BBC
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="http://www.bbc.com/zhongwen/simp/science-57665837"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="BBC的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#BBC 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-57665837&t=%5BScience%5D+%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E%EF%BC%9ADelta%E5%8F%98%E7%A7%8D%E5%B8%A6%E6%9D%A5%E7%9A%84%E6%8C%91%E6%88%98%E4%B8%8E%E9%9A%BE%E9%A2%98&d=2021-06-30&e=
+[Science] 新冠肺炎：Delta变种带来的挑战与难题
+——
+
+
+  
+    新冠肺炎：Delta变种带来的挑战与难题
+  
+  
+    41 分钟前
+  
+  
+    
+      
+        
+          
+            图像来源，EPA
+          
+        
+        
+          
+图像加注文字，            悉尼、达尔文、柏斯和布里斯班等多个澳洲城市先后宣布封城，防止新冠肺炎病毒变种传播。
+          
+        
+      
+    
+  
+  
+    随着新冠肺炎的Delta变种在全球传播，这个变种在一些国家已经成为主流传播的新冠肺炎病毒，令某些原本成功控制疫情的国家也变得措手不及。
+  
+  
+    其中，澳大利亚不同城市过去透过主动封城、封锁边境、社交追踪应用程式等成..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/http%3A%2F%2Fwww.bbc.com%2Fzhongwen%2Fsimp%2Fscience-57665837" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1625106987000-->
+<p><a href="http://www.bbc.com/zhongwen/simp/science-57665837">[Science] 新冠肺炎：Delta变种带来的挑战与难题</a>
+——</p>
+
+<div>
+  <div dir="ltr" class="bbc-1151pbn e57qer20">
+    <h1 id="content" tabindex="-1" class="bbc-6yjyco e1yj3cbb0">新冠肺炎：Delta变种带来的挑战与难题</h1>
+  </div>
+  <div dir="ltr" class="e1j2237y6 bbc-q4ibpr e57qer20">
+    <time datetime="2021-07-01" class="bbc-529aew e4zesg50">41 分钟前</time>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-1k5hvrj e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/C390/production/_119146005_hi068274364.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/C390/production/_119146005_hi068274364.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/C390/production/_119146005_hi068274364.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/C390/production/_119146005_hi068274364.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/C390/production/_119146005_hi068274364.jpg 800w" alt="悉尼、达尔文、柏斯和布里斯班等多个澳洲城市先后宣布封城，防止新冠肺炎病毒变种传播。" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/C390/production/_119146005_hi068274364.jpg" width="976" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />            <p role="text" class="bbc-1s1cxbv etq3yw90"><span class="bbc-1gnhmg2 e1yt7oin0">图像来源，</span><span lang="en-GB">EPA</span></p>
+          </div>
+        </div>
+        <div dir="ltr" class="bbc-3edg7g e57qer20">
+          <figcaption dir="ltr" class="bbc-l9ltpr eede9f50">
+<span class="bbc-1gnhmg2 e1yt7oin0">图像加注文字，</span>            <p>悉尼、达尔文、柏斯和布里斯班等多个澳洲城市先后宣布封城，防止新冠肺炎病毒变种传播。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70"><strong>随着新冠肺炎的Delta变种在全球传播，这个变种在一些国家已经成为主流传播的新冠肺炎病毒，令某些原本成功控制疫情的国家也变得措手不及。</strong></p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">其中，澳大利亚不同城市过去透过主动封城、封锁边境、社交追踪应用程式等成功控制住了疫情，但自东南部城市悉尼在6月末发现新的病毒传播群组后，疫情迅速扩散到全国，不到两个星期，澳洲四个州首府，包括悉尼、达尔文、帕斯柏斯和布里斯班先后宣布封城。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">澳洲是已发展国家新冠疫苗接种率最低的其中一个国家，只有5%的成年人完成接种两剂疫苗，另外有29%接种了第一剂，外界认为这是Delta变种迅速扩散的其中一个主要原因。但在英国，虽然当地有接近三分之二的成年人完成了疫苗接种，当地仍然面对Delta变种病毒扩散的危机。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">分析认为澳洲和英国的案例显示，接种疫苗虽然仍然是防治新冠肺炎的最好方法，但Delta变种的感染能力比一般新冠肺炎病毒强，令当局需要考虑改变过去的防疫方式，包括加强为年青群体的接种计划，也要更严格地审视现行防疫措施有没有漏洞。</p>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-1k5hvrj e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/111B0/production/_119146007_hi068257826.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/111B0/production/_119146007_hi068257826.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/111B0/production/_119146007_hi068257826.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/111B0/production/_119146007_hi068257826.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/111B0/production/_119146007_hi068257826.jpg 800w" alt="研究员发现，新冠肺炎的Delta变种传染力增强。" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/111B0/production/_119146007_hi068257826.jpg" width="976" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="bbc-3edg7g e57qer20">
+          <figcaption dir="ltr" class="bbc-l9ltpr eede9f50">
+<span class="bbc-1gnhmg2 e1yt7oin0">图像加注文字，</span>            <p>研究员发现，新冠肺炎的Delta变种传染力增强。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <h2 id="Delta变种的传播率惊人" tabindex="-1" class="bbc-6w9yzd e14hemmw0">Delta变种的传播率惊人</h2>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">澳洲卫生官员在研究新南威尔士州的疫情时，发现过去的新冠肺炎种类传播率只有25%，但新的Delta变种传播率几乎达到100%。墨尔本大学卫生学者南希·巴克斯特（Nancy Baxter）形容，Delta变种的传播率十分惊人，“连已经完成接种疫苗的人也有机会传播”。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">澳洲对从外地抵达人员的检疫要求十分严格，所有人都必须接受14天酒店医学监察，而与这些人接触的警察和医护人员等，都会穿上全套的保护衣物。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">澳洲最新一轮爆发的本地源头，是一名负责接载外地抵埗旅客的轿车司机，按规定他不需要接种疫苗、戴口罩或定期接受检测，这被认为是造成爆发的漏洞。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">巴克斯特认为，即使有一个完美的防疫措施，控制疫情也是一个挑战，但现实上连这个完美的措施也没有，就令当地“几乎变成坐以待毙”。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <h2 id="高风险群体与年轻群体" tabindex="-1" class="bbc-6w9yzd e14hemmw0">高风险群体与年轻群体</h2>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">除了封城，澳洲卫生学者呼吁当地政府要加快疫苗接种计划，但从英国的案例来看，单是接种疫苗不能完全解决问题。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">英格兰公共卫生署（Public Health England）一个研究显示，辉瑞（BioNTech）和阿斯利康（AstraZeneca，又称AZ疫苗）疫苗都可以有效保护接种者，包括Delta变种病毒，使接种者即使感染，病情都不会严重得需要住院。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <div class="bbc-1fobf8d e1gggypo0">
+      <ul dir="ltr" role="list" class="bbc-1gidoyr e1drcs2w1">
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0"><a href="https://www.bbc.com/zhongwen/simp/world-56969623" class="bbc-n8oauk e1cs6q200">澳大利亚严禁在印国民回国 印度裔澳洲人面临“种族歧视”</a></li>
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0"><a href="https://www.bbc.com/zhongwen/simp/world-57170295" class="bbc-n8oauk e1cs6q200">澳洲商人被困印度感染新冠去世 澳回国禁令引发愤怒</a></li>
+        <li role="listitem" class="bbc-acwcvw e1drcs2w0"><a href="https://www.bbc.com/zhongwen/simp/world-57544548" class="bbc-n8oauk e1cs6q200">亚太地区新冠防疫“优等生”们遇上的新难题</a></li>
+      </ul>
+    </div>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-1k5hvrj e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/15FD0/production/_119146009_hi068238448.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/15FD0/production/_119146009_hi068238448.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/15FD0/production/_119146009_hi068238448.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/15FD0/production/_119146009_hi068238448.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/15FD0/production/_119146009_hi068238448.jpg 800w" alt="澳洲政府以可能引致血栓为由，不容许60岁以下的人接种阿斯利康疫苗。" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/15FD0/production/_119146009_hi068238448.jpg" width="976" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="bbc-3edg7g e57qer20">
+          <figcaption dir="ltr" class="bbc-l9ltpr eede9f50">
+<span class="bbc-1gnhmg2 e1yt7oin0">图像加注文字，</span>            <p>澳洲政府以可能引致血栓为由，不容许60岁以下的人接种阿斯利康疫苗。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">新冠肺炎疫情初期，专家留意到年龄较大的人都较容易感染病毒，因此多数国家推行疫苗接种计划时，会视他们为风险较高的群体，让他们先行接种。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">这个做法在英国也不例外，当地在去年12月开始疫苗接种计划，首先让年过80岁的老人接种疫苗，之后让前线医护人员接种，再慢慢开放让较年青的群体接种。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">但这令年青群体迟迟得不到疫苗保护，加上传染力高的Delta变种变得流行，英国伦敦玛丽皇后大学（Queen Mary University of London）学者古尔达萨尼（Deepti Gurdasani）形容，这令新冠肺炎变成一个“年青人的病毒”。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">英国教育部的数字也显示，当地公立学校学生在夏季学期中，一直只有约1%因为新冠肺炎相关原因缺课，但周二（6月29日）公布的最新数字显示，缺课率上升到4.5%，当中大部份都是因为在校园内与怀疑染病的人有接触而需要进行自我医学监察。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <h2 id="疫苗接种速度缓慢" tabindex="-1" class="bbc-6w9yzd e14hemmw0">疫苗接种速度缓慢</h2>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">英国的疫苗接种计划目前在全国大部份地区，包括英格兰、威尔士和北爱尔兰都已经开放，让年满18岁或以上的人预约接种疫苗。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">除特定情况外，苏格兰现时只开放30岁或以上的人预约接种第一剂疫苗，并计划在7月末扩展接种计划到18岁或以上的人。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">但在澳大利亚，年青群体、以至整体的疫苗接种速度都十分缓慢，其中一个原因是因为当地政府以可能引致血栓为由，不容许60岁以下的人接种阿斯利康疫苗，而只让他们接种辉瑞（BioNTech）疫苗。但由于澳洲无法自行生产辉瑞疫苗，这种疫苗在当地供应并不足够，而且目前只开放给40到59岁的人接种。</p>
+  </div>
+  <div dir="ltr" class="bbc-1ka88fa e57qer20">
+    <figure class="bbc-1qdcvv9 e6bmn90">
+      <div dir="ltr" class="bbc-172p16q e57qer20">
+        <div dir="ltr" class="bbc-189y18v e57qer20">
+          <div data-e2e="image-placeholder" class="bbc-1k5hvrj e1whu0">
+<img srcset="https://ichef.bbci.co.uk/news/240/cpsprodpb/2B38/production/_119146011_hi068032190.jpg 240w, https://ichef.bbci.co.uk/news/320/cpsprodpb/2B38/production/_119146011_hi068032190.jpg 320w, https://ichef.bbci.co.uk/news/480/cpsprodpb/2B38/production/_119146011_hi068032190.jpg 480w, https://ichef.bbci.co.uk/news/624/cpsprodpb/2B38/production/_119146011_hi068032190.jpg 624w, https://ichef.bbci.co.uk/news/800/cpsprodpb/2B38/production/_119146011_hi068032190.jpg 800w" alt="莫里森宣布将开放让60岁或以下的人预约接种阿斯利康疫苗，但决定受当地医学组织质疑。" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/2B38/production/_119146011_hi068032190.jpg" width="976" class="bbc-fat2bc e1enwo3v0" referrerpolicy="no-referrer" />
+          </div>
+        </div>
+        <div dir="ltr" class="bbc-3edg7g e57qer20">
+          <figcaption dir="ltr" class="bbc-l9ltpr eede9f50">
+<span class="bbc-1gnhmg2 e1yt7oin0">图像加注文字，</span>            <p>莫里森宣布将开放让60岁或以下的人预约接种阿斯利康疫苗，但决定受当地医学组织质疑。</p>
+          </figcaption>
+        </div>
+      </div>
+    </figure>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">为了加快为年青人的接种速度，澳洲总理斯科特·莫里森（Scott Morrison）宣布将开放让60岁或以下的人预约接种阿斯利康疫苗，前提是他们要明白接种这种疫苗“有引发致命血栓的极微小风险”。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">莫里森同时强调，澳洲政府会给予医生法律上保护，让他们为60岁以下的人接种阿斯利康疫苗后，如果出现病征，也不用负上刑事责任，政府也会为接种疫苗的人提供赔偿。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">但当地医疗业界质疑政府的做法。澳洲医学协会主席奥马尔·霍尔希德（Omar Khorshid ） 说，他对莫里森的说法感到惊讶，又指做法将违背当地疫苗技术专家小组的建议，质疑这样做是否真的可以提升疫苗接种率。</p>
+  </div>
+  <div dir="ltr" class="bbc-19j92fr e57qer20">
+    <p dir="ltr" class="bbc-mj7obe e1cc2ql70">澳洲皇家全科医学院（Royal Australian College of General Practitioners）昆士兰分部主席布鲁斯·威利特（Bruce Willett）也认为，政府必须公布这种免责保护的详情，否则当地医生很可然依然拒绝为60岁以下的人接种阿斯利康疫苗。</p>
+  </div>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#BBC 的其它文章</h4>
+    
+      <li>
+        <time>2021-07-01</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-01/Chinese-%E4%B8%AD%E5%85%B1%E5%BB%BA%E5%85%9A%E7%99%BE%E5%B9%B4%E5%BA%86%E5%85%B8%E4%B8%BE%E8%A1%8C-%E4%B9%A0%E8%BF%91%E5%B9%B3%E7%A7%B0%E6%AC%BA%E8%B4%9F%E4%B8%AD%E5%9B%BD%E5%BF%85%E5%B0%86-%E5%A4%B4%E7%A0%B4%E8%A1%80%E6%B5%81">
+          [Chinese] 中共建党百年庆典举行 习近平称欺负中国必将“头破血流”
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-07-01</time>
+        <a href="https://nodebe4.github.io/waimei/2021-07-01/Chinese-%E4%B8%AD%E5%85%B1%E5%BB%BA%E5%85%9A%E7%99%BE%E5%B9%B4%E5%A4%A7%E4%BC%9A%E4%B8%BE%E8%A1%8C-%E4%B9%A0%E8%BF%91%E5%B9%B3%E7%A7%B0%E6%AC%BA%E8%B4%9F%E4%B8%AD%E5%9B%BD%E5%BF%85%E5%B0%86-%E5%A4%B4%E7%A0%B4%E8%A1%80%E6%B5%81">
+          [Chinese] 中共建党百年大会举行 习近平称欺负中国必将“头破血流”
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-06-30</time>
+        <a href="https://nodebe4.github.io/waimei/2021-06-30/Chinese-%E4%B8%AD%E5%85%B1%E5%BB%BA%E5%85%9A%E7%99%BE%E5%B9%B4-%E6%88%91%E4%BB%AC%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%8A%A0%E5%85%A5%E4%B8%AD%E5%9B%BD%E5%85%B1%E4%BA%A7%E5%85%9A">
+          [Chinese] 中共建党百年：我们为什么要加入中国共产党？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-06-30</time>
+        <a href="https://nodebe4.github.io/waimei/2021-06-30/Science-%E6%AC%A7%E6%B4%B2%E9%BC%A0%E7%96%AB-%E9%9B%B6%E5%8F%B7%E7%97%85%E4%BA%BA-%E6%8B%89%E8%84%B1%E7%BB%B4%E4%BA%9A%E5%8F%91%E7%8E%B05000%E5%A4%9A%E5%B9%B4%E5%89%8D%E7%9A%84%E6%84%9F%E6%9F%93%E8%80%85%E5%B0%B8%E4%BD%93">
+          [Science] 欧洲鼠疫“零号病人”？拉脱维亚发现5000多年前的感染者尸体
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-06-30/%E7%BF%92%E8%BF%91%E5%B9%B3%E5%AE%A3%E5%B8%83%E9%81%94%E6%88%90%E9%A6%96%E5%80%8B%E7%99%BE%E5%B9%B4%E7%9B%AE%E6%A8%99-%E5%BC%B7%E8%AA%BF%E5%8A%9B%E6%8A%97%E5%A4%96%E4%BE%86%E5%8B%A2%E5%8A%9B">
+            前一篇：習近平宣布達成首個百年目標  強調力抗外來勢力
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-06-30/%E6%96%B0%E9%97%BB%E7%9C%8B%E7%82%B9-%E5%AD%9F%E6%99%9A%E8%88%9F%E5%91%88%E6%96%B0%E8%AF%81%E5%AE%9A%E5%91%BD%E8%BF%90-%E9%82%B1%E9%A6%99%E6%9E%9C%E6%A1%88%E4%B8%AD%E6%A1%88">
+            后一篇：【新闻看点】孟晚舟呈新证定命运 邱香果案中案
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-06-30/%E7%BF%92%E8%BF%91%E5%B9%B3%E5%AE%A3%E5%B8%83%E9%81%94%E6%88%90%E9%A6%96%E5%80%8B%E7%99%BE%E5%B9%B4%E7%9B%AE%E6%A8%99-%E5%BC%B7%E8%AA%BF%E5%8A%9B%E6%8A%97%E5%A4%96%E4%BE%86%E5%8B%A2%E5%8A%9B'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-06-30/%E6%96%B0%E9%97%BB%E7%9C%8B%E7%82%B9-%E5%AD%9F%E6%99%9A%E8%88%9F%E5%91%88%E6%96%B0%E8%AF%81%E5%AE%9A%E5%91%BD%E8%BF%90-%E9%82%B1%E9%A6%99%E6%9E%9C%E6%A1%88%E4%B8%AD%E6%A1%88'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-07-01/Chinese-%E4%B8%AD%E5%85%B1%E5%BB%BA%E5%85%9A%E7%99%BE%E5%B9%B4%E5%A4%A7%E4%BC%9A%E4%B8%BE%E8%A1%8C-%E4%B9%A0%E8%BF%91%E5%B9%B3%E7%A7%B0%E6%AC%BA%E8%B4%9F%E4%B8%AD%E5%9B%BD%E5%BF%85%E5%B0%86-%E5%A4%B4%E7%A0%B4%E8%A1%80%E6%B5%81'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-06-30/Chinese-%E4%B8%AD%E5%85%B1%E5%BB%BA%E5%85%9A%E7%99%BE%E5%B9%B4-%E6%88%91%E4%BB%AC%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%8A%A0%E5%85%A5%E4%B8%AD%E5%9B%BD%E5%85%B1%E4%BA%A7%E5%85%9A'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-06-30/%E7%BF%92%E8%BF%91%E5%B9%B3%E5%AE%A3%E5%B8%83%E9%81%94%E6%88%90%E9%A6%96%E5%80%8B%E7%99%BE%E5%B9%B4%E7%9B%AE%E6%A8%99-%E5%BC%B7%E8%AA%BF%E5%8A%9B%E6%8A%97%E5%A4%96%E4%BE%86%E5%8B%A2%E5%8A%9B">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-06-30/%E6%96%B0%E9%97%BB%E7%9C%8B%E7%82%B9-%E5%AD%9F%E6%99%9A%E8%88%9F%E5%91%88%E6%96%B0%E8%AF%81%E5%AE%9A%E5%91%BD%E8%BF%90-%E9%82%B1%E9%A6%99%E6%9E%9C%E6%A1%88%E4%B8%AD%E6%A1%88">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<BBC>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-07-01/Chinese-%E4%B8%AD%E5%85%B1%E5%BB%BA%E5%85%9A%E7%99%BE%E5%B9%B4%E5%A4%A7%E4%BC%9A%E4%B8%BE%E8%A1%8C-%E4%B9%A0%E8%BF%91%E5%B9%B3%E7%A7%B0%E6%AC%BA%E8%B4%9F%E4%B8%AD%E5%9B%BD%E5%BF%85%E5%B0%86-%E5%A4%B4%E7%A0%B4%E8%A1%80%E6%B5%81">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<BBC>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-06-30/Chinese-%E4%B8%AD%E5%85%B1%E5%BB%BA%E5%85%9A%E7%99%BE%E5%B9%B4-%E6%88%91%E4%BB%AC%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%8A%A0%E5%85%A5%E4%B8%AD%E5%9B%BD%E5%85%B1%E4%BA%A7%E5%85%9A">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>

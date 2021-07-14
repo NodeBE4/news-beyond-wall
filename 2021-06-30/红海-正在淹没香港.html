@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>“红海”正在淹没香港 – 外媒报道 – git.io/JJCxX 老实报新闻 少整妖蛾子</title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+“红海”正在淹没香港
+——
+" />
+    <meta property="og:description" content="
+“红海”正在淹没香港
+——
+" />
+    
+    <meta name="author" content="外媒报道" />
+
+    
+    <meta property="og:title" content="“红海”正在淹没香港" />
+    <meta property="twitter:title" content="“红海”正在淹没香港" />
+    
+
+  <link rel="stylesheet" type="text/css" href="/waimei/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="外媒报道 - git.io/JJCxX 老实报新闻 少整妖蛾子" href="/waimei/feed.xml" />
+
+  <!-- Social Share Kit CSS -->
+  <link rel="stylesheet" href="/waimei/assets/css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="/waimei/assets/js/page.js"></script>
+
+</head>
+
+  <body>
+    <div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      
+
+      <div class="site-info">
+        <h1 class="site-name" style="display: inline-block;"><a href="/waimei/">外媒报道</a></h1>
+        <i class="site-description" style="font-size: 12px;">git.io/JJCxX 老实报新闻 少整妖蛾子</i>
+      </div>
+
+      <nav>
+        <span id="search-container" >
+          <a href="/waimei/tools"><i class="fa fa-bookmark twitter" title="百宝箱"></i></a>
+        <a><i class="fa fa-search" title="限前300結果"></i></a><input type="text" id="search-input" placeholder="標題 作者 來源 日期 (5516)"
+          style="margin: 10px 0px 0px 0px; height: 30px;width: auto" title="本站最正確的打開方式">
+        </span>
+        
+        
+        <a href="/waimei/categories" style="color: Tomato;"><i class="fa fa-tags" title="分类"></i></a>
+        
+        
+        
+        <a href="https://be4.herokuapp.com/" style="color: #003366;"><i class="fa fa-comments" title="论坛"></i></a>
+        
+        
+        
+        <a href="/waimei/about"><i class="fa fa-info-circle" title="关于"></i></a>
+        
+        
+        <a title="电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇，del同来源旧一篇" onclick="toggle_visibility('help')"><i class="fa fa-question-circle"></i></a>
+        <a id="fa-home" href="https://nodebe4.github.io" title="BE4服务列表" onclick="//toggle_visibility('site-list')"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </nav>
+
+    </header>
+    <div id="site-list" class="tags" style="display: block;text-align: right;border-bottom: 1px solid lightGray;"></div>
+    <p id="help" style="font-size: 14px;display: none;text-align: right;"><span style="color:green;">电脑热键：&larr;上一篇(页), &rarr;下一篇(页), ins同来源新一篇, del同来源旧一篇</span>; <span style="color:orange">对应触屏FAB：上下右左</span>; 轉Markdown<a href="https://euangoddard.github.io/clipboard2markdown/"><i class="fa fa-file-text-o"></i></a></p>
+  </div>
+</div>
+
+<script type="text/javascript" >
+  function toggle_visibility(id){
+    var help = document.getElementById(id)
+    if (help.style.display=='none'){
+      help.style.display='block';
+    }else{
+      help.style.display='none';
+    }
+  }
+
+  const url = "https://nodebe4.github.io/sitelist.json"
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    // var homebtn = document.getElementById("fa-home")
+    // homebtn.removeAttribute("href")
+    var content = document.getElementById("site-list");
+    content.innerHTML = ''
+    var ul = document.createElement("ul")
+    ul.classList.add("label")
+    content.appendChild(ul)
+    var cnt = 0
+
+    $.getJSON(url, function(allsites) {
+
+      allsites.map(item =>{
+        var li = document.createElement('li')
+        li.classList.add("tag")
+        li.id = 'site-' + cnt
+        ul.appendChild(li)
+        var a0 = document.createElement('a')
+        li.appendChild(a0)
+        a0.href = item.url[0]
+        var span = document.createElement('span')
+        a0.appendChild(span)
+        span.innerText = item['name']
+        // span.style.backgroundColor = item['background-color']
+        // span.style.color='#E4CBC3'
+        span.style.color = item['background-color']
+        span.style['font-size'] = '14px'
+        cnt += 1
+        // test_alive(li.id, a0.href)
+      })
+    })
+  })
+
+function test_alive(id, url){
+  var divstatus = document.getElementById(id)
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        if (data.responseText.includes('502')){
+          // divstatus.style.color='#FBB7B7'
+          // divstatus.style.color='gray'
+          // divstatus.title = "服务器无响应"
+          divstatus.parentNode.removeChild(divstatus)
+        }else{
+          // divstatus.style.color='#B6FAC8'
+          divstatus.title = data.responseText
+        }
+      }
+  });
+  return divstatus
+}
+</script>
+
+    <!-- Left & centered positioning -->
+
+<div class="ssk-sticky ssk-right ssk-center ssk-sticky-hide-xs ssk-group ssk-round">
+      <a href="https://be4news.pythonanywhere.com/submit?u=https%3A%2F%2Fcn.nytimes.com%2Fopinion%2F20210630%2Fhong-kong-apple-daily%2F&t=%E2%80%9C%E7%BA%A2%E6%B5%B7%E2%80%9D%E6%AD%A3%E5%9C%A8%E6%B7%B9%E6%B2%A1%E9%A6%99%E6%B8%AF" target="_blank" class="ssk ssk-behance"  title="BE4新闻站"></a>
+    <a href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fopinion%2F20210630%2Fhong-kong-apple-daily%2F&t=%E2%80%9C%E7%BA%A2%E6%B5%B7%E2%80%9D%E6%AD%A3%E5%9C%A8%E6%B7%B9%E6%B2%A1%E9%A6%99%E6%B8%AF&d=2021-06-30&e=
+“红海”正在淹没香港
+——
+
+
+  
+林慕莲
+  
+  2021年6月30日
+  
+    
+Illustration by Arsh Raziuddin, The New York Times
+    
+  
+  
+    关闭《苹果日报》只用了六天。
+    对于《苹果日报》这份拥有26年历史、作风招摇、从不忌惮批评北京的亲民主小报来说，它的结局来得如此之快，反映了香港镇压行动的残酷程度。
+    6月17日星期四，500名警察突击搜查了该报的办公室，逮捕了五名工作人员，他们涉嫌与外国勾结，因为他们的文章呼吁对香港和中国进行制裁。到了下一个星期三，这家报纸印刷了最后一期，由于政府冻结其账户而无法运营。
+    就这样，香港的又一个重要组成部分消失了。
+    《苹果日报》的关闭意味着新闻自由的极大缩小。正如记者李月华所说，对新闻媒体来说，不再只有红线，而是一张红色的网，甚至是一..." target="_blank" class="ssk ssk-github"  title="Github 时代透镜"></a>
+
+    <a href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fopinion%2F20210630%2Fhong-kong-apple-daily%2F" class="ssk ssk-link" title="存到互联网档案馆" target="_blank"></a>
+    <a href="https://www.facebook.com/sharer.php?u=https://cn.nytimes.com/opinion/20210630/hong-kong-apple-daily/" class="ssk ssk-facebook"></a>
+    <a href="https://twitter.com/intent/tweet?url=https://cn.nytimes.com/opinion/20210630/hong-kong-apple-daily/&text=“红海”正在淹没香港&hashtags=外媒报道" class="ssk ssk-twitter"></a>
+    <a href="https://reddit.com/submit?url=https://cn.nytimes.com/opinion/20210630/hong-kong-apple-daily/&title=“红海”正在淹没香港" class="ssk ssk-reddit"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://cn.nytimes.com/opinion/20210630/hong-kong-apple-daily/&title=“红海”正在淹没香港" class="ssk ssk-linkedin"></a>
+    <a href="mailto:{email_address}?subject=“红海”正在淹没香港&body=
+“红海”正在淹没香港
+——
+" class="ssk ssk-email"></a>
+    <a href="http://pinterest.com/pin/create/link/?url=https://cn.nytimes.com/opinion/20210630/hong-kong-apple-daily/" class="ssk ssk-pinterest"></a>
+    <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://cn.nytimes.com/opinion/20210630/hong-kong-apple-daily/&title=“红海”正在淹没香港&caption=
+“红海”正在淹没香港
+——
+&tags=外媒报道" class="ssk ssk-tumblr"></a>
+    <a href="https://buffer.com/add?text=“红海”正在淹没香港&url=https://cn.nytimes.com/opinion/20210630/hong-kong-apple-daily/" class="ssk ssk-buffer"></a>
+</div>
+
+
+    <div id="main" role="main" class="container">
+      
+  <!-- Html Elements for Search -->
+  <ul id="results-container" class="searched" style="color: #2980B9;"></ul>
+
+  <script src="/waimei/assets/js/simple-jekyll-search.min.js"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/waimei/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><time>{date}</time><a class="tag">{category}</a></li>',
+    noResultsText: '没找到',
+    limit: 300,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
+  </script>
+
+      
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    
+
+
+
+<article class="post">
+  <h1>“红海”正在淹没香港</h1>
+  <!-- Look the author details up from the site config. -->
+  
+
+  <div style="width:100%;">
+    <span class="date">
+      2021-06-30
+    </span>
+
+    <!-- Output author details if some exist. -->
+    
+
+    <ul class="tag">
+      <li>
+        <a href="https://nodebe4.github.io/waimei/categories/#纽约时报 ">
+          纽约时报
+        </a>
+      </li>
+    </ul>
+
+    
+        <span>
+            <!-- Personal Info. -->
+            <a href="https://cn.nytimes.com/opinion/20210630/hong-kong-apple-daily/"  style="font-size: $small-font-size;">原文</a>
+        </span>
+    
+
+    
+
+    <span style="float: right;" title="纽约时报的其它文章">
+      <a style="font-size: 14px;" rel="nofollow" href="#sametag" class="tags">#纽约时报 的其它文章</a>
+    </span>
+
+
+    <!-- <span style="float: right;" title="提交到时代透镜">
+      <a style="color: #32407B; font-size: $small-font-size;" rel="nofollow" href="https://chinatimeline.github.io/form/?u=https%3A%2F%2Fcn.nytimes.com%2Fopinion%2F20210630%2Fhong-kong-apple-daily%2F&t=%E2%80%9C%E7%BA%A2%E6%B5%B7%E2%80%9D%E6%AD%A3%E5%9C%A8%E6%B7%B9%E6%B2%A1%E9%A6%99%E6%B8%AF&d=2021-06-30&e=
+“红海”正在淹没香港
+——
+
+
+  
+林慕莲
+  
+  2021年6月30日
+  
+    
+Illustration by Arsh Raziuddin, The New York Times
+    
+  
+  
+    关闭《苹果日报》只用了六天。
+    对于《苹果日报》这份拥有26年历史、作风招摇、从不忌惮批评北京的亲民主小报来说，它的结局来得如此之快，反映了香港镇压行动的残酷程度。
+    6月17日星期四，500名警察突击搜查了该报的办公室，逮捕了五名工作人员，他们涉嫌与外国勾结，因为他们的文章呼吁对香港和中国进行制裁。到了下一个星期三，这家报纸印刷了最后一期，由于政府冻结其账户而无法运营。
+    就这样，香港的又一个重要组成部分消失了。
+    《苹果日报》的关闭意味着新闻自由的极大缩小。正如记者李月华所说，对新闻媒体来说，不再只有红线，而是一张红色的网，甚至是一..." target="_blank" class="ssk ssk-icon ssk-github"></a>
+    </span> -->
+
+    <span style="float: right;" title="保存到互联网档案馆">
+      <a style="color: #2980B9; font-size: $small-font-size;" rel="nofollow" href="https://be4news.pythonanywhere.com/archivenow/ia/https%3A%2F%2Fcn.nytimes.com%2Fopinion%2F20210630%2Fhong-kong-apple-daily%2F" target="_blank">&#x27B2;</a>
+    </span>
+  </div>
+
+  <div class="entry" id="div-content-rss">
+    <!--1625038621000-->
+<p><a href="https://cn.nytimes.com/opinion/20210630/hong-kong-apple-daily/">“红海”正在淹没香港</a>
+——</p>
+
+<div>
+  <address>
+林慕莲
+  </address>
+  <time pudate="2021-06-30 03:00:44" datetime="2021-06-30 03:00:44">2021年6月30日</time>
+  <figure class="article-span-photo">
+<img src="https://images.weserv.nl/?url=static01.nyt.com/images/2021/06/29/opinion/sunday/29lim/29lim-master1050.jpg" width="1050" height="1050" />    <figcaption>
+<cite>Illustration by Arsh Raziuddin, The New York Times</cite>
+    </figcaption>
+  </figure>
+  <section class="article-body">
+    <p>关闭《苹果日报》只用了六天。</p>
+    <p>对于《苹果日报》这份拥有26年历史、作风招摇、从不忌惮批评北京的亲民主小报来说，它的结局来得如此之快，反映了香港镇压行动的残酷程度。</p>
+    <p>6月17日星期四，<a rel="noopener noreferrer" target="_blank" href="https://www.reuters.com/world/asia-pacific/hong-kongs-apple-daily-newspaper-says-police-arrest-five-directors-2021-06-16/" title="Link: https://www.reuters.com/world/asia-pacific/hong-kongs-apple-daily-newspaper-says-police-arrest-five-directors-2021-06-16/">500名警察突击搜查</a>了该报的办公室，逮捕了五名工作人员，他们涉嫌与外国勾结，因为他们的文章呼吁对香港和中国进行制裁。到了下一个星期三，这家报纸印刷了<a href="https://cn.nytimes.com/china/20210623/apple-daily-hong-kong/">最后一期</a>，由于政府冻结其账户而无法运营。</p>
+    <p>就这样，香港的又一个重要组成部分消失了。</p>
+    <p>《苹果日报》的关闭意味着新闻自由的极大缩小。<a rel="noopener noreferrer" target="_blank" href="https://news.rthk.hk/rthk/ch/component/k2/1597058-20210622.htm">正如记者李月华所说</a>，对新闻媒体来说，不再只有红线，而是一张红色的网，甚至是一片红海。</p>
+    <p>红海正在淹没香港。6月21日，一名在自家门外挂了一面写有被禁抗议口号旗帜的男子，因涉嫌发表<a rel="noopener noreferrer" target="_blank" href="https://news.rthk.hk/rthk/en/component/k2/1597056-20210622.htm">煽动性言论</a>，被警察用袋子套住头部带走。<a href="https://cn.nytimes.com/china/20210621/hong-kong-bookstores-nsl/">一些书籍从图书馆的书架上消失</a>，<a href="https://www.nytimes.com/2021/06/11/world/asia/hong-kong-film-censorship.html">新的电影审查制度</a>正在实行，<a rel="noopener noreferrer" target="_blank" href="https://www.scmp.com/news/hong-kong/education/article/3134967/national-security-law-let-students-learn-history-new-focus">教科书正以国家安全为重点重新编写</a>。</p>
+    <p>随着去年6月实施的一项<a href="https://cn.nytimes.com/china/20200701/hong-kong-security-law-explain/">全面国安法</a>破坏了备受珍视的机构，过去一年，香港人经历了一连串的损失。由于该法律取代了普通法，司法系统宝贵的独立性已不复存在。一个不祥的举动是，亲北京的政治人士本月首次<a rel="noopener noreferrer" target="_blank" href="https://www.ft.com/content/56de7f6d-c89a-4857-b2f9-5d184fa3d096">有效地阻止</a>了一项司法任命。</p>
+    <p>香港动荡的政治局面被一项选举改革所扼制，该改革阻止民主派候选人参选。现在，每一位候选人都必须经过警察的审查，以<a href="https://cn.nytimes.com/china/20210623/apple-daily-hong-kong/">确保</a>只有“爱国者”才能进入立法机关。</p>
+    <p>许多亲民主阵营最知名的人物已经入狱：今年2月，<a href="https://cn.nytimes.com/china/20210301/hong-kong-security-law-arrests/">47人</a>在为候选人举行非正式初选后被指控犯有串谋颠覆罪；还有人因参加抗议活动而以非法集会罪<a rel="noopener noreferrer" target="_blank" href="https://www.dw.com/en/hong-kong-pro-democracy-activists-jailed-for-illegal-assembly/a-57222045">入狱</a>。这是一场通过“法律战”进行的老式政治清洗，以法律体系作为武器。其结果是将一代政治人士和活动人士定罪。</p>
+    <p>几乎每个政府部门、个人和组织都受到该立法的影响。北京支持的香港特首林郑月娥<a rel="noopener noreferrer" target="_blank" href="https://www.scmp.com/news/hong-kong/politics/article/3137296/national-security-law-carrie-lam-admits-new-censorship">宣称</a>，“我们必须重新审查我们的所有制度。”这与她在该法律颁布之日向联合国人权理事会(United Nations Human Rights Council)保证的情况相去甚远，她曾保证，该法律只会针对“<a rel="noopener noreferrer" target="_blank" href="https://www.barrons.com/news/china-s-hk-security-law-will-only-target-small-minority-lam-01593508505">极少数</a>”的违法者。</p>
+    <p>这项立法正在按照中国的形象重塑香港。仅在过去一个月，每年一度的纪念1989年在天安门广场遇害的民主抗议者的守夜活动被禁止，每年一度的7月1日香港回归中国纪念日的抗议游行也被取消。</p>
+    <p>因此，许多香港人最担心的事情发生了：将香港与中国区别开来的自由正遭到加速压制。就在不久前，香港人还在彻夜观看<a rel="noopener noreferrer" target="_blank" href="https://qz.com/1737197/hong-kong-protests-are-most-live-streamed-ever/">网络直播</a>，看到警察向抗议者发射催泪瓦斯，并且用警棍殴打他们的。当前的攻击——不那么明显，但暴力程度丝毫不减——发生在公共领域本身。</p>
+    <p>香港人担心《苹果日报》之后的下一个目标会是什么。这股红色浪潮正在席卷数字媒体：支持民主的立场新闻已经开始<a rel="noopener noreferrer" target="_blank" href="https://hongkongfp.com/2021/06/28/security-law-stand-news-opinion-articles-axed-directors-resign-amid-reported-threats-to-hong-kong-digital-outlets/">撤下网络内容</a>。还有人则怀疑红海会淹没国际新闻机构，在政府准备立法打击“<a rel="noopener noreferrer" target="_blank" href="https://www.politico.eu/article/china-bans-bbc-for-fake-news-on-xinjiang-coronavirus/">假新闻</a>”之际，为了自身安全，这些机构可能会被迫将剩余的记者撤出香港。</p>
+    <p><a rel="noopener noreferrer" target="_blank" href="https://www.globaltimes.cn/page/202104/1222066.shtml">中国官方媒体</a>对直言不讳的大律师公会的攻击令法律界感到不安，<a rel="noopener noreferrer" target="_blank" href="https://www.reuters.com/article/us-hongkong-security-judges-idUSKBN26912R">依据香港《基本法》可以任职的外国法官退出了香港法院</a>。罗马天主教会也受到关注；本月，在七个为纪念1989年天安门镇压而举行弥撒的教堂外出现了警告“邪教”的<a rel="noopener noreferrer" target="_blank" href="https://www.scmp.com/news/hong-kong/politics/article/3135969/tiananmen-vigil-and-hong-kongs-national-security-law-will">标语</a>。</p>
+    <p>香港曾经充满活力与喧嚣的公民社会正遭到压制。结果，<a rel="noopener noreferrer" target="_blank" href="https://qz.com/1969235/uk-bno-visa-numbers-show-size-of-hong-kong-security-law-exodus">大批香港人</a>做出了痛苦的决定，离开自己所熟悉的一切，因为他们在自己的家园看不到未来。</p>
+    <p>上周晚些时候的<a rel="noopener noreferrer" target="_blank" href="https://www.scmp.com/news/hong-kong/politics/article/3138826/hong-kong-cabinet-reshuffle-does-beijing-prefer-law-and">政府改组</a>令他们加强了警觉，这次改组使强硬的安全官员在公务员队伍的最高层站稳了脚跟。这是一个最新的黑色笑话：此举实际上让香港变成了一个警察国家——它的<a rel="noopener noreferrer" target="_blank" href="https://twitter.com/TMclaughlin3/status/1408268837485568007">五名高级官员现在正因破坏香港自治和限制其自由而受到美国政府的制裁</a>。</p>
+    <p>许多人都认为更糟糕的还在后头。以史为鉴，中国问题学者白杰明(Geremie Barmé)预测，再教育项目和中心将是北京强制意识形态控制运动的下一步。</p>
+    <p>然而，许多香港人决心不计代价地追求他们心目中正确的道德之路。被监禁的《苹果日报》创始人黎智英就是一个例子。他正确地预测到，国安法将使新闻自由的运作“<a rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/LittleRedPodcast/posts/1825096664336411?notif_id=1624449191468412%C2%ACif_t=page_post_reaction&amp;ref=notif">不仅困难，而且危险</a>”，但他誓言要继续下去。<a rel="noopener noreferrer" target="_blank" href="https://omny.fm/shows/the-little-red-podcast/hong-kong-anything-we-say-could-be-a-crime">去年6月我采访他时</a>，他对我说：“让我坚持下去的是，我相信我在做正确的事情。”</p>
+    <p>《苹果日报》的情况突显了这种情绪，它的最后一期<a rel="noopener noreferrer" target="_blank" href="https://apnews.com/article/hong-kong-europe-newspapers-business-97cf6aec4153c9201ae8cda679ff0e3d">“讣告专刊”</a>100万份销售一空，这在一个750万人口的城市堪称壮观。这也体现在《苹果日报》记者的行动上，他们不顾不断升级的风险，一直坚持到最后，推出了最后一期报纸。</p>
+    <p>习惯于通过命令来执行自己意志的北京似乎正在加快步伐，把香港变成另一个大陆城市。但它应该注意到《苹果日报》告别书中的话：“苹果被埋葬在泥里，种子却生成满树的更大更美的苹果。”</p>
+  </section>
+  <footer class="author-info">
+    <p>林慕莲(Louisa Lim)是澳大利亚墨尔本大学前沿新闻中心的高级讲师，也是《重返天安门：在失忆的人民共和国》一书的作者。</p>
+    <p>翻译：纽约时报中文网</p>
+    <p><a rel="nofollow" target="_blank" href="https://www.nytimes.com/2021/06/29/opinion/hong-kong-apple-daily.html">点击查看本文英文版。</a></p>
+  </footer>
+</div>
+
+  </div>
+
+  <hr style="border-top:1px solid #28323C;"/>
+
+<font size=2px>
+  文章版权归原作者所有。
+</font>
+
+<div style="text-align:center"><img width="1px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站" style="text-align:center"/></div>
+
+  <div id="sametag">
+    <h4>#纽约时报 的其它文章</h4>
+    
+      <li>
+        <time>2021-06-30</time>
+        <a href="https://nodebe4.github.io/waimei/2021-06-30/%E6%B8%AF%E4%B8%AD%E5%A4%A7%E6%95%99%E6%8E%88%E5%91%A8%E4%BF%9D%E6%9D%BE-%E5%8F%AA%E8%A6%81%E5%9D%9A%E6%8C%81%E6%8A%97%E4%BA%89-%E9%A6%99%E6%B8%AF%E7%9A%84%E5%8E%86%E5%8F%B2%E5%B0%B1%E4%B8%8D%E4%BC%9A%E7%BB%93%E6%9D%9F">
+          港中大教授周保松：只要坚持抗争，香港的历史就不会结束
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-06-30</time>
+        <a href="https://nodebe4.github.io/waimei/2021-06-30/%E5%9C%A8Nobu-Malibu-%E4%B8%8E%E5%90%8D%E4%BA%BA%E5%85%B1%E5%BA%A6%E6%A2%A6%E5%B9%BB%E6%97%B6%E5%85%89">
+          在Nobu Malibu，与名人共度梦幻时光
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-06-30</time>
+        <a href="https://nodebe4.github.io/waimei/2021-06-30/%E6%B6%88%E7%98%A6-%E7%9A%84%E9%87%91%E6%AD%A3%E6%81%A9-%E5%87%8F%E8%82%A5%E8%BF%98%E6%98%AF%E5%81%A5%E5%BA%B7%E5%A0%AA%E5%BF%A7">
+          “消瘦”的金正恩：减肥还是健康堪忧？
+        </a>
+      </li>
+    
+    
+      <li>
+        <time>2021-06-29</time>
+        <a href="https://nodebe4.github.io/waimei/2021-06-29/%E7%AE%80%E6%8A%A5-%E5%9B%BD%E5%AE%89%E6%B3%95%E4%B8%80%E5%91%A8%E5%B9%B4-%E4%B8%AD%E5%85%B1%E5%A6%82%E4%BD%95%E6%94%B9%E9%80%A0%E9%A6%99%E6%B8%AF-%E4%BA%9A%E6%B4%B2%E5%A4%9A%E5%9C%B0%E8%BF%9B%E5%85%A5%E6%96%B0%E4%B8%80%E8%BD%AE%E5%B0%81%E9%94%81">
+          简报：国安法一周年，中共如何改造香港；亚洲多地进入新一轮封锁
+        </a>
+      </li>
+    
+  </div>
+
+
+  <hr>
+  <div class="pagination">
+    
+      <span class="prev" >
+          <a href="https://nodebe4.github.io/waimei/2021-06-30/Matters-%E4%B9%8C%E5%90%88%E9%BA%92%E9%BA%9F%E4%BB%AC%E7%9A%84%E7%9C%9F%E7%90%86-%E7%A7%91%E5%AD%A6%E6%80%A7%E6%B2%A1%E6%9C%89-%E6%94%BF%E6%B2%BB%E6%80%A7%E6%9E%81%E5%BC%BA">
+            前一篇：Matters｜乌合麒麟们的真理：科学性没有、政治性极强
+          </a>
+      </span>
+    
+    
+      <span class="next" >
+          <a href="https://nodebe4.github.io/waimei/2021-06-30/Chinese-%E4%B8%A5%E5%BF%97%E5%88%9A-%E7%94%A8%E9%95%9C%E5%A4%B4%E5%AE%9A%E6%A0%BC%E4%B8%AD%E5%9B%BD40%E5%B9%B4%E5%8F%98%E8%BF%81%E7%9A%84%E6%91%84%E5%BD%B1%E5%B8%88">
+            后一篇：[Chinese] 严志刚：用镜头定格中国40年变迁的摄影师
+          </a>
+      </span>
+    
+
+    <script>
+    /* post pagination keyboard shortcuts */
+    document.body.onkeyup = function(e){
+      if (e.keyCode == '37') { window.location = 'https://nodebe4.github.io/waimei/2021-06-30/Matters-%E4%B9%8C%E5%90%88%E9%BA%92%E9%BA%9F%E4%BB%AC%E7%9A%84%E7%9C%9F%E7%90%86-%E7%A7%91%E5%AD%A6%E6%80%A7%E6%B2%A1%E6%9C%89-%E6%94%BF%E6%B2%BB%E6%80%A7%E6%9E%81%E5%BC%BA'; } // left arrow key
+      if (e.keyCode == '39') { window.location = 'https://nodebe4.github.io/waimei/2021-06-30/Chinese-%E4%B8%A5%E5%BF%97%E5%88%9A-%E7%94%A8%E9%95%9C%E5%A4%B4%E5%AE%9A%E6%A0%BC%E4%B8%AD%E5%9B%BD40%E5%B9%B4%E5%8F%98%E8%BF%81%E7%9A%84%E6%91%84%E5%BD%B1%E5%B8%88'; } // right arrow key
+      if (e.keyCode == '45') { window.location = 'https://nodebe4.github.io/waimei/2021-06-30/%E5%9C%A8Nobu-Malibu-%E4%B8%8E%E5%90%8D%E4%BA%BA%E5%85%B1%E5%BA%A6%E6%A2%A6%E5%B9%BB%E6%97%B6%E5%85%89'; } // insert key
+      if (e.keyCode == '46') { window.location = 'https://nodebe4.github.io/waimei/2021-06-30/%E6%B6%88%E7%98%A6-%E7%9A%84%E9%87%91%E6%AD%A3%E6%81%A9-%E5%87%8F%E8%82%A5%E8%BF%98%E6%98%AF%E5%81%A5%E5%BA%B7%E5%A0%AA%E5%BF%A7'; } // delete key
+    };
+    /* add first image to post */
+    window.addEventListener('load', (event) => {
+      var entry = document.getElementById("div-content-rss");
+      var imglink = entry.getElementsByTagName("img")[0];
+      if (imglink){
+        var timeline_shares = document.getElementsByClassName('ssk-github');
+        for (i=0; i<timeline_shares.length; i++){
+          timeline_shares[i].href += `&i=` + encodeURI(imglink.src);
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="/waimei/assets/css/fab.css" />
+
+<div class="fab-wrapper">
+  <div class="fab-wheel">
+    
+    
+    
+    <a class="fab-action fab-action-1" title="上一篇(热键 &#8594;)" href="https://nodebe4.github.io/waimei/2021-06-30/Matters-%E4%B9%8C%E5%90%88%E9%BA%92%E9%BA%9F%E4%BB%AC%E7%9A%84%E7%9C%9F%E7%90%86-%E7%A7%91%E5%AD%A6%E6%80%A7%E6%B2%A1%E6%9C%89-%E6%94%BF%E6%B2%BB%E6%80%A7%E6%9E%81%E5%BC%BA">
+      <i>后</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-2" title="下一篇(热键 &#8592;)" href="https://nodebe4.github.io/waimei/2021-06-30/Chinese-%E4%B8%A5%E5%BF%97%E5%88%9A-%E7%94%A8%E9%95%9C%E5%A4%B4%E5%AE%9A%E6%A0%BC%E4%B8%AD%E5%9B%BD40%E5%B9%B4%E5%8F%98%E8%BF%81%E7%9A%84%E6%91%84%E5%BD%B1%E5%B8%88">
+      <i>前</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-3" title="<纽约时报>上一篇(热键 ins)" href="https://nodebe4.github.io/waimei/2021-06-30/%E5%9C%A8Nobu-Malibu-%E4%B8%8E%E5%90%8D%E4%BA%BA%E5%85%B1%E5%BA%A6%E6%A2%A6%E5%B9%BB%E6%97%B6%E5%85%89">
+      <i>左</i>
+    </a>
+    
+    
+    <a class="fab-action fab-action-4" title="<纽约时报>下一篇(热键 del)" href="https://nodebe4.github.io/waimei/2021-06-30/%E6%B6%88%E7%98%A6-%E7%9A%84%E9%87%91%E6%AD%A3%E6%81%A9-%E5%87%8F%E8%82%A5%E8%BF%98%E6%98%AF%E5%81%A5%E5%BA%B7%E5%A0%AA%E5%BF%A7">
+      <i>右</i>
+    </a>
+    
+  </div>
+</div>
+
+
+  </div>
+
+
+  
+
+</article>
+
+    </div>
+
+    <div style="z-index:2;">
+<script src="/waimei/assets/js/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 56,
+  cornerOffset: 20, // px
+  id: 'back-to-top',
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+</div>
+
+
+    <div class="wrapper-footer" id="footer">
+      <div class="container">
+        <footer class="footer">
+          <img width="200px" src="https://i.imgur.com/ykemioX.png" alt="二维码分享本站"/>
+<font size=2px>二维码分享本站</font>
+
+<!-- Refer to https://codepen.io/ruandre/pen/howFi -->
+<ul class="svg-icon">
+
+  
+
+  
+
+  
+  <li><a href="mailto:beauti4@protonmail.com" class="icon-8 email" title="Email"><svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg><!--[if lt IE 9]><em>Email</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+  <li><a href="https://github.com/NodeBE4/waimei" class="icon-13 github" title="GitHub"><svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg><!--[if lt IE 9]><em>GitHub</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="/waimei/feed.xml" class="icon-21 rss" title="RSS"><svg viewBox="0 0 512 512"><path d="M201.8 347.2c0 20.3-16.5 36.8-36.8 36.8 -20.3 0-36.8-16.5-36.8-36.8s16.5-36.8 36.8-36.8C185.3 310.4 201.8 326.8 201.8 347.2zM128.2 204.7v54.5c68.5 0.7 124 56.3 124.7 124.7h54.5C306.7 285.3 226.9 205.4 128.2 204.7zM128.2 166.6c57.9 0.3 112.3 22.9 153.2 63.9 41 41 63.7 95.5 63.9 153.5h54.5c-0.3-149.9-121.7-271.4-271.6-271.9V166.6L128.2 166.6z"/></svg><!--[if lt IE 9]><em>RSS</em><![endif]--></a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+    
+</ul>
+
+
+
+
+
+<p><span style="color:blue">内容每小时更新一次.</span> No more campaign, just report. Powered by <a href="https://github.com/AWEEKJ/kiko-now">Kiko Now</a> & <a href="https://github.com/gitalk/gitalk">Gitalk</a> & <a href="https://github.com/duty-machine/news">duty-machine</a>, 站务 <a href="https://be4.herokuapp.com">NodeBE4</a>（<span style="color:red">被墙</span>）</p>
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+
+
+  </body>
+</html>
